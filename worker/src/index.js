@@ -30,7 +30,11 @@ async function refreshAccessToken(refreshToken, clientId, clientSecret) {
 
 async function getUserProfile(accessToken) {
 	const response = await fetch('https://api.spotify.com/v1/me', {
-		headers: { Authorization: `Bearer ${accessToken}` },
+		headers: {
+			Authorization: `Bearer ${accessToken}`,
+			'Accept': 'application/json',
+			'Content-Type': 'application/json; charset=utf-8',
+		},
 	});
 
 	if (!response.ok) return null;
@@ -47,7 +51,11 @@ async function getRecentlyPlayed(accessToken) {
 	const response = await fetch(
 		'https://api.spotify.com/v1/me/player/recently-played?limit=50',
 		{
-			headers: { Authorization: `Bearer ${accessToken}` },
+			headers: {
+				Authorization: `Bearer ${accessToken}`,
+				'Accept': 'application/json',
+				'Content-Type': 'application/json; charset=utf-8',
+			},
 		}
 	);
 
@@ -61,7 +69,11 @@ async function getCurrentlyPlaying(accessToken) {
 	const response = await fetch(
 		'https://api.spotify.com/v1/me/player/currently-playing',
 		{
-			headers: { Authorization: `Bearer ${accessToken}` },
+			headers: {
+				Authorization: `Bearer ${accessToken}`,
+				'Accept': 'application/json',
+				'Content-Type': 'application/json; charset=utf-8',
+			},
 		}
 	);
 
@@ -97,6 +109,25 @@ async function getCurrentlyPlaying(accessToken) {
 // GITHUB API
 // ============================================================================
 
+// Helper function to properly decode base64 to UTF-8 string
+function base64ToUtf8(base64Str) {
+	// Remove whitespace and newlines that GitHub might add
+	const cleanBase64 = base64Str.replace(/\s/g, '');
+
+	// Decode base64 to binary string
+	const binaryString = atob(cleanBase64);
+
+	// Convert binary string to Uint8Array
+	const bytes = new Uint8Array(binaryString.length);
+	for (let i = 0; i < binaryString.length; i++) {
+		bytes[i] = binaryString.charCodeAt(i);
+	}
+
+	// Decode UTF-8 bytes to string
+	const decoder = new TextDecoder('utf-8');
+	return decoder.decode(bytes);
+}
+
 async function getGitHubFile(repo, path, token) {
 	const url = `https://api.github.com/repos/${repo}/contents/${path}`;
 	console.log(`Fetching: ${url}`);
@@ -123,19 +154,26 @@ async function getGitHubFile(repo, path, token) {
 	}
 
 	const data = await response.json();
-	const content = JSON.parse(atob(data.content));
+	// Use proper UTF-8 decoding instead of just atob()
+	const jsonString = base64ToUtf8(data.content);
+	const content = JSON.parse(jsonString);
 	return { content, sha: data.sha };
 }
 
 // Helper function to properly encode UTF-8 strings to base64
+// This handles Unicode characters correctly for GitHub API
 function utf8ToBase64(str) {
-	// Convert string to UTF-8 bytes, then to base64
-	const utf8Bytes = new TextEncoder().encode(str);
-	let binary = '';
-	for (let i = 0; i < utf8Bytes.length; i++) {
-		binary += String.fromCharCode(utf8Bytes[i]);
-	}
-	return btoa(binary);
+	// Use TextEncoder to properly convert UTF-8 string to bytes
+	const encoder = new TextEncoder();
+	const utf8Bytes = encoder.encode(str);
+
+	// Convert bytes array to binary string
+	const binaryString = Array.from(utf8Bytes)
+		.map(byte => String.fromCharCode(byte))
+		.join('');
+
+	// Encode to base64
+	return btoa(binaryString);
 }
 
 async function updateGitHubFile(repo, path, content, message, sha, token) {
