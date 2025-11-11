@@ -98,27 +98,44 @@ async function getCurrentlyPlaying(accessToken) {
 // ============================================================================
 
 async function getGitHubFile(repo, path, token) {
-	const response = await fetch(
-		`https://api.github.com/repos/${repo}/contents/${path}`,
-		{
-			headers: {
-				Authorization: `Bearer ${token}`,
-				Accept: 'application/vnd.github.v3+json',
-			},
-		}
-	);
+	const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+	console.log(`Fetching: ${url}`);
+
+	const response = await fetch(url, {
+		headers: {
+			Authorization: `Bearer ${token}`,
+			Accept: 'application/vnd.github.v3+json',
+			'User-Agent': 'Rezz-Spotify-Worker/1.0',
+		},
+	});
+
+	console.log(`Response status: ${response.status}`);
 
 	if (response.status === 404) {
+		console.log(`File not found: ${path}, will create new`);
 		return { content: null, sha: null };
 	}
 
 	if (!response.ok) {
-		throw new Error(`Failed to get file: ${response.statusText}`);
+		const errorBody = await response.text();
+		console.error(`GitHub API Error: ${response.status} - ${errorBody}`);
+		throw new Error(`Failed to get file: ${response.statusText} - ${errorBody}`);
 	}
 
 	const data = await response.json();
 	const content = JSON.parse(atob(data.content));
 	return { content, sha: data.sha };
+}
+
+// Helper function to properly encode UTF-8 strings to base64
+function utf8ToBase64(str) {
+	// Convert string to UTF-8 bytes, then to base64
+	const utf8Bytes = new TextEncoder().encode(str);
+	let binary = '';
+	for (let i = 0; i < utf8Bytes.length; i++) {
+		binary += String.fromCharCode(utf8Bytes[i]);
+	}
+	return btoa(binary);
 }
 
 async function updateGitHubFile(repo, path, content, message, sha, token) {
@@ -130,10 +147,11 @@ async function updateGitHubFile(repo, path, content, message, sha, token) {
 				Authorization: `Bearer ${token}`,
 				Accept: 'application/vnd.github.v3+json',
 				'Content-Type': 'application/json',
+				'User-Agent': 'Rezz-Spotify-Worker/1.0',
 			},
 			body: JSON.stringify({
 				message,
-				content: btoa(JSON.stringify(content, null, 2)),
+				content: utf8ToBase64(JSON.stringify(content, null, 2)),
 				sha,
 			}),
 		}
@@ -164,11 +182,13 @@ function processRecentTracks(recentTracks, userProfile, history) {
 			imageUrl: item.track.album.images?.[0]?.url || null,
 		};
 
+		// Check for duplicates using URI and timestamp (more reliable than track name)
+		// Also check if timestamp is within 1 second (1000ms) to handle slight timing differences
 		const exists = history.some(
 			h =>
 				h.userId === entry.userId &&
-				h.timestamp === entry.timestamp &&
-				h.track === entry.track
+				h.uri === entry.uri &&
+				Math.abs(h.timestamp - entry.timestamp) < 1000
 		);
 
 		if (!exists) {
@@ -219,12 +239,22 @@ async function handleScheduled(env) {
 	console.log('🎵 Fetching Spotify data...');
 
 	try {
+		// Validate environment variables
+		if (!env.SPOTIFY_CLIENT_ID) throw new Error('SPOTIFY_CLIENT_ID not set');
+		if (!env.SPOTIFY_CLIENT_SECRET) throw new Error('SPOTIFY_CLIENT_SECRET not set');
+		if (!env.SPOTIFY_REFRESH_TOKENS) throw new Error('SPOTIFY_REFRESH_TOKENS not set');
+		if (!env.GITHUB_TOKEN) throw new Error('GITHUB_TOKEN not set');
+		if (!env.GITHUB_REPO) throw new Error('GITHUB_REPO not set');
+
 		// Parse tokens
 		const tokens = JSON.parse(env.SPOTIFY_REFRESH_TOKENS);
 		const clientId = env.SPOTIFY_CLIENT_ID;
 		const clientSecret = env.SPOTIFY_CLIENT_SECRET;
 		const githubToken = env.GITHUB_TOKEN;
 		const githubRepo = env.GITHUB_REPO;
+
+		console.log(`GitHub Repo: ${githubRepo}`);
+		console.log(`GitHub Token: ${githubToken.substring(0, 10)}...`);
 
 		// Load existing data from GitHub
 		const { content: history = [], sha: historySha } = await getGitHubFile(
