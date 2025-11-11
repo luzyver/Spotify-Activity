@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762890057058,
+      "timestamp": 1762890657082,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2uIX8YMNjGMD7441kqyyNU",
-        "name": "ocean eyes",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732cafcdd985630d72594ecc49",
+        "uri": "spotify:track:3lIRT0z9PSb6AIrWnUjMnM",
+        "name": "No Surprises",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ef5a2f1d309ddc15ea6e9f78",
         "album": {
-          "uri": "spotify:album:2msN7XBgV3JCjQ7Tq3t7i9",
-          "name": "Ocean Eyes"
+          "uri": "spotify:album:5WxSvw4KQviRG1HwQoPTBE",
+          "name": "No Surprises"
         },
         "artist": {
-          "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH",
-          "name": "Billie Eilish"
+          "uri": "spotify:artist:2qvGuhgaubJ02pfiKcJAdR",
+          "name": "Juliana Chahayed"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
