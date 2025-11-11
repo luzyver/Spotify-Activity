@@ -1,0 +1,19 @@
+name = "rezz-spotify-worker"
+main = "src/index.js"
+compatibility_date = "2025-01-15"
+
+# Cron trigger - runs every 10 minutes
+[triggers]
+crons = ["*/10 * * * *"]
+
+# KV namespace untuk storage (optional, bisa pakai R2 atau GitHub)
+# [[kv_namespaces]]
+# binding = "SPOTIFY_DATA"
+# id = "your_kv_namespace_id"
+
+# Environment variables (use wrangler secret for sensitive data)
+# SPOTIFY_CLIENT_ID - set via: wrangler secret put SPOTIFY_CLIENT_ID
+# SPOTIFY_CLIENT_SECRET - set via: wrangler secret put SPOTIFY_CLIENT_SECRET
+# SPOTIFY_REFRESH_TOKENS - set via: wrangler secret put SPOTIFY_REFRESH_TOKENS
+# GITHUB_TOKEN - set via: wrangler secret put GITHUB_TOKEN
+# GITHUB_REPO - set via: wrangler secret put GITHUB_REPO (format: username/repo)

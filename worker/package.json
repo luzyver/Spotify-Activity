@@ -1,0 +1,17 @@
+{
+  "name": "rezz-spotify-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for Spotify Activity Tracker",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail"
+  },
+  "keywords": ["cloudflare", "worker", "spotify"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
