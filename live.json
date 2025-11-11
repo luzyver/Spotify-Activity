@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762863658383,
+      "timestamp": 1762864011543,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2AWbMJ1zHlXiSIzT93VeZ4",
-        "name": "Salahi Aku (Ku Jatuh Cinta Lagi)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273beae4b70409fe021997aae00",
+        "uri": "spotify:track:7p2GUA0ShGenHoqeIhTg5i",
+        "name": "P Ramlee Saloma",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ba28a88f8b57fdef2fd3104e",
         "album": {
-          "uri": "spotify:album:6m3iOCDJ6F2jRM0suelfQZ",
-          "name": "Salahi Aku (Ku Jatuh Cinta Lagi)"
+          "uri": "spotify:album:7oCqvPcLCDWQ5Nxj5ZVVJN",
+          "name": "P Ramlee Saloma"
         },
         "artist": {
-          "uri": "spotify:artist:7Ln5yumFjHCkeZ8bAzHUcp",
-          "name": "Yovie Widianto, Andi Rianto, Rony Parulian"
+          "uri": "spotify:artist:0s2MtYt7PZx0kP8CqLt38t",
+          "name": "Alpha"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DWWhB4HOWKFQc",
