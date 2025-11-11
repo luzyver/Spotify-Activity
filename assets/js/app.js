@@ -275,8 +275,9 @@ const DataLoader = {
 	 */
 	async loadNowPlaying() {
 		try {
-			// Fetch directly from GitHub Raw (no build delay!)
-			const url = "https://raw.githubusercontent.com/luzyver/Rezz-Spotify/refs/heads/main/live.json";
+			// Fetch with cache busting to ensure fresh data
+			const timestamp = new Date().getTime();
+			const url = `https://cdn.jsdelivr.net/gh/luzyver/Rezz-Spotify@main/live.json?t=${timestamp}`;
 			const response = await fetch(url, {
 				cache: 'no-cache',
 				mode: 'cors'
@@ -313,8 +314,9 @@ const DataLoader = {
 	 */
 	async loadHistory() {
 		try {
-			// Fetch directly from GitHub Raw (no build delay!)
-			const url = "https://raw.githubusercontent.com/luzyver/Rezz-Spotify/refs/heads/main/history.json";
+			// Fetch with cache busting to ensure fresh data
+			const timestamp = new Date().getTime();
+			const url = `https://cdn.jsdelivr.net/gh/luzyver/Rezz-Spotify@main/history.json?t=${timestamp}`;
 			const response = await fetch(url, {
 				cache: 'no-cache',
 				mode: 'cors'
