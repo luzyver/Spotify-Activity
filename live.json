@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762859419814,
+      "timestamp": 1762860019673,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4i0HNuFEH6P6K4UnsY5uUh",
-        "name": "Blue Valentine",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ee26bd5ae483fc54e6ef9e74",
+        "uri": "spotify:track:5fmyW3X3kncOOVlmcWhORH",
+        "name": "Terbuang Dalam Waktu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395688e1f59ae3fc4951d41ff",
         "album": {
-          "uri": "spotify:album:42URGYboRJEQPwXj7wlsoB",
-          "name": "Blue Valentine"
+          "uri": "spotify:album:65hiBZugUD4hPjDM4RurWC",
+          "name": "Jalaran Sadrah"
         },
         "artist": {
-          "uri": "spotify:artist:28ot3wh4oNmoFOdVajibBl",
-          "name": "NMIXX"
+          "uri": "spotify:artist:5RbI1PF4n02wWKmgjk7hAE",
+          "name": "Barasuara"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DWWhB4HOWKFQc",
