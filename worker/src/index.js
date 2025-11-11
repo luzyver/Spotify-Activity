@@ -507,6 +507,19 @@ async function handleClearHistory(env) {
 		const githubToken = env.GITHUB_TOKEN;
 		const githubRepo = env.GITHUB_REPO;
 
+		// Check current history
+		const { content: currentHistory } = await getGitHubFile(
+			githubRepo,
+			'history.json',
+			githubToken
+		);
+
+		// If history is already empty, skip commit
+		if (!currentHistory || currentHistory.length === 0) {
+			console.log(`ℹ️  History is already empty, skipping commit`);
+			return new Response('Success: History already empty', { status: 200 });
+		}
+
 		// Clear history by setting it to empty array
 		const emptyHistory = [];
 		const commitMsg = '🗑️ Clear history (daily reset) [skip ci]';
@@ -520,7 +533,7 @@ async function handleClearHistory(env) {
 			githubToken
 		);
 
-		console.log(`✅ History cleared successfully!`);
+		console.log(`✅ History cleared successfully! (${currentHistory.length} items removed)`);
 		return new Response('Success: History cleared', { status: 200 });
 	} catch (error) {
 		console.error('❌ Error clearing history:', error);
@@ -722,6 +735,30 @@ export default {
 				const githubToken = env.GITHUB_TOKEN;
 				const githubRepo = env.GITHUB_REPO;
 
+				// Check current history
+				const { content: currentHistory } = await getGitHubFile(
+					githubRepo,
+					'history.json',
+					githubToken
+				);
+
+				// If history is already empty, skip commit
+				if (!currentHistory || currentHistory.length === 0) {
+					console.log(`ℹ️  History is already empty, skipping commit`);
+					return new Response(JSON.stringify({
+						success: true,
+						message: 'History is already empty',
+						skipped: true,
+						timestamp: new Date().toISOString()
+					}), {
+						status: 200,
+						headers: {
+							'Content-Type': 'application/json',
+							...corsHeaders
+						}
+					});
+				}
+
 				// Clear history by setting it to empty array
 				const emptyHistory = [];
 				const commitMsg = '🗑️ Clear history (daily reset) [skip ci]';
@@ -735,10 +772,11 @@ export default {
 					githubToken
 				);
 
-				console.log(`✅ History cleared successfully!`);
+				console.log(`✅ History cleared successfully! (${currentHistory.length} items removed)`);
 				return new Response(JSON.stringify({
 					success: true,
 					message: 'History cleared successfully',
+					itemsRemoved: currentHistory.length,
 					timestamp: new Date().toISOString()
 				}), {
 					status: 200,
