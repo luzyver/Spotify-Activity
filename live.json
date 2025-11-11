@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762892457621,
+      "timestamp": 1762893057149,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6WUgqFZhbNRaeBuzG2ahfJ",
-        "name": "apathy",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d3ecc4ae0df54fce4742f2eb",
+        "uri": "spotify:track:6ilc4vQcwMPlvAHFfsTGng",
+        "name": "Sweet",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27312b69bf576f5e80291f75161",
         "album": {
-          "uri": "spotify:album:1N99dokdMWpcIDa9r6BqYk",
-          "name": "apathy"
+          "uri": "spotify:album:2mxFsS5yylSTHNivV53HoA",
+          "name": "Cigarettes After Sex"
         },
         "artist": {
-          "uri": "spotify:artist:0dgJbQ0bKPyUXco8hEXN7X",
-          "name": "Øneheart"
+          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
+          "name": "Cigarettes After Sex"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
