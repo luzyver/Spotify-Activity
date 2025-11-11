@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762894257487,
+      "timestamp": 1762894857398,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7cs7MLtAWvsdf3w5kBvfK2",
-        "name": "Nothing's Gonna Hurt You Baby",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739da736813eb8d9de94d46828",
+        "uri": "spotify:track:3zksbXteOCeSusJ5Xltr3t",
+        "name": "Bubble Gum",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735d93417bde90e0bd951dab08",
         "album": {
-          "uri": "spotify:album:12UGkXT4z3ajgq6xheCGDk",
-          "name": "I."
+          "uri": "spotify:album:4IlnBRDEsHcr9EWxmbgMC2",
+          "name": "Bubble Gum"
         },
         "artist": {
-          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
-          "name": "Cigarettes After Sex"
+          "uri": "spotify:artist:3l0CmX0FuQjFxr8SK7Vqag",
+          "name": "Clairo"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
