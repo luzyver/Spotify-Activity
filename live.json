@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762848619920,
+      "timestamp": 1762849219747,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:630DpnzdfjdVqv2yLfPbAX",
-        "name": "Bertaut",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb",
+        "uri": "spotify:track:6RAxgUG90f39dVSGUr4qOd",
+        "name": "Kisah Tanpa Dirimu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d7105ffabf2ff9ddd265eab1",
         "album": {
-          "uri": "spotify:album:75KyCmWatZRvlMcMRed9BG",
-          "name": "Selamat Ulang Tahun"
+          "uri": "spotify:album:6WyxwTMDu7MdmWKZ2m4lCe",
+          "name": "Devaki"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:7lXTU6VtJQWfiN2vuZyzqf",
+          "name": "Anggis Devaki"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
