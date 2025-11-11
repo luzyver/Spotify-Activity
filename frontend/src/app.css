@@ -312,6 +312,24 @@ body {
 	backdrop-filter: blur(10px);
 }
 
+/* Modern Stats Badge */
+.stat-badge-modern {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 6px 12px;
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+	display: inline-flex;
+	align-items: center;
+}
+
+.stat-badge-modern:hover {
+	background: rgba(29, 185, 84, 0.1);
+	border: 1px solid rgba(29, 185, 84, 0.3);
+	transform: translateY(-2px);
+}
+
 /* Pagination Styles */
 .page-btn {
 	background: rgba(20, 20, 30, 0.7);
@@ -342,6 +360,53 @@ body {
 	cursor: not-allowed;
 }
 
+/* Minimal Pagination Button */
+.page-btn-minimal {
+	background: rgba(20, 20, 30, 0.6);
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.page-btn-minimal:hover:not(:disabled) {
+	background: rgba(29, 185, 84, 0.2);
+	border: 1px solid rgba(29, 185, 84, 0.4);
+	transform: translateY(-2px);
+	color: #1db954;
+}
+
+.page-btn-minimal:disabled {
+	opacity: 0.2;
+	cursor: not-allowed;
+}
+
+.page-btn-minimal:active:not(:disabled) {
+	transform: translateY(0) scale(0.95);
+}
+
+/* Smooth Horizontal Scroll */
+.snap-x {
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for mobile horizontal scroll */
+.snap-x::-webkit-scrollbar {
+	display: none;
+}
+
+.snap-x {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
 /* Mobile responsiveness improvements */
 @media (max-width: 640px) {
 	.equalizer {
@@ -356,5 +421,31 @@ body {
 	@keyframes equalize {
 		0%, 100% { height: 4px; }
 		50% { height: 16px; }
+	}
+
+	/* Improve touch targets for mobile */
+	.page-btn {
+		min-width: 40px;
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+
+	/* Reduce animations on mobile for performance */
+	.glass-card:hover,
+	.glass-card-live:hover {
+		transform: translateY(-3px) scale(1.01);
+	}
+
+	/* Better spacing for mobile */
+	body {
+		-webkit-tap-highlight-color: rgba(29, 185, 84, 0.2);
+	}
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+	.container {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
