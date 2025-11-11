@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762860619729,
+      "timestamp": 1762861219630,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6ICuGF3N6Qk4Bkl3c3FJVI",
-        "name": "Suara Hati Seorang Kekasih",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fa4da12917153b48041783cc",
+        "uri": "spotify:track:0taGkMseEIkIZ3noyFFfZA",
+        "name": "Tetap Bukan Kamu (feat. Rony Parulian)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273390b568b7e725b7039585800",
         "album": {
-          "uri": "spotify:album:1BXIKYg0Nkb7PfMmWHkOSG",
-          "name": "Rangga & Cinta (Original Motion Picture Soundtrack)"
+          "uri": "spotify:album:4SVd1APxtjPLbghqMzqmBq",
+          "name": "ambiVert"
         },
         "artist": {
-          "uri": "spotify:artist:50Fq9p1golo64d4KMsf11a",
-          "name": "El Putra Sarira, Leya Princy, Cast of Rangga & Cinta"
+          "uri": "spotify:artist:5OZXWMwDhlYBRvoOfcX0sk",
+          "name": "Raisa, Rony Parulian"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DWWhB4HOWKFQc",
