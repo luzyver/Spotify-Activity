@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762888857045,
+      "timestamp": 1762889457249,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:429NtPmr12aypzFH3FkN9l",
-        "name": "Coffee",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ad2c1e1bcbc8d7415636691b",
+        "uri": "spotify:track:7DcJ6fEBb7BaKuYKTwiDxK",
+        "name": "Homage",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27396bc7d5bd0b6488de76598ab",
         "album": {
-          "uri": "spotify:album:5wQU9QESgj4rLyLECGTJGn",
-          "name": "Coffee"
+          "uri": "spotify:album:6O9YDn12I4WQxUBQE9tpnN",
+          "name": "Skiptracing"
         },
         "artist": {
-          "uri": "spotify:artist:35l9BRT7MXmM8bv2WDQiyB",
-          "name": "beabadoobee"
+          "uri": "spotify:artist:5J81VungUjSVHxlPpTI9KG",
+          "name": "Mild High Club"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
