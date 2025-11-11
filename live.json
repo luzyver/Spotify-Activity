@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762872657262,
+      "timestamp": 1762873258941,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2SmKwCCSiUTjtR8I8rv6MS",
-        "name": "Berdansalah, Karir Ini Tak Ada Artinya",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349bdf0e981cbba25d48b44e0",
+        "uri": "spotify:track:2BG8aPF0ViSgZpxJr33DIv",
+        "name": "Yang Ku Mau",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dff87e95570ff3de1ff71698",
         "album": {
-          "uri": "spotify:album:0DMdiWcqnutCi81EqBXkF8",
-          "name": "Lagipula Hidup Akan Berakhir"
+          "uri": "spotify:album:0DSnbACb9XAhTcsxccSW60",
+          "name": "Evolve"
         },
         "artist": {
-          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
-          "name": "Hindia"
+          "uri": "spotify:artist:0yz3hWDSRvBZ8V5HMYVWzp",
+          "name": "Vierratale"
         },
         "context": {
           "uri": "spotify:album:5jhaywps3SnnIIixJQsPHN",
