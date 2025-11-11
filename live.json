@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762861219630,
+      "timestamp": 1762861819701,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0taGkMseEIkIZ3noyFFfZA",
-        "name": "Tetap Bukan Kamu (feat. Rony Parulian)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273390b568b7e725b7039585800",
+        "uri": "spotify:track:7sFjAaWSZDrUsxSxALlA09",
+        "name": "BACK 2 YOU",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e1e49b0f1728d604807600c7",
         "album": {
-          "uri": "spotify:album:4SVd1APxtjPLbghqMzqmBq",
-          "name": "ambiVert"
+          "uri": "spotify:album:2c7Osih348dWoitmLUvVAh",
+          "name": "BACK 2 YOU"
         },
         "artist": {
-          "uri": "spotify:artist:5OZXWMwDhlYBRvoOfcX0sk",
-          "name": "Raisa, Rony Parulian"
+          "uri": "spotify:artist:0e5blBgpur3Y18wS1bzXQC",
+          "name": "Rahmania Astrini"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DWWhB4HOWKFQc",
