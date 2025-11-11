@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762894857398,
+      "timestamp": 1762895457070,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3zksbXteOCeSusJ5Xltr3t",
-        "name": "Bubble Gum",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735d93417bde90e0bd951dab08",
+        "uri": "spotify:track:6IaSUc4wx1rzo8lGs4KOot",
+        "name": "School Rooftop - Slowed Down Version",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273af10dd64654c62eb04f10018",
         "album": {
-          "uri": "spotify:album:4IlnBRDEsHcr9EWxmbgMC2",
-          "name": "Bubble Gum"
+          "uri": "spotify:album:7irimAHIFr7vcR2IoJmOgZ",
+          "name": "School Rooftop (Slowed Down Version)"
         },
         "artist": {
-          "uri": "spotify:artist:3l0CmX0FuQjFxr8SK7Vqag",
-          "name": "Clairo"
+          "uri": "spotify:artist:72y6MZHIPEyS64ACSCtIq6",
+          "name": "Hisohkah, WMD"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
