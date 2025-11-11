@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762901456620,
+      "timestamp": 1762902057544,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6cx5CvFhqN19efStehJqoW",
-        "name": "Valentine",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27348341e864d4b4881f56f01b4",
+        "uri": "spotify:track:6uTNaZG0i5VRdckzFr1M9u",
+        "name": "505",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ead884cc9a4c96b2875c55e2",
         "album": {
-          "uri": "spotify:album:0Ydm84ftyiWRGOIFkdl30L",
-          "name": "Everything I Know About Love"
+          "uri": "spotify:album:3cdL02bWDiOWlAsoJ84ygV",
+          "name": "On Tap"
         },
         "artist": {
-          "uri": "spotify:artist:7gW0r5CkdEUMm42w9XpyZO",
-          "name": "Laufey"
+          "uri": "spotify:artist:4sjH0V2FKA83nhnbAp5nVM",
+          "name": "Last Call"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
