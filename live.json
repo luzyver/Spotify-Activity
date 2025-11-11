@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762870257607,
+      "timestamp": 1762870857237,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:08YFtTCBPRO5WbAWupuB77",
-        "name": "Cinta di Garis Horizon",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ca23c9153ff7f3b5d563dff3",
+        "uri": "spotify:track:1tqPw8Hf88h24Bpt2SzuYE",
+        "name": "Di Akhir Perang",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5",
         "album": {
-          "uri": "spotify:album:5jhaywps3SnnIIixJQsPHN",
-          "name": "Pertaruhan Cinta"
+          "uri": "spotify:album:5hpq1LSLCuC7cifjXAM5bf",
+          "name": "Untuk Dunia, Cinta, dan Kotornya"
         },
         "artist": {
-          "uri": "spotify:artist:2l8I5pWUnfF7bMK1z6EJRk",
-          "name": "JKT48"
+          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
+          "name": "Nadin Amizah"
         },
         "context": {
           "uri": "spotify:album:5jhaywps3SnnIIixJQsPHN",
