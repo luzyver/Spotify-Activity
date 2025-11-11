@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762890657082,
+      "timestamp": 1762891258264,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3lIRT0z9PSb6AIrWnUjMnM",
-        "name": "No Surprises",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ef5a2f1d309ddc15ea6e9f78",
+        "uri": "spotify:track:7gSZkeBr9Koc9Rfm3pp769",
+        "name": "Sweet Heat Lightning",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738352ba18a72a0ebd8cab2e5f",
         "album": {
-          "uri": "spotify:album:5WxSvw4KQviRG1HwQoPTBE",
-          "name": "No Surprises"
+          "uri": "spotify:album:73VuXbDamMLEdq8Yzd79dM",
+          "name": "Appaloosa Bones"
         },
         "artist": {
-          "uri": "spotify:artist:2qvGuhgaubJ02pfiKcJAdR",
-          "name": "Juliana Chahayed"
+          "uri": "spotify:artist:5sXaGoRLSpd7VeyZrLkKwt",
+          "name": "Gregory Alan Isakov"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
