@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762893657084,
+      "timestamp": 1762894257487,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5e2l2ZAMwHmrkdM4Z6NhAR",
-        "name": "Again",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a96efbf231ca824132bfd2fc",
+        "uri": "spotify:track:7cs7MLtAWvsdf3w5kBvfK2",
+        "name": "Nothing's Gonna Hurt You Baby",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739da736813eb8d9de94d46828",
         "album": {
-          "uri": "spotify:album:7rLy1bJQKR3hQnjtEkn1Lm",
-          "name": "Vivid Pictures"
+          "uri": "spotify:album:12UGkXT4z3ajgq6xheCGDk",
+          "name": "I."
         },
         "artist": {
-          "uri": "spotify:artist:1wxPItEzr7U7rGSMPqZ25r",
-          "name": "Shiloh Dynasty, timmies"
+          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
+          "name": "Cigarettes After Sex"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
