@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762897256905,
+      "timestamp": 1762897856880,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7H0ya83CMmgFcOhw0UB6ow",
-        "name": "Space Song",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739b7190e673e46271b2754aab",
+        "uri": "spotify:track:0SpkyS1Q4MD8GaVcP5YjT4",
+        "name": "Sunsetz",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27312b69bf576f5e80291f75161",
         "album": {
-          "uri": "spotify:album:194CqC2Zi0kUFEPWedb3qr",
-          "name": "Depression Cherry"
+          "uri": "spotify:album:2mxFsS5yylSTHNivV53HoA",
+          "name": "Cigarettes After Sex"
         },
         "artist": {
-          "uri": "spotify:artist:56ZTgzPBDge0OvCGgMO3OY",
-          "name": "Beach House"
+          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
+          "name": "Cigarettes After Sex"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
