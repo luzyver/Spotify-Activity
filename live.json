@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762897856880,
+      "timestamp": 1762898457246,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0SpkyS1Q4MD8GaVcP5YjT4",
-        "name": "Sunsetz",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27312b69bf576f5e80291f75161",
+        "uri": "spotify:track:0qOCy2LqvdkMora7eZsJhQ",
+        "name": "From the Subway Train",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a788765bdda04106bd7b0d29",
         "album": {
-          "uri": "spotify:album:2mxFsS5yylSTHNivV53HoA",
-          "name": "Cigarettes After Sex"
+          "uri": "spotify:album:7CESHttY9U97FElD5JAXSW",
+          "name": "Angel Youth"
         },
         "artist": {
-          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
-          "name": "Cigarettes After Sex"
+          "uri": "spotify:artist:6ft7JnxMyZhp7N52qzHymY",
+          "name": "Vansire"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
