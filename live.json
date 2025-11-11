@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762899056599,
+      "timestamp": 1762899656726,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2vWBUC9djv6BtiGlmKiQaH",
-        "name": "YKWIM?",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731a72818330a056c9d3556a68",
+        "uri": "spotify:track:7qH9Z4dJEN0l9bidizW7fq",
+        "name": "Anchor",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273277620423172f5a151f452e3",
         "album": {
-          "uri": "spotify:album:60jUlxAOAcsiQUEW0XLroT",
-          "name": "Bipolar"
+          "uri": "spotify:album:4vGuMdwnxc6X8izbVS6MTN",
+          "name": "Bathing Beach"
         },
         "artist": {
-          "uri": "spotify:artist:6FugQjLquBF4JzATRN70bR",
-          "name": "Yot Club"
+          "uri": "spotify:artist:0rZp7G3gIH6WkyeXbrZnGi",
+          "name": "Novo Amor"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
