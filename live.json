@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762857619711,
+      "timestamp": 1762858219733,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6OWWZtNQORY1McaZmOrwhc",
-        "name": "GO!",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734b56a34b0c2b3798fd46f855",
+        "uri": "spotify:track:312z6PZ8wwREck8613PkJk",
+        "name": "A Couple Minutes",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739a336bfb6d40bbd90a507417",
         "album": {
-          "uri": "spotify:album:2yMfaynthtWVAkJ5A3Kwrf",
-          "name": "COLOR OUTSIDE THE LINES"
+          "uri": "spotify:album:0l8zYqoUeBYg47Gmevq9HZ",
+          "name": "The Art of Loving"
         },
         "artist": {
-          "uri": "spotify:artist:1ebt9HnXdyYA6KgLXr1n4P",
-          "name": "CORTIS"
+          "uri": "spotify:artist:00x1fYSGhdqScXBRpSj3DW",
+          "name": "Olivia Dean"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DWWhB4HOWKFQc",
