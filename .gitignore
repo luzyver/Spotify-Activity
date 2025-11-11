@@ -1,8 +1,16 @@
 # dependency directory
 node_modules/
+frontend/node_modules/
 
 # lock files
 package-lock.json
+frontend/package-lock.json
 
 # env file
 .env
+
+# Build outputs
+frontend/.svelte-kit/
+frontend/build/
+.svelte-kit/
+build/

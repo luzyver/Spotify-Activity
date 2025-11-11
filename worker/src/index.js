@@ -593,20 +593,41 @@ async function handleScheduled(env) {
 		// Sort history
 		uniqueHistory.sort((a, b) => b.timestamp - a.timestamp);
 
-		// Update both files in a single commit with varied message
-		const commitMsg = getRandomCommitMessage(totalNewTracks, liveFriends.length);
-		await updateMultipleGitHubFiles(
+		// Check if there are actual changes before committing
+		const { content: existingLive } = await getGitHubFile(
 			githubRepo,
-			[
-				{ path: 'history.json', content: uniqueHistory },
-				{ path: 'live.json', content: { friends: liveFriends } }
-			],
-			commitMsg,
+			'live.json',
 			githubToken
 		);
 
-		console.log(`✅ Update complete! Commit: ${commitMsg}`);
-		return new Response('Success', { status: 200 });
+		// Compare history data
+		const historyChanged = JSON.stringify(rawHistory) !== JSON.stringify(uniqueHistory);
+
+		// Compare live data
+		const newLiveData = { friends: liveFriends };
+		const liveChanged = JSON.stringify(existingLive) !== JSON.stringify(newLiveData);
+
+		// Only commit if there are changes
+		if (historyChanged || liveChanged) {
+			const commitMsg = getRandomCommitMessage(totalNewTracks, liveFriends.length);
+			await updateMultipleGitHubFiles(
+				githubRepo,
+				[
+					{ path: 'history.json', content: uniqueHistory },
+					{ path: 'live.json', content: newLiveData }
+				],
+				commitMsg,
+				githubToken
+			);
+
+			console.log(`✅ Update complete! Commit: ${commitMsg}`);
+			console.log(`   - History changed: ${historyChanged}`);
+			console.log(`   - Live status changed: ${liveChanged}`);
+			return new Response('Success: Changes committed', { status: 200 });
+		} else {
+			console.log(`ℹ️  No changes detected, skipping commit`);
+			return new Response('Success: No changes to commit', { status: 200 });
+		}
 	} catch (error) {
 		console.error('❌ Error:', error);
 		return new Response(`Error: ${error.message}`, { status: 500 });

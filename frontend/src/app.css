@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
 	font-family: 'Poppins', sans-serif;
 }
@@ -8,47 +12,89 @@ body {
 	overflow-x: hidden;
 }
 
-/* Animated Background */
-.animated-bg {
-	background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #0a0a0a 100%);
-	background-size: 400% 400%;
-	animation: gradientFlow 15s ease infinite;
+@layer utilities {
+	/* Animated Background */
+	.animated-bg {
+		background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #0a0a0a 100%);
+		background-size: 400% 400%;
+		animation: gradientFlow 15s ease infinite;
+	}
+
+	/* Gradient Text */
+	.gradient-text {
+		background: linear-gradient(135deg, #1db954 0%, #1ed760 50%, #1db954 100%);
+		background-size: 200% 200%;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: gradientShift 3s ease infinite;
+	}
+
+	/* Glass Morphism */
+	.glass-card {
+		background: rgba(20, 20, 30, 0.7);
+		backdrop-filter: blur(20px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.glass-card:hover {
+		background: rgba(30, 30, 40, 0.8);
+		border: 1px solid rgba(29, 185, 84, 0.4);
+		transform: translateY(-5px) scale(1.02);
+		box-shadow: 0 12px 48px rgba(29, 185, 84, 0.2);
+	}
+
+	.glass-card-live {
+		background: rgba(29, 185, 84, 0.05);
+		backdrop-filter: blur(30px);
+		border: 2px solid rgba(29, 185, 84, 0.3);
+		box-shadow: 0 12px 48px rgba(29, 185, 84, 0.15);
+	}
+
+	.glass-card-live:hover {
+		background: rgba(29, 185, 84, 0.1);
+		border: 2px solid rgba(29, 185, 84, 0.5);
+		transform: translateY(-8px) scale(1.03);
+		box-shadow: 0 16px 64px rgba(29, 185, 84, 0.25);
+	}
+
+	/* Vinyl Animation */
+	.spin-slow {
+		animation: spin-slow 20s linear infinite;
+	}
+
+	.pulse-glow {
+		animation: pulse-glow 3s ease-in-out infinite;
+	}
+
+	.float-animation {
+		animation: float 4s ease-in-out infinite;
+	}
+
+	.scale-in {
+		animation: scaleIn 0.5s ease-out forwards;
+	}
+
+	.fade-in-up {
+		opacity: 0;
+		transform: translateY(30px);
+		animation: fadeInUp 0.6s ease-out forwards;
+	}
 }
 
+/* Animations */
 @keyframes gradientFlow {
 	0%, 100% { background-position: 0% 50%; }
 	50% { background-position: 100% 50%; }
 }
 
-/* Floating particles */
-.particle {
-	position: fixed;
-	width: 3px;
-	height: 3px;
-	background: rgba(29, 185, 84, 0.6);
-	border-radius: 50%;
-	pointer-events: none;
-	animation: float-up 8s ease-in infinite;
+@keyframes gradientShift {
+	0%, 100% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
 }
 
-@keyframes float-up {
-	0% {
-		transform: translateY(100vh) scale(0);
-		opacity: 0;
-	}
-	10% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(-100vh) scale(1.5);
-		opacity: 0;
-	}
-}
-
-/* Vinyl Animation */
 @keyframes spin-slow {
 	from { transform: rotate(0deg); }
 	to { transform: rotate(360deg); }
@@ -77,35 +123,54 @@ body {
 	100% { transform: scale(1); opacity: 1; }
 }
 
-.spin-slow {
-	animation: spin-slow 20s linear infinite;
+@keyframes fadeInUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
-.pulse-glow {
-	animation: pulse-glow 3s ease-in-out infinite;
+@keyframes pulse {
+	0%, 100% { transform: scale(1); }
+	50% { transform: scale(1.05); }
 }
 
-.float-animation {
-	animation: float 4s ease-in-out infinite;
+@keyframes logoGlow {
+	0%, 100% { filter: drop-shadow(0 0 20px rgba(29, 185, 84, 0.6)); }
+	50% { filter: drop-shadow(0 0 30px rgba(29, 185, 84, 0.9)); }
 }
 
-.scale-in {
-	animation: scaleIn 0.5s ease-out forwards;
+@keyframes equalize {
+	0%, 100% { height: 5px; }
+	50% { height: 20px; }
 }
 
-/* Gradient Text */
-.gradient-text {
-	background: linear-gradient(135deg, #1db954 0%, #1ed760 50%, #1db954 100%);
-	background-size: 200% 200%;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: gradientShift 3s ease infinite;
+@keyframes float-up {
+	0% {
+		transform: translateY(100vh) scale(0);
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-100vh) scale(1.5);
+		opacity: 0;
+	}
 }
 
-@keyframes gradientShift {
-	0%, 100% { background-position: 0% 50%; }
-	50% { background-position: 100% 50%; }
+/* Floating particles */
+.particle {
+	position: fixed;
+	width: 3px;
+	height: 3px;
+	background: rgba(29, 185, 84, 0.6);
+	border-radius: 50%;
+	pointer-events: none;
+	animation: float-up 8s ease-in infinite;
 }
 
 /* Vinyl Record Details */
@@ -146,36 +211,6 @@ body {
 	z-index: 2;
 }
 
-/* Glass Morphism */
-.glass-card {
-	background: rgba(20, 20, 30, 0.7);
-	backdrop-filter: blur(20px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.glass-card:hover {
-	background: rgba(30, 30, 40, 0.8);
-	border: 1px solid rgba(29, 185, 84, 0.4);
-	transform: translateY(-5px) scale(1.02);
-	box-shadow: 0 12px 48px rgba(29, 185, 84, 0.2);
-}
-
-.glass-card-live {
-	background: rgba(29, 185, 84, 0.05);
-	backdrop-filter: blur(30px);
-	border: 2px solid rgba(29, 185, 84, 0.3);
-	box-shadow: 0 12px 48px rgba(29, 185, 84, 0.15);
-}
-
-.glass-card-live:hover {
-	background: rgba(29, 185, 84, 0.1);
-	border: 2px solid rgba(29, 185, 84, 0.5);
-	transform: translateY(-8px) scale(1.03);
-	box-shadow: 0 16px 64px rgba(29, 185, 84, 0.25);
-}
-
 /* Equalizer Animation */
 .equalizer {
 	display: flex;
@@ -198,11 +233,6 @@ body {
 .equalizer span:nth-child(4) { animation-delay: 0.3s; }
 .equalizer span:nth-child(5) { animation-delay: 0.4s; }
 
-@keyframes equalize {
-	0%, 100% { height: 5px; }
-	50% { height: 20px; }
-}
-
 /* Badge Styles */
 .badge-live {
 	background: linear-gradient(135deg, #1db954, #1ed760);
@@ -216,20 +246,10 @@ body {
 	animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
-	0%, 100% { transform: scale(1); }
-	50% { transform: scale(1.05); }
-}
-
 /* Spotify Logo Glow */
 .spotify-logo {
 	filter: drop-shadow(0 0 20px rgba(29, 185, 84, 0.6));
 	animation: logoGlow 3s ease-in-out infinite;
-}
-
-@keyframes logoGlow {
-	0%, 100% { filter: drop-shadow(0 0 20px rgba(29, 185, 84, 0.6)); }
-	50% { filter: drop-shadow(0 0 30px rgba(29, 185, 84, 0.9)); }
 }
 
 /* Track Card Hover Effect */
@@ -265,20 +285,6 @@ body {
 	box-shadow: 0 15px 40px rgba(29, 185, 84, 0.4);
 }
 
-/* Scroll Animation */
-.fade-in-up {
-	opacity: 0;
-	transform: translateY(30px);
-	animation: fadeInUp 0.6s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
 	width: 10px;
@@ -297,18 +303,6 @@ body {
 	background: linear-gradient(to bottom, #1ed760, #1db954);
 }
 
-/* Loading State */
-.skeleton {
-	background: linear-gradient(90deg, #1a1a2e 25%, #2a2a3e 50%, #1a1a2e 75%);
-	background-size: 200% 100%;
-	animation: loading 1.5s ease-in-out infinite;
-}
-
-@keyframes loading {
-	0% { background-position: 200% 0; }
-	100% { background-position: -200% 0; }
-}
-
 /* Stats Badge */
 .stat-badge {
 	background: rgba(29, 185, 84, 0.1);
@@ -319,14 +313,6 @@ body {
 }
 
 /* Pagination Styles */
-.pagination {
-	display: flex;
-	gap: 8px;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
 .page-btn {
 	background: rgba(20, 20, 30, 0.7);
 	backdrop-filter: blur(20px);
@@ -356,8 +342,19 @@ body {
 	cursor: not-allowed;
 }
 
-.page-info {
-	color: #888;
-	font-size: 14px;
-	padding: 0 10px;
+/* Mobile responsiveness improvements */
+@media (max-width: 640px) {
+	.equalizer {
+		height: 16px;
+		gap: 2px;
+	}
+
+	.equalizer span {
+		width: 3px;
+	}
+
+	@keyframes equalize {
+		0%, 100% { height: 4px; }
+		50% { height: 16px; }
+	}
 }
