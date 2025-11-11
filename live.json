@@ -1,15 +1,15 @@
 {
   "friends": [
     {
-      "timestamp": 1762869660028,
+      "timestamp": 1762870257607,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3gPJnLSvdL8xw9pCR1gj3s",
-        "name": "Dream",
+        "uri": "spotify:track:08YFtTCBPRO5WbAWupuB77",
+        "name": "Cinta di Garis Horizon",
         "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ca23c9153ff7f3b5d563dff3",
         "album": {
           "uri": "spotify:album:5jhaywps3SnnIIixJQsPHN",
@@ -17,7 +17,7 @@
         },
         "artist": {
           "uri": "spotify:artist:2l8I5pWUnfF7bMK1z6EJRk",
-          "name": "JKT48, Isyana Sarasvati"
+          "name": "JKT48"
         },
         "context": {
           "uri": "spotify:album:5jhaywps3SnnIIixJQsPHN",
