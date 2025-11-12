@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762962643009,
+      "timestamp": 1762963243452,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7D0RhFcb3CrfPuTJ0obrod",
-        "name": "Sparks",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a",
+        "uri": "spotify:track:0oTtnnedK0C4unALxVTPhz",
+        "name": "Mystery of Love (From the Original Motion Picture “Call Me by Your Name”)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27391a1c3c3d6fba1f63a010152",
         "album": {
-          "uri": "spotify:album:6ZG5lRT77aJ3btmArcykra",
-          "name": "Parachutes"
+          "uri": "spotify:album:2uMaCzN7a35J3I3qceso0c",
+          "name": "Mystery of Love (From the Original Motion Picture “Call Me by Your Name”)"
         },
         "artist": {
-          "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU",
-          "name": "Coldplay"
+          "uri": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c",
+          "name": "Sufjan Stevens"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
