@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762915856702,
+      "timestamp": 1762916457739,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:50CFciWIKcvhbcytOMqobp",
-        "name": "NXSTY BLOOD (Slowed + Reverb)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a38c77efb3e067616ff7fd4d",
+        "uri": "spotify:track:2BZCZSwWgGpBIfCuNnkEse",
+        "name": "Imperius (Slowed)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736116fe848ad4d26f09552d14",
         "album": {
-          "uri": "spotify:album:7dShW83Th9DTKh3w9L2WbX",
-          "name": "NXSTY BLOOD (Remixes)"
+          "uri": "spotify:album:6DC8w7wNY5KCtAE9PiYAId",
+          "name": "Imperius"
         },
         "artist": {
-          "uri": "spotify:artist:5gQXdVmzGuWYNiG1ZOFS7S",
-          "name": "Wels"
+          "uri": "spotify:artist:7p0HF87njbwrsLYQYFkwcn",
+          "name": "Caleb Bryant"
         },
         "context": {
           "uri": "spotify:playlist:3bw2CCnTjM9LLNwxRFnxok",
