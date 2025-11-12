@@ -67,14 +67,20 @@
 </script>
 
 <Motion
-	initial={{ opacity: 0, y: 20, scale: 0.95 }}
+	initial={{ opacity: 0, y: 30, scale: 0.9 }}
 	animate={{ opacity: 1, y: 0, scale: 1 }}
-	transition={{ delay: index * 0.08, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
+	transition={{
+		type: 'spring',
+		stiffness: 100,
+		damping: 15,
+		mass: 1,
+		delay: index * 0.1
+	}}
 	let:motion
 >
 	<div
 		use:motion
-		class="relative group overflow-hidden rounded-2xl transition-all duration-500 hover:scale-[1.02] cursor-pointer"
+		class="relative group overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:scale-[1.02] cursor-pointer"
 		style="background: linear-gradient(135deg, {palette.primary}15, {palette.secondary}15)"
 	>
 		<!-- Playful Background Effects -->
@@ -82,12 +88,12 @@
 		<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
 		<!-- Floating Sparkles -->
-		<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+		<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
 			<Sparkles class="w-4 h-4 text-yellow-300 animate-pulse" style="filter: drop-shadow(0 0 8px {palette.primary})" />
 		</div>
 
 		<!-- Animated Border Glow -->
-		<div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+		<div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out"
 			style="box-shadow: inset 0 0 20px {palette.primary}40, 0 0 30px {palette.primary}20">
 		</div>
 
@@ -100,7 +106,7 @@
 					rel="noopener noreferrer"
 					class="block"
 				>
-					<div class="relative overflow-hidden rounded-xl shadow-2xl transition-all duration-500 group-hover/album:rotate-2 group-hover/album:scale-105"
+					<div class="relative overflow-hidden rounded-xl shadow-2xl transition-all duration-700 ease-out group-hover/album:rotate-2 group-hover/album:scale-105"
 						style="box-shadow: 0 20px 40px {palette.primary}40">
 						<img
 							src={buddy.track?.imageUrl || ''}
@@ -109,11 +115,11 @@
 						/>
 
 						<!-- Gradient Overlay -->
-						<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover/album:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover/album:opacity-100 transition-opacity duration-500 ease-out"></div>
 
 						<!-- Play Button - Centered & Bouncy -->
-						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/album:opacity-100 transition-all duration-300">
-							<div class="rounded-full p-5 animate-bounce-slow transition-transform hover:scale-125"
+						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover/album:opacity-100 transition-all duration-500 ease-out">
+							<div class="rounded-full p-5 animate-bounce-slow transition-transform duration-300 ease-out hover:scale-125"
 								style="background: linear-gradient(135deg, {palette.primary}, {palette.secondary}); box-shadow: 0 0 30px {palette.primary}80">
 								<Play class="w-8 h-8 text-white fill-white drop-shadow-lg" />
 							</div>
@@ -137,7 +143,7 @@
 					rel="noopener noreferrer"
 					class="block"
 				>
-					<h3 class="font-black text-base leading-tight mb-1 line-clamp-2 group-hover:scale-105 transition-transform duration-300"
+					<h3 class="font-black text-base leading-tight mb-1 line-clamp-2 group-hover:scale-105 transition-transform duration-500 ease-out"
 						style="color: {palette.primary}; text-shadow: 0 0 20px {palette.primary}40">
 						{buddy.track?.name || ''}
 					</h3>
@@ -147,7 +153,7 @@
 					href={spotifyUrl(buddy.track?.artist?.uri)}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="block text-sm text-gray-300 hover:text-white transition line-clamp-1 font-semibold"
+					class="block text-sm text-gray-300 hover:text-white transition-colors duration-300 ease-out line-clamp-1 font-semibold"
 				>
 					{buddy.track?.artist?.name || ''}
 				</a>
@@ -156,7 +162,7 @@
 					href={spotifyUrl(buddy.track?.album?.uri)}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="block text-xs text-gray-500 hover:text-gray-400 transition line-clamp-1 italic"
+					class="block text-xs text-gray-500 hover:text-gray-400 transition-colors duration-300 ease-out line-clamp-1 italic"
 				>
 					{buddy.track?.album?.name || ''}
 				</a>
@@ -166,7 +172,7 @@
 					<div class="relative">
 						<img
 							src={avatarUrl}
-							class="w-9 h-9 rounded-full ring-2 transition-all duration-300"
+							class="w-9 h-9 rounded-full ring-2 transition-all duration-500 ease-out"
 							style="ring-color: {palette.primary}"
 							alt={userName}
 							onerror={(e) => (e.currentTarget as HTMLImageElement).src = avatarUrl}
@@ -187,7 +193,7 @@
 		</div>
 
 		<!-- Bottom Accent Line -->
-		<div class="h-1 w-full absolute bottom-0 left-0 transition-all duration-500 group-hover:h-2"
+		<div class="h-1 w-full absolute bottom-0 left-0 transition-all duration-700 ease-out group-hover:h-2"
 			style="background: linear-gradient(90deg, {palette.primary}, {palette.secondary})">
 		</div>
 	</div>

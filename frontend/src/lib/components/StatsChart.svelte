@@ -90,9 +90,14 @@
 
 {#if history.length > 0}
 	<Motion
-		initial={{ opacity: 0, y: 20, scale: 0.95 }}
+		initial={{ opacity: 0, y: 30, scale: 0.9 }}
 		animate={{ opacity: 1, y: 0, scale: 1 }}
-		transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
+		transition={{
+			type: 'spring',
+			stiffness: 100,
+			damping: 15,
+			mass: 1
+		}}
 		let:motion
 	>
 		<div use:motion class="relative overflow-hidden rounded-2xl p-5 group"
@@ -108,7 +113,7 @@
 			</div>
 
 			<!-- Animated Border Glow -->
-			<div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+			<div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out"
 				style="box-shadow: inset 0 0 30px {statColors.tracks.primary}30, 0 0 40px {statColors.tracks.primary}20">
 			</div>
 
@@ -128,17 +133,23 @@
 					<Motion
 						initial={{ opacity: 0, scale: 0.8, y: 20 }}
 						animate={{ opacity: 1, scale: 1, y: 0 }}
-						transition={{ delay: 0.1, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
+						transition={{
+							type: 'spring',
+							stiffness: 120,
+							damping: 12,
+							mass: 0.8,
+							delay: 0.1
+						}}
 						whileHover={{ scale: 1.08, rotate: 2 }}
 						let:motion
 					>
-						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-300 group/stat"
+						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-500 ease-out group/stat"
 							style="background: linear-gradient(135deg, {statColors.tracks.primary}20, {statColors.tracks.secondary}20)">
 							<div class="absolute inset-0 bg-gradient-to-br {statColors.tracks.gradient} opacity-60"></div>
 							<div class="absolute bottom-0 right-0 w-20 h-20 rounded-full blur-2xl opacity-50"
 								style="background: {statColors.tracks.primary}"></div>
 							<div class="relative z-10 flex flex-col items-center justify-center gap-2">
-								<Music class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-300" style="color: {statColors.tracks.primary}" />
+								<Music class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-500 ease-out" style="color: {statColors.tracks.primary}" />
 								<div class="text-3xl font-black" style="color: {statColors.tracks.primary}; text-shadow: 0 0 20px {statColors.tracks.primary}40">{history.length}</div>
 								<span class="text-xs text-gray-300 font-bold uppercase tracking-wide">Tracks</span>
 							</div>
@@ -148,17 +159,23 @@
 					<Motion
 						initial={{ opacity: 0, scale: 0.8, y: 20 }}
 						animate={{ opacity: 1, scale: 1, y: 0 }}
-						transition={{ delay: 0.2, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
+						transition={{
+							type: 'spring',
+							stiffness: 120,
+							damping: 12,
+							mass: 0.8,
+							delay: 0.2
+						}}
 						whileHover={{ scale: 1.08, rotate: -2 }}
 						let:motion
 					>
-						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-300 group/stat"
+						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-500 ease-out group/stat"
 							style="background: linear-gradient(135deg, {statColors.time.primary}20, {statColors.time.secondary}20)">
 							<div class="absolute inset-0 bg-gradient-to-br {statColors.time.gradient} opacity-60"></div>
 							<div class="absolute bottom-0 right-0 w-20 h-20 rounded-full blur-2xl opacity-50"
 								style="background: {statColors.time.primary}"></div>
 							<div class="relative z-10 flex flex-col items-center justify-center gap-2">
-								<Clock class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-300" style="color: {statColors.time.primary}" />
+								<Clock class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-500 ease-out" style="color: {statColors.time.primary}" />
 								<div class="text-3xl font-black" style="color: {statColors.time.primary}; text-shadow: 0 0 20px {statColors.time.primary}40">{hours}h {minutes}m</div>
 								<span class="text-xs text-gray-300 font-bold uppercase tracking-wide">Time</span>
 							</div>
@@ -168,17 +185,23 @@
 					<Motion
 						initial={{ opacity: 0, scale: 0.8, y: 20 }}
 						animate={{ opacity: 1, scale: 1, y: 0 }}
-						transition={{ delay: 0.3, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
+						transition={{
+							type: 'spring',
+							stiffness: 120,
+							damping: 12,
+							mass: 0.8,
+							delay: 0.3
+						}}
 						whileHover={{ scale: 1.08, rotate: 2 }}
 						let:motion
 					>
-						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-300 group/stat"
+						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-500 ease-out group/stat"
 							style="background: linear-gradient(135deg, {statColors.artists.primary}20, {statColors.artists.secondary}20)">
 							<div class="absolute inset-0 bg-gradient-to-br {statColors.artists.gradient} opacity-60"></div>
 							<div class="absolute bottom-0 right-0 w-20 h-20 rounded-full blur-2xl opacity-50"
 								style="background: {statColors.artists.primary}"></div>
 							<div class="relative z-10 flex flex-col items-center justify-center gap-2">
-								<Disc3 class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-300" style="color: {statColors.artists.primary}" />
+								<Disc3 class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-500 ease-out" style="color: {statColors.artists.primary}" />
 								<div class="text-3xl font-black" style="color: {statColors.artists.primary}; text-shadow: 0 0 20px {statColors.artists.primary}40">{totalArtists}</div>
 								<span class="text-xs text-gray-300 font-bold uppercase tracking-wide">Artists</span>
 							</div>
@@ -188,17 +211,23 @@
 					<Motion
 						initial={{ opacity: 0, scale: 0.8, y: 20 }}
 						animate={{ opacity: 1, scale: 1, y: 0 }}
-						transition={{ delay: 0.4, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
+						transition={{
+							type: 'spring',
+							stiffness: 120,
+							damping: 12,
+							mass: 0.8,
+							delay: 0.4
+						}}
 						whileHover={{ scale: 1.08, rotate: -2 }}
 						let:motion
 					>
-						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-300 group/stat"
+						<div use:motion class="relative overflow-hidden rounded-xl p-4 transition-all duration-500 ease-out group/stat"
 							style="background: linear-gradient(135deg, {statColors.listeners.primary}20, {statColors.listeners.secondary}20)">
 							<div class="absolute inset-0 bg-gradient-to-br {statColors.listeners.gradient} opacity-60"></div>
 							<div class="absolute bottom-0 right-0 w-20 h-20 rounded-full blur-2xl opacity-50"
 								style="background: {statColors.listeners.primary}"></div>
 							<div class="relative z-10 flex flex-col items-center justify-center gap-2">
-								<Trophy class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-300" style="color: {statColors.listeners.primary}" />
+								<Trophy class="w-6 h-6 transition-transform group-hover/stat:scale-125 duration-500 ease-out" style="color: {statColors.listeners.primary}" />
 								<div class="text-3xl font-black" style="color: {statColors.listeners.primary}; text-shadow: 0 0 20px {statColors.listeners.primary}40">{userStatsData.length}</div>
 								<span class="text-xs text-gray-300 font-bold uppercase tracking-wide">Listeners</span>
 							</div>
@@ -225,9 +254,9 @@
 							</div>
 							<div class="space-y-2">
 								{#each topTracks as track}
-									<div class="flex items-center gap-3 p-2 rounded-lg transition-all duration-300 hover:scale-105"
+									<div class="flex items-center gap-3 p-2 rounded-lg transition-all duration-500 ease-out hover:scale-105"
 										style="background: {statColors.tracks.primary}10">
-										<img src={track.imageUrl} class="w-12 h-12 rounded-lg shadow-lg flex-shrink-0" alt={track.track}
+										<img src={track.imageUrl} class="w-12 h-12 rounded-lg shadow-lg flex-shrink-0 transition-transform duration-500 ease-out" alt={track.track}
 											style="box-shadow: 0 4px 12px {statColors.tracks.primary}40" />
 										<div class="flex-1 min-w-0">
 											<div class="font-bold text-sm text-white truncate">{track.track}</div>
@@ -254,11 +283,11 @@
 						</div>
 						<div class="space-y-2">
 							{#each userStatsData as stat, index}
-								<div class="flex items-center gap-3 p-2 rounded-lg transition-all duration-300 hover:scale-105"
+								<div class="flex items-center gap-3 p-2 rounded-lg transition-all duration-500 ease-out hover:scale-105"
 									style="background: {statColors.listeners.primary}10">
 									<div class="flex items-center gap-3 min-w-0 flex-1">
 										<!-- Rank Badge -->
-										<div class="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full font-black text-sm"
+										<div class="w-8 h-8 flex items-center justify-center flex-shrink-0 rounded-full font-black text-sm transition-transform duration-500 ease-out"
 											style="background: linear-gradient(135deg, {statColors.listeners.primary}, {statColors.listeners.secondary})">
 											{#if index === 0}
 												<Trophy class="w-4 h-4 text-white" />
@@ -279,7 +308,7 @@
 									<div class="flex items-center gap-2 flex-shrink-0">
 										<div class="w-16 h-2 bg-white/10 rounded-full overflow-hidden">
 											<div
-												class="h-full rounded-full transition-all duration-500"
+												class="h-full rounded-full transition-all duration-700 ease-out"
 												style="width: {(stat.count / userStatsData[0].count) * 100}%; background: linear-gradient(90deg, {statColors.listeners.primary}, {statColors.listeners.secondary})"
 											></div>
 										</div>
