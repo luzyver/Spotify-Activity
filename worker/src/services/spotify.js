@@ -58,19 +58,26 @@ export async function getUserProfile(accessToken) {
 /**
  * Get recently played tracks from Spotify
  * @param {string} accessToken - Spotify access token
+ * @param {number|null} afterTimestamp - Optional unix timestamp (in milliseconds) to get tracks after this time
  * @returns {Promise<Array>} Array of recently played track items
  */
-export async function getRecentlyPlayed(accessToken) {
-	const response = await fetch(
-		'https://api.spotify.com/v1/me/player/recently-played?limit=50',
-		{
-			headers: {
-				Authorization: `Bearer ${accessToken}`,
-				'Accept': 'application/json',
-				'Content-Type': 'application/json; charset=utf-8',
-			},
-		}
-	);
+export async function getRecentlyPlayed(accessToken, afterTimestamp = null) {
+	// Build URL with optional after parameter
+	let url = 'https://api.spotify.com/v1/me/player/recently-played?limit=50';
+
+	// Convert milliseconds to seconds for Spotify API (uses unix timestamp in seconds)
+	if (afterTimestamp && afterTimestamp > 0) {
+		const afterSeconds = Math.floor(afterTimestamp / 1000);
+		url += `&after=${afterSeconds}`;
+	}
+
+	const response = await fetch(url, {
+		headers: {
+			Authorization: `Bearer ${accessToken}`,
+			'Accept': 'application/json',
+			'Content-Type': 'application/json; charset=utf-8',
+		},
+	});
 
 	if (!response.ok) return [];
 

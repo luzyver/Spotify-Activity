@@ -37,12 +37,15 @@ export async function handleClearHistory(env) {
 
 		// Clear history by setting it to empty array
 		const emptyHistory = [];
+		const clearTimestamp = Date.now();
+		const lastClearData = { lastClearTimestamp: clearTimestamp };
 		const commitMsg = '🗑️ Clear history (daily reset) [skip ci]';
 
 		await github.updateMultipleGitHubFiles(
 			githubRepo,
 			[
-				{ path: 'history.json', content: emptyHistory }
+				{ path: 'history.json', content: emptyHistory },
+				{ path: 'last-clear.json', content: lastClearData }
 			],
 			commitMsg,
 			githubToken
@@ -151,12 +154,15 @@ export async function handleClearHistoryEndpoint(request, env, corsHeaders) {
 
 		// Clear history by setting it to empty array
 		const emptyHistory = [];
+		const clearTimestamp = Date.now();
+		const lastClearData = { lastClearTimestamp: clearTimestamp };
 		const commitMsg = '🗑️ Clear history (daily reset) [skip ci]';
 
 		await github.updateMultipleGitHubFiles(
 			githubRepo,
 			[
-				{ path: 'history.json', content: emptyHistory }
+				{ path: 'history.json', content: emptyHistory },
+				{ path: 'last-clear.json', content: lastClearData }
 			],
 			commitMsg,
 			githubToken

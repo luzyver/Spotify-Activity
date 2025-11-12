@@ -41,6 +41,15 @@ export async function handleScheduled(env) {
 			githubToken
 		);
 
+		// Load last clear timestamp
+		const { content: lastClearData = { lastClearTimestamp: 0 } } = await github.getGitHubFile(
+			githubRepo,
+			'last-clear.json',
+			githubToken
+		);
+		const lastClearTimestamp = lastClearData.lastClearTimestamp || 0;
+		console.log(`Last clear timestamp: ${lastClearTimestamp} (${new Date(lastClearTimestamp).toISOString()})`);
+
 		// Clean history from any double-encoding issues
 		const history = processor.cleanHistory(rawHistory);
 		console.log(`Loaded ${history.length} history entries`);
@@ -67,8 +76,8 @@ export async function handleScheduled(env) {
 					continue;
 				}
 
-				// Get recent tracks
-				const recentTracks = await spotify.getRecentlyPlayed(accessToken);
+				// Get recent tracks (only fetch tracks after last clear timestamp)
+				const recentTracks = await spotify.getRecentlyPlayed(accessToken, lastClearTimestamp);
 				const addedCount = processor.processRecentTracks(
 					recentTracks,
 					userProfile,
@@ -76,7 +85,7 @@ export async function handleScheduled(env) {
 				);
 				totalNewTracks += addedCount;
 				console.log(
-					`Recent: ${recentTracks.length} fetched, ${addedCount} new`
+					`Recent: ${recentTracks.length} fetched, ${addedCount} new (after: ${new Date(lastClearTimestamp).toISOString()})`
 				);
 
 				// Get currently playing
