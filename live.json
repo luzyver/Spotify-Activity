@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762917056592,
+      "timestamp": 1762917656747,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5YVNmwohNrDoo4f8EQ5htK",
-        "name": "COWBELL WARRIOR!",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27329b6bef6e16f5fa771be9d69",
+        "uri": "spotify:track:0Y5NA0lTbus2AoeMy12hEP",
+        "name": "Lay All Your Love on Me (Slowed and Reverb)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b72d78bee26f351ddd149981",
         "album": {
-          "uri": "spotify:album:42sN2l32ODOPtJGQLsoukt",
-          "name": "COWBELL WARRIOR!"
+          "uri": "spotify:album:2YKsVTzu9M9I3UtOxL6Xux",
+          "name": "Lay All Your Love on Me (Slowed and Reverb)"
         },
         "artist": {
-          "uri": "spotify:artist:14uo609t1MvRGZcskySt9R",
-          "name": "SXMPRA"
+          "uri": "spotify:artist:0mEDUy1o0aLmvkAQnhsRGG",
+          "name": "Putin's Bird"
         },
         "context": {
           "uri": "spotify:playlist:3bw2CCnTjM9LLNwxRFnxok",
