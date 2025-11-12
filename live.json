@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1762942255627,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:7zOVh5fGpEwSbZd0g9z80B",
+        "name": "Satu Bulan",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb1e5f7d0942bf9196c1e711",
+        "album": {
+          "uri": "spotify:album:5K8xqV7MCe3UIfedVAlZSe",
+          "name": "Terlintas"
+        },
+        "artist": {
+          "uri": "spotify:artist:47z98pKd71yIbgXwe9LPVC",
+          "name": "Bernadya"
+        },
+        "context": {
+          "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
