@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762938057938,
+      "timestamp": 1762938655952,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0ZEYRVISCaqz5yamWZWzaA",
-        "name": "Melukis Senja",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27337f883f98514a0852046e2f0",
+        "uri": "spotify:track:2k9ZZcEQVxoXd2OYr8iiQ8",
+        "name": "Hal Indah Butuh Waktu Untuk Datang",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739002fa8e2512b38d1417dda2",
         "album": {
-          "uri": "spotify:album:0jLBLt7jIjOz5n3jDiL2zn",
-          "name": "Melukis Senja"
+          "uri": "spotify:album:7vNzHBid2tuWdslLygsqGK",
+          "name": "Hal Indah Butuh Waktu Untuk Datang"
         },
         "artist": {
-          "uri": "spotify:artist:6Ifk2cbxyVzT41jLexYCas",
-          "name": "Budi Doremi"
+          "uri": "spotify:artist:7pFWMC2E7h8eL3SZyHRsRq",
+          "name": "Idgitaf"
         },
         "context": {
           "uri": "spotify:playlist:0kUx21t2ih7CXKcBSiKUUu",
