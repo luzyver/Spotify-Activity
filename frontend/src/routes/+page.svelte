@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+
   import Particles from '$lib/components/Particles.svelte';
   import Equalizer from '$lib/components/Equalizer.svelte';
   import NowPlayingCard from '$lib/components/NowPlayingCard.svelte';
@@ -7,43 +7,20 @@
   import HistoryCard from '$lib/components/HistoryCard.svelte';
   import StatsChart from '$lib/components/StatsChart.svelte';
   import Button from '$lib/components/Button.svelte';
-  import { ITEMS_PER_PAGE, API_ENDPOINTS } from '$lib/config';
+  import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, Music2 } from 'lucide-svelte';
 
-  let nowPlaying = $state<NowPlayingBuddy[]>([]);
-  let history = $state<HistoryItem[]>([]);
+  // Prefetched data from +page.ts load
+  let { data } = $props();
+
+  let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
+  let history = $state<HistoryItem[]>(data?.history ?? []);
   let currentPage = $state(1);
   let totalPages = $derived(Math.ceil(history.length / ITEMS_PER_PAGE));
   let paginatedHistory = $derived(
     history.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
   );
-
-  async function loadNowPlaying() {
-    try {
-      const response = await fetch(API_ENDPOINTS.LIVE, {
-        cache: 'no-cache',
-        mode: 'cors',
-      });
-      const data = await response.json();
-      nowPlaying = data.friends || [];
-    } catch (error) {
-      console.error('Error loading now playing:', error);
-    }
-  }
-
-  async function loadHistory() {
-    try {
-      const response = await fetch(API_ENDPOINTS.HISTORY, {
-        cache: 'no-cache',
-        mode: 'cors',
-      });
-      const data = await response.json();
-      history = data.sort((a: HistoryItem, b: HistoryItem) => b.timestamp - a.timestamp);
-    } catch (error) {
-      console.error('Error loading history:', error);
-    }
-  }
 
   function goToPage(page: number) {
     if (page < 1 || page > totalPages) return;
@@ -53,11 +30,6 @@
       .getElementById('history-section')
       ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-
-  onMount(() => {
-    loadNowPlaying();
-    loadHistory();
-  });
 </script>
 
 <Particles />
@@ -135,7 +107,7 @@
 
           {#if history.length > 0}
             <!-- Masonry Grid -->
-            <div class="masonry-grid mb-4 sm:mb-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 mb-4 sm:mb-6">
               {#each paginatedHistory as item, index (item.uri + ':' + item.timestamp)}
                 <HistoryCard {item} {index} {currentPage} itemsPerPage={ITEMS_PER_PAGE} />
               {/each}

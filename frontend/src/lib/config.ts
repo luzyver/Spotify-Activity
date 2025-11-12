@@ -14,7 +14,7 @@ export const TRACKED_USERS: Record<string, { name: string; initial: string; colo
 };
 
 // Pagination settings
-export const ITEMS_PER_PAGE = 9; // 3 kolom x 3 baris
+export const ITEMS_PER_PAGE = 12; // 4 kolom x 3 baris
 
 // API endpoints
 export const API_ENDPOINTS = {

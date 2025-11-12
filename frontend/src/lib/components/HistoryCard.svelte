@@ -60,7 +60,7 @@
       style="box-shadow: inset 0 0 20px {palette.primary}40, 0 0 30px {palette.primary}20"
     ></div>
 
-    <div class="relative z-10 p-3 sm:p-4">
+    <div class="relative z-10 p-2 sm:p-3">
       <!-- Album Art with Playful Effects -->
       <div class="group/album relative mb-3">
         <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
