@@ -9,12 +9,11 @@
 	import Button from '$lib/components/ui/button.svelte';
 	import { ITEMS_PER_PAGE, API_ENDPOINTS } from '$lib/config';
 	import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
-	import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, Music2, Sun, Moon } from 'lucide-svelte';
+	import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, Music2 } from 'lucide-svelte';
 
 	let nowPlaying = $state<NowPlayingBuddy[]>([]);
 	let history = $state<HistoryItem[]>([]);
 	let currentPage = $state(1);
-	let isDarkMode = $state(true);
 	let totalPages = $derived(Math.ceil(history.length / ITEMS_PER_PAGE));
 	let paginatedHistory = $derived(
 		history.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
@@ -41,7 +40,6 @@
 			});
 			const data = await response.json();
 			history = data.sort((a: HistoryItem, b: HistoryItem) => b.timestamp - a.timestamp);
-			totalTracks = history.length;
 		} catch (error) {
 			console.error('Error loading history:', error);
 		}
@@ -54,20 +52,7 @@
 		document.getElementById('history-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	}
 
-	function toggleDarkMode() {
-		isDarkMode = !isDarkMode;
-		localStorage.setItem('darkMode', isDarkMode ? 'dark' : 'light');
-		document.documentElement.classList.toggle('light-mode', !isDarkMode);
-	}
-
 	onMount(() => {
-		// Load dark mode preference
-		const savedMode = localStorage.getItem('darkMode');
-		if (savedMode) {
-			isDarkMode = savedMode === 'dark';
-			document.documentElement.classList.toggle('light-mode', !isDarkMode);
-		}
-
 		loadNowPlaying();
 		loadHistory();
 	});
@@ -89,19 +74,6 @@
 						<p class="text-gray-500 text-[10px] sm:text-xs hidden sm:block">Real-time listening</p>
 					</div>
 				</div>
-				<Button
-					variant="ghost"
-					size="icon"
-					onclick={toggleDarkMode}
-					class="h-8 w-8 sm:h-10 sm:w-10"
-					aria-label="Toggle dark mode"
-				>
-					{#if isDarkMode}
-						<Sun class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
-					{:else}
-						<Moon class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
-					{/if}
-				</Button>
 			</div>
 		</div>
 	</header>
