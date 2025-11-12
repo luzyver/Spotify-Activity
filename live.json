@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1762915256835,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:6bD8pND99RVeG7Z5wOFvAX",
+        "name": "Me Gustas Tu - Slowed and Reverb Version",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273352eed7620c91740b0d164b4",
+        "album": {
+          "uri": "spotify:album:4t65O9PkElS5GgYHp3Xvsb",
+          "name": "Me Gustas Tu EP"
+        },
+        "artist": {
+          "uri": "spotify:artist:6wH6iStAh4KIaWfuhf0NYM",
+          "name": "Manu Chao"
+        },
+        "context": {
+          "uri": "spotify:playlist:3bw2CCnTjM9LLNwxRFnxok",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
