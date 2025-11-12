@@ -336,6 +336,7 @@ async function updateMultipleGitHubFiles(repo, files, message, token) {
 // Helper function to generate varied commit messages
 function getRandomCommitMessage(newTracks, liveCount) {
 	const messages = [
+		// Standard sync messages
 		`🎵 Update Spotify data [skip ci]`,
 		`🎧 Sync music activity [skip ci]`,
 		`✨ Fresh Spotify update [skip ci]`,
@@ -345,7 +346,50 @@ function getRandomCommitMessage(newTracks, liveCount) {
 		`🔄 Music data refresh [skip ci]`,
 		`📻 Update play history and status [skip ci]`,
 		`🎼 Sync Spotify activity [skip ci]`,
-		`💫 Latest music update [skip ci]`
+		`💫 Latest music update [skip ci]`,
+
+		// Musical themed
+		`🎸 Rocking the playlist updates [skip ci]`,
+		`🎹 Harmonizing the data sync [skip ci]`,
+		`🥁 Drumroll... music updated! [skip ci]`,
+		`🎺 Trumpeting new listening data [skip ci]`,
+		`🎻 Fine-tuning the track history [skip ci]`,
+		`🎤 Dropping fresh beats data [skip ci]`,
+
+		// Creative/Fun messages
+		`🌟 Vibing with latest tracks [skip ci]`,
+		`🚀 Launching music updates [skip ci]`,
+		`⚡ Lightning-fast sync complete [skip ci]`,
+		`🌈 Rainbow of musical updates [skip ci]`,
+		`🔥 Hot tracks coming through [skip ci]`,
+		`💎 Polishing the music data [skip ci]`,
+		`🌙 Moonlight serenade sync [skip ci]`,
+		`☀️ Sunshine music update [skip ci]`,
+		`🎯 Bulls-eye track sync [skip ci]`,
+		`🎨 Painting with sound data [skip ci]`,
+
+		// Time-based messages
+		`⏰ Timely music refresh [skip ci]`,
+		`🕐 Hourly beats update [skip ci]`,
+		`📅 Daily rhythm sync [skip ci]`,
+		`⏳ Time flies, tracks sync [skip ci]`,
+
+		// Tech-themed
+		`🤖 Bot updating musical database [skip ci]`,
+		`💻 Compiling fresh playlists [skip ci]`,
+		`🔧 Maintaining the groove [skip ci]`,
+		`⚙️ Automated music pipeline [skip ci]`,
+		`📡 Broadcasting latest jams [skip ci]`,
+
+		// Playful messages
+		`🎪 The music show goes on [skip ci]`,
+		`🎢 Rollercoaster of tunes updated [skip ci]`,
+		`🎭 Drama-free data sync [skip ci]`,
+		`🎬 Action! Music rolling [skip ci]`,
+		`🎮 Level up: tracks synced [skip ci]`,
+		`🏆 Trophy unlocked: sync complete [skip ci]`,
+		`🎉 Celebrating new beats [skip ci]`,
+		`🎊 Party time: data updated [skip ci]`
 	];
 
 	// Add dynamic messages based on activity
@@ -353,14 +397,23 @@ function getRandomCommitMessage(newTracks, liveCount) {
 		messages.push(
 			`🎵 Add ${newTracks} new track${newTracks !== 1 ? 's' : ''} [skip ci]`,
 			`📝 ${newTracks} track${newTracks !== 1 ? 's' : ''} added to history [skip ci]`,
-			`🎧 Logged ${newTracks} new track${newTracks !== 1 ? 's' : ''} [skip ci]`
+			`🎧 Logged ${newTracks} new track${newTracks !== 1 ? 's' : ''} [skip ci]`,
+			`✅ ${newTracks} fresh track${newTracks !== 1 ? 's' : ''} recorded [skip ci]`,
+			`🆕 ${newTracks} track${newTracks !== 1 ? 's' : ''} joined the party [skip ci]`,
+			`📥 Downloaded ${newTracks} track${newTracks !== 1 ? 's' : ''} to history [skip ci]`,
+			`🌊 Wave of ${newTracks} new track${newTracks !== 1 ? 's' : ''} [skip ci]`,
+			`💝 ${newTracks} musical gift${newTracks !== 1 ? 's' : ''} received [skip ci]`
 		);
 	}
 
 	if (liveCount > 0) {
 		messages.push(
 			`🔴 ${liveCount} user${liveCount !== 1 ? 's' : ''} listening now [skip ci]`,
-			`▶️ Live: ${liveCount} active listener${liveCount !== 1 ? 's' : ''} [skip ci]`
+			`▶️ Live: ${liveCount} active listener${liveCount !== 1 ? 's' : ''} [skip ci]`,
+			`🎧 ${liveCount} vibe${liveCount !== 1 ? 's' : ''} in progress [skip ci]`,
+			`🔊 ${liveCount} soul${liveCount !== 1 ? 's' : ''} tuned in [skip ci]`,
+			`🎶 ${liveCount} melody maker${liveCount !== 1 ? 's' : ''} online [skip ci]`,
+			`👂 ${liveCount} ear${liveCount !== 1 ? 's' : ''} on the music [skip ci]`
 		);
 	}
 
@@ -726,11 +779,226 @@ export default {
 		// Clear history endpoint
 		if ((request.method === 'GET' || request.method === 'POST') && pathname === '/clear-history') {
 			try {
-				console.log('🗑️  Clearing history...');
+				console.log('🗑️  Clearing history request received...');
 
 				// Validate environment variables
 				if (!env.GITHUB_TOKEN) throw new Error('GITHUB_TOKEN not set');
 				if (!env.GITHUB_REPO) throw new Error('GITHUB_REPO not set');
+				if (!env.CLEAR_HISTORY_PASSWORD) throw new Error('CLEAR_HISTORY_PASSWORD not configured');
+
+				// Check password authentication
+				const providedPassword = url.searchParams.get('password') ||
+					request.headers.get('X-Clear-Password') ||
+					request.headers.get('Authorization')?.replace('Bearer ', '');
+
+				if (!providedPassword) {
+					console.log('❌ No password provided');
+
+					// If accessed from browser (GET without password), show HTML form
+					if (request.method === 'GET' && request.headers.get('Accept')?.includes('text/html')) {
+						return new Response(`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clear History - Authentication Required</title>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+		}
+		.container {
+			background: white;
+			padding: 40px;
+			border-radius: 16px;
+			box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+			max-width: 400px;
+			width: 100%;
+		}
+		h1 {
+			color: #333;
+			margin-bottom: 10px;
+			font-size: 24px;
+		}
+		p {
+			color: #666;
+			margin-bottom: 30px;
+			font-size: 14px;
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 8px;
+			color: #333;
+			font-weight: 500;
+			font-size: 14px;
+		}
+		input[type="password"] {
+			width: 100%;
+			padding: 12px 16px;
+			border: 2px solid #e0e0e0;
+			border-radius: 8px;
+			font-size: 16px;
+			transition: border-color 0.3s;
+		}
+		input[type="password"]:focus {
+			outline: none;
+			border-color: #667eea;
+		}
+		button {
+			width: 100%;
+			padding: 14px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border: none;
+			border-radius: 8px;
+			font-size: 16px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: transform 0.2s, box-shadow 0.2s;
+		}
+		button:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+		}
+		button:active {
+			transform: translateY(0);
+		}
+		.icon {
+			font-size: 48px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		#message {
+			margin-top: 20px;
+			padding: 12px;
+			border-radius: 8px;
+			font-size: 14px;
+			display: none;
+		}
+		#message.success {
+			background: #d4edda;
+			color: #155724;
+			border: 1px solid #c3e6cb;
+		}
+		#message.error {
+			background: #f8d7da;
+			color: #721c24;
+			border: 1px solid #f5c6cb;
+		}
+		.loading {
+			display: none;
+			text-align: center;
+			margin-top: 10px;
+			color: #667eea;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="icon">🗑️</div>
+		<h1>Clear History</h1>
+		<p>Enter password to clear listening history</p>
+
+		<form id="clearForm">
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required placeholder="Enter password" autocomplete="off">
+			</div>
+			<button type="submit">Clear History</button>
+		</form>
+
+		<div class="loading" id="loading">⏳ Processing...</div>
+		<div id="message"></div>
+	</div>
+
+	<script>
+		document.getElementById('clearForm').addEventListener('submit', async (e) => {
+			e.preventDefault();
+
+			const password = document.getElementById('password').value;
+			const button = e.target.querySelector('button');
+			const loading = document.getElementById('loading');
+			const message = document.getElementById('message');
+
+			// Reset
+			message.style.display = 'none';
+			button.disabled = true;
+			loading.style.display = 'block';
+
+			try {
+				const response = await fetch('/clear-history?password=' + encodeURIComponent(password), {
+					method: 'POST'
+				});
+
+				const data = await response.json();
+
+				if (data.success) {
+					message.className = 'success';
+					message.textContent = '✅ ' + data.message + (data.itemsRemoved ? ' (' + data.itemsRemoved + ' items removed)' : '');
+					document.getElementById('password').value = '';
+				} else {
+					message.className = 'error';
+					message.textContent = '❌ ' + data.error;
+				}
+			} catch (error) {
+				message.className = 'error';
+				message.textContent = '❌ Network error: ' + error.message;
+			} finally {
+				message.style.display = 'block';
+				button.disabled = false;
+				loading.style.display = 'none';
+			}
+		});
+	</script>
+</body>
+</html>
+						`, {
+							status: 200,
+							headers: {
+								'Content-Type': 'text/html',
+								...corsHeaders
+							}
+						});
+					}
+
+					// API request without password
+					return new Response(JSON.stringify({
+						success: false,
+						error: 'Password required. Use ?password=YOUR_PASSWORD or X-Clear-Password header'
+					}), {
+						status: 401,
+						headers: {
+							'Content-Type': 'application/json',
+							...corsHeaders
+						}
+					});
+				}
+
+				if (providedPassword !== env.CLEAR_HISTORY_PASSWORD) {
+					console.log('❌ Invalid password provided');
+					return new Response(JSON.stringify({
+						success: false,
+						error: 'Invalid password'
+					}), {
+						status: 403,
+						headers: {
+							'Content-Type': 'application/json',
+							...corsHeaders
+						}
+					});
+				}
+
+				console.log('✅ Password authenticated, clearing history...');
 
 				const githubToken = env.GITHUB_TOKEN;
 				const githubRepo = env.GITHUB_REPO;
