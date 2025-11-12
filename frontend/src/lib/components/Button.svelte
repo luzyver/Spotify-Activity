@@ -22,7 +22,7 @@
   const variants = {
     default: 'bg-[#1db954] text-white hover:bg-[#1db954]/90 shadow-md shadow-[#1db954]/20',
     ghost: 'hover:bg-white/10 hover:text-white',
-    outline: 'border border-white/20 hover:bg_white/10',
+    outline: 'border border-white/20 hover:bg-white/10',
   };
 
   const sizes = {

@@ -39,7 +39,13 @@ export async function handleClearHistory(env) {
 		const emptyHistory = [];
 		const clearTimestamp = Date.now();
 		const lastClearData = { lastClearTimestamp: clearTimestamp };
-		const commitMsg = '🗑️ Clear history (daily reset) [skip ci]';
+		// Format date as ddmmyyyy (UTC)
+		const now = new Date(clearTimestamp);
+		const dd = String(now.getUTCDate()).padStart(2, '0');
+		const mm = String(now.getUTCMonth() + 1).padStart(2, '0');
+		const yyyy = now.getUTCFullYear();
+		const dateTag = `${dd}${mm}${yyyy}`;
+		const commitMsg = `🗑️ [${dateTag}] Clear history (daily reset) [skip ci]`;
 
 		await github.updateMultipleGitHubFiles(
 			githubRepo,
@@ -156,7 +162,13 @@ export async function handleClearHistoryEndpoint(request, env, corsHeaders) {
 		const emptyHistory = [];
 		const clearTimestamp = Date.now();
 		const lastClearData = { lastClearTimestamp: clearTimestamp };
-		const commitMsg = '🗑️ Clear history (daily reset) [skip ci]';
+		// Format date as ddmmyyyy (UTC)
+		const now = new Date(clearTimestamp);
+		const dd = String(now.getUTCDate()).padStart(2, '0');
+		const mm = String(now.getUTCMonth() + 1).padStart(2, '0');
+		const yyyy = now.getUTCFullYear();
+		const dateTag = `${dd}${mm}${yyyy}`;
+		const commitMsg = `🗑️ [${dateTag}] Clear history (daily reset) [skip ci]`;
 
 		await github.updateMultipleGitHubFiles(
 			githubRepo,
