@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762913456577,
+      "timestamp": 1762914056597,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1nHHvpO3so53lVsiWCTzHk",
-        "name": "Rumah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d91aaa7cfb1c1d64eeef4c39",
+        "uri": "spotify:track:649caSG2In3niiQZhbENnQ",
+        "name": "Jangan Pernah Berakhir",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739fcac36a93cb67ea57dcc677",
         "album": {
-          "uri": "spotify:album:1NN5iqgzE9RaMLjNqOEiXn",
-          "name": "Rumah"
+          "uri": "spotify:album:0AmCtqRruAWaNgL3Uy28RD",
+          "name": "Akustik Dari Hati"
         },
         "artist": {
-          "uri": "spotify:artist:1y46m0kIaKwnodL0ElvQIs",
-          "name": "Salma Salsabil"
+          "uri": "spotify:artist:76gVDaj7ndXjcexm4tTlPo",
+          "name": "Tya Subiakto, Alex Kuple"
         },
         "context": {
           "uri": "spotify:playlist:0kUx21t2ih7CXKcBSiKUUu",
