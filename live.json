@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762975842844,
+      "timestamp": 1762976442790,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6IPwKM3fUUzlElbvKw2sKl",
-        "name": "we fell in love in october",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d6839051c4760457e1a60b2a",
+        "uri": "spotify:track:2u4XZR5A8cRPTPxBLJbAFC",
+        "name": "prom dress",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e9f04db53bead9eae3e2723f",
         "album": {
-          "uri": "spotify:album:7vud0sY43VTv28MbWiglDa",
-          "name": "we fell in love in october / October Passed Me By"
+          "uri": "spotify:album:7uao4FMrfz8x7lYFrOJb6C",
+          "name": "the masquerade"
         },
         "artist": {
-          "uri": "spotify:artist:3uwAm6vQy7kWPS2bciKWx9",
-          "name": "girl in red"
+          "uri": "spotify:artist:0HthCchcL0kVLHTr113Vk1",
+          "name": "mxmtoon"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
