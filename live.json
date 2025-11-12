@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1762936855632,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:2i2vxlQUlvrNtVuEovaZvq",
+        "name": "Jutaan Salah, Milyaran Maaf",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732257def8f00b7e99d4f534f2",
+        "album": {
+          "uri": "spotify:album:2pBxYlubqhBs9IXMqJQEde",
+          "name": "Banyak Canda, Tapi Serius"
+        },
+        "artist": {
+          "uri": "spotify:artist:327ipGIr9bD3MkLb2eucqC",
+          "name": "Suara Kayu"
+        },
+        "context": {
+          "uri": "spotify:playlist:0kUx21t2ih7CXKcBSiKUUu",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
