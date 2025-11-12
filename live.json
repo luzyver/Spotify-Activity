@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762980043315,
+      "timestamp": 1762980643648,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:00RLNHc2jkEjUoCUlFgPVT",
-        "name": "welcome and goodbye",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ec5c5ec0da8942e4b03254f3",
+        "uri": "spotify:track:2xhGZ3WzOa3tir28y7Cb88",
+        "name": "Falling for U",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273faa57568c0d25c2c50d3f245",
         "album": {
-          "uri": "spotify:album:0hZJDoAmB6xVegy0o1eAZd",
-          "name": "welcome and goodbye"
+          "uri": "spotify:album:3PUmELve1Jt5EdFU6cv8Hb",
+          "name": "Falling for U"
         },
         "artist": {
-          "uri": "spotify:artist:0qZyvjwZauLmrobrpJmvib",
-          "name": "Dream, Ivory"
+          "uri": "spotify:artist:7gvbCoLA8lJUktp8G2xIRR",
+          "name": "Peachy!, mxmtoon"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
