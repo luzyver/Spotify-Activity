@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762911656503,
+      "timestamp": 1762912256665,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1ZPVEo8RfmrEz8YAD5n6rW",
-        "name": "Lantas",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b1d3ef29ee15a18842973471",
+        "uri": "spotify:track:60re3Ru2vTJ7Ek0vD8uJGN",
+        "name": "Hati Lain Di Hatimu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731ac2060277574d5710223b20",
         "album": {
-          "uri": "spotify:album:17vUW6koeUkV58uYfkK6G3",
-          "name": "Sentimental"
+          "uri": "spotify:album:2HNKo2vMGhc9wON4NDfb04",
+          "name": "ASHER"
         },
         "artist": {
-          "uri": "spotify:artist:3tMTXQyRrPmMyHv5SoC0TV",
-          "name": "Juicy Luicy"
+          "uri": "spotify:artist:6FTLayBxjkQeanFdUusk1I",
+          "name": "Fabio Asher"
         },
         "context": {
           "uri": "spotify:playlist:0kUx21t2ih7CXKcBSiKUUu",
