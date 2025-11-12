@@ -5,34 +5,20 @@
 	import NowPlayingCard from '$lib/components/NowPlayingCard.svelte';
 	import EmptyState from '$lib/components/EmptyState.svelte';
 	import HistoryCard from '$lib/components/HistoryCard.svelte';
+	import StatsChart from '$lib/components/StatsChart.svelte';
+	import Button from '$lib/components/ui/button.svelte';
 	import { ITEMS_PER_PAGE, API_ENDPOINTS } from '$lib/config';
-	import { getUserColor } from '$lib/utils';
 	import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
+	import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, Music2, Sun, Moon } from 'lucide-svelte';
 
 	let nowPlaying = $state<NowPlayingBuddy[]>([]);
 	let history = $state<HistoryItem[]>([]);
-	let totalTracks = $state(0);
 	let currentPage = $state(1);
+	let isDarkMode = $state(true);
 	let totalPages = $derived(Math.ceil(history.length / ITEMS_PER_PAGE));
 	let paginatedHistory = $derived(
 		history.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
 	);
-
-	// User stats
-	let userStats = $derived.by(() => {
-		const stats: Record<string, { count: number; name: string; color: string }> = {};
-		history.forEach((item) => {
-			if (!stats[item.userId]) {
-				stats[item.userId] = {
-					count: 0,
-					name: item.user,
-					color: getUserColor(item.userId)
-				};
-			}
-			stats[item.userId].count++;
-		});
-		return Object.values(stats);
-	});
 
 	async function loadNowPlaying() {
 		try {
@@ -68,7 +54,20 @@
 		document.getElementById('history-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	}
 
+	function toggleDarkMode() {
+		isDarkMode = !isDarkMode;
+		localStorage.setItem('darkMode', isDarkMode ? 'dark' : 'light');
+		document.documentElement.classList.toggle('light-mode', !isDarkMode);
+	}
+
 	onMount(() => {
+		// Load dark mode preference
+		const savedMode = localStorage.getItem('darkMode');
+		if (savedMode) {
+			isDarkMode = savedMode === 'dark';
+			document.documentElement.classList.toggle('light-mode', !isDarkMode);
+		}
+
 		loadNowPlaying();
 		loadHistory();
 	});
@@ -76,156 +75,157 @@
 
 <Particles />
 
-<div class="container mx-auto px-4 sm:px-6 py-4 sm:py-6 relative z-10 max-w-[1400px]">
-	<!-- Header - More Compact -->
-	<header class="text-center mb-8 sm:mb-12 scale-in sticky top-0 z-30 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/95 to-transparent py-4 sm:py-6 backdrop-blur-sm">
-		<div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-			<svg class="spotify-logo w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" viewBox="0 0 24 24" fill="#1db954">
-				<path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-			</svg>
-			<h1 class="text-2xl sm:text-4xl md:text-5xl font-black gradient-text">Spotify Activity</h1>
-		</div>
-		<p class="text-gray-400 text-sm sm:text-base mb-3">Real-time music listening activity</p>
-		<div class="flex flex-wrap justify-center gap-2 sm:gap-3">
-			<div class="stat-badge-modern">
-				<span class="text-[#1db954] font-bold text-sm sm:text-base">{totalTracks}</span>
-				<span class="text-gray-400 text-xs sm:text-sm ml-1.5">tracks</span>
-			</div>
-			{#each userStats as stat}
-				<div class="stat-badge-modern">
-					<span class="font-bold text-sm sm:text-base" style="color: {stat.color}">{stat.count}</span>
-					<span class="text-gray-400 text-xs sm:text-sm ml-1.5">{stat.name}</span>
+<div class="min-h-screen relative z-10">
+	<!-- Compact Header -->
+	<header class="sticky top-0 z-30 bg-[#0a0a0a]/95 backdrop-blur-md border-b border-white/5">
+		<div class="w-full px-3 sm:px-6 py-3 sm:py-4">
+			<div class="flex items-center justify-between">
+				<div class="flex items-center gap-2 sm:gap-3">
+					<svg class="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0" viewBox="0 0 24 24" fill="#1db954">
+						<path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+					</svg>
+					<div>
+						<h1 class="text-base sm:text-xl lg:text-2xl font-black gradient-text">Spotify Activity</h1>
+						<p class="text-gray-500 text-[10px] sm:text-xs hidden sm:block">Real-time listening</p>
+					</div>
 				</div>
-			{/each}
+				<Button
+					variant="ghost"
+					size="icon"
+					onclick={toggleDarkMode}
+					class="h-8 w-8 sm:h-10 sm:w-10"
+					aria-label="Toggle dark mode"
+				>
+					{#if isDarkMode}
+						<Sun class="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400" />
+					{:else}
+						<Moon class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
+					{/if}
+				</Button>
+			</div>
 		</div>
 	</header>
 
-	<!-- Now Playing Section -->
-	<section class="mb-12 sm:mb-16">
-		<div class="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-			<Equalizer />
-			<h2 class="text-xl sm:text-2xl font-bold">Now Playing</h2>
-		</div>
-
-		<!-- Mobile: Horizontal Scroll, Desktop: Flex Wrap -->
-		<div class="md:flex md:flex-wrap md:justify-center md:gap-6">
-			{#if nowPlaying.length === 0}
-				<div class="w-full">
-					<EmptyState />
-				</div>
-			{:else}
-				<!-- Mobile Horizontal Scroll -->
-				<div class="md:hidden overflow-x-auto snap-x snap-mandatory -mx-4 px-4 pb-4">
-					<div class="flex gap-4 w-max">
-						{#each nowPlaying as buddy}
-							<div class="snap-center w-[85vw] max-w-[340px]">
-								<NowPlayingCard {buddy} />
-							</div>
-						{/each}
+	<!-- Main Layout: Sidebar + Content -->
+	<div class="w-full px-3 sm:px-6 py-4 sm:py-6">
+		<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8">
+			<!-- Sidebar - Left (Now Playing) -->
+			<aside class="lg:col-span-4 xl:col-span-3 space-y-4 sm:space-y-6">
+				<!-- Now Playing Section -->
+				<section class="lg:sticky lg:top-24 space-y-4 sm:space-y-6">
+					<div class="flex items-center gap-2 mb-3 sm:mb-4">
+						<Equalizer />
+						<h2 class="text-base sm:text-lg lg:text-xl font-bold">Now Playing</h2>
+						{#if nowPlaying.length > 0}
+							<span class="ml-auto text-[10px] sm:text-xs bg-[#1db954]/20 text-[#1db954] px-2 py-1 rounded-full">{nowPlaying.length}</span>
+						{/if}
 					</div>
-				</div>
 
-				<!-- Desktop Grid -->
-				<div class="hidden md:contents">
-					{#each nowPlaying as buddy}
-						<NowPlayingCard {buddy} />
-					{/each}
-				</div>
-			{/if}
+					{#if nowPlaying.length === 0}
+						<EmptyState />
+					{:else}
+						<div class="space-y-2 max-h-[600px] overflow-y-auto pr-2 scrollbar-thin">
+							{#each nowPlaying as buddy, index}
+								<NowPlayingCard {buddy} {index} />
+							{/each}
+						</div>
+					{/if}
+				</section>
+			</aside>
+
+			<!-- Main Content - Right (Stats + History) -->
+			<main class="lg:col-span-8 xl:col-span-9">
+				<!-- Stats -->
+				{#if history.length > 0}
+					<section class="mb-4 sm:mb-6">
+						<StatsChart {history} />
+					</section>
+				{/if}
+
+				<!-- History Section -->
+				<section id="history-section">
+					<div class="flex items-center justify-between mb-4 sm:mb-6">
+						<div class="flex items-center gap-2">
+							<Music2 class="w-4 h-4 sm:w-5 sm:h-5 text-[#1db954]" />
+							<h2 class="text-base sm:text-lg lg:text-xl font-bold">Recent Plays</h2>
+						</div>
+						<p class="text-gray-400 text-[10px] sm:text-xs lg:text-sm">{history.length} tracks</p>
+					</div>
+
+					{#if history.length > 0}
+						<!-- Masonry Grid -->
+						<div class="masonry-grid mb-4 sm:mb-6">
+							{#each paginatedHistory as item, index}
+								<HistoryCard {item} {index} {currentPage} itemsPerPage={ITEMS_PER_PAGE} />
+							{/each}
+						</div>
+					{:else}
+						<!-- Empty State -->
+						<div class="text-center py-16">
+							<div class="text-6xl mb-4">🎵</div>
+							<p class="text-gray-400 text-lg mb-2">No listening history yet</p>
+							<p class="text-gray-600 text-sm">Start playing some music on Spotify!</p>
+						</div>
+					{/if}
+
+					<!-- Pagination - Modern -->
+					{#if totalPages > 1}
+						<div class="flex gap-1.5 sm:gap-2 items-center justify-center mt-4 sm:mt-6">
+							<Button
+								variant="ghost"
+								size="icon"
+								disabled={currentPage === 1}
+								onclick={() => goToPage(1)}
+								class="h-8 w-8 sm:h-10 sm:w-10"
+							>
+								<ChevronsLeft class="w-3 h-3 sm:w-4 sm:h-4" />
+							</Button>
+
+							<Button
+								variant="ghost"
+								size="icon"
+								disabled={currentPage === 1}
+								onclick={() => goToPage(currentPage - 1)}
+								class="h-8 w-8 sm:h-10 sm:w-10"
+							>
+								<ChevronLeft class="w-3 h-3 sm:w-4 sm:h-4" />
+							</Button>
+
+							<div class="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 rounded-lg border border-white/10">
+								<span class="text-xs sm:text-sm font-medium text-gray-300">{currentPage}</span>
+								<span class="text-[10px] sm:text-xs text-gray-500 mx-1 sm:mx-1.5">/</span>
+								<span class="text-xs sm:text-sm font-medium text-gray-400">{totalPages}</span>
+							</div>
+
+							<Button
+								variant="ghost"
+								size="icon"
+								disabled={currentPage === totalPages}
+								onclick={() => goToPage(currentPage + 1)}
+								class="h-8 w-8 sm:h-10 sm:w-10"
+							>
+								<ChevronRight class="w-3 h-3 sm:w-4 sm:h-4" />
+							</Button>
+
+							<Button
+								variant="ghost"
+								size="icon"
+								disabled={currentPage === totalPages}
+								onclick={() => goToPage(totalPages)}
+								class="h-8 w-8 sm:h-10 sm:w-10"
+							>
+								<ChevronsRight class="w-3 h-3 sm:w-4 sm:h-4" />
+							</Button>
+						</div>
+					{/if}
+				</section>
+			</main>
 		</div>
-	</section>
-
-	<!-- History Section -->
-	<section class="mb-8" id="history-section">
-		<div class="text-center mb-6 sm:mb-8">
-			<h2 class="text-xl sm:text-2xl font-bold mb-1.5">Recent Plays</h2>
-			<p class="text-gray-400 text-xs sm:text-sm">Your latest music journey</p>
-		</div>
-
-		{#if history.length > 0}
-			<!-- History Grid - Improved Responsive -->
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
-				{#each paginatedHistory as item, index}
-					<HistoryCard {item} {index} {currentPage} itemsPerPage={ITEMS_PER_PAGE} />
-				{/each}
-			</div>
-		{:else}
-			<!-- Empty State -->
-			<div class="text-center py-16">
-				<div class="text-6xl mb-4">🎵</div>
-				<p class="text-gray-400 text-lg mb-2">No listening history yet</p>
-				<p class="text-gray-600 text-sm">Start playing some music on Spotify!</p>
-			</div>
-		{/if}
-
-		<!-- Pagination - Minimalist -->
-		{#if totalPages > 1}
-			<div class="flex gap-2 items-center justify-center mt-6 sm:mt-8">
-				<!-- First Page Button -->
-				<button
-					class="page-btn-minimal"
-					disabled={currentPage === 1}
-					onclick={() => goToPage(1)}
-					aria-label="First page"
-					title="First page"
-				>
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/>
-					</svg>
-				</button>
-
-				<!-- Previous Button -->
-				<button
-					class="page-btn-minimal"
-					disabled={currentPage === 1}
-					onclick={() => goToPage(currentPage - 1)}
-					aria-label="Previous page"
-					title="Previous page"
-				>
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-					</svg>
-				</button>
-
-				<!-- Page Info -->
-				<div class="px-4 py-2 bg-white/5 rounded-lg border border-white/10">
-					<span class="text-sm font-medium text-gray-300">{currentPage}</span>
-					<span class="text-xs text-gray-500 mx-1.5">/</span>
-					<span class="text-sm font-medium text-gray-400">{totalPages}</span>
-				</div>
-
-				<!-- Next Button -->
-				<button
-					class="page-btn-minimal"
-					disabled={currentPage === totalPages}
-					onclick={() => goToPage(currentPage + 1)}
-					aria-label="Next page"
-					title="Next page"
-				>
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-					</svg>
-				</button>
-
-				<!-- Last Page Button -->
-				<button
-					class="page-btn-minimal"
-					disabled={currentPage === totalPages}
-					onclick={() => goToPage(totalPages)}
-					aria-label="Last page"
-					title="Last page"
-				>
-					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-					</svg>
-				</button>
-			</div>
-		{/if}
-	</section>
+	</div>
 
 	<!-- Footer -->
-	<footer class="text-center text-gray-500 text-xs sm:text-sm mt-16 sm:mt-20 pb-8">
-		<p class="mb-2">Powered by Spotify Web API</p>
-		<p class="text-xs text-gray-600">Fetches data every 10 minutes</p>
+	<footer class="text-center text-gray-500 text-xs py-8 border-t border-white/5 mt-12">
+		<p class="mb-1">Powered by Spotify Web API</p>
+		<p class="text-[10px] text-gray-600">Updates every 10 minutes</p>
 	</footer>
 </div>

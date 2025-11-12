@@ -1,4 +1,13 @@
 import { TRACKED_USERS } from './config';
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+/**
+ * Utility for merging Tailwind CSS classes with shadcn-svelte
+ */
+export function cn(...inputs: ClassValue[]) {
+	return twMerge(clsx(inputs));
+}
 
 /**
  * Get user initial from tracked users config

@@ -22,5 +22,11 @@
 		"tailwindcss": "^3.4.0",
 		"typescript": "^5.9.3",
 		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"clsx": "^2.1.1",
+		"lucide-svelte": "^0.553.0",
+		"svelte-motion": "^0.12.2",
+		"tailwind-merge": "^3.4.0"
 	}
 }

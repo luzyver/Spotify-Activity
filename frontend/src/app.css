@@ -173,44 +173,6 @@ body {
 	animation: float-up 8s ease-in infinite;
 }
 
-/* Vinyl Record Details */
-.vinyl {
-	position: relative;
-}
-
-.vinyl::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 40px;
-	height: 40px;
-	background: radial-gradient(circle, #1a1a1a 20%, #000 50%, #1a1a1a 80%);
-	border-radius: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 3;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-.vinyl::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	transform: translate(-50%, -50%);
-	background: repeating-radial-gradient(
-		circle at center,
-		transparent 0px,
-		transparent 3px,
-		rgba(255, 255, 255, 0.02) 3px,
-		rgba(255, 255, 255, 0.02) 6px
-	);
-	z-index: 2;
-}
-
 /* Equalizer Animation */
 .equalizer {
 	display: flex;
@@ -246,61 +208,40 @@ body {
 	animation: pulse 2s ease-in-out infinite;
 }
 
-/* Spotify Logo Glow */
-.spotify-logo {
-	filter: drop-shadow(0 0 20px rgba(29, 185, 84, 0.6));
-	animation: logoGlow 3s ease-in-out infinite;
-}
-
-/* Track Card Hover Effect */
-.track-card {
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	position: relative;
-	overflow: hidden;
-}
-
-.track-card::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, transparent, rgba(29, 185, 84, 0.1), transparent);
-	transition: left 0.5s;
-}
-
-.track-card:hover::before {
-	left: 100%;
-}
-
-/* Album Cover Hover */
-.album-cover {
-	transition: all 0.3s ease;
-	position: relative;
-}
-
-.album-cover:hover {
-	transform: scale(1.1) rotate(5deg);
-	box-shadow: 0 15px 40px rgba(29, 185, 84, 0.4);
-}
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-	background: #0a0a0a;
+	background: rgba(10, 10, 10, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(to bottom, #1db954, #1aa34a);
+	background: rgba(29, 185, 84, 0.3);
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(to bottom, #1ed760, #1db954);
+	background: rgba(29, 185, 84, 0.5);
+}
+
+/* Thin Scrollbar for Sidebar */
+.scrollbar-thin::-webkit-scrollbar {
+	width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+	background: rgba(29, 185, 84, 0.2);
+	border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+	background: rgba(29, 185, 84, 0.4);
 }
 
 /* Stats Badge */
@@ -328,67 +269,6 @@ body {
 	background: rgba(29, 185, 84, 0.1);
 	border: 1px solid rgba(29, 185, 84, 0.3);
 	transform: translateY(-2px);
-}
-
-/* Pagination Styles */
-.page-btn {
-	background: rgba(20, 20, 30, 0.7);
-	backdrop-filter: blur(20px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 10px 16px;
-	border-radius: 12px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	font-weight: 600;
-	min-width: 45px;
-}
-
-.page-btn:hover:not(:disabled) {
-	background: rgba(29, 185, 84, 0.2);
-	border: 1px solid rgba(29, 185, 84, 0.4);
-	transform: translateY(-2px);
-}
-
-.page-btn.active {
-	background: linear-gradient(135deg, #1db954, #1ed760);
-	border: 1px solid rgba(29, 185, 84, 0.5);
-	box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
-}
-
-.page-btn:disabled {
-	opacity: 0.3;
-	cursor: not-allowed;
-}
-
-/* Minimal Pagination Button */
-.page-btn-minimal {
-	background: rgba(20, 20, 30, 0.6);
-	backdrop-filter: blur(20px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 10px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-}
-
-.page-btn-minimal:hover:not(:disabled) {
-	background: rgba(29, 185, 84, 0.2);
-	border: 1px solid rgba(29, 185, 84, 0.4);
-	transform: translateY(-2px);
-	color: #1db954;
-}
-
-.page-btn-minimal:disabled {
-	opacity: 0.2;
-	cursor: not-allowed;
-}
-
-.page-btn-minimal:active:not(:disabled) {
-	transform: translateY(0) scale(0.95);
 }
 
 /* Smooth Horizontal Scroll */
@@ -423,13 +303,6 @@ body {
 		50% { height: 16px; }
 	}
 
-	/* Improve touch targets for mobile */
-	.page-btn {
-		min-width: 40px;
-		padding: 8px 12px;
-		font-size: 14px;
-	}
-
 	/* Reduce animations on mobile for performance */
 	.glass-card:hover,
 	.glass-card-live:hover {
@@ -440,6 +313,194 @@ body {
 	body {
 		-webkit-tap-highlight-color: rgba(29, 185, 84, 0.2);
 	}
+}
+
+/* Masonry Grid Layout */
+.masonry-grid {
+	column-count: 1;
+	column-gap: 1rem;
+}
+
+@media (min-width: 640px) {
+	.masonry-grid {
+		column-count: 2;
+		column-gap: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.masonry-grid {
+		column-count: 2;
+		column-gap: 1.25rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.masonry-grid {
+		column-count: 3;
+		column-gap: 1.25rem;
+	}
+}
+
+.masonry-grid > * {
+	break-inside: avoid;
+	margin-bottom: 1rem;
+}
+
+/* Gradient Backgrounds */
+.gradient-bg-1 {
+	background: linear-gradient(135deg, rgba(29, 185, 84, 0.1) 0%, rgba(30, 215, 96, 0.05) 100%);
+}
+
+.gradient-bg-2 {
+	background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, rgba(75, 0, 130, 0.05) 100%);
+}
+
+.gradient-bg-3 {
+	background: linear-gradient(135deg, rgba(255, 20, 147, 0.1) 0%, rgba(255, 105, 180, 0.05) 100%);
+}
+
+.gradient-bg-4 {
+	background: linear-gradient(135deg, rgba(30, 144, 255, 0.1) 0%, rgba(0, 191, 255, 0.05) 100%);
+}
+
+.gradient-bg-5 {
+	background: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+}
+
+/* Enhanced Blur Effects */
+.blur-card {
+	backdrop-filter: blur(40px) saturate(180%);
+	-webkit-backdrop-filter: blur(40px) saturate(180%);
+	background: rgba(17, 25, 40, 0.75);
+	border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Hover Glow Effect */
+.hover-glow {
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.hover-glow::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(29, 185, 84, 0.2), transparent);
+	transition: left 0.5s ease;
+}
+
+.hover-glow:hover::before {
+	left: 100%;
+}
+
+/* Light Mode Styles */
+.light-mode {
+	--bg-primary: #ffffff;
+	--bg-secondary: #f8f9fa;
+	--bg-card: rgba(255, 255, 255, 0.9);
+	--text-primary: #1a1a1a;
+	--text-secondary: #4a5568;
+	--text-tertiary: #718096;
+	--border-color: rgba(0, 0, 0, 0.1);
+	--shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode body {
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 25%, #dee2e6 50%, #ced4da 75%, #f8f9fa 100%);
+	background-size: 400% 400%;
+	animation: gradientFlow 15s ease infinite;
+	color: #1a1a1a !important;
+}
+
+/* Force all text to be dark in light mode */
+.light-mode * {
+	color: #1a1a1a;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode h5,
+.light-mode h6,
+.light-mode p,
+.light-mode span,
+.light-mode div,
+.light-mode a,
+.light-mode button {
+	color: inherit;
+}
+
+.light-mode .text-white {
+	color: #1a1a1a !important;
+}
+
+.light-mode .text-gray-300 {
+	color: #4a5568 !important;
+}
+
+.light-mode .text-gray-400 {
+	color: #4a5568 !important;
+}
+
+.light-mode .text-gray-500 {
+	color: #4a5568 !important;
+}
+
+.light-mode .text-gray-600 {
+	color: #2d3748 !important;
+}
+
+.light-mode .glass-card,
+.light-mode .blur-card {
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(20px);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .glass-card:hover,
+.light-mode .blur-card:hover {
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid rgba(29, 185, 84, 0.4);
+}
+
+.light-mode header {
+	background: rgba(255, 255, 255, 0.95) !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-mode ::-webkit-scrollbar-track {
+	background: rgba(240, 240, 240, 0.5);
+}
+
+.light-mode ::-webkit-scrollbar-thumb {
+	background: rgba(29, 185, 84, 0.5);
+}
+
+.light-mode ::-webkit-scrollbar-thumb:hover {
+	background: rgba(29, 185, 84, 0.7);
+}
+
+.light-mode footer {
+	border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Keep Spotify green color visible in light mode */
+.light-mode .text-\[\#1db954\],
+.light-mode [style*="color: #1db954"],
+.light-mode [style*="color:#1db954"] {
+	color: #1db954 !important;
+}
+
+/* Keep user badge colors visible */
+.light-mode [style*="color: #"] {
+	filter: brightness(0.8) saturate(1.2);
 }
 
 /* Tablet optimizations */

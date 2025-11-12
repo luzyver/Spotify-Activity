@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { HistoryItem } from '$lib/types';
 	import { getUserColor, timeAgo, spotifyUrl } from '$lib/utils';
+	import { Motion } from 'svelte-motion';
+	import { ExternalLink, Clock, User } from 'lucide-svelte';
 
 	interface Props {
 		item: HistoryItem;
@@ -13,49 +15,83 @@
 
 	const userColor = $derived(getUserColor(item.userId));
 	const globalIndex = $derived(((currentPage - 1) * itemsPerPage) + index + 1);
+
+	// Random gradient for variety
+	const gradients = ['gradient-bg-1', 'gradient-bg-2', 'gradient-bg-3', 'gradient-bg-4', 'gradient-bg-5'];
+	const randomGradient = $derived(gradients[globalIndex % gradients.length]);
 </script>
 
-<div
-	class="glass-card rounded-xl sm:rounded-2xl p-3 sm:p-4 track-card fade-in-up"
-	style="animation-delay: {(index % itemsPerPage) * 0.03}s"
+<Motion
+	initial={{ opacity: 0, y: 20 }}
+	animate={{ opacity: 1, y: 0 }}
+	transition={{ delay: (index % itemsPerPage) * 0.05, duration: 0.5, ease: "easeOut" }}
+	let:motion
 >
-	<div class="flex items-center gap-3">
-		<div class="relative flex-shrink-0">
-			<img
-				src={item.imageUrl}
-				class="w-14 h-14 sm:w-16 sm:h-16 rounded-lg sm:rounded-xl shadow-2xl album-cover"
-				alt={item.track}
-			/>
-			<div
-				class="absolute -top-1.5 -left-1.5 w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center text-[10px] sm:text-xs font-bold shadow-lg"
-				style="background-color: {userColor}"
-			>
-				{globalIndex}
-			</div>
+	<div use:motion class="blur-card {randomGradient} rounded-xl sm:rounded-2xl p-3 sm:p-4 hover-glow group relative overflow-hidden">
+		<!-- Animated Background Accent -->
+		<div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+			<div class="absolute inset-0 bg-gradient-to-br from-[#1db954]/10 via-transparent to-transparent"></div>
 		</div>
-		<div class="flex-1 min-w-0">
-			<a
-				href={spotifyUrl(item.uri)}
-				target="_blank"
-				rel="noopener noreferrer"
-				class="font-bold text-sm sm:text-base hover:text-[#1db954] transition block truncate mb-0.5"
-				title={item.track}
-			>
-				{item.track}
-			</a>
-			<p class="text-xs sm:text-sm text-gray-400 truncate mb-1.5" title={item.artist}>
-				{item.artist}
-			</p>
-			<div class="flex items-center gap-2 text-[10px] sm:text-xs flex-wrap">
-				<span class="text-gray-500 flex-shrink-0">{timeAgo(item.timestamp)}</span>
-				<span
-					class="px-2 py-0.5 rounded-full font-medium truncate max-w-[100px] sm:max-w-[120px]"
-					style="background-color: {userColor}33; color: {userColor}"
-					title={item.user}
+
+		<div class="relative z-10 space-y-2 sm:space-y-3">
+			<!-- Album Art with Overlay -->
+			<div class="relative group/img">
+				<img
+					src={item.imageUrl}
+					class="w-full aspect-square rounded-lg sm:rounded-xl shadow-2xl object-cover transition-transform duration-300 group-hover:scale-105"
+					alt={item.track}
+				/>
+
+				<!-- Hover Overlay -->
+				<a
+					href={spotifyUrl(item.uri)}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-all duration-300"
 				>
-					{item.user}
-				</span>
+					<div class="bg-[#1db954] rounded-full p-2.5 sm:p-3 shadow-2xl transform hover:scale-110 transition-transform">
+						<ExternalLink class="w-4 h-4 sm:w-5 sm:h-5 text-black" />
+					</div>
+				</a>
+
+				<!-- Rank Badge -->
+				<div
+					class="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-[11px] sm:text-xs font-bold shadow-xl backdrop-blur-md"
+					style="background-color: {userColor}; color: white"
+				>
+					{globalIndex}
+				</div>
+			</div>
+
+			<!-- Track Info -->
+			<div class="space-y-1.5 sm:space-y-2">
+				<a
+					href={spotifyUrl(item.uri)}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="block font-bold text-base hover:text-[#1db954] transition truncate group-hover:underline"
+					title={item.track}
+				>
+					{item.track}
+				</a>
+
+				<p class="text-sm text-gray-400 truncate font-medium" title={item.artist}>
+					{item.artist}
+				</p>
+
+				<!-- Meta Info -->
+				<div class="flex items-center justify-between text-xs pt-2 border-t border-white/10">
+					<div class="flex items-center gap-1.5 text-gray-500">
+						<Clock class="w-3 h-3" />
+						<span>{timeAgo(item.timestamp)}</span>
+					</div>
+
+					<div class="flex items-center gap-1.5 px-2 py-1 rounded-full" style="background-color: {userColor}20; color: {userColor}">
+						<User class="w-3 h-3" />
+						<span class="font-medium truncate max-w-[80px]">{item.user}</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</Motion>
