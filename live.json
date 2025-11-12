@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762950043637,
+      "timestamp": 1762950643056,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1RaJdXCj61oSRUUciGKoWe",
-        "name": "bergema sampai selamanya",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b55b8d4574f736630e8469ab",
+        "uri": "spotify:track:2OxvanM5m1Na9OVlXyXmUp",
+        "name": "Lesung Pipi",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732605ea6f02168bf5a74c012e",
         "album": {
-          "uri": "spotify:album:0kHOWC0D1GUQmvIz2nK1Mc",
-          "name": "bergema sampai selamanya"
+          "uri": "spotify:album:5HKEezqSNuJSD5Nbrs9bhG",
+          "name": "Lesung Pipi"
         },
         "artist": {
-          "uri": "spotify:artist:6UgERnTHmjk3qXM9x5vzyO",
-          "name": "Nadhif Basalamah"
+          "uri": "spotify:artist:5LcNPa8f8bRmZqELgoRFkN",
+          "name": "Raim Laode"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
