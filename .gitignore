@@ -14,3 +14,4 @@ frontend/.svelte-kit/
 frontend/build/
 .svelte-kit/
 build/
+.wrangler
