@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762975242872,
+      "timestamp": 1762975842844,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3p4hRhMcb6ch8OLtATMaLw",
-        "name": "Cry",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fd275af89cec73d6287f9cbf",
+        "uri": "spotify:track:6IPwKM3fUUzlElbvKw2sKl",
+        "name": "we fell in love in october",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d6839051c4760457e1a60b2a",
         "album": {
-          "uri": "spotify:album:4uQ5kFmXQdCxz3WvM4UUzy",
-          "name": "Cry"
+          "uri": "spotify:album:7vud0sY43VTv28MbWiglDa",
+          "name": "we fell in love in october / October Passed Me By"
         },
         "artist": {
-          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
-          "name": "Cigarettes After Sex"
+          "uri": "spotify:artist:3uwAm6vQy7kWPS2bciKWx9",
+          "name": "girl in red"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
