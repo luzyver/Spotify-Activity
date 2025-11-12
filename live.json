@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1762974042733,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:3vkCueOmm7xQDoJ17W1Pm3",
+        "name": "My Love Mine All Mine",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27334f21d3047d85440dfa37f10",
+        "album": {
+          "uri": "spotify:album:2Cn1d2KgbkAqbZCJ1RzdkA",
+          "name": "The Land Is Inhospitable and So Are We"
+        },
+        "artist": {
+          "uri": "spotify:artist:2uYWxilOVlUdk4oV9DvwqK",
+          "name": "Mitski"
+        },
+        "context": {
+          "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
