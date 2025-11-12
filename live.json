@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762937455846,
+      "timestamp": 1762938057938,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3gedUqUJEgNoDqDaQZwTUo",
-        "name": "Hanya Lolongan",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fcba416f97352e9ada9393b6",
+        "uri": "spotify:track:0ZEYRVISCaqz5yamWZWzaA",
+        "name": "Melukis Senja",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27337f883f98514a0852046e2f0",
         "album": {
-          "uri": "spotify:album:7nYVMupxePZbCAczopKbWr",
-          "name": "Hanya Lolongan"
+          "uri": "spotify:album:0jLBLt7jIjOz5n3jDiL2zn",
+          "name": "Melukis Senja"
         },
         "artist": {
-          "uri": "spotify:artist:0sLoVTeBT6akDY7ecDxKYe",
-          "name": "Nabila Taqiyyah"
+          "uri": "spotify:artist:6Ifk2cbxyVzT41jLexYCas",
+          "name": "Budi Doremi"
         },
         "context": {
           "uri": "spotify:playlist:0kUx21t2ih7CXKcBSiKUUu",
