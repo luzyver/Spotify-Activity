@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1762949455865,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:1vkwlZncsYqFukl2Q7M6Fe",
+        "name": "Alamak",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27301b9750a33d771645d7f043a",
+        "album": {
+          "uri": "spotify:album:5oUWkx2j4lVO8u7kM3XnJT",
+          "name": "Alamak"
+        },
+        "artist": {
+          "uri": "spotify:artist:28DdkLhrzQNizZ0ExQpyku",
+          "name": "Rizky Febian, Adrian Khalif"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
