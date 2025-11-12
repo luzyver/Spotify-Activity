@@ -47,6 +47,60 @@ export async function getGitHubFile(repo, path, token) {
 }
 
 /**
+ * Get commit information by SHA
+ * @param {string} repo - Repository in format "owner/repo"
+ * @param {string} sha - Commit SHA
+ * @param {string} token - GitHub access token
+ * @returns {Promise<Object>} Commit data
+ */
+export async function getCommit(repo, sha, token) {
+	const url = `${GITHUB_API_BASE}/repos/${repo}/commits/${sha}`;
+	const response = await fetch(url, {
+		headers: {
+			Authorization: `Bearer ${token}`,
+			Accept: 'application/vnd.github.v3+json',
+			'User-Agent': USER_AGENT,
+		},
+	});
+	if (!response.ok) {
+		const body = await response.text();
+		throw new Error(`Failed to get commit: ${response.status} - ${body}`);
+	}
+	return await response.json();
+}
+
+/**
+ * Get file content from GitHub repository at a specific ref (branch, tag, or commit SHA)
+ * @param {string} repo - Repository in format "owner/repo"
+ * @param {string} path - File path in repository
+ * @param {string} ref - A valid Git reference (branch, tag, or commit SHA)
+ * @param {string} token - GitHub access token
+ * @returns {Promise<{content: Object|null, sha: string|null}>} File content and SHA
+ */
+export async function getGitHubFileAtRef(repo, path, ref, token) {
+	const url = `${GITHUB_API_BASE}/repos/${repo}/contents/${path}?ref=${encodeURIComponent(ref)}`;
+	const response = await fetch(url, {
+		headers: {
+			Authorization: `Bearer ${token}`,
+			Accept: 'application/vnd.github.v3+json',
+			'User-Agent': USER_AGENT,
+		},
+	});
+	if (response.status === 404) {
+		return { content: null, sha: null };
+	}
+	if (!response.ok) {
+		const body = await response.text();
+		throw new Error(`Failed to get file at ref: ${response.status} - ${body}`);
+	}
+	const data = await response.json();
+	const jsonString = base64ToUtf8(data.content);
+	const content = JSON.parse(jsonString);
+	return { content, sha: data.sha };
+}
+
+
+/**
  * Update a single file in GitHub repository
  * @param {string} repo - Repository in format "owner/repo"
  * @param {string} path - File path in repository

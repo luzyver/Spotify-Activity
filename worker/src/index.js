@@ -6,6 +6,7 @@
 import { handleScheduled } from './handlers/sync-handler.js';
 import { handleClearHistory, handleClearHistoryEndpoint } from './handlers/clear-handler.js';
 import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
+import { handleBackupEndpoint } from './handlers/backup-handler.js';
 import { CORS_HEADERS, CRON_SCHEDULES, MESSAGES } from './config/constants.js';
 
 /**
@@ -55,6 +56,11 @@ async function handleFetch(request, env, ctx) {
 	// Clear history endpoint
 	if ((request.method === 'GET' || request.method === 'POST') && pathname === '/clear-history') {
 		return handleClearHistoryEndpoint(request, env, CORS_HEADERS);
+	}
+
+	// Backup endpoint
+	if ((request.method === 'GET' || request.method === 'POST') && pathname === '/backup') {
+		return handleBackupEndpoint(request, env, CORS_HEADERS);
 	}
 
 	// API endpoint to get live.json with no caching
