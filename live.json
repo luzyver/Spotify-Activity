@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762974643076,
+      "timestamp": 1762975242872,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4kJT7Yj6Za01KfKHjb7mZE",
-        "name": "Fall in Love with You.",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27338900c29071fe12d7a0a13cc",
+        "uri": "spotify:track:3p4hRhMcb6ch8OLtATMaLw",
+        "name": "Cry",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fd275af89cec73d6287f9cbf",
         "album": {
-          "uri": "spotify:album:4StdgB0YaIYLGhhXBLuoWl",
-          "name": "JAMIE"
+          "uri": "spotify:album:4uQ5kFmXQdCxz3WvM4UUzy",
+          "name": "Cry"
         },
         "artist": {
-          "uri": "spotify:artist:5nvWOyAkfNgVLKESq4fOj2",
-          "name": "Montell Fish"
+          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
+          "name": "Cigarettes After Sex"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
