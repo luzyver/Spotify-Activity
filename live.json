@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762944655505,
+      "timestamp": 1762945258105,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6sGIMrtIzQjdzNndVxe397",
-        "name": "So Easy (To Fall In Love)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739a336bfb6d40bbd90a507417",
+        "uri": "spotify:track:0Hnm7mnmqOLCIgvbMpM4Ev",
+        "name": "Maui Wowie",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cd4666c02c9749c71dabb8ea",
         "album": {
-          "uri": "spotify:album:0l8zYqoUeBYg47Gmevq9HZ",
-          "name": "The Art of Loving"
+          "uri": "spotify:album:2blXZboio9DF8VC39LmUag",
+          "name": "A Kid Named Cudi"
         },
         "artist": {
-          "uri": "spotify:artist:00x1fYSGhdqScXBRpSj3DW",
-          "name": "Olivia Dean"
+          "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu",
+          "name": "Kid Cudi"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DWWhB4HOWKFQc",
