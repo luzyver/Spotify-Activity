@@ -1,1 +1,452 @@
-[]
+[
+  {
+    "timestamp": 1762963508740,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Romantic Homicide",
+    "artist": "d4vd",
+    "uri": "spotify:track:1xK59OXxi2TAAAbmZK0kBL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bd1a52b3d5903ee01c216da0"
+  },
+  {
+    "timestamp": 1762963389123,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mystery of Love",
+    "artist": "Sufjan Stevens",
+    "uri": "spotify:track:5GbVzc6Ex5LYlLJqzRQhuy",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733fc1588803d1887f11d660cc"
+  },
+  {
+    "timestamp": 1762963120856,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "hotline (edit)",
+    "artist": "Billie Eilish",
+    "uri": "spotify:track:0WFryfbNKPXVtVQlz5dZ8H",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c820a9669147be3addd7f221"
+  },
+  {
+    "timestamp": 1762963058918,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "As the World Caves In",
+    "artist": "Matt Maltese",
+    "uri": "spotify:track:4JE6agBLHGA5TaF6FlqfBD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27367d0cba50eae9026b8958755"
+  },
+  {
+    "timestamp": 1762962849762,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sparks",
+    "artist": "Coldplay",
+    "uri": "spotify:track:7D0RhFcb3CrfPuTJ0obrod",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a"
+  },
+  {
+    "timestamp": 1762962651006,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "John Wayne",
+    "artist": "Cigarettes After Sex",
+    "uri": "spotify:track:4xbN7giFhdGbSQTPyG178F",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc"
+  },
+  {
+    "timestamp": 1762962385055,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "No Surprises",
+    "artist": "Juliana Chahayed",
+    "uri": "spotify:track:3lIRT0z9PSb6AIrWnUjMnM",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ef5a2f1d309ddc15ea6e9f78"
+  },
+  {
+    "timestamp": 1762962251345,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "I Love You So",
+    "artist": "The Walters",
+    "uri": "spotify:track:4SqWKzw0CbA05TGszDgMlc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739214ff0109a0e062f8a6cf0f"
+  },
+  {
+    "timestamp": 1762962069083,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "2 Scorpios",
+    "artist": "Ana Shine",
+    "uri": "spotify:track:1paUZGIeMdtqYMnBI1LoFI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273db4075ff4beb96f0b40e6d2f"
+  },
+  {
+    "timestamp": 1762961889009,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Gilded Lily",
+    "artist": "Cults",
+    "uri": "spotify:track:3Z0qLOS0cqWKPHXkbTXmNF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d0349cd631791ca446be337a"
+  },
+  {
+    "timestamp": 1762961679329,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "apathy",
+    "artist": "Øneheart",
+    "uri": "spotify:track:6WUgqFZhbNRaeBuzG2ahfJ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d3ecc4ae0df54fce4742f2eb"
+  },
+  {
+    "timestamp": 1762961558966,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "My Love Mine All Mine",
+    "artist": "Mitski",
+    "uri": "spotify:track:3vkCueOmm7xQDoJ17W1Pm3",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27334f21d3047d85440dfa37f10"
+  },
+  {
+    "timestamp": 1762958377538,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Nina",
+    "artist": ".Feast",
+    "uri": "spotify:track:1zFaLYA10ImwEejge3F5nm",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27339695d4c16489cdf60bef536"
+  },
+  {
+    "timestamp": 1762958264209,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Opalite",
+    "artist": "Taylor Swift",
+    "uri": "spotify:track:3euZKF0hmGxQ6h2JHHY4iu",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b034f9cdf12ae14c603daa99"
+  },
+  {
+    "timestamp": 1762958022465,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bunga Maaf",
+    "artist": "The Lantis",
+    "uri": "spotify:track:26KhLgFuPymkm1uiZkc6Rv",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27342196e31b446e21f056660eb"
+  },
+  {
+    "timestamp": 1762957797008,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tarot",
+    "artist": ".Feast",
+    "uri": "spotify:track:4XHijJfABTtUCW3Bp6KFvr",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c800b90e2092a5328f699117"
+  },
+  {
+    "timestamp": 1762957482566,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mangu",
+    "artist": "Fourtwnty, Charita Utami",
+    "uri": "spotify:track:4e6TmHCC4PRUj75knNplNP",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332ab17f5515e51490841f648"
+  },
+  {
+    "timestamp": 1762957212662,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terbuang Dalam Waktu",
+    "artist": "Barasuara",
+    "uri": "spotify:track:5fmyW3X3kncOOVlmcWhORH",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395688e1f59ae3fc4951d41ff"
+  },
+  {
+    "timestamp": 1762956942406,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tak Ada Ujungnya",
+    "artist": "Rony Parulian",
+    "uri": "spotify:track:2JekYbWANgDe54Dndi2I2C",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735d2e53fbcef5d8d00bed2d8d"
+  },
+  {
+    "timestamp": 1762956732592,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lesung Pipi",
+    "artist": "Raim Laode",
+    "uri": "spotify:track:2OxvanM5m1Na9OVlXyXmUp",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732605ea6f02168bf5a74c012e"
+  },
+  {
+    "timestamp": 1762956703774,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lesung Pipi",
+    "artist": "Raim Laode",
+    "uri": "spotify:track:2OxvanM5m1Na9OVlXyXmUp",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732605ea6f02168bf5a74c012e"
+  },
+  {
+    "timestamp": 1762952013790,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sabar",
+    "artist": "Donne Maula",
+    "uri": "spotify:track:5v0BCRGNHV4wH5pBI9l8Wg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733926bea3f29354ffe49599e7"
+  },
+  {
+    "timestamp": 1762950609421,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "ours to keep",
+    "artist": "Kendis, adis",
+    "uri": "spotify:track:3Puhw21QI2MKR4rdvyPuIb",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27341f65131e6205f8deac33651"
+  },
+  {
+    "timestamp": 1762950399352,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "TABOLA BALE",
+    "artist": "Silet Open Up, Jacson Seran, Juan Reza, Diva Aurel",
+    "uri": "spotify:track:6KfugJFINWqA42k59hmjFr",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27310df7b8e9b3ed2588888a8ae"
+  },
+  {
+    "timestamp": 1762950129252,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "bergema sampai selamanya",
+    "artist": "Nadhif Basalamah",
+    "uri": "spotify:track:1RaJdXCj61oSRUUciGKoWe",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b55b8d4574f736630e8469ab"
+  },
+  {
+    "timestamp": 1762949949470,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lihat Kebunku (Taman Bunga)",
+    "artist": "Aku Jeje",
+    "uri": "spotify:track:5dvIK269hL3eZXQMG4Vc2C",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc82bf3a920d66bd3006d308"
+  },
+  {
+    "timestamp": 1762949739069,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "uri": "spotify:track:31TXxq8gfgYyrYClnYY48m",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b034f9cdf12ae14c603daa99"
+  },
+  {
+    "timestamp": 1762949529204,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Alamak",
+    "artist": "Rizky Febian, Adrian Khalif",
+    "uri": "spotify:track:1vkwlZncsYqFukl2Q7M6Fe",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27301b9750a33d771645d7f043a"
+  },
+  {
+    "timestamp": 1762946795721,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "GO!",
+    "artist": "CORTIS",
+    "uri": "spotify:track:6OWWZtNQORY1McaZmOrwhc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734b56a34b0c2b3798fd46f855"
+  },
+  {
+    "timestamp": 1762946575122,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ingin Mencintai & Dicintai",
+    "artist": "Leya Princy",
+    "uri": "spotify:track:5l4g0R0SsOmkCmnsQz4DHz",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738016b669815acf4e5e477d5d"
+  },
+  {
+    "timestamp": 1762946395221,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Senja Sudut Kota",
+    "artist": "Samuel Cipta",
+    "uri": "spotify:track:27JBYWc4xN7OY4NJQ68pni",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731e10b272bf04e70fb08d464c"
+  },
+  {
+    "timestamp": 1762946155245,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Alamak",
+    "artist": "Rizky Febian, Adrian Khalif",
+    "uri": "spotify:track:1vkwlZncsYqFukl2Q7M6Fe",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27301b9750a33d771645d7f043a"
+  },
+  {
+    "timestamp": 1762945948611,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "uri": "spotify:track:31TXxq8gfgYyrYClnYY48m",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b034f9cdf12ae14c603daa99"
+  },
+  {
+    "timestamp": 1762945713341,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "disarankan di bandung",
+    "artist": "Dongker, Jason Ranti",
+    "uri": "spotify:track:1BZsLiymbw2UihokAVyTrR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738a3af8a92f7686e5d7f6fc0d"
+  },
+  {
+    "timestamp": 1762945556229,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lihat Kebunku (Taman Bunga)",
+    "artist": "Aku Jeje",
+    "uri": "spotify:track:5dvIK269hL3eZXQMG4Vc2C",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc82bf3a920d66bd3006d308"
+  },
+  {
+    "timestamp": 1762945375595,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Maui Wowie",
+    "artist": "Kid Cudi",
+    "uri": "spotify:track:0Hnm7mnmqOLCIgvbMpM4Ev",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cd4666c02c9749c71dabb8ea"
+  },
+  {
+    "timestamp": 1762945225009,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jangan Calling",
+    "artist": "Ova Libenovo, OHSHALLE, Meeiiya",
+    "uri": "spotify:track:4yeIzFGncBM6TMyhn7q7AL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731bd5d4d89d7e6dcc73680c52"
+  },
+  {
+    "timestamp": 1762945075292,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Pengganti Aku",
+    "artist": "Raisa",
+    "uri": "spotify:track:0NrGEbLL9aggrUwsWJUWaT",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273390b568b7e725b7039585800"
+  },
+  {
+    "timestamp": 1762944838854,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "So Easy (To Fall In Love)",
+    "artist": "Olivia Dean",
+    "uri": "spotify:track:6sGIMrtIzQjdzNndVxe397",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739a336bfb6d40bbd90a507417"
+  },
+  {
+    "timestamp": 1762944475493,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jatuh Cinta Setiap Bertemu",
+    "artist": "JKT48",
+    "uri": "spotify:track:2aWyNy6Ol8eOwV3QZHhWnw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732e42259343ab93d7286967af"
+  },
+  {
+    "timestamp": 1762944235150,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Cahaya Panjang",
+    "artist": "JKT48",
+    "uri": "spotify:track:4yIVpO0O9e9PGnRsKnnHWq",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732e42259343ab93d7286967af"
+  },
+  {
+    "timestamp": 1762943875406,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sedikit Saja I Love You! - Hikaeme I Love You!",
+    "artist": "JKT48",
+    "uri": "spotify:track:5UauopwFDiMHjVHUR4z0yb",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27366e4d6754f549644ae2ca306"
+  },
+  {
+    "timestamp": 1762943638670,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Seesaw Game Penuh Air Mata - Namida No Seesaw Game",
+    "artist": "JKT48",
+    "uri": "spotify:track:1s1svmoZfapCKIJT2A9r81",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e15eb5cc344187a3bfc4bd35"
+  },
+  {
+    "timestamp": 1762943332633,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Seesaw Game Penuh Air Mata - Namida No Seesaw Game",
+    "artist": "JKT48",
+    "uri": "spotify:track:1s1svmoZfapCKIJT2A9r81",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e15eb5cc344187a3bfc4bd35"
+  },
+  {
+    "timestamp": 1762943191730,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lama-Lama",
+    "artist": "Bernadya",
+    "uri": "spotify:track:0pmyq5KBXP3agRdxl1SZXx",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a"
+  },
+  {
+    "timestamp": 1762943011715,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Untungnya, Hidup Harus Tetap Berjalan",
+    "artist": "Bernadya",
+    "uri": "spotify:track:2gcMYiZzzmzoF8PPAfL3IO",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a"
+  },
+  {
+    "timestamp": 1762942840917,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terlintas",
+    "artist": "Bernadya",
+    "uri": "spotify:track:22Psd9lrrgVbTERHCGo7i1",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb1e5f7d0942bf9196c1e711"
+  },
+  {
+    "timestamp": 1762942592247,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Asumsi",
+    "artist": "Adrian Khalif, Bernadya",
+    "uri": "spotify:track:72DL0kjCGfA4qIDQnR88hT",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739670851bed73df294eee9111"
+  },
+  {
+    "timestamp": 1762942321699,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Satu Bulan",
+    "artist": "Bernadya",
+    "uri": "spotify:track:7zOVh5fGpEwSbZd0g9z80B",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb1e5f7d0942bf9196c1e711"
+  },
+  {
+    "timestamp": 1762942113642,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sekedar Mengagumi",
+    "artist": "Daun Jatuh",
+    "uri": "spotify:track:3Y6pg5cbfAVdpU9DHsMSX4",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731ef12ca4a5e9b16de3c7cbf4"
+  }
+]
