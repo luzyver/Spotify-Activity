@@ -1,32 +1,43 @@
 {
-	"name": "svelte-app",
-	"private": true,
-	"version": "0.0.1",
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^7.0.0",
-		"@sveltejs/kit": "^2.47.1",
-		"@sveltejs/vite-plugin-svelte": "^6.2.1",
-		"autoprefixer": "^10.4.16",
-		"postcss": "^8.4.32",
-		"svelte": "^5.41.0",
-		"svelte-check": "^4.3.3",
-		"tailwindcss": "^3.4.0",
-		"typescript": "^5.9.3",
-		"vite": "^7.1.10"
-	},
-	"dependencies": {
-		"clsx": "^2.1.1",
-		"lucide-svelte": "^0.553.0",
-		"svelte-motion": "^0.12.2",
-		"tailwind-merge": "^3.4.0"
-	}
+  "name": "svelte-app",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@sveltejs/adapter-auto": "^7.0.0",
+    "@sveltejs/kit": "^2.47.1",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^9.39.1",
+    "eslint-plugin-svelte": "^3.13.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.6.2",
+    "prettier-plugin-svelte": "^3.4.0",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "svelte": "^5.41.0",
+    "svelte-check": "^4.3.3",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.1.10"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-svelte": "^0.553.0",
+    "svelte-motion": "^0.12.2",
+    "tailwind-merge": "^3.4.0"
+  }
 }
