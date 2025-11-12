@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762910456891,
+      "timestamp": 1762911057872,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4BntEwFMCsYpgTEhEuzdCj",
-        "name": "Deklamasi Cinta",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737f7137f6d6a942be2cdba44c",
+        "uri": "spotify:track:4IhQA4O98ulPLhsdW2GPPO",
+        "name": "Sadrah - Acoustic",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735908d6fdeaf4c7c2b3d6fd4b",
         "album": {
-          "uri": "spotify:album:5P4H1YJGCDX0u4Kw6THIcp",
-          "name": "Deklamasi Cinta"
+          "uri": "spotify:album:5oGmWdzAvYfy1osN4PspuR",
+          "name": "Sadrah - Acoustic"
         },
         "artist": {
-          "uri": "spotify:artist:2zrMuruIsDXrQIQHuLU0sj",
-          "name": "Ronald Dewa, Aliandi"
+          "uri": "spotify:artist:0f6TyESD8E1mD2oLJ4TGv1",
+          "name": "For Revenge, Meiska"
         },
         "context": {
           "uri": "spotify:playlist:0kUx21t2ih7CXKcBSiKUUu",
