@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762930256902,
+      "timestamp": 1762930856858,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2vicIBzpgi5eJNF0T7nrbo",
-        "name": "Terpatah Terluka",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732cc7eb853887837e0a4b726e",
+        "uri": "spotify:track:1qHddOZ7pwtmOsw0RmlKFx",
+        "name": "Takut",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e3e689c374465ace2fbfa676",
         "album": {
-          "uri": "spotify:album:5UIos6Mz9ip3sRWI9lyZph",
-          "name": "Kekal Yang Sementara"
+          "uri": "spotify:album:7EDGBbCqiZ8X9ecuGAnziL",
+          "name": "Takut"
         },
         "artist": {
-          "uri": "spotify:artist:0sLoVTeBT6akDY7ecDxKYe",
-          "name": "Nabila Taqiyyah"
+          "uri": "spotify:artist:7pFWMC2E7h8eL3SZyHRsRq",
+          "name": "Idgitaf"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
