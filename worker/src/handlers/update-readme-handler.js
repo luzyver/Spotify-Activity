@@ -43,30 +43,38 @@ function generateReadmeContent(historyFiles, allHistoryData) {
 
 ## 📊 Overall Statistics
 
-- **Total Plays**: ${totalTracks.toLocaleString()}
-- **Unique Tracks**: ${uniqueTracks.toLocaleString()}
-- **Unique Artists**: ${uniqueArtists.toLocaleString()}
-- **Period**: ${firstDate} - ${lastDate}
-- **Archive Files**: ${historyFiles.length}
+| Metric | Value |
+|--------|-------|
+| **Total Plays** | ${totalTracks.toLocaleString()} |
+| **Unique Tracks** | ${uniqueTracks.toLocaleString()} |
+| **Unique Artists** | ${uniqueArtists.toLocaleString()} |
+| **Period** | ${firstDate} - ${lastDate} |
+| **Archive Files** | ${historyFiles.length} |
 
 ## 🎤 Top 10 Artists (All Time)
 
+| Rank | Artist | Plays |
+|------|--------|-------|
 `;
 
 	topArtists.forEach(([artist, count], index) => {
-		readme += `${index + 1}. **${artist}** - ${count} plays\n`;
+		readme += `| ${index + 1} | ${artist} | ${count.toLocaleString()} |\n`;
 	});
 
 	readme += `\n## 🎧 Top 10 Most Played Tracks (All Time)
 
+| Rank | Track | Plays |
+|------|-------|-------|
 `;
 
 	topTracks.forEach(([track, count], index) => {
-		readme += `${index + 1}. **${track}** - ${count} plays\n`;
+		readme += `| ${index + 1} | ${track} | ${count.toLocaleString()} |\n`;
 	});
 
 	readme += `\n## 📅 Daily Breakdown
 
+| Date | Plays | Top Artist | Top Track |
+|------|-------|------------|-----------|
 `;
 
 	if (historyFiles && historyFiles.length > 0) {
@@ -80,7 +88,7 @@ function generateReadmeContent(historyFiles, allHistoryData) {
 			);
 			const formattedDate = dateObj.toLocaleDateString('en-US', { 
 				year: 'numeric', 
-				month: 'long', 
+				month: 'short', 
 				day: 'numeric',
 				timeZone: 'Asia/Jakarta'
 			});
@@ -101,18 +109,10 @@ function generateReadmeContent(historyFiles, allHistoryData) {
 			const topDailyTrack = Object.entries(dailyTrackCounts)
 				.sort((a, b) => b[1] - a[1])[0];
 			
-			readme += `### ${formattedDate}\n`;
-			readme += `- **Plays**: ${file.count} tracks\n`;
+			const artistText = topDailyArtist ? `${topDailyArtist[0]} (${topDailyArtist[1]})` : '-';
+			const trackText = topDailyTrack ? `${topDailyTrack[0]} (${topDailyTrack[1]})` : '-';
 			
-			if (topDailyArtist) {
-				readme += `- **Top Artist**: ${topDailyArtist[0]} (${topDailyArtist[1]} plays)\n`;
-			}
-			
-			if (topDailyTrack) {
-				readme += `- **Top Track**: ${topDailyTrack[0]} (${topDailyTrack[1]} plays)\n`;
-			}
-			
-			readme += `\n`;
+			readme += `| ${formattedDate} | ${file.count} | ${artistText} | ${trackText} |\n`;
 		});
 	}
 
