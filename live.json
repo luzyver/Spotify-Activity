@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763030422198,
+      "timestamp": 1763031022043,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1tqPw8Hf88h24Bpt2SzuYE",
-        "name": "Di Akhir Perang",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5",
+        "uri": "spotify:track:3Jby9Ezr1E7wCsXe0Dexa6",
+        "name": "Tanpa Tergesa",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b1d3ef29ee15a18842973471",
         "album": {
-          "uri": "spotify:album:5hpq1LSLCuC7cifjXAM5bf",
-          "name": "Untuk Dunia, Cinta, dan Kotornya"
+          "uri": "spotify:album:17vUW6koeUkV58uYfkK6G3",
+          "name": "Sentimental"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:3tMTXQyRrPmMyHv5SoC0TV",
+          "name": "Juicy Luicy"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1E4k5a14eoBPkb",
