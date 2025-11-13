@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763056254364,
+      "timestamp": 1763056854682,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7zOVh5fGpEwSbZd0g9z80B",
-        "name": "Satu Bulan",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb1e5f7d0942bf9196c1e711",
+        "uri": "spotify:track:72DL0kjCGfA4qIDQnR88hT",
+        "name": "Asumsi",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739670851bed73df294eee9111",
         "album": {
-          "uri": "spotify:album:5K8xqV7MCe3UIfedVAlZSe",
-          "name": "Terlintas"
+          "uri": "spotify:album:62tBcSn5N7vgrndYZwC4GB",
+          "name": "HARAP-HARAP EMAS"
         },
         "artist": {
-          "uri": "spotify:artist:47z98pKd71yIbgXwe9LPVC",
-          "name": "Bernadya"
+          "uri": "spotify:artist:6X28gNASnalAWseUA8uI4X",
+          "name": "Adrian Khalif, Bernadya"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
