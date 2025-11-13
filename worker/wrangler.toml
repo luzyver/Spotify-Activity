@@ -19,3 +19,7 @@ crons = ["*/10 * * * *", "59 16 * * *"]
 # SPOTIFY_REFRESH_TOKENS - set via: wrangler secret put SPOTIFY_REFRESH_TOKENS
 # GITHUB_TOKEN - set via: wrangler secret put GITHUB_TOKEN
 # GITHUB_REPO - set via: wrangler secret put GITHUB_REPO (format: username/repo)
+
+[[routes]]
+pattern = "worker-spotify.luzyver.dev"
+custom_domain = true

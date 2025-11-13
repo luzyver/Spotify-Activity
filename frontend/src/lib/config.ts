@@ -7,6 +7,6 @@ export const TRACKED_USERS: Record<string, { name: string }> = {
 export const ITEMS_PER_PAGE = 12;
 
 export const API_ENDPOINTS = {
-  LIVE: 'https://worker-spotify.luzyver.workers.dev/api/live',
-  HISTORY: 'https://worker-spotify.luzyver.workers.dev/api/history',
+  LIVE: 'https://worker-spotify.luzyver.dev/api/live',
+  HISTORY: 'https://worker-spotify.luzyver.dev/api/history',
 };
