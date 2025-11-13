@@ -34,7 +34,6 @@ export async function loadAllHistoryStatic(): Promise<HistoryItem[]> {
         // Error loading file
       }
     }
-
   } catch (error) {
     // Fatal error
   }

@@ -36,4 +36,3 @@ export interface HistoryItem {
 
 export type ViewMode = 'grid' | 'list' | 'compact';
 export type SortOption = 'recent' | 'oldest' | 'artist' | 'track';
-export type Density = 'comfortable' | 'compact' | 'spacious';

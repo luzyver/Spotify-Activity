@@ -3,13 +3,11 @@ import type { HistoryItem } from '$lib/types';
 
 export type SortOption = 'recent' | 'oldest' | 'artist' | 'track';
 export type ViewMode = 'grid' | 'list' | 'compact';
-export type Density = 'comfortable' | 'compact' | 'spacious';
 
 export const searchQuery = writable('');
 export const selectedArtist = writable<string | null>(null);
 export const sortBy = writable<SortOption>('recent');
 export const viewMode = writable<ViewMode>('grid');
-export const density = writable<Density>('comfortable');
 export const dateRange = writable<{ start: Date | null; end: Date | null }>({
   start: null,
   end: null,

@@ -3,8 +3,7 @@
   import type { ViewMode } from '$lib/stores/filters';
   import { timeAgo, spotifyUrl } from '$lib/utils';
   import { Motion } from 'svelte-motion';
-  import { Play, Clock, User, Sparkles } from 'lucide-svelte';
-  import { COLOR_PALETTES } from '$lib/palettes';
+  import { Play, Clock, ExternalLink } from 'lucide-svelte';
   import { theme } from '$lib/stores/theme';
 
   interface Props {
@@ -18,70 +17,73 @@
   let { item, index, currentPage, itemsPerPage, viewMode = 'grid' }: Props = $props();
 
   const globalIndex = $derived((currentPage - 1) * itemsPerPage + index + 1);
-  const palette = $derived(COLOR_PALETTES[globalIndex % COLOR_PALETTES.length]);
   const isLight = $derived($theme === 'light');
-
-  // Light mode colors
-  const textColor = $derived(isLight ? '#1f2937' : '#ffffff');
-  const secondaryTextColor = $derived(isLight ? '#6b7280' : '#9ca3af');
-  const tertiaryTextColor = $derived(isLight ? '#9ca3af' : '#6b7280');
-  const cardBg = $derived(
-    isLight
-      ? 'rgba(255, 255, 255, 0.95)'
-      : `linear-gradient(135deg, ${palette.primary}15, ${palette.secondary}15)`
-  );
 </script>
 
 {#if viewMode === 'list'}
-  <!-- List View -->
+  <!-- List View - Premium Glass -->
   <Motion
     initial={{ opacity: 0, x: -20 }}
     animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: index * 0.05 }}
+    transition={{ delay: index * 0.03, duration: 0.4 }}
     let:motion
   >
     <div
       use:motion
-      class="glass-card group flex items-center gap-4 rounded-xl p-3 transition-all hover:scale-[1.02]"
+      class="premium-glass-card group flex items-center gap-4 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-0.5"
     >
-      <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer">
-        <div class="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg">
+      <!-- Album Art -->
+      <a
+        href={spotifyUrl(item.uri)}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative flex-shrink-0"
+      >
+        <div
+          class="relative h-16 w-16 overflow-hidden rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+        >
           <img src={item.imageUrl} class="h-full w-full object-cover" alt={item.track} />
           <div
-            class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity group-hover:opacity-100"
+            class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
           >
             <Play class="h-6 w-6 fill-white text-white" />
           </div>
         </div>
       </a>
 
+      <!-- Info -->
       <div class="min-w-0 flex-1">
-        <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer">
-          <h3 class="truncate font-bold" style="color: {isLight ? '#16a34a' : palette.primary}">
+        <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
+          <h4
+            class="mb-1 truncate text-base font-bold text-white transition-colors hover:text-[#1db954]"
+          >
             {item.track}
-          </h3>
+          </h4>
         </a>
-        <p class="truncate text-sm" style="color: {secondaryTextColor}">{item.artist}</p>
-      </div>
-
-      <div class="flex items-center gap-4 text-sm" style="color: {tertiaryTextColor}">
-        <div class="flex items-center gap-1">
-          <Clock class="h-4 w-4" />
+        <p class="mb-1 truncate text-sm text-gray-400">{item.artist || 'Unknown Artist'}</p>
+        <div class="flex items-center gap-2 text-xs text-gray-500">
+          <Clock class="h-3 w-3" />
           <span>{timeAgo(item.timestamp)}</span>
         </div>
-        <div class="flex items-center gap-1">
-          <User class="h-4 w-4" />
-          <span>{item.user}</span>
-        </div>
       </div>
+
+      <!-- Action -->
+      <a
+        href={spotifyUrl(item.uri)}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-shrink-0 rounded-lg bg-white/5 p-2 opacity-0 transition-all hover:scale-110 hover:bg-[#1db954] group-hover:opacity-100"
+      >
+        <ExternalLink class="h-4 w-4 text-white" />
+      </a>
     </div>
   </Motion>
 {:else if viewMode === 'compact'}
-  <!-- Compact View -->
+  <!-- Compact View - Premium Glass -->
   <Motion
-    initial={{ opacity: 0, scale: 0.8 }}
+    initial={{ opacity: 0, scale: 0.9 }}
     animate={{ opacity: 1, scale: 1 }}
-    transition={{ delay: index * 0.03 }}
+    transition={{ delay: index * 0.02, duration: 0.3 }}
     let:motion
   >
     <a
@@ -89,187 +91,158 @@
       href={spotifyUrl(item.uri)}
       target="_blank"
       rel="noopener noreferrer"
-      class="group block"
+      class="premium-glass-card group block overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
     >
-      <div class="glass-card overflow-hidden rounded-lg transition-all hover:scale-105">
-        <div class="relative aspect-square">
-          <img src={item.imageUrl} class="h-full w-full object-cover" alt={item.track} />
+      <div class="relative aspect-square">
+        <img src={item.imageUrl} alt={item.track} class="h-full w-full object-cover" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
+        >
           <div
-            class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity group-hover:opacity-100"
+            class="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-md"
+            style="box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
           >
-            <Play class="h-8 w-8 fill-white text-white" />
-          </div>
-          <div
-            class="absolute left-1 top-1 rounded-full px-2 py-1 text-xs font-bold"
-            style="background: {palette.primary}"
-          >
-            #{globalIndex}
+            <Play class="h-5 w-5 fill-white text-white" />
           </div>
         </div>
-        <div class="p-2">
-          <h3
-            class="truncate text-xs font-bold"
-            style="color: {isLight ? '#16a34a' : palette.primary}"
-          >
-            {item.track}
-          </h3>
-          <p class="truncate text-[10px]" style="color: {secondaryTextColor}">{item.artist}</p>
+        <!-- Time Badge -->
+        <div
+          class="absolute right-2 top-2 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-semibold text-white backdrop-blur-sm"
+        >
+          {timeAgo(item.timestamp)}
         </div>
+      </div>
+      <div class="p-3">
+        <p class="mb-1 truncate text-sm font-bold text-white">{item.track}</p>
+        <p class="truncate text-xs text-gray-400">{item.artist || 'Unknown Artist'}</p>
       </div>
     </a>
   </Motion>
 {:else}
-  <!-- Grid View (Default) -->
+  <!-- Grid View (Default) - Premium Glass -->
   <Motion
-    initial={{ opacity: 0, y: 30, scale: 0.9 }}
-    animate={{ opacity: 1, y: 0, scale: 1 }}
-    transition={{
-      type: 'spring',
-      stiffness: 100,
-      damping: 15,
-      mass: 1,
-      delay: (index % itemsPerPage) * 0.08,
-    }}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: index * 0.04, duration: 0.4 }}
     let:motion
   >
     <div
       use:motion
-      class="group relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-out hover:scale-[1.03] {isLight
-        ? 'border border-gray-200 shadow-lg'
-        : ''}"
-      style="background: {cardBg}"
+      class="premium-glass-card group overflow-hidden rounded-3xl transition-all duration-300 hover:-translate-y-1"
     >
-      <div class="absolute inset-0 bg-gradient-to-br {palette.gradient} opacity-60"></div>
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-      ></div>
-
-      <div
-        class="absolute right-2 top-2 opacity-0 transition-all duration-500 ease-out group-hover:opacity-100"
+      <!-- Album Art -->
+      <a
+        href={spotifyUrl(item.uri)}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative block aspect-square overflow-hidden"
       >
-        <Sparkles
-          class="h-4 w-4 animate-pulse text-yellow-300"
-          style="filter: drop-shadow(0 0 8px {palette.primary})"
+        <img
+          src={item.imageUrl}
+          alt={item.track}
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-      </div>
 
-      <div
-        class="absolute inset-0 rounded-2xl opacity-0 transition-all duration-700 ease-out group-hover:opacity-100"
-        style="box-shadow: inset 0 0 20px {palette.primary}40, 0 0 30px {palette.primary}20"
-      ></div>
+        <!-- Glass Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
+        ></div>
 
-      <div class="relative z-10 p-2 sm:p-3">
-        <div class="group/album relative mb-3">
-          <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
-            <div
-              class="relative overflow-hidden rounded-xl shadow-2xl transition-all duration-700 ease-out group-hover/album:rotate-1 group-hover/album:scale-105"
-              style="box-shadow: 0 20px 40px {palette.primary}40"
-            >
-              <img src={item.imageUrl} class="aspect-square w-full object-cover" alt={item.track} />
-
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-500 ease-out group-hover/album:opacity-100"
-              ></div>
-
-              <div
-                class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 ease-out group-hover/album:opacity-100"
-              >
-                <div
-                  class="animate-bounce-slow rounded-full p-4 transition-transform duration-300 ease-out hover:scale-125"
-                  style="background: linear-gradient(135deg, {palette.primary}, {palette.secondary}); box-shadow: 0 0 30px {palette.primary}80"
-                >
-                  <Play class="h-6 w-6 fill-white text-white drop-shadow-lg" />
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="animate-bounce-gentle absolute -left-2 -top-2 flex h-10 w-10 items-center justify-center rounded-full text-sm font-black shadow-lg"
-              style="background: linear-gradient(135deg, {palette.primary}, {palette.secondary}); box-shadow: 0 0 20px {palette.primary}60"
-            >
-              #{globalIndex}
-            </div>
-          </a>
-        </div>
-
-        <div class="space-y-1.5 sm:space-y-2">
-          <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
-            <h3
-              class="line-clamp-2 text-sm font-black leading-tight transition-transform duration-500 ease-out group-hover:scale-105 sm:text-base"
-              style="color: {isLight ? '#16a34a' : palette.primary}; text-shadow: {isLight
-                ? 'none'
-                : `0 0 20px ${palette.primary}40`}"
-            >
-              {item.track}
-            </h3>
-          </a>
-
-          <p
-            class="truncate text-xs font-semibold transition-colors duration-300 ease-out sm:text-sm"
-            style="color: {secondaryTextColor}"
-            title={item.artist}
-          >
-            {item.artist}
-          </p>
-
+        <!-- Play Button -->
+        <div
+          class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        >
           <div
-            class="flex items-center justify-between border-t pt-2 text-xs"
-            style="border-color: {isLight ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.1)'}"
+            class="flex h-16 w-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-white/30"
+            style="box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
           >
-            <div class="flex items-center gap-1.5" style="color: {tertiaryTextColor}">
-              <Clock class="h-3 w-3" />
-              <span>{timeAgo(item.timestamp)}</span>
-            </div>
-
-            <div
-              class="flex items-center gap-1.5 rounded-full px-2 py-1 transition-all duration-500 ease-out hover:scale-105"
-              style="background: {isLight
-                ? 'rgba(22, 163, 74, 0.15)'
-                : `linear-gradient(135deg, ${palette.primary}30, ${palette.secondary}30)`}; color: {isLight
-                ? '#16a34a'
-                : palette.primary}"
-            >
-              <User class="h-3 w-3" />
-              <span class="max-w-[60px] truncate font-bold">{item.user}</span>
-            </div>
+            <Play class="h-7 w-7 fill-white text-white" />
           </div>
         </div>
-      </div>
 
-      <div
-        class="absolute bottom-0 left-0 h-1 w-full transition-all duration-700 ease-out group-hover:h-2"
-        style="background: linear-gradient(90deg, {palette.primary}, {palette.secondary})"
-      ></div>
+        <!-- Time Badge -->
+        <div
+          class="absolute right-3 top-3 rounded-xl bg-black/60 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md"
+          style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3)"
+        >
+          {timeAgo(item.timestamp)}
+        </div>
+      </a>
+
+      <!-- Info Section with Glass Effect -->
+      <div class="p-4">
+        <div class="space-y-2">
+          <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
+            <h4
+              class="line-clamp-2 text-base font-bold leading-tight text-white transition-colors hover:text-[#1db954]"
+            >
+              {item.track}
+            </h4>
+          </a>
+
+          <p class="truncate text-sm font-medium text-gray-300">
+            {item.artist || 'Unknown Artist'}
+          </p>
+
+          {#if item.user}
+            <p class="truncate text-xs text-gray-400">Played by {item.user}</p>
+          {/if}
+        </div>
+
+        <!-- Action Bar -->
+        <div class="mt-3 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs text-gray-500">
+            <Clock class="h-3 w-3" />
+            <span>{timeAgo(item.timestamp)}</span>
+          </div>
+
+          <a
+            href={spotifyUrl(item.uri)}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-lg bg-white/5 p-1.5 opacity-0 transition-all hover:scale-110 hover:bg-[#1db954] group-hover:opacity-100"
+          >
+            <ExternalLink class="h-3.5 w-3.5 text-white" />
+          </a>
+        </div>
+      </div>
     </div>
   </Motion>
 {/if}
 
 <style>
-  @keyframes bounce-slow {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+  .premium-glass-card {
+    position: relative;
+    background: rgba(17, 25, 40, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      0 8px 32px 0 rgba(0, 0, 0, 0.37),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
   }
 
-  @keyframes bounce-gentle {
-    0%,
-    100% {
-      transform: translateY(0) scale(1);
-    }
-    50% {
-      transform: translateY(-5px) scale(1.05);
-    }
+  .premium-glass-card:hover {
+    border-color: rgba(29, 185, 84, 0.3);
+    box-shadow:
+      0 16px 48px 0 rgba(29, 185, 84, 0.2),
+      0 0 0 1px rgba(29, 185, 84, 0.1),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
   }
 
-  .animate-bounce-slow {
-    animation: bounce-slow 2s ease-in-out infinite;
+  :global(.light) .premium-glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 8px 32px 0 rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
   }
 
-  .animate-bounce-gentle {
-    animation: bounce-gentle 3s ease-in-out infinite;
+  :global(.light) .premium-glass-card:hover {
+    border-color: rgba(29, 185, 84, 0.4);
+    box-shadow:
+      0 16px 48px 0 rgba(29, 185, 84, 0.15),
+      0 0 0 1px rgba(29, 185, 84, 0.2),
+      inset 0 1px 0 0 rgba(255, 255, 255, 1);
   }
 </style>

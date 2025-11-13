@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { selectedArtist, sortBy, viewMode, density } from '$lib/stores/filters';
+  import { selectedArtist, sortBy, viewMode } from '$lib/stores/filters';
   import type { HistoryItem } from '$lib/types';
   import { Filter, Grid3x3, List, LayoutGrid, SlidersHorizontal } from 'lucide-svelte';
 
@@ -20,12 +20,12 @@
     <!-- Sort -->
     <select
       bind:value={$sortBy}
-      class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur-md transition-all focus:border-[#1db954]/50 focus:outline-none"
+      class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white backdrop-blur-md transition-all focus:border-[#1db954]/50 focus:outline-none"
     >
-      <option value="recent">Most Recent</option>
-      <option value="oldest">Oldest First</option>
-      <option value="artist">Artist A-Z</option>
-      <option value="track">Track A-Z</option>
+      <option value="recent" class="bg-gray-900 text-white">Most Recent</option>
+      <option value="oldest" class="bg-gray-900 text-white">Oldest First</option>
+      <option value="artist" class="bg-gray-900 text-white">Artist A-Z</option>
+      <option value="track" class="bg-gray-900 text-white">Track A-Z</option>
     </select>
 
     <!-- View Mode -->
@@ -91,47 +91,13 @@
           <select
             id="artist-filter"
             bind:value={$selectedArtist}
-            class="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm backdrop-blur-md transition-all focus:border-[#1db954]/50 focus:outline-none"
+            class="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white backdrop-blur-md transition-all focus:border-[#1db954]/50 focus:outline-none"
           >
-            <option value={null}>All Artists</option>
+            <option value={null} class="bg-gray-900 text-white">All Artists</option>
             {#each uniqueArtists as artist}
-              <option value={artist}>{artist}</option>
+              <option value={artist} class="bg-gray-900 text-white">{artist}</option>
             {/each}
           </select>
-        </div>
-
-        <!-- Density -->
-        <div>
-          <div class="mb-2 text-xs font-medium text-gray-400">Display Density</div>
-          <div class="flex gap-2">
-            <button
-              onclick={() => density.set('compact')}
-              class="flex-1 rounded-lg border px-3 py-2 text-xs transition-all {$density ===
-              'compact'
-                ? 'border-[#1db954] bg-[#1db954]/20 text-[#1db954]'
-                : 'border-white/10 bg-white/5 text-gray-400 hover:text-white'}"
-            >
-              Compact
-            </button>
-            <button
-              onclick={() => density.set('comfortable')}
-              class="flex-1 rounded-lg border px-3 py-2 text-xs transition-all {$density ===
-              'comfortable'
-                ? 'border-[#1db954] bg-[#1db954]/20 text-[#1db954]'
-                : 'border-white/10 bg-white/5 text-gray-400 hover:text-white'}"
-            >
-              Comfortable
-            </button>
-            <button
-              onclick={() => density.set('spacious')}
-              class="flex-1 rounded-lg border px-3 py-2 text-xs transition-all {$density ===
-              'spacious'
-                ? 'border-[#1db954] bg-[#1db954]/20 text-[#1db954]'
-                : 'border-white/10 bg-white/5 text-gray-400 hover:text-white'}"
-            >
-              Spacious
-            </button>
-          </div>
         </div>
       </div>
     </div>

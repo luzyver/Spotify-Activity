@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Particles from '$lib/components/Particles.svelte';
   import Equalizer from '$lib/components/Equalizer.svelte';
   import NowPlayingCard from '$lib/components/NowPlayingCard.svelte';
   import EmptyState from '$lib/components/EmptyState.svelte';
@@ -13,19 +12,15 @@
   import CalendarView from '$lib/components/CalendarView.svelte';
   import TopArtistsChart from '$lib/components/TopArtistsChart.svelte';
   import AchievementBadge from '$lib/components/AchievementBadge.svelte';
-  import ShareCard from '$lib/components/ShareCard.svelte';
-  import ConfettiEffect from '$lib/components/ConfettiEffect.svelte';
-  import SkeletonLoader from '$lib/components/SkeletonLoader.svelte';
   import GoalsWidget from '$lib/components/GoalsWidget.svelte';
   import CompareView from '$lib/components/CompareView.svelte';
   import TimeOfDayChart from '$lib/components/TimeOfDayChart.svelte';
   import MoodAnalysis from '$lib/components/MoodAnalysis.svelte';
-  import KeyboardShortcuts from '$lib/components/KeyboardShortcuts.svelte';
 
   import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { calculateInsights } from '$lib/utils/analytics';
-  import { filterAndSortHistory, viewMode, density } from '$lib/stores/filters';
+  import { filterAndSortHistory, viewMode } from '$lib/stores/filters';
   import { toggleTheme } from '$lib/stores/theme';
   import { achievements, checkAchievements } from '$lib/stores/achievements';
   import { loadAllHistoryStatic } from '$lib/utils/historyLoaderStatic';
@@ -97,15 +92,6 @@
     checkAchievements(combinedHistory);
   });
 
-  // Trigger confetti on new achievement
-  $effect(() => {
-    const unlockedCount = $achievements.filter((a) => a.unlocked).length;
-    if (unlockedCount > 0) {
-      // Check if this is a new unlock (you'd want to track this in localStorage)
-      // For demo, we'll just show it once
-    }
-  });
-
   function goToPage(page: number) {
     if (page < 1 || page > totalPages) return;
     currentPage = page;
@@ -122,64 +108,7 @@
       document.exitFullscreen?.();
     }
   }
-
-  // Keyboard shortcuts
-  $effect(() => {
-    function handleKeydown(e: KeyboardEvent) {
-      // Don't trigger if user is typing
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
-        if (e.key === 'Escape') {
-          (e.target as HTMLElement).blur();
-        }
-        return;
-      }
-
-      switch (e.key) {
-        case '/':
-          e.preventDefault();
-          (document.querySelector('input[type="text"]') as HTMLInputElement)?.focus();
-          break;
-        case '1':
-          activeTab = 'overview';
-          break;
-        case '2':
-          activeTab = 'insights';
-          break;
-        case '3':
-          activeTab = 'achievements';
-          break;
-        case '4':
-          activeTab = 'calendar';
-          break;
-        case 't':
-        case 'T':
-          toggleTheme();
-          break;
-        case 'f':
-        case 'F':
-          toggleFullscreen();
-          break;
-        case 'ArrowLeft':
-          if (currentPage > 1) goToPage(currentPage - 1);
-          break;
-        case 'ArrowRight':
-          if (currentPage < totalPages) goToPage(currentPage + 1);
-          break;
-      }
-    }
-
-    window.addEventListener('keydown', handleKeydown);
-    return () => window.removeEventListener('keydown', handleKeydown);
-  });
-
-  // Density classes
-  let densityClass = $derived(
-    $density === 'compact' ? 'gap-2' : $density === 'spacious' ? 'gap-6' : 'gap-4'
-  );
 </script>
-
-<Particles />
-<KeyboardShortcuts />
 
 <div class="relative z-10 min-h-screen">
   <!-- Header -->
@@ -312,22 +241,19 @@
                 <Music2 class="h-4 w-4 text-[#1db954] sm:h-5 sm:w-5" />
                 <h2 class="text-base font-bold sm:text-lg lg:text-xl">Recent Plays</h2>
               </div>
-              <div class="flex items-center gap-3">
-                <p class="text-[10px] text-gray-400 sm:text-xs lg:text-sm">
-                  {filteredHistory.length} tracks
-                </p>
-                <ShareCard {insights} />
-              </div>
+              <p class="text-[10px] text-gray-400 sm:text-xs lg:text-sm">
+                {filteredHistory.length} tracks
+              </p>
             </div>
 
             {#if filteredHistory.length > 0}
               <!-- Grid/List View -->
               <div
                 class="mb-4 sm:mb-6 {$viewMode === 'list'
-                  ? 'space-y-2'
+                  ? 'space-y-3'
                   : $viewMode === 'compact'
-                    ? 'grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'
-                    : 'grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:grid-cols-4'} {densityClass}"
+                    ? 'grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'
+                    : 'grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'}"
               >
                 {#each paginatedHistory as item, index (item.uri + ':' + item.timestamp)}
                   <HistoryCard
