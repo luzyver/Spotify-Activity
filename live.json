@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763051570720,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:6JBojdxAPtcPNfhFqmZEBt",
+        "name": "Malam Rawan",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273106fefef0c4cf8c2b3b1c3c8",
+        "album": {
+          "uri": "spotify:album:6K3f48VhTPIz9wFO1iQFOH",
+          "name": "Malam Rawan"
+        },
+        "artist": {
+          "uri": "spotify:artist:28DdkLhrzQNizZ0ExQpyku",
+          "name": "Rizky Febian"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1DWW5b4WmmOtn7",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
