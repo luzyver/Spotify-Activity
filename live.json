@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1762996824407,
+      "timestamp": 1762997425122,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:72DL0kjCGfA4qIDQnR88hT",
-        "name": "Asumsi",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739670851bed73df294eee9111",
+        "uri": "spotify:track:4piQOnMesAkS5X0ugzHiBS",
+        "name": "Ambang Pintu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a",
         "album": {
-          "uri": "spotify:album:62tBcSn5N7vgrndYZwC4GB",
-          "name": "HARAP-HARAP EMAS"
+          "uri": "spotify:album:5agEAxt8vks5Xk0NfEbI5D",
+          "name": "Sialnya, Hidup Harus Tetap Berjalan"
         },
         "artist": {
-          "uri": "spotify:artist:6X28gNASnalAWseUA8uI4X",
-          "name": "Adrian Khalif, Bernadya"
+          "uri": "spotify:artist:47z98pKd71yIbgXwe9LPVC",
+          "name": "Bernadya"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
