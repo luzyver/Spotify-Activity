@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763049655453,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:4Pa4h41IgFmhbxsnVZO9pl",
+        "name": "Saat Bahagia",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27376db3518dda8015865411eb4",
+        "album": {
+          "uri": "spotify:album:7tkjVBLIMZdTsvmviNBOGp",
+          "name": "1000 Kisah Satu Hati"
+        },
+        "artist": {
+          "uri": "spotify:artist:4HHdjvdn30koo54zQ6QeF5",
+          "name": "Ungu, Andien"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1E4k5a14eoBPkb",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
