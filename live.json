@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763004624901,
+      "timestamp": 1763005224334,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5DqSZFvWvSWg5eyCDi0CuW",
-        "name": "Kita Ke Sana",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349bdf0e981cbba25d48b44e0",
+        "uri": "spotify:track:4rcuS31IcZynp91dqvmhmA",
+        "name": "Semua Aku Dirayakan",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5",
         "album": {
-          "uri": "spotify:album:0DMdiWcqnutCi81EqBXkF8",
-          "name": "Lagipula Hidup Akan Berakhir"
+          "uri": "spotify:album:5hpq1LSLCuC7cifjXAM5bf",
+          "name": "Untuk Dunia, Cinta, dan Kotornya"
         },
         "artist": {
-          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
-          "name": "Hindia"
+          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
+          "name": "Nadin Amizah"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
