@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763002828024,
+      "timestamp": 1763003424114,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1q1dsfckKMgjfr8DfdeKfs",
-        "name": "Amin Paling Serius",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27383b0105f3ea493fcf0da7443",
+        "uri": "spotify:track:6gARWk9hXgTUImaKUsTu6w",
+        "name": "Bohongi Hati",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542",
         "album": {
-          "uri": "spotify:album:4gwRdhyoIngNRgbeP0C7Id",
-          "name": "Berhati"
+          "uri": "spotify:album:1vva4fJyjXaJ2RDsGmIbCv",
+          "name": "fábula"
         },
         "artist": {
-          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
-          "name": "Sal Priadi, Nadin Amizah"
+          "uri": "spotify:artist:3wOsYKZM0zcKNasi3I7fP4",
+          "name": "Mahalini"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
