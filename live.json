@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763011343139,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:7J0isBrUxhIYZVdrBOOlIh",
+        "name": "Cincin",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d58121433ea3e6c4822ac494",
+        "album": {
+          "uri": "spotify:album:2kgo1jbmAmaANgE8EaIrKX",
+          "name": "Lagipula Hidup Akan Berakhir"
+        },
+        "artist": {
+          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
+          "name": "Hindia"
+        },
+        "context": {
+          "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
