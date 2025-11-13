@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763004024010,
+      "timestamp": 1763004624901,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0O6g2QFUhuLqRzGqhyzrIu",
-        "name": "Hitam Putih",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734fe255e0ba819e903f5fc4e5",
+        "uri": "spotify:track:5DqSZFvWvSWg5eyCDi0CuW",
+        "name": "Kita Ke Sana",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349bdf0e981cbba25d48b44e0",
         "album": {
-          "uri": "spotify:album:7L7LNEoL5tgH6CvWEnNDt1",
-          "name": "Lelaku"
+          "uri": "spotify:album:0DMdiWcqnutCi81EqBXkF8",
+          "name": "Lagipula Hidup Akan Berakhir"
         },
         "artist": {
-          "uri": "spotify:artist:46cVq2dwPgzPE3X1VR9TMj",
-          "name": "Fourtwnty"
+          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
+          "name": "Hindia"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
