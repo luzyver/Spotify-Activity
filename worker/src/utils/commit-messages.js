@@ -227,20 +227,5 @@ export async function getRandomCommitMessage(newTracks, liveCount, githubRepo, g
 		lastCommits = lastCommits.slice(0, 50);
 	}
 
-	try {
-		const github = await import('../services/github.js');
-		const { sha } = await github.getGitHubFile(githubRepo, 'last-commits.json', githubToken);
-		await github.updateGitHubFile(
-			githubRepo,
-			'last-commits.json',
-			lastCommits,
-			'Update last commits cache [skip ci]',
-			sha,
-			githubToken
-		);
-	} catch (error) {
-		console.log('Failed to update last-commits.json:', error.message);
-	}
-
-	return selectedMessage;
+	return { message: selectedMessage, updatedCommits: lastCommits };
 }

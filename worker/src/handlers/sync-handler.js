@@ -122,12 +122,13 @@ export async function handleScheduled(env) {
 
 		// Only commit if there are changes
 		if (historyChanged || liveChanged) {
-			const commitMsg = await getRandomCommitMessage(totalNewTracks, liveFriends.length, githubRepo, githubToken);
+			const { message: commitMsg, updatedCommits } = await getRandomCommitMessage(totalNewTracks, liveFriends.length, githubRepo, githubToken);
 			await github.updateMultipleGitHubFiles(
 				githubRepo,
 				[
 					{ path: 'history.json', content: sortedHistory },
-					{ path: 'live.json', content: newLiveData }
+					{ path: 'live.json', content: newLiveData },
+					{ path: 'last-commits.json', content: updatedCommits }
 				],
 				commitMsg,
 				githubToken
