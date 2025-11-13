@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763007624442,
+      "timestamp": 1763008226701,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6H7lvP0NgAF39Rn3qve4Og",
-        "name": "Melawan Restu",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542",
+        "uri": "spotify:track:1D8kctV7MtI4rWZhbYeaF9",
+        "name": "Di Ambang Karam",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394c0587a1bc7172d1a61cef6",
         "album": {
-          "uri": "spotify:album:1vva4fJyjXaJ2RDsGmIbCv",
-          "name": "fábula"
+          "uri": "spotify:album:3ovZcgvyRdFCUlQXzJkFHV",
+          "name": "Di Ambang Karam"
         },
         "artist": {
-          "uri": "spotify:artist:3wOsYKZM0zcKNasi3I7fP4",
-          "name": "Mahalini"
+          "uri": "spotify:artist:40wi3VPurw0e4t3Yggo2Fk",
+          "name": "Amigdala"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
