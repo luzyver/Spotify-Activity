@@ -2,7 +2,9 @@ import { handleScheduled } from './handlers/sync-handler.js';
 import { handleClearHistory, handleClearHistoryEndpoint } from './handlers/clear-handler.js';
 import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
 import { handleBackupEndpoint } from './handlers/backup-handler.js';
-import { CORS_HEADERS, CRON_SCHEDULES, MESSAGES } from './config/constants.js';
+import { handleUpdateReadme } from './handlers/update-readme-handler.js';
+import { getHomeHTML } from './handlers/home-html.js';
+import { CORS_HEADERS, CRON_SCHEDULES } from './config/constants.js';
 
 async function handleScheduledEvent(event, env, ctx) {
 	const now = new Date();
@@ -39,6 +41,10 @@ async function handleFetch(request, env, ctx) {
 		return handleBackupEndpoint(request, env, CORS_HEADERS);
 	}
 
+	if ((request.method === 'GET' || request.method === 'POST') && pathname === '/update') {
+		return handleUpdateReadme(env, CORS_HEADERS);
+	}
+
 	if (request.method === 'GET' && pathname === '/api/live') {
 		return handleLiveAPI(env, CORS_HEADERS);
 	}
@@ -47,9 +53,15 @@ async function handleFetch(request, env, ctx) {
 		return handleHistoryAPI(env, CORS_HEADERS);
 	}
 
-	return new Response(MESSAGES.WORKER_INFO, {
-		headers: { 'Content-Type': 'text/plain' },
-	});
+	// Home page with UI
+	if (request.method === 'GET' && pathname === '/') {
+		return new Response(getHomeHTML(), {
+			headers: { 'Content-Type': 'text/html' },
+		});
+	}
+
+	// 404 for unknown paths
+	return new Response('Not Found', { status: 404 });
 }
 
 export default {
