@@ -7,7 +7,7 @@
 - **Total Plays**: 213
 - **Unique Tracks**: 194
 - **Unique Artists**: 142
-- **Period**: November 11, 2025 - November 12, 2025
+- **Period**: November 12, 2025 - November 12, 2025
 - **Archive Files**: 1
 
 ## 🎤 Top 10 Artists (All Time)
@@ -36,7 +36,7 @@
 9. **Lihat Kebunku (Taman Bunga) - Aku Jeje** - 2 plays
 10. **The Fate of Ophelia - Taylor Swift** - 2 plays
 
-## � Daily yBreakdown
+## 📅 Daily Breakdown
 
 ### November 12, 2025
 - **Plays**: 213 tracks
@@ -45,6 +45,6 @@
 
 ---
 
-*Last updated: 11/13/2025, 5:49:55 AM UTC*
+*Last updated: 11/13/2025, 12:54:30 PM WIB (GMT+7)*
 
 *This README is automatically generated from listening history data*
