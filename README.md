@@ -46,8 +46,8 @@
 
 | Date | Plays | Top Artist | Top Track |
 |------|-------|------------|-----------|
-| Nov 13, 2025 | 124 | Bernadya (21) | You'll Be in My Heart - NIKI (2) |
 | Nov 12, 2025 | 213 | Ghea Indrawari (10) | Lesung Pipi - Raim Laode (3) |
+| Nov 13, 2025 | 124 | Bernadya (21) | You'll Be in My Heart - NIKI (2) |
 ---
 
 *This README is automatically generated from listening history data*
