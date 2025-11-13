@@ -45,6 +45,4 @@
 
 ---
 
-*Last updated: 11/13/2025, 12:54:54 PM WIB (GMT+7)*
-
 *This README is automatically generated from listening history data*
