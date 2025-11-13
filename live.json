@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763032822292,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:1USA6DXJ1qsucoKnDu4vnu",
+        "name": "Tak Kan Hilang",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27359fccaa7f993b8ea2fb1d3c6",
+        "album": {
+          "uri": "spotify:album:6JmBf13wUd3kJEdoXgbZy5",
+          "name": "Tak Kan Hilang"
+        },
+        "artist": {
+          "uri": "spotify:artist:6Ifk2cbxyVzT41jLexYCas",
+          "name": "Budi Doremi"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1E4k5a14eoBPkb",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
