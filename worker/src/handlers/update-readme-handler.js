@@ -78,7 +78,7 @@ function generateReadmeContent(historyFiles, allHistoryData) {
 `;
 
 	if (historyFiles && historyFiles.length > 0) {
-		const sortedFiles = [...historyFiles].sort((a, b) => b.date.localeCompare(a.date));
+		const sortedFiles = [...historyFiles].sort((a, b) => a.date.localeCompare(b.date));
 		
 		sortedFiles.forEach(file => {
 			const dateObj = new Date(
