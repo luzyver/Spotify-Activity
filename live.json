@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763050254410,
+      "timestamp": 1763050854510,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0hzIdk9dIvDablVS6UW7Vi",
-        "name": "Yang Patah Tumbuh, Yang Hilang Berganti",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737a173b7767ca05f9bb17464e",
+        "uri": "spotify:track:1CVUWAC845LKEDHH0l8XG2",
+        "name": "Serta Mulia",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b58c26bf822eda1333ed9c38",
         "album": {
-          "uri": "spotify:album:6IEzbFuJb1yYg6bO4NfXvZ",
-          "name": "Yang Patah Tumbuh, Yang Hilang Berganti"
+          "uri": "spotify:album:3K4VOWkpz4e8VlD411IwQU",
+          "name": "Serta Mulia"
         },
         "artist": {
-          "uri": "spotify:artist:3f49JTIdjQTVVx2Y6ifVLc",
-          "name": "Banda Neira"
+          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
+          "name": "Sal Priadi"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1E4k5a14eoBPkb",
