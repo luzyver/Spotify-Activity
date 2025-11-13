@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763045454576,
+      "timestamp": 1763046054958,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6RAxgUG90f39dVSGUr4qOd",
-        "name": "Kisah Tanpa Dirimu",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d7105ffabf2ff9ddd265eab1",
+        "uri": "spotify:track:0zAtj0BEvpulETGrk95NPQ",
+        "name": "Rayuan Perempuan Gila",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5",
         "album": {
-          "uri": "spotify:album:6WyxwTMDu7MdmWKZ2m4lCe",
-          "name": "Devaki"
+          "uri": "spotify:album:5hpq1LSLCuC7cifjXAM5bf",
+          "name": "Untuk Dunia, Cinta, dan Kotornya"
         },
         "artist": {
-          "uri": "spotify:artist:7lXTU6VtJQWfiN2vuZyzqf",
-          "name": "Anggis Devaki"
+          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
+          "name": "Nadin Amizah"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
