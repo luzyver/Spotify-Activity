@@ -1,19 +1,19 @@
 {
   "friends": [
     {
-      "timestamp": 1763106850181,
+      "timestamp": 1763106890294,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4LUHc4MWBOvDCjWNUQhTkT",
-        "name": "Apa Mungkin",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb1e5f7d0942bf9196c1e711",
+        "uri": "spotify:track:6wj06az0WX7fClA2w319dO",
+        "name": "Kata Mereka Ini Berlebihan",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a",
         "album": {
-          "uri": "spotify:album:5K8xqV7MCe3UIfedVAlZSe",
-          "name": "Terlintas"
+          "uri": "spotify:album:5agEAxt8vks5Xk0NfEbI5D",
+          "name": "Sialnya, Hidup Harus Tetap Berjalan"
         },
         "artist": {
           "uri": "spotify:artist:47z98pKd71yIbgXwe9LPVC",
