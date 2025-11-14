@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763088038486,
+      "timestamp": 1763088638617,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6Dh1zHQjEaOp29VW9pp3xG",
-        "name": "Taruh",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb",
+        "uri": "spotify:track:26aNjbOgTVrFZEx7was69A",
+        "name": "Mencintaimu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273489cd3228dbaa5552e5ed8c9",
         "album": {
-          "uri": "spotify:album:75KyCmWatZRvlMcMRed9BG",
-          "name": "Selamat Ulang Tahun"
+          "uri": "spotify:album:6sGKwCYtM7MlRkVYFWbNQY",
+          "name": "Mencintaimu"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
+          "name": "Sal Priadi"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
