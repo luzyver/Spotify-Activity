@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763133646795,
+      "timestamp": 1763134247122,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2bGWVOJph2fsQMcuL04PrU",
-        "name": "Ramu",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e20ffb152867d865e52acd10",
+        "uri": "spotify:track:39B12Su7R0fIDcQPykPwkc",
+        "name": "Ego",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735c016f9c8fa4ad84100e112c",
         "album": {
-          "uri": "spotify:album:6Um3awxwOSoxLVVBn85UjA",
-          "name": "Ramu"
+          "uri": "spotify:album:1R9tlrCSbbO1rUmQZ1a8r6",
+          "name": "Ego"
         },
         "artist": {
-          "uri": "spotify:artist:2Pc5nBssh59fUoQGWOb0KS",
-          "name": "Rizki Jonathan"
+          "uri": "spotify:artist:6PL8FkAt5nOZwYpPIhuAJg",
+          "name": "Padi"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DX7sD2LU79ZzQ",
