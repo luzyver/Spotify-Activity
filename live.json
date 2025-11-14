@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763129447200,
+      "timestamp": 1763130047343,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:20Vgi9sX3rOnoUFGaPLQXX",
-        "name": "Mau Jadi Apa?",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b665fcb4ce1cf9d52ecfe508",
+        "uri": "spotify:track:2m3Jv5Wo0vHG9CS5uw9I0P",
+        "name": "SHE",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27350fe1e67ca4eb99200bb8c97",
         "album": {
-          "uri": "spotify:album:4J0OIjbX95tZ97392u8OeI",
-          "name": "Mau Jadi Apa?"
+          "uri": "spotify:album:4S869zHvjKRHNFtSSL9Gjo",
+          "name": "SHE"
         },
         "artist": {
-          "uri": "spotify:artist:02Tq76MwpeoRu3BHIAiaio",
-          "name": "Yura Yunita"
+          "uri": "spotify:artist:4nd1IvFkUoQinjvYdUmOBI",
+          "name": "GANGGA"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DX7sD2LU79ZzQ",
