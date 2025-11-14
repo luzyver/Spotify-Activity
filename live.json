@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763131246984,
+      "timestamp": 1763131847131,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2DbFzTzMVHnHLBw2GX2oFC",
-        "name": "CERITA ROMANSA",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733682868827ce1613ccf169e0",
+        "uri": "spotify:track:5CtyREB80zdg676XLxgqEb",
+        "name": "Makin Aku Cinta",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349755fb0655f0949f4f39efc",
         "album": {
-          "uri": "spotify:album:2rcoMGGxPi17x0aAGzIdkN",
-          "name": "CERITA ROMANSA"
+          "uri": "spotify:album:38JgbBDqJCfyUkuzBmzreB",
+          "name": "GLENN"
         },
         "artist": {
-          "uri": "spotify:artist:4sZCNSc9bpEa6bjM8Z3NOu",
-          "name": "Sandhy Sondoro"
+          "uri": "spotify:artist:26ez0LOxJMgy1GkkXhZiCV",
+          "name": "Glenn Samuel, Brisia Jodie, Andi Rianto"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DX7sD2LU79ZzQ",
