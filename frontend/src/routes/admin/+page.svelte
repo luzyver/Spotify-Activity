@@ -87,19 +87,29 @@
       const res = await fetch(API_ENDPOINTS.BACKUP, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ commitHash: backupCommitHash.trim() })
+        body: JSON.stringify({ sha: backupCommitHash.trim() })
       });
-      const data = await res.json().catch(() => ({}));
+      
+      const contentType = res.headers.get('content-type');
+      let data: any = {};
+      
+      if (contentType?.includes('application/json')) {
+        data = await res.json();
+      } else {
+        const text = await res.text();
+        data = { message: text };
+      }
 
-      if (res.ok && (data as any)?.success) {
-        showStatus('Backup completed successfully', 'success');
+      if (res.ok) {
+        const message = data.message || data.success || 'Backup completed successfully';
+        showStatus(message, 'success');
         backupCommitHash = '';
       } else {
-        const error = (data as any)?.error || res.statusText || 'Unknown error';
-        showStatus(`Backup failed: ${error}`, 'error');
+        const error = data.error || data.message || res.statusText || 'Backup failed';
+        showStatus(`Error: ${error}`, 'error');
       }
     } catch (err) {
-      showStatus(`Error: ${(err as Error).message}`, 'error');
+      showStatus(`Network error: ${(err as Error).message}`, 'error');
     } finally {
       loadingBackup = false;
     }
