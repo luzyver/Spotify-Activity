@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763128848311,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:3NoDf1xUib20i3OuyhW7Gp",
+        "name": "Bila",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27361f749a20a44e441e5d02da0",
+        "album": {
+          "uri": "spotify:album:7u5NCLGmm0CYfYA9XcGvZB",
+          "name": "Cara Mencintai"
+        },
+        "artist": {
+          "uri": "spotify:artist:1REvGGP2H7cFLGZgK2sStO",
+          "name": "The Lantis"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1DX7sD2LU79ZzQ",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
