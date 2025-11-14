@@ -35,7 +35,8 @@ export async function getGitHubFile(repo, path, token) {
 }
 
 export async function getCommit(repo, sha, token) {
-	const url = `${GITHUB_API_BASE}/repos/${repo}/commits/${sha}`;
+	// Use the Git data API so we can access the commit's tree SHA directly
+	const url = `${GITHUB_API_BASE}/repos/${repo}/git/commits/${sha}`;
 	const response = await fetch(url, {
 		headers: {
 			Authorization: `Bearer ${token}`,
