@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763085638432,
+      "timestamp": 1763086238437,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3xQx7JqDSUk8q36W68BVEM",
-        "name": "Berlari",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a",
+        "uri": "spotify:track:1rwGbGLDE0AkaH1UgUbufL",
+        "name": "Soulmate",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737f1ff8e8be3727f0c362ba06",
         "album": {
-          "uri": "spotify:album:5agEAxt8vks5Xk0NfEbI5D",
-          "name": "Sialnya, Hidup Harus Tetap Berjalan"
+          "uri": "spotify:album:12UUzKlYnWUZtmlX41geSZ",
+          "name": "Soulmate"
         },
         "artist": {
-          "uri": "spotify:artist:47z98pKd71yIbgXwe9LPVC",
-          "name": "Bernadya"
+          "uri": "spotify:artist:2WhoMc7XqIzVXWbQqSoqe7",
+          "name": "Kahitna"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
