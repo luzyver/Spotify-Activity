@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763135447134,
+      "timestamp": 1763136047440,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2Nz5EIX1fmQ9d3CzNx2qHT",
-        "name": "Malah Mendua",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739dfa118da1073107e507fdbd",
+        "uri": "spotify:track:5Mi1HrLmE9tAz8VhTFhsCm",
+        "name": "Pernah Muda",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736c3d5e80da87d8c013aa272a",
         "album": {
-          "uri": "spotify:album:2QZ3EiWpqyXyq8s3DGwjz7",
-          "name": "Malah Mendua"
+          "uri": "spotify:album:5ws56GVot5fiNNHtS2TvzR",
+          "name": "Pernah Muda"
         },
         "artist": {
-          "uri": "spotify:artist:5J4yLOPnPFVaA39zyawZIo",
-          "name": "Lilo Lilo"
+          "uri": "spotify:artist:2suoGMN4uGe4gCBFwfkfoz",
+          "name": "Deredia"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DX7sD2LU79ZzQ",
