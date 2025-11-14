@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763111413400,
+      "timestamp": 1763112013829,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:654ZF6YNWjQS2NhwR3QnX7",
-        "name": "Komang",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f662eb349994166696d578af",
+        "uri": "spotify:track:63VnhcHMnTPCcd24oVajL6",
+        "name": "semua lagu cinta terdengar sama",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27305898628baab6ef07a0a4d03",
         "album": {
-          "uri": "spotify:album:7F3BUHlrZdaKrtSQ0LEpLm",
-          "name": "Komang"
+          "uri": "spotify:album:6HiRRMXgflIyrpjCiPW8rU",
+          "name": "Doves, '25 on Blank Canvas"
         },
         "artist": {
-          "uri": "spotify:artist:5LcNPa8f8bRmZqELgoRFkN",
-          "name": "Raim Laode"
+          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
+          "name": "Hindia"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
