@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763167245829,
+      "timestamp": 1763167845993,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3diD8b3u6oEn74BezQpujj",
-        "name": "Kusut",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395d6a28dfd9d8da037c142df",
+        "uri": "spotify:track:7mjO4RbTZIb1SfE8G673Lm",
+        "name": "Rehat",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7d74c7fa660999ad4ff0e8d",
         "album": {
-          "uri": "spotify:album:01PCAiyhBHXTj9KfSigcQz",
-          "name": "Ego & Fungsi Otak"
+          "uri": "spotify:album:2J9LZb2fLz50nmeCmut7dv",
+          "name": "Mantra Mantra"
         },
         "artist": {
-          "uri": "spotify:artist:46cVq2dwPgzPE3X1VR9TMj",
-          "name": "Fourtwnty"
+          "uri": "spotify:artist:7dfFM5cBUOBmOH08sGNDcy",
+          "name": "Kunto Aji"
         },
         "context": {
           "uri": null,
