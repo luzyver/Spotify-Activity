@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763220644474,
+      "timestamp": 1763221243756,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1wE4Iqv0tXXuZBA67PoGvw",
-        "name": "Mantan Terindah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395f411458f0d6ee98424bf6c",
+        "uri": "spotify:track:5WOSNVChcadlsCRiqXE45K",
+        "name": "everything u are",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27305898628baab6ef07a0a4d03",
         "album": {
-          "uri": "spotify:album:6Fgc005bO1YPviuAkzyz6S",
-          "name": "Yovie and His Friends : IRREPLACEABLE (#takkanterganti)"
+          "uri": "spotify:album:6HiRRMXgflIyrpjCiPW8rU",
+          "name": "Doves, '25 on Blank Canvas"
         },
         "artist": {
-          "uri": "spotify:artist:7Ln5yumFjHCkeZ8bAzHUcp",
-          "name": "Yovie Widianto, Raisa"
+          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
+          "name": "Hindia"
         },
         "context": {
           "uri": null,
