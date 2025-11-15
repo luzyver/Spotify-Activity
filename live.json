@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763218845719,
+      "timestamp": 1763219443660,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7i5S9v9fiN6Vuqy5Hf9KbR",
-        "name": "Angin Rindu",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27357124131195ac118b99d2042",
+        "uri": "spotify:track:1zu5ZpnrSArdoaT6Qq3yo9",
+        "name": "Monolog",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e2cf96ce4558b8f2376b79a",
         "album": {
-          "uri": "spotify:album:46Vu60ForvCqH8L7l9X6BP",
-          "name": "Rahasia Pertama"
+          "uri": "spotify:album:6CYiVTU1drHMvGHgMHmLQZ",
+          "name": "Walk the Talk"
         },
         "artist": {
-          "uri": "spotify:artist:13y29W8mEcA2gKqUr1SPLJ",
-          "name": "Rony Parulian"
+          "uri": "spotify:artist:7d86ERlvO5UG44j7Va0Y0C",
+          "name": "Pamungkas"
         },
         "context": {
           "uri": null,
