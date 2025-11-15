@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763219443660,
+      "timestamp": 1763220043559,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1zu5ZpnrSArdoaT6Qq3yo9",
-        "name": "Monolog",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e2cf96ce4558b8f2376b79a",
+        "uri": "spotify:track:1wE4Iqv0tXXuZBA67PoGvw",
+        "name": "Mantan Terindah",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395f411458f0d6ee98424bf6c",
         "album": {
-          "uri": "spotify:album:6CYiVTU1drHMvGHgMHmLQZ",
-          "name": "Walk the Talk"
+          "uri": "spotify:album:6Fgc005bO1YPviuAkzyz6S",
+          "name": "Yovie and His Friends : IRREPLACEABLE (#takkanterganti)"
         },
         "artist": {
-          "uri": "spotify:artist:7d86ERlvO5UG44j7Va0Y0C",
-          "name": "Pamungkas"
+          "uri": "spotify:artist:7Ln5yumFjHCkeZ8bAzHUcp",
+          "name": "Yovie Widianto, Raisa"
         },
         "context": {
           "uri": null,
