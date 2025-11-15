@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763200824858,
+      "timestamp": 1763201425959,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:64qfw9JZl3RYCrq4Mn0WvT",
-        "name": "Sedia Aku Sebelum Hujan",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738dc8c573565969d55f9f3477",
+        "uri": "spotify:track:6KfugJFINWqA42k59hmjFr",
+        "name": "TABOLA BALE",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27310df7b8e9b3ed2588888a8ae",
         "album": {
-          "uri": "spotify:album:1E1Sg8OtAbUNUeq7kat4KP",
-          "name": "Sedia Aku Sebelum Hujan"
+          "uri": "spotify:album:56paKQ8XwNS0fSkWaMiJMm",
+          "name": "TABOLA BALE"
         },
         "artist": {
-          "uri": "spotify:artist:7pFWMC2E7h8eL3SZyHRsRq",
-          "name": "Idgitaf"
+          "uri": "spotify:artist:5naPJsWUJ6y22yKXA6dX36",
+          "name": "Silet Open Up, Jacson Seran, Juan Reza, Diva Aurel"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
