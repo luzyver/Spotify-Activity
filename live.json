@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763241043602,
+      "timestamp": 1763241643537,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6A1VXwBrL7hpGXScZkGo8D",
-        "name": "Terima Kasih Sudah Bertahan",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394",
+        "uri": "spotify:track:6Hii26x3qDErVitnGW8QtO",
+        "name": "Runtuh",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734788f7886c01b9b2ee95cbdd",
         "album": {
-          "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
-          "name": "Berdamai"
+          "uri": "spotify:album:5boeKAXsTkdFlm6OnkQxQW",
+          "name": "Runtuh"
         },
         "artist": {
-          "uri": "spotify:artist:3qL7BzwJOXq3EzAio36aLX",
-          "name": "Ghea Indrawari"
+          "uri": "spotify:artist:66NmU5epI0ONGmdCRbLpmW",
+          "name": "Feby Putri, Fiersa Besari"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
