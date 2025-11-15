@@ -1,7 +1,6 @@
 <script lang="ts">
   import { getMonthCalendarData } from '$lib/utils/historyLoaderStatic';
   import type { HistoryItem } from '$lib/types';
-  import { theme } from '$lib/stores/theme';
   import { onMount } from 'svelte';
 
   let { history }: { history: HistoryItem[] } = $props();
@@ -36,7 +35,6 @@
 
   let dailyData = $derived(monthlyData());
   let maxPlays = $derived(Math.max(...dailyData.map((d) => d.plays), 1));
-  let isLight = $derived($theme === 'light');
 
   // Month navigation
   function previousMonth() {
@@ -80,11 +78,11 @@
 
   function getIntensity(plays: number): string {
     const ratio = plays / maxPlays;
-    if (ratio === 0) return isLight ? 'bg-gray-100' : 'bg-white/5';
-    if (ratio < 0.25) return isLight ? 'bg-green-200' : 'bg-[#1db954]/20';
-    if (ratio < 0.5) return isLight ? 'bg-green-400' : 'bg-[#1db954]/40';
-    if (ratio < 0.75) return isLight ? 'bg-green-600' : 'bg-[#1db954]/60';
-    return isLight ? 'bg-green-700' : 'bg-[#1db954]/80';
+    if (ratio === 0) return 'bg-white/5';
+    if (ratio < 0.25) return 'bg-[#1db954]/20';
+    if (ratio < 0.5) return 'bg-[#1db954]/40';
+    if (ratio < 0.75) return 'bg-[#1db954]/60';
+    return 'bg-[#1db954]/80';
   }
 
   // Generate calendar grid for the month
@@ -139,16 +137,14 @@
         <div
           class="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"
         ></div>
-        <p class="text-sm" style="color: {isLight ? '#6b7280' : '#9ca3af'}">
-          Loading calendar data...
-        </p>
+        <p class="text-sm" style="color: #9ca3af">Loading calendar data...</p>
       </div>
     </div>
   {:else}
     <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <h3 class="text-lg font-bold">Activity Calendar</h3>
-        <p class="text-xs" style="color: {isLight ? '#6b7280' : '#9ca3af'}">
+        <p class="text-xs" style="color: #9ca3af">
           {activeDays} active days
         </p>
       </div>
@@ -197,38 +193,17 @@
 
     <!-- Stats Summary - Compact -->
     <div class="mb-3 flex gap-2 text-xs">
-      <div
-        class="flex items-center gap-1.5 rounded border px-2 py-1"
-        style="border-color: {isLight
-          ? 'rgba(0,0,0,0.1)'
-          : 'rgba(255,255,255,0.1)'}; background: {isLight
-          ? 'rgba(0,0,0,0.02)'
-          : 'rgba(255,255,255,0.05)'}"
-      >
+      <div class="flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1">
         <span class="font-bold text-[#1db954]">{totalPlays}</span>
-        <span style="color: {isLight ? '#9ca3af' : '#6b7280'}">plays</span>
+        <span style="color: #9ca3af">plays</span>
       </div>
-      <div
-        class="flex items-center gap-1.5 rounded border px-2 py-1"
-        style="border-color: {isLight
-          ? 'rgba(0,0,0,0.1)'
-          : 'rgba(255,255,255,0.1)'}; background: {isLight
-          ? 'rgba(0,0,0,0.02)'
-          : 'rgba(255,255,255,0.05)'}"
-      >
+      <div class="flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1">
         <span class="font-bold">{avgPlaysPerDay.toFixed(1)}</span>
-        <span style="color: {isLight ? '#9ca3af' : '#6b7280'}">avg</span>
+        <span style="color: #9ca3af">avg</span>
       </div>
-      <div
-        class="flex items-center gap-1.5 rounded border px-2 py-1"
-        style="border-color: {isLight
-          ? 'rgba(0,0,0,0.1)'
-          : 'rgba(255,255,255,0.1)'}; background: {isLight
-          ? 'rgba(0,0,0,0.02)'
-          : 'rgba(255,255,255,0.05)'}"
-      >
+      <div class="flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1">
         <span class="font-bold">{Math.max(...dailyData.map((d) => d.plays))}</span>
-        <span style="color: {isLight ? '#9ca3af' : '#6b7280'}">best</span>
+        <span style="color: #9ca3af">best</span>
       </div>
     </div>
 
@@ -236,10 +211,7 @@
     <div class="mb-3">
       <div class="mb-1.5 grid grid-cols-7 gap-1">
         {#each ['S', 'M', 'T', 'W', 'T', 'F', 'S'] as day}
-          <div
-            class="text-center text-[10px] font-medium"
-            style="color: {isLight ? '#9ca3af' : '#6b7280'}"
-          >
+          <div class="text-center text-[10px] font-medium text-gray-500">
             {day}
           </div>
         {/each}
@@ -255,22 +227,16 @@
                 <div class="aspect-square"></div>
               {:else}
                 <div
-                  class="group relative flex aspect-square cursor-pointer flex-col items-center justify-center rounded border p-1 transition-all hover:z-10 hover:scale-105 {getIntensity(
+                  class="group relative flex aspect-square cursor-pointer flex-col items-center justify-center rounded border border-[#1db954] p-1 transition-all hover:z-10 hover:scale-105 {getIntensity(
                     cell.plays
                   )}"
-                  class:border-green-500={cell.plays > 0 && isLight}
-                  class:border-[#1db954]={cell.plays > 0 && !isLight}
-                  style="border-color: {cell.plays === 0
-                    ? isLight
-                      ? 'rgba(0,0,0,0.1)'
-                      : 'rgba(255,255,255,0.1)'
-                    : ''}"
+                  style="border-color: {cell.plays === 0 ? 'rgba(255,255,255,0.1)' : ''}"
                   title="{monthNames[
                     selectedMonth
                   ]} {cell.date}, {selectedYear}: {cell.plays} plays"
                 >
                   <!-- Date number -->
-                  <div class="text-xs font-medium" style="color: {isLight ? '#1f2937' : '#ffffff'}">
+                  <div class="text-xs font-medium text-white">
                     {cell.date}
                   </div>
 
@@ -284,10 +250,7 @@
                   <!-- Tooltip -->
                   {#if cell.plays > 0}
                     <div
-                      class="pointer-events-none absolute -top-28 left-1/2 z-20 w-48 -translate-x-1/2 rounded-lg border p-3 opacity-0 shadow-xl transition-opacity group-hover:opacity-100"
-                      style="background: {isLight ? 'white' : '#1f2937'}; border-color: {isLight
-                        ? 'rgba(0,0,0,0.1)'
-                        : 'rgba(255,255,255,0.2)'}"
+                      class="pointer-events-none absolute -top-28 left-1/2 z-20 w-48 -translate-x-1/2 rounded-lg border border-white/20 bg-[#1f2937] p-3 opacity-0 shadow-xl transition-opacity group-hover:opacity-100"
                     >
                       <div class="mb-1 text-sm font-bold">
                         {monthNames[selectedMonth]}
@@ -295,19 +258,12 @@
                       </div>
                       <div class="text-lg font-bold text-[#1db954]">{cell.plays} plays</div>
                       {#if cell.tracks.length > 0}
-                        <div
-                          class="mt-2 border-t pt-2"
-                          style="border-color: {isLight
-                            ? 'rgba(0,0,0,0.1)'
-                            : 'rgba(255,255,255,0.1)'}"
-                        >
-                          <div class="text-xs" style="color: {isLight ? '#9ca3af' : '#6b7280'}">
-                            Top track:
-                          </div>
+                        <div class="mt-2 border-t border-white/10 pt-2">
+                          <div class="text-xs text-gray-400">Top track:</div>
                           <div class="line-clamp-1 text-xs font-medium">
                             {cell.tracks[0].track}
                           </div>
-                          <div class="text-xs" style="color: {isLight ? '#9ca3af' : '#6b7280'}">
+                          <div class="text-xs text-gray-400">
                             {cell.tracks[0].artist}
                           </div>
                         </div>
@@ -323,10 +279,7 @@
     </div>
 
     <!-- Legend -->
-    <div
-      class="flex items-center justify-between text-[10px]"
-      style="color: {isLight ? '#9ca3af' : '#6b7280'}"
-    >
+    <div class="flex items-center justify-between text-[10px] text-gray-500">
       <span>Less</span>
       <div class="flex gap-0.5">
         <div class="h-2.5 w-2.5 rounded {getIntensity(0)}"></div>

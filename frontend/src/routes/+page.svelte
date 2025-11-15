@@ -3,7 +3,6 @@
   import EmptyState from '$lib/components/EmptyState.svelte';
   import HistoryCard from '$lib/components/HistoryCard.svelte';
   import Button from '$lib/components/Button.svelte';
-  import ThemeToggle from '$lib/components/ThemeToggle.svelte';
   import InsightsCard from '$lib/components/InsightsCard.svelte';
   import HourlyChart from '$lib/components/HourlyChart.svelte';
   import CalendarView from '$lib/components/CalendarView.svelte';
@@ -17,10 +16,8 @@
   import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { calculateInsights } from '$lib/utils/analytics';
-  import { cn } from '$lib/utils';
   import { achievements, checkAchievements } from '$lib/stores/achievements';
   import { loadAllHistoryStatic } from '$lib/utils/historyLoaderStatic';
-  import { theme } from '$lib/stores/theme';
   import { onMount } from 'svelte';
   import {
     ChevronsLeft,
@@ -195,7 +192,7 @@
   <div class="flex flex-1 flex-col overflow-hidden bg-[#121212]">
     <!-- Header with gradient -->
     <header class="relative bg-gradient-to-b from-[#1f1f1f] to-[#121212] px-6 py-4">
-      <!-- Header with Logo and Toggle -->
+      <!-- Header with Logo -->
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-3">
           <svg class="h-8 w-8" viewBox="0 0 24 24" fill="#1db954">
@@ -221,8 +218,6 @@
             </h1>
           </div>
         </div>
-
-        <ThemeToggle />
       </div>
     </header>
 
@@ -456,13 +451,7 @@
   </div>
 
   <!-- Bottom Navigation - Mobile Only -->
-  <nav
-    class={cn(
-      'fixed bottom-0 left-0 right-0 z-50 border-t lg:hidden',
-      $theme === 'dark' && 'border-white/10 bg-[#121212]',
-      $theme === 'light' && 'border-black/10 bg-white'
-    )}
-  >
+  <nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#121212] lg:hidden">
     <div class="flex items-center justify-around px-2 py-2">
       <button
         onclick={() => (activeTab = 'home')}
