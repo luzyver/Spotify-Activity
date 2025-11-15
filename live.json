@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763246411806,
+      "timestamp": 1763247011909,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3diRmt2Z6xSEaT0mqBr681",
-        "name": "Lagu Pernikahan Kita",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733b742ad14080732f6120bd79",
+        "uri": "spotify:track:70HOmKTnAkHGwEZAdY7Pdw",
+        "name": "Sekuat Sesakit",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c5a1f99148a59d90b63c9d37",
         "album": {
-          "uri": "spotify:album:5eY3dzN1EvreoSLr1vWVMu",
-          "name": "Lagu Pernikahan Kita"
+          "uri": "spotify:album:6x67lQpaX0KyEpmso8bfqh",
+          "name": "Semoga Sembuh"
         },
         "artist": {
-          "uri": "spotify:artist:0kPb52ySN2k9P6wEZPTUzm",
-          "name": "Tiara Andini, Arsy Widianto"
+          "uri": "spotify:artist:7pFWMC2E7h8eL3SZyHRsRq",
+          "name": "Idgitaf"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
