@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763172645688,
+      "timestamp": 1763173245944,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4oHgB9OGBdQ0uVmWKQmiQh",
-        "name": "Dermaga",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b549a8ecdc8adc1a6b30ca85",
+        "uri": "spotify:track:52m690jqpxP1tHHkRNdl5p",
+        "name": "Titik Nadir (feat. Monita Tahalea)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735cfcb24701901b0e53ce4fae",
         "album": {
-          "uri": "spotify:album:40Yp12B9KULY4j2xbhE1YY",
-          "name": "Mengudara"
+          "uri": "spotify:album:0IpT1x2OIQoUuY320ayTyh",
+          "name": "Titik Nadir"
         },
         "artist": {
-          "uri": "spotify:artist:7pFWMC2E7h8eL3SZyHRsRq",
-          "name": "Idgitaf"
+          "uri": "spotify:artist:2WhoMc7XqIzVXWbQqSoqe7",
+          "name": "Kahitna, Monita Tahalea"
         },
         "context": {
           "uri": null,
