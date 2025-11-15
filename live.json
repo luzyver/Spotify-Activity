@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763167845993,
+      "timestamp": 1763168446746,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7mjO4RbTZIb1SfE8G673Lm",
-        "name": "Rehat",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7d74c7fa660999ad4ff0e8d",
+        "uri": "spotify:track:2TRGNVokPnC2a2oHg5iv1H",
+        "name": "Rumpang",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27397068c79ef4ad5a7643ef94a",
         "album": {
-          "uri": "spotify:album:2J9LZb2fLz50nmeCmut7dv",
-          "name": "Mantra Mantra"
+          "uri": "spotify:album:3StxBwbZwtipjzs3ZfldlJ",
+          "name": "Rumpang"
         },
         "artist": {
-          "uri": "spotify:artist:7dfFM5cBUOBmOH08sGNDcy",
-          "name": "Kunto Aji"
+          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
+          "name": "Nadin Amizah"
         },
         "context": {
           "uri": null,
