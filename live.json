@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763173245944,
+      "timestamp": 1763173846897,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:52m690jqpxP1tHHkRNdl5p",
-        "name": "Titik Nadir (feat. Monita Tahalea)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735cfcb24701901b0e53ce4fae",
+        "uri": "spotify:track:3FwQ3RYYEekzjEeL3jdpUZ",
+        "name": "Pesan Terakhir",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d00e5994b61f1d93dafe9221",
         "album": {
-          "uri": "spotify:album:0IpT1x2OIQoUuY320ayTyh",
-          "name": "Titik Nadir"
+          "uri": "spotify:album:20nf5isZzrFuEOr0tIZkWG",
+          "name": "Lyodra"
         },
         "artist": {
-          "uri": "spotify:artist:2WhoMc7XqIzVXWbQqSoqe7",
-          "name": "Kahitna, Monita Tahalea"
+          "uri": "spotify:artist:6Sv2jkzH9sWQjwghW5ArMG",
+          "name": "Lyodra"
         },
         "context": {
           "uri": null,
