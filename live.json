@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763168446746,
+      "timestamp": 1763169045755,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2TRGNVokPnC2a2oHg5iv1H",
-        "name": "Rumpang",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27397068c79ef4ad5a7643ef94a",
+        "uri": "spotify:track:3qhj6auEMIDhJv6oCHI9fJ",
+        "name": "Yasudah",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2",
         "album": {
-          "uri": "spotify:album:3StxBwbZwtipjzs3ZfldlJ",
-          "name": "Rumpang"
+          "uri": "spotify:album:5uAcLj2EJLtQtKMyDYCI0Q",
+          "name": "MARKERS AND SUCH PENS FLASHDISKS"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
+          "name": "Sal Priadi"
         },
         "context": {
           "uri": null,
