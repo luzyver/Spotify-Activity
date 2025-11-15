@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763217044026,
+      "timestamp": 1763217643701,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7lr82r1RMJudgcKQ8y7H9K",
-        "name": "Tenang",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27368d7905b0548a6c9ba21b638",
+        "uri": "spotify:track:7mjO4RbTZIb1SfE8G673Lm",
+        "name": "Rehat",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7d74c7fa660999ad4ff0e8d",
         "album": {
-          "uri": "spotify:album:4ehjkt2KhPomUc7duIqeyD",
-          "name": "Tutur Batin"
+          "uri": "spotify:album:2J9LZb2fLz50nmeCmut7dv",
+          "name": "Mantra Mantra"
         },
         "artist": {
-          "uri": "spotify:artist:02Tq76MwpeoRu3BHIAiaio",
-          "name": "Yura Yunita"
+          "uri": "spotify:artist:7dfFM5cBUOBmOH08sGNDcy",
+          "name": "Kunto Aji"
         },
         "context": {
           "uri": null,
