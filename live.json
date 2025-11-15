@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763216443626,
+      "timestamp": 1763217044026,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:75OokMC3JzPnRNXcLTAKdr",
-        "name": "Mendarah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb",
+        "uri": "spotify:track:7lr82r1RMJudgcKQ8y7H9K",
+        "name": "Tenang",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27368d7905b0548a6c9ba21b638",
         "album": {
-          "uri": "spotify:album:75KyCmWatZRvlMcMRed9BG",
-          "name": "Selamat Ulang Tahun"
+          "uri": "spotify:album:4ehjkt2KhPomUc7duIqeyD",
+          "name": "Tutur Batin"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:02Tq76MwpeoRu3BHIAiaio",
+          "name": "Yura Yunita"
         },
         "context": {
           "uri": null,
