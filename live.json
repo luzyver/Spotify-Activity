@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763169045755,
+      "timestamp": 1763169645989,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3qhj6auEMIDhJv6oCHI9fJ",
-        "name": "Yasudah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2",
+        "uri": "spotify:track:3KcfLN50nMGR4uH1T0QVxL",
+        "name": "Berakhir di Aku - Original Soundtrack From \"Home Sweet Loan\"",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734ae1c2813cfa6d10c73f4661",
         "album": {
-          "uri": "spotify:album:5uAcLj2EJLtQtKMyDYCI0Q",
-          "name": "MARKERS AND SUCH PENS FLASHDISKS"
+          "uri": "spotify:album:3idg3o6wvAgPRwg0atEsbd",
+          "name": "Berakhir di Aku (Original Soundtrack From \"Home Sweet Loan\")"
         },
         "artist": {
-          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
-          "name": "Sal Priadi"
+          "uri": "spotify:artist:7pFWMC2E7h8eL3SZyHRsRq",
+          "name": "Idgitaf"
         },
         "context": {
           "uri": null,
