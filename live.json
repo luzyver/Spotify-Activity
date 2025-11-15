@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763218244087,
+      "timestamp": 1763218845719,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:26aNjbOgTVrFZEx7was69A",
-        "name": "Mencintaimu",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273489cd3228dbaa5552e5ed8c9",
+        "uri": "spotify:track:7i5S9v9fiN6Vuqy5Hf9KbR",
+        "name": "Angin Rindu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27357124131195ac118b99d2042",
         "album": {
-          "uri": "spotify:album:6sGKwCYtM7MlRkVYFWbNQY",
-          "name": "Mencintaimu"
+          "uri": "spotify:album:46Vu60ForvCqH8L7l9X6BP",
+          "name": "Rahasia Pertama"
         },
         "artist": {
-          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
-          "name": "Sal Priadi"
+          "uri": "spotify:artist:13y29W8mEcA2gKqUr1SPLJ",
+          "name": "Rony Parulian"
         },
         "context": {
           "uri": null,
