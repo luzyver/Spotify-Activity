@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763242843994,
+      "timestamp": 1763243444293,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7BhRGeqNpBw1QilknM0svo",
-        "name": "Pilihan Yang Terbaik",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27370d9c1e403774dd0120fe730",
+        "uri": "spotify:track:6zxacya3lkUHMT7wmbIioe",
+        "name": "Rasa Cinta Ini",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735212e338a604d8fff1176165",
         "album": {
-          "uri": "spotify:album:3yUBpUAsQeuAu9R86wiukG",
-          "name": "Magnolya"
+          "uri": "spotify:album:7G0jQf7djccY6OsKIPu3Df",
+          "name": "Rasa Cinta Ini"
         },
         "artist": {
-          "uri": "spotify:artist:2wZWkw5jo8P4NVonVanxYd",
-          "name": "Ziva Magnolya"
+          "uri": "spotify:artist:3qL7BzwJOXq3EzAio36aLX",
+          "name": "Ghea Indrawari"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
