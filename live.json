@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763321443873,
+      "timestamp": 1763322042710,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3HvgYuJX72wO515RG4aQz2",
-        "name": "u and i",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e7b66ef2e07be04025db3486",
+        "uri": "spotify:track:6rY5FAWxCdAGllYEOZMbjW",
+        "name": "SLOW DANCING IN THE DARK",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734cc52cd7a712842234e4fce2",
         "album": {
-          "uri": "spotify:album:5LtQfvIeTCgvD2xx6jI4ck",
-          "name": "u and i"
+          "uri": "spotify:album:5mIImcsuqpiSXg8XvFr81I",
+          "name": "BALLADS 1"
         },
         "artist": {
-          "uri": "spotify:artist:3Z2wi574z93hy4weTKGXzl",
-          "name": "vhs ghost"
+          "uri": "spotify:artist:3MZsBdqDrRTJihTHQrO6Dq",
+          "name": "Joji"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
