@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763326844882,
+      "timestamp": 1763327442373,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2fhOljbX79loRcdl47SFye",
-        "name": "Moonlight on the River",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739f1b21f21b13ff2d3e891f6b",
+        "uri": "spotify:track:00WLowvlN5cjkYpQV6pjo4",
+        "name": "Die For You",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cdd1a8a427b3f81f4f4f4f7d",
         "album": {
-          "uri": "spotify:album:4NNq2vwTapv4fSJcrZbPH7",
-          "name": "This Old Dog"
+          "uri": "spotify:album:39VuC5rYQHAnR6xQwm1WDk",
+          "name": "SMITHEREENS"
         },
         "artist": {
-          "uri": "spotify:artist:3Sz7ZnJQBIHsXLUSo0OQtM",
-          "name": "Mac DeMarco"
+          "uri": "spotify:artist:3MZsBdqDrRTJihTHQrO6Dq",
+          "name": "Joji"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
