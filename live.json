@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763269212074,
+      "timestamp": 1763269811945,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6O0WEM0QNEhqpU50BKui7o",
-        "name": "Sial",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542",
+        "uri": "spotify:track:2ULbjOlhOCLjKLDalQ32xN",
+        "name": "Mungkin Hari Ini Esok Atau Nanti",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736c19afce26b8d68e93146705",
         "album": {
-          "uri": "spotify:album:1vva4fJyjXaJ2RDsGmIbCv",
-          "name": "fábula"
+          "uri": "spotify:album:1FkxE3Vuo4ZbxSokgQffCZ",
+          "name": "And the story begins"
         },
         "artist": {
-          "uri": "spotify:artist:3wOsYKZM0zcKNasi3I7fP4",
-          "name": "Mahalini"
+          "uri": "spotify:artist:2UHBgxDvOBaIY7hQ8CEAmW",
+          "name": "Anneth"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
