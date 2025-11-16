@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763320842547,
+      "timestamp": 1763321443873,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6uTNaZG0i5VRdckzFr1M9u",
-        "name": "505",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ead884cc9a4c96b2875c55e2",
+        "uri": "spotify:track:3HvgYuJX72wO515RG4aQz2",
+        "name": "u and i",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e7b66ef2e07be04025db3486",
         "album": {
-          "uri": "spotify:album:3cdL02bWDiOWlAsoJ84ygV",
-          "name": "On Tap"
+          "uri": "spotify:album:5LtQfvIeTCgvD2xx6jI4ck",
+          "name": "u and i"
         },
         "artist": {
-          "uri": "spotify:artist:4sjH0V2FKA83nhnbAp5nVM",
-          "name": "Last Call"
+          "uri": "spotify:artist:3Z2wi574z93hy4weTKGXzl",
+          "name": "vhs ghost"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
