@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763301645863,
+      "timestamp": 1763302243440,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:630DpnzdfjdVqv2yLfPbAX",
-        "name": "Bertaut",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb",
+        "uri": "spotify:track:2FaquTc3FYvNm7RuO1gD6O",
+        "name": "Langit Abu-Abu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27371c65edbeed32af70b900637",
         "album": {
-          "uri": "spotify:album:75KyCmWatZRvlMcMRed9BG",
-          "name": "Selamat Ulang Tahun"
+          "uri": "spotify:album:4szhn3xPmOJklFAcqNvTnQ",
+          "name": "Monokrom"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:2iDVt6mFbtbDEZG5ax0dTi",
+          "name": "Tulus"
         },
         "context": {
           "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
