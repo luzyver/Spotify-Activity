@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763324442489,
+      "timestamp": 1763325043453,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:7qH9Z4dJEN0l9bidizW7fq",
-        "name": "Anchor",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273277620423172f5a151f452e3",
+        "uri": "spotify:track:2u4XZR5A8cRPTPxBLJbAFC",
+        "name": "prom dress",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e9f04db53bead9eae3e2723f",
         "album": {
-          "uri": "spotify:album:4vGuMdwnxc6X8izbVS6MTN",
-          "name": "Bathing Beach"
+          "uri": "spotify:album:7uao4FMrfz8x7lYFrOJb6C",
+          "name": "the masquerade"
         },
         "artist": {
-          "uri": "spotify:artist:0rZp7G3gIH6WkyeXbrZnGi",
-          "name": "Novo Amor"
+          "uri": "spotify:artist:0HthCchcL0kVLHTr113Vk1",
+          "name": "mxmtoon"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
