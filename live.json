@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763291441112,
+      "timestamp": 1763292040911,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1nHHvpO3so53lVsiWCTzHk",
-        "name": "Rumah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d91aaa7cfb1c1d64eeef4c39",
+        "uri": "spotify:track:5muQXefF3ot09AZLWWZ184",
+        "name": "Berharap Pada Cinta Yang Salah",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733b83fd19945daf89d7cbfc00",
         "album": {
-          "uri": "spotify:album:1NN5iqgzE9RaMLjNqOEiXn",
-          "name": "Rumah"
+          "uri": "spotify:album:4g3aTyVwe84yOlAM9LMWro",
+          "name": "Cinta & Doa"
         },
         "artist": {
-          "uri": "spotify:artist:1y46m0kIaKwnodL0ElvQIs",
-          "name": "Salma Salsabil"
+          "uri": "spotify:artist:6IDsZZ4IHgs9VblBgQQSmt",
+          "name": "Andmesh"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
