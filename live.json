@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763268011913,
+      "timestamp": 1763268612087,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1ZBZ8jvJbeIWaP7oJheEgq",
-        "name": "Peri Cintaku",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27370d9c1e403774dd0120fe730",
+        "uri": "spotify:track:3ymuBMTviroWLuf1jMsMVf",
+        "name": "Sorai",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737d6b0a5ae92793f5d21be67a",
         "album": {
-          "uri": "spotify:album:3yUBpUAsQeuAu9R86wiukG",
-          "name": "Magnolya"
+          "uri": "spotify:album:60YDoJUMHjkYtZnPztRvZ1",
+          "name": "Sorai"
         },
         "artist": {
-          "uri": "spotify:artist:2wZWkw5jo8P4NVonVanxYd",
-          "name": "Ziva Magnolya"
+          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
+          "name": "Nadin Amizah"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
