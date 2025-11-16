@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763308844265,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:1q1dsfckKMgjfr8DfdeKfs",
+        "name": "Amin Paling Serius",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27383b0105f3ea493fcf0da7443",
+        "album": {
+          "uri": "spotify:album:4gwRdhyoIngNRgbeP0C7Id",
+          "name": "Berhati"
+        },
+        "artist": {
+          "uri": "spotify:artist:1NjxFrpEGZTV2Ny0OJxeWu",
+          "name": "Sal Priadi, Nadin Amizah"
+        },
+        "context": {
+          "uri": "spotify:playlist:1inVPhYK6TDVlKqZbApdcl",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
