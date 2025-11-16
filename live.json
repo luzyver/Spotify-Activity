@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763318442982,
+      "timestamp": 1763319042500,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1175r6ZmkUjX8dRJLz9Ohk",
-        "name": "I Love You So",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273acf9c94f73fede70cca51d5e",
+        "uri": "spotify:track:75IQVo8hqI1iwVZyvkN2VT",
+        "name": "Show Me How",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
         "album": {
-          "uri": "spotify:album:3MFTbUnA8C9T6KCBb0gpH5",
-          "name": "Songs for Dads"
+          "uri": "spotify:album:7mUYDBqNiddmKxuKrnBEKQ",
+          "name": "Show Me How"
         },
         "artist": {
-          "uri": "spotify:artist:027TpXKGwdXP7iwbjUSpV8",
-          "name": "The Walters"
+          "uri": "spotify:artist:3zmfs9cQwzJl575W1ZYXeT",
+          "name": "Men I Trust"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
