@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763271011897,
+      "timestamp": 1763271611856,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0zAtj0BEvpulETGrk95NPQ",
-        "name": "Rayuan Perempuan Gila",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5",
+        "uri": "spotify:track:6RbOugGEsbxhOmNCHJGqLu",
+        "name": "Sampai Menutup Mata",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7045ac05d83bd7087e91096",
         "album": {
-          "uri": "spotify:album:5hpq1LSLCuC7cifjXAM5bf",
-          "name": "Untuk Dunia, Cinta, dan Kotornya"
+          "uri": "spotify:album:0OyN4NEEkqb2E5iiXxvJv9",
+          "name": "Heart"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:6x9pgf75qWhi1YKJH2a8Xv",
+          "name": "Acha Septriasa"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
