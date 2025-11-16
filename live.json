@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763267411876,
+      "timestamp": 1763268011913,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3XHiujhh7sB8tTCwtI6YEI",
-        "name": "Ruang Baru (From \"My Annoying Brother\")",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fc5f1abb8ec397cd1a9a32fb",
+        "uri": "spotify:track:1ZBZ8jvJbeIWaP7oJheEgq",
+        "name": "Peri Cintaku",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27370d9c1e403774dd0120fe730",
         "album": {
-          "uri": "spotify:album:4e35vUR8z4q56iY2xgvbNA",
-          "name": "Ruang Baru (From \"My Annoying Brother\")"
+          "uri": "spotify:album:3yUBpUAsQeuAu9R86wiukG",
+          "name": "Magnolya"
         },
         "artist": {
-          "uri": "spotify:artist:5vZpfzIdyiutGngkSKEb8i",
-          "name": "Barsena Bestandhi"
+          "uri": "spotify:artist:2wZWkw5jo8P4NVonVanxYd",
+          "name": "Ziva Magnolya"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
