@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763325642853,
+      "timestamp": 1763326242439,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3EaJDYHA0KnX88JvDhL9oa",
-        "name": "Dark Red",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733d2dfa42f771cd458b194979",
+        "uri": "spotify:track:4nvLuqwTOZdEJI1fcHXv8h",
+        "name": "You're All I Want",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734a10d87775c6bb25c8ca068b",
         "album": {
-          "uri": "spotify:album:7vrsFZNVhrriKh0SZKJW41",
-          "name": "Dark Red"
+          "uri": "spotify:album:0C4YWH1f1zcPhIhNIB6S82",
+          "name": "You're All I Want"
         },
         "artist": {
-          "uri": "spotify:artist:57vWImR43h4CaDao012Ofp",
-          "name": "Steve Lacy"
+          "uri": "spotify:artist:1QAJqy2dA3ihHBFIHRphZj",
+          "name": "Cigarettes After Sex"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
