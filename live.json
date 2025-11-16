@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763291441112,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:1nHHvpO3so53lVsiWCTzHk",
+        "name": "Rumah",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d91aaa7cfb1c1d64eeef4c39",
+        "album": {
+          "uri": "spotify:album:1NN5iqgzE9RaMLjNqOEiXn",
+          "name": "Rumah"
+        },
+        "artist": {
+          "uri": "spotify:artist:1y46m0kIaKwnodL0ElvQIs",
+          "name": "Salma Salsabil"
+        },
+        "context": {
+          "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
+          "name": "album",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
