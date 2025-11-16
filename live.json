@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763317842876,
+      "timestamp": 1763318442982,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4JVgIFgTrlQ2XMWasExsLj",
-        "name": "Creep",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ead884cc9a4c96b2875c55e2",
+        "uri": "spotify:track:1175r6ZmkUjX8dRJLz9Ohk",
+        "name": "I Love You So",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273acf9c94f73fede70cca51d5e",
         "album": {
-          "uri": "spotify:album:3cdL02bWDiOWlAsoJ84ygV",
-          "name": "On Tap"
+          "uri": "spotify:album:3MFTbUnA8C9T6KCBb0gpH5",
+          "name": "Songs for Dads"
         },
         "artist": {
-          "uri": "spotify:artist:4sjH0V2FKA83nhnbAp5nVM",
-          "name": "Last Call"
+          "uri": "spotify:artist:027TpXKGwdXP7iwbjUSpV8",
+          "name": "The Walters"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
