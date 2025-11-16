@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763323245236,
+      "timestamp": 1763323842437,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4txrAyGAWA9JqZzoNHiPRh",
-        "name": "you not the same",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733497a2d76707810970d08d9b",
+        "uri": "spotify:track:0jx2hPIzs7bNveWHU2Ohzu",
+        "name": "Eleven Weeks",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bc4439fefba91f86724ff41e",
         "album": {
-          "uri": "spotify:album:2oWrvVt4fIMO5DEHXSUrhS",
-          "name": "you not the same"
+          "uri": "spotify:album:7msE6SfuxYxHNEeqGBsjo6",
+          "name": "The Rolling, Driftless North"
         },
         "artist": {
-          "uri": "spotify:artist:7HaSqpaqnOWSaqvezpdhX4",
-          "name": "TileKid"
+          "uri": "spotify:artist:6ft7JnxMyZhp7N52qzHymY",
+          "name": "Vansire"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
