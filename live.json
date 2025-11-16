@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763274640883,
+      "timestamp": 1763275240609,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6gARWk9hXgTUImaKUsTu6w",
-        "name": "Bohongi Hati",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542",
+        "uri": "spotify:track:2hHeGD57S0BcopfVcmehdl",
+        "name": "Hati-Hati di Jalan",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d34a0632f6861e8875d6899b",
         "album": {
-          "uri": "spotify:album:1vva4fJyjXaJ2RDsGmIbCv",
-          "name": "fábula"
+          "uri": "spotify:album:3R4IAF9ApqYeUQrv1ddyoR",
+          "name": "Manusia"
         },
         "artist": {
-          "uri": "spotify:artist:3wOsYKZM0zcKNasi3I7fP4",
-          "name": "Mahalini"
+          "uri": "spotify:artist:2iDVt6mFbtbDEZG5ax0dTi",
+          "name": "Tulus"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
