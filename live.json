@@ -1,15 +1,15 @@
 {
   "friends": [
     {
-      "timestamp": 1763298642647,
+      "timestamp": 1763299242622,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3JzBPPeU2XU2egjae5Rqv9",
-        "name": "Kita Kubur Sampai Mati",
+        "uri": "spotify:track:0pmyq5KBXP3agRdxl1SZXx",
+        "name": "Lama-Lama",
         "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a",
         "album": {
           "uri": "spotify:album:5agEAxt8vks5Xk0NfEbI5D",
