@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763347849361,
+      "timestamp": 1763348449788,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4xfrPOs83e96BcfxIe8CTI",
-        "name": "Teman Bahagia (Acoustic Version)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b6aefc3c4d70a1bf2f799563",
+        "uri": "spotify:track:6B3klWr5zdlEUdqFm89Czb",
+        "name": "Satu-Satunya",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e23b66f0e9b868f275412e14",
         "album": {
-          "uri": "spotify:album:6I52eVrjHDUJqQNTYp163H",
-          "name": "Teman Bahagia (Acoustic Version)"
+          "uri": "spotify:album:3GXsFGyViN6r1JYvuHYYSG",
+          "name": "CERITERA"
         },
         "artist": {
-          "uri": "spotify:artist:78ED3zmePoZzEzeBUg0evm",
-          "name": "Jaz"
+          "uri": "spotify:artist:4ubEZ6sMsrrbQChueyouCC",
+          "name": "Hivi!"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
