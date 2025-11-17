@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763373613460,
+      "timestamp": 1763374211581,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:00WLowvlN5cjkYpQV6pjo4",
-        "name": "Die For You",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cdd1a8a427b3f81f4f4f4f7d",
+        "uri": "spotify:track:6d2R5kZDIYs82XdxBNCiCN",
+        "name": "fall into u",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273518be10648dfed9a0754e344",
         "album": {
-          "uri": "spotify:album:39VuC5rYQHAnR6xQwm1WDk",
-          "name": "SMITHEREENS"
+          "uri": "spotify:album:2Vd4WqdntSv2otB6q1NNEN",
+          "name": "To Whom It May Concern"
         },
         "artist": {
-          "uri": "spotify:artist:3MZsBdqDrRTJihTHQrO6Dq",
-          "name": "Joji"
+          "uri": "spotify:artist:6deCiWT7ATcDWP2Cvlalvn",
+          "name": "Oscar Lang"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
