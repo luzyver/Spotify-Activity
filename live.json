@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763371211493,
+      "timestamp": 1763371812704,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5AkV53fo1u01mi8r22JNeF",
-        "name": "I Just Couldn't Save You Tonight - Story of Kale - Original Motion Picture Soundtrack",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27379541996457d9d06cf9806e3",
+        "uri": "spotify:track:0MAIxtXWimwhAAQOST9jp7",
+        "name": "Sesuatu Di Jogja",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fa632a0ac2c0f23909bd3ad6",
         "album": {
-          "uri": "spotify:album:1AgPsLxdjTamc8dapjpdom",
-          "name": "I Just Couldn't Save You Tonight (Story of Kale - Original Motion Picture Soundtrack)"
+          "uri": "spotify:album:32SLZ72En7DvxafTDhdk28",
+          "name": "8 Tahun"
         },
         "artist": {
-          "uri": "spotify:artist:3TkSKriI4EZmTxSFyzs0fd",
-          "name": "Ardhito Pramono, Aurélie"
+          "uri": "spotify:artist:3UlOKNAlGyi7POSE9kyhfR",
+          "name": "Adhitia Sofyan"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
