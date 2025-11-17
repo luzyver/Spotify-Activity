@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763349049450,
+      "timestamp": 1763349649223,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6vGodkU45j7NLfCXimlxC7",
-        "name": "Musim Hujan",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e23b66f0e9b868f275412e14",
+        "uri": "spotify:track:1Dxb9nWV16f5PthsUsV1XZ",
+        "name": "Bicara (feat. Monita Tahalea)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273109818075c8eed1a2ed132d8",
         "album": {
-          "uri": "spotify:album:3GXsFGyViN6r1JYvuHYYSG",
-          "name": "CERITERA"
+          "uri": "spotify:album:4kGiYX3VXOTPJPqCgphG0C",
+          "name": "Memory Lane"
         },
         "artist": {
-          "uri": "spotify:artist:4ubEZ6sMsrrbQChueyouCC",
-          "name": "Hivi!"
+          "uri": "spotify:artist:3t4MHnVggiFLOuSSh4odBk",
+          "name": "TheOvertunes, Monita Tahalea"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
