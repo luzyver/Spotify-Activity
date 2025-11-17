@@ -52,7 +52,7 @@
   </div>
 
   <div class="space-y-4">
-    {#each goals as goal, i}
+    {#each goals as goal, i (goal.id)}
       <div class="space-y-2">
         <div class="flex items-start justify-between">
           <div class="flex items-center gap-3">
@@ -60,7 +60,7 @@
               class="flex h-10 w-10 items-center justify-center rounded-full"
               style="background: {goal.color}20"
             >
-              {#each [goal.icon] as Icon}
+              {#each [goal.icon] as Icon (Icon)}
                 <Icon class="h-5 w-5" style="color: {goal.color}" />
               {/each}
             </div>

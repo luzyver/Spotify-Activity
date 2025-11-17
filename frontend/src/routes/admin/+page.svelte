@@ -243,7 +243,7 @@
       <section class="card card-wide">
         <h2 class="card-title">API Endpoints</h2>
         <div class="endpoints">
-          {#each endpoints as ep}
+          {#each endpoints as ep (ep.path)}
             <div class="endpoint">
               <span class="method method-{ep.method.toLowerCase()}">{ep.method}</span>
               <code class="path">{ep.path}</code>

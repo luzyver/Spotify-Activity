@@ -7,7 +7,13 @@
   let topArtists = $derived(() => {
     const artistCounts = history.reduce(
       (acc, item) => {
-        acc[item.artist] = (acc[item.artist] || 0) + 1;
+        const parts = item.artist
+          .split(',')
+          .map((name) => name.trim())
+          .filter(Boolean);
+        for (const name of parts) {
+          acc[name] = (acc[name] || 0) + 1;
+        }
         return acc;
       },
       {} as Record<string, number>
@@ -42,7 +48,7 @@
   </div>
 
   <div class="space-y-3">
-    {#each topArtists() as artist, i}
+    {#each topArtists() as artist, i (artist.name)}
       <div class="group">
         <div class="mb-1 flex items-center justify-between">
           <div class="flex items-center gap-2">

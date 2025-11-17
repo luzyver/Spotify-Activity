@@ -32,21 +32,41 @@ export function calculateInsights(history: HistoryItem[]): ListeningInsights {
 
   // Basic stats
   const totalPlays = history.length;
-  const uniqueTracks = new Set(history.map((h) => h.track)).size;
-  const uniqueArtists = new Set(history.map((h) => h.artist)).size;
 
-  // Top artist
+  // Use track URI to identify unique tracks (more reliable than name)
+  const uniqueTracks = new Set(history.map((h) => h.uri)).size;
+
+  // Split multi-artist strings ("A, B, C") into individual artist names
+  const artistNames: string[] = [];
+  for (const item of history) {
+    const parts = item.artist
+      .split(',')
+      .map((name) => name.trim())
+      .filter(Boolean);
+    artistNames.push(...parts);
+  }
+  const uniqueArtists = new Set(artistNames).size;
+
+  // Top artist (per individual artist name)
   const artistCounts = history.reduce(
     (acc, item) => {
-      acc[item.artist] = (acc[item.artist] || 0) + 1;
+      const parts = item.artist
+        .split(',')
+        .map((name) => name.trim())
+        .filter(Boolean);
+      for (const name of parts) {
+        acc[name] = (acc[name] || 0) + 1;
+      }
       return acc;
     },
     {} as Record<string, number>
   );
   const topArtistEntry = Object.entries(artistCounts).sort((a, b) => b[1] - a[1])[0];
-  const topArtist = { name: topArtistEntry[0], plays: topArtistEntry[1] };
+  const topArtist = topArtistEntry
+    ? { name: topArtistEntry[0], plays: topArtistEntry[1] }
+    : { name: 'N/A', plays: 0 };
 
-  // Top track
+  // Top track (still grouped by track + combined artist string)
   const trackCounts = history.reduce(
     (acc, item) => {
       const key = `${item.track}|||${item.artist}`;
@@ -71,19 +91,21 @@ export function calculateInsights(history: HistoryItem[]): ListeningInsights {
     },
     {} as Record<number, number>
   );
-  const favoriteHour = Object.entries(hourCounts).sort((a, b) => b[1] - a[1])[0][0];
-  const favoriteTime = `${favoriteHour}:00 - ${Number(favoriteHour) + 1}:00`;
+  const favoriteHourEntry = Object.entries(hourCounts).sort((a, b) => b[1] - a[1])[0];
+  const favoriteHour = Number(favoriteHourEntry?.[0] ?? 0);
+  const formatHour = (hour: number) => `${hour.toString().padStart(2, '0')}:00`;
+  const favoriteTime = `${formatHour(favoriteHour)} - ${formatHour((favoriteHour + 1) % 24)}`;
 
-  // Listening streak
-  const dates = history
+  // Listening streak (consecutive active days)
+  const dateStrings = history
     .map((h) => new Date(h.timestamp).toDateString())
-    .filter((v, i, a) => a.indexOf(v) === i)
-    .sort();
-  let streak = 1;
-  let maxStreak = 1;
+    .filter((v, i, a) => a.indexOf(v) === i);
+  const dates = dateStrings.map((d) => new Date(d)).sort((a, b) => a.getTime() - b.getTime());
+
+  let streak = dates.length > 0 ? 1 : 0;
+  let maxStreak = streak;
   for (let i = 1; i < dates.length; i++) {
-    const diff =
-      (new Date(dates[i]).getTime() - new Date(dates[i - 1]).getTime()) / (1000 * 60 * 60 * 24);
+    const diff = (dates[i].getTime() - dates[i - 1].getTime()) / (1000 * 60 * 60 * 24);
     if (diff === 1) {
       streak++;
       maxStreak = Math.max(maxStreak, streak);
@@ -101,7 +123,7 @@ export function calculateInsights(history: HistoryItem[]): ListeningInsights {
   else if (discoveryScore < 30) musicPersonality = 'Loyalist';
   else if (totalPlays > 100) musicPersonality = 'Enthusiast';
 
-  // Average plays per day
+  // Average plays per day (per active day)
   const daySpan = dates.length || 1;
   const avgPlaysPerDay = Math.round(totalPlays / daySpan);
 

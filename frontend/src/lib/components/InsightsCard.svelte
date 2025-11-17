@@ -62,11 +62,11 @@
   </div>
 
   <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-    {#each stats as stat, i}
+    {#each stats as stat, i (stat.label)}
       <div
         class="group rounded-lg border border-white/10 {stat.bg} p-4 transition-all hover:scale-105 hover:border-white/20"
       >
-        {#each [stat.icon] as Icon}
+        {#each [stat.icon] as Icon (Icon)}
           <Icon class="mb-2 h-5 w-5 {stat.color} transition-transform group-hover:scale-110" />
         {/each}
         <div class="text-lg font-bold">{stat.value}</div>

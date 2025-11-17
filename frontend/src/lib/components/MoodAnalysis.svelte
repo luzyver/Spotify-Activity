@@ -31,7 +31,7 @@
       class="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full"
       style="background: {dominantMood.color}20"
     >
-      {#each [dominantMood.icon] as Icon}
+      {#each [dominantMood.icon] as Icon (Icon)}
         <Icon class="h-12 w-12" style="color: {dominantMood.color}" />
       {/each}
     </div>
@@ -42,11 +42,11 @@
   </div>
 
   <div class="space-y-3">
-    {#each moodData() as mood, i}
+    {#each moodData() as mood, i (mood.name)}
       <div class="space-y-2">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">
-            {#each [mood.icon] as Icon}
+            {#each [mood.icon] as Icon (Icon)}
               <Icon class="h-4 w-4" style="color: {mood.color}" />
             {/each}
             <span class="text-sm font-medium">{mood.name}</span>

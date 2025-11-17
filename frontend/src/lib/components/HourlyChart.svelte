@@ -12,7 +12,7 @@
   <h3 class="mb-6 text-xl font-bold">Listening by Hour</h3>
 
   <div class="flex items-end justify-between gap-1">
-    {#each hourlyData as data, i}
+    {#each hourlyData as data, i (data.hour)}
       <div class="group flex flex-1 flex-col items-center gap-2">
         <div class="relative w-full">
           <div

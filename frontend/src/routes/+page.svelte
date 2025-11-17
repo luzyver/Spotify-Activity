@@ -436,7 +436,7 @@
             </div>
 
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {#each $achievements as achievement}
+              {#each $achievements as achievement (achievement.id)}
                 <AchievementBadge {achievement} />
               {/each}
             </div>

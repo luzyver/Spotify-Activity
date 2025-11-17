@@ -48,7 +48,7 @@
       class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full"
       style="background: {favoriteTime.color}20"
     >
-      {#each [favoriteTime.icon] as Icon}
+      {#each [favoriteTime.icon] as Icon (Icon)}
         <Icon class="h-10 w-10" style="color: {favoriteTime.color}" />
       {/each}
     </div>
@@ -59,13 +59,13 @@
   </div>
 
   <div class="grid grid-cols-2 gap-4">
-    {#each timeOfDayData() as period, i}
+    {#each timeOfDayData() as period, i (period.name)}
       <div
         class="rounded-lg border border-white/10 p-4 transition-all hover:scale-105"
         style="background: {period.color}10"
       >
         <div class="mb-3 flex items-center justify-between">
-          {#each [period.icon] as Icon}
+          {#each [period.icon] as Icon (Icon)}
             <Icon class="h-5 w-5" style="color: {period.color}" />
           {/each}
           <span class="text-sm font-bold" style="color: {period.color}">

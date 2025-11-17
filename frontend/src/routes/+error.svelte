@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* eslint-disable svelte/valid-prop-names-in-kit-pages */
   import Button from '$lib/components/Button.svelte';
   import { goto } from '$app/navigation';
 

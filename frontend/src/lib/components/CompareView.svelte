@@ -36,7 +36,7 @@
   </div>
 
   <div class="space-y-4">
-    {#each userStats() as user, i}
+    {#each userStats() as user, i (user.user)}
       <div class="space-y-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">

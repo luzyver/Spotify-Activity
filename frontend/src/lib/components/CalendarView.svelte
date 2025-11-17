@@ -210,7 +210,7 @@
     <!-- Calendar Grid - Monthly View -->
     <div class="mb-3">
       <div class="mb-1.5 grid grid-cols-7 gap-1">
-        {#each ['S', 'M', 'T', 'W', 'T', 'F', 'S'] as day}
+        {#each ['S', 'M', 'T', 'W', 'T', 'F', 'S'] as day (day)}
           <div class="text-center text-[10px] font-medium text-gray-500">
             {day}
           </div>
@@ -218,9 +218,9 @@
       </div>
 
       <div class="space-y-1">
-        {#each calendarGrid() as week, weekIndex}
+        {#each calendarGrid() as week, weekIndex (weekIndex)}
           <div class="grid grid-cols-7 gap-1">
-            {#each week as cell, dayIndex}
+            {#each week as cell, dayIndex (weekIndex * 7 + dayIndex)}
               {@const globalIndex = weekIndex * 7 + dayIndex}
               {#if cell === null}
                 <!-- Empty cell -->
