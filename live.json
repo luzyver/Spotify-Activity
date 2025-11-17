@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763367011341,
+      "timestamp": 1763367611447,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:630DpnzdfjdVqv2yLfPbAX",
-        "name": "Bertaut",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb",
+        "uri": "spotify:track:2bkzqem4veyueCgtIJ7bMV",
+        "name": "Our First Song",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b54291f7289c20ce2af1b678",
         "album": {
-          "uri": "spotify:album:75KyCmWatZRvlMcMRed9BG",
-          "name": "Selamat Ulang Tahun"
+          "uri": "spotify:album:78YZZr6r3d3UUK32s84dtR",
+          "name": "Our First Song"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:40JlNF1w2OiSOyj1nC4y0I",
+          "name": "Joseph Vincent"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
