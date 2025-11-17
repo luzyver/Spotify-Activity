@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763349649223,
+      "timestamp": 1763350249272,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1Dxb9nWV16f5PthsUsV1XZ",
-        "name": "Bicara (feat. Monita Tahalea)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273109818075c8eed1a2ed132d8",
+        "uri": "spotify:track:2wAiFWjRupWmnDkQcu91MF",
+        "name": "Rumah Ke Rumah",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d623688488865906052ef96b",
         "album": {
-          "uri": "spotify:album:4kGiYX3VXOTPJPqCgphG0C",
-          "name": "Memory Lane"
+          "uri": "spotify:album:1DAuVHMlBvIjzWZALSUXbn",
+          "name": "Menari Dengan Bayangan"
         },
         "artist": {
-          "uri": "spotify:artist:3t4MHnVggiFLOuSSh4odBk",
-          "name": "TheOvertunes, Monita Tahalea"
+          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
+          "name": "Hindia"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
