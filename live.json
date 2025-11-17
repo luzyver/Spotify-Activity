@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763372411605,
+      "timestamp": 1763373011394,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:77SiKnkNEnRw0uoPE4wuEp",
-        "name": "cigarettes of ours",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ce2225084d3f198ae561dff4",
+        "uri": "spotify:track:7JIuqL4ZqkpfGKQhYlrirs",
+        "name": "The Only Exception",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e01d7d558032457b0e4883f6",
         "album": {
-          "uri": "spotify:album:48SUVfdwm8K3U67cS5QC2h",
-          "name": "a letter to my 17 year old"
+          "uri": "spotify:album:27UqZoE1kV6sIV6uQcI28A",
+          "name": "Brand New Eyes"
         },
         "artist": {
-          "uri": "spotify:artist:3TkSKriI4EZmTxSFyzs0fd",
-          "name": "Ardhito Pramono"
+          "uri": "spotify:artist:74XFHRwlV6OrjEM0A2NCMF",
+          "name": "Paramore"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
