@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763374811270,
+      "timestamp": 1763375412422,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2h7j0zJ2eJ1qLfyjaqQP6n",
-        "name": "Coffee Breath",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c9fd6014bf7236a78d27a383",
+        "uri": "spotify:track:6mSnSuOhgHHohqeBw76jRV",
+        "name": "i was all over her",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734a82bda3507d50ac3e039bb0",
         "album": {
-          "uri": "spotify:album:5KOp9Y5L4icsdSUw7nwMyG",
-          "name": "Coffee Breath"
+          "uri": "spotify:album:10WzRaNWnFUQNrW2FpqQSQ",
+          "name": "melanchole"
         },
         "artist": {
-          "uri": "spotify:artist:7H0Xu8hdP0tjpZ6z4dHquW",
-          "name": "Sofia Mills"
+          "uri": "spotify:artist:0pg0Zm8FsGAYy5kdHuBnSo",
+          "name": "salvia palth"
         },
         "context": {
           "uri": "spotify:playlist:68JXTKfqFZEWO1DQRdVndh",
