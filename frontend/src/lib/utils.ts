@@ -24,6 +24,25 @@ export function timeAgo(timestamp: number): string {
 
 export function spotifyUrl(uri?: string): string {
   if (!uri) return '#';
-  const trackId = uri.split(':')[2];
-  return `https://open.spotify.com/track/${trackId}`;
+
+  const parts = uri.split(':');
+  if (parts.length < 3) {
+    return 'https://open.spotify.com';
+  }
+
+  const [, type, id] = parts;
+  const baseUrl = 'https://open.spotify.com';
+
+  switch (type) {
+    case 'track':
+      return `${baseUrl}/track/${id}`;
+    case 'artist':
+      return `${baseUrl}/artist/${id}`;
+    case 'album':
+      return `${baseUrl}/album/${id}`;
+    case 'user':
+      return `${baseUrl}/user/${id}`;
+    default:
+      return baseUrl;
+  }
 }

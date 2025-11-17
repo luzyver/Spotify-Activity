@@ -7,22 +7,23 @@
   import HourlyChart from '$lib/components/HourlyChart.svelte';
   import CalendarView from '$lib/components/CalendarView.svelte';
   import TopArtistsChart from '$lib/components/TopArtistsChart.svelte';
-  import AchievementBadge from '$lib/components/AchievementBadge.svelte';
-  import GoalsWidget from '$lib/components/GoalsWidget.svelte';
+  import AchievementsCard from '$lib/components/AchievementsCard.svelte';
   import CompareView from '$lib/components/CompareView.svelte';
   import TimeOfDayChart from '$lib/components/TimeOfDayChart.svelte';
   import MoodAnalysis from '$lib/components/MoodAnalysis.svelte';
-  import ListeningTrends from '$lib/components/ListeningTrends.svelte';
   import WeeklySummary from '$lib/components/WeeklySummary.svelte';
   import ListeningHeatmap from '$lib/components/ListeningHeatmap.svelte';
   import DiversityScore from '$lib/components/DiversityScore.svelte';
   import PeriodComparison from '$lib/components/PeriodComparison.svelte';
   import QuickStats from '$lib/components/QuickStats.svelte';
+  import TopTracksChart from '$lib/components/TopTracksChart.svelte';
 
   import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { calculateInsights } from '$lib/utils/analytics';
-  import { achievements, checkAchievements } from '$lib/stores/achievements';
+  import { checkAchievements } from '$lib/stores/achievements';
+  import { checkGoals } from '$lib/stores/goals';
+  import GoalsCard from '$lib/components/GoalsCard.svelte';
   import { loadAllHistoryStatic } from '$lib/utils/historyLoaderStatic';
   import { onMount } from 'svelte';
   import {
@@ -81,6 +82,7 @@
 
   $effect(() => {
     checkAchievements(combinedHistory);
+    checkGoals(combinedHistory, combinedHistory);
   });
 
   function goToPage(page: number) {
@@ -89,125 +91,224 @@
   }
 </script>
 
-<div class="flex h-screen overflow-hidden pb-16 lg:pb-0">
+<div class="flex h-screen max-w-full overflow-hidden pb-16 lg:pb-0">
   <!-- Sidebar - Desktop Only -->
-  <aside class="hidden w-64 flex-col gap-2 bg-black p-2 lg:flex">
-    <!-- Main Navigation -->
-    <div class="rounded-lg bg-[#121212] p-4">
-      <nav class="space-y-4">
+  <aside class="hidden w-72 flex-col gap-3 bg-black p-3 lg:flex">
+    <!-- Navigation Menu -->
+    <div
+      class="flex-1 overflow-y-auto rounded-xl border border-white/5 bg-gradient-to-b from-[#1a1a1a] to-[#121212] p-4"
+    >
+      <nav class="space-y-2">
+        <!-- Home -->
         <button
           onclick={() => (activeTab = 'home')}
-          class="flex w-full items-center gap-4 rounded-md px-3 py-2 text-left text-sm font-semibold transition-colors {activeTab ===
+          class="group relative flex w-full items-center gap-4 overflow-hidden rounded-xl px-4 py-4 text-left transition-all duration-300 {activeTab ===
           'home'
-            ? 'text-white'
-            : 'text-gray-400 hover:text-white'}"
+            ? 'scale-[1.02] bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-xl shadow-[#1db954]/20'
+            : 'text-gray-400 hover:scale-[1.01] hover:bg-white/5 hover:text-white'}"
         >
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-            />
-          </svg>
-          <span>Home</span>
+          <div
+            class="rounded-lg p-2 {activeTab === 'home'
+              ? 'bg-white/20'
+              : 'bg-white/5 group-hover:bg-white/10'}"
+          >
+            <svg
+              class="h-5 w-5 transition-transform group-hover:rotate-12"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold">Home</div>
+            <div class="text-xs opacity-70">Main dashboard</div>
+          </div>
+          {#if activeTab === 'home'}
+            <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
+          {/if}
         </button>
-      </nav>
-    </div>
 
-    <!-- Library -->
-    <div class="flex-1 overflow-y-auto rounded-lg bg-[#121212] p-4">
-      <div class="mb-4 flex items-center justify-between">
-        <div class="flex items-center gap-3 text-gray-400">
-          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              fill-rule="evenodd"
-              d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1zm-5 8.274l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L5 10.274zm10 0l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L15 10.274z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span class="text-sm font-semibold">Your Library</span>
-        </div>
-      </div>
-
-      <nav class="space-y-2">
+        <!-- Recent Plays -->
         <button
           onclick={() => (activeTab = 'recent')}
-          class="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors {activeTab ===
+          class="group relative flex w-full items-center gap-4 overflow-hidden rounded-xl px-4 py-4 text-left transition-all duration-300 {activeTab ===
           'recent'
-            ? 'text-white'
-            : 'text-gray-400 hover:text-white'}"
+            ? 'scale-[1.02] bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-xl shadow-[#1db954]/20'
+            : 'text-gray-400 hover:scale-[1.01] hover:bg-white/5 hover:text-white'}"
         >
-          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>Recent Plays</span>
+          <div
+            class="rounded-lg p-2 {activeTab === 'recent'
+              ? 'bg-white/20'
+              : 'bg-white/5 group-hover:bg-white/10'}"
+          >
+            <svg
+              class="h-5 w-5 transition-transform group-hover:rotate-12"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold">Recent Plays</div>
+            <div class="text-xs opacity-70">Today's tracks</div>
+          </div>
+          {#if activeTab === 'recent'}
+            <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
+          {/if}
         </button>
+
+        <!-- History -->
         <button
           onclick={() => (activeTab = 'history')}
-          class="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors {activeTab ===
+          class="group relative flex w-full items-center gap-4 overflow-hidden rounded-xl px-4 py-4 text-left transition-all duration-300 {activeTab ===
           'history'
-            ? 'text-white'
-            : 'text-gray-400 hover:text-white'}"
+            ? 'scale-[1.02] bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-xl shadow-[#1db954]/20'
+            : 'text-gray-400 hover:scale-[1.01] hover:bg-white/5 hover:text-white'}"
         >
-          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              fill-rule="evenodd"
-              d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>History</span>
+          <div
+            class="rounded-lg p-2 {activeTab === 'history'
+              ? 'bg-white/20'
+              : 'bg-white/5 group-hover:bg-white/10'}"
+          >
+            <svg
+              class="h-5 w-5 transition-transform group-hover:rotate-12"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold">History</div>
+            <div class="text-xs opacity-70">All time plays</div>
+          </div>
+          {#if activeTab === 'history'}
+            <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
+          {/if}
         </button>
+
+        <!-- Divider -->
+        <div class="my-3 border-t border-white/10"></div>
+
+        <!-- Insights -->
         <button
           onclick={() => (activeTab = 'insights')}
-          class="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors {activeTab ===
+          class="group relative flex w-full items-center gap-4 overflow-hidden rounded-xl px-4 py-4 text-left transition-all duration-300 {activeTab ===
           'insights'
-            ? 'text-white'
-            : 'text-gray-400 hover:text-white'}"
+            ? 'scale-[1.02] bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-xl shadow-[#1db954]/20'
+            : 'text-gray-400 hover:scale-[1.01] hover:bg-white/5 hover:text-white'}"
         >
-          <TrendingUp class="h-5 w-5" />
-          <span>Insights</span>
+          <div
+            class="rounded-lg p-2 {activeTab === 'insights'
+              ? 'bg-white/20'
+              : 'bg-white/5 group-hover:bg-white/10'}"
+          >
+            <TrendingUp class="h-5 w-5 transition-transform group-hover:rotate-12" />
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold">Insights</div>
+            <div class="text-xs opacity-70">Analytics & stats</div>
+          </div>
+          {#if activeTab === 'insights'}
+            <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
+          {/if}
         </button>
+
+        <!-- Achievements -->
         <button
           onclick={() => (activeTab = 'achievements')}
-          class="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors {activeTab ===
+          class="group relative flex w-full items-center gap-4 overflow-hidden rounded-xl px-4 py-4 text-left transition-all duration-300 {activeTab ===
           'achievements'
-            ? 'text-white'
-            : 'text-gray-400 hover:text-white'}"
+            ? 'scale-[1.02] bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-xl shadow-[#1db954]/20'
+            : 'text-gray-400 hover:scale-[1.01] hover:bg-white/5 hover:text-white'}"
         >
-          <Award class="h-5 w-5" />
-          <span>Achievements</span>
+          <div
+            class="rounded-lg p-2 {activeTab === 'achievements'
+              ? 'bg-white/20'
+              : 'bg-white/5 group-hover:bg-white/10'}"
+          >
+            <Award class="h-5 w-5 transition-transform group-hover:rotate-12" />
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold">Achievements</div>
+            <div class="text-xs opacity-70">Goals & badges</div>
+          </div>
+          {#if activeTab === 'achievements'}
+            <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
+          {/if}
         </button>
+
+        <!-- Calendar -->
         <button
           onclick={() => (activeTab = 'calendar')}
-          class="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors {activeTab ===
+          class="group relative flex w-full items-center gap-4 overflow-hidden rounded-xl px-4 py-4 text-left transition-all duration-300 {activeTab ===
           'calendar'
-            ? 'text-white'
-            : 'text-gray-400 hover:text-white'}"
+            ? 'scale-[1.02] bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-xl shadow-[#1db954]/20'
+            : 'text-gray-400 hover:scale-[1.01] hover:bg-white/5 hover:text-white'}"
         >
-          <Calendar class="h-5 w-5" />
-          <span>Calendar</span>
+          <div
+            class="rounded-lg p-2 {activeTab === 'calendar'
+              ? 'bg-white/20'
+              : 'bg-white/5 group-hover:bg-white/10'}"
+          >
+            <Calendar class="h-5 w-5 transition-transform group-hover:rotate-12" />
+          </div>
+          <div class="flex-1">
+            <div class="text-sm font-bold">Calendar</div>
+            <div class="text-xs opacity-70">Activity view</div>
+          </div>
+          {#if activeTab === 'calendar'}
+            <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
+          {/if}
         </button>
       </nav>
     </div>
   </aside>
 
   <!-- Main Content Area -->
-  <div class="flex flex-1 flex-col overflow-hidden bg-[#121212]">
-    <!-- Header with gradient -->
-    <header class="relative bg-gradient-to-b from-[#1f1f1f] to-[#121212] px-6 py-4">
-      <!-- Header with Logo -->
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <svg class="h-8 w-8" viewBox="0 0 24 24" fill="#1db954">
-            <path
-              d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
-            />
-          </svg>
+  <div
+    class="flex flex-1 flex-col overflow-hidden bg-gradient-to-br from-[#0a0a0a] via-[#121212] to-[#0a0a0a]"
+  >
+    <!-- Modern Header -->
+    <header
+      class="relative overflow-hidden border-b border-white/5 bg-gradient-to-r from-[#1a1a1a] via-[#1f1f1f] to-[#1a1a1a] px-6 py-6 backdrop-blur-xl"
+    >
+      <!-- Animated background gradient -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#1db954]/5 via-transparent to-[#1db954]/5 opacity-50"
+      ></div>
+
+      <div class="relative flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <!-- Spotify Logo with glow effect -->
+          <div class="relative">
+            <div class="absolute inset-0 rounded-xl bg-[#1db954]/20 blur-xl"></div>
+            <div
+              class="relative rounded-xl bg-gradient-to-br from-[#1db954] to-[#1ed760] p-3 shadow-lg"
+            >
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Title with subtitle -->
           <div>
-            <h1 class="text-2xl font-bold">
+            <h1 class="text-2xl font-bold text-white sm:text-3xl">
               {#if activeTab === 'home'}
                 Spotify Activity
               {:else if activeTab === 'recent'}
@@ -222,26 +323,50 @@
                 Calendar
               {/if}
             </h1>
+            <p class="mt-0.5 text-sm text-gray-400">
+              {#if activeTab === 'home'}
+                Your music dashboard
+              {:else if activeTab === 'recent'}
+                Tracks played today
+              {:else if activeTab === 'history'}
+                All your listening history
+              {:else if activeTab === 'insights'}
+                Discover your music patterns
+              {:else if activeTab === 'achievements'}
+                Track your progress
+              {:else if activeTab === 'calendar'}
+                Your listening calendar
+              {/if}
+            </p>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="flex-1 overflow-y-auto px-6 py-6">
+    <!-- Main Content with better spacing -->
+    <div class="flex-1 overflow-y-auto overflow-x-hidden px-4 py-8 sm:px-6 lg:px-8">
       {#if activeTab === 'home'}
-        <div class="space-y-8">
+        <div class="mx-auto max-w-7xl space-y-10">
           <!-- Now Playing Section -->
           <section>
-            <div class="mb-4 flex items-center justify-between">
-              <h2 class="text-2xl font-bold">Now Playing</h2>
+            <div class="mb-6 flex items-center justify-between">
+              <div>
+                <h2 class="text-2xl font-bold text-white sm:text-3xl">Now Playing</h2>
+                <p class="mt-1 text-sm text-gray-400">See what your friends are listening to</p>
+              </div>
               {#if nowPlaying.length > 0}
-                <span class="text-sm text-gray-400">{nowPlaying.length} active</span>
+                <div class="rounded-full border border-[#1db954]/30 bg-[#1db954]/20 px-4 py-2">
+                  <span class="text-sm font-medium text-[#1db954]">{nowPlaying.length} active</span>
+                </div>
               {/if}
             </div>
 
             {#if nowPlaying.length === 0}
-              <EmptyState />
+              <div
+                class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-12"
+              >
+                <EmptyState />
+              </div>
             {:else}
               <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {#each nowPlaying as buddy, index (buddy.user?.uri ?? index)}
@@ -253,26 +378,34 @@
 
           <!-- Recent 10 Plays -->
           <section>
-            <div class="mb-4 flex items-center justify-between">
-              <h2 class="text-2xl font-bold">Recent Plays</h2>
+            <div class="mb-6 flex items-center justify-between">
+              <div>
+                <h2 class="text-2xl font-bold text-white sm:text-3xl">Recent Plays</h2>
+                <p class="mt-1 text-sm text-gray-400">Your latest tracks</p>
+              </div>
               <button
                 onclick={() => (activeTab = 'recent')}
-                class="text-sm text-gray-400 hover:text-white hover:underline"
+                class="group flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-gray-400 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white"
               >
-                Show all
+                <span>Show all</span>
+                <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
 
             {#if allHistory.length > 0}
-              <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-                {#each allHistory.slice(0, 10) as item, index (item.uri + ':' + item.timestamp)}
-                  <HistoryCard {item} {index} currentPage={1} itemsPerPage={10} viewMode="grid" />
+              <div
+                class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+              >
+                {#each allHistory.slice(0, 12) as item, index (item.uri + ':' + item.timestamp)}
+                  <HistoryCard {item} {index} currentPage={1} itemsPerPage={12} viewMode="grid" />
                 {/each}
               </div>
             {:else}
-              <div class="py-16 text-center">
+              <div
+                class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-16 text-center"
+              >
                 <div class="mb-4 text-6xl">🎵</div>
-                <p class="mb-2 text-lg text-gray-400">No recent plays</p>
+                <p class="mb-2 text-lg font-medium text-gray-300">No recent plays</p>
                 <p class="text-sm text-gray-500">Start listening to see your history</p>
               </div>
             {/if}
@@ -415,36 +548,41 @@
             </div>
           {:else}
             <div class="space-y-8">
+              <!-- === OVERVIEW SECTION === -->
               <!-- Quick Stats -->
               <QuickStats history={combinedHistory} />
 
-              <!-- Main Insights Card -->
+              <!-- Main Insights -->
               <InsightsCard {insights} />
 
-              <!-- Weekly Summary & Diversity Score -->
-              <div class="grid gap-8 lg:grid-cols-2">
+              <!-- === TIME-BASED ANALYSIS === -->
+              <!-- Weekly Summary & Diversity Score (1 col on mobile, 2 cols on desktop) -->
+              <div class="grid gap-6 sm:gap-8 md:grid-cols-2">
                 <WeeklySummary history={combinedHistory} />
                 <DiversityScore {insights} />
               </div>
 
-              <!-- Period Comparison & Listening Trends -->
-              <div class="grid gap-8 lg:grid-cols-2">
-                <PeriodComparison history={combinedHistory} />
-                <ListeningTrends history={combinedHistory} />
+              <!-- Period Comparison -->
+              <PeriodComparison history={combinedHistory} />
+
+              <!-- === TOP CONTENT === -->
+              <!-- Top Tracks & Top Artists (1 col on mobile, 2 cols on desktop) -->
+              <div class="grid gap-6 sm:gap-8 md:grid-cols-2">
+                <TopTracksChart history={combinedHistory} />
+                <TopArtistsChart history={combinedHistory} />
               </div>
 
-              <!-- Hourly Chart -->
+              <!-- === LISTENING PATTERNS === -->
+              <!-- Hourly Distribution -->
               <HourlyChart history={combinedHistory} />
-
-              <!-- Top Artists Chart -->
-              <TopArtistsChart history={combinedHistory} />
 
               <!-- Activity Heatmap -->
               <ListeningHeatmap history={combinedHistory} />
 
-              <!-- Time of Day Chart -->
+              <!-- Time of Day Distribution -->
               <TimeOfDayChart history={combinedHistory} />
 
+              <!-- === ADVANCED ANALYSIS === -->
               <!-- Mood Analysis -->
               <MoodAnalysis history={combinedHistory} />
 
@@ -455,25 +593,11 @@
         </div>
       {:else if activeTab === 'achievements'}
         <div class="space-y-6">
-          <GoalsWidget history={combinedHistory} />
+          <!-- Goals Section -->
+          <GoalsCard />
 
-          <div class="rounded-lg bg-[#181818] p-6">
-            <div class="mb-6 flex items-center justify-between">
-              <div>
-                <h3 class="text-2xl font-bold">Achievements</h3>
-                <p class="text-sm text-gray-400">
-                  Unlocked {$achievements.filter((a) => a.unlocked).length} of {$achievements.length}
-                </p>
-              </div>
-              <div class="text-3xl">🏆</div>
-            </div>
-
-            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {#each $achievements as achievement (achievement.id)}
-                <AchievementBadge {achievement} />
-              {/each}
-            </div>
-          </div>
+          <!-- Achievements Section -->
+          <AchievementsCard />
         </div>
       {:else if activeTab === 'calendar'}
         <div class="space-y-6">
@@ -484,85 +608,196 @@
   </div>
 
   <!-- Bottom Navigation - Mobile Only -->
-  <nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#121212] lg:hidden">
-    <div class="flex items-center justify-around px-2 py-2">
+  <nav
+    class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-gradient-to-t from-[#0a0a0a] to-[#121212] backdrop-blur-xl lg:hidden"
+  >
+    <div class="safe-area-inset-bottom flex items-center justify-around px-1 py-2">
       <button
         onclick={() => (activeTab = 'home')}
-        class="flex flex-col items-center gap-1 px-3 py-2 transition-colors {activeTab === 'home'
+        class="group relative flex flex-col items-center gap-1 px-3 py-2 transition-all {activeTab ===
+        'home'
           ? 'text-white'
           : 'text-gray-400'}"
       >
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-          <path
-            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-          />
-        </svg>
-        <span class="text-[10px] font-medium">Home</span>
+        {#if activeTab === 'home'}
+          <div class="absolute inset-0 rounded-xl bg-[#1db954]/10"></div>
+        {/if}
+        <div
+          class="relative rounded-lg p-1.5 transition-all {activeTab === 'home'
+            ? 'bg-[#1db954]/20'
+            : 'group-hover:bg-white/5'}"
+        >
+          <svg
+            class="h-5 w-5 transition-transform group-active:scale-90"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+            />
+          </svg>
+        </div>
+        <span class="relative text-[10px] font-medium">{activeTab === 'home' ? 'Home' : ''}</span>
+        {#if activeTab === 'home'}
+          <div
+            class="absolute -bottom-0.5 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-[#1db954]"
+          ></div>
+        {/if}
       </button>
 
       <button
         onclick={() => (activeTab = 'recent')}
-        class="flex flex-col items-center gap-1 px-3 py-2 transition-colors {activeTab === 'recent'
+        class="group relative flex flex-col items-center gap-1 px-3 py-2 transition-all {activeTab ===
+        'recent'
           ? 'text-white'
           : 'text-gray-400'}"
       >
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-            clip-rule="evenodd"
-          />
-        </svg>
-        <span class="text-[10px] font-medium">Recent</span>
+        {#if activeTab === 'recent'}
+          <div class="absolute inset-0 rounded-xl bg-[#1db954]/10"></div>
+        {/if}
+        <div
+          class="relative rounded-lg p-1.5 transition-all {activeTab === 'recent'
+            ? 'bg-[#1db954]/20'
+            : 'group-hover:bg-white/5'}"
+        >
+          <svg
+            class="h-5 w-5 transition-transform group-active:scale-90"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <span class="relative text-[10px] font-medium"
+          >{activeTab === 'recent' ? 'Recent' : ''}</span
+        >
+        {#if activeTab === 'recent'}
+          <div
+            class="absolute -bottom-0.5 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-[#1db954]"
+          ></div>
+        {/if}
       </button>
 
       <button
         onclick={() => (activeTab = 'history')}
-        class="flex flex-col items-center gap-1 px-3 py-2 transition-colors {activeTab === 'history'
+        class="group relative flex flex-col items-center gap-1 px-3 py-2 transition-all {activeTab ===
+        'history'
           ? 'text-white'
           : 'text-gray-400'}"
       >
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
-          <path
-            fill-rule="evenodd"
-            d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-            clip-rule="evenodd"
-          />
-        </svg>
-        <span class="text-[10px] font-medium">History</span>
+        {#if activeTab === 'history'}
+          <div class="absolute inset-0 rounded-xl bg-[#1db954]/10"></div>
+        {/if}
+        <div
+          class="relative rounded-lg p-1.5 transition-all {activeTab === 'history'
+            ? 'bg-[#1db954]/20'
+            : 'group-hover:bg-white/5'}"
+        >
+          <svg
+            class="h-5 w-5 transition-transform group-active:scale-90"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <span class="relative text-[10px] font-medium"
+          >{activeTab === 'history' ? 'History' : ''}</span
+        >
+        {#if activeTab === 'history'}
+          <div
+            class="absolute -bottom-0.5 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-[#1db954]"
+          ></div>
+        {/if}
       </button>
 
       <button
         onclick={() => (activeTab = 'insights')}
-        class="flex flex-col items-center gap-1 px-3 py-2 transition-colors {activeTab ===
+        class="group relative flex flex-col items-center gap-1 px-3 py-2 transition-all {activeTab ===
         'insights'
           ? 'text-white'
           : 'text-gray-400'}"
       >
-        <TrendingUp class="h-6 w-6" />
-        <span class="text-[10px] font-medium">Insights</span>
+        {#if activeTab === 'insights'}
+          <div class="absolute inset-0 rounded-xl bg-[#1db954]/10"></div>
+        {/if}
+        <div
+          class="relative rounded-lg p-1.5 transition-all {activeTab === 'insights'
+            ? 'bg-[#1db954]/20'
+            : 'group-hover:bg-white/5'}"
+        >
+          <TrendingUp class="h-5 w-5 transition-transform group-active:scale-90" />
+        </div>
+        <span class="relative text-[10px] font-medium"
+          >{activeTab === 'insights' ? 'Insights' : ''}</span
+        >
+        {#if activeTab === 'insights'}
+          <div
+            class="absolute -bottom-0.5 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-[#1db954]"
+          ></div>
+        {/if}
       </button>
 
       <button
         onclick={() => (activeTab = 'achievements')}
-        class="flex flex-col items-center gap-1 px-3 py-2 transition-colors {activeTab ===
+        class="group relative flex flex-col items-center gap-1 px-3 py-2 transition-all {activeTab ===
         'achievements'
           ? 'text-white'
           : 'text-gray-400'}"
       >
-        <Award class="h-6 w-6" />
-        <span class="text-[10px] font-medium">Awards</span>
+        {#if activeTab === 'achievements'}
+          <div class="absolute inset-0 rounded-xl bg-[#1db954]/10"></div>
+        {/if}
+        <div
+          class="relative rounded-lg p-1.5 transition-all {activeTab === 'achievements'
+            ? 'bg-[#1db954]/20'
+            : 'group-hover:bg-white/5'}"
+        >
+          <Award class="h-5 w-5 transition-transform group-active:scale-90" />
+        </div>
+        <span class="relative text-[10px] font-medium"
+          >{activeTab === 'achievements' ? 'Awards' : ''}</span
+        >
+        {#if activeTab === 'achievements'}
+          <div
+            class="absolute -bottom-0.5 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-[#1db954]"
+          ></div>
+        {/if}
       </button>
 
       <button
         onclick={() => (activeTab = 'calendar')}
-        class="flex flex-col items-center gap-1 px-3 py-2 transition-colors {activeTab ===
+        class="group relative flex flex-col items-center gap-1 px-3 py-2 transition-all {activeTab ===
         'calendar'
           ? 'text-white'
           : 'text-gray-400'}"
       >
-        <Calendar class="h-6 w-6" />
-        <span class="text-[10px] font-medium">Calendar</span>
+        {#if activeTab === 'calendar'}
+          <div class="absolute inset-0 rounded-xl bg-[#1db954]/10"></div>
+        {/if}
+        <div
+          class="relative rounded-lg p-1.5 transition-all {activeTab === 'calendar'
+            ? 'bg-[#1db954]/20'
+            : 'group-hover:bg-white/5'}"
+        >
+          <Calendar class="h-5 w-5 transition-transform group-active:scale-90" />
+        </div>
+        <span class="relative text-[10px] font-medium"
+          >{activeTab === 'calendar' ? 'Calendar' : ''}</span
+        >
+        {#if activeTab === 'calendar'}
+          <div
+            class="absolute -bottom-0.5 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-[#1db954]"
+          ></div>
+        {/if}
       </button>
     </div>
   </nav>

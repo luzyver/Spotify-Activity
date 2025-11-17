@@ -1,31 +1,30 @@
 <script lang="ts">
   import type { HistoryItem } from '$lib/types';
-  import { Crown } from 'lucide-svelte';
+  import { Music } from 'lucide-svelte';
 
   let { history }: { history: HistoryItem[] } = $props();
 
-  let topArtists = $derived(() => {
-    const artistCounts = history.reduce(
-      (acc, item) => {
-        const parts = item.artist
-          .split(',')
-          .map((name) => name.trim())
-          .filter(Boolean);
-        for (const name of parts) {
-          acc[name] = (acc[name] || 0) + 1;
-        }
-        return acc;
-      },
-      {} as Record<string, number>
-    );
+  let topTracks = $derived(() => {
+    const trackCounts: Record<string, { track: string; artist: string; plays: number }> = {};
 
-    return Object.entries(artistCounts)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 10)
-      .map(([name, plays]) => ({ name, plays }));
+    history.forEach((item) => {
+      const key = `${item.track}|||${item.artist}`;
+      if (!trackCounts[key]) {
+        trackCounts[key] = {
+          track: item.track,
+          artist: item.artist,
+          plays: 0,
+        };
+      }
+      trackCounts[key].plays++;
+    });
+
+    return Object.values(trackCounts)
+      .sort((a, b) => b.plays - a.plays)
+      .slice(0, 10);
   });
 
-  let maxPlays = $derived(topArtists()[0]?.plays || 1);
+  let maxPlays = $derived(topTracks()[0]?.plays || 1);
 
   const colors = [
     'from-yellow-500 to-orange-500',
@@ -43,12 +42,12 @@
 
 <div class="glass-card flex h-full flex-col rounded-xl p-4 sm:p-6">
   <div class="mb-4 flex items-center gap-2 sm:mb-6">
-    <Crown class="h-4 w-4 text-yellow-500 sm:h-5 sm:w-5" />
-    <h3 class="text-lg font-bold sm:text-xl">Top Artists</h3>
+    <Music class="h-4 w-4 text-[#1db954] sm:h-5 sm:w-5" />
+    <h3 class="text-lg font-bold sm:text-xl">Top Tracks</h3>
   </div>
 
   <div class="flex-1 space-y-2 sm:space-y-3">
-    {#each topArtists() as artist, i (artist.name)}
+    {#each topTracks() as track, i (track.track + track.artist)}
       <div class="group">
         <div class="mb-1 flex min-h-[40px] items-center justify-between gap-2">
           <div class="flex min-w-0 flex-1 items-center gap-2">
@@ -60,12 +59,13 @@
             >
               {i + 1}
             </span>
-            <span class="min-w-0 flex-1 truncate text-sm font-medium sm:text-base"
-              >{artist.name}</span
-            >
+            <div class="min-w-0 flex-1">
+              <div class="truncate text-sm font-medium sm:text-base">{track.track}</div>
+              <div class="truncate text-[10px] text-gray-400 sm:text-xs">{track.artist}</div>
+            </div>
           </div>
           <span class="ml-1 flex-shrink-0 text-xs text-gray-400 sm:ml-2 sm:text-sm"
-            >{artist.plays}</span
+            >{track.plays}</span
           >
         </div>
         <div class="h-1.5 overflow-hidden rounded-full bg-white/10 sm:h-2">
@@ -73,7 +73,7 @@
             class="h-full rounded-full bg-gradient-to-r {colors[
               i
             ]} transition-all duration-700 group-hover:shadow-lg"
-            style="width: {(artist.plays / maxPlays) * 100}%"
+            style="width: {(track.plays / maxPlays) * 100}%"
           ></div>
         </div>
       </div>

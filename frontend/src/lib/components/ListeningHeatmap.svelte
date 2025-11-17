@@ -40,13 +40,13 @@
 </script>
 
 <div class="space-y-4">
-  <h3 class="text-xl font-semibold">Activity Heatmap</h3>
+  <h3 class="text-lg font-semibold sm:text-xl">Activity Heatmap</h3>
 
-  <div class="overflow-x-auto rounded-lg border border-white/5 bg-white/[0.02] p-4">
+  <div class="overflow-x-auto rounded-lg border border-white/5 bg-white/[0.02] p-3 sm:p-4">
     <div class="min-w-[600px]">
       <!-- Hour labels (local timezone) -->
       <div class="mb-2 flex gap-0.5 pl-10">
-        {#each [0, 6, 12, 18] as hour}
+        {#each [0, 6, 12, 18] as hour (hour)}
           <div class="flex-1 text-center text-[10px] text-gray-600">
             {hour.toString().padStart(2, '0')}:00
           </div>
@@ -55,11 +55,11 @@
 
       <!-- Heatmap grid -->
       <div class="space-y-0.5">
-        {#each days as day}
+        {#each days as day (day)}
           <div class="flex items-center gap-0.5">
             <div class="w-9 text-[10px] font-medium text-gray-500">{day}</div>
             <div class="flex flex-1 gap-0.5">
-              {#each hours as hour}
+              {#each hours as hour (hour)}
                 {@const value = heatmapData[day][hour]}
                 <div
                   class="group relative aspect-square flex-1 rounded-sm {getIntensity(

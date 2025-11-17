@@ -5,14 +5,22 @@
 
   const stats = $derived.by(() => {
     const now = new Date();
+
+    // Start of today (00:00:00)
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    const thisWeek = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-    const thisMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+
+    // Start of this week (Monday 00:00:00)
+    const dayOfWeek = now.getDay();
+    const mondayDate = now.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1);
+    const startOfWeek = new Date(now.getFullYear(), now.getMonth(), mondayDate);
+
+    // Start of this month (1st day 00:00:00)
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
 
     return {
-      today: history.filter((item) => item.timestamp >= today.getTime()).length,
-      week: history.filter((item) => item.timestamp >= thisWeek.getTime()).length,
-      month: history.filter((item) => item.timestamp >= thisMonth.getTime()).length,
+      today: history.filter((item) => new Date(item.timestamp) >= today).length,
+      week: history.filter((item) => new Date(item.timestamp) >= startOfWeek).length,
+      month: history.filter((item) => new Date(item.timestamp) >= startOfMonth).length,
       total: history.length,
     };
   });

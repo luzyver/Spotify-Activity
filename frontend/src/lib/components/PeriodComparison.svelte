@@ -62,7 +62,7 @@
 </script>
 
 <div class="space-y-4">
-  <h3 class="text-xl font-semibold">Month Comparison</h3>
+  <h3 class="text-lg font-semibold sm:text-xl">Month Comparison</h3>
 
   <div class="grid gap-3 md:grid-cols-2">
     <!-- Total Plays Comparison -->

@@ -130,22 +130,23 @@
   let avgPlaysPerDay = $derived(totalPlays / activeDays || 0);
 </script>
 
-<div class="glass-card rounded-xl p-6">
+<div class="space-y-6">
   {#if isLoading}
     <div class="flex items-center justify-center py-12">
       <div class="text-center">
         <div
           class="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"
         ></div>
-        <p class="text-sm" style="color: #9ca3af">Loading calendar data...</p>
+        <p class="text-sm text-gray-400">Loading calendar...</p>
       </div>
     </div>
   {:else}
-    <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <!-- Header -->
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <div>
-        <h3 class="text-lg font-bold">Activity Calendar</h3>
-        <p class="text-xs" style="color: #9ca3af">
-          {activeDays} active days
+        <h3 class="text-lg font-semibold sm:text-xl">Activity Calendar</h3>
+        <p class="mt-1 text-xs text-gray-500 sm:text-sm">
+          {activeDays} active days • {totalPlays} plays
         </p>
       </div>
 
@@ -153,7 +154,7 @@
       <div class="flex items-center gap-2">
         <button
           onclick={previousMonth}
-          class="rounded-lg border border-white/10 bg-white/5 p-2 transition-all hover:bg-white/10"
+          class="rounded-lg border border-white/5 bg-white/[0.02] p-2 transition-colors hover:border-white/10 hover:bg-white/[0.04]"
           aria-label="Previous month"
         >
           <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -168,7 +169,7 @@
 
         <button
           onclick={goToToday}
-          class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm font-medium transition-all hover:bg-white/10"
+          class="min-w-[140px] rounded-lg border border-white/5 bg-white/[0.02] px-4 py-2 text-sm font-medium transition-colors hover:border-white/10 hover:bg-white/[0.04]"
         >
           {monthNames[selectedMonth]}
           {selectedYear}
@@ -176,7 +177,7 @@
 
         <button
           onclick={nextMonth}
-          class="rounded-lg border border-white/10 bg-white/5 p-2 transition-all hover:bg-white/10"
+          class="rounded-lg border border-white/5 bg-white/[0.02] p-2 transition-colors hover:border-white/10 hover:bg-white/[0.04]"
           aria-label="Next month"
         >
           <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -191,79 +192,59 @@
       </div>
     </div>
 
-    <!-- Stats Summary - Compact -->
-    <div class="mb-3 flex gap-2 text-xs">
-      <div class="flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1">
-        <span class="font-bold text-[#1db954]">{totalPlays}</span>
-        <span style="color: #9ca3af">plays</span>
-      </div>
-      <div class="flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1">
-        <span class="font-bold">{avgPlaysPerDay.toFixed(1)}</span>
-        <span style="color: #9ca3af">avg</span>
-      </div>
-      <div class="flex items-center gap-1.5 rounded border border-white/10 bg-white/5 px-2 py-1">
-        <span class="font-bold">{Math.max(...dailyData.map((d) => d.plays))}</span>
-        <span style="color: #9ca3af">best</span>
-      </div>
-    </div>
-
-    <!-- Calendar Grid - Monthly View -->
-    <div class="mb-3">
-      <div class="mb-1.5 grid grid-cols-7 gap-1">
-        {#each ['S', 'M', 'T', 'W', 'T', 'F', 'S'] as day (day)}
-          <div class="text-center text-[10px] font-medium text-gray-500">
+    <!-- Calendar Grid -->
+    <div class="rounded-lg border border-white/5 bg-white/[0.02] p-4">
+      <!-- Day headers -->
+      <div class="mb-2 grid grid-cols-7 gap-1">
+        {#each ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as day (day)}
+          <div class="text-center text-[10px] font-medium text-gray-600">
             {day}
           </div>
         {/each}
       </div>
 
+      <!-- Calendar days -->
       <div class="space-y-1">
         {#each calendarGrid() as week, weekIndex (weekIndex)}
           <div class="grid grid-cols-7 gap-1">
             {#each week as cell, dayIndex (weekIndex * 7 + dayIndex)}
-              {@const globalIndex = weekIndex * 7 + dayIndex}
               {#if cell === null}
-                <!-- Empty cell -->
                 <div class="aspect-square"></div>
               {:else}
                 <div
-                  class="group relative flex aspect-square cursor-pointer flex-col items-center justify-center rounded border border-[#1db954] p-1 transition-all hover:z-10 hover:scale-105 {getIntensity(
-                    cell.plays
-                  )}"
-                  style="border-color: {cell.plays === 0 ? 'rgba(255,255,255,0.1)' : ''}"
-                  title="{monthNames[
-                    selectedMonth
-                  ]} {cell.date}, {selectedYear}: {cell.plays} plays"
+                  class="group relative flex aspect-square cursor-pointer flex-col items-center justify-center rounded border transition-all hover:scale-105 {cell.plays >
+                  0
+                    ? 'border-[#1db954]/30'
+                    : 'border-white/5'} {getIntensity(cell.plays)}"
+                  title="{monthNames[selectedMonth]} {cell.date}: {cell.plays} plays"
                 >
-                  <!-- Date number -->
-                  <div class="text-xs font-medium text-white">
+                  <div
+                    class="text-xs font-medium {cell.plays > 0 ? 'text-white' : 'text-gray-600'}"
+                  >
                     {cell.date}
                   </div>
 
-                  <!-- Play count -->
                   {#if cell.plays > 0}
-                    <div class="mt-0.5 text-[8px] font-bold text-[#1db954]">
+                    <div class="mt-0.5 text-[9px] font-semibold text-[#1db954]">
                       {cell.plays}
                     </div>
-                  {/if}
 
-                  <!-- Tooltip -->
-                  {#if cell.plays > 0}
+                    <!-- Tooltip -->
                     <div
-                      class="pointer-events-none absolute -top-28 left-1/2 z-20 w-48 -translate-x-1/2 rounded-lg border border-white/20 bg-[#1f2937] p-3 opacity-0 shadow-xl transition-opacity group-hover:opacity-100"
+                      class="pointer-events-none absolute -top-24 left-1/2 z-20 w-44 -translate-x-1/2 rounded-lg border border-white/10 bg-black/95 p-3 opacity-0 shadow-xl transition-opacity group-hover:opacity-100"
                     >
-                      <div class="mb-1 text-sm font-bold">
+                      <div class="mb-1 text-xs font-semibold">
                         {monthNames[selectedMonth]}
                         {cell.date}, {selectedYear}
                       </div>
                       <div class="text-lg font-bold text-[#1db954]">{cell.plays} plays</div>
                       {#if cell.tracks.length > 0}
                         <div class="mt-2 border-t border-white/10 pt-2">
-                          <div class="text-xs text-gray-400">Top track:</div>
+                          <div class="text-[10px] text-gray-500">Top track</div>
                           <div class="line-clamp-1 text-xs font-medium">
                             {cell.tracks[0].track}
                           </div>
-                          <div class="text-xs text-gray-400">
+                          <div class="text-[10px] text-gray-600">
                             {cell.tracks[0].artist}
                           </div>
                         </div>
@@ -276,19 +257,19 @@
           </div>
         {/each}
       </div>
-    </div>
 
-    <!-- Legend -->
-    <div class="flex items-center justify-between text-[10px] text-gray-500">
-      <span>Less</span>
-      <div class="flex gap-0.5">
-        <div class="h-2.5 w-2.5 rounded {getIntensity(0)}"></div>
-        <div class="h-2.5 w-2.5 rounded {getIntensity(maxPlays * 0.2)}"></div>
-        <div class="h-2.5 w-2.5 rounded {getIntensity(maxPlays * 0.4)}"></div>
-        <div class="h-2.5 w-2.5 rounded {getIntensity(maxPlays * 0.6)}"></div>
-        <div class="h-2.5 w-2.5 rounded {getIntensity(maxPlays * 0.8)}"></div>
+      <!-- Legend -->
+      <div class="mt-4 flex items-center justify-center gap-2">
+        <span class="text-[10px] text-gray-600">Less</span>
+        <div class="flex gap-0.5">
+          <div class="h-2.5 w-2.5 rounded-sm {getIntensity(0)}"></div>
+          <div class="h-2.5 w-2.5 rounded-sm {getIntensity(maxPlays * 0.2)}"></div>
+          <div class="h-2.5 w-2.5 rounded-sm {getIntensity(maxPlays * 0.4)}"></div>
+          <div class="h-2.5 w-2.5 rounded-sm {getIntensity(maxPlays * 0.6)}"></div>
+          <div class="h-2.5 w-2.5 rounded-sm {getIntensity(maxPlays * 0.8)}"></div>
+        </div>
+        <span class="text-[10px] text-gray-600">More</span>
       </div>
-      <span>More</span>
     </div>
   {/if}
 </div>

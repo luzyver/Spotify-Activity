@@ -28,7 +28,7 @@
 </script>
 
 <div class="space-y-4">
-  <h3 class="text-xl font-semibold">Listening Habits</h3>
+  <h3 class="text-lg font-semibold sm:text-xl">Listening Habits</h3>
 
   <div class="grid gap-3 sm:grid-cols-2">
     <!-- Artist Diversity -->
@@ -40,13 +40,13 @@
         <span class="text-lg">{diversityLevel.emoji}</span>
       </div>
 
-      <div class="mb-1 text-2xl font-semibold">{insights.artistDiversity}%</div>
+      <div class="mb-1 text-2xl font-semibold">{insights.artistDiversity ?? 0}%</div>
       <div class="mb-3 text-sm text-gray-400">{diversityLevel.label}</div>
 
       <div class="h-1.5 overflow-hidden rounded-full bg-white/5">
         <div
           class="h-full bg-[#1db954]"
-          style="width: {Math.min(insights.artistDiversity || 0, 100)}%"
+          style="width: {Math.min(insights.artistDiversity ?? 0, 100)}%"
         ></div>
       </div>
 
@@ -62,13 +62,13 @@
         <span class="text-lg">{repeatLevel.emoji}</span>
       </div>
 
-      <div class="mb-1 text-2xl font-semibold">{insights.repeatRate}%</div>
+      <div class="mb-1 text-2xl font-semibold">{insights.repeatRate ?? 0}%</div>
       <div class="mb-3 text-sm text-gray-400">{repeatLevel.label}</div>
 
       <div class="h-1.5 overflow-hidden rounded-full bg-white/5">
         <div
           class="h-full bg-[#1db954]"
-          style="width: {Math.min(insights.repeatRate || 0, 100)}%"
+          style="width: {Math.min(insights.repeatRate ?? 0, 100)}%"
         ></div>
       </div>
 

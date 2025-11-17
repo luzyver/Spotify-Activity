@@ -5,9 +5,13 @@
 
   const weeklyStats = $derived.by(() => {
     const now = new Date();
-    const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 
-    const thisWeek = history.filter((item) => item.timestamp >= weekAgo.getTime());
+    // Start of this week (Monday 00:00:00)
+    const dayOfWeek = now.getDay();
+    const mondayDate = now.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1);
+    const startOfWeek = new Date(now.getFullYear(), now.getMonth(), mondayDate);
+
+    const thisWeek = history.filter((item) => new Date(item.timestamp) >= startOfWeek);
 
     if (thisWeek.length === 0) {
       return {
@@ -67,7 +71,7 @@
 </script>
 
 <div class="space-y-4">
-  <h3 class="text-xl font-semibold">This Week</h3>
+  <h3 class="text-lg font-semibold sm:text-xl">This Week</h3>
 
   <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
     {#each stats as stat (stat.label)}
