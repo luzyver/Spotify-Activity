@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763401210601,
+      "timestamp": 1763401810689,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5vzRjB22yfvxZua0mknCo6",
-        "name": "April",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d1f62c1b2133e298c08cb49a",
+        "uri": "spotify:track:5hPv6XDaQzixDaYN0yRCFi",
+        "name": "Mahir Memberi Luka",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c6f0e5e732cddb2c817b37ce",
         "album": {
-          "uri": "spotify:album:2Vu9vlqebIXTxVSZiuxpyj",
-          "name": "Tempat Aku Pulang"
+          "uri": "spotify:album:4RQqQiwO3kTfzQI7YQfDMg",
+          "name": "Everlast"
         },
         "artist": {
-          "uri": "spotify:artist:06QVnTCdjs4jPKO0487EGV",
-          "name": "Fiersa Besari"
+          "uri": "spotify:artist:6FTLayBxjkQeanFdUusk1I",
+          "name": "Fabio Asher"
         },
         "context": {
           "uri": "spotify:album:1RKSbvPUDUEeKPIhGdnzSD",
