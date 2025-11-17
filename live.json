@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763350249272,
+      "timestamp": 1763350849848,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2wAiFWjRupWmnDkQcu91MF",
-        "name": "Rumah Ke Rumah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d623688488865906052ef96b",
+        "uri": "spotify:track:0SeBJ2sAl8CV58kBfpd5va",
+        "name": "Kota",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27385d73b77a753ad50b21ca0de",
         "album": {
-          "uri": "spotify:album:1DAuVHMlBvIjzWZALSUXbn",
-          "name": "Menari Dengan Bayangan"
+          "uri": "spotify:album:6kn7hqy1xP6XsYD6rSIhZW",
+          "name": "Kota"
         },
         "artist": {
-          "uri": "spotify:artist:51kyrUsAVqUBcoDEMFkX12",
-          "name": "Hindia"
+          "uri": "spotify:artist:3IvlMYb5AvKRfNt7vR8PNP",
+          "name": "Dere"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
