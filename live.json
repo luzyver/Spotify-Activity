@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763462403954,
+      "timestamp": 1763463003946,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5dvIK269hL3eZXQMG4Vc2C",
-        "name": "Lihat Kebunku (Taman Bunga)",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc82bf3a920d66bd3006d308",
+        "uri": "spotify:track:3Puhw21QI2MKR4rdvyPuIb",
+        "name": "ours to keep",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27341f65131e6205f8deac33651",
         "album": {
-          "uri": "spotify:album:1K1gVX9mqTJuCaLvxL7AIq",
-          "name": "Lihat Kebunku (Taman Bunga)"
+          "uri": "spotify:album:5vvuakA6CVikfUwArrorTd",
+          "name": "DISCO"
         },
         "artist": {
-          "uri": "spotify:artist:4FZ6V3q8zMyFvSMeT2ld2f",
-          "name": "Aku Jeje"
+          "uri": "spotify:artist:5HLrlI5LdULY9s740CsAFZ",
+          "name": "Kendis, adis"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
