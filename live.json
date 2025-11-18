@@ -1,15 +1,15 @@
 {
   "friends": [
     {
-      "timestamp": 1763446803946,
+      "timestamp": 1763447403982,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6wqmvAct0xhX6plr6wv5Jp",
-        "name": "Tersenyum, Untuk Siapa?",
+        "uri": "spotify:track:1jIkXxZCa3PxZKivwYk0Yx",
+        "name": "Bumi Dan Bulan",
         "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e23b66f0e9b868f275412e14",
         "album": {
           "uri": "spotify:album:3GXsFGyViN6r1JYvuHYYSG",
