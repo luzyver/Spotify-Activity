@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763455803965,
+      "timestamp": 1763456404420,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:3ymuBMTviroWLuf1jMsMVf",
-        "name": "Sorai",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737d6b0a5ae92793f5d21be67a",
+        "uri": "spotify:track:5TReP8XK4aTOe2m44ZjQqz",
+        "name": "Tujuh Belas",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d34a0632f6861e8875d6899b",
         "album": {
-          "uri": "spotify:album:60YDoJUMHjkYtZnPztRvZ1",
-          "name": "Sorai"
+          "uri": "spotify:album:3R4IAF9ApqYeUQrv1ddyoR",
+          "name": "Manusia"
         },
         "artist": {
-          "uri": "spotify:artist:20zafXaLhm5IcXnSU93rNn",
-          "name": "Nadin Amizah"
+          "uri": "spotify:artist:2iDVt6mFbtbDEZG5ax0dTi",
+          "name": "Tulus"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
