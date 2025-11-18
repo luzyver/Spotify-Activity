@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763464804049,
+      "timestamp": 1763465404189,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:26KhLgFuPymkm1uiZkc6Rv",
-        "name": "Bunga Maaf",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27342196e31b446e21f056660eb",
+        "uri": "spotify:track:1zFaLYA10ImwEejge3F5nm",
+        "name": "Nina",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27339695d4c16489cdf60bef536",
         "album": {
-          "uri": "spotify:album:0N2jwsM6nf29RFOJBhizg0",
-          "name": "Bunga Maaf"
+          "uri": "spotify:album:2LVn7NDGoMSmFCkLqRK2o4",
+          "name": "Nina"
         },
         "artist": {
-          "uri": "spotify:artist:1REvGGP2H7cFLGZgK2sStO",
-          "name": "The Lantis"
+          "uri": "spotify:artist:7Gy1PxqrgsiqWF6JNYPHeB",
+          "name": ".Feast"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
