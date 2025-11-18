@@ -4,6 +4,78 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    /* Spacing Scale */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 0.75rem; /* 12px */
+    --space-md: 1rem; /* 16px */
+    --space-lg: 1.5rem; /* 24px */
+    --space-xl: 2rem; /* 32px */
+    --space-2xl: 3rem; /* 48px */
+
+    /* Border Radius */
+    --radius-sm: 0.5rem; /* 8px */
+    --radius-md: 0.75rem; /* 12px */
+    --radius-lg: 1rem; /* 16px */
+    --radius-xl: 1.5rem; /* 24px */
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 20px rgb(29 185 84 / 0.3);
+    --shadow-glow-lg: 0 0 40px rgb(29 185 84 / 0.4);
+
+    /* Colors */
+    --spotify-green: #1db954;
+    --spotify-green-light: #1ed760;
+    --spotify-green-dark: #1aa34a;
+
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #121212;
+    --bg-tertiary: #181818;
+    --bg-elevated: #282828;
+
+    --border-subtle: rgba(255, 255, 255, 0.05);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --border-strong: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@layer components {
+  /* Card Base */
+  .card {
+    @apply rounded-xl border border-white/5 bg-gradient-to-br from-[#282828] to-[#181818];
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:border-[#1db954]/30 hover:shadow-xl hover:shadow-[#1db954]/10;
+  }
+
+  .card-interactive {
+    @apply card card-hover cursor-pointer;
+  }
+
+  /* Button Base */
+  .btn {
+    @apply rounded-xl px-6 py-3 font-semibold transition-all duration-200 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-[#1db954] to-[#1ed760] text-white shadow-lg shadow-[#1db954]/30 hover:shadow-xl hover:shadow-[#1db954]/50;
+  }
+
+  .btn-secondary {
+    @apply btn border border-white/10 bg-white/5 text-white hover:border-white/20 hover:bg-white/10;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-gray-400 hover:bg-white/5 hover:text-white;
+  }
+}
+
 * {
   font-family:
     'Inter',

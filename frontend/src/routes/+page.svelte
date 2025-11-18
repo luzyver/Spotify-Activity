@@ -126,7 +126,7 @@
         <div
           class="mt-4 hidden items-center gap-2 rounded-full bg-white/5 p-1 text-xs font-medium sm:mt-0 sm:flex sm:text-sm"
         >
-          {#each TABS as tab}
+          {#each TABS as tab (tab.id)}
             <button
               onclick={() => (activeTab = tab.id)}
               class="rounded-full px-3 py-1.5 transition-colors {activeTab === tab.id
@@ -148,7 +148,7 @@
             {TAB_META[activeTab].compact}
           </div>
           <div class="flex gap-1">
-            {#each TABS as tab}
+            {#each TABS as tab (tab.id)}
               <button
                 onclick={() => (activeTab = tab.id)}
                 class="rounded-full px-2 py-1 {activeTab === tab.id
@@ -363,7 +363,7 @@
     class="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-black/90 backdrop-blur-md sm:hidden"
   >
     <div class="flex items-center justify-around px-4 py-2 text-xs">
-      {#each TABS as tab}
+      {#each TABS as tab (tab.id)}
         <button
           onclick={() => (activeTab = tab.id)}
           class="flex flex-col items-center gap-1 {activeTab === tab.id
