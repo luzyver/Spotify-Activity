@@ -1,10 +1,7 @@
 name: Update README
 
 on:
-  # Manual trigger
   workflow_dispatch:
-      
-  # Scheduled - setiap hari jam 00:10 GMT+7 (17:10 UTC)
   schedule:
     - cron: '10 17 * * *'
 
@@ -23,17 +20,12 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Generate README
-        id: generate
+      - name: Create generate script
         run: |
-          echo "📝 Generating README from history files..."
+          cat > generate-readme.mjs << 'SCRIPT_END'
+          import fs from 'fs';
+          import path from 'path';
           
-          # Create Node.js script to generate README
-          cat > generate-readme.js << 'EOF'
-          const fs = require('fs');
-          const path = require('path');
-          
-          // Read all history files
           const historyDir = 'frontend/static/history';
           const files = fs.readdirSync(historyDir)
             .filter(f => f.endsWith('.json'))
@@ -48,15 +40,11 @@ jobs:
               };
             });
           
-          // Combine all data
           const allData = files.flatMap(f => f.data);
-          
-          // Calculate statistics
           const totalTracks = allData.length;
           const uniqueTracks = new Set(allData.map(t => t.uri)).size;
           const uniqueArtists = new Set(allData.map(t => t.artist)).size;
           
-          // Top artists
           const artistCounts = {};
           allData.forEach(t => {
             artistCounts[t.artist] = (artistCounts[t.artist] || 0) + 1;
@@ -65,17 +53,15 @@ jobs:
             .sort((a, b) => b[1] - a[1])
             .slice(0, 10);
           
-          // Top tracks
           const trackCounts = {};
           allData.forEach(t => {
-            const key = `${t.track} - ${t.artist}`;
+            const key = t.track + ' - ' + t.artist;
             trackCounts[key] = (trackCounts[key] || 0) + 1;
           });
           const topTracks = Object.entries(trackCounts)
             .sort((a, b) => b[1] - a[1])
             .slice(0, 10);
           
-          // Date range
           const timestamps = allData.map(t => t.timestamp).sort((a, b) => a - b);
           const firstDate = timestamps.length > 0 
             ? new Date(timestamps[0]).toLocaleDateString('en-US', { 
@@ -88,50 +74,37 @@ jobs:
               }) 
             : 'N/A';
           
-          // Generate README
-          let readme = `# 🎵 Rezz Spotify Listening History
-
-> Automated Spotify activity tracker with historical data archive
-
-## 📊 Overall Statistics
-
-| Metric | Value |
-|--------|-------|
-| **Total Plays** | ${totalTracks.toLocaleString()} |
-| **Unique Tracks** | ${uniqueTracks.toLocaleString()} |
-| **Unique Artists** | ${uniqueArtists.toLocaleString()} |
-| **Period** | ${firstDate} - ${lastDate} |
-| **Archive Files** | ${files.length} |
-
-## 🎤 Top 10 Artists (All Time)
-
-| Rank | Artist | Plays |
-|------|--------|-------|
-`;
+          let readme = '# 🎵 Rezz Spotify Listening History\n\n';
+          readme += '> Automated Spotify activity tracker with historical data archive\n\n';
+          readme += '## 📊 Overall Statistics\n\n';
+          readme += '| Metric | Value |\n';
+          readme += '|--------|-------|\n';
+          readme += '| **Total Plays** | ' + totalTracks.toLocaleString() + ' |\n';
+          readme += '| **Unique Tracks** | ' + uniqueTracks.toLocaleString() + ' |\n';
+          readme += '| **Unique Artists** | ' + uniqueArtists.toLocaleString() + ' |\n';
+          readme += '| **Period** | ' + firstDate + ' - ' + lastDate + ' |\n';
+          readme += '| **Archive Files** | ' + files.length + ' |\n\n';
           
+          readme += '## 🎤 Top 10 Artists (All Time)\n\n';
+          readme += '| Rank | Artist | Plays |\n';
+          readme += '|------|--------|-------|\n';
           topArtists.forEach(([artist, count], i) => {
-            readme += `| ${i + 1} | ${artist} | ${count.toLocaleString()} |\n`;
+            readme += '| ' + (i + 1) + ' | ' + artist + ' | ' + count.toLocaleString() + ' |\n';
           });
           
-          readme += `\n## 🎧 Top 10 Most Played Tracks (All Time)
-
-| Rank | Track | Plays |
-|------|-------|-------|
-`;
-          
+          readme += '\n## 🎧 Top 10 Most Played Tracks (All Time)\n\n';
+          readme += '| Rank | Track | Plays |\n';
+          readme += '|------|-------|-------|\n';
           topTracks.forEach(([track, count], i) => {
-            readme += `| ${i + 1} | ${track} | ${count.toLocaleString()} |\n`;
+            readme += '| ' + (i + 1) + ' | ' + track + ' | ' + count.toLocaleString() + ' |\n';
           });
           
-          readme += `\n## 📅 Daily Breakdown
+          readme += '\n## 📅 Daily Breakdown\n\n';
+          readme += '| Date | Plays | Top Artist | Top Track |\n';
+          readme += '|------|-------|------------|-----------|';
 
-| Date | Plays | Top Artist | Top Track |
-|------|-------|------------|-----------|
-`;
           
-          // Sort files by date
           const sortedFiles = files.sort((a, b) => a.date.localeCompare(b.date));
-          
           sortedFiles.forEach(file => {
             const dateObj = new Date(
               parseInt(file.date.substring(4, 8)),
@@ -142,52 +115,41 @@ jobs:
               year: 'numeric', month: 'short', day: 'numeric', timeZone: 'Asia/Jakarta'
             });
             
-            // Daily stats
             const dailyArtistCounts = {};
             const dailyTrackCounts = {};
-            
             file.data.forEach(t => {
               dailyArtistCounts[t.artist] = (dailyArtistCounts[t.artist] || 0) + 1;
-              const key = `${t.track} - ${t.artist}`;
+              const key = t.track + ' - ' + t.artist;
               dailyTrackCounts[key] = (dailyTrackCounts[key] || 0) + 1;
             });
             
             const topArtist = Object.entries(dailyArtistCounts).sort((a, b) => b[1] - a[1])[0];
             const topTrack = Object.entries(dailyTrackCounts).sort((a, b) => b[1] - a[1])[0];
             
-            const artistText = topArtist ? `${topArtist[0]} (${topArtist[1]})` : '-';
-            const trackText = topTrack ? `${topTrack[0]} (${topTrack[1]})` : '-';
+            const artistText = topArtist ? topArtist[0] + ' (' + topArtist[1] + ')' : '-';
+            const trackText = topTrack ? topTrack[0] + ' (' + topTrack[1] + ')' : '-';
             
-            readme += `| ${formattedDate} | ${file.count} | ${artistText} | ${trackText} |\n`;
+            readme += '\n| ' + formattedDate + ' | ' + file.count + ' | ' + artistText + ' | ' + trackText + ' |';
           });
           
-          readme += `\n---\n\n*This README is automatically generated from listening history data*\n`;
+          readme += '\n\n---\n\n*This README is automatically generated from listening history data*\n';
           
-          // Write README
           fs.writeFileSync('README.md', readme);
-          
-          console.log('✅ README generated');
-          console.log('Files:', files.length);
-          console.log('Total tracks:', totalTracks);
-          EOF
-          
-          # Run the script
-          node generate-readme.js
-          
-          # Clean up
-          rm generate-readme.js
-          
-          echo "FILES_COUNT=$(ls -1 frontend/static/history/*.json 2>/dev/null | wc -l)" >> $GITHUB_OUTPUT
+          console.log('README generated with', files.length, 'files and', totalTracks, 'total tracks');
+          SCRIPT_END
+      
+      - name: Generate README
+        run: node generate-readme.mjs
       
       - name: Check for changes
         id: check
         run: |
           if git diff --quiet README.md; then
-            echo "ℹ️ No changes to README"
             echo "CHANGED=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes to README"
           else
-            echo "✅ README has changes"
             echo "CHANGED=true" >> $GITHUB_OUTPUT
+            echo "✅ README has changes"
           fi
       
       - name: Commit and push
@@ -195,26 +157,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
           git add README.md
-          git commit -m "📝 Update README with history archive (${{ steps.generate.outputs.FILES_COUNT }} files) [skip ci]"
+          FILES_COUNT=$(ls -1 frontend/static/history/*.json 2>/dev/null | wc -l)
+          git commit -m "📝 Update README with history archive ($FILES_COUNT files) [skip ci]"
           git push
-          
-          echo "✅ README committed and pushed"
       
       - name: Summary
         run: |
           echo "### 📝 README Update" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Time:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          
-          if [ "${{ steps.check.outputs.CHANGED }}" = "true" ]; then
-            echo "✅ **Status:** Updated" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "ℹ️ **Status:** No changes" >> $GITHUB_STEP_SUMMARY
-          fi
-          
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**History files:** ${{ steps.generate.outputs.FILES_COUNT }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ${{ steps.check.outputs.CHANGED == 'true' && 'Updated' || 'No changes' }}" >> $GITHUB_STEP_SUMMARY
