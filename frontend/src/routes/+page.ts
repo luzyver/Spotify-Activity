@@ -11,12 +11,20 @@ export const load: PageLoad = async ({ fetch }) => {
       fetch(API_ENDPOINTS.HISTORY, { cache: 'no-store' }),
     ]);
 
-    const liveData = await liveRes.json().catch(() => ({}));
-    const historyData: HistoryItem[] = await historyRes.json().catch(() => []);
+    let liveData: unknown = {};
+    if (liveRes.ok) {
+      liveData = await liveRes.json().catch(() => ({}));
+    }
+
+    let historyData: HistoryItem[] = [];
+    if (historyRes.ok) {
+      const json = await historyRes.json().catch(() => [] as HistoryItem[]);
+      historyData = Array.isArray(json) ? (json as HistoryItem[]) : [];
+    }
 
     return {
-      nowPlaying: (liveData?.friends as NowPlayingBuddy[]) ?? [],
-      history: (historyData ?? []).sort((a, b) => b.timestamp - a.timestamp),
+      nowPlaying: (liveData as { friends?: NowPlayingBuddy[] })?.friends ?? [],
+      history: historyData.sort((a, b) => b.timestamp - a.timestamp),
     };
   } catch {
     return {

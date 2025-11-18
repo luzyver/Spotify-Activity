@@ -4,41 +4,32 @@ import type { HistoryItem } from '$lib/types';
  * Auto-detect and load all history files using Vite's import.meta.glob
  * This automatically finds all JSON files at build time
  */
-export async function loadAllHistoryStatic(): Promise<HistoryItem[]> {
-  const allHistory: HistoryItem[] = [];
-
+export async function loadAllHistory(): Promise<HistoryItem[]> {
   try {
-    // Use Vite's import.meta.glob to auto-detect all JSON files
-    // This is resolved at build time, so it knows exactly which files exist
     const historyFiles = import.meta.glob('/static/history/*.json');
+    const filePaths = Object.keys(historyFiles);
 
-    // Get list of file paths
-    const filePaths = Object.keys(historyFiles).filter((path) => !path.includes('manifest.json'));
+    const results = await Promise.all(
+      filePaths.map(async (path) => {
+        try {
+          const filename = path.split('/').pop()?.replace('.json', '') || '';
+          const url = `/history/${filename}.json`;
 
-    // Load each file
-    for (const path of filePaths) {
-      try {
-        // Extract filename from path: /static/history/12112025.json -> 12112025
-        const filename = path.split('/').pop()?.replace('.json', '') || '';
-        const url = `/history/${filename}.json`;
+          const response = await fetch(url);
+          if (!response.ok) return [] as HistoryItem[];
 
-        const response = await fetch(url);
-
-        if (response.ok) {
           const data = await response.json();
-          if (Array.isArray(data)) {
-            allHistory.push(...data);
-          }
+          return Array.isArray(data) ? (data as HistoryItem[]) : [];
+        } catch {
+          return [] as HistoryItem[];
         }
-      } catch (error) {
-        // Error loading file
-      }
-    }
-  } catch (error) {
-    // Fatal error
-  }
+      })
+    );
 
-  return allHistory;
+    return results.flat();
+  } catch {
+    return [];
+  }
 }
 
 /**
@@ -48,7 +39,6 @@ export function getAvailableHistoryFiles(): string[] {
   const historyModules = import.meta.glob('/static/history/*.json');
 
   return Object.keys(historyModules)
-    .filter((path) => !path.includes('manifest.json'))
     .map((path) => {
       // Extract filename without extension
       const filename = path.split('/').pop()?.replace('.json', '') || '';
