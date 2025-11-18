@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763465404189,
+      "timestamp": 1763466004131,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:1zFaLYA10ImwEejge3F5nm",
-        "name": "Nina",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27339695d4c16489cdf60bef536",
+        "uri": "spotify:track:6Npkwd5gv61SR6QZbTyNf9",
+        "name": "Lampu Kuning",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fadca79809c06f6afe7de0d9",
         "album": {
-          "uri": "spotify:album:2LVn7NDGoMSmFCkLqRK2o4",
-          "name": "Nina"
+          "uri": "spotify:album:5Y5dkZeSlePrTopuETspAh",
+          "name": "Nonfiksi"
         },
         "artist": {
-          "uri": "spotify:artist:7Gy1PxqrgsiqWF6JNYPHeB",
-          "name": ".Feast"
+          "uri": "spotify:artist:3tMTXQyRrPmMyHv5SoC0TV",
+          "name": "Juicy Luicy"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
