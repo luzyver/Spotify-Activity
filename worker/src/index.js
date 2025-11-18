@@ -1,5 +1,6 @@
 import { handleScheduled } from './handlers/sync-handler.js';
 import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
+import { handleUpdateReadme } from './handlers/update-readme-handler.js';
 import { CORS_HEADERS } from './config/constants.js';
 
 async function handleScheduledEvent(event, env, ctx) {
@@ -26,6 +27,10 @@ async function handleFetch(request, env, ctx) {
 				...CORS_HEADERS,
 			},
 		});
+	}
+
+	if ((request.method === 'GET' || request.method === 'POST') && pathname === '/update') {
+		return handleUpdateReadme(env, CORS_HEADERS);
 	}
 
 	if (request.method === 'GET' && pathname === '/api/live') {
