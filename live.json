@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763453404063,
+      "timestamp": 1763454003868,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4JozU4Ud30FGyDYzoUKasI",
-        "name": "Garis Terdepan",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273592cba33b37ca21a08b770b5",
+        "uri": "spotify:track:0MAIxtXWimwhAAQOST9jp7",
+        "name": "Sesuatu Di Jogja",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fa632a0ac2c0f23909bd3ad6",
         "album": {
-          "uri": "spotify:album:6d2K6Ku4sXH63OQnsGVbbe",
-          "name": "Konspirasi Alam Semesta"
+          "uri": "spotify:album:32SLZ72En7DvxafTDhdk28",
+          "name": "8 Tahun"
         },
         "artist": {
-          "uri": "spotify:artist:06QVnTCdjs4jPKO0487EGV",
-          "name": "Fiersa Besari"
+          "uri": "spotify:artist:3UlOKNAlGyi7POSE9kyhfR",
+          "name": "Adhitia Sofyan"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
