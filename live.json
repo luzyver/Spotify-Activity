@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763449803859,
+      "timestamp": 1763450403807,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5O0vv59rTNu0zJ2s9xI2GW",
-        "name": "Can't Take My Eyes Off You",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739189d7443d5358197218135d",
+        "uri": "spotify:track:0flo3KqhjkcuoB1G6Mhq7s",
+        "name": "Fly Me to the Moon",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273831f99bf6eb5be7b8eac0b48",
         "album": {
-          "uri": "spotify:album:4xm3Dv0xEhYxTSchQjdNVo",
-          "name": "Can't Take My Eyes Off You"
+          "uri": "spotify:album:46IRvicHZhTd1qrdwaLJxC",
+          "name": "Fly Me to the Moon"
         },
         "artist": {
-          "uri": "spotify:artist:40JlNF1w2OiSOyj1nC4y0I",
-          "name": "Joseph Vincent"
+          "uri": "spotify:artist:61VZakASLH5PweMQzF7R8r",
+          "name": "The Macarons Project"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
