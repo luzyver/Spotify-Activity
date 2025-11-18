@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763470204007,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:15xaVF0miqkphP0O0TZRs7",
+        "name": "Kata Mereka Ini Berlebihan",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737d00871af1d2539ca4432e33",
+        "album": {
+          "uri": "spotify:album:3UDTwdzFWA2rgP19S9oUaC",
+          "name": "Kata Mereka Ini Berlebihan"
+        },
+        "artist": {
+          "uri": "spotify:artist:47z98pKd71yIbgXwe9LPVC",
+          "name": "Bernadya"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
