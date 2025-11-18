@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763448003907,
+      "timestamp": 1763448603939,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:4J12uL4aNKzRco173fPyYQ",
-        "name": "Bentuk Cinta",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc757fbe4baba1acddc9d292",
+        "uri": "spotify:track:1xdp8tXLTGbPeUSEODP9N7",
+        "name": "Kukira Kau Rumah",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731f0212804c2a4c11810ac568",
         "album": {
-          "uri": "spotify:album:4vaUET4fqubUUtx1TuOfjF",
-          "name": "Cerita"
+          "uri": "spotify:album:23eyS24eT0cGfKVt0UTFtT",
+          "name": "Kukira Kau Rumah"
         },
         "artist": {
-          "uri": "spotify:artist:77hI181qpBHYyQItXWNwom",
-          "name": "Eclat Story"
+          "uri": "spotify:artist:40wi3VPurw0e4t3Yggo2Fk",
+          "name": "Amigdala"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
