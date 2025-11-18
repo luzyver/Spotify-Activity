@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763463604289,
+      "timestamp": 1763464204142,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2JekYbWANgDe54Dndi2I2C",
-        "name": "Tak Ada Ujungnya",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735d2e53fbcef5d8d00bed2d8d",
+        "uri": "spotify:track:4e6TmHCC4PRUj75knNplNP",
+        "name": "Mangu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332ab17f5515e51490841f648",
         "album": {
-          "uri": "spotify:album:6IUPSmTT3qHfALuaS1GMiW",
-          "name": "Tak Ada Ujungnya"
+          "uri": "spotify:album:6XVW3zoK1nmskW7drvHy9h",
+          "name": "Nalar"
         },
         "artist": {
-          "uri": "spotify:artist:13y29W8mEcA2gKqUr1SPLJ",
-          "name": "Rony Parulian"
+          "uri": "spotify:artist:46cVq2dwPgzPE3X1VR9TMj",
+          "name": "Fourtwnty, Charita Utami"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
