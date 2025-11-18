@@ -1,3 +1,30 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "timestamp": 1763461803969,
+      "user": {
+        "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+        "name": "Rezz",
+        "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
+      },
+      "track": {
+        "uri": "spotify:track:31TXxq8gfgYyrYClnYY48m",
+        "name": "The Fate of Ophelia",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b034f9cdf12ae14c603daa99",
+        "album": {
+          "uri": "spotify:album:1W57oNaAkGObOQKBTxg4e9",
+          "name": "The Life of a Showgirl"
+        },
+        "artist": {
+          "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+          "name": "Taylor Swift"
+        },
+        "context": {
+          "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
+          "name": "playlist",
+          "index": 0
+        }
+      }
+    }
+  ]
 }
