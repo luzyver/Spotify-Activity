@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763461803969,
+      "timestamp": 1763462403954,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:31TXxq8gfgYyrYClnYY48m",
-        "name": "The Fate of Ophelia",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b034f9cdf12ae14c603daa99",
+        "uri": "spotify:track:5dvIK269hL3eZXQMG4Vc2C",
+        "name": "Lihat Kebunku (Taman Bunga)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc82bf3a920d66bd3006d308",
         "album": {
-          "uri": "spotify:album:1W57oNaAkGObOQKBTxg4e9",
-          "name": "The Life of a Showgirl"
+          "uri": "spotify:album:1K1gVX9mqTJuCaLvxL7AIq",
+          "name": "Lihat Kebunku (Taman Bunga)"
         },
         "artist": {
-          "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
-          "name": "Taylor Swift"
+          "uri": "spotify:artist:4FZ6V3q8zMyFvSMeT2ld2f",
+          "name": "Aku Jeje"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
