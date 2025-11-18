@@ -1,0 +1,155 @@
+name: Backup History
+
+on:
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: 'Clear history commit SHA to backup from'
+        required: false
+        type: string
+      
+  # Scheduled - setiap hari jam 00:05 GMT+7 (17:05 UTC)
+  schedule:
+    - cron: '5 17 * * *'
+
+jobs:
+  backup-history:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Find latest clear commit
+        id: find-commit
+        run: |
+          # Get commit SHA from input or find latest clear commit
+          if [ -n "${{ github.event.inputs.commit_sha }}" ]; then
+            COMMIT_SHA="${{ github.event.inputs.commit_sha }}"
+            echo "Using provided commit: $COMMIT_SHA"
+          else
+            # Find latest commit with "Clear history" message
+            COMMIT_SHA=$(git log --all --grep="Clear history" --format="%H" -n 1)
+            
+            if [ -z "$COMMIT_SHA" ]; then
+              echo "❌ No clear history commit found"
+              exit 1
+            fi
+            
+            echo "Found latest clear commit: $COMMIT_SHA"
+          fi
+          
+          # Validate it's a clear commit
+          COMMIT_MSG=$(git log --format=%B -n 1 $COMMIT_SHA)
+          echo "Commit message: $COMMIT_MSG"
+          
+          if ! echo "$COMMIT_MSG" | grep -q "Clear history"; then
+            echo "❌ Not a clear history commit"
+            exit 1
+          fi
+          
+          echo "COMMIT_SHA=$COMMIT_SHA" >> $GITHUB_OUTPUT
+          echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_OUTPUT
+      
+      - name: Extract date tag and backup history
+        id: backup
+        run: |
+          COMMIT_SHA="${{ steps.find-commit.outputs.COMMIT_SHA }}"
+          COMMIT_MSG="${{ steps.find-commit.outputs.COMMIT_MSG }}"
+          
+          # Extract date tag from commit message [DDMMYYYY]
+          DATE_TAG=$(echo "$COMMIT_MSG" | grep -oP '\[\K\d{8}(?=\])' || echo "")
+          
+          if [ -z "$DATE_TAG" ]; then
+            # Fallback: use commit date
+            DATE_TAG=$(git log --format=%cd --date=format:'%d%m%Y' -n 1 $COMMIT_SHA)
+          fi
+          
+          echo "📅 Date tag: $DATE_TAG"
+          
+          # Get parent commit (before clear)
+          PARENT_SHA=$(git log --format=%P -n 1 $COMMIT_SHA | cut -d' ' -f1)
+          
+          if [ -z "$PARENT_SHA" ]; then
+            echo "❌ Parent commit not found"
+            exit 1
+          fi
+          
+          echo "📦 Parent commit: $PARENT_SHA"
+          
+          # Get history.json from parent commit
+          git show $PARENT_SHA:history.json > /tmp/history-backup.json
+          
+          # Validate JSON
+          if ! jq empty /tmp/history-backup.json 2>/dev/null; then
+            echo "❌ Invalid JSON in history.json"
+            exit 1
+          fi
+          
+          ITEMS_COUNT=$(jq 'length' /tmp/history-backup.json)
+          echo "📊 Items to backup: $ITEMS_COUNT"
+          
+          # Create backup directory if not exists
+          mkdir -p frontend/static/history
+          
+          # Backup path
+          BACKUP_PATH="frontend/static/history/${DATE_TAG}.json"
+          
+          # Check if backup already exists with same content
+          if [ -f "$BACKUP_PATH" ]; then
+            if cmp -s /tmp/history-backup.json "$BACKUP_PATH"; then
+              echo "ℹ️ Backup already exists with same content"
+              echo "SKIPPED=true" >> $GITHUB_OUTPUT
+              echo "BACKUP_PATH=$BACKUP_PATH" >> $GITHUB_OUTPUT
+              echo "DATE_TAG=$DATE_TAG" >> $GITHUB_OUTPUT
+              echo "ITEMS_COUNT=$ITEMS_COUNT" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          fi
+          
+          # Copy backup
+          cp /tmp/history-backup.json "$BACKUP_PATH"
+          
+          echo "✅ Backup created: $BACKUP_PATH"
+          echo "SKIPPED=false" >> $GITHUB_OUTPUT
+          echo "BACKUP_PATH=$BACKUP_PATH" >> $GITHUB_OUTPUT
+          echo "DATE_TAG=$DATE_TAG" >> $GITHUB_OUTPUT
+          echo "ITEMS_COUNT=$ITEMS_COUNT" >> $GITHUB_OUTPUT
+          echo "COMMIT_SHA=$COMMIT_SHA" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push backup
+        if: steps.backup.outputs.SKIPPED == 'false'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add "${{ steps.backup.outputs.BACKUP_PATH }}"
+          git commit -m "💾 Backup history [${{ steps.backup.outputs.DATE_TAG }}] from ${{ steps.backup.outputs.COMMIT_SHA }}"
+          git push
+          
+          echo "✅ Backup committed and pushed"
+      
+      - name: Summary
+        run: |
+          echo "### 💾 History Backup" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Time:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.backup.outputs.SKIPPED }}" = "true" ]; then
+            echo "ℹ️ **Status:** Skipped (backup already exists)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ **Status:** Success" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Details:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Date tag: ${{ steps.backup.outputs.DATE_TAG }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Backup path: ${{ steps.backup.outputs.BACKUP_PATH }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Items backed up: ${{ steps.backup.outputs.ITEMS_COUNT }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Source commit: ${{ steps.find-commit.outputs.COMMIT_SHA }}" >> $GITHUB_STEP_SUMMARY
