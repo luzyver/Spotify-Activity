@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763467204543,
+      "timestamp": 1763467804176,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:0FTmksd2dxiE5e3rWyJXs6",
-        "name": "back to friends",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739d24f74c1e2d8a12b1e591ec",
+        "uri": "spotify:track:5EWyweCJ5igLl6bjbGRmGm",
+        "name": "Calon Mantu Idaman (feat. Ncum)",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732120cd815e807ae193648e7e",
         "album": {
-          "uri": "spotify:album:0QLILSOq1IqAqx62drmv4E",
-          "name": "back to friends"
+          "uri": "spotify:album:4n4ZdQUXAs9BevRhBHtGdr",
+          "name": "Calon Mantu Idaman (feat. Ncum)"
         },
         "artist": {
-          "uri": "spotify:artist:4G9NDjRyZFDlJKMRL8hx3S",
-          "name": "sombr"
+          "uri": "spotify:artist:4lMaxyOo5D7cOWzv2wiRZs",
+          "name": "Rombongan Bodonk Koplo, Ncum"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
