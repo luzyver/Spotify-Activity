@@ -1,19 +1,19 @@
 {
   "friends": [
     {
-      "timestamp": 1763445604280,
+      "timestamp": 1763446204159,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:2YBKZDLTHfoqe7IUEe2z6n",
-        "name": "Teman Tapi Menikah",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730ee4ddce02192452aef9c585",
+        "uri": "spotify:track:6Fldcb48M743FktYimcWPI",
+        "name": "Rindu",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27335ace29c117d8ec6dcea5e9c",
         "album": {
-          "uri": "spotify:album:61pxeWGW8w4LHpLorcVzL7",
-          "name": "Teman Tapi Menikah"
+          "uri": "spotify:album:5ddSME8Fyd22vfbYafOYWr",
+          "name": "Rindu"
         },
         "artist": {
           "uri": "spotify:artist:0FYCcpBLjjMMnse9jIRbu3",
