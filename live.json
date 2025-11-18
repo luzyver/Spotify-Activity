@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763451603851,
+      "timestamp": 1763452203905,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:5VAGZmCKBxYT85w51gNy27",
-        "name": "Tukar Jiwa",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b27371c65edbeed32af70b900637",
+        "uri": "spotify:track:63j2yG9FZChKIpReIHRv1s",
+        "name": "Just the Two of Us",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731e08b5dd3bae872d66feea92",
         "album": {
-          "uri": "spotify:album:4szhn3xPmOJklFAcqNvTnQ",
-          "name": "Monokrom"
+          "uri": "spotify:album:7Ke0Rs8Fymkc2GOKEyxfa6",
+          "name": "Just the Two of Us"
         },
         "artist": {
-          "uri": "spotify:artist:2iDVt6mFbtbDEZG5ax0dTi",
-          "name": "Tulus"
+          "uri": "spotify:artist:61VZakASLH5PweMQzF7R8r",
+          "name": "The Macarons Project"
         },
         "context": {
           "uri": "spotify:playlist:0gthDMkyfnv9KSD5D5sFC0",
