@@ -1,23 +1,23 @@
 {
   "friends": [
     {
-      "timestamp": 1763466004131,
+      "timestamp": 1763466604368,
       "user": {
         "uri": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
         "name": "Rezz",
         "imageUrl": "https://i.scdn.co/image/ab6775700000ee85dde166d5c9c10ad2277bd9c5"
       },
       "track": {
-        "uri": "spotify:track:6Npkwd5gv61SR6QZbTyNf9",
-        "name": "Lampu Kuning",
-        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fadca79809c06f6afe7de0d9",
+        "uri": "spotify:track:3CSFXGhoR8C9kBF90xhIXG",
+        "name": "Tanpa Cinta",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d1b4ab00a8b44b4405f884e0",
         "album": {
-          "uri": "spotify:album:5Y5dkZeSlePrTopuETspAh",
-          "name": "Nonfiksi"
+          "uri": "spotify:album:5FZVotW2jvhK31tvGSCKHz",
+          "name": "Tanpa Cinta"
         },
         "artist": {
-          "uri": "spotify:artist:3tMTXQyRrPmMyHv5SoC0TV",
-          "name": "Juicy Luicy"
+          "uri": "spotify:artist:7Ln5yumFjHCkeZ8bAzHUcp",
+          "name": "Yovie Widianto, Tiara Andini"
         },
         "context": {
           "uri": "spotify:playlist:37i9dQZF1DXa2EiKmMLhFD",
