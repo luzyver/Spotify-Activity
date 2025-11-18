@@ -4,9 +4,8 @@ compatibility_date = "2025-01-15"
 
 # Cron triggers
 # */10 * * * * = Every 10 minutes (for Spotify sync)
-# 59 16 * * * = Daily at 23:59 GMT+7 / 16:59 UTC (for clearing history)
 [triggers]
-crons = ["*/10 * * * *", "59 16 * * *"]
+crons = ["*/10 * * * *"]
 
 # KV namespace untuk storage (optional, bisa pakai R2 atau GitHub)
 # [[kv_namespaces]]
