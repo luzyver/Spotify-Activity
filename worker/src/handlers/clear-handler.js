@@ -24,12 +24,26 @@ export async function handleClearHistory(env) {
 		// Clear history (empty array)
 		const clearedHistory = [];
 
-		// Update last-clear.json with current timestamp
-		const timestamp = Date.now();
-		const lastClearData = { lastClearTimestamp: timestamp };
+		// CRITICAL FIX: Use timestamp of last track instead of Date.now()
+		// This prevents "missing minute" gap where tracks played between
+		// last sync and clear would be lost forever
+		let safeClearTimestamp;
+		if (currentHistory.length > 0) {
+			// Find the most recent track timestamp (assuming sorted desc or unsorted)
+			const timestamps = currentHistory.map(track => track.timestamp);
+			safeClearTimestamp = Math.max(...timestamps);
+			console.log(`🔒 Using last track timestamp: ${safeClearTimestamp} (${new Date(safeClearTimestamp).toISOString()})`);
+		} else {
+			// Fallback to current time if history is empty
+			safeClearTimestamp = Date.now();
+			console.log(`⚠️  History empty, using current timestamp: ${safeClearTimestamp}`);
+		}
+		
+		const lastClearData = { lastClearTimestamp: safeClearTimestamp };
 
-		// Generate date tag (GMT+7)
-		const date = new Date(timestamp);
+		// Generate date tag (GMT+7) - use current time for date tag
+		const currentTime = Date.now();
+		const date = new Date(currentTime);
 		const gmt7Date = new Date(date.getTime() + (7 * 60 * 60 * 1000));
 		const day = String(gmt7Date.getUTCDate()).padStart(2, '0');
 		const month = String(gmt7Date.getUTCMonth() + 1).padStart(2, '0');
@@ -50,14 +64,14 @@ export async function handleClearHistory(env) {
 
 		console.log(`✅ History cleared! Items removed: ${itemsCount}`);
 		console.log(`   Date tag: ${dateTag}`);
-		console.log(`   Timestamp: ${timestamp} (${new Date(timestamp).toISOString()})`);
+		console.log(`   Clear timestamp: ${safeClearTimestamp} (${new Date(safeClearTimestamp).toISOString()})`);
 
 		return new Response(
 			JSON.stringify({
 				success: true,
 				itemsRemoved: itemsCount,
 				dateTag: dateTag,
-				timestamp: timestamp
+				timestamp: safeClearTimestamp
 			}),
 			{
 				status: 200,
