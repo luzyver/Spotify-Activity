@@ -1,15 +1,13 @@
 name: Backup History
 
 on:
-  # Manual trigger
   workflow_dispatch:
     inputs:
       commit_sha:
         description: 'Clear history commit SHA to backup from'
         required: false
         type: string
-      
-  # Scheduled - setiap hari jam 00:05 GMT+7 (17:05 UTC)
+
   schedule:
     - cron: '5 17 * * *'
 
@@ -21,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history
+          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Find latest clear commit
