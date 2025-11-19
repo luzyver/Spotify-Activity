@@ -11,8 +11,5 @@ export const WORKER_BASE = 'https://worker-spotify.luzyver.dev';
 export const API_ENDPOINTS = {
   LIVE: `${WORKER_BASE}/api/live`,
   HISTORY: `${WORKER_BASE}/api/history`,
-  CLEAR_HISTORY: `${WORKER_BASE}/clear-history`,
-  BACKUP: `${WORKER_BASE}/backup`,
   TRIGGER: `${WORKER_BASE}/trigger`,
-  UPDATE: `${WORKER_BASE}/update`,
 };
