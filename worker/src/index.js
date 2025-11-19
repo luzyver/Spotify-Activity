@@ -1,10 +1,27 @@
 import { handleScheduled } from './handlers/sync-handler.js';
 import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
-import { CORS_HEADERS } from './config/constants.js';
+import { handleClearHistory } from './handlers/clear-handler.js';
+
+const CORS_HEADERS = {
+	'Access-Control-Allow-Origin': '*',
+	'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+	'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+};
 
 async function handleScheduledEvent(event, env, ctx) {
-	console.log('🎵 Detected sync cron trigger');
-	ctx.waitUntil(handleScheduled(env));
+	// Determine which cron triggered
+	const cronSchedule = event.cron;
+	
+	// 1 17 * * * = 00:01 GMT+7 (daily clear)
+	if (cronSchedule === '1 17 * * *') {
+		console.log('🗑️ Detected clear history cron trigger');
+		ctx.waitUntil(handleClearHistory(env));
+	} 
+	// 0 * * * * = Every hour (sync)
+	else {
+		console.log('🎵 Detected sync cron trigger');
+		ctx.waitUntil(handleScheduled(env));
+	}
 }
 
 async function handleFetch(request, env, ctx) {
