@@ -12,6 +12,30 @@
 
   let { data } = $props();
 
+  // Dynamic meta tags based on current state
+  let pageTitle = $derived.by(() => {
+    if (nowPlaying.length > 0) {
+      const first = nowPlaying[0];
+      return `Mendengarkan ${first.track.name} - ${first.track.artist.name}`;
+    }
+    return "Rezz's Spotify Activity";
+  });
+
+  let pageDescription = $derived.by(() => {
+    if (nowPlaying.length > 0) {
+      const first = nowPlaying[0];
+      return `Rezz sedang mendengarkan ${first.track.name} oleh ${first.track.artist.name} di Spotify.`;
+    }
+    return 'Lihat aktivitas musik Spotify real-time dan riwayat lagu yang didengarkan.';
+  });
+
+  let pageImage = $derived.by(() => {
+    if (nowPlaying.length > 0 && nowPlaying[0].track.imageUrl) {
+      return nowPlaying[0].track.imageUrl;
+    }
+    return 'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg';
+  });
+
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
   let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Recent data from API
   let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // Recent + Archive
@@ -112,6 +136,23 @@
     currentPage = page;
   }
 </script>
+
+<svelte:head>
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDescription} />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDescription} />
+  <meta property="og:image" content={pageImage} />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={pageDescription} />
+  <meta name="twitter:image" content={pageImage} />
+</svelte:head>
 
 <div class="min-h-screen bg-black text-white">
   <!-- Main Content Area -->
