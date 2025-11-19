@@ -52,7 +52,6 @@ export async function handleScheduled(env) {
 			}
 		}
 
-		const liveFriends = [];
 		let totalNewTracks = 0;
 
 		// Process each user
@@ -86,16 +85,6 @@ export async function handleScheduled(env) {
 				console.log(
 					`Recent: ${recentTracks.length} fetched, ${addedCount} new (after: ${new Date(lastClearTimestamp).toISOString()})`
 				);
-
-				// Get currently playing
-				const nowPlaying = await spotify.getCurrentlyPlaying(accessToken);
-				if (nowPlaying) {
-					const liveEntry = processor.processCurrentlyPlaying(nowPlaying, userProfile);
-					if (liveEntry) {
-						liveFriends.push(liveEntry);
-						console.log(`Now playing: ${nowPlaying.track.name}`);
-					}
-				}
 			} catch (error) {
 				console.error(`Error processing ${userId}:`, error.message);
 			}
@@ -107,26 +96,16 @@ export async function handleScheduled(env) {
 
 		const sortedHistory = processor.sortHistory(uniqueHistory);
 
-		// Check if there are actual changes before committing
-		const { content: existingLive } = await github.getGitHubFile(
-			githubRepo,
-			'live.json',
-			githubToken
-		);
-
 		// Compare data
 		const historyChanged = JSON.stringify(rawHistory) !== JSON.stringify(sortedHistory);
-		const newLiveData = { friends: liveFriends };
-		const liveChanged = JSON.stringify(existingLive) !== JSON.stringify(newLiveData);
 
 		// Only commit if there are changes
-		if (historyChanged || liveChanged) {
-			const { message: commitMsg, updatedCommits } = await getRandomCommitMessage(totalNewTracks, liveFriends.length, githubRepo, githubToken);
+		if (historyChanged) {
+			const { message: commitMsg, updatedCommits } = await getRandomCommitMessage(totalNewTracks, githubRepo, githubToken);
 			await github.updateMultipleGitHubFiles(
 				githubRepo,
 				[
 					{ path: 'history.json', content: sortedHistory },
-					{ path: 'live.json', content: newLiveData },
 					{ path: 'last-commits.json', content: updatedCommits }
 				],
 				commitMsg,
@@ -134,8 +113,7 @@ export async function handleScheduled(env) {
 			);
 
 			console.log(`✅ Update complete! Commit: ${commitMsg}`);
-			console.log(`   - History changed: ${historyChanged}`);
-			console.log(`   - Live status changed: ${liveChanged}`);
+			console.log(`   - New tracks: ${totalNewTracks}`);
 			return new Response('Success: Changes committed', { status: 200 });
 		} else {
 			console.log(`ℹ️  No changes detected, skipping commit`);

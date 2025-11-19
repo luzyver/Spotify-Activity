@@ -1,4 +1,4 @@
-export async function getRandomCommitMessage(newTracks, liveCount, githubRepo, githubToken) {
+export async function getRandomCommitMessage(newTracks, githubRepo, githubToken) {
 	const messages = [
 		`🎵 Update Spotify data [skip ci]`,
 		`🎧 Sync music activity [skip ci]`,
@@ -187,17 +187,6 @@ export async function getRandomCommitMessage(newTracks, liveCount, githubRepo, g
 			`📥 Downloaded ${newTracks} track${newTracks !== 1 ? 's' : ''} to history [skip ci]`,
 			`🌊 Wave of ${newTracks} new track${newTracks !== 1 ? 's' : ''} [skip ci]`,
 			`💝 ${newTracks} musical gift${newTracks !== 1 ? 's' : ''} received [skip ci]`
-		);
-	}
-
-	if (liveCount > 0) {
-		messages.push(
-			`🔴 ${liveCount} user${liveCount !== 1 ? 's' : ''} listening now [skip ci]`,
-			`▶️ Live: ${liveCount} active listener${liveCount !== 1 ? 's' : ''} [skip ci]`,
-			`🎧 ${liveCount} vibe${liveCount !== 1 ? 's' : ''} in progress [skip ci]`,
-			`🔊 ${liveCount} soul${liveCount !== 1 ? 's' : ''} tuned in [skip ci]`,
-			`🎶 ${liveCount} melody maker${liveCount !== 1 ? 's' : ''} online [skip ci]`,
-			`👂 ${liveCount} ear${liveCount !== 1 ? 's' : ''} on the music [skip ci]`
 		);
 	}
 

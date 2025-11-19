@@ -3,9 +3,9 @@ main = "src/index.js"
 compatibility_date = "2025-01-15"
 
 # Cron triggers
-# */10 * * * * = Every 10 minutes (for Spotify sync)
+# 0 * * * * = Every hour (for Spotify sync to GitHub)
 [triggers]
-crons = ["*/10 * * * *"]
+crons = ["0 * * * *"]
 
 # KV namespace untuk storage (optional, bisa pakai R2 atau GitHub)
 # [[kv_namespaces]]

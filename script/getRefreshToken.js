@@ -58,7 +58,7 @@ async function getRefreshToken() {
 		console.log("  2. Add it to your .env file in SPOTIFY_REFRESH_TOKENS");
 		console.log("  3. Format:");
 		console.log('     SPOTIFY_REFRESH_TOKENS={"spotify:user:YOUR_ID":{"refreshToken":"TOKEN"}}\n');
-		console.log("Tip: Run `node script/fetchSpotify.js` to get your User ID\n");
+		console.log("Tip: Check your Spotify profile URL to get your User ID\n");
 	} catch (error) {
 		console.error("Error exchanging token:");
 
