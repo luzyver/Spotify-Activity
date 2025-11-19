@@ -6,7 +6,6 @@
 
   import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
-  import { loadAllHistory } from '$lib/utils/historyLoader';
   import { onMount } from 'svelte';
   import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from 'lucide-svelte';
 
@@ -14,10 +13,10 @@
 
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
   let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Data dari API (hari ini)
-  let combinedHistory = $state<HistoryItem[]>(data?.history ?? []); // Recent + Archive
+  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // All history from API
   let currentPage = $state(1);
   let activeTab = $state<'home' | 'recent' | 'history'>('home');
-  let isLoadingHistorical = $state(true);
+  let isLoadingHistorical = $state(false); // Already loaded from API
   let showCompactHeader = $state(false);
 
   const TABS = [
@@ -42,21 +41,6 @@
       compact: 'History · All time',
     },
   } as const;
-
-  onMount(async () => {
-    try {
-      const historicalData = await loadAllHistory();
-      const combined = [...allHistory, ...historicalData];
-      const unique = Array.from(
-        new Map(combined.map((item) => [`${item.uri}-${item.timestamp}`, item])).values()
-      );
-      combinedHistory = unique;
-    } catch (error) {
-      combinedHistory = allHistory;
-    } finally {
-      isLoadingHistorical = false;
-    }
-  });
 
   onMount(() => {
     const handleScroll = () => {
