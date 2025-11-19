@@ -1,17 +1,12 @@
 name: Clear History
 
 on:
-  # Manual trigger
   workflow_dispatch:
     inputs:
       confirm:
         description: 'Type "CLEAR" to confirm'
         required: true
         type: string
-      
-  # Scheduled - setiap hari jam 00:01 GMT+7 (17:01 UTC)
-  schedule:
-    - cron: '1 17 * * *'
 
 jobs:
   clear-history:
