@@ -1,5 +1,5 @@
 import { handleScheduled } from './handlers/sync-handler.js';
-import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
+import { handleLiveAPI, handleHistoryAPI, handleAllHistoryAPI } from './handlers/api-handler.js';
 import { handleClearHistory } from './handlers/clear-handler.js';
 
 const CORS_HEADERS = {
@@ -51,6 +51,10 @@ async function handleFetch(request, env, ctx) {
 
 	if (request.method === 'GET' && pathname === '/api/history') {
 		return handleHistoryAPI(env, CORS_HEADERS);
+	}
+
+	if (request.method === 'GET' && pathname === '/api/all-history') {
+		return handleAllHistoryAPI(env, CORS_HEADERS);
 	}
 
 	// Home/status endpoint (UI is served by the frontend app)

@@ -233,3 +233,30 @@ export async function updateMultipleGitHubFiles(repo, files, message, token) {
 
 	return await updateRefResponse.json();
 }
+
+export async function listGitHubDirectory(repo, path, token) {
+	const url = `${GITHUB_API_BASE}/repos/${repo}/contents/${path}`;
+	console.log(`Listing directory: ${url}`);
+
+	const response = await fetch(url, {
+		headers: {
+			Authorization: `Bearer ${token}`,
+			Accept: 'application/vnd.github.v3+json',
+			'User-Agent': USER_AGENT,
+		},
+	});
+
+	if (response.status === 404) {
+		console.log(`Directory not found: ${path}`);
+		return [];
+	}
+
+	if (!response.ok) {
+		const errorBody = await response.text();
+		console.error(`GitHub API Error: ${response.status} - ${errorBody}`);
+		throw new Error(`Failed to list directory: ${response.statusText}`);
+	}
+
+	const data = await response.json();
+	return Array.isArray(data) ? data : [];
+}

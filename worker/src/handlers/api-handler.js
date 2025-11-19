@@ -138,3 +138,105 @@ export async function handleHistoryAPI(env, corsHeaders) {
 		});
 	}
 }
+
+
+export async function handleAllHistoryAPI(env, corsHeaders) {
+	try {
+		const tokens = JSON.parse(env.SPOTIFY_REFRESH_TOKENS);
+		const clientId = env.SPOTIFY_CLIENT_ID;
+		const clientSecret = env.SPOTIFY_CLIENT_SECRET;
+
+		// Load last clear timestamp
+		const { content: lastClearData = { lastClearTimestamp: 0 } } = await github.getGitHubFile(
+			env.GITHUB_REPO,
+			'last-clear.json',
+			env.GITHUB_TOKEN
+		);
+		const lastClearTimestamp = lastClearData.lastClearTimestamp || 0;
+
+		const processor = await import('../utils/data-processor.js');
+		const spotify = await import('../services/spotify.js');
+
+		// 1. Load current history.json
+		const { content: rawHistory = [] } = await github.getGitHubFile(
+			env.GITHUB_REPO,
+			'history.json',
+			env.GITHUB_TOKEN
+		);
+		let history = processor.cleanHistory(rawHistory);
+		if (lastClearTimestamp > 0) {
+			history = history.filter(entry => entry.timestamp > lastClearTimestamp);
+		}
+
+		// 2. Fetch fresh data from Spotify
+		for (const [userId, tokenData] of Object.entries(tokens)) {
+			try {
+				const accessToken = await spotify.refreshAccessToken(
+					tokenData.refreshToken,
+					clientId,
+					clientSecret
+				);
+				const userProfile = await spotify.getUserProfile(accessToken);
+				if (!userProfile) continue;
+
+				const recentTracks = await spotify.getRecentlyPlayed(accessToken, lastClearTimestamp);
+				processor.processRecentTracks(
+					recentTracks,
+					userProfile,
+					history,
+					lastClearTimestamp
+				);
+			} catch (error) {
+				console.error(`Error fetching for ${userId}:`, error.message);
+			}
+		}
+
+		// 3. Load all archive files from frontend/static/history/
+		const archiveFiles = await github.listGitHubDirectory(
+			env.GITHUB_REPO,
+			'frontend/static/history',
+			env.GITHUB_TOKEN
+		);
+
+		const archiveData = await Promise.all(
+			archiveFiles
+				.filter(file => file.name.endsWith('.json') && file.type === 'file')
+				.map(async (file) => {
+					try {
+						const { content } = await github.getGitHubFile(
+							env.GITHUB_REPO,
+							file.path,
+							env.GITHUB_TOKEN
+						);
+						return Array.isArray(content) ? content : [];
+					} catch (error) {
+						console.error(`Error loading ${file.name}:`, error.message);
+						return [];
+					}
+				})
+		);
+
+		// 4. Combine all data
+		const allData = [...history, ...archiveData.flat()];
+		const uniqueHistory = processor.removeDuplicates(allData);
+		const sortedHistory = processor.sortHistory(uniqueHistory);
+
+		return new Response(JSON.stringify(sortedHistory), {
+			headers: {
+				'Content-Type': 'application/json',
+				'Cache-Control': 'no-cache, no-store, must-revalidate, max-age=0',
+				'Pragma': 'no-cache',
+				'Expires': '0',
+				...corsHeaders
+			}
+		});
+	} catch (error) {
+		return new Response(JSON.stringify({ error: error.message }), {
+			status: 500,
+			headers: {
+				'Content-Type': 'application/json',
+				...corsHeaders
+			}
+		});
+	}
+}
