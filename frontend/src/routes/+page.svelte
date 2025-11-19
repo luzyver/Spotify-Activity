@@ -8,16 +8,52 @@
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { onMount } from 'svelte';
   import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from 'lucide-svelte';
+  import { loadHistoryBatch } from '$lib/utils/historyLoader';
 
   let { data } = $props();
 
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
-  let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Data dari API (hari ini)
-  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // All history from API
+  let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Recent data from API
+  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // Recent + Archive
   let currentPage = $state(1);
   let activeTab = $state<'home' | 'recent' | 'history'>('home');
-  let isLoadingHistorical = $state(false); // Already loaded from API
+  let isLoadingHistorical = $state(false);
+  let archiveLoaded = $state(false);
+  let loadingProgress = $state({ loaded: 0, total: 0 });
   let showCompactHeader = $state(false);
+
+  // Load archive history when user switches to history tab
+  async function loadArchiveHistory() {
+    if (archiveLoaded || isLoadingHistorical) return;
+    
+    isLoadingHistorical = true;
+    try {
+      const archiveData = await loadHistoryBatch(5, (items, batchIndex) => {
+        // Update progress as batches load
+        loadingProgress = { loaded: batchIndex + 1, total: Math.ceil(items.length / 5) };
+      });
+      
+      // Combine recent + archive, remove duplicates
+      const allData = [...combinedHistory, ...archiveData];
+      const uniqueData = Array.from(
+        new Map(allData.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
+      );
+      
+      combinedHistory = uniqueData.sort((a, b) => b.timestamp - a.timestamp);
+      archiveLoaded = true;
+    } catch (error) {
+      console.error('Failed to load archive history:', error);
+    } finally {
+      isLoadingHistorical = false;
+    }
+  }
+
+  // Auto-load archive when switching to history tab
+  $effect(() => {
+    if (activeTab === 'history' && !archiveLoaded) {
+      loadArchiveHistory();
+    }
+  });
 
   const TABS = [
     { id: 'home', label: 'Home' },
@@ -262,7 +298,12 @@
                   <div
                     class="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"
                   ></div>
-                  <p class="text-sm text-gray-400">Loading history...</p>
+                  <p class="text-sm text-gray-400">Loading archive history...</p>
+                  {#if loadingProgress.total > 0}
+                    <p class="mt-2 text-xs text-gray-500">
+                      Batch {loadingProgress.loaded} of {loadingProgress.total}
+                    </p>
+                  {/if}
                 </div>
               </div>
             {:else if filteredCombinedHistory.length > 0}

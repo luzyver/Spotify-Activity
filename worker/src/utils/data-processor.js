@@ -1,5 +1,26 @@
 export function cleanHistory(history) {
-	return Array.isArray(history) ? history : [];
+	if (!Array.isArray(history)) {
+		console.warn('cleanHistory: history is not an array, returning empty array');
+		return [];
+	}
+	
+	// Validate each entry has required fields
+	const cleaned = history.filter(entry => {
+		const isValid = entry && 
+			typeof entry.timestamp === 'number' &&
+			typeof entry.user === 'string' &&
+			typeof entry.track === 'string' &&
+			typeof entry.artist === 'string';
+		
+		if (!isValid) {
+			console.warn('cleanHistory: Invalid entry found', entry);
+		}
+		
+		return isValid;
+	});
+	
+	console.log(`cleanHistory: ${cleaned.length} valid entries from ${history.length} total`);
+	return cleaned;
 }
 
 export function processRecentTracks(recentTracks, userProfile, history, lastClearTimestamp = 0) {
