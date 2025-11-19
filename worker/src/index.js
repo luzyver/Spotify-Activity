@@ -1,12 +1,19 @@
 import { handleScheduled } from './handlers/sync-handler.js';
-import { handleLiveAPI, handleHistoryAPI, handleAllHistoryAPI } from './handlers/api-handler.js';
+import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
 import { handleClearHistory } from './handlers/clear-handler.js';
 
-const CORS_HEADERS = {
-	'Access-Control-Allow-Origin': '*',
-	'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-	'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-};
+const ALLOWED_ORIGINS = [
+	'https://spotify.luzyver.dev'
+];
+
+function getCorsHeaders(origin) {
+	const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+	return {
+		'Access-Control-Allow-Origin': allowedOrigin,
+		'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+		'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+	};
+}
 
 async function handleScheduledEvent(event, env, ctx) {
 	// Determine which cron triggered
@@ -27,9 +34,11 @@ async function handleScheduledEvent(event, env, ctx) {
 async function handleFetch(request, env, ctx) {
 	const url = new URL(request.url);
 	const pathname = url.pathname;
+	const origin = request.headers.get('Origin') || '';
+	const corsHeaders = getCorsHeaders(origin);
 
 	if (request.method === 'OPTIONS') {
-		return new Response(null, { headers: CORS_HEADERS });
+		return new Response(null, { headers: corsHeaders });
 	}
 
 	if (request.method === 'GET' && pathname === '/trigger') {
@@ -40,21 +49,17 @@ async function handleFetch(request, env, ctx) {
 			status: res.status,
 			headers: {
 				'Content-Type': 'text/plain',
-				...CORS_HEADERS,
+				...corsHeaders,
 			},
 		});
 	}
 
 	if (request.method === 'GET' && pathname === '/api/live') {
-		return handleLiveAPI(env, CORS_HEADERS);
+		return handleLiveAPI(env, corsHeaders);
 	}
 
 	if (request.method === 'GET' && pathname === '/api/history') {
-		return handleHistoryAPI(env, CORS_HEADERS);
-	}
-
-	if (request.method === 'GET' && pathname === '/api/all-history') {
-		return handleAllHistoryAPI(env, CORS_HEADERS);
+		return handleHistoryAPI(env, corsHeaders);
 	}
 
 	// Home/status endpoint (UI is served by the frontend app)

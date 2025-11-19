@@ -1,32 +1,90 @@
 import type { HistoryItem } from '$lib/types';
 
 /**
- * Auto-detect and load all history files using Vite's import.meta.glob
- * This automatically finds all JSON files at build time
+ * PERFORMANCE FIX: Load history files incrementally (lazy loading)
+ * Instead of loading all files at once, load them one by one or in batches
+ * This prevents timeout and improves initial page load time
  */
-export async function loadAllHistory(): Promise<HistoryItem[]> {
+export async function loadAllHistory(
+  onProgress?: (loaded: number, total: number) => void
+): Promise<HistoryItem[]> {
   try {
     const historyFiles = import.meta.glob('/static/history/*.json');
     const filePaths = Object.keys(historyFiles);
+    const total = filePaths.length;
+    const allHistory: HistoryItem[] = [];
 
-    const results = await Promise.all(
-      filePaths.map(async (path) => {
-        try {
-          const filename = path.split('/').pop()?.replace('.json', '') || '';
-          const url = `/history/${filename}.json`;
+    // Load files one by one to avoid overwhelming the browser
+    for (let i = 0; i < filePaths.length; i++) {
+      const path = filePaths[i];
+      try {
+        const filename = path.split('/').pop()?.replace('.json', '') || '';
+        const url = `/history/${filename}.json`;
 
-          const response = await fetch(url);
-          if (!response.ok) return [] as HistoryItem[];
-
+        const response = await fetch(url);
+        if (response.ok) {
           const data = await response.json();
-          return Array.isArray(data) ? (data as HistoryItem[]) : [];
-        } catch {
-          return [] as HistoryItem[];
+          if (Array.isArray(data)) {
+            allHistory.push(...(data as HistoryItem[]));
+          }
         }
-      })
-    );
+      } catch {
+        // Skip failed files
+      }
 
-    return results.flat();
+      // Report progress
+      if (onProgress) {
+        onProgress(i + 1, total);
+      }
+    }
+
+    return allHistory;
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Load history files in batches for better performance
+ */
+export async function loadHistoryBatch(
+  batchSize: number = 5,
+  onBatchComplete?: (items: HistoryItem[], batchIndex: number) => void
+): Promise<HistoryItem[]> {
+  try {
+    const historyFiles = import.meta.glob('/static/history/*.json');
+    const filePaths = Object.keys(historyFiles);
+    const allHistory: HistoryItem[] = [];
+
+    // Process in batches
+    for (let i = 0; i < filePaths.length; i += batchSize) {
+      const batch = filePaths.slice(i, i + batchSize);
+      const batchResults = await Promise.all(
+        batch.map(async (path) => {
+          try {
+            const filename = path.split('/').pop()?.replace('.json', '') || '';
+            const url = `/history/${filename}.json`;
+
+            const response = await fetch(url);
+            if (!response.ok) return [] as HistoryItem[];
+
+            const data = await response.json();
+            return Array.isArray(data) ? (data as HistoryItem[]) : [];
+          } catch {
+            return [] as HistoryItem[];
+          }
+        })
+      );
+
+      const batchItems = batchResults.flat();
+      allHistory.push(...batchItems);
+
+      if (onBatchComplete) {
+        onBatchComplete(batchItems, Math.floor(i / batchSize));
+      }
+    }
+
+    return allHistory;
   } catch {
     return [];
   }

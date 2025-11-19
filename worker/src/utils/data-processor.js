@@ -1,12 +1,5 @@
-import { fixDoubleEncoding } from './encoding.js';
-
 export function cleanHistory(history) {
-	return history.map(entry => ({
-		...entry,
-		track: fixDoubleEncoding(entry.track),
-		artist: fixDoubleEncoding(entry.artist),
-		user: fixDoubleEncoding(entry.user)
-	}));
+	return Array.isArray(history) ? history : [];
 }
 
 export function processRecentTracks(recentTracks, userProfile, history, lastClearTimestamp = 0) {
