@@ -12,6 +12,16 @@
 
   let { data } = $props();
 
+  let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
+  let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Recent data from API
+  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // Recent + Archive
+  let currentPage = $state(1);
+  let activeTab = $state<'home' | 'recent' | 'history'>('home');
+  let isLoadingHistorical = $state(false);
+  let archiveLoaded = $state(false);
+  let loadingProgress = $state({ loaded: 0, total: 0 });
+  let showCompactHeader = $state(false);
+
   // Dynamic meta tags based on current state
   let pageTitle = $derived.by(() => {
     if (nowPlaying.length > 0) {
@@ -35,16 +45,6 @@
     }
     return 'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg';
   });
-
-  let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
-  let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Recent data from API
-  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // Recent + Archive
-  let currentPage = $state(1);
-  let activeTab = $state<'home' | 'recent' | 'history'>('home');
-  let isLoadingHistorical = $state(false);
-  let archiveLoaded = $state(false);
-  let loadingProgress = $state({ loaded: 0, total: 0 });
-  let showCompactHeader = $state(false);
 
   // Load archive history when user switches to history tab
   async function loadArchiveHistory() {
