@@ -1,1 +1,101 @@
-[]
+[
+  {
+    "timestamp": 1763603673555,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sembuh Kembali",
+    "artist": "Shabrina Leanor",
+    "uri": "spotify:track:4Y73IsEuBaGYJIS08iwBbB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f077cc1a9e2a332cc60c374b"
+  },
+  {
+    "timestamp": 1763603283716,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Pesona Sederhana",
+    "artist": "Rony Parulian",
+    "uri": "spotify:track:3k78Q9tWIFvJd6PNGtTofC",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27357124131195ac118b99d2042"
+  },
+  {
+    "timestamp": 1763603013492,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ego",
+    "artist": "Padi",
+    "uri": "spotify:track:39B12Su7R0fIDcQPykPwkc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735c016f9c8fa4ad84100e112c"
+  },
+  {
+    "timestamp": 1763602683675,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tetap Bukan Kamu (feat. Rony Parulian)",
+    "artist": "Raisa, Rony Parulian",
+    "uri": "spotify:track:0taGkMseEIkIZ3noyFFfZA",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273390b568b7e725b7039585800"
+  },
+  {
+    "timestamp": 1763602445190,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Aku Bukan Untukmu",
+    "artist": "Anggi Marito",
+    "uri": "spotify:track:19zaLmqBM228wDPvrQyEUl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730d821888a8fc144d92756288"
+  },
+  {
+    "timestamp": 1763602203529,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "bergema sampai selamanya",
+    "artist": "Nadhif Basalamah",
+    "uri": "spotify:track:1RaJdXCj61oSRUUciGKoWe",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b55b8d4574f736630e8469ab"
+  },
+  {
+    "timestamp": 1763601994443,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kembali",
+    "artist": "Adikara",
+    "uri": "spotify:track:212IXh4olT2VzhkTkR941u",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735e06506d919571031221f352"
+  },
+  {
+    "timestamp": 1763601723825,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "10 Menit Untuk Selamanya",
+    "artist": "Nyoman Paul",
+    "uri": "spotify:track:5SLVY1sGV2keqf7lnphHZU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300636a1ef4ecc41b5c43cab7"
+  },
+  {
+    "timestamp": 1763601483771,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Malapetaka",
+    "artist": "Juicy Luicy",
+    "uri": "spotify:track:42elvNonmDWGnpyxBpd9Mu",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b35c516eefc55f724848785"
+  },
+  {
+    "timestamp": 1763601247440,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mau Jadi Apa?",
+    "artist": "Yura Yunita",
+    "uri": "spotify:track:20Vgi9sX3rOnoUFGaPLQXX",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b665fcb4ce1cf9d52ecfe508"
+  },
+  {
+    "timestamp": 1763601042778,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bila (feat. Barsena Bestandhi) - Live From See You On Wednesday",
+    "artist": "Raisa, Barsena Bestandhi",
+    "uri": "spotify:track:6TAwbjw1LYQYXc5y0J9jKB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736bdca24e11029b7bbb0acbb4"
+  }
+]
