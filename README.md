@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 960 |
-| **Unique Tracks** | 487 |
-| **Unique Artists** | 262 |
-| **Period** | November 12, 2025 - November 19, 2025 |
-| **Archive Files** | 8 |
+| **Total Plays** | 1,025 |
+| **Unique Tracks** | 519 |
+| **Unique Artists** | 282 |
+| **Period** | November 12, 2025 - November 20, 2025 |
+| **Archive Files** | 9 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 119 |
+| 1 | Bernadya | 120 |
 | 2 | Ghea Indrawari | 58 |
 | 3 | Nadin Amizah | 34 |
 | 4 | Hindia | 26 |
 | 5 | Sal Priadi | 23 |
-| 6 | Idgitaf | 20 |
+| 6 | Idgitaf | 22 |
 | 7 | Pamungkas | 17 |
 | 8 | Tulus | 17 |
 | 9 | Cigarettes After Sex | 16 |
@@ -54,6 +54,7 @@
 | Nov 17, 2025 | 139 | Bernadya (13) | Die For You - Joji (2) |
 | Nov 18, 2025 | 108 | Pamungkas (5) | Calon Mantu Idaman (feat. Ncum) - Rombongan Bodonk Koplo, Ncum (2) |
 | Nov 20, 2025 | 66 | Bernadya (13) | Remaja - Hivi! (2) |
+| Nov 21, 2025 | 65 | Rony Parulian (3) | bergema sampai selamanya - Nadhif Basalamah (2) |
 
 ---
 
