@@ -10,7 +10,7 @@
 | **Unique Tracks** | 519 |
 | **Unique Artists** | 282 |
 | **Period** | November 12, 2025 - November 21, 2025 |
-| **Archive Files** | 10 |
+| **Archive Files** | 11 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -56,6 +56,7 @@
 | Nov 20, 2025 | 66 | Bernadya (13) | Remaja - Hivi! (2) |
 | Nov 21, 2025 | 65 | Rony Parulian (3) | bergema sampai selamanya - Nadhif Basalamah (2) |
 | Nov 22, 2025 | 1 | Mitski (1) | My Love Mine All Mine - Mitski (1) |
+| Nov 23, 2025 | 0 | - | - |
 
 ---
 
