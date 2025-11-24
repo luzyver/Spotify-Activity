@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,026 |
-| **Unique Tracks** | 519 |
-| **Unique Artists** | 282 |
-| **Period** | November 12, 2025 - November 21, 2025 |
-| **Archive Files** | 11 |
+| **Total Plays** | 1,096 |
+| **Unique Tracks** | 526 |
+| **Unique Artists** | 284 |
+| **Period** | November 12, 2025 - November 23, 2025 |
+| **Archive Files** | 12 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -21,10 +21,10 @@
 | 3 | Nadin Amizah | 34 |
 | 4 | Hindia | 26 |
 | 5 | Sal Priadi | 23 |
-| 6 | Idgitaf | 22 |
-| 7 | Pamungkas | 17 |
-| 8 | Tulus | 17 |
-| 9 | Cigarettes After Sex | 16 |
+| 6 | Cigarettes After Sex | 22 |
+| 7 | Idgitaf | 22 |
+| 8 | Pamungkas | 17 |
+| 9 | Tulus | 17 |
 | 10 | Hivi! | 16 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -57,6 +57,7 @@
 | Nov 21, 2025 | 65 | Rony Parulian (3) | bergema sampai selamanya - Nadhif Basalamah (2) |
 | Nov 22, 2025 | 1 | Mitski (1) | My Love Mine All Mine - Mitski (1) |
 | Nov 23, 2025 | 0 | - | - |
+| Nov 24, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
 
 ---
 
