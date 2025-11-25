@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,096 |
-| **Unique Tracks** | 526 |
-| **Unique Artists** | 284 |
-| **Period** | November 12, 2025 - November 23, 2025 |
-| **Archive Files** | 12 |
+| **Total Plays** | 1,144 |
+| **Unique Tracks** | 532 |
+| **Unique Artists** | 287 |
+| **Period** | November 12, 2025 - November 24, 2025 |
+| **Archive Files** | 13 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -20,9 +20,9 @@
 | 2 | Ghea Indrawari | 58 |
 | 3 | Nadin Amizah | 34 |
 | 4 | Hindia | 26 |
-| 5 | Sal Priadi | 23 |
-| 6 | Cigarettes After Sex | 22 |
-| 7 | Idgitaf | 22 |
+| 5 | Cigarettes After Sex | 25 |
+| 6 | Idgitaf | 24 |
+| 7 | Sal Priadi | 23 |
 | 8 | Pamungkas | 17 |
 | 9 | Tulus | 17 |
 | 10 | Hivi! | 16 |
@@ -40,7 +40,7 @@
 | 7 | Satu Bulan - Bernadya | 9 |
 | 8 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 9 |
 | 9 | Sinyal-Sinyal - Bernadya | 9 |
-| 10 | Kita Kubur Sampai Mati - Bernadya | 8 |
+| 10 | My Love Mine All Mine - Mitski | 8 |
 
 ## 📅 Daily Breakdown
 
@@ -58,6 +58,7 @@
 | Nov 22, 2025 | 1 | Mitski (1) | My Love Mine All Mine - Mitski (1) |
 | Nov 23, 2025 | 0 | - | - |
 | Nov 24, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
+| Nov 25, 2025 | 48 | Cigarettes After Sex (3) | Sedia Aku Sebelum Hujan - Idgitaf (2) |
 
 ---
 
