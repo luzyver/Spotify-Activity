@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "timestamp": 1764187125972,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Takut",
+    "artist": "Idgitaf",
+    "uri": "spotify:track:1qHddOZ7pwtmOsw0RmlKFx",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e3e689c374465ace2fbfa676"
+  },
+  {
+    "timestamp": 1764186795116,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Salah Sangka",
+    "artist": "Nabila Taqiyyah",
+    "uri": "spotify:track:2tUXevWuvHUElBZ5AQalgE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732cc7eb853887837e0a4b726e"
+  },
+  {
+    "timestamp": 1764186615155,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terlalu Cinta",
+    "artist": "Yovie Widianto, Lyodra",
+    "uri": "spotify:track:3zmN19fLAcKeDaajrIdWLB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fed17c86fd4e4f7f3e486e18"
+  },
+  {
+    "timestamp": 1764186375295,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Trauma",
+    "artist": "Aan Story, Elsya",
+    "uri": "spotify:track:6SITe0StjnWHjyNOVzyJTX",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fca8faa995ff333881c60688"
+  },
+  {
+    "timestamp": 1764186134942,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Aku Bukan Untukmu",
+    "artist": "Anggi Marito",
+    "uri": "spotify:track:19zaLmqBM228wDPvrQyEUl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730d821888a8fc144d92756288"
+  },
+  {
+    "timestamp": 1764185925272,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Aku Tenang",
+    "artist": "Fourtwnty",
+    "uri": "spotify:track:2tO8xKwSF82hUZp0sOMLM6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734fe255e0ba819e903f5fc4e5"
+  },
+  {
+    "timestamp": 1764185685009,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tanpa Bicara",
+    "artist": "Rizwan Fadilah",
+    "uri": "spotify:track:32dPiJIrbKTUEPaELjxbgQ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a8c5250212d2334a80bd27fb"
+  },
+  {
+    "timestamp": 1764185475045,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sampai Menutup Mata",
+    "artist": "Acha Septriasa",
+    "uri": "spotify:track:6RbOugGEsbxhOmNCHJGqLu",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7045ac05d83bd7087e91096"
+  },
+  {
+    "timestamp": 1764185235081,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Rasa ini",
+    "artist": "Vierra",
+    "uri": "spotify:track:5NVPptNO7R25ERR1pM7GOz",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bdc17798be456d9e4ad28dc0"
+  },
+  {
+    "timestamp": 1764184995060,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Berjalan Meninggalkanmu",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7r12dg6f8z9q14qKVNYchU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736a82c46c55808abca1f77575"
+  },
+  {
+    "timestamp": 1764184785253,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Aku Yang Jatuh Cinta",
+    "artist": "Dudy Oris",
+    "uri": "spotify:track:1NFUHFlL8UbyIiwxDfbokL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b37f9f71cadcc9c8aa2af290"
+  },
+  {
+    "timestamp": 1764184605050,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Dunia Tipu-Tipu",
+    "artist": "Yura Yunita",
+    "uri": "spotify:track:0mMqopQJOWADJSPRMYkvTF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27368d7905b0548a6c9ba21b638"
+  }
+]
