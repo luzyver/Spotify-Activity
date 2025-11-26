@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,144 |
-| **Unique Tracks** | 532 |
+| **Total Plays** | 1,184 |
+| **Unique Tracks** | 534 |
 | **Unique Artists** | 287 |
-| **Period** | November 12, 2025 - November 24, 2025 |
-| **Archive Files** | 13 |
+| **Period** | November 12, 2025 - November 25, 2025 |
+| **Archive Files** | 14 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
 | 1 | Bernadya | 120 |
-| 2 | Ghea Indrawari | 58 |
-| 3 | Nadin Amizah | 34 |
+| 2 | Ghea Indrawari | 65 |
+| 3 | Nadin Amizah | 35 |
 | 4 | Hindia | 26 |
 | 5 | Cigarettes After Sex | 25 |
-| 6 | Idgitaf | 24 |
+| 6 | Idgitaf | 25 |
 | 7 | Sal Priadi | 23 |
 | 8 | Pamungkas | 17 |
 | 9 | Tulus | 17 |
@@ -59,6 +59,7 @@
 | Nov 23, 2025 | 0 | - | - |
 | Nov 24, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
 | Nov 25, 2025 | 48 | Cigarettes After Sex (3) | Sedia Aku Sebelum Hujan - Idgitaf (2) |
+| Nov 26, 2025 | 40 | Ghea Indrawari (7) | Usai - Tiara Andini (2) |
 
 ---
 
