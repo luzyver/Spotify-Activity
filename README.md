@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,184 |
-| **Unique Tracks** | 534 |
-| **Unique Artists** | 287 |
-| **Period** | November 12, 2025 - November 25, 2025 |
-| **Archive Files** | 14 |
+| **Total Plays** | 1,276 |
+| **Unique Tracks** | 561 |
+| **Unique Artists** | 296 |
+| **Period** | November 12, 2025 - November 26, 2025 |
+| **Archive Files** | 15 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 120 |
-| 2 | Ghea Indrawari | 65 |
-| 3 | Nadin Amizah | 35 |
-| 4 | Hindia | 26 |
-| 5 | Cigarettes After Sex | 25 |
-| 6 | Idgitaf | 25 |
-| 7 | Sal Priadi | 23 |
-| 8 | Pamungkas | 17 |
-| 9 | Tulus | 17 |
-| 10 | Hivi! | 16 |
+| 1 | Bernadya | 121 |
+| 2 | Ghea Indrawari | 70 |
+| 3 | Nadin Amizah | 40 |
+| 4 | Idgitaf | 31 |
+| 5 | Hindia | 26 |
+| 6 | Cigarettes After Sex | 25 |
+| 7 | Sal Priadi | 25 |
+| 8 | Pamungkas | 19 |
+| 9 | Tulus | 19 |
+| 10 | Juicy Luicy | 17 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -34,11 +34,11 @@
 | 1 | Berlari - Bernadya | 12 |
 | 2 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
 | 3 | Asumsi - Adrian Khalif, Bernadya | 10 |
-| 4 | Kata Mereka Ini Berlebihan - Bernadya | 10 |
-| 5 | Lama-Lama - Bernadya | 9 |
-| 6 | Terlintas - Bernadya | 9 |
-| 7 | Satu Bulan - Bernadya | 9 |
-| 8 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 9 |
+| 4 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
+| 5 | Kata Mereka Ini Berlebihan - Bernadya | 10 |
+| 6 | Lama-Lama - Bernadya | 9 |
+| 7 | Terlintas - Bernadya | 9 |
+| 8 | Satu Bulan - Bernadya | 9 |
 | 9 | Sinyal-Sinyal - Bernadya | 9 |
 | 10 | My Love Mine All Mine - Mitski | 8 |
 
@@ -60,6 +60,7 @@
 | Nov 24, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
 | Nov 25, 2025 | 48 | Cigarettes After Sex (3) | Sedia Aku Sebelum Hujan - Idgitaf (2) |
 | Nov 26, 2025 | 40 | Ghea Indrawari (7) | Usai - Tiara Andini (2) |
+| Nov 27, 2025 | 92 | Yura Yunita (7) | Tenang - Yura Yunita (2) |
 
 ---
 
