@@ -49,8 +49,8 @@ jobs:
           TIMESTAMP=$(date +%s)000
           echo "{\"lastClearTimestamp\": $TIMESTAMP}" > last-clear.json
           
-          # Generate date tag
-          DATE_TAG=$(date -u '+%d%m%Y')
+          # Generate date tag (yesterday's date in GMT+7, since we're clearing yesterday's history)
+          DATE_TAG=$(TZ='Asia/Jakarta' date -d 'yesterday' '+%d%m%Y')
           
           echo "✅ History cleared!"
           echo "ITEMS_REMOVED=$ITEMS_BEFORE" >> $GITHUB_OUTPUT
