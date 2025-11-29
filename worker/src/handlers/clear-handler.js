@@ -21,6 +21,21 @@ export async function handleClearHistory(env) {
 		const itemsCount = currentHistory.length;
 		console.log(`📊 Items before clear: ${itemsCount}`);
 
+		// Generate date tag (GMT+7) - use yesterday's date since we're clearing yesterday's history
+		const currentTime = Date.now();
+		const date = new Date(currentTime);
+		const gmt7Date = new Date(date.getTime() + (7 * 60 * 60 * 1000));
+		// Subtract 1 day to get yesterday
+		const yesterdayGmt7 = new Date(gmt7Date.getTime() - (24 * 60 * 60 * 1000));
+		const day = String(yesterdayGmt7.getUTCDate()).padStart(2, '0');
+		const month = String(yesterdayGmt7.getUTCMonth() + 1).padStart(2, '0');
+		const year = yesterdayGmt7.getUTCFullYear();
+		const dateTag = `${day}${month}${year}`;
+
+		// Archive current history to frontend/static/history/{DATE}.json
+		const archivePath = `frontend/static/history/${dateTag}.json`;
+		console.log(`📦 Archiving history to ${archivePath}...`);
+
 		// Clear history (empty array)
 		const clearedHistory = [];
 
@@ -41,29 +56,28 @@ export async function handleClearHistory(env) {
 		
 		const lastClearData = { lastClearTimestamp: safeClearTimestamp };
 
-		// Generate date tag (GMT+7) - use current time for date tag
-		const currentTime = Date.now();
-		const date = new Date(currentTime);
-		const gmt7Date = new Date(date.getTime() + (7 * 60 * 60 * 1000));
-		const day = String(gmt7Date.getUTCDate()).padStart(2, '0');
-		const month = String(gmt7Date.getUTCMonth() + 1).padStart(2, '0');
-		const year = gmt7Date.getUTCFullYear();
-		const dateTag = `${day}${month}${year}`;
-
-		// Commit changes
+		// Commit changes (archive + clear + update last-clear)
 		const commitMsg = `🗑️ [${dateTag}] Clear history (daily reset) [skip ci]`;
+		const filesToUpdate = [
+			{ path: 'history.json', content: clearedHistory },
+			{ path: 'last-clear.json', content: lastClearData }
+		];
+
+		// Only archive if there's history to archive
+		if (itemsCount > 0) {
+			filesToUpdate.push({ path: archivePath, content: currentHistory });
+		}
+
 		await github.updateMultipleGitHubFiles(
 			githubRepo,
-			[
-				{ path: 'history.json', content: clearedHistory },
-				{ path: 'last-clear.json', content: lastClearData }
-			],
+			filesToUpdate,
 			commitMsg,
 			githubToken
 		);
 
 		console.log(`✅ History cleared! Items removed: ${itemsCount}`);
 		console.log(`   Date tag: ${dateTag}`);
+		console.log(`   Archive path: ${archivePath}`);
 		console.log(`   Clear timestamp: ${safeClearTimestamp} (${new Date(safeClearTimestamp).toISOString()})`);
 
 		return new Response(
@@ -71,6 +85,7 @@ export async function handleClearHistory(env) {
 				success: true,
 				itemsRemoved: itemsCount,
 				dateTag: dateTag,
+				archivePath: archivePath,
 				timestamp: safeClearTimestamp
 			}),
 			{
