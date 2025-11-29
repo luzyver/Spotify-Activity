@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,369 |
-| **Unique Tracks** | 584 |
-| **Unique Artists** | 305 |
-| **Period** | November 12, 2025 - November 27, 2025 |
-| **Archive Files** | 16 |
+| **Total Plays** | 1,407 |
+| **Unique Tracks** | 597 |
+| **Unique Artists** | 310 |
+| **Period** | November 12, 2025 - November 28, 2025 |
+| **Archive Files** | 17 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -19,13 +19,13 @@
 | 1 | Bernadya | 123 |
 | 2 | Ghea Indrawari | 74 |
 | 3 | Nadin Amizah | 41 |
-| 4 | Idgitaf | 35 |
-| 5 | Hindia | 30 |
+| 4 | Idgitaf | 39 |
+| 5 | Hindia | 34 |
 | 6 | Sal Priadi | 26 |
 | 7 | Cigarettes After Sex | 25 |
-| 8 | Tulus | 20 |
-| 9 | Pamungkas | 19 |
-| 10 | Yura Yunita | 19 |
+| 8 | Tulus | 21 |
+| 9 | Yura Yunita | 20 |
+| 10 | Nadhif Basalamah | 19 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -62,6 +62,7 @@
 | Nov 26, 2025 | 40 | Ghea Indrawari (7) | Usai - Tiara Andini (2) |
 | Nov 27, 2025 | 92 | Yura Yunita (7) | Tenang - Yura Yunita (2) |
 | Nov 28, 2025 | 93 | Hindia (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
+| Nov 29, 2025 | 38 | MALIQ & D'Essentials (4) | Forget Jakarta - Adhitia Sofyan (3) |
 
 ---
 
