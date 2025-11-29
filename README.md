@@ -53,16 +53,16 @@
 | Nov 16, 2025 | 89 | Bernadya (15) | Semua Aku Dirayakan - Nadin Amizah (3) |
 | Nov 17, 2025 | 139 | Bernadya (13) | Die For You - Joji (2) |
 | Nov 18, 2025 | 108 | Pamungkas (5) | Calon Mantu Idaman (feat. Ncum) - Rombongan Bodonk Koplo, Ncum (2) |
-| Nov 20, 2025 | 66 | Bernadya (13) | Remaja - Hivi! (2) |
-| Nov 21, 2025 | 65 | Rony Parulian (3) | bergema sampai selamanya - Nadhif Basalamah (2) |
-| Nov 22, 2025 | 1 | Mitski (1) | My Love Mine All Mine - Mitski (1) |
-| Nov 23, 2025 | 0 | - | - |
-| Nov 24, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
-| Nov 25, 2025 | 48 | Cigarettes After Sex (3) | Sedia Aku Sebelum Hujan - Idgitaf (2) |
-| Nov 26, 2025 | 40 | Ghea Indrawari (7) | Usai - Tiara Andini (2) |
-| Nov 27, 2025 | 92 | Yura Yunita (7) | Tenang - Yura Yunita (2) |
-| Nov 28, 2025 | 93 | Hindia (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
-| Nov 29, 2025 | 38 | MALIQ & D'Essentials (4) | Forget Jakarta - Adhitia Sofyan (3) |
+| Nov 19, 2025 | 66 | Bernadya (13) | Remaja - Hivi! (2) |
+| Nov 20, 2025 | 65 | Rony Parulian (3) | bergema sampai selamanya - Nadhif Basalamah (2) |
+| Nov 21, 2025 | 1 | Mitski (1) | My Love Mine All Mine - Mitski (1) |
+| Nov 22, 2025 | 0 | - | - |
+| Nov 23, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
+| Nov 24, 2025 | 48 | Cigarettes After Sex (3) | Sedia Aku Sebelum Hujan - Idgitaf (2) |
+| Nov 25, 2025 | 40 | Ghea Indrawari (7) | Usai - Tiara Andini (2) |
+| Nov 26, 2025 | 92 | Yura Yunita (7) | Tenang - Yura Yunita (2) |
+| Nov 27, 2025 | 93 | Hindia (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
+| Nov 28, 2025 | 38 | MALIQ & D'Essentials (4) | Forget Jakarta - Adhitia Sofyan (3) |
 
 ---
 
