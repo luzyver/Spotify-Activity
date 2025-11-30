@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,407 |
+| **Total Plays** | 1,461 |
 | **Unique Tracks** | 597 |
 | **Unique Artists** | 310 |
-| **Period** | November 12, 2025 - November 28, 2025 |
-| **Archive Files** | 17 |
+| **Period** | November 12, 2025 - November 29, 2025 |
+| **Archive Files** | 18 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -21,8 +21,8 @@
 | 3 | Nadin Amizah | 41 |
 | 4 | Idgitaf | 39 |
 | 5 | Hindia | 34 |
-| 6 | Sal Priadi | 26 |
-| 7 | Cigarettes After Sex | 25 |
+| 6 | Cigarettes After Sex | 28 |
+| 7 | Sal Priadi | 26 |
 | 8 | Tulus | 21 |
 | 9 | Yura Yunita | 20 |
 | 10 | Nadhif Basalamah | 19 |
@@ -36,11 +36,11 @@
 | 3 | Asumsi - Adrian Khalif, Bernadya | 11 |
 | 4 | Kata Mereka Ini Berlebihan - Bernadya | 11 |
 | 5 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
-| 6 | Lama-Lama - Bernadya | 9 |
-| 7 | Terlintas - Bernadya | 9 |
-| 8 | Satu Bulan - Bernadya | 9 |
-| 9 | Sinyal-Sinyal - Bernadya | 9 |
-| 10 | Sedia Aku Sebelum Hujan - Idgitaf | 9 |
+| 6 | My Love Mine All Mine - Mitski | 9 |
+| 7 | Lama-Lama - Bernadya | 9 |
+| 8 | Terlintas - Bernadya | 9 |
+| 9 | Satu Bulan - Bernadya | 9 |
+| 10 | Sinyal-Sinyal - Bernadya | 9 |
 
 ## 📅 Daily Breakdown
 
@@ -63,6 +63,7 @@
 | Nov 26, 2025 | 92 | Yura Yunita (7) | Tenang - Yura Yunita (2) |
 | Nov 27, 2025 | 93 | Hindia (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
 | Nov 28, 2025 | 38 | MALIQ & D'Essentials (4) | Forget Jakarta - Adhitia Sofyan (3) |
+| Nov 29, 2025 | 54 | Cigarettes After Sex (3) | when the party's over - Billie Eilish (1) |
 
 ---
 
