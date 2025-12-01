@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,461 |
+| **Total Plays** | 1,499 |
 | **Unique Tracks** | 597 |
 | **Unique Artists** | 310 |
-| **Period** | November 12, 2025 - November 29, 2025 |
-| **Archive Files** | 18 |
+| **Period** | November 12, 2025 - November 30, 2025 |
+| **Archive Files** | 19 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -18,14 +18,14 @@
 |------|--------|-------|
 | 1 | Bernadya | 123 |
 | 2 | Ghea Indrawari | 74 |
-| 3 | Nadin Amizah | 41 |
+| 3 | Nadin Amizah | 42 |
 | 4 | Idgitaf | 39 |
-| 5 | Hindia | 34 |
+| 5 | Hindia | 36 |
 | 6 | Cigarettes After Sex | 28 |
 | 7 | Sal Priadi | 26 |
-| 8 | Tulus | 21 |
-| 9 | Yura Yunita | 20 |
-| 10 | Nadhif Basalamah | 19 |
+| 8 | Pamungkas | 23 |
+| 9 | Tulus | 23 |
+| 10 | Hivi! | 21 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -64,6 +64,7 @@
 | Nov 27, 2025 | 93 | Hindia (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
 | Nov 28, 2025 | 38 | MALIQ & D'Essentials (4) | Forget Jakarta - Adhitia Sofyan (3) |
 | Nov 29, 2025 | 54 | Cigarettes After Sex (3) | when the party's over - Billie Eilish (1) |
+| Nov 30, 2025 | 38 | Hivi! (5) | fine today (Nanti Kita Cerita Tentang Hari Ini - Original Motion Picture Soundtrack) - Ardhito Pramono (1) |
 
 ---
 
