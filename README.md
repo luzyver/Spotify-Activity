@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,499 |
-| **Unique Tracks** | 597 |
-| **Unique Artists** | 310 |
-| **Period** | November 12, 2025 - November 30, 2025 |
-| **Archive Files** | 19 |
+| **Total Plays** | 1,564 |
+| **Unique Tracks** | 599 |
+| **Unique Artists** | 311 |
+| **Period** | November 12, 2025 - December 1, 2025 |
+| **Archive Files** | 20 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -21,7 +21,7 @@
 | 3 | Nadin Amizah | 42 |
 | 4 | Idgitaf | 39 |
 | 5 | Hindia | 36 |
-| 6 | Cigarettes After Sex | 28 |
+| 6 | Cigarettes After Sex | 33 |
 | 7 | Sal Priadi | 26 |
 | 8 | Pamungkas | 23 |
 | 9 | Tulus | 23 |
@@ -35,8 +35,8 @@
 | 2 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 11 |
 | 3 | Asumsi - Adrian Khalif, Bernadya | 11 |
 | 4 | Kata Mereka Ini Berlebihan - Bernadya | 11 |
-| 5 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
-| 6 | My Love Mine All Mine - Mitski | 9 |
+| 5 | My Love Mine All Mine - Mitski | 10 |
+| 6 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
 | 7 | Lama-Lama - Bernadya | 9 |
 | 8 | Terlintas - Bernadya | 9 |
 | 9 | Satu Bulan - Bernadya | 9 |
@@ -46,6 +46,7 @@
 
 | Date | Plays | Top Artist | Top Track |
 |------|-------|------------|-----------|
+| Dec 1, 2025 | 65 | Cigarettes After Sex (5) | Pelukku Untuk Pelikmu - OST Imperfect: Karier, Cinta, & Timbangan - Fiersa Besari (1) |
 | Nov 12, 2025 | 213 | Ghea Indrawari (10) | Lesung Pipi - Raim Laode (3) |
 | Nov 13, 2025 | 124 | Bernadya (21) | You'll Be in My Heart - NIKI (2) |
 | Nov 14, 2025 | 108 | Bernadya (27) | Asumsi - Adrian Khalif, Bernadya (3) |
