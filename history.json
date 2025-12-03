@@ -1,5 +1,50 @@
 [
   {
+    "timestamp": 1764735557418,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "ocean eyes",
+    "artist": "Billie Eilish",
+    "uri": "spotify:track:2uIX8YMNjGMD7441kqyyNU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732cafcdd985630d72594ecc49"
+  },
+  {
+    "timestamp": 1764735166816,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Trouble",
+    "artist": "Coldplay",
+    "uri": "spotify:track:0R8P9KfGJCDULmlEoBagcO",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a"
+  },
+  {
+    "timestamp": 1764734867235,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "School Rooftop - Slowed Down Version",
+    "artist": "Hisohkah, WMD",
+    "uri": "spotify:track:6IaSUc4wx1rzo8lGs4KOot",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273af10dd64654c62eb04f10018"
+  },
+  {
+    "timestamp": 1764734686946,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Glimpse of Us",
+    "artist": "Joji",
+    "uri": "spotify:track:3aBGKDiAAvH2H7HLOyQ4US",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f3f7d2ea2ad435b57d6697df"
+  },
+  {
+    "timestamp": 1764734447608,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mystery of Love",
+    "artist": "Sufjan Stevens",
+    "uri": "spotify:track:5GbVzc6Ex5LYlLJqzRQhuy",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733fc1588803d1887f11d660cc"
+  },
+  {
     "timestamp": 1764734206802,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
