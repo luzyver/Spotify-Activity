@@ -6,21 +6,21 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,640 |
-| **Unique Tracks** | 607 |
-| **Unique Artists** | 317 |
-| **Period** | November 12, 2025 - December 3, 2025 |
-| **Archive Files** | 22 |
+| **Total Plays** | 1,669 |
+| **Unique Tracks** | 608 |
+| **Unique Artists** | 318 |
+| **Period** | November 12, 2025 - December 4, 2025 |
+| **Archive Files** | 23 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 123 |
+| 1 | Bernadya | 124 |
 | 2 | Ghea Indrawari | 74 |
 | 3 | Nadin Amizah | 43 |
-| 4 | Idgitaf | 39 |
-| 5 | Hindia | 37 |
+| 4 | Idgitaf | 40 |
+| 5 | Hindia | 39 |
 | 6 | Cigarettes After Sex | 36 |
 | 7 | Tulus | 28 |
 | 8 | Sal Priadi | 26 |
@@ -32,15 +32,15 @@
 | Rank | Track | Plays |
 |------|-------|-------|
 | 1 | My Love Mine All Mine - Mitski | 13 |
-| 2 | Berlari - Bernadya | 12 |
-| 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 11 |
-| 4 | Asumsi - Adrian Khalif, Bernadya | 11 |
-| 5 | Kata Mereka Ini Berlebihan - Bernadya | 11 |
-| 6 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
-| 7 | Lama-Lama - Bernadya | 9 |
-| 8 | Terlintas - Bernadya | 9 |
-| 9 | Satu Bulan - Bernadya | 9 |
-| 10 | Sinyal-Sinyal - Bernadya | 9 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 12 |
+| 3 | Berlari - Bernadya | 12 |
+| 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 11 |
+| 5 | Asumsi - Adrian Khalif, Bernadya | 11 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 10 |
+| 7 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 9 |
+| 9 | Alamak - Rizky Febian, Adrian Khalif | 9 |
+| 10 | Lama-Lama - Bernadya | 9 |
 
 ## 📅 Daily Breakdown
 
@@ -49,6 +49,7 @@
 | Dec 1, 2025 | 65 | Cigarettes After Sex (5) | Pelukku Untuk Pelikmu - OST Imperfect: Karier, Cinta, & Timbangan - Fiersa Besari (1) |
 | Dec 2, 2025 | 30 | Tulus (5) | Team - Lorde (1) |
 | Dec 3, 2025 | 46 | Mitski (3) | Levitating - Dua Lipa (2) |
+| Dec 4, 2025 | 29 | Hindia (2) | semua lagu cinta terdengar sama - Hindia (1) |
 | Nov 12, 2025 | 213 | Ghea Indrawari (10) | Lesung Pipi - Raim Laode (3) |
 | Nov 13, 2025 | 124 | Bernadya (21) | You'll Be in My Heart - NIKI (2) |
 | Nov 14, 2025 | 108 | Bernadya (27) | Asumsi - Adrian Khalif, Bernadya (3) |
