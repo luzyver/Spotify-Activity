@@ -46,10 +46,6 @@
 
 | Date | Plays | Top Artist | Top Track |
 |------|-------|------------|-----------|
-| Dec 1, 2025 | 65 | Cigarettes After Sex (5) | Pelukku Untuk Pelikmu - OST Imperfect: Karier, Cinta, & Timbangan - Fiersa Besari (1) |
-| Dec 2, 2025 | 30 | Tulus (5) | Team - Lorde (1) |
-| Dec 3, 2025 | 46 | Mitski (3) | Levitating - Dua Lipa (2) |
-| Dec 4, 2025 | 29 | Hindia (2) | semua lagu cinta terdengar sama - Hindia (1) |
 | Nov 12, 2025 | 213 | Ghea Indrawari (10) | Lesung Pipi - Raim Laode (3) |
 | Nov 13, 2025 | 124 | Bernadya (21) | You'll Be in My Heart - NIKI (2) |
 | Nov 14, 2025 | 108 | Bernadya (27) | Asumsi - Adrian Khalif, Bernadya (3) |
@@ -69,6 +65,10 @@
 | Nov 28, 2025 | 38 | MALIQ & D'Essentials (4) | Forget Jakarta - Adhitia Sofyan (3) |
 | Nov 29, 2025 | 54 | Cigarettes After Sex (3) | when the party's over - Billie Eilish (1) |
 | Nov 30, 2025 | 38 | Hivi! (5) | fine today (Nanti Kita Cerita Tentang Hari Ini - Original Motion Picture Soundtrack) - Ardhito Pramono (1) |
+| Dec 1, 2025 | 65 | Cigarettes After Sex (5) | Pelukku Untuk Pelikmu - OST Imperfect: Karier, Cinta, & Timbangan - Fiersa Besari (1) |
+| Dec 2, 2025 | 30 | Tulus (5) | Team - Lorde (1) |
+| Dec 3, 2025 | 46 | Mitski (3) | Levitating - Dua Lipa (2) |
+| Dec 4, 2025 | 29 | Hindia (2) | semua lagu cinta terdengar sama - Hindia (1) |
 
 ---
 
