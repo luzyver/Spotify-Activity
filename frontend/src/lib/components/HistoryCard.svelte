@@ -3,7 +3,7 @@
   import type { ViewMode } from '$lib/types';
   import { timeAgo, spotifyUrl, getUserName } from '$lib/utils';
   import { fly } from 'svelte/transition';
-  import { Play } from 'lucide-svelte';
+  import { Play, Music } from 'lucide-svelte';
 
   interface Props {
     item: HistoryItem;
@@ -22,134 +22,128 @@
 {#if viewMode === 'list'}
   <!-- List View -->
   <div
-    class="group flex items-center gap-4 rounded-md p-2 transition-all duration-200 hover:bg-white/10"
-    in:fly={{ x: -20, duration: 400, delay: index * 30 }}
+    class="group relative flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:bg-white/5"
+    in:fly={{ x: -10, duration: 300, delay: index * 20 }}
   >
     <!-- Number -->
-    <div class="w-8 text-center text-sm text-gray-400">{globalIndex}</div>
+    <div class="w-6 text-right text-sm font-medium text-gray-500 tabular-nums group-hover:text-white">
+      {globalIndex}
+    </div>
 
     <!-- Album Art -->
     <a
       href={spotifyUrl(item.uri)}
       target="_blank"
       rel="noopener noreferrer"
-      class="relative flex-shrink-0"
+      class="relative shrink-0"
     >
-      <div class="relative h-10 w-10 overflow-hidden rounded">
+      <div class="relative h-12 w-12 overflow-hidden rounded-md shadow-md sm:h-14 sm:w-14">
         <img
           src={item.imageUrl}
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
           alt={item.track}
           loading="lazy"
         />
+        <!-- Play overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
+          <Play class="h-5 w-5 fill-white text-white" />
+        </div>
       </div>
     </a>
 
     <!-- Info -->
     <div class="min-w-0 flex-1">
-      <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
-        <h4 class="truncate text-base text-white hover:underline">
-          {item.track}
-        </h4>
+      <a 
+        href={spotifyUrl(item.uri)} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="block truncate text-base font-semibold text-white hover:text-[#1db954] hover:underline"
+      >
+        {item.track}
       </a>
-      <p class="truncate text-sm text-gray-400">{item.artist || 'Unknown Artist'}</p>
+      <div class="flex items-center gap-2 truncate text-sm text-gray-400">
+        <span class="truncate hover:text-white">{item.artist || 'Unknown Artist'}</span>
+      </div>
     </div>
 
-    <!-- User Info -->
-    <div class="text-sm text-gray-400">{userName}</div>
-
-    <!-- Time -->
-    <div class="text-sm text-gray-400">{timeAgo(item.timestamp)}</div>
+    <!-- Meta (Hidden on very small screens) -->
+    <div class="hidden shrink-0 flex-col items-end gap-0.5 text-xs text-gray-500 sm:flex">
+      <span class="font-medium text-gray-400">{userName}</span>
+      <span>{timeAgo(item.timestamp)}</span>
+    </div>
+    
+    <!-- Mobile Meta (Icon only) -->
+    <div class="flex shrink-0 flex-col items-end sm:hidden text-xs text-gray-500">
+      <span>{timeAgo(item.timestamp)}</span>
+    </div>
   </div>
+
 {:else if viewMode === 'compact'}
   <!-- Compact View -->
   <a
     href={spotifyUrl(item.uri)}
     target="_blank"
     rel="noopener noreferrer"
-    class="spotify-card group block overflow-hidden p-3"
+    class="group block overflow-hidden rounded-lg bg-white/5 p-3 transition-colors hover:bg-white/10"
     in:fly={{ y: 10, duration: 300, delay: index * 20 }}
   >
-    <div class="relative mb-3 aspect-square overflow-hidden rounded-md">
-      <img src={item.imageUrl} alt={item.track} class="h-full w-full object-cover" loading="lazy" />
-      <div
-        class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
-      ></div>
-      <div
-        class="absolute bottom-2 right-2 flex h-10 w-10 translate-y-2 items-center justify-center rounded-full bg-[#1db954] opacity-0 shadow-xl transition-all duration-200 hover:scale-110 hover:bg-[#1ed760] group-hover:translate-y-0 group-hover:opacity-100"
-      >
-        <Play class="h-4 w-4 translate-x-0.5 fill-black text-black" />
+    <div class="flex items-center gap-3">
+      <div class="relative h-10 w-10 shrink-0 overflow-hidden rounded bg-white/10">
+        <img src={item.imageUrl} alt={item.track} class="h-full w-full object-cover" loading="lazy" />
+      </div>
+      <div class="min-w-0 flex-1">
+        <p class="truncate text-sm font-medium text-white group-hover:text-[#1db954]">{item.track}</p>
+        <p class="truncate text-xs text-gray-400">{item.artist}</p>
       </div>
     </div>
-    <p class="mb-1 truncate text-sm font-semibold text-white">{item.track}</p>
-    <p class="truncate text-xs text-gray-400">{item.artist || 'Unknown Artist'}</p>
-    <!-- User Info -->
-    <div class="mt-1">
-      <span class="truncate text-xs text-gray-500">{userName}</span>
-    </div>
   </a>
+
 {:else}
   <!-- Grid View (Default) -->
   <div
-    class="card-interactive group relative overflow-hidden p-4"
-    in:fly={{ y: 20, duration: 400, delay: index * 40 }}
+    class="group relative flex flex-col gap-3 rounded-xl bg-[#181818] p-4 transition-all duration-300 hover:bg-[#282828] hover:shadow-xl"
+    in:fly={{ y: 20, duration: 400, delay: index * 30 }}
   >
-    <!-- Animated gradient overlay on hover -->
-    <div
-      class="absolute inset-0 bg-gradient-to-br from-[#1db954]/0 to-[#1db954]/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-    ></div>
-
     <!-- Album Art -->
     <a
       href={spotifyUrl(item.uri)}
       target="_blank"
       rel="noopener noreferrer"
-      class="relative z-10 mb-4 block"
+      class="relative aspect-square w-full overflow-hidden rounded-lg shadow-lg"
     >
+      <img
+        src={item.imageUrl}
+        alt={item.track}
+        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        loading="lazy"
+      />
+
+      <!-- Play Button -->
       <div
-        class="relative aspect-square overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-[#1db954]/20"
+        class="absolute bottom-2 right-2 translate-y-2 translate-x-2 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
       >
-        <img
-          src={item.imageUrl}
-          alt={item.track}
-          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-          loading="lazy"
-        />
-
-        <!-- Overlay -->
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        ></div>
-
-        <!-- Play Button -->
-        <div
-          class="absolute bottom-3 right-3 flex h-12 w-12 translate-y-2 items-center justify-center rounded-full bg-gradient-to-br from-[#1db954] to-[#1ed760] opacity-0 shadow-xl shadow-[#1db954]/50 transition-all duration-300 hover:scale-110 active:scale-95 group-hover:translate-y-0 group-hover:opacity-100"
-        >
-          <Play class="h-5 w-5 translate-x-0.5 fill-black text-black" />
+        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1db954] text-black transition-transform hover:scale-105 active:scale-95">
+          <Play class="h-5 w-5 fill-current pl-0.5" />
         </div>
       </div>
     </a>
 
     <!-- Info -->
-    <div class="relative z-10 space-y-2">
+    <div class="min-w-0 flex-1">
       <a href={spotifyUrl(item.uri)} target="_blank" rel="noopener noreferrer" class="block">
-        <h4
-          class="line-clamp-1 text-base font-bold text-white transition-colors hover:text-[#1db954]"
-        >
+        <h4 class="truncate text-base font-bold text-white transition-colors hover:text-[#1db954]">
           {item.track}
         </h4>
       </a>
-
-      <p class="line-clamp-2 text-sm text-gray-400">
+      <p class="truncate text-sm text-gray-400 hover:text-white hover:underline cursor-pointer">
         {item.artist || 'Unknown Artist'}
       </p>
-
-      <!-- User Info -->
-      <div class="flex items-center gap-2 pt-1 text-xs text-gray-500">
-        <span class="truncate">{userName}</span>
-        <span class="text-gray-700">•</span>
-        <span>{timeAgo(item.timestamp)}</span>
-      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="flex items-center justify-between text-xs text-gray-500">
+       <span class="truncate max-w-[60%]">{userName}</span>
+       <span>{timeAgo(item.timestamp)}</span>
     </div>
   </div>
 {/if}

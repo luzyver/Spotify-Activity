@@ -7,36 +7,37 @@
   import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { onMount } from 'svelte';
-  import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from 'lucide-svelte';
+  import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, LayoutGrid, List, Music } from 'lucide-svelte';
   import { loadHistoryBatch } from '$lib/utils/historyLoader';
+  import { fade, fly } from 'svelte/transition';
 
   let { data } = $props();
 
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
-  let allHistory = $state<HistoryItem[]>(data?.history ?? []); // Recent data from API
-  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []); // Recent + Archive
+  let allHistory = $state<HistoryItem[]>(data?.history ?? []);
+  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []);
   let currentPage = $state(1);
   let activeTab = $state<'home' | 'recent' | 'history'>('home');
   let isLoadingHistorical = $state(false);
   let archiveLoaded = $state(false);
   let loadingProgress = $state({ loaded: 0, total: 0 });
-  let showCompactHeader = $state(false);
+  let viewMode = $state<'grid' | 'list'>('grid');
 
-  // Dynamic meta tags based on current state
+  // Dynamic meta tags
   let pageTitle = $derived.by(() => {
     if (nowPlaying.length > 0) {
       const first = nowPlaying[0];
-      return `Mendengarkan ${first.track.name} - ${first.track.artist.name}`;
+      return `Listening to ${first.track.name} • ${first.track.artist?.name || 'Unknown Artist'}`;
     }
-    return "Rezz's Spotify Activity";
+    return "Rezz's Activity";
   });
 
   let pageDescription = $derived.by(() => {
     if (nowPlaying.length > 0) {
       const first = nowPlaying[0];
-      return `Rezz sedang mendengarkan ${first.track.name} oleh ${first.track.artist.name} di Spotify.`;
+      return `Rezz is listening to ${first.track.name} by ${first.track.artist?.name || 'Unknown Artist'}.`;
     }
-    return 'Lihat aktivitas musik Spotify real-time dan riwayat lagu yang didengarkan.';
+    return 'Check out my Spotify listening history.';
   });
 
   let pageImage = $derived.by(() => {
@@ -46,18 +47,15 @@
     return 'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg';
   });
 
-  // Load archive history when user switches to history tab
   async function loadArchiveHistory() {
     if (archiveLoaded || isLoadingHistorical) return;
     
     isLoadingHistorical = true;
     try {
       const archiveData = await loadHistoryBatch(5, (items, batchIndex) => {
-        // Update progress as batches load
         loadingProgress = { loaded: batchIndex + 1, total: Math.ceil(items.length / 5) };
       });
       
-      // Combine recent + archive, remove duplicates
       const allData = [...combinedHistory, ...archiveData];
       const uniqueData = Array.from(
         new Map(allData.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
@@ -72,7 +70,6 @@
     }
   }
 
-  // Auto-load archive when switching to history tab
   $effect(() => {
     if (activeTab === 'history' && !archiveLoaded) {
       loadArchiveHistory();
@@ -84,44 +81,12 @@
     { id: 'recent', label: 'Recent' },
     { id: 'history', label: 'History' },
   ] as const;
-  const TAB_META = {
-    home: {
-      title: 'Spotify Activity',
-      subtitle: 'Your music dashboard',
-      compact: 'Home · Now playing',
-    },
-    recent: {
-      title: 'Recent Plays',
-      subtitle: 'Tracks played today',
-      compact: 'Recent · Today',
-    },
-    history: {
-      title: 'History',
-      subtitle: 'All your listening history',
-      compact: 'History · All time',
-    },
-  } as const;
 
-  onMount(() => {
-    const handleScroll = () => {
-      showCompactHeader = window.scrollY > 80;
-    };
-
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
-
-  // For history tab - use combinedHistory
   let filteredCombinedHistory = $derived(
     [...combinedHistory].sort((a, b) => b.timestamp - a.timestamp)
   );
 
   $effect(() => {
-    // Reset to first page whenever the filtered history changes
     filteredCombinedHistory;
     currentPage = 1;
   });
@@ -134,314 +99,254 @@
   function goToPage(page: number) {
     if (page < 1 || page > totalPages) return;
     currentPage = page;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
 
 <svelte:head>
   <title>{pageTitle}</title>
   <meta name="description" content={pageDescription} />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={pageDescription} />
   <meta property="og:image" content={pageImage} />
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={pageTitle} />
-  <meta name="twitter:description" content={pageDescription} />
-  <meta name="twitter:image" content={pageImage} />
 </svelte:head>
 
-<div class="min-h-screen bg-black text-white">
-  <!-- Main Content Area -->
-  <div class="mx-auto flex min-h-screen max-w-6xl flex-col px-4 pb-16 sm:px-6 lg:px-8">
-    <!-- Modern Header -->
-    <header class="border-b border-white/10 bg-black px-6 py-4">
-      <div class="relative flex flex-wrap items-center justify-between gap-4">
-        <div class="flex items-center gap-4">
-          <!-- Spotify Logo with glow effect -->
-          <div class="relative">
-            <div class="absolute inset-0 rounded-xl bg-[#1db954]/10 blur-lg"></div>
-            <div class="relative rounded-xl bg-[#1db954] p-2.5 shadow-md">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="white">
-                <path
-                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
-                />
-              </svg>
+<div class="min-h-screen pb-20 sm:pb-0">
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-black/80 backdrop-blur-xl supports-[backdrop-filter]:bg-black/60">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3">
+        <div class="relative flex h-8 w-8 items-center justify-center rounded-full bg-[#1db954] text-black shadow-lg shadow-[#1db954]/20">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+        </div>
+        <span class="hidden font-bold tracking-tight text-white sm:block">Spotify Activity</span>
+      </div>
+
+      <!-- Desktop Tabs -->
+      <nav class="hidden gap-1 rounded-full bg-white/5 p-1 sm:flex">
+        {#each TABS as tab}
+          <button
+            onclick={() => (activeTab = tab.id)}
+            class="relative rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-200 {activeTab === tab.id ? 'text-black' : 'text-gray-400 hover:text-white'}"
+          >
+            {#if activeTab === tab.id}
+              <div
+                class="absolute inset-0 rounded-full bg-white shadow-sm"
+                transition:fade={{ duration: 200 }}
+              ></div>
+            {/if}
+            <span class="relative z-10">{tab.label}</span>
+          </button>
+        {/each}
+      </nav>
+
+      <!-- View Toggle (Desktop) -->
+      <div class="hidden items-center gap-2 sm:flex">
+        <button 
+          onclick={() => viewMode = 'grid'}
+          class="p-2 rounded-lg transition-colors {viewMode === 'grid' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}"
+        >
+          <LayoutGrid class="h-4 w-4" />
+        </button>
+        <button 
+          onclick={() => viewMode = 'list'}
+          class="p-2 rounded-lg transition-colors {viewMode === 'list' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}"
+        >
+          <List class="h-4 w-4" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    {#if activeTab === 'home'}
+      <div in:fade={{ duration: 300 }} class="space-y-12">
+        <!-- Hero Section -->
+        <section>
+          <div class="mb-6 flex items-end justify-between">
+            <div>
+              <h2 class="text-3xl font-bold text-white tracking-tight">Now Playing</h2>
+              <p class="mt-1 text-gray-400">Live activity from connected accounts</p>
             </div>
           </div>
 
-          <!-- Title with subtitle -->
-          <div>
-            <h1 class="text-2xl font-bold text-white sm:text-3xl">
-              {TAB_META[activeTab].title}
-            </h1>
-            <p class="mt-0.5 text-sm text-gray-400">
-              {TAB_META[activeTab].subtitle}
-            </p>
+          {#if nowPlaying.length === 0}
+            <div class="rounded-2xl border border-dashed border-white/10 bg-white/5 p-12 text-center">
+              <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white/5">
+                <Music class="h-8 w-8 text-gray-500" />
+              </div>
+              <h3 class="text-lg font-medium text-white">Nothing playing right now</h3>
+              <p class="mt-1 text-gray-400">Check back later to see live activity</p>
+            </div>
+          {:else}
+            <div class="grid gap-6 lg:grid-cols-2">
+              {#each nowPlaying as buddy, index}
+                <NowPlayingCard {buddy} {index} />
+              {/each}
+            </div>
+          {/if}
+        </section>
+
+        <!-- Recent Section -->
+        <section>
+          <div class="mb-6 flex items-center justify-between">
+            <div>
+              <h2 class="text-2xl font-bold text-white">Recently Played</h2>
+              <p class="text-sm text-gray-400">Latest tracks from today</p>
+            </div>
+            <button
+              onclick={() => activeTab = 'recent'}
+              class="text-sm font-medium text-[#1db954] hover:text-[#1ed760] hover:underline"
+            >
+              View all
+            </button>
           </div>
+
+          {#if allHistory.length > 0}
+            <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
+              {#each allHistory.slice(0, 10) as item, index}
+                <HistoryCard 
+                  {item} 
+                  {index} 
+                  currentPage={1} 
+                  itemsPerPage={10} 
+                  viewMode={viewMode} 
+                />
+              {/each}
+            </div>
+          {:else}
+            <EmptyState />
+          {/if}
+        </section>
+      </div>
+
+    {:else if activeTab === 'recent'}
+      <div in:fade={{ duration: 300 }} class="space-y-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-white">Today's History</h2>
+          <div class="text-sm text-gray-400">{allHistory.length} tracks</div>
         </div>
 
-        <div
-          class="mt-4 hidden items-center gap-2 rounded-full bg-white/5 p-1 text-xs font-medium sm:mt-0 sm:flex sm:text-sm"
-        >
-          {#each TABS as tab (tab.id)}
-            <button
-              onclick={() => (activeTab = tab.id)}
-              class="rounded-full px-3 py-1.5 transition-colors {activeTab === tab.id
-                ? 'bg-white text-black'
-                : 'text-gray-200 hover:bg-white/10'}"
-            >
-              {tab.label}
-            </button>
-          {/each}
-        </div>
-      </div>
-    </header>
-    {#if showCompactHeader}
-      <div
-        class="sticky top-0 z-20 border-b border-white/10 bg-black/90 px-4 py-2 backdrop-blur-md sm:hidden"
-      >
-        <div class="flex items-center justify-between text-xs">
-          <div class="font-semibold">
-            {TAB_META[activeTab].compact}
-          </div>
-          <div class="flex gap-1">
-            {#each TABS as tab (tab.id)}
-              <button
-                onclick={() => (activeTab = tab.id)}
-                class="rounded-full px-2 py-1 {activeTab === tab.id
-                  ? 'bg-white text-black'
-                  : 'text-gray-200 hover:bg-white/10'}"
-              >
-                {tab.label}
-              </button>
+        {#if allHistory.length > 0}
+          <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
+            {#each allHistory as item, index}
+              <HistoryCard 
+                {item} 
+                {index} 
+                currentPage={1} 
+                itemsPerPage={allHistory.length} 
+                viewMode={viewMode} 
+              />
             {/each}
           </div>
-        </div>
+        {:else}
+          <div class="py-20 text-center">
+            <p class="text-gray-400">No tracks played today.</p>
+          </div>
+        {/if}
       </div>
-    {/if}
 
-    <!-- Main Content with better spacing -->
-    <div class="flex-1 overflow-y-auto overflow-x-hidden px-4 py-8 sm:px-6 lg:px-8">
-      {#if activeTab === 'home'}
-        <div class="mx-auto max-w-7xl space-y-10">
-          <!-- Now Playing Section -->
-          <section>
-            <div class="mb-6 flex items-center justify-between">
-              <div>
-                <h2 class="text-2xl font-bold text-white sm:text-3xl">Now Playing</h2>
-                <p class="mt-1 text-sm text-gray-400">See what your friends are listening to</p>
-              </div>
-              {#if nowPlaying.length > 0}
-                <div class="rounded-full border border-[#1db954]/30 bg-[#1db954]/20 px-4 py-2">
-                  <span class="text-sm font-medium text-[#1db954]">{nowPlaying.length} active</span>
-                </div>
-              {/if}
-            </div>
+    {:else if activeTab === 'history'}
+      <div in:fade={{ duration: 300 }} class="space-y-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-white">Full History</h2>
+          <div class="text-sm text-gray-400">{filteredCombinedHistory.length} tracks</div>
+        </div>
 
-            {#if nowPlaying.length === 0}
-              <div
-                class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-12"
-              >
-                <EmptyState />
-              </div>
-            {:else}
-              <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {#each nowPlaying as buddy, index (buddy.user?.uri ?? index)}
-                  <NowPlayingCard {buddy} {index} />
-                {/each}
-              </div>
-            {/if}
-          </section>
-
-          <!-- Recent 10 Plays -->
-          <section>
-            <div class="mb-6 flex items-center justify-between">
-              <div>
-                <h2 class="text-2xl font-bold text-white sm:text-3xl">Recent Plays</h2>
-                <p class="mt-1 text-sm text-gray-400">Your latest tracks</p>
-              </div>
+        {#if isLoadingHistorical && filteredCombinedHistory.length === 0}
+          <div class="flex flex-col items-center justify-center py-20 space-y-4">
+            <div class="h-10 w-10 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"></div>
+            <p class="text-gray-400">Loading full history...</p>
+          </div>
+        {:else if filteredCombinedHistory.length > 0}
+          <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
+            {#each paginatedHistory as item, index}
+              <HistoryCard 
+                {item} 
+                {index} 
+                {currentPage} 
+                itemsPerPage={ITEMS_PER_PAGE} 
+                viewMode={viewMode} 
+              />
+            {/each}
+          </div>
+          
+          <!-- Pagination -->
+          {#if totalPages > 1}
+            <div class="mt-12 flex items-center justify-center gap-2">
               <button
-                onclick={() => (activeTab = 'recent')}
-                class="group flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-gray-400 transition-all hover:border-white/20 hover:bg-white/10 hover:text-white"
+                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
+                disabled={currentPage === 1}
+                onclick={() => goToPage(1)}
               >
-                <span>Show all</span>
-                <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ChevronsLeft class="h-5 w-5" />
+              </button>
+              
+              <button
+                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
+                disabled={currentPage === 1}
+                onclick={() => goToPage(currentPage - 1)}
+              >
+                <ChevronLeft class="h-5 w-5" />
+              </button>
+
+              <span class="px-4 text-sm font-medium text-gray-400">
+                Page <span class="text-white">{currentPage}</span> of {totalPages}
+              </span>
+
+              <button
+                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
+                disabled={currentPage === totalPages}
+                onclick={() => goToPage(currentPage + 1)}
+              >
+                <ChevronRight class="h-5 w-5" />
+              </button>
+              
+              <button
+                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
+                disabled={currentPage === totalPages}
+                onclick={() => goToPage(totalPages)}
+              >
+                <ChevronsRight class="h-5 w-5" />
               </button>
             </div>
+          {/if}
+        {:else}
+           <div class="py-20 text-center">
+            <p class="text-gray-400">No history found.</p>
+          </div>
+        {/if}
+      </div>
+    {/if}
+  </main>
 
-            {#if allHistory.length > 0}
-              <div
-                class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
-              >
-                {#each allHistory.slice(0, 12) as item, index (item.uri + ':' + item.timestamp)}
-                  <HistoryCard {item} {index} currentPage={1} itemsPerPage={12} viewMode="grid" />
-                {/each}
-              </div>
-            {:else}
-              <div
-                class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-16 text-center"
-              >
-                <div class="mb-4 text-6xl">🎵</div>
-                <p class="mb-2 text-lg font-medium text-gray-300">No recent plays</p>
-                <p class="text-sm text-gray-500">Start listening to see your history</p>
-              </div>
-            {/if}
-          </section>
-        </div>
-      {:else if activeTab === 'recent'}
-        <div class="space-y-8">
-          <!-- All Recent Plays (Today from API) -->
-          <section>
-            <div class="mb-4 flex items-center justify-between">
-              <h2 class="text-2xl font-bold">Today's Plays</h2>
-              <p class="text-sm text-gray-400">{allHistory.length} tracks</p>
-            </div>
-
-            {#if allHistory.length > 0}
-              <div
-                class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
-              >
-                {#each allHistory as item, index (item.uri + ':' + item.timestamp)}
-                  <HistoryCard
-                    {item}
-                    {index}
-                    currentPage={1}
-                    itemsPerPage={allHistory.length}
-                    viewMode="grid"
-                  />
-                {/each}
-              </div>
-            {:else}
-              <div class="py-16 text-center">
-                <div class="mb-4 text-6xl">🎵</div>
-                <p class="mb-2 text-lg text-gray-400">No plays today</p>
-                <p class="text-sm text-gray-500">Start listening to see your history</p>
-              </div>
-            {/if}
-          </section>
-        </div>
-      {:else if activeTab === 'history'}
-        <div class="space-y-8">
-          <!-- All History (Recent + Archive) -->
-          <section>
-            <div class="mb-4 flex items-center justify-between">
-              <h2 class="text-2xl font-bold">All History</h2>
-              <p class="text-sm text-gray-400">{filteredCombinedHistory.length} tracks</p>
-            </div>
-
-            {#if isLoadingHistorical}
-              <div class="flex items-center justify-center py-12">
-                <div class="text-center">
-                  <div
-                    class="mx-auto mb-4 h-12 w-12 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"
-                  ></div>
-                  <p class="text-sm text-gray-400">Loading archive history...</p>
-                  {#if loadingProgress.total > 0}
-                    <p class="mt-2 text-xs text-gray-500">
-                      Batch {loadingProgress.loaded} of {loadingProgress.total}
-                    </p>
-                  {/if}
-                </div>
-              </div>
-            {:else if filteredCombinedHistory.length > 0}
-              <div
-                class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
-              >
-                {#each paginatedHistory as item, index (item.uri + ':' + item.timestamp)}
-                  <HistoryCard
-                    {item}
-                    {index}
-                    {currentPage}
-                    itemsPerPage={ITEMS_PER_PAGE}
-                    viewMode="grid"
-                  />
-                {/each}
-              </div>
-            {:else}
-              <div class="py-16 text-center">
-                <div class="mb-4 text-6xl">🔍</div>
-                <p class="mb-2 text-lg text-gray-400">No history found</p>
-                <p class="text-sm text-gray-500">Start listening to build your history</p>
-              </div>
-            {/if}
-
-            <!-- Pagination -->
-            {#if totalPages > 1}
-              <div class="mt-6 flex items-center justify-center gap-2">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  disabled={currentPage === 1}
-                  onclick={() => goToPage(1)}
-                  class="h-10 w-10"
-                >
-                  <ChevronsLeft class="h-4 w-4" />
-                </Button>
-
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  disabled={currentPage === 1}
-                  onclick={() => goToPage(currentPage - 1)}
-                  class="h-10 w-10"
-                >
-                  <ChevronLeft class="h-4 w-4" />
-                </Button>
-
-                <div class="rounded-lg bg-white/10 px-4 py-2">
-                  <span class="text-sm font-medium">{currentPage}</span>
-                  <span class="mx-1.5 text-xs text-gray-500">/</span>
-                  <span class="text-sm font-medium text-gray-400">{totalPages}</span>
-                </div>
-
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  disabled={currentPage === totalPages}
-                  onclick={() => goToPage(currentPage + 1)}
-                  class="h-10 w-10"
-                >
-                  <ChevronRight class="h-4 w-4" />
-                </Button>
-
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  disabled={currentPage === totalPages}
-                  onclick={() => goToPage(totalPages)}
-                  class="h-10 w-10"
-                >
-                  <ChevronsRight class="h-4 w-4" />
-                </Button>
-              </div>
-            {/if}
-          </section>
-        </div>
-      {/if}
-    </div>
-  </div>
-  <!-- Bottom Navigation - Mobile Only -->
-  <nav
-    class="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-black/90 backdrop-blur-md sm:hidden"
-  >
-    <div class="flex items-center justify-around px-4 py-2 text-xs">
-      {#each TABS as tab (tab.id)}
+  <!-- Mobile Navigation -->
+  <nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-black/95 backdrop-blur-xl sm:hidden pb-safe">
+    <div class="flex items-center justify-around px-2 py-3">
+      {#each TABS as tab}
         <button
           onclick={() => (activeTab = tab.id)}
-          class="flex flex-col items-center gap-1 {activeTab === tab.id
-            ? 'text-white'
-            : 'text-gray-400'}"
+          class="flex flex-col items-center gap-1 rounded-lg px-4 py-1 transition-colors {activeTab === tab.id ? 'text-white' : 'text-gray-500'}"
         >
-          <span
-            class="h-1 w-6 rounded-full {activeTab === tab.id ? 'bg-[#1db954]' : 'bg-transparent'}"
-          ></span>
-          <span>{tab.label}</span>
+          <div class="relative">
+            {#if activeTab === tab.id}
+              <span class="absolute -inset-2 rounded-full bg-white/5 blur-sm" transition:fade></span>
+            {/if}
+            <span class="relative text-sm font-medium">{tab.label}</span>
+          </div>
+          {#if activeTab === tab.id}
+            <div class="h-1 w-1 rounded-full bg-[#1db954]" transition:fade></div>
+          {/if}
         </button>
       {/each}
     </div>
   </nav>
 </div>
+
+<style>
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+</style>

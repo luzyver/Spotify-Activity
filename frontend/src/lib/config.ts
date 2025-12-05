@@ -6,7 +6,8 @@ export const TRACKED_USERS: Record<string, { name: string }> = {
 
 export const ITEMS_PER_PAGE = 12;
 
-export const WORKER_BASE = 'https://worker-spotify.luzyver.dev';
+// Use relative path in dev to use Vite proxy, full URL in prod
+export const WORKER_BASE = import.meta.env.DEV ? '' : 'https://worker-spotify.luzyver.dev';
 
 export const API_ENDPOINTS = {
   LIVE: `${WORKER_BASE}/api/live`,
