@@ -1,8 +1,8 @@
 <script lang="ts">
   import type { NowPlayingBuddy } from '$lib/types';
   import { getUserName, timeAgo, spotifyUrl } from '$lib/utils';
-  import { fly } from 'svelte/transition';
-  import { Play } from 'lucide-svelte';
+  import { fly, fade } from 'svelte/transition';
+  import { Play, Music, User, Clock } from 'lucide-svelte';
 
   interface Props {
     buddy: NowPlayingBuddy;
@@ -19,107 +19,111 @@
 </script>
 
 <div
-  class="card-interactive group relative overflow-hidden p-4"
-  in:fly={{ y: 20, duration: 400, delay: index * 80 }}
+  class="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#121212] transition-all duration-500 hover:scale-[1.02] hover:border-white/20 hover:shadow-2xl hover:shadow-[#1db954]/10"
+  in:fly={{ y: 20, duration: 500, delay: index * 100 }}
 >
-  <!-- Animated gradient overlay -->
-  <div
-    class="absolute inset-0 bg-gradient-to-br from-[#1db954]/0 via-[#1db954]/5 to-[#1db954]/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-  ></div>
+  <!-- Dynamic Background Blur -->
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img
+      src={buddy.track?.imageUrl}
+      alt=""
+      class="h-full w-full scale-150 object-cover opacity-20 blur-3xl transition-transform duration-700 group-hover:scale-125"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent"></div>
+  </div>
 
-  <!-- Glow effect -->
-  <div
-    class="absolute -inset-1 rounded-xl bg-gradient-to-r from-[#1db954]/20 to-[#1ed760]/20 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"
-  ></div>
-
-  <!-- Album Art -->
-  <div class="group/album relative z-10 mb-4">
-    <a
-      href={spotifyUrl(buddy.track?.uri)}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="relative block"
-    >
-      <div
-        class="relative overflow-hidden rounded-xl shadow-2xl transition-shadow duration-300 group-hover:shadow-[#1db954]/30"
-      >
+  <div class="relative z-10 flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:p-6">
+    <!-- Album Art -->
+    <div class="relative shrink-0">
+      <div class="relative aspect-square w-full overflow-hidden rounded-xl shadow-2xl shadow-black/50 sm:w-32">
         <img
           src={buddy.track?.imageUrl || ''}
-          class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           alt={buddy.track?.name || 'Album art'}
           loading="lazy"
         />
-
-        <!-- Overlay on Hover -->
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover/album:opacity-100"
-        ></div>
-
-        <!-- Play Button -->
-        <div
-          class="absolute bottom-3 right-3 flex h-12 w-12 translate-y-2 items-center justify-center rounded-full bg-gradient-to-br from-[#1db954] to-[#1ed760] opacity-0 shadow-xl shadow-[#1db954]/50 transition-all duration-300 hover:scale-110 active:scale-95 group-hover/album:translate-y-0 group-hover/album:opacity-100"
-        >
-          <Play class="h-5 w-5 translate-x-0.5 fill-black text-black" />
-        </div>
-      </div>
-
-      <!-- Live Badge with pulse animation -->
-      <div
-        class="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#1db954] to-[#1ed760] px-3 py-1.5 shadow-lg shadow-[#1db954]/50"
-      >
-        <div class="relative">
-          <div class="absolute h-2 w-2 animate-ping rounded-full bg-white"></div>
-          <div class="h-2 w-2 animate-pulse rounded-full bg-white"></div>
-        </div>
-        <span class="text-[10px] font-bold uppercase tracking-wide text-white">Live</span>
-      </div>
-    </a>
-  </div>
-
-  <!-- Track Info -->
-  <div class="relative z-10 space-y-2">
-    <a href={spotifyUrl(buddy.track?.uri)} target="_blank" rel="noopener noreferrer" class="block">
-      <h3
-        class="line-clamp-1 text-base font-bold text-white transition-colors hover:text-[#1db954]"
-      >
-        {buddy.track?.name || ''}
-      </h3>
-    </a>
-
-    <div class="space-y-1">
-      <a
-        href={spotifyUrl(buddy.track?.artist?.uri)}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="block truncate text-sm text-gray-400 transition-colors hover:text-white"
-      >
-        {buddy.track?.artist?.name || ''}
-      </a>
-
-      {#if buddy.track?.album?.name}
+        
+        <!-- Play Overlay -->
         <a
-          href={spotifyUrl(buddy.track?.album?.uri)}
+          href={spotifyUrl(buddy.track?.uri)}
           target="_blank"
           rel="noopener noreferrer"
-          class="block truncate text-xs text-gray-500 transition-colors hover:text-gray-300"
+          class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         >
-          {buddy.track?.album?.name}
+          <div class="rounded-full bg-[#1db954] p-3 text-black shadow-lg shadow-[#1db954]/20 transition-transform duration-300 hover:scale-110">
+            <Play class="h-6 w-6 fill-current pl-1" />
+          </div>
         </a>
-      {/if}
+      </div>
+      
+      <!-- Live Badge -->
+      <div class="absolute -right-2 -top-2 flex items-center gap-1.5 rounded-full bg-[#1db954] px-2.5 py-1 shadow-lg shadow-black/20">
+        <div class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-white"></span>
+        </div>
+        <span class="text-[10px] font-bold uppercase tracking-wider text-black">Now</span>
+      </div>
     </div>
 
-    <!-- User Info -->
-    <div class="flex items-center gap-2 pt-2">
-      <img
-        src={avatarUrl}
-        class="h-6 w-6 rounded-full ring-2 ring-white/10 transition-all group-hover:ring-[#1db954]/30"
-        alt={userName}
-        loading="lazy"
-        onerror={(e) => ((e.currentTarget as HTMLImageElement).src = avatarUrl)}
-      />
-      <span class="truncate text-xs text-gray-400">{userName}</span>
-      <span class="text-xs text-gray-700">•</span>
-      <span class="text-xs text-gray-500">{timeAgo(buddy.timestamp)}</span>
+    <!-- Content -->
+    <div class="flex min-w-0 flex-1 flex-col justify-center space-y-3">
+      <!-- Track Info -->
+      <div>
+        <a 
+          href={spotifyUrl(buddy.track?.uri)} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="group/link block"
+        >
+          <h3 class="truncate text-xl font-bold text-white transition-colors group-hover/link:text-[#1db954] sm:text-2xl">
+            {buddy.track?.name || 'Unknown Track'}
+          </h3>
+        </a>
+        
+        <div class="mt-1 flex items-center gap-2 text-sm text-gray-300 sm:text-base">
+          <a 
+            href={spotifyUrl(buddy.track?.artist?.uri)}
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="hover:text-white hover:underline"
+          >
+            {buddy.track?.artist?.name || 'Unknown Artist'}
+          </a>
+          {#if buddy.track?.album?.name}
+            <span class="text-gray-600">•</span>
+            <a 
+              href={spotifyUrl(buddy.track?.album?.uri)}
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="truncate text-gray-400 hover:text-white hover:underline"
+            >
+              {buddy.track?.album?.name}
+            </a>
+          {/if}
+        </div>
+      </div>
+
+      <!-- User Context -->
+      <div class="flex items-center justify-between gap-4 rounded-lg bg-white/5 p-3 backdrop-blur-sm sm:justify-start sm:pr-6">
+        <div class="flex items-center gap-3">
+          <img
+            src={avatarUrl}
+            class="h-8 w-8 rounded-full ring-2 ring-white/10"
+            alt={userName}
+            loading="lazy"
+          />
+          <div class="flex flex-col">
+            <span class="text-xs font-medium text-gray-400">Listening now</span>
+            <span class="text-sm font-semibold text-white">{userName}</span>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-1.5 text-xs font-medium text-[#1db954]">
+          <Clock class="h-3.5 w-3.5" />
+          <span>{timeAgo(buddy.timestamp)}</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
