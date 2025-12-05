@@ -57,7 +57,7 @@ export async function handleClearHistory(env) {
 		const lastClearData = { lastClearTimestamp: safeClearTimestamp };
 
 		// Commit changes (archive + clear + update last-clear)
-		const commitMsg = `🗑️ [${dateTag}] Clear history (daily reset) [skip ci]`;
+		const commitMsg = `🗑️ [${dateTag}] Clear history (daily reset)`;
 		const filesToUpdate = [
 			{ path: 'history.json', content: clearedHistory },
 			{ path: 'last-clear.json', content: lastClearData }
