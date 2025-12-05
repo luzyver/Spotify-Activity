@@ -78,7 +78,12 @@ readme += '\n## 📅 Daily Breakdown\n\n';
 readme += '| Date | Plays | Top Artist | Top Track |\n';
 readme += '|------|-------|------------|-----------|';
 
-const sortedFiles = files.sort((a, b) => a.date.localeCompare(b.date));
+// Sort by actual date (DDMMYYYY format -> convert to YYYYMMDD for proper sorting)
+const sortedFiles = files.sort((a, b) => {
+  const dateA = a.date.substring(4, 8) + a.date.substring(2, 4) + a.date.substring(0, 2);
+  const dateB = b.date.substring(4, 8) + b.date.substring(2, 4) + b.date.substring(0, 2);
+  return dateA.localeCompare(dateB);
+});
 sortedFiles.forEach(file => {
   const dateObj = new Date(
     parseInt(file.date.substring(4, 8)),
