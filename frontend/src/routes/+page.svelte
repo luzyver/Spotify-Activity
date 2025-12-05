@@ -142,8 +142,8 @@
         {/each}
       </nav>
 
-      <!-- View Toggle (Desktop) -->
-      <div class="hidden items-center gap-2 sm:flex">
+      <!-- View Toggle -->
+      <div class="flex items-center gap-2">
         <button 
           onclick={() => viewMode = 'grid'}
           class="p-2 rounded-lg transition-colors {viewMode === 'grid' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}"

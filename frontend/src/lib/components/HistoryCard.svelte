@@ -66,14 +66,9 @@
       </div>
     </div>
 
-    <!-- Meta (Hidden on very small screens) -->
-    <div class="hidden shrink-0 flex-col items-end gap-0.5 text-xs text-gray-500 sm:flex">
-      <span class="font-medium text-gray-400">{userName}</span>
-      <span>{timeAgo(item.timestamp)}</span>
-    </div>
-    
-    <!-- Mobile Meta (Icon only) -->
-    <div class="flex shrink-0 flex-col items-end sm:hidden text-xs text-gray-500">
+    <!-- Meta -->
+    <div class="flex shrink-0 flex-col items-end gap-0.5 text-xs text-gray-500">
+      <span class="font-medium text-gray-400 max-w-[80px] truncate sm:max-w-none">{userName}</span>
       <span>{timeAgo(item.timestamp)}</span>
     </div>
   </div>
