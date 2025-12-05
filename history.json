@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "timestamp": 1764907173128,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Nothing's Gonna Hurt You Baby",
+    "artist": "Cigarettes After Sex",
+    "uri": "spotify:track:3W7KHojYGgYaoX9ogKO9hU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f20d15ff288e94492f7097eb"
+  },
+  {
+    "timestamp": 1764906902936,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "I Love You So",
+    "artist": "The Walters",
+    "uri": "spotify:track:4SqWKzw0CbA05TGszDgMlc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739214ff0109a0e062f8a6cf0f"
+  },
+  {
+    "timestamp": 1764906723059,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "ocean eyes",
+    "artist": "Billie Eilish",
+    "uri": "spotify:track:2uIX8YMNjGMD7441kqyyNU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732cafcdd985630d72594ecc49"
+  }
+]
