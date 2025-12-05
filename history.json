@@ -1,5 +1,122 @@
 [
   {
+    "timestamp": 1764954027757,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Asing",
+    "artist": "Juicy Luicy",
+    "uri": "spotify:track:7t8R5hCOyOKOhEKnbziUgg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fadca79809c06f6afe7de0d9"
+  },
+  {
+    "timestamp": 1764953818159,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Setengah Mati - From \"Bila Esok Ibu Tiada\"",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7tCxRQhDcXehM90nj4Nsit",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daefd2a8d2c9c32cd4f38af"
+  },
+  {
+    "timestamp": 1764953578081,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mengapa",
+    "artist": "Rony Parulian",
+    "uri": "spotify:track:4CD3TJYkPcbtsMX3hNqiFE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27357124131195ac118b99d2042"
+  },
+  {
+    "timestamp": 1764953337847,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ku Ingin Pisah",
+    "artist": "Nabila Taqiyyah",
+    "uri": "spotify:track:5xgZB5HODUVEanizzlOjEo",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732cc7eb853887837e0a4b726e"
+  },
+  {
+    "timestamp": 1764953098121,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Amin Paling Serius",
+    "artist": "Sal Priadi, Nadin Amizah",
+    "uri": "spotify:track:1q1dsfckKMgjfr8DfdeKfs",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27383b0105f3ea493fcf0da7443"
+  },
+  {
+    "timestamp": 1764952799055,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ruang Baru (From \"My Annoying Brother\")",
+    "artist": "Barsena Bestandhi",
+    "uri": "spotify:track:3XHiujhh7sB8tTCwtI6YEI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fc5f1abb8ec397cd1a9a32fb"
+  },
+  {
+    "timestamp": 1764952559129,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Malaikat",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:5sxgXUBR2jnWUG3otH9YE6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1764952321240,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Di Akhir Perang",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:1tqPw8Hf88h24Bpt2SzuYE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5"
+  },
+  {
+    "timestamp": 1764951808227,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sepenuh Hati",
+    "artist": "Rony Parulian, Andi Rianto",
+    "uri": "spotify:track:0gdzb5MYEB2GgDngtyZ5Z0",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736828001562109823bef0b7d0"
+  },
+  {
+    "timestamp": 1764951571336,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terlalu Cinta",
+    "artist": "Yovie Widianto, Lyodra",
+    "uri": "spotify:track:3zmN19fLAcKeDaajrIdWLB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fed17c86fd4e4f7f3e486e18"
+  },
+  {
+    "timestamp": 1764951297990,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Berakhir di Aku - Original Soundtrack From \"Home Sweet Loan\"",
+    "artist": "Idgitaf",
+    "uri": "spotify:track:3KcfLN50nMGR4uH1T0QVxL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734ae1c2813cfa6d10c73f4661"
+  },
+  {
+    "timestamp": 1764951057894,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Harus Terpisah",
+    "artist": "Eltasya",
+    "uri": "spotify:track:4h5HFfqHYTtZRIIecbFqj6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27359253a0f01981dc1afcd3be2"
+  },
+  {
+    "timestamp": 1764950817998,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terima Kasih Sudah Bertahan",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:6A1VXwBrL7hpGXScZkGo8D",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
     "timestamp": 1764940855019,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
