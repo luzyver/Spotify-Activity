@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,669 |
-| **Unique Tracks** | 608 |
+| **Total Plays** | 1,762 |
+| **Unique Tracks** | 609 |
 | **Unique Artists** | 318 |
-| **Period** | November 12, 2025 - December 4, 2025 |
-| **Archive Files** | 23 |
+| **Period** | November 12, 2025 - December 6, 2025 |
+| **Archive Files** | 24 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 124 |
-| 2 | Ghea Indrawari | 74 |
-| 3 | Nadin Amizah | 43 |
-| 4 | Idgitaf | 40 |
-| 5 | Hindia | 39 |
-| 6 | Cigarettes After Sex | 36 |
-| 7 | Tulus | 28 |
+| 1 | Bernadya | 126 |
+| 2 | Ghea Indrawari | 77 |
+| 3 | Nadin Amizah | 44 |
+| 4 | Idgitaf | 44 |
+| 5 | Hindia | 43 |
+| 6 | Cigarettes After Sex | 37 |
+| 7 | Tulus | 29 |
 | 8 | Sal Priadi | 26 |
 | 9 | Pamungkas | 25 |
-| 10 | Mitski | 21 |
+| 10 | Billie Eilish | 24 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|-------|-------|
 | 1 | My Love Mine All Mine - Mitski | 13 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 12 |
-| 3 | Berlari - Bernadya | 12 |
-| 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 11 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 13 |
+| 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 12 |
+| 4 | Berlari - Bernadya | 12 |
 | 5 | Asumsi - Adrian Khalif, Bernadya | 11 |
-| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 10 |
-| 7 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 9 |
-| 9 | Alamak - Rizky Febian, Adrian Khalif | 9 |
-| 10 | Lama-Lama - Bernadya | 9 |
+| 6 | bergema sampai selamanya - Nadhif Basalamah | 10 |
+| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 10 |
+| 8 | Tak Ada Yang Sepertimu - Rony Parulian | 10 |
+| 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
+| 10 | Lihat Kebunku (Taman Bunga) - Aku Jeje | 9 |
 
 ## 📅 Daily Breakdown
 
@@ -69,6 +69,7 @@
 | Dec 2, 2025 | 30 | Tulus (5) | Team - Lorde (1) |
 | Dec 3, 2025 | 46 | Mitski (3) | Levitating - Dua Lipa (2) |
 | Dec 4, 2025 | 29 | Hindia (2) | semua lagu cinta terdengar sama - Hindia (1) |
+| Dec 5, 2025 | 93 | Rony Parulian (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
 
 ---
 
