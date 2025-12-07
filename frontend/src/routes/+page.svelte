@@ -251,6 +251,9 @@
 
   let hasMoreRecent = $derived(displayedRecentCount < filteredRecentHistory.length);
   let hasMoreHistory = $derived(displayedHistoryCount < filteredCombinedHistory.length);
+
+  // Dynamic theme based on Now Playing album art
+  let themeImageUrl = $derived(nowPlaying.length > 0 ? nowPlaying[0].track.imageUrl : null);
 </script>
 
 <svelte:head>
@@ -261,7 +264,27 @@
   <meta property="og:image" content={pageImage} />
 </svelte:head>
 
-<div class="min-h-screen pb-20 sm:pb-0">
+<div class="relative min-h-screen pb-20 sm:pb-0 overflow-hidden">
+  <!-- Dynamic Theme Background -->
+  {#key themeImageUrl}
+    {#if themeImageUrl}
+      <div 
+        class="fixed inset-0 transition-opacity duration-1000"
+        style="z-index: -1;"
+        in:fade={{ duration: 1000 }}
+      >
+        <img
+          src={themeImageUrl}
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover scale-150 blur-2xl opacity-50 saturate-150"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/90"></div>
+      </div>
+    {:else}
+      <div class="fixed inset-0 bg-black" style="z-index: -1;"></div>
+    {/if}
+  {/key}
+
   <!-- Header / Navigation -->
   <header class="sticky top-0 z-40 border-b border-white/5 bg-black/80 backdrop-blur-xl supports-[backdrop-filter]:bg-black/60">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
