@@ -4,10 +4,9 @@
   import HistoryCard from '$lib/components/HistoryCard.svelte';
   import Button from '$lib/components/Button.svelte';
 
-  import { ITEMS_PER_PAGE } from '$lib/config';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { onMount } from 'svelte';
-  import { ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, LayoutGrid, List, Music } from 'lucide-svelte';
+  import { LayoutGrid, List, Music, Search, X } from 'lucide-svelte';
   import { loadHistoryBatch } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
 
@@ -16,12 +15,12 @@
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
   let allHistory = $state<HistoryItem[]>(data?.history ?? []);
   let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []);
-  let currentPage = $state(1);
   let activeTab = $state<'home' | 'recent' | 'history'>('home');
   let isLoadingHistorical = $state(false);
   let archiveLoaded = $state(false);
   let loadingProgress = $state({ loaded: 0, total: 0 });
   let viewMode = $state<'grid' | 'list'>('grid');
+  let searchQuery = $state('');
 
   // Dynamic meta tags
   let pageTitle = $derived.by(() => {
@@ -76,31 +75,36 @@
     }
   });
 
+  // Reset search when switching tabs
+  $effect(() => {
+    activeTab;
+    searchQuery = '';
+  });
+
   const TABS = [
     { id: 'home', label: 'Home' },
     { id: 'recent', label: 'Recent' },
     { id: 'history', label: 'History' },
   ] as const;
 
-  let filteredCombinedHistory = $derived(
-    [...combinedHistory].sort((a, b) => b.timestamp - a.timestamp)
-  );
-
-  $effect(() => {
-    filteredCombinedHistory;
-    currentPage = 1;
-  });
-
-  let totalPages = $derived(Math.ceil(filteredCombinedHistory.length / ITEMS_PER_PAGE));
-  let paginatedHistory = $derived(
-    filteredCombinedHistory.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
-  );
-
-  function goToPage(page: number) {
-    if (page < 1 || page > totalPages) return;
-    currentPage = page;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Filter function for search
+  function filterBySearch(items: HistoryItem[], query: string): HistoryItem[] {
+    if (!query.trim()) return items;
+    const lowerQuery = query.toLowerCase();
+    return items.filter(item => 
+      item.track.toLowerCase().includes(lowerQuery) ||
+      item.artist.toLowerCase().includes(lowerQuery) ||
+      item.user.toLowerCase().includes(lowerQuery)
+    );
   }
+
+  let filteredRecentHistory = $derived(
+    filterBySearch([...allHistory].sort((a, b) => b.timestamp - a.timestamp), searchQuery)
+  );
+
+  let filteredCombinedHistory = $derived(
+    filterBySearch([...combinedHistory].sort((a, b) => b.timestamp - a.timestamp), searchQuery)
+  );
 </script>
 
 <svelte:head>
@@ -224,98 +228,99 @@
 
     {:else if activeTab === 'recent'}
       <div in:fade={{ duration: 300 }} class="space-y-6">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h2 class="text-2xl font-bold text-white">Today's History</h2>
-          <div class="text-sm text-gray-400">{allHistory.length} tracks</div>
+          <div class="flex w-full flex-col gap-1 sm:w-auto">
+            <div class="relative w-full sm:w-64">
+              <Search class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500" />
+              <input
+                type="text"
+                placeholder="Search tracks, artists..."
+                bind:value={searchQuery}
+                class="w-full rounded-lg bg-white/5 border border-white/10 py-2 pl-10 pr-10 text-sm text-white placeholder-gray-500 focus:border-[#1db954] focus:outline-none focus:ring-1 focus:ring-[#1db954]"
+              />
+              {#if searchQuery}
+                <button
+                  onclick={() => searchQuery = ''}
+                  class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white"
+                >
+                  <X class="h-4 w-4" />
+                </button>
+              {/if}
+            </div>
+            <div class="text-sm text-gray-400 text-right">
+              {filteredRecentHistory.length} {searchQuery ? 'results' : 'tracks'}
+            </div>
+          </div>
         </div>
 
-        {#if allHistory.length > 0}
+        {#if filteredRecentHistory.length > 0}
           <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
-            {#each allHistory as item, index}
+            {#each filteredRecentHistory as item, index}
               <HistoryCard 
                 {item} 
                 {index} 
                 currentPage={1} 
-                itemsPerPage={allHistory.length} 
+                itemsPerPage={filteredRecentHistory.length} 
                 viewMode={viewMode} 
               />
             {/each}
           </div>
         {:else}
           <div class="py-20 text-center">
-            <p class="text-gray-400">No tracks played today.</p>
+            <p class="text-gray-400">{searchQuery ? 'No tracks found.' : 'No tracks played today.'}</p>
           </div>
         {/if}
       </div>
 
     {:else if activeTab === 'history'}
       <div in:fade={{ duration: 300 }} class="space-y-6">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h2 class="text-2xl font-bold text-white">Full History</h2>
-          <div class="text-sm text-gray-400">{filteredCombinedHistory.length} tracks</div>
+          <div class="flex w-full flex-col gap-1 sm:w-auto">
+            <div class="relative w-full sm:w-64">
+              <Search class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500" />
+              <input
+                type="text"
+                placeholder="Search tracks, artists..."
+                bind:value={searchQuery}
+                class="w-full rounded-lg bg-white/5 border border-white/10 py-2 pl-10 pr-10 text-sm text-white placeholder-gray-500 focus:border-[#1db954] focus:outline-none focus:ring-1 focus:ring-[#1db954]"
+              />
+              {#if searchQuery}
+                <button
+                  onclick={() => searchQuery = ''}
+                  class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white"
+                >
+                  <X class="h-4 w-4" />
+                </button>
+              {/if}
+            </div>
+            <div class="text-sm text-gray-400 text-right">
+              {filteredCombinedHistory.length} {searchQuery ? 'results' : 'tracks'}
+            </div>
+          </div>
         </div>
 
-        {#if isLoadingHistorical && filteredCombinedHistory.length === 0}
+        {#if isLoadingHistorical && combinedHistory.length === 0}
           <div class="flex flex-col items-center justify-center py-20 space-y-4">
             <div class="h-10 w-10 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"></div>
             <p class="text-gray-400">Loading full history...</p>
           </div>
         {:else if filteredCombinedHistory.length > 0}
           <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
-            {#each paginatedHistory as item, index}
+            {#each filteredCombinedHistory as item, index}
               <HistoryCard 
                 {item} 
                 {index} 
-                {currentPage} 
-                itemsPerPage={ITEMS_PER_PAGE} 
+                currentPage={1}
+                itemsPerPage={filteredCombinedHistory.length} 
                 viewMode={viewMode} 
               />
             {/each}
           </div>
-          
-          <!-- Pagination -->
-          {#if totalPages > 1}
-            <div class="mt-12 flex items-center justify-center gap-2">
-              <button
-                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
-                disabled={currentPage === 1}
-                onclick={() => goToPage(1)}
-              >
-                <ChevronsLeft class="h-5 w-5" />
-              </button>
-              
-              <button
-                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
-                disabled={currentPage === 1}
-                onclick={() => goToPage(currentPage - 1)}
-              >
-                <ChevronLeft class="h-5 w-5" />
-              </button>
-
-              <span class="px-4 text-sm font-medium text-gray-400">
-                Page <span class="text-white">{currentPage}</span> of {totalPages}
-              </span>
-
-              <button
-                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
-                disabled={currentPage === totalPages}
-                onclick={() => goToPage(currentPage + 1)}
-              >
-                <ChevronRight class="h-5 w-5" />
-              </button>
-              
-              <button
-                class="rounded-lg p-2 hover:bg-white/10 disabled:opacity-50 disabled:hover:bg-transparent"
-                disabled={currentPage === totalPages}
-                onclick={() => goToPage(totalPages)}
-              >
-                <ChevronsRight class="h-5 w-5" />
-              </button>
-            </div>
-          {/if}
         {:else}
-           <div class="py-20 text-center">
-            <p class="text-gray-400">No history found.</p>
+          <div class="py-20 text-center">
+            <p class="text-gray-400">{searchQuery ? 'No tracks found.' : 'No history found.'}</p>
           </div>
         {/if}
       </div>
