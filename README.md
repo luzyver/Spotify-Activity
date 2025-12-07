@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,762 |
-| **Unique Tracks** | 609 |
+| **Total Plays** | 1,820 |
+| **Unique Tracks** | 610 |
 | **Unique Artists** | 318 |
 | **Period** | November 12, 2025 - December 6, 2025 |
-| **Archive Files** | 24 |
+| **Archive Files** | 25 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 126 |
-| 2 | Ghea Indrawari | 77 |
-| 3 | Nadin Amizah | 44 |
-| 4 | Idgitaf | 44 |
-| 5 | Hindia | 43 |
+| 1 | Bernadya | 128 |
+| 2 | Ghea Indrawari | 81 |
+| 3 | Nadin Amizah | 48 |
+| 4 | Idgitaf | 46 |
+| 5 | Hindia | 45 |
 | 6 | Cigarettes After Sex | 37 |
 | 7 | Tulus | 29 |
-| 8 | Sal Priadi | 26 |
-| 9 | Pamungkas | 25 |
-| 10 | Billie Eilish | 24 |
+| 8 | Pamungkas | 27 |
+| 9 | Hivi! | 26 |
+| 10 | Sal Priadi | 26 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -38,9 +38,9 @@
 | 5 | Asumsi - Adrian Khalif, Bernadya | 11 |
 | 6 | bergema sampai selamanya - Nadhif Basalamah | 10 |
 | 7 | Sedia Aku Sebelum Hujan - Idgitaf | 10 |
-| 8 | Tak Ada Yang Sepertimu - Rony Parulian | 10 |
-| 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 10 |
-| 10 | Lihat Kebunku (Taman Bunga) - Aku Jeje | 9 |
+| 8 | Rumah Ke Rumah - Hindia | 10 |
+| 9 | Tak Ada Yang Sepertimu - Rony Parulian | 10 |
+| 10 | Lama-Lama - Bernadya | 10 |
 
 ## 📅 Daily Breakdown
 
@@ -70,6 +70,7 @@
 | Dec 3, 2025 | 46 | Mitski (3) | Levitating - Dua Lipa (2) |
 | Dec 4, 2025 | 29 | Hindia (2) | semua lagu cinta terdengar sama - Hindia (1) |
 | Dec 5, 2025 | 93 | Rony Parulian (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
+| Dec 6, 2025 | 58 | Hivi! (5) | keepyousafe - Yahya (2) |
 
 ---
 
