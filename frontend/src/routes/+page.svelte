@@ -5,14 +5,17 @@
   import Button from '$lib/components/Button.svelte';
 
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
+  import { API_ENDPOINTS } from '$lib/config';
 
-  import { LayoutGrid, List, Music, Search, X, Loader2 } from 'lucide-svelte';
+  import { LayoutGrid, List, Music, Search, X, Loader2, RefreshCw } from 'lucide-svelte';
   import { loadHistoryBatch } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
+  import { onDestroy } from 'svelte';
 
   let { data } = $props();
 
   const ITEMS_PER_LOAD = 50;
+  const REFRESH_INTERVAL = 30000; // 30 seconds
 
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
   let allHistory = $state<HistoryItem[]>(data?.history ?? []);
@@ -23,6 +26,85 @@
   let loadingProgress = $state({ loaded: 0, total: 0 });
   let viewMode = $state<'grid' | 'list'>('grid');
   let searchQuery = $state('');
+  
+  // Auto-refresh state
+  let isRefreshing = $state(false);
+  let lastRefresh = $state<Date>(new Date());
+  let refreshInterval: ReturnType<typeof setInterval> | null = null;
+  
+  // Toast notification state
+  let toast = $state<{ message: string; type: 'info' | 'success'; visible: boolean }>({
+    message: '',
+    type: 'info',
+    visible: false
+  });
+  let toastTimeout: ReturnType<typeof setTimeout> | null = null;
+
+  function showToast(message: string, type: 'info' | 'success' = 'info') {
+    if (toastTimeout) clearTimeout(toastTimeout);
+    toast = { message, type, visible: true };
+    toastTimeout = setTimeout(() => {
+      toast.visible = false;
+    }, 4000);
+  }
+
+  // Auto-refresh Now Playing
+  async function refreshNowPlaying() {
+    if (isRefreshing) return;
+    
+    const previousPlaying = nowPlaying.map(p => `${p.user.uri}:${p.track.uri}`);
+    
+    isRefreshing = true;
+    try {
+      const res = await fetch(API_ENDPOINTS.LIVE, { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        const newPlaying: NowPlayingBuddy[] = data?.friends ?? [];
+        
+        // Check for new listeners or track changes
+        for (const buddy of newPlaying) {
+          const key = `${buddy.user.uri}:${buddy.track.uri}`;
+          if (!previousPlaying.includes(key)) {
+            // New track detected
+            showToast(`🎵 ${buddy.user.name} is listening to ${buddy.track.name}`, 'success');
+            break; // Only show one toast at a time
+          }
+        }
+        
+        // Check if someone stopped listening
+        if (previousPlaying.length > 0 && newPlaying.length === 0) {
+          showToast('No one is listening right now', 'info');
+        }
+        
+        nowPlaying = newPlaying;
+        lastRefresh = new Date();
+      }
+    } catch (error) {
+      console.error('Failed to refresh now playing:', error);
+    } finally {
+      isRefreshing = false;
+    }
+  }
+
+  // Start auto-refresh when on home tab
+  $effect(() => {
+    if (activeTab === 'home') {
+      // Initial refresh after mount
+      refreshInterval = setInterval(refreshNowPlaying, REFRESH_INTERVAL);
+    } else {
+      if (refreshInterval) {
+        clearInterval(refreshInterval);
+        refreshInterval = null;
+      }
+    }
+  });
+
+  // Cleanup on destroy
+  onDestroy(() => {
+    if (refreshInterval) {
+      clearInterval(refreshInterval);
+    }
+  });
   
   // Infinite scroll state
   let displayedRecentCount = $state(ITEMS_PER_LOAD);
@@ -238,6 +320,14 @@
               <h2 class="text-3xl font-bold text-white tracking-tight">Now Playing</h2>
               <p class="mt-1 text-gray-400">Live activity from connected accounts</p>
             </div>
+            <button
+              onclick={refreshNowPlaying}
+              disabled={isRefreshing}
+              class="flex items-center gap-2 rounded-lg bg-white/5 px-3 py-1.5 text-sm text-gray-400 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
+            >
+              <RefreshCw class="h-4 w-4 {isRefreshing ? 'animate-spin' : ''}" />
+              <span class="hidden sm:inline">{isRefreshing ? 'Refreshing...' : 'Refresh'}</span>
+            </button>
           </div>
 
           {#if nowPlaying.length === 0}
@@ -439,6 +529,33 @@
     </div>
   </nav>
 </div>
+
+<!-- Toast Notification -->
+{#if toast.visible}
+  <div
+    class="fixed top-4 left-4 right-4 z-50 sm:left-1/2 sm:right-auto sm:-translate-x-1/2"
+    transition:fly={{ y: -20, duration: 300 }}
+  >
+    <div class="flex items-center gap-3 rounded-lg bg-zinc-900 border border-white/10 px-4 py-3 shadow-xl max-w-full sm:max-w-md">
+      {#if toast.type === 'success'}
+        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1db954]/20">
+          <Music class="h-4 w-4 text-[#1db954]" />
+        </div>
+      {:else}
+        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
+          <Music class="h-4 w-4 text-gray-400" />
+        </div>
+      {/if}
+      <span class="text-sm text-white flex-1 line-clamp-2">{toast.message}</span>
+      <button
+        onclick={() => toast.visible = false}
+        class="ml-2 shrink-0 text-gray-500 hover:text-white"
+      >
+        <X class="h-4 w-4" />
+      </button>
+    </div>
+  </div>
+{/if}
 
 <style>
   .pb-safe {
