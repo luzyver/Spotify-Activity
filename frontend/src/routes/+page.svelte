@@ -5,12 +5,14 @@
   import Button from '$lib/components/Button.svelte';
 
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
-  import { onMount } from 'svelte';
-  import { LayoutGrid, List, Music, Search, X } from 'lucide-svelte';
+
+  import { LayoutGrid, List, Music, Search, X, Loader2 } from 'lucide-svelte';
   import { loadHistoryBatch } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
 
   let { data } = $props();
+
+  const ITEMS_PER_LOAD = 50;
 
   let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
   let allHistory = $state<HistoryItem[]>(data?.history ?? []);
@@ -21,6 +23,12 @@
   let loadingProgress = $state({ loaded: 0, total: 0 });
   let viewMode = $state<'grid' | 'list'>('grid');
   let searchQuery = $state('');
+  
+  // Infinite scroll state
+  let displayedRecentCount = $state(ITEMS_PER_LOAD);
+  let displayedHistoryCount = $state(ITEMS_PER_LOAD);
+  let isLoadingMore = $state(false);
+  let scrollSentinel: HTMLDivElement;
 
   // Dynamic meta tags
   let pageTitle = $derived.by(() => {
@@ -75,10 +83,54 @@
     }
   });
 
-  // Reset search when switching tabs
+  // Reset search and displayed count when switching tabs
   $effect(() => {
     activeTab;
     searchQuery = '';
+    displayedRecentCount = ITEMS_PER_LOAD;
+    displayedHistoryCount = ITEMS_PER_LOAD;
+  });
+
+  // Reset displayed count when search changes
+  $effect(() => {
+    searchQuery;
+    displayedRecentCount = ITEMS_PER_LOAD;
+    displayedHistoryCount = ITEMS_PER_LOAD;
+  });
+
+  function loadMore() {
+    if (isLoadingMore) return;
+    
+    isLoadingMore = true;
+    
+    setTimeout(() => {
+      if (activeTab === 'recent') {
+        displayedRecentCount += ITEMS_PER_LOAD;
+      } else if (activeTab === 'history') {
+        displayedHistoryCount += ITEMS_PER_LOAD;
+      }
+      isLoadingMore = false;
+    }, 100);
+  }
+
+  // Setup Intersection Observer when sentinel element changes
+  $effect(() => {
+    if (!scrollSentinel) return;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !isLoadingMore) {
+          loadMore();
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    observer.observe(scrollSentinel);
+    
+    return () => {
+      observer.disconnect();
+    };
   });
 
   const TABS = [
@@ -105,6 +157,18 @@
   let filteredCombinedHistory = $derived(
     filterBySearch([...combinedHistory].sort((a, b) => b.timestamp - a.timestamp), searchQuery)
   );
+
+  // Displayed items (sliced for infinite scroll)
+  let displayedRecentItems = $derived(
+    filteredRecentHistory.slice(0, displayedRecentCount)
+  );
+
+  let displayedHistoryItems = $derived(
+    filteredCombinedHistory.slice(0, displayedHistoryCount)
+  );
+
+  let hasMoreRecent = $derived(displayedRecentCount < filteredRecentHistory.length);
+  let hasMoreHistory = $derived(displayedHistoryCount < filteredCombinedHistory.length);
 </script>
 
 <svelte:head>
@@ -254,18 +318,31 @@
           </div>
         </div>
 
-        {#if filteredRecentHistory.length > 0}
+        {#if displayedRecentItems.length > 0}
           <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
-            {#each filteredRecentHistory as item, index}
+            {#each displayedRecentItems as item, index}
               <HistoryCard 
                 {item} 
                 {index} 
                 currentPage={1} 
-                itemsPerPage={filteredRecentHistory.length} 
+                itemsPerPage={displayedRecentItems.length} 
                 viewMode={viewMode} 
               />
             {/each}
           </div>
+          
+          <!-- Infinite scroll sentinel -->
+          {#if hasMoreRecent}
+            <div bind:this={scrollSentinel} class="flex justify-center py-8">
+              {#if isLoadingMore}
+                <Loader2 class="h-6 w-6 animate-spin text-[#1db954]" />
+              {:else}
+                <button onclick={loadMore} class="text-sm text-gray-500 hover:text-white">
+                  Load more ({filteredRecentHistory.length - displayedRecentCount} remaining)
+                </button>
+              {/if}
+            </div>
+          {/if}
         {:else}
           <div class="py-20 text-center">
             <p class="text-gray-400">{searchQuery ? 'No tracks found.' : 'No tracks played today.'}</p>
@@ -306,18 +383,31 @@
             <div class="h-10 w-10 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"></div>
             <p class="text-gray-400">Loading full history...</p>
           </div>
-        {:else if filteredCombinedHistory.length > 0}
+        {:else if displayedHistoryItems.length > 0}
           <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
-            {#each filteredCombinedHistory as item, index}
+            {#each displayedHistoryItems as item, index}
               <HistoryCard 
                 {item} 
                 {index} 
                 currentPage={1}
-                itemsPerPage={filteredCombinedHistory.length} 
+                itemsPerPage={displayedHistoryItems.length} 
                 viewMode={viewMode} 
               />
             {/each}
           </div>
+          
+          <!-- Infinite scroll sentinel -->
+          {#if hasMoreHistory}
+            <div bind:this={scrollSentinel} class="flex justify-center py-8">
+              {#if isLoadingMore}
+                <Loader2 class="h-6 w-6 animate-spin text-[#1db954]" />
+              {:else}
+                <button onclick={loadMore} class="text-sm text-gray-500 hover:text-white">
+                  Load more ({filteredCombinedHistory.length - displayedHistoryCount} remaining)
+                </button>
+              {/if}
+            </div>
+          {/if}
         {:else}
           <div class="py-20 text-center">
             <p class="text-gray-400">{searchQuery ? 'No tracks found.' : 'No history found.'}</p>
