@@ -6,38 +6,38 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,820 |
-| **Unique Tracks** | 610 |
-| **Unique Artists** | 318 |
-| **Period** | November 12, 2025 - December 6, 2025 |
-| **Archive Files** | 25 |
+| **Total Plays** | 1,869 |
+| **Unique Tracks** | 615 |
+| **Unique Artists** | 319 |
+| **Period** | November 12, 2025 - December 7, 2025 |
+| **Archive Files** | 26 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 128 |
+| 1 | Bernadya | 132 |
 | 2 | Ghea Indrawari | 81 |
 | 3 | Nadin Amizah | 48 |
-| 4 | Idgitaf | 46 |
+| 4 | Idgitaf | 48 |
 | 5 | Hindia | 45 |
 | 6 | Cigarettes After Sex | 37 |
-| 7 | Tulus | 29 |
+| 7 | Tulus | 32 |
 | 8 | Pamungkas | 27 |
-| 9 | Hivi! | 26 |
-| 10 | Sal Priadi | 26 |
+| 9 | Juicy Luicy | 27 |
+| 10 | Sal Priadi | 27 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|-------|-------|
-| 1 | My Love Mine All Mine - Mitski | 13 |
+| 1 | My Love Mine All Mine - Mitski | 14 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 13 |
 | 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 12 |
-| 4 | Berlari - Bernadya | 12 |
-| 5 | Asumsi - Adrian Khalif, Bernadya | 11 |
-| 6 | bergema sampai selamanya - Nadhif Basalamah | 10 |
-| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 10 |
+| 4 | Asumsi - Adrian Khalif, Bernadya | 12 |
+| 5 | Berlari - Bernadya | 12 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 11 |
+| 7 | bergema sampai selamanya - Nadhif Basalamah | 10 |
 | 8 | Rumah Ke Rumah - Hindia | 10 |
 | 9 | Tak Ada Yang Sepertimu - Rony Parulian | 10 |
 | 10 | Lama-Lama - Bernadya | 10 |
@@ -71,6 +71,7 @@
 | Dec 4, 2025 | 29 | Hindia (2) | semua lagu cinta terdengar sama - Hindia (1) |
 | Dec 5, 2025 | 93 | Rony Parulian (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
 | Dec 6, 2025 | 58 | Hivi! (5) | keepyousafe - Yahya (2) |
+| Dec 7, 2025 | 49 | Juicy Luicy (4) | Cinta Sudah Lewat - Kahitna (2) |
 
 ---
 
