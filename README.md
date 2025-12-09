@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Plays** | 1,869 |
-| **Unique Tracks** | 615 |
-| **Unique Artists** | 319 |
-| **Period** | November 12, 2025 - December 7, 2025 |
-| **Archive Files** | 26 |
+| **Total Plays** | 1,977 |
+| **Unique Tracks** | 674 |
+| **Unique Artists** | 356 |
+| **Period** | November 12, 2025 - December 8, 2025 |
+| **Archive Files** | 27 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|--------|-------|
-| 1 | Bernadya | 132 |
+| 1 | Bernadya | 145 |
 | 2 | Ghea Indrawari | 81 |
-| 3 | Nadin Amizah | 48 |
-| 4 | Idgitaf | 48 |
-| 5 | Hindia | 45 |
-| 6 | Cigarettes After Sex | 37 |
-| 7 | Tulus | 32 |
-| 8 | Pamungkas | 27 |
-| 9 | Juicy Luicy | 27 |
-| 10 | Sal Priadi | 27 |
+| 3 | Nadin Amizah | 56 |
+| 4 | Idgitaf | 50 |
+| 5 | Hindia | 48 |
+| 6 | Cigarettes After Sex | 38 |
+| 7 | Tulus | 35 |
+| 8 | Sal Priadi | 30 |
+| 9 | Pamungkas | 29 |
+| 10 | Juicy Luicy | 27 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|-------|-------|
 | 1 | My Love Mine All Mine - Mitski | 14 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 13 |
-| 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 12 |
-| 4 | Asumsi - Adrian Khalif, Bernadya | 12 |
-| 5 | Berlari - Bernadya | 12 |
-| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 11 |
-| 7 | bergema sampai selamanya - Nadhif Basalamah | 10 |
-| 8 | Rumah Ke Rumah - Hindia | 10 |
-| 9 | Tak Ada Yang Sepertimu - Rony Parulian | 10 |
-| 10 | Lama-Lama - Bernadya | 10 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 14 |
+| 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
+| 4 | Asumsi - Adrian Khalif, Bernadya | 13 |
+| 5 | Berlari - Bernadya | 13 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 12 |
+| 7 | Lama-Lama - Bernadya | 11 |
+| 8 | Terlintas - Bernadya | 11 |
+| 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 11 |
+| 10 | bergema sampai selamanya - Nadhif Basalamah | 10 |
 
 ## 📅 Daily Breakdown
 
@@ -72,6 +72,7 @@
 | Dec 5, 2025 | 93 | Rony Parulian (4) | Tak Ada Yang Sepertimu - Rony Parulian (3) |
 | Dec 6, 2025 | 58 | Hivi! (5) | keepyousafe - Yahya (2) |
 | Dec 7, 2025 | 49 | Juicy Luicy (4) | Cinta Sudah Lewat - Kahitna (2) |
+| Dec 8, 2025 | 108 | Bernadya (13) | Untuk Perempuan Yang Sedang Dalam Pelukan (Live) - Payung Teduh (1) |
 
 ---
 
