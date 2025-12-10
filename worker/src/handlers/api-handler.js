@@ -1,140 +1,97 @@
 import * as github from '../services/github.js';
+import * as spotify from '../services/spotify.js';
+import * as processor from '../utils/data-processor.js';
+
+const NO_CACHE_HEADERS = {
+	'Cache-Control': 'no-cache, no-store, must-revalidate, max-age=0',
+	'Pragma': 'no-cache',
+	'Expires': '0',
+};
+
+const jsonResponse = (data, status = 200, headers = {}) =>
+	new Response(JSON.stringify(data), {
+		status,
+		headers: { 'Content-Type': 'application/json', ...NO_CACHE_HEADERS, ...headers },
+	});
+
+async function fetchUserLiveData(userId, tokenData, clientId, clientSecret) {
+	try {
+		const accessToken = await spotify.refreshAccessToken(tokenData.refreshToken, clientId, clientSecret);
+		const [userProfile, nowPlaying] = await Promise.all([
+			spotify.getUserProfile(accessToken),
+			spotify.getCurrentlyPlaying(accessToken),
+		]);
+
+		if (!userProfile || !nowPlaying) return null;
+		return processor.processCurrentlyPlaying(nowPlaying, userProfile);
+	} catch (error) {
+		console.error(`Live data error for ${userId}:`, error.message);
+		return null;
+	}
+}
 
 export async function handleLiveAPI(env, corsHeaders) {
 	try {
 		const tokens = JSON.parse(env.SPOTIFY_REFRESH_TOKENS);
-		const clientId = env.SPOTIFY_CLIENT_ID;
-		const clientSecret = env.SPOTIFY_CLIENT_SECRET;
+		const { SPOTIFY_CLIENT_ID: clientId, SPOTIFY_CLIENT_SECRET: clientSecret } = env;
 
-		const liveFriends = [];
+		// Fetch all users in parallel
+		const results = await Promise.all(
+			Object.entries(tokens).map(([userId, tokenData]) =>
+				fetchUserLiveData(userId, tokenData, clientId, clientSecret)
+			)
+		);
 
-		// Fetch currently playing for each user
-		for (const [userId, tokenData] of Object.entries(tokens)) {
-			try {
-				const spotify = await import('../services/spotify.js');
-				const processor = await import('../utils/data-processor.js');
-
-				// Get access token
-				const accessToken = await spotify.refreshAccessToken(
-					tokenData.refreshToken,
-					clientId,
-					clientSecret
-				);
-
-				// Get user profile
-				const userProfile = await spotify.getUserProfile(accessToken);
-				if (!userProfile) continue;
-
-				// Get currently playing
-				const nowPlaying = await spotify.getCurrentlyPlaying(accessToken);
-				if (nowPlaying) {
-					const liveEntry = processor.processCurrentlyPlaying(nowPlaying, userProfile);
-					if (liveEntry) {
-						liveFriends.push(liveEntry);
-					}
-				}
-			} catch (error) {
-				console.error(`Error fetching live data for ${userId}:`, error.message);
-			}
-		}
-
-		return new Response(JSON.stringify({ friends: liveFriends }), {
-			headers: {
-				'Content-Type': 'application/json',
-				'Cache-Control': 'no-cache, no-store, must-revalidate, max-age=0',
-				'Pragma': 'no-cache',
-				'Expires': '0',
-				...corsHeaders
-			}
-		});
+		const friends = results.filter(Boolean);
+		return jsonResponse({ friends }, 200, corsHeaders);
 	} catch (error) {
-		return new Response(JSON.stringify({ friends: [], error: error.message }), {
-			status: 500,
-			headers: {
-				'Content-Type': 'application/json',
-				...corsHeaders
-			}
-		});
+		return jsonResponse({ friends: [], error: error.message }, 500, corsHeaders);
+	}
+}
+
+async function fetchUserHistory(userId, tokenData, clientId, clientSecret, history, lastClearTimestamp) {
+	try {
+		const accessToken = await spotify.refreshAccessToken(tokenData.refreshToken, clientId, clientSecret);
+		const [userProfile, recentTracks] = await Promise.all([
+			spotify.getUserProfile(accessToken),
+			spotify.getRecentlyPlayed(accessToken, lastClearTimestamp),
+		]);
+
+		if (!userProfile) return;
+		processor.processRecentTracks(recentTracks, userProfile, history, lastClearTimestamp);
+	} catch (error) {
+		console.error(`History error for ${userId}:`, error.message);
 	}
 }
 
 export async function handleHistoryAPI(env, corsHeaders) {
 	try {
 		const tokens = JSON.parse(env.SPOTIFY_REFRESH_TOKENS);
-		const clientId = env.SPOTIFY_CLIENT_ID;
-		const clientSecret = env.SPOTIFY_CLIENT_SECRET;
+		const { SPOTIFY_CLIENT_ID: clientId, SPOTIFY_CLIENT_SECRET: clientSecret, GITHUB_REPO, GITHUB_TOKEN } = env;
 
-		// Load existing history from GitHub
-		const { content: rawHistory = [] } = await github.getGitHubFile(
-			env.GITHUB_REPO,
-			'history.json',
-			env.GITHUB_TOKEN
-		);
+		// Fetch GitHub data in parallel
+		const [historyResult, clearResult] = await Promise.all([
+			github.getGitHubFile(GITHUB_REPO, 'history.json', GITHUB_TOKEN),
+			github.getGitHubFile(GITHUB_REPO, 'last-clear.json', GITHUB_TOKEN),
+		]);
 
-		// Load last clear timestamp
-		const { content: lastClearData = { lastClearTimestamp: 0 } } = await github.getGitHubFile(
-			env.GITHUB_REPO,
-			'last-clear.json',
-			env.GITHUB_TOKEN
-		);
-		const lastClearTimestamp = lastClearData.lastClearTimestamp || 0;
+		const lastClearTimestamp = clearResult.content?.lastClearTimestamp || 0;
+		let history = processor.cleanHistory(historyResult.content || []);
 
-		const processor = await import('../utils/data-processor.js');
-		const spotify = await import('../services/spotify.js');
-
-		// Clean and filter history
-		let history = processor.cleanHistory(rawHistory);
 		if (lastClearTimestamp > 0) {
 			history = history.filter(entry => entry.timestamp > lastClearTimestamp);
 		}
 
-		// Fetch fresh data from Spotify for each user
-		for (const [userId, tokenData] of Object.entries(tokens)) {
-			try {
-				// Get access token
-				const accessToken = await spotify.refreshAccessToken(
-					tokenData.refreshToken,
-					clientId,
-					clientSecret
-				);
+		// Fetch all users in parallel
+		await Promise.all(
+			Object.entries(tokens).map(([userId, tokenData]) =>
+				fetchUserHistory(userId, tokenData, clientId, clientSecret, history, lastClearTimestamp)
+			)
+		);
 
-				// Get user profile
-				const userProfile = await spotify.getUserProfile(accessToken);
-				if (!userProfile) continue;
-
-				// Get recent tracks (after last clear)
-				const recentTracks = await spotify.getRecentlyPlayed(accessToken, lastClearTimestamp);
-				processor.processRecentTracks(
-					recentTracks,
-					userProfile,
-					history,
-					lastClearTimestamp
-				);
-			} catch (error) {
-				console.error(`Error fetching history for ${userId}:`, error.message);
-			}
-		}
-
-		// Remove duplicates and sort
-		const uniqueHistory = processor.removeDuplicates(history);
-		const sortedHistory = processor.sortHistory(uniqueHistory);
-
-		return new Response(JSON.stringify(sortedHistory), {
-			headers: {
-				'Content-Type': 'application/json',
-				'Cache-Control': 'no-cache, no-store, must-revalidate, max-age=0',
-				'Pragma': 'no-cache',
-				'Expires': '0',
-				...corsHeaders
-			}
-		});
+		const result = processor.sortHistory(processor.removeDuplicates(history));
+		return jsonResponse(result, 200, corsHeaders);
 	} catch (error) {
-		return new Response(JSON.stringify({ error: error.message }), {
-			status: 500,
-			headers: {
-				'Content-Type': 'application/json',
-				...corsHeaders
-			}
-		});
+		return jsonResponse({ error: error.message }, 500, corsHeaders);
 	}
 }
