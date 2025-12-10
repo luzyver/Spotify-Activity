@@ -87,14 +87,11 @@ export async function handleScheduled(env) {
 		}
 
 		// Commit changes
-		const { message: commitMsg, updatedCommits } = await getRandomCommitMessage(totalNewTracks, GITHUB_REPO, GITHUB_TOKEN);
+		const commitMsg = getRandomCommitMessage(totalNewTracks);
 
 		await github.updateMultipleGitHubFiles(
 			GITHUB_REPO,
-			[
-				{ path: 'history.json', content: sortedHistory },
-				{ path: 'last-commits.json', content: updatedCommits },
-			],
+			[{ path: 'history.json', content: sortedHistory }],
 			commitMsg,
 			GITHUB_TOKEN
 		);
