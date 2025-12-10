@@ -1,108 +1,86 @@
 import type { HistoryItem } from '$lib/types';
 
+// Cache for loaded history
+let historyCache: HistoryItem[] | null = null;
+let fileListCache: string[] | null = null;
+
 /**
- * PERFORMANCE FIX: Load history files incrementally (lazy loading)
- * Instead of loading all files at once, load them one by one or in batches
- * This prevents timeout and improves initial page load time
+ * Get list of available history files (cached)
+ */
+export function getAvailableHistoryFiles(): string[] {
+  if (fileListCache) return fileListCache;
+  
+  const historyModules = import.meta.glob('/static/history/*.json');
+  fileListCache = Object.keys(historyModules)
+    .map(path => path.split('/').pop()?.replace('.json', '') || '')
+    .filter(Boolean)
+    .sort();
+  
+  return fileListCache;
+}
+
+/**
+ * Load all history with optional progress callback
  */
 export async function loadAllHistory(
   onProgress?: (loaded: number, total: number) => void
 ): Promise<HistoryItem[]> {
-  try {
-    const historyFiles = import.meta.glob('/static/history/*.json');
-    const filePaths = Object.keys(historyFiles);
-    const total = filePaths.length;
-    const allHistory: HistoryItem[] = [];
+  if (historyCache) return historyCache;
+  
+  const files = getAvailableHistoryFiles();
+  const total = files.length;
+  const allHistory: HistoryItem[] = [];
 
-    // Load files one by one to avoid overwhelming the browser
-    for (let i = 0; i < filePaths.length; i++) {
-      const path = filePaths[i];
-      try {
-        const filename = path.split('/').pop()?.replace('.json', '') || '';
-        const url = `/history/${filename}.json`;
-
-        const response = await fetch(url);
-        if (response.ok) {
-          const data = await response.json();
-          if (Array.isArray(data)) {
-            allHistory.push(...(data as HistoryItem[]));
-          }
-        }
-      } catch {
-        // Skip failed files
+  for (let i = 0; i < files.length; i++) {
+    try {
+      const response = await fetch(`/history/${files[i]}.json`);
+      if (response.ok) {
+        const data = await response.json();
+        if (Array.isArray(data)) allHistory.push(...data);
       }
-
-      // Report progress
-      if (onProgress) {
-        onProgress(i + 1, total);
-      }
-    }
-
-    return allHistory;
-  } catch {
-    return [];
+    } catch { /* skip failed */ }
+    
+    onProgress?.(i + 1, total);
   }
+
+  historyCache = allHistory;
+  return allHistory;
 }
 
 /**
- * Load history files in batches for better performance
+ * Load history in batches for better performance
  */
 export async function loadHistoryBatch(
   batchSize: number = 5,
   onBatchComplete?: (items: HistoryItem[], batchIndex: number) => void
 ): Promise<HistoryItem[]> {
-  try {
-    const historyFiles = import.meta.glob('/static/history/*.json');
-    const filePaths = Object.keys(historyFiles);
-    const allHistory: HistoryItem[] = [];
+  if (historyCache) return historyCache;
+  
+  const files = getAvailableHistoryFiles();
+  const allHistory: HistoryItem[] = [];
 
-    // Process in batches
-    for (let i = 0; i < filePaths.length; i += batchSize) {
-      const batch = filePaths.slice(i, i + batchSize);
-      const batchResults = await Promise.all(
-        batch.map(async (path) => {
-          try {
-            const filename = path.split('/').pop()?.replace('.json', '') || '';
-            const url = `/history/${filename}.json`;
+  for (let i = 0; i < files.length; i += batchSize) {
+    const batch = files.slice(i, i + batchSize);
+    const results = await Promise.all(
+      batch.map(async (filename) => {
+        try {
+          const res = await fetch(`/history/${filename}.json`);
+          if (!res.ok) return [];
+          const data = await res.json();
+          return Array.isArray(data) ? data : [];
+        } catch {
+          return [];
+        }
+      })
+    );
 
-            const response = await fetch(url);
-            if (!response.ok) return [] as HistoryItem[];
-
-            const data = await response.json();
-            return Array.isArray(data) ? (data as HistoryItem[]) : [];
-          } catch {
-            return [] as HistoryItem[];
-          }
-        })
-      );
-
-      const batchItems = batchResults.flat();
-      allHistory.push(...batchItems);
-
-      if (onBatchComplete) {
-        onBatchComplete(batchItems, Math.floor(i / batchSize));
-      }
-    }
-
-    return allHistory;
-  } catch {
-    return [];
+    const batchItems = results.flat();
+    allHistory.push(...batchItems);
+    onBatchComplete?.(batchItems, Math.floor(i / batchSize));
   }
-}
 
-/**
- * Get list of available history files
- */
-export function getAvailableHistoryFiles(): string[] {
-  const historyModules = import.meta.glob('/static/history/*.json');
-
-  return Object.keys(historyModules)
-    .map((path) => {
-      // Extract filename without extension
-      const filename = path.split('/').pop()?.replace('.json', '') || '';
-      return filename;
-    })
-    .sort();
+  historyCache = allHistory;
+  return allHistory;
 }
 
 /**
@@ -110,14 +88,12 @@ export function getAvailableHistoryFiles(): string[] {
  */
 export async function loadHistoryFile(filename: string): Promise<HistoryItem[]> {
   try {
-    const response = await fetch(`/history/${filename}.json`);
-    if (response.ok) {
-      const data = await response.json();
+    const res = await fetch(`/history/${filename}.json`);
+    if (res.ok) {
+      const data = await res.json();
       return Array.isArray(data) ? data : [];
     }
-  } catch (error) {
-    // Failed to load file
-  }
+  } catch { /* ignore */ }
   return [];
 }
 
@@ -125,20 +101,15 @@ export async function loadHistoryFile(filename: string): Promise<HistoryItem[]> 
  * Parse date from filename (DDMMYYYY format)
  */
 export function parseFilenameDate(filename: string): Date | null {
-  try {
-    // Format: DDMMYYYY
-    const day = parseInt(filename.substring(0, 2), 10);
-    const month = parseInt(filename.substring(2, 4), 10) - 1; // Month is 0-indexed
-    const year = parseInt(filename.substring(4, 8), 10);
+  if (filename.length !== 8) return null;
+  
+  const day = parseInt(filename.substring(0, 2), 10);
+  const month = parseInt(filename.substring(2, 4), 10) - 1;
+  const year = parseInt(filename.substring(4, 8), 10);
 
-    const date = new Date(year, month, day);
-
-    // Validate date
-    if (date.getDate() === day && date.getMonth() === month && date.getFullYear() === year) {
-      return date;
-    }
-  } catch {
-    // Invalid format
+  const date = new Date(year, month, day);
+  if (date.getDate() === day && date.getMonth() === month && date.getFullYear() === year) {
+    return date;
   }
   return null;
 }
@@ -148,20 +119,15 @@ export function parseFilenameDate(filename: string): Date | null {
  */
 export function getHistoryDateRange(): { start: Date; end: Date } | null {
   const files = getAvailableHistoryFiles();
-
-  if (files.length === 0) return null;
+  if (!files.length) return null;
 
   const dates = files
     .map(parseFilenameDate)
-    .filter((date): date is Date => date !== null)
+    .filter((d): d is Date => d !== null)
     .sort((a, b) => a.getTime() - b.getTime());
 
-  if (dates.length === 0) return null;
-
-  return {
-    start: dates[0],
-    end: dates[dates.length - 1],
-  };
+  if (!dates.length) return null;
+  return { start: dates[0], end: dates[dates.length - 1] };
 }
 
 export interface DailyHistory {
@@ -176,43 +142,28 @@ export interface DailyHistory {
 export function groupHistoryByDate(history: HistoryItem[]): DailyHistory[] {
   const grouped = new Map<string, HistoryItem[]>();
 
-  history.forEach((item) => {
-    const date = new Date(item.timestamp).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    });
-
-    if (!grouped.has(date)) {
-      grouped.set(date, []);
-    }
+  for (const item of history) {
+    const date = new Date(item.timestamp).toLocaleDateString('en-US');
+    if (!grouped.has(date)) grouped.set(date, []);
     grouped.get(date)!.push(item);
-  });
+  }
 
   return Array.from(grouped.entries())
-    .map(([date, tracks]) => ({
-      date,
-      plays: tracks.length,
-      tracks,
-    }))
+    .map(([date, tracks]) => ({ date, plays: tracks.length, tracks }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 
 /**
- * Get date range from history
+ * Get date range from history items
  */
 export function getDateRange(history: HistoryItem[]): { start: Date; end: Date } | null {
-  if (history.length === 0) return null;
-
-  const timestamps = history.map((h) => h.timestamp);
-  const start = new Date(Math.min(...timestamps));
-  const end = new Date(Math.max(...timestamps));
-
-  return { start, end };
+  if (!history.length) return null;
+  const timestamps = history.map(h => h.timestamp);
+  return { start: new Date(Math.min(...timestamps)), end: new Date(Math.max(...timestamps)) };
 }
 
 /**
- * Get calendar data for heatmap (last N days)
+ * Get calendar data for heatmap
  */
 export function getCalendarData(history: HistoryItem[], days: number = 90): DailyHistory[] {
   const endDate = new Date();
@@ -221,83 +172,60 @@ export function getCalendarData(history: HistoryItem[], days: number = 90): Dail
 
   const dailyMap = new Map<string, HistoryItem[]>();
 
-  // Initialize all dates with empty arrays
+  // Initialize dates
   for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
-    const dateStr = d.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    });
-    dailyMap.set(dateStr, []);
+    dailyMap.set(d.toLocaleDateString('en-US'), []);
   }
 
-  // Fill with actual data
-  history.forEach((item) => {
+  // Fill data
+  for (const item of history) {
     const itemDate = new Date(item.timestamp);
     if (itemDate >= startDate && itemDate <= endDate) {
-      const dateStr = itemDate.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-      });
-      if (dailyMap.has(dateStr)) {
-        dailyMap.get(dateStr)!.push(item);
-      }
+      const key = itemDate.toLocaleDateString('en-US');
+      dailyMap.get(key)?.push(item);
     }
-  });
+  }
 
   return Array.from(dailyMap.entries())
-    .map(([date, tracks]) => ({
-      date,
-      plays: tracks.length,
-      tracks,
-    }))
+    .map(([date, tracks]) => ({ date, plays: tracks.length, tracks }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 
 /**
- * Get calendar data for a specific month
+ * Get calendar data for specific month
  */
 export function getMonthCalendarData(
   history: HistoryItem[],
   year: number,
   month: number
 ): DailyHistory[] {
-  const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
   const daysInMonth = lastDay.getDate();
 
   const dailyMap = new Map<string, HistoryItem[]>();
 
-  // Initialize all days of the month
+  // Initialize month days
   for (let day = 1; day <= daysInMonth; day++) {
     const date = new Date(year, month, day);
-    const dateStr = date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    });
-    dailyMap.set(dateStr, []);
+    dailyMap.set(date.toLocaleDateString('en-US'), []);
   }
 
-  // Fill with actual data
-  history.forEach((item) => {
+  // Fill data
+  for (const item of history) {
     const itemDate = new Date(item.timestamp);
-    const dateStr = itemDate.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    });
-    if (dailyMap.has(dateStr)) {
-      dailyMap.get(dateStr)!.push(item);
-    }
-  });
+    const key = itemDate.toLocaleDateString('en-US');
+    dailyMap.get(key)?.push(item);
+  }
 
   return Array.from(dailyMap.entries())
-    .map(([date, tracks]) => ({
-      date,
-      plays: tracks.length,
-      tracks,
-    }))
+    .map(([date, tracks]) => ({ date, plays: tracks.length, tracks }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+}
+
+/**
+ * Clear cache (useful for testing or force refresh)
+ */
+export function clearHistoryCache(): void {
+  historyCache = null;
+  fileListCache = null;
 }

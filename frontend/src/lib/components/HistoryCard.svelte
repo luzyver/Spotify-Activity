@@ -1,9 +1,8 @@
 <script lang="ts">
-  import type { HistoryItem } from '$lib/types';
-  import type { ViewMode } from '$lib/types';
+  import type { HistoryItem, ViewMode } from '$lib/types';
   import { timeAgo, spotifyUrl, getUserName } from '$lib/utils';
   import { fly } from 'svelte/transition';
-  import { Play, Music } from 'lucide-svelte';
+  import { Play } from 'lucide-svelte';
 
   interface Props {
     item: HistoryItem;
@@ -17,13 +16,16 @@
 
   const globalIndex = $derived((currentPage - 1) * itemsPerPage + index + 1);
   const userName = $derived(item.user || getUserName(item.userId));
+  
+  // Reduce animation delay for better perceived performance
+  const animDelay = $derived(Math.min(index * 15, 300));
 </script>
 
 {#if viewMode === 'list'}
   <!-- List View -->
   <div
-    class="group relative flex items-center gap-4 rounded-xl p-3 transition-all duration-300 hover:bg-white/5"
-    in:fly={{ x: -10, duration: 300, delay: index * 20 }}
+    class="group relative flex items-center gap-4 rounded-xl p-3 transition-colors hover:bg-white/5"
+    in:fly={{ x: -10, duration: 200, delay: animDelay }}
   >
     <!-- Number -->
     <div class="w-6 text-right text-sm font-medium text-gray-500 tabular-nums group-hover:text-white">
@@ -80,7 +82,7 @@
     target="_blank"
     rel="noopener noreferrer"
     class="group block overflow-hidden rounded-lg bg-white/5 p-3 transition-colors hover:bg-white/10"
-    in:fly={{ y: 10, duration: 300, delay: index * 20 }}
+    in:fly={{ y: 10, duration: 200, delay: animDelay }}
   >
     <div class="flex items-center gap-3">
       <div class="relative h-10 w-10 shrink-0 overflow-hidden rounded bg-white/10">
@@ -96,8 +98,8 @@
 {:else}
   <!-- Grid View (Default) -->
   <div
-    class="group relative flex flex-col gap-3 rounded-xl bg-[#181818] p-4 transition-all duration-300 hover:bg-[#282828] hover:shadow-xl"
-    in:fly={{ y: 20, duration: 400, delay: index * 30 }}
+    class="group relative flex flex-col gap-3 rounded-xl bg-[#181818] p-4 transition-colors hover:bg-[#282828]"
+    in:fly={{ y: 15, duration: 250, delay: animDelay }}
   >
     <!-- Album Art -->
     <a
@@ -109,15 +111,13 @@
       <img
         src={item.imageUrl}
         alt={item.track}
-        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        class="h-full w-full object-cover"
         loading="lazy"
       />
 
       <!-- Play Button -->
-      <div
-        class="absolute bottom-2 right-2 translate-y-2 translate-x-2 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
-      >
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1db954] text-black transition-transform hover:scale-105 active:scale-95">
+      <div class="absolute bottom-2 right-2 opacity-0 transition-opacity group-hover:opacity-100">
+        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#1db954] text-black shadow-lg">
           <Play class="h-5 w-5 fill-current pl-0.5" />
         </div>
       </div>

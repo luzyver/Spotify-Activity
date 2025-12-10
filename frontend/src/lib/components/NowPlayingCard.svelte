@@ -19,16 +19,12 @@
 </script>
 
 <div
-  class="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#121212] transition-all duration-500 hover:scale-[1.02] hover:border-white/20 hover:shadow-2xl hover:shadow-[#1db954]/10"
-  in:fly={{ y: 20, duration: 500, delay: index * 100 }}
+  class="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#121212] transition-colors hover:border-white/20"
+  in:fly={{ y: 15, duration: 300, delay: index * 50 }}
 >
-  <!-- Dynamic Background Blur -->
+  <!-- Background Blur -->
   <div class="absolute inset-0 z-0 overflow-hidden">
-    <img
-      src={buddy.track?.imageUrl}
-      alt=""
-      class="h-full w-full scale-150 object-cover opacity-20 blur-3xl transition-transform duration-700 group-hover:scale-125"
-    />
+    <img src={buddy.track?.imageUrl} alt="" class="h-full w-full scale-150 object-cover opacity-20 blur-3xl" loading="lazy" />
     <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent"></div>
   </div>
 
@@ -38,7 +34,7 @@
       <div class="relative aspect-square w-full overflow-hidden rounded-xl shadow-2xl shadow-black/50 sm:w-32">
         <img
           src={buddy.track?.imageUrl || ''}
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          class="h-full w-full object-cover"
           alt={buddy.track?.name || 'Album art'}
           loading="lazy"
         />
@@ -48,9 +44,9 @@
           href={spotifyUrl(buddy.track?.uri)}
           target="_blank"
           rel="noopener noreferrer"
-          class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100"
         >
-          <div class="rounded-full bg-[#1db954] p-3 text-black shadow-lg shadow-[#1db954]/20 transition-transform duration-300 hover:scale-110">
+          <div class="rounded-full bg-[#1db954] p-3 text-black shadow-lg">
             <Play class="h-6 w-6 fill-current pl-1" />
           </div>
         </a>
