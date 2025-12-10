@@ -15,10 +15,17 @@
   const ITEMS_PER_LOAD = 50;
   const REFRESH_INTERVAL = 30000;
 
-  // Core state
-  let nowPlaying = $state<NowPlayingBuddy[]>(data?.nowPlaying ?? []);
-  let allHistory = $state<HistoryItem[]>(data?.history ?? []);
-  let combinedHistory = $state<HistoryItem[]>(data?.allHistory ?? []);
+  // Core state - use $derived for initial data, $state for mutable
+  let nowPlaying = $state<NowPlayingBuddy[]>([]);
+  let allHistory = $state<HistoryItem[]>([]);
+  let combinedHistory = $state<HistoryItem[]>([]);
+
+  // Sync from props on data change
+  $effect(() => {
+    if (data?.nowPlaying) nowPlaying = data.nowPlaying;
+    if (data?.history) allHistory = data.history;
+    if (data?.allHistory) combinedHistory = data.allHistory;
+  });
   
   // UI state
   let activeTab = $state<'home' | 'recent' | 'history'>('home');
@@ -33,7 +40,7 @@
   
   // Pagination
   let displayedCount = $state(ITEMS_PER_LOAD);
-  let scrollSentinel: HTMLDivElement;
+  let scrollSentinel = $state<HTMLDivElement | null>(null);
   
   // Intervals
   let refreshInterval: ReturnType<typeof setInterval> | null = null;
