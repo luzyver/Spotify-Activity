@@ -1,8 +1,17 @@
+const SPOTIFY_API = 'https://api.spotify.com/v1';
+const SPOTIFY_AUTH = 'https://accounts.spotify.com/api/token';
+
+const authHeaders = (accessToken) => ({
+	Authorization: `Bearer ${accessToken}`,
+	Accept: 'application/json',
+	'Content-Type': 'application/json; charset=utf-8',
+});
+
 export async function refreshAccessToken(refreshToken, clientId, clientSecret) {
-	const response = await fetch('https://accounts.spotify.com/api/token', {
+	const response = await fetch(SPOTIFY_AUTH, {
 		method: 'POST',
 		headers: {
-			'Authorization': 'Basic ' + btoa(`${clientId}:${clientSecret}`),
+			Authorization: 'Basic ' + btoa(`${clientId}:${clientSecret}`),
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
 		body: new URLSearchParams({
@@ -12,7 +21,7 @@ export async function refreshAccessToken(refreshToken, clientId, clientSecret) {
 	});
 
 	if (!response.ok) {
-		throw new Error(`Failed to refresh token: ${response.statusText}`);
+		throw new Error(`Token refresh failed: ${response.statusText}`);
 	}
 
 	const data = await response.json();
@@ -20,12 +29,8 @@ export async function refreshAccessToken(refreshToken, clientId, clientSecret) {
 }
 
 export async function getUserProfile(accessToken) {
-	const response = await fetch('https://api.spotify.com/v1/me', {
-		headers: {
-			Authorization: `Bearer ${accessToken}`,
-			'Accept': 'application/json',
-			'Content-Type': 'application/json; charset=utf-8',
-		},
+	const response = await fetch(`${SPOTIFY_API}/me`, {
+		headers: authHeaders(accessToken),
 	});
 
 	if (!response.ok) return null;
@@ -39,38 +44,25 @@ export async function getUserProfile(accessToken) {
 }
 
 export async function getRecentlyPlayed(accessToken, afterTimestamp = null) {
-	let url = 'https://api.spotify.com/v1/me/player/recently-played?limit=50';
+	let url = `${SPOTIFY_API}/me/player/recently-played?limit=50`;
 
-	if (afterTimestamp && afterTimestamp > 0) {
-		const afterSeconds = Math.floor(afterTimestamp / 1000);
-		url += `&after=${afterSeconds}`;
+	if (afterTimestamp > 0) {
+		url += `&after=${Math.floor(afterTimestamp / 1000)}`;
 	}
 
 	const response = await fetch(url, {
-		headers: {
-			Authorization: `Bearer ${accessToken}`,
-			'Accept': 'application/json',
-			'Content-Type': 'application/json; charset=utf-8',
-		},
+		headers: authHeaders(accessToken),
 	});
 
 	if (!response.ok) return [];
-
 	const data = await response.json();
 	return data.items || [];
 }
 
 export async function getCurrentlyPlaying(accessToken) {
-	const response = await fetch(
-		'https://api.spotify.com/v1/me/player/currently-playing',
-		{
-			headers: {
-				Authorization: `Bearer ${accessToken}`,
-				'Accept': 'application/json',
-				'Content-Type': 'application/json; charset=utf-8',
-			},
-		}
-	);
+	const response = await fetch(`${SPOTIFY_API}/me/player/currently-playing`, {
+		headers: authHeaders(accessToken),
+	});
 
 	if (response.status === 204 || !response.ok) return null;
 

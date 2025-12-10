@@ -1,260 +1,123 @@
 import { base64ToUtf8, utf8ToBase64 } from '../utils/encoding.js';
 
-const GITHUB_API_BASE = 'https://api.github.com';
+const GITHUB_API = 'https://api.github.com';
 const USER_AGENT = 'Rezz-Spotify-Worker/1.0';
 
+const headers = (token) => ({
+	Authorization: `Bearer ${token}`,
+	Accept: 'application/vnd.github.v3+json',
+	'User-Agent': USER_AGENT,
+});
+
+const jsonHeaders = (token) => ({
+	...headers(token),
+	'Content-Type': 'application/json',
+});
+
 export async function getGitHubFile(repo, path, token) {
-	const url = `${GITHUB_API_BASE}/repos/${repo}/contents/${path}`;
-	console.log(`Fetching: ${url}`);
-
-	const response = await fetch(url, {
-		headers: {
-			Authorization: `Bearer ${token}`,
-			Accept: 'application/vnd.github.v3+json',
-			'User-Agent': USER_AGENT,
-		},
-	});
-
-	console.log(`Response status: ${response.status}`);
+	const url = `${GITHUB_API}/repos/${repo}/contents/${path}`;
+	const response = await fetch(url, { headers: headers(token) });
 
 	if (response.status === 404) {
-		console.log(`File not found: ${path}, will create new`);
 		return { content: null, sha: null };
 	}
 
 	if (!response.ok) {
-		const errorBody = await response.text();
-		console.error(`GitHub API Error: ${response.status} - ${errorBody}`);
-		throw new Error(`Failed to get file: ${response.statusText} - ${errorBody}`);
+		const body = await response.text();
+		throw new Error(`GitHub GET failed: ${response.status} - ${body}`);
 	}
 
 	const data = await response.json();
-	const jsonString = base64ToUtf8(data.content);
-	const content = JSON.parse(jsonString);
+	const content = JSON.parse(base64ToUtf8(data.content));
 	return { content, sha: data.sha };
 }
 
 export async function getCommit(repo, sha, token) {
-	// Use the Git data API so we can access the commit's tree SHA directly
-	const url = `${GITHUB_API_BASE}/repos/${repo}/git/commits/${sha}`;
-	const response = await fetch(url, {
-		headers: {
-			Authorization: `Bearer ${token}`,
-			Accept: 'application/vnd.github.v3+json',
-			'User-Agent': USER_AGENT,
-		},
-	});
+	const url = `${GITHUB_API}/repos/${repo}/git/commits/${sha}`;
+	const response = await fetch(url, { headers: headers(token) });
+
 	if (!response.ok) {
 		const body = await response.text();
-		throw new Error(`Failed to get commit: ${response.status} - ${body}`);
-	}
-	return await response.json();
-}
-
-export async function getGitHubFileAtRef(repo, path, ref, token) {
-	const url = `${GITHUB_API_BASE}/repos/${repo}/contents/${path}?ref=${encodeURIComponent(ref)}`;
-	const response = await fetch(url, {
-		headers: {
-			Authorization: `Bearer ${token}`,
-			Accept: 'application/vnd.github.v3+json',
-			'User-Agent': USER_AGENT,
-		},
-	});
-	if (response.status === 404) {
-		return { content: null, sha: null };
-	}
-	if (!response.ok) {
-		const body = await response.text();
-		throw new Error(`Failed to get file at ref: ${response.status} - ${body}`);
-	}
-	const data = await response.json();
-	const jsonString = base64ToUtf8(data.content);
-	const content = JSON.parse(jsonString);
-	return { content, sha: data.sha };
-}
-
-
-export async function updateGitHubFile(repo, path, content, message, sha, token) {
-	const response = await fetch(
-		`${GITHUB_API_BASE}/repos/${repo}/contents/${path}`,
-		{
-			method: 'PUT',
-			headers: {
-				Authorization: `Bearer ${token}`,
-				Accept: 'application/vnd.github.v3+json',
-				'Content-Type': 'application/json',
-				'User-Agent': USER_AGENT,
-			},
-			body: JSON.stringify({
-				message,
-				content: utf8ToBase64(JSON.stringify(content, null, 2)),
-				sha,
-			}),
-		}
-	);
-
-	if (!response.ok) {
-		throw new Error(`Failed to update file: ${response.statusText}`);
+		throw new Error(`Get commit failed: ${response.status} - ${body}`);
 	}
 
-	return await response.json();
+	return response.json();
 }
 
 export async function updateMultipleGitHubFiles(repo, files, message, token) {
-	const branchResponse = await fetch(
-		`${GITHUB_API_BASE}/repos/${repo}/git/refs/heads/main`,
-		{
-			headers: {
-				Authorization: `Bearer ${token}`,
-				Accept: 'application/vnd.github.v3+json',
-				'User-Agent': USER_AGENT,
-			},
-		}
-	);
+	// Get latest commit
+	const branchRes = await fetch(`${GITHUB_API}/repos/${repo}/git/refs/heads/main`, {
+		headers: headers(token),
+	});
 
-	if (!branchResponse.ok) {
-		throw new Error(`Failed to get branch: ${branchResponse.statusText}`);
-	}
+	if (!branchRes.ok) throw new Error(`Get branch failed: ${branchRes.statusText}`);
 
-	const branchData = await branchResponse.json();
+	const branchData = await branchRes.json();
 	const latestCommitSha = branchData.object.sha;
 
-	// Resolve the base tree from the latest commit so we can create a new tree
+	// Get base tree
 	const latestCommit = await getCommit(repo, latestCommitSha, token);
 	const baseTreeSha = latestCommit?.tree?.sha;
+	if (!baseTreeSha) throw new Error('Failed to get base tree');
 
-	if (!baseTreeSha) {
-		throw new Error('Failed to resolve base tree for latest commit');
-	}
-
-	// Create blobs for each file
+	// Create blobs in parallel
 	const blobs = await Promise.all(
 		files.map(async (file) => {
-			const blobResponse = await fetch(
-				`${GITHUB_API_BASE}/repos/${repo}/git/blobs`,
-				{
-					method: 'POST',
-					headers: {
-						Authorization: `Bearer ${token}`,
-						Accept: 'application/vnd.github.v3+json',
-						'Content-Type': 'application/json',
-						'User-Agent': USER_AGENT,
-					},
-					body: JSON.stringify({
-						content: utf8ToBase64(JSON.stringify(file.content, null, 2)),
-						encoding: 'base64',
-					}),
-				}
-			);
+			const blobRes = await fetch(`${GITHUB_API}/repos/${repo}/git/blobs`, {
+				method: 'POST',
+				headers: jsonHeaders(token),
+				body: JSON.stringify({
+					content: utf8ToBase64(JSON.stringify(file.content, null, 2)),
+					encoding: 'base64',
+				}),
+			});
 
-			if (!blobResponse.ok) {
-				throw new Error(`Failed to create blob: ${blobResponse.statusText}`);
-			}
+			if (!blobRes.ok) throw new Error(`Create blob failed: ${blobRes.statusText}`);
 
-			const blobData = await blobResponse.json();
-			return {
-				path: file.path,
-				mode: '100644',
-				type: 'blob',
-				sha: blobData.sha,
-			};
+			const blobData = await blobRes.json();
+			return { path: file.path, mode: '100644', type: 'blob', sha: blobData.sha };
 		})
 	);
 
-	// Create a tree based on the latest commit's tree
-	const treeResponse = await fetch(
-		`${GITHUB_API_BASE}/repos/${repo}/git/trees`,
-		{
-			method: 'POST',
-			headers: {
-				Authorization: `Bearer ${token}`,
-				Accept: 'application/vnd.github.v3+json',
-				'Content-Type': 'application/json',
-				'User-Agent': USER_AGENT,
-			},
-			body: JSON.stringify({
-				base_tree: baseTreeSha,
-				tree: blobs,
-			}),
-		}
-	);
+	// Create tree
+	const treeRes = await fetch(`${GITHUB_API}/repos/${repo}/git/trees`, {
+		method: 'POST',
+		headers: jsonHeaders(token),
+		body: JSON.stringify({ base_tree: baseTreeSha, tree: blobs }),
+	});
 
-	if (!treeResponse.ok) {
-		throw new Error(`Failed to create tree: ${treeResponse.statusText}`);
-	}
+	if (!treeRes.ok) throw new Error(`Create tree failed: ${treeRes.statusText}`);
+	const treeData = await treeRes.json();
 
-	const treeData = await treeResponse.json();
+	// Create commit
+	const commitRes = await fetch(`${GITHUB_API}/repos/${repo}/git/commits`, {
+		method: 'POST',
+		headers: jsonHeaders(token),
+		body: JSON.stringify({ message, tree: treeData.sha, parents: [latestCommitSha] }),
+	});
 
-	// Create a commit
-	const commitResponse = await fetch(
-		`${GITHUB_API_BASE}/repos/${repo}/git/commits`,
-		{
-			method: 'POST',
-			headers: {
-				Authorization: `Bearer ${token}`,
-				Accept: 'application/vnd.github.v3+json',
-				'Content-Type': 'application/json',
-				'User-Agent': USER_AGENT,
-			},
-			body: JSON.stringify({
-				message,
-				tree: treeData.sha,
-				parents: [latestCommitSha],
-			}),
-		}
-	);
+	if (!commitRes.ok) throw new Error(`Create commit failed: ${commitRes.statusText}`);
+	const commitData = await commitRes.json();
 
-	if (!commitResponse.ok) {
-		throw new Error(`Failed to create commit: ${commitResponse.statusText}`);
-	}
+	// Update ref
+	const updateRes = await fetch(`${GITHUB_API}/repos/${repo}/git/refs/heads/main`, {
+		method: 'PATCH',
+		headers: jsonHeaders(token),
+		body: JSON.stringify({ sha: commitData.sha }),
+	});
 
-	const commitData = await commitResponse.json();
-
-	// Update the reference
-	const updateRefResponse = await fetch(
-		`${GITHUB_API_BASE}/repos/${repo}/git/refs/heads/main`,
-		{
-			method: 'PATCH',
-			headers: {
-				Authorization: `Bearer ${token}`,
-				Accept: 'application/vnd.github.v3+json',
-				'Content-Type': 'application/json',
-				'User-Agent': USER_AGENT,
-			},
-			body: JSON.stringify({
-				sha: commitData.sha,
-			}),
-		}
-	);
-
-	if (!updateRefResponse.ok) {
-		throw new Error(`Failed to update ref: ${updateRefResponse.statusText}`);
-	}
-
-	return await updateRefResponse.json();
+	if (!updateRes.ok) throw new Error(`Update ref failed: ${updateRes.statusText}`);
+	return updateRes.json();
 }
 
 export async function listGitHubDirectory(repo, path, token) {
-	const url = `${GITHUB_API_BASE}/repos/${repo}/contents/${path}`;
-	console.log(`Listing directory: ${url}`);
+	const url = `${GITHUB_API}/repos/${repo}/contents/${path}`;
+	const response = await fetch(url, { headers: headers(token) });
 
-	const response = await fetch(url, {
-		headers: {
-			Authorization: `Bearer ${token}`,
-			Accept: 'application/vnd.github.v3+json',
-			'User-Agent': USER_AGENT,
-		},
-	});
-
-	if (response.status === 404) {
-		console.log(`Directory not found: ${path}`);
-		return [];
-	}
-
+	if (response.status === 404) return [];
 	if (!response.ok) {
-		const errorBody = await response.text();
-		console.error(`GitHub API Error: ${response.status} - ${errorBody}`);
-		throw new Error(`Failed to list directory: ${response.statusText}`);
+		const body = await response.text();
+		throw new Error(`List directory failed: ${response.status} - ${body}`);
 	}
 
 	const data = await response.json();

@@ -2,88 +2,59 @@ import { handleScheduled } from './handlers/sync-handler.js';
 import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
 import { handleClearHistory } from './handlers/clear-handler.js';
 
-const ALLOWED_ORIGINS = [
-	'https://spotify.luzyver.dev'
-];
+const ALLOWED_ORIGINS = ['https://spotify.luzyver.dev'];
 
-function getCorsHeaders(origin) {
-	const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
-	return {
-		'Access-Control-Allow-Origin': allowedOrigin,
-		'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-		'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-	};
-}
+const getCorsHeaders = (origin) => ({
+	'Access-Control-Allow-Origin': ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0],
+	'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+	'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+});
 
-async function handleScheduledEvent(event, env, ctx) {
-	// Determine which cron triggered
-	const cronSchedule = event.cron;
-	
-	// 1 17 * * * = 00:01 GMT+7 (daily clear)
-	if (cronSchedule === '1 17 * * *') {
-		console.log('🗑️ Detected clear history cron trigger');
-		ctx.waitUntil(handleClearHistory(env));
-	} 
-	// 0 * * * * = Every hour (sync)
-	else {
-		console.log('🎵 Detected sync cron trigger');
-		ctx.waitUntil(handleScheduled(env));
-	}
-}
-
-async function handleFetch(request, env, ctx) {
-	const url = new URL(request.url);
-	const pathname = url.pathname;
-	const origin = request.headers.get('Origin') || '';
-	const corsHeaders = getCorsHeaders(origin);
-
-	if (request.method === 'OPTIONS') {
-		return new Response(null, { headers: corsHeaders });
-	}
-
-	if (request.method === 'GET' && pathname === '/trigger') {
-		// Allow triggering sync from external UIs (frontend) with CORS-safe response
-		const res = await handleScheduled(env);
-		const body = await res.text();
-		return new Response(body, {
-			status: res.status,
-			headers: {
-				'Content-Type': 'text/plain',
-				...corsHeaders,
-			},
-		});
-	}
-
-	if (request.method === 'GET' && pathname === '/api/live') {
-		return handleLiveAPI(env, corsHeaders);
-	}
-
-	if (request.method === 'GET' && pathname === '/api/history') {
-		return handleHistoryAPI(env, corsHeaders);
-	}
-
-	// Home/status endpoint (UI is served by the frontend app)
-	if (request.method === 'GET' && pathname === '/') {
-		return new Response(
-			JSON.stringify({ status: 'ok', service: 'Rezz Spotify Worker' }),
-			{
-				headers: {
-					'Content-Type': 'application/json',
-				},
-			}
-		);
-	}
-
-	// 404 for unknown paths
-	return new Response('Not Found', { status: 404 });
-}
+const jsonResponse = (data, status = 200, headers = {}) =>
+	new Response(JSON.stringify(data), {
+		status,
+		headers: { 'Content-Type': 'application/json', ...headers },
+	});
 
 export default {
 	async scheduled(event, env, ctx) {
-		await handleScheduledEvent(event, env, ctx);
+		const isClearCron = event.cron === '1 17 * * *';
+		console.log(isClearCron ? '🗑️ Clear history cron' : '🎵 Sync cron');
+		ctx.waitUntil(isClearCron ? handleClearHistory(env) : handleScheduled(env));
 	},
 
-	async fetch(request, env, ctx) {
-		return handleFetch(request, env, ctx);
+	async fetch(request, env) {
+		const { pathname } = new URL(request.url);
+		const origin = request.headers.get('Origin') || '';
+		const cors = getCorsHeaders(origin);
+
+		// CORS preflight
+		if (request.method === 'OPTIONS') {
+			return new Response(null, { headers: cors });
+		}
+
+		// Routes
+		if (request.method === 'GET') {
+			switch (pathname) {
+				case '/':
+					return jsonResponse({ status: 'ok', service: 'Rezz Spotify Worker' });
+
+				case '/trigger': {
+					const res = await handleScheduled(env);
+					return new Response(await res.text(), {
+						status: res.status,
+						headers: { 'Content-Type': 'text/plain', ...cors },
+					});
+				}
+
+				case '/api/live':
+					return handleLiveAPI(env, cors);
+
+				case '/api/history':
+					return handleHistoryAPI(env, cors);
+			}
+		}
+
+		return new Response('Not Found', { status: 404 });
 	},
 };
