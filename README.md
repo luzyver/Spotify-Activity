@@ -78,4 +78,10 @@
 
 ---
 
-*This README is automatically generated from listening history data*
+## 📖 Documentation
+
+For setup guide, API docs, and project structure, see **[DOCS.md](./DOCS.md)**
+
+---
+
+*Stats above are automatically generated from listening history data*
