@@ -5,18 +5,18 @@
 ## 📊 Overall Statistics
 
 | Metric | Value |
-|--------|-------|
-| **Total Plays** | 2,037 |
+|------|------|
+| **Total Plays** | 2,046 |
 | **Unique Tracks** | 677 |
 | **Unique Artists** | 357 |
-| **Period** | November 12, 2025 - December 9, 2025 |
-| **Archive Files** | 28 |
+| **Period** | November 12, 2025 - December 10, 2025 |
+| **Archive Files** | 29 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
-|------|--------|-------|
-| 1 | Bernadya | 158 |
+|------|------|------|
+| 1 | Bernadya | 166 |
 | 2 | Ghea Indrawari | 81 |
 | 3 | Nadin Amizah | 61 |
 | 4 | Idgitaf | 53 |
@@ -30,22 +30,22 @@
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
-|------|-------|-------|
-| 1 | Kata Mereka Ini Berlebihan - Bernadya | 15 |
-| 2 | My Love Mine All Mine - Mitski | 14 |
-| 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 14 |
-| 4 | Asumsi - Adrian Khalif, Bernadya | 14 |
+|------|------|------|
+| 1 | Kata Mereka Ini Berlebihan - Bernadya | 16 |
+| 2 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
+| 3 | Asumsi - Adrian Khalif, Bernadya | 15 |
+| 4 | My Love Mine All Mine - Mitski | 14 |
 | 5 | Berlari - Bernadya | 14 |
-| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 13 |
-| 7 | Lama-Lama - Bernadya | 12 |
-| 8 | Terlintas - Bernadya | 12 |
-| 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 12 |
-| 10 | Lihat Kebunku (Taman Bunga) - Aku Jeje | 11 |
+| 6 | Lama-Lama - Bernadya | 13 |
+| 7 | Terlintas - Bernadya | 13 |
+| 8 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
+| 9 | Sedia Aku Sebelum Hujan - Idgitaf | 13 |
+| 10 | Satu Bulan - Bernadya | 12 |
 
 ## 📅 Daily Breakdown
 
 | Date | Plays | Top Artist | Top Track |
-|------|-------|------------|-----------|
+|------|------|------|------|
 | Nov 12, 2025 | 213 | Ghea Indrawari (10) | Lesung Pipi - Raim Laode (3) |
 | Nov 13, 2025 | 124 | Bernadya (21) | You'll Be in My Heart - NIKI (2) |
 | Nov 14, 2025 | 108 | Bernadya (27) | Asumsi - Adrian Khalif, Bernadya (3) |
@@ -74,6 +74,7 @@
 | Dec 7, 2025 | 49 | Juicy Luicy (4) | Cinta Sudah Lewat - Kahitna (2) |
 | Dec 8, 2025 | 108 | Bernadya (13) | Untuk Perempuan Yang Sedang Dalam Pelukan (Live) - Payung Teduh (1) |
 | Dec 9, 2025 | 60 | Bernadya (13) | Lihat Kebunku (Taman Bunga) - Aku Jeje (2) |
+| Dec 10, 2025 | 9 | Bernadya (8) | Terlintas - Bernadya (1) |
 
 ---
 
