@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,046 |
-| **Unique Tracks** | 677 |
-| **Unique Artists** | 357 |
-| **Period** | November 12, 2025 - December 10, 2025 |
-| **Archive Files** | 29 |
+| **Total Plays** | 2,152 |
+| **Unique Tracks** | 714 |
+| **Unique Artists** | 366 |
+| **Period** | November 12, 2025 - December 11, 2025 |
+| **Archive Files** | 30 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 166 |
+| 1 | Bernadya | 167 |
 | 2 | Ghea Indrawari | 81 |
-| 3 | Nadin Amizah | 61 |
-| 4 | Idgitaf | 53 |
-| 5 | Hindia | 48 |
-| 6 | Cigarettes After Sex | 38 |
-| 7 | Tulus | 37 |
-| 8 | Pamungkas | 31 |
+| 3 | Nadin Amizah | 74 |
+| 4 | Idgitaf | 58 |
+| 5 | Hindia | 54 |
+| 6 | Tulus | 43 |
+| 7 | Cigarettes After Sex | 41 |
+| 8 | Pamungkas | 33 |
 | 9 | Sal Priadi | 30 |
-| 10 | Juicy Luicy | 27 |
+| 10 | Nadhif Basalamah | 27 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Kata Mereka Ini Berlebihan - Bernadya | 16 |
-| 2 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
-| 3 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 4 | My Love Mine All Mine - Mitski | 14 |
+| 1 | Kata Mereka Ini Berlebihan - Bernadya | 17 |
+| 2 | My Love Mine All Mine - Mitski | 15 |
+| 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
+| 4 | Asumsi - Adrian Khalif, Bernadya | 15 |
 | 5 | Berlari - Bernadya | 14 |
-| 6 | Lama-Lama - Bernadya | 13 |
-| 7 | Terlintas - Bernadya | 13 |
-| 8 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
-| 9 | Sedia Aku Sebelum Hujan - Idgitaf | 13 |
-| 10 | Satu Bulan - Bernadya | 12 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 14 |
+| 7 | Lama-Lama - Bernadya | 13 |
+| 8 | Terlintas - Bernadya | 13 |
+| 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
+| 10 | Lihat Kebunku (Taman Bunga) - Aku Jeje | 12 |
 
 ## 📅 Daily Breakdown
 
@@ -75,6 +75,7 @@
 | Dec 8, 2025 | 108 | Bernadya (13) | Untuk Perempuan Yang Sedang Dalam Pelukan (Live) - Payung Teduh (1) |
 | Dec 9, 2025 | 60 | Bernadya (13) | Lihat Kebunku (Taman Bunga) - Aku Jeje (2) |
 | Dec 10, 2025 | 9 | Bernadya (8) | Terlintas - Bernadya (1) |
+| Dec 11, 2025 | 106 | Nadin Amizah (13) | Kembali Pulang - Suara Kayu, Feby Putri (2) |
 
 ---
 
