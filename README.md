@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,152 |
-| **Unique Tracks** | 714 |
-| **Unique Artists** | 366 |
-| **Period** | November 12, 2025 - December 11, 2025 |
-| **Archive Files** | 30 |
+| **Total Plays** | 2,264 |
+| **Unique Tracks** | 775 |
+| **Unique Artists** | 389 |
+| **Period** | November 12, 2025 - December 12, 2025 |
+| **Archive Files** | 31 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -18,14 +18,14 @@
 |------|------|------|
 | 1 | Bernadya | 167 |
 | 2 | Ghea Indrawari | 81 |
-| 3 | Nadin Amizah | 74 |
-| 4 | Idgitaf | 58 |
-| 5 | Hindia | 54 |
-| 6 | Tulus | 43 |
-| 7 | Cigarettes After Sex | 41 |
-| 8 | Pamungkas | 33 |
-| 9 | Sal Priadi | 30 |
-| 10 | Nadhif Basalamah | 27 |
+| 3 | Nadin Amizah | 77 |
+| 4 | Idgitaf | 66 |
+| 5 | Tulus | 55 |
+| 6 | Hindia | 54 |
+| 7 | Sal Priadi | 44 |
+| 8 | Cigarettes After Sex | 41 |
+| 9 | Pamungkas | 33 |
+| 10 | Nadhif Basalamah | 29 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -35,8 +35,8 @@
 | 2 | My Love Mine All Mine - Mitski | 15 |
 | 3 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
 | 4 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 5 | Berlari - Bernadya | 14 |
-| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 14 |
+| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 15 |
+| 6 | Berlari - Bernadya | 14 |
 | 7 | Lama-Lama - Bernadya | 13 |
 | 8 | Terlintas - Bernadya | 13 |
 | 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
@@ -76,6 +76,7 @@
 | Dec 9, 2025 | 60 | Bernadya (13) | Lihat Kebunku (Taman Bunga) - Aku Jeje (2) |
 | Dec 10, 2025 | 9 | Bernadya (8) | Terlintas - Bernadya (1) |
 | Dec 11, 2025 | 106 | Nadin Amizah (13) | Kembali Pulang - Suara Kayu, Feby Putri (2) |
+| Dec 12, 2025 | 112 | Sal Priadi (14) | Mesra-mesraannya kecil-kecilan dulu - Sal Priadi (3) |
 
 ---
 
