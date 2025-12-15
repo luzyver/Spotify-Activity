@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,329 |
-| **Unique Tracks** | 785 |
-| **Unique Artists** | 393 |
-| **Period** | November 12, 2025 - December 13, 2025 |
-| **Archive Files** | 32 |
+| **Total Plays** | 2,381 |
+| **Unique Tracks** | 830 |
+| **Unique Artists** | 395 |
+| **Period** | November 12, 2025 - December 14, 2025 |
+| **Archive Files** | 33 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 167 |
-| 2 | Nadin Amizah | 84 |
-| 3 | Ghea Indrawari | 81 |
-| 4 | Idgitaf | 68 |
-| 5 | Tulus | 60 |
-| 6 | Hindia | 57 |
+| 1 | Bernadya | 168 |
+| 2 | Tulus | 88 |
+| 3 | Nadin Amizah | 84 |
+| 4 | Ghea Indrawari | 81 |
+| 5 | Idgitaf | 68 |
+| 6 | Hindia | 58 |
 | 7 | Sal Priadi | 44 |
 | 8 | Cigarettes After Sex | 42 |
-| 9 | Pamungkas | 34 |
-| 10 | Nadhif Basalamah | 29 |
+| 9 | Dere | 39 |
+| 10 | Pamungkas | 34 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -78,6 +78,7 @@
 | Dec 11, 2025 | 106 | Nadin Amizah (13) | Kembali Pulang - Suara Kayu, Feby Putri (2) |
 | Dec 12, 2025 | 112 | Sal Priadi (14) | Mesra-mesraannya kecil-kecilan dulu - Sal Priadi (3) |
 | Dec 13, 2025 | 65 | Nadin Amizah (7) | The Man Who Can't Be Moved - The Script (2) |
+| Dec 14, 2025 | 52 | Tulus (28) | Mawar - Dere (2) |
 
 ---
 
