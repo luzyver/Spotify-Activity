@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,381 |
-| **Unique Tracks** | 830 |
-| **Unique Artists** | 395 |
-| **Period** | November 12, 2025 - December 14, 2025 |
-| **Archive Files** | 33 |
+| **Total Plays** | 2,445 |
+| **Unique Tracks** | 852 |
+| **Unique Artists** | 401 |
+| **Period** | November 12, 2025 - December 15, 2025 |
+| **Archive Files** | 34 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 168 |
-| 2 | Tulus | 88 |
-| 3 | Nadin Amizah | 84 |
+| 2 | Tulus | 99 |
+| 3 | Nadin Amizah | 86 |
 | 4 | Ghea Indrawari | 81 |
-| 5 | Idgitaf | 68 |
-| 6 | Hindia | 58 |
-| 7 | Sal Priadi | 44 |
-| 8 | Cigarettes After Sex | 42 |
-| 9 | Dere | 39 |
+| 5 | Idgitaf | 71 |
+| 6 | Hindia | 63 |
+| 7 | Dere | 49 |
+| 8 | Sal Priadi | 45 |
+| 9 | Cigarettes After Sex | 42 |
 | 10 | Pamungkas | 34 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -39,8 +39,8 @@
 | 6 | Berlari - Bernadya | 14 |
 | 7 | Lama-Lama - Bernadya | 13 |
 | 8 | Terlintas - Bernadya | 13 |
-| 9 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
-| 10 | Lihat Kebunku (Taman Bunga) - Aku Jeje | 12 |
+| 9 | Kota - Dere | 13 |
+| 10 | Sialnya, Hidup Harus Tetap Berjalan - Bernadya | 13 |
 
 ## 📅 Daily Breakdown
 
@@ -79,6 +79,7 @@
 | Dec 12, 2025 | 112 | Sal Priadi (14) | Mesra-mesraannya kecil-kecilan dulu - Sal Priadi (3) |
 | Dec 13, 2025 | 65 | Nadin Amizah (7) | The Man Who Can't Be Moved - The Script (2) |
 | Dec 14, 2025 | 52 | Tulus (28) | Mawar - Dere (2) |
+| Dec 15, 2025 | 64 | Tulus (11) | Amin Paling Serius - Sal Priadi, Nadin Amizah (2) |
 
 ---
 
