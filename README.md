@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,501 |
-| **Unique Tracks** | 856 |
-| **Unique Artists** | 401 |
-| **Period** | November 12, 2025 - December 16, 2025 |
-| **Archive Files** | 35 |
+| **Total Plays** | 2,576 |
+| **Unique Tracks** | 892 |
+| **Unique Artists** | 423 |
+| **Period** | November 12, 2025 - December 17, 2025 |
+| **Archive Files** | 36 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 169 |
-| 2 | Tulus | 100 |
+| 2 | Tulus | 134 |
 | 3 | Nadin Amizah | 93 |
 | 4 | Ghea Indrawari | 81 |
 | 5 | Idgitaf | 72 |
 | 6 | Hindia | 66 |
 | 7 | Dere | 49 |
 | 8 | Sal Priadi | 45 |
-| 9 | Cigarettes After Sex | 42 |
+| 9 | Cigarettes After Sex | 43 |
 | 10 | Pamungkas | 35 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -81,6 +81,7 @@
 | Dec 14, 2025 | 52 | Tulus (28) | Mawar - Dere (2) |
 | Dec 15, 2025 | 64 | Tulus (11) | Amin Paling Serius - Sal Priadi, Nadin Amizah (2) |
 | Dec 16, 2025 | 56 | Nadin Amizah (7) | Reckless - Madison Beer (3) |
+| Dec 17, 2025 | 75 | Tulus (34) | STYLE - Hearts2Hearts (3) |
 
 ---
 
