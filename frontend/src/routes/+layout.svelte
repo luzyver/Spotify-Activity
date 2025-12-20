@@ -1,8 +1,11 @@
 <script lang="ts">
   import '../app.css';
+  import SeasonalEffect from '$lib/components/SeasonalEffect.svelte';
 
   let { children } = $props();
 </script>
+
+<SeasonalEffect />
 
 <div class="relative min-h-screen bg-[#050505] text-white selection:bg-[#1db954] selection:text-black">
   <!-- Subtle ambient background glow -->

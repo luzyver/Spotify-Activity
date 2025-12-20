@@ -4,7 +4,7 @@
   import HistoryCard from '$lib/components/HistoryCard.svelte';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { API_ENDPOINTS } from '$lib/config';
-  import { LayoutGrid, List, Music, Search, X, Loader2, RefreshCw } from 'lucide-svelte';
+  import { LayoutGrid, List, Music, Search, X, Loader2, RefreshCw, Home, Clock, Archive } from 'lucide-svelte';
   import { loadHistoryBatch } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
   import { onDestroy, onMount } from 'svelte';
@@ -46,7 +46,7 @@
   let refreshInterval: ReturnType<typeof setInterval> | null = null;
 
   // Toast state
-  let toast = $state({ message: '', type: 'info' as const, visible: false });
+  let toast = $state<{ message: string; type: 'info' | 'success'; visible: boolean }>({ message: '', type: 'info', visible: false });
   let toastTimeout: ReturnType<typeof setTimeout> | null = null;
 
   function showToast(message: string, type: 'info' | 'success' = 'info') {
@@ -187,9 +187,9 @@
   });
 
   const TABS = [
-    { id: 'home', label: 'Home' },
-    { id: 'recent', label: 'Recent' },
-    { id: 'history', label: 'History' },
+    { id: 'home', label: 'Home', icon: Home },
+    { id: 'recent', label: 'Recent', icon: Clock },
+    { id: 'history', label: 'History', icon: Archive },
   ] as const;
 </script>
 
@@ -366,10 +366,10 @@
 
   <!-- Mobile Nav -->
   <nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-black/95 backdrop-blur-xl sm:hidden pb-safe">
-    <div class="flex items-center justify-around px-2 py-3">
+    <div class="flex items-center justify-around px-2 py-2">
       {#each TABS as tab}
-        <button onclick={() => (activeTab = tab.id)} class="flex flex-col items-center gap-1 rounded-lg px-4 py-1 {activeTab === tab.id ? 'text-white' : 'text-gray-500'}">
-          <span class="text-sm font-medium">{tab.label}</span>
+        <button onclick={() => (activeTab = tab.id)} class="flex flex-col items-center gap-1 rounded-xl px-6 py-2 transition-colors {activeTab === tab.id ? 'text-[#1db954]' : 'text-gray-500'}">
+          <tab.icon class="h-5 w-5" />
           {#if activeTab === tab.id}
             <div class="h-1 w-1 rounded-full bg-[#1db954]" transition:fade></div>
           {/if}
