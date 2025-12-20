@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,641 |
-| **Unique Tracks** | 933 |
+| **Total Plays** | 2,654 |
+| **Unique Tracks** | 934 |
 | **Unique Artists** | 436 |
-| **Period** | November 12, 2025 - December 18, 2025 |
-| **Archive Files** | 37 |
+| **Period** | November 12, 2025 - December 19, 2025 |
+| **Archive Files** | 38 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 169 |
-| 2 | Tulus | 135 |
-| 3 | Nadin Amizah | 94 |
+| 2 | Tulus | 138 |
+| 3 | Nadin Amizah | 98 |
 | 4 | Ghea Indrawari | 81 |
 | 5 | Idgitaf | 74 |
 | 6 | Hindia | 69 |
-| 7 | Sal Priadi | 50 |
-| 8 | Dere | 49 |
+| 7 | Dere | 51 |
+| 8 | Sal Priadi | 50 |
 | 9 | Cigarettes After Sex | 43 |
 | 10 | Yura Yunita | 36 |
 
@@ -36,10 +36,10 @@
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
 | 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
 | 5 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 6 | Berlari - Bernadya | 14 |
-| 7 | Lama-Lama - Bernadya | 13 |
-| 8 | Terlintas - Bernadya | 13 |
-| 9 | Kota - Dere | 13 |
+| 6 | Kota - Dere | 14 |
+| 7 | Berlari - Bernadya | 14 |
+| 8 | Lama-Lama - Bernadya | 13 |
+| 9 | Terlintas - Bernadya | 13 |
 | 10 | Bertaut - Nadin Amizah | 13 |
 
 ## 📅 Daily Breakdown
@@ -83,6 +83,7 @@
 | Dec 16, 2025 | 56 | Nadin Amizah (7) | Reckless - Madison Beer (3) |
 | Dec 17, 2025 | 75 | Tulus (34) | STYLE - Hearts2Hearts (3) |
 | Dec 18, 2025 | 65 | Musik Relaksasi ID (11) | Car's Outside - James Arthur (1) |
+| Dec 19, 2025 | 13 | Nadin Amizah (4) | Rumpang - Nadin Amizah (2) |
 
 ---
 
