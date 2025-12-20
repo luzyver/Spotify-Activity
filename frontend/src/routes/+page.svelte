@@ -4,10 +4,10 @@
   import HistoryCard from '$lib/components/HistoryCard.svelte';
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { API_ENDPOINTS } from '$lib/config';
-  import { LayoutGrid, List, Music, Search, X, Loader2, RefreshCw, Home, Clock, Archive } from 'lucide-svelte';
+  import { LayoutGrid, List, Music, Search, X, LoaderCircle, RefreshCw, House, Clock, Archive } from 'lucide-svelte';
   import { loadHistoryBatch } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
-  import { onDestroy, onMount } from 'svelte';
+  import { onDestroy } from 'svelte';
 
   let { data } = $props();
 
@@ -55,16 +55,23 @@
     toastTimeout = setTimeout(() => { toast.visible = false; }, 4000);
   }
 
-  // Refresh now playing
-  async function refreshNowPlaying() {
+  // Refresh now playing and history
+  async function refreshData() {
     if (isRefreshing) return;
     const prevKeys = new Set(nowPlaying.map(p => `${p.user.uri}:${p.track.uri}`));
+    const prevHistoryCount = allHistory.length;
     
     isRefreshing = true;
     try {
-      const res = await fetch(API_ENDPOINTS.LIVE, { cache: 'no-store' });
-      if (res.ok) {
-        const json = await res.json();
+      // Fetch both live and history in parallel
+      const [liveRes, historyRes] = await Promise.all([
+        fetch(API_ENDPOINTS.LIVE, { cache: 'no-store' }),
+        fetch(API_ENDPOINTS.HISTORY, { cache: 'no-store' }),
+      ]);
+
+      // Process live data
+      if (liveRes.ok) {
+        const json = await liveRes.json();
         const newPlaying: NowPlayingBuddy[] = json?.friends ?? [];
         
         for (const buddy of newPlaying) {
@@ -79,6 +86,20 @@
         }
         
         nowPlaying = newPlaying;
+      }
+
+      // Process history data
+      if (historyRes.ok) {
+        const historyData: HistoryItem[] = await historyRes.json();
+        if (Array.isArray(historyData)) {
+          allHistory = historyData.sort((a, b) => b.timestamp - a.timestamp);
+          
+          // Show toast if new tracks added
+          const newTracks = allHistory.length - prevHistoryCount;
+          if (newTracks > 0 && prevHistoryCount > 0) {
+            showToast(`📝 ${newTracks} new track${newTracks > 1 ? 's' : ''} added`, 'success');
+          }
+        }
       }
     } catch (e) {
       console.error('Refresh failed:', e);
@@ -152,7 +173,7 @@
   // Effects
   $effect(() => {
     if (activeTab === 'home') {
-      refreshInterval = setInterval(refreshNowPlaying, REFRESH_INTERVAL);
+      refreshInterval = setInterval(refreshData, REFRESH_INTERVAL);
     } else {
       if (refreshInterval) clearInterval(refreshInterval);
       refreshInterval = null;
@@ -187,7 +208,7 @@
   });
 
   const TABS = [
-    { id: 'home', label: 'Home', icon: Home },
+    { id: 'home', label: 'Home', icon: House },
     { id: 'recent', label: 'Recent', icon: Clock },
     { id: 'history', label: 'History', icon: Archive },
   ] as const;
@@ -267,7 +288,7 @@
               <h2 class="text-3xl font-bold text-white tracking-tight">Now Playing</h2>
               <p class="mt-1 text-gray-400">Live activity from connected accounts</p>
             </div>
-            <button onclick={refreshNowPlaying} disabled={isRefreshing} class="flex items-center gap-2 rounded-lg bg-white/5 px-3 py-1.5 text-sm text-gray-400 hover:bg-white/10 hover:text-white disabled:opacity-50">
+            <button onclick={refreshData} disabled={isRefreshing} class="flex items-center gap-2 rounded-lg bg-white/5 px-3 py-1.5 text-sm text-gray-400 hover:bg-white/10 hover:text-white disabled:opacity-50">
               <RefreshCw class="h-4 w-4 {isRefreshing ? 'animate-spin' : ''}" />
               <span class="hidden sm:inline">{isRefreshing ? 'Refreshing...' : 'Refresh'}</span>
             </button>
@@ -347,7 +368,7 @@
           {#if hasMore}
             <div bind:this={scrollSentinel} class="flex justify-center py-8">
               {#if isLoadingMore}
-                <Loader2 class="h-6 w-6 animate-spin text-[#1db954]" />
+                <LoaderCircle class="h-6 w-6 animate-spin text-[#1db954]" />
               {:else}
                 <button onclick={loadMore} class="text-sm text-gray-500 hover:text-white">
                   Load more ({currentItems.length - displayedCount} remaining)
