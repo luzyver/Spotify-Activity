@@ -6,33 +6,33 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,654 |
-| **Unique Tracks** | 934 |
-| **Unique Artists** | 436 |
-| **Period** | November 12, 2025 - December 19, 2025 |
-| **Archive Files** | 38 |
+| **Total Plays** | 2,733 |
+| **Unique Tracks** | 971 |
+| **Unique Artists** | 463 |
+| **Period** | November 12, 2025 - December 20, 2025 |
+| **Archive Files** | 39 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 169 |
+| 1 | Bernadya | 170 |
 | 2 | Tulus | 138 |
-| 3 | Nadin Amizah | 98 |
+| 3 | Nadin Amizah | 100 |
 | 4 | Ghea Indrawari | 81 |
-| 5 | Idgitaf | 74 |
-| 6 | Hindia | 69 |
+| 5 | Idgitaf | 75 |
+| 6 | Hindia | 71 |
 | 7 | Dere | 51 |
 | 8 | Sal Priadi | 50 |
 | 9 | Cigarettes After Sex | 43 |
-| 10 | Yura Yunita | 36 |
+| 10 | Yura Yunita | 37 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Kata Mereka Ini Berlebihan - Bernadya | 18 |
-| 2 | My Love Mine All Mine - Mitski | 17 |
+| 1 | My Love Mine All Mine - Mitski | 18 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 18 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
 | 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
 | 5 | Asumsi - Adrian Khalif, Bernadya | 15 |
@@ -40,7 +40,7 @@
 | 7 | Berlari - Bernadya | 14 |
 | 8 | Lama-Lama - Bernadya | 13 |
 | 9 | Terlintas - Bernadya | 13 |
-| 10 | Bertaut - Nadin Amizah | 13 |
+| 10 | Satu Bulan - Bernadya | 13 |
 
 ## 📅 Daily Breakdown
 
@@ -84,6 +84,7 @@
 | Dec 17, 2025 | 75 | Tulus (34) | STYLE - Hearts2Hearts (3) |
 | Dec 18, 2025 | 65 | Musik Relaksasi ID (11) | Car's Outside - James Arthur (1) |
 | Dec 19, 2025 | 13 | Nadin Amizah (4) | Rumpang - Nadin Amizah (2) |
+| Dec 20, 2025 | 79 | Taylor Swift (3) | Satu Bulan - Bernadya (1) |
 
 ---
 
