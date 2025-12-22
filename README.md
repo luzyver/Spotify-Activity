@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,733 |
-| **Unique Tracks** | 971 |
+| **Total Plays** | 2,794 |
+| **Unique Tracks** | 979 |
 | **Unique Artists** | 463 |
-| **Period** | November 12, 2025 - December 20, 2025 |
-| **Archive Files** | 39 |
+| **Period** | November 12, 2025 - December 21, 2025 |
+| **Archive Files** | 40 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -18,14 +18,14 @@
 |------|------|------|
 | 1 | Bernadya | 170 |
 | 2 | Tulus | 138 |
-| 3 | Nadin Amizah | 100 |
+| 3 | Nadin Amizah | 105 |
 | 4 | Ghea Indrawari | 81 |
-| 5 | Idgitaf | 75 |
+| 5 | Idgitaf | 76 |
 | 6 | Hindia | 71 |
 | 7 | Dere | 51 |
-| 8 | Sal Priadi | 50 |
+| 8 | Sal Priadi | 51 |
 | 9 | Cigarettes After Sex | 43 |
-| 10 | Yura Yunita | 37 |
+| 10 | Yura Yunita | 41 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -85,6 +85,7 @@
 | Dec 18, 2025 | 65 | Musik Relaksasi ID (11) | Car's Outside - James Arthur (1) |
 | Dec 19, 2025 | 13 | Nadin Amizah (4) | Rumpang - Nadin Amizah (2) |
 | Dec 20, 2025 | 79 | Taylor Swift (3) | Satu Bulan - Bernadya (1) |
+| Dec 21, 2025 | 61 | Nadin Amizah (5) | ghostin - Ariana Grande (2) |
 
 ---
 
