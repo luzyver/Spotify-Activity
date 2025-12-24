@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,836 |
-| **Unique Tracks** | 983 |
-| **Unique Artists** | 463 |
-| **Period** | November 12, 2025 - December 22, 2025 |
-| **Archive Files** | 41 |
+| **Total Plays** | 2,881 |
+| **Unique Tracks** | 1,010 |
+| **Unique Artists** | 471 |
+| **Period** | November 12, 2025 - December 23, 2025 |
+| **Archive Files** | 42 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 171 |
+| 1 | Bernadya | 172 |
 | 2 | Tulus | 138 |
-| 3 | Nadin Amizah | 109 |
+| 3 | Nadin Amizah | 110 |
 | 4 | Ghea Indrawari | 81 |
 | 5 | Idgitaf | 76 |
-| 6 | Hindia | 72 |
+| 6 | Hindia | 73 |
 | 7 | Dere | 51 |
 | 8 | Sal Priadi | 51 |
-| 9 | Cigarettes After Sex | 44 |
-| 10 | Yura Yunita | 44 |
+| 9 | Yura Yunita | 45 |
+| 10 | Cigarettes After Sex | 44 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -87,6 +87,7 @@
 | Dec 20, 2025 | 79 | Taylor Swift (3) | Satu Bulan - Bernadya (1) |
 | Dec 21, 2025 | 61 | Nadin Amizah (5) | ghostin - Ariana Grande (2) |
 | Dec 22, 2025 | 42 | Nadin Amizah (4) | For the First Time - Mac DeMarco (4) |
+| Dec 23, 2025 | 45 | Payung Teduh (5) | An Art Gallery Could Never Be As Unique As You - mrld (2) |
 
 ---
 
