@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,927 |
-| **Unique Tracks** | 1,015 |
+| **Total Plays** | 2,931 |
+| **Unique Tracks** | 1,018 |
 | **Unique Artists** | 472 |
-| **Period** | November 12, 2025 - December 24, 2025 |
-| **Archive Files** | 43 |
+| **Period** | November 12, 2025 - December 25, 2025 |
+| **Archive Files** | 44 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -89,6 +89,7 @@
 | Dec 22, 2025 | 42 | Nadin Amizah (4) | For the First Time - Mac DeMarco (4) |
 | Dec 23, 2025 | 45 | Payung Teduh (5) | An Art Gallery Could Never Be As Unique As You - mrld (2) |
 | Dec 24, 2025 | 46 | Banda Neira (3) | Kill Bill - SZA (2) |
+| Dec 25, 2025 | 4 | Ruth B. (1) | Lost Boy - Ruth B. (1) |
 
 ---
 
