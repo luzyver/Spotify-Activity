@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 2,931 |
-| **Unique Tracks** | 1,018 |
-| **Unique Artists** | 472 |
-| **Period** | November 12, 2025 - December 25, 2025 |
-| **Archive Files** | 44 |
+| **Total Plays** | 3,004 |
+| **Unique Tracks** | 1,026 |
+| **Unique Artists** | 477 |
+| **Period** | November 12, 2025 - December 26, 2025 |
+| **Archive Files** | 45 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 172 |
-| 2 | Tulus | 138 |
-| 3 | Nadin Amizah | 110 |
+| 2 | Tulus | 139 |
+| 3 | Nadin Amizah | 115 |
 | 4 | Ghea Indrawari | 81 |
-| 5 | Idgitaf | 76 |
+| 5 | Idgitaf | 77 |
 | 6 | Hindia | 73 |
-| 7 | Dere | 51 |
-| 8 | Sal Priadi | 51 |
-| 9 | Yura Yunita | 45 |
+| 7 | Dere | 52 |
+| 8 | Sal Priadi | 52 |
+| 9 | Yura Yunita | 46 |
 | 10 | Cigarettes After Sex | 44 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -36,11 +36,11 @@
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
 | 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
 | 5 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 6 | Kota - Dere | 14 |
-| 7 | Bertaut - Nadin Amizah | 14 |
-| 8 | Cincin - Hindia | 14 |
-| 9 | Monolog - Pamungkas | 14 |
-| 10 | Berlari - Bernadya | 14 |
+| 6 | Kota - Dere | 15 |
+| 7 | Bertaut - Nadin Amizah | 15 |
+| 8 | Kukira Kau Rumah - Amigdala | 14 |
+| 9 | Cincin - Hindia | 14 |
+| 10 | Monolog - Pamungkas | 14 |
 
 ## 📅 Daily Breakdown
 
@@ -90,6 +90,7 @@
 | Dec 23, 2025 | 45 | Payung Teduh (5) | An Art Gallery Could Never Be As Unique As You - mrld (2) |
 | Dec 24, 2025 | 46 | Banda Neira (3) | Kill Bill - SZA (2) |
 | Dec 25, 2025 | 4 | Ruth B. (1) | Lost Boy - Ruth B. (1) |
+| Dec 26, 2025 | 73 | Payung Teduh (8) | Lose - NIKI (2) |
 
 ---
 
