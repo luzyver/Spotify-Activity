@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,004 |
-| **Unique Tracks** | 1,026 |
-| **Unique Artists** | 477 |
-| **Period** | November 12, 2025 - December 26, 2025 |
-| **Archive Files** | 45 |
+| **Total Plays** | 3,052 |
+| **Unique Tracks** | 1,029 |
+| **Unique Artists** | 479 |
+| **Period** | November 12, 2025 - December 28, 2025 |
+| **Archive Files** | 46 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 172 |
-| 2 | Tulus | 139 |
-| 3 | Nadin Amizah | 115 |
+| 1 | Bernadya | 173 |
+| 2 | Tulus | 145 |
+| 3 | Nadin Amizah | 118 |
 | 4 | Ghea Indrawari | 81 |
-| 5 | Idgitaf | 77 |
-| 6 | Hindia | 73 |
-| 7 | Dere | 52 |
+| 5 | Idgitaf | 78 |
+| 6 | Hindia | 76 |
+| 7 | Dere | 53 |
 | 8 | Sal Priadi | 52 |
-| 9 | Yura Yunita | 46 |
-| 10 | Cigarettes After Sex | 44 |
+| 9 | Yura Yunita | 48 |
+| 10 | Cigarettes After Sex | 45 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 19 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 19 |
+| 1 | My Love Mine All Mine - Mitski | 20 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 20 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
 | 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
 | 5 | Asumsi - Adrian Khalif, Bernadya | 15 |
 | 6 | Kota - Dere | 15 |
 | 7 | Bertaut - Nadin Amizah | 15 |
-| 8 | Kukira Kau Rumah - Amigdala | 14 |
-| 9 | Cincin - Hindia | 14 |
-| 10 | Monolog - Pamungkas | 14 |
+| 8 | Monolog - Pamungkas | 15 |
+| 9 | Langit Abu-Abu - Tulus | 15 |
+| 10 | Kukira Kau Rumah - Amigdala | 14 |
 
 ## 📅 Daily Breakdown
 
@@ -91,6 +91,7 @@
 | Dec 24, 2025 | 46 | Banda Neira (3) | Kill Bill - SZA (2) |
 | Dec 25, 2025 | 4 | Ruth B. (1) | Lost Boy - Ruth B. (1) |
 | Dec 26, 2025 | 73 | Payung Teduh (8) | Lose - NIKI (2) |
+| Dec 28, 2025 | 48 | Tulus (6) | Langit Abu-Abu - Tulus (1) |
 
 ---
 
