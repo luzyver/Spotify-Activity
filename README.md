@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,052 |
-| **Unique Tracks** | 1,029 |
-| **Unique Artists** | 479 |
-| **Period** | November 12, 2025 - December 28, 2025 |
-| **Archive Files** | 46 |
+| **Total Plays** | 3,177 |
+| **Unique Tracks** | 1,064 |
+| **Unique Artists** | 503 |
+| **Period** | November 12, 2025 - December 29, 2025 |
+| **Archive Files** | 47 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -92,6 +92,7 @@
 | Dec 25, 2025 | 4 | Ruth B. (1) | Lost Boy - Ruth B. (1) |
 | Dec 26, 2025 | 73 | Payung Teduh (8) | Lose - NIKI (2) |
 | Dec 28, 2025 | 48 | Tulus (6) | Langit Abu-Abu - Tulus (1) |
+| Dec 29, 2025 | 125 | Taylor Swift (10) | happier - Olivia Rodrigo (1) |
 
 ---
 
