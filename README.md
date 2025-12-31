@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,177 |
-| **Unique Tracks** | 1,064 |
-| **Unique Artists** | 503 |
-| **Period** | November 12, 2025 - December 29, 2025 |
-| **Archive Files** | 47 |
+| **Total Plays** | 3,230 |
+| **Unique Tracks** | 1,085 |
+| **Unique Artists** | 513 |
+| **Period** | November 12, 2025 - December 30, 2025 |
+| **Archive Files** | 48 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -21,17 +21,17 @@
 | 3 | Nadin Amizah | 118 |
 | 4 | Ghea Indrawari | 81 |
 | 5 | Idgitaf | 78 |
-| 6 | Hindia | 76 |
+| 6 | Hindia | 78 |
 | 7 | Dere | 53 |
 | 8 | Sal Priadi | 52 |
 | 9 | Yura Yunita | 48 |
-| 10 | Cigarettes After Sex | 45 |
+| 10 | Cigarettes After Sex | 47 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 20 |
+| 1 | My Love Mine All Mine - Mitski | 21 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 20 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
 | 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
@@ -93,6 +93,7 @@
 | Dec 26, 2025 | 73 | Payung Teduh (8) | Lose - NIKI (2) |
 | Dec 28, 2025 | 48 | Tulus (6) | Langit Abu-Abu - Tulus (1) |
 | Dec 29, 2025 | 125 | Taylor Swift (10) | happier - Olivia Rodrigo (1) |
+| Dec 30, 2025 | 53 | Bruno Mars (3) | Cheating on You - Charlie Puth (2) |
 
 ---
 
