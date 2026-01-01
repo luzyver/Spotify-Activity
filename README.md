@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,230 |
-| **Unique Tracks** | 1,085 |
-| **Unique Artists** | 513 |
-| **Period** | November 12, 2025 - December 30, 2025 |
-| **Archive Files** | 48 |
+| **Total Plays** | 3,285 |
+| **Unique Tracks** | 1,100 |
+| **Unique Artists** | 522 |
+| **Period** | November 12, 2025 - December 31, 2025 |
+| **Archive Files** | 49 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 173 |
-| 2 | Tulus | 145 |
-| 3 | Nadin Amizah | 118 |
+| 2 | Tulus | 146 |
+| 3 | Nadin Amizah | 122 |
 | 4 | Ghea Indrawari | 81 |
-| 5 | Idgitaf | 78 |
-| 6 | Hindia | 78 |
-| 7 | Dere | 53 |
-| 8 | Sal Priadi | 52 |
-| 9 | Yura Yunita | 48 |
+| 5 | Hindia | 79 |
+| 6 | Idgitaf | 78 |
+| 7 | Dere | 54 |
+| 8 | Sal Priadi | 54 |
+| 9 | Yura Yunita | 49 |
 | 10 | Cigarettes After Sex | 47 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -34,13 +34,13 @@
 | 1 | My Love Mine All Mine - Mitski | 21 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 20 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
-| 4 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
-| 5 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 6 | Kota - Dere | 15 |
-| 7 | Bertaut - Nadin Amizah | 15 |
-| 8 | Monolog - Pamungkas | 15 |
-| 9 | Langit Abu-Abu - Tulus | 15 |
-| 10 | Kukira Kau Rumah - Amigdala | 14 |
+| 4 | Kota - Dere | 16 |
+| 5 | Bertaut - Nadin Amizah | 16 |
+| 6 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
+| 7 | Asumsi - Adrian Khalif, Bernadya | 15 |
+| 8 | Kukira Kau Rumah - Amigdala | 15 |
+| 9 | Monolog - Pamungkas | 15 |
+| 10 | Langit Abu-Abu - Tulus | 15 |
 
 ## 📅 Daily Breakdown
 
@@ -94,6 +94,7 @@
 | Dec 28, 2025 | 48 | Tulus (6) | Langit Abu-Abu - Tulus (1) |
 | Dec 29, 2025 | 125 | Taylor Swift (10) | happier - Olivia Rodrigo (1) |
 | Dec 30, 2025 | 53 | Bruno Mars (3) | Cheating on You - Charlie Puth (2) |
+| Dec 31, 2025 | 55 | Payung Teduh (6) | Lose - NIKI (2) |
 
 ---
 
