@@ -1,5 +1,131 @@
 [
   {
+    "timestamp": 1767373109951,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "(Jangan) Jatuh Cinta",
+    "artist": "Dee Lestari",
+    "uri": "spotify:track:5TO5UPczP0SJhbaoBz7Bme",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c03d22036a1aa33bc5390bf6"
+  },
+  {
+    "timestamp": 1767372876361,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "1/1",
+    "artist": "For Revenge",
+    "uri": "spotify:track:03IVsmxr8XC7Oym3th5WoL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bf09e5d5661fe469bdf8e622"
+  },
+  {
+    "timestamp": 1767372580094,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "The Liar",
+    "artist": "Aziz Hedra",
+    "uri": "spotify:track:0atEkXRq62mZybi556xuPI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ab2ba1f70e77dc56a32311b3"
+  },
+  {
+    "timestamp": 1767372389395,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Cincin",
+    "artist": "Hindia",
+    "uri": "spotify:track:7J0isBrUxhIYZVdrBOOlIh",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d58121433ea3e6c4822ac494"
+  },
+  {
+    "timestamp": 1767372044160,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Selangit",
+    "artist": "Brenda Yivabelle",
+    "uri": "spotify:track:6xAtPXjwpgPt6JAd3OrxNK",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735c574593a95846b7d953ac88"
+  },
+  {
+    "timestamp": 1767371800012,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Alamak",
+    "artist": "Rizky Febian, Adrian Khalif",
+    "uri": "spotify:track:1vkwlZncsYqFukl2Q7M6Fe",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27301b9750a33d771645d7f043a"
+  },
+  {
+    "timestamp": 1767371529013,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Nina",
+    "artist": ".Feast",
+    "uri": "spotify:track:0daEJMXc3b4ZMTnvtHpuTt",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c800b90e2092a5328f699117"
+  },
+  {
+    "timestamp": 1767371253224,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "bittersweet",
+    "artist": "Madison Beer",
+    "uri": "spotify:track:3A02hWQ2ebOFDWSbAMNnpw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732fb3d517253228abf2468f74"
+  },
+  {
+    "timestamp": 1767370966995,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Get This",
+    "artist": "The All-American Rejects",
+    "uri": "spotify:track:5El8KGV9xfrBctyTZp1n6R",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27380ba2f0a483a61e45b523e4d"
+  },
+  {
+    "timestamp": 1767370766860,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lemon Vanilla Ice",
+    "artist": "Batavian Roulette",
+    "uri": "spotify:track:0a2XzIRk3DpPcElQ4ohgbJ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f82bcbfa78c04817df52a1a6"
+  },
+  {
+    "timestamp": 1767370454506,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Hitung Mundur",
+    "artist": "Biru Baru",
+    "uri": "spotify:track:0AFqdd132CkrtpLmO6S2ou",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cfb93bc463692f86535e25b6"
+  },
+  {
+    "timestamp": 1767370210587,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "MOKE",
+    "artist": "Ave, GunZ",
+    "uri": "spotify:track:3shukn4r21RVRAxpq9EPko",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739f05680c752ce95394933511"
+  },
+  {
+    "timestamp": 1767369993725,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Night Changes",
+    "artist": "One Direction",
+    "uri": "spotify:track:5O2P9iiztwhomNh8xkR9lJ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27334a29f220057810cce98e1b4"
+  },
+  {
+    "timestamp": 1767369766712,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lagi Lagi Kamu",
+    "artist": "Amanda Caesa",
+    "uri": "spotify:track:3rxEIopqXo7oAfgszpHfRc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273982df431857aaf87a1546fcc"
+  },
+  {
     "timestamp": 1767369515936,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
