@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,285 |
-| **Unique Tracks** | 1,100 |
-| **Unique Artists** | 522 |
-| **Period** | November 12, 2025 - December 31, 2025 |
-| **Archive Files** | 49 |
+| **Total Plays** | 3,452 |
+| **Unique Tracks** | 1,129 |
+| **Unique Artists** | 530 |
+| **Period** | November 12, 2025 - January 1, 2026 |
+| **Archive Files** | 50 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -22,16 +22,16 @@
 | 4 | Ghea Indrawari | 81 |
 | 5 | Hindia | 79 |
 | 6 | Idgitaf | 78 |
-| 7 | Dere | 54 |
-| 8 | Sal Priadi | 54 |
-| 9 | Yura Yunita | 49 |
-| 10 | Cigarettes After Sex | 47 |
+| 7 | Cigarettes After Sex | 58 |
+| 8 | Dere | 54 |
+| 9 | Sal Priadi | 54 |
+| 10 | Yura Yunita | 49 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 21 |
+| 1 | My Love Mine All Mine - Mitski | 22 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 20 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
 | 4 | Kota - Dere | 16 |
@@ -95,6 +95,7 @@
 | Dec 29, 2025 | 125 | Taylor Swift (10) | happier - Olivia Rodrigo (1) |
 | Dec 30, 2025 | 53 | Bruno Mars (3) | Cheating on You - Charlie Puth (2) |
 | Dec 31, 2025 | 55 | Payung Teduh (6) | Lose - NIKI (2) |
+| Jan 1, 2026 | 167 | Cigarettes After Sex (11) | Memories - Conan Gray (1) |
 
 ---
 
