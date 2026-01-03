@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,452 |
-| **Unique Tracks** | 1,129 |
-| **Unique Artists** | 530 |
-| **Period** | November 12, 2025 - January 1, 2026 |
-| **Archive Files** | 50 |
+| **Total Plays** | 3,587 |
+| **Unique Tracks** | 1,167 |
+| **Unique Artists** | 556 |
+| **Period** | November 12, 2025 - January 2, 2026 |
+| **Archive Files** | 51 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 173 |
-| 2 | Tulus | 146 |
-| 3 | Nadin Amizah | 122 |
-| 4 | Ghea Indrawari | 81 |
-| 5 | Hindia | 79 |
-| 6 | Idgitaf | 78 |
+| 1 | Bernadya | 179 |
+| 2 | Tulus | 149 |
+| 3 | Nadin Amizah | 125 |
+| 4 | Hindia | 85 |
+| 5 | Idgitaf | 82 |
+| 6 | Ghea Indrawari | 81 |
 | 7 | Cigarettes After Sex | 58 |
-| 8 | Dere | 54 |
-| 9 | Sal Priadi | 54 |
-| 10 | Yura Yunita | 49 |
+| 8 | Sal Priadi | 55 |
+| 9 | Dere | 54 |
+| 10 | Yura Yunita | 50 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -33,14 +33,14 @@
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 22 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 20 |
-| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 17 |
-| 4 | Kota - Dere | 16 |
-| 5 | Bertaut - Nadin Amizah | 16 |
-| 6 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
-| 7 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 8 | Kukira Kau Rumah - Amigdala | 15 |
-| 9 | Monolog - Pamungkas | 15 |
-| 10 | Langit Abu-Abu - Tulus | 15 |
+| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 19 |
+| 4 | Monolog - Pamungkas | 17 |
+| 5 | Kota - Dere | 16 |
+| 6 | Bertaut - Nadin Amizah | 16 |
+| 7 | Cincin - Hindia | 16 |
+| 8 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
+| 9 | Asumsi - Adrian Khalif, Bernadya | 15 |
+| 10 | Kukira Kau Rumah - Amigdala | 15 |
 
 ## 📅 Daily Breakdown
 
@@ -96,6 +96,7 @@
 | Dec 30, 2025 | 53 | Bruno Mars (3) | Cheating on You - Charlie Puth (2) |
 | Dec 31, 2025 | 55 | Payung Teduh (6) | Lose - NIKI (2) |
 | Jan 1, 2026 | 167 | Cigarettes After Sex (11) | Memories - Conan Gray (1) |
+| Jan 2, 2026 | 135 | Hindia (6) | Lesung Pipi - Raim Laode (3) |
 
 ---
 
