@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,587 |
-| **Unique Tracks** | 1,167 |
-| **Unique Artists** | 556 |
-| **Period** | November 12, 2025 - January 2, 2026 |
-| **Archive Files** | 51 |
+| **Total Plays** | 3,609 |
+| **Unique Tracks** | 1,183 |
+| **Unique Artists** | 568 |
+| **Period** | November 12, 2025 - January 3, 2026 |
+| **Archive Files** | 52 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -97,6 +97,7 @@
 | Dec 31, 2025 | 55 | Payung Teduh (6) | Lose - NIKI (2) |
 | Jan 1, 2026 | 167 | Cigarettes After Sex (11) | Memories - Conan Gray (1) |
 | Jan 2, 2026 | 135 | Hindia (6) | Lesung Pipi - Raim Laode (3) |
+| Jan 3, 2026 | 22 | For Revenge (4) | Nyaman (24/7) - Dominique Adhadiaz (1) |
 
 ---
 
