@@ -6,21 +6,21 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,609 |
-| **Unique Tracks** | 1,183 |
-| **Unique Artists** | 568 |
-| **Period** | November 12, 2025 - January 3, 2026 |
-| **Archive Files** | 52 |
+| **Total Plays** | 3,664 |
+| **Unique Tracks** | 1,187 |
+| **Unique Artists** | 569 |
+| **Period** | November 12, 2025 - January 4, 2026 |
+| **Archive Files** | 53 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 179 |
-| 2 | Tulus | 149 |
-| 3 | Nadin Amizah | 125 |
+| 2 | Tulus | 151 |
+| 3 | Nadin Amizah | 126 |
 | 4 | Hindia | 85 |
-| 5 | Idgitaf | 82 |
+| 5 | Idgitaf | 83 |
 | 6 | Ghea Indrawari | 81 |
 | 7 | Cigarettes After Sex | 58 |
 | 8 | Sal Priadi | 55 |
@@ -38,9 +38,9 @@
 | 5 | Kota - Dere | 16 |
 | 6 | Bertaut - Nadin Amizah | 16 |
 | 7 | Cincin - Hindia | 16 |
-| 8 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
-| 9 | Asumsi - Adrian Khalif, Bernadya | 15 |
-| 10 | Kukira Kau Rumah - Amigdala | 15 |
+| 8 | Langit Abu-Abu - Tulus | 16 |
+| 9 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
+| 10 | Asumsi - Adrian Khalif, Bernadya | 15 |
 
 ## 📅 Daily Breakdown
 
@@ -98,6 +98,7 @@
 | Jan 1, 2026 | 167 | Cigarettes After Sex (11) | Memories - Conan Gray (1) |
 | Jan 2, 2026 | 135 | Hindia (6) | Lesung Pipi - Raim Laode (3) |
 | Jan 3, 2026 | 22 | For Revenge (4) | Nyaman (24/7) - Dominique Adhadiaz (1) |
+| Jan 4, 2026 | 55 | Payung Teduh (4) | Surat Hati - Devano (1) |
 
 ---
 
