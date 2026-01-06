@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,664 |
-| **Unique Tracks** | 1,187 |
-| **Unique Artists** | 569 |
-| **Period** | November 12, 2025 - January 4, 2026 |
-| **Archive Files** | 53 |
+| **Total Plays** | 3,725 |
+| **Unique Tracks** | 1,190 |
+| **Unique Artists** | 570 |
+| **Period** | November 12, 2025 - January 5, 2026 |
+| **Archive Files** | 54 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 179 |
-| 2 | Tulus | 151 |
-| 3 | Nadin Amizah | 126 |
-| 4 | Hindia | 85 |
-| 5 | Idgitaf | 83 |
+| 1 | Bernadya | 180 |
+| 2 | Tulus | 156 |
+| 3 | Nadin Amizah | 134 |
+| 4 | Hindia | 89 |
+| 5 | Idgitaf | 85 |
 | 6 | Ghea Indrawari | 81 |
-| 7 | Cigarettes After Sex | 58 |
-| 8 | Sal Priadi | 55 |
-| 9 | Dere | 54 |
-| 10 | Yura Yunita | 50 |
+| 7 | Cigarettes After Sex | 59 |
+| 8 | Dere | 56 |
+| 9 | Sal Priadi | 55 |
+| 10 | Yura Yunita | 51 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 22 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 20 |
+| 1 | My Love Mine All Mine - Mitski | 24 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 21 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 19 |
-| 4 | Monolog - Pamungkas | 17 |
-| 5 | Kota - Dere | 16 |
-| 6 | Bertaut - Nadin Amizah | 16 |
-| 7 | Cincin - Hindia | 16 |
-| 8 | Langit Abu-Abu - Tulus | 16 |
-| 9 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
-| 10 | Asumsi - Adrian Khalif, Bernadya | 15 |
+| 4 | Bertaut - Nadin Amizah | 18 |
+| 5 | Monolog - Pamungkas | 18 |
+| 6 | Kukira Kau Rumah - Amigdala | 17 |
+| 7 | Kota - Dere | 17 |
+| 8 | Cincin - Hindia | 16 |
+| 9 | Langit Abu-Abu - Tulus | 16 |
+| 10 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
 
 ## 📅 Daily Breakdown
 
@@ -99,6 +99,7 @@
 | Jan 2, 2026 | 135 | Hindia (6) | Lesung Pipi - Raim Laode (3) |
 | Jan 3, 2026 | 22 | For Revenge (4) | Nyaman (24/7) - Dominique Adhadiaz (1) |
 | Jan 4, 2026 | 55 | Payung Teduh (4) | Surat Hati - Devano (1) |
+| Jan 5, 2026 | 61 | Nadin Amizah (8) | My Love Mine All Mine - Mitski (2) |
 
 ---
 
