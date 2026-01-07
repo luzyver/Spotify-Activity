@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,725 |
-| **Unique Tracks** | 1,190 |
+| **Total Plays** | 3,784 |
+| **Unique Tracks** | 1,193 |
 | **Unique Artists** | 570 |
-| **Period** | November 12, 2025 - January 5, 2026 |
-| **Archive Files** | 54 |
+| **Period** | November 12, 2025 - January 6, 2026 |
+| **Archive Files** | 55 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 180 |
-| 2 | Tulus | 156 |
-| 3 | Nadin Amizah | 134 |
-| 4 | Hindia | 89 |
-| 5 | Idgitaf | 85 |
+| 1 | Bernadya | 184 |
+| 2 | Tulus | 163 |
+| 3 | Nadin Amizah | 137 |
+| 4 | Hindia | 91 |
+| 5 | Idgitaf | 87 |
 | 6 | Ghea Indrawari | 81 |
 | 7 | Cigarettes After Sex | 59 |
-| 8 | Dere | 56 |
+| 8 | Dere | 57 |
 | 9 | Sal Priadi | 55 |
-| 10 | Yura Yunita | 51 |
+| 10 | Yura Yunita | 53 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 24 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 21 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 22 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 19 |
 | 4 | Bertaut - Nadin Amizah | 18 |
 | 5 | Monolog - Pamungkas | 18 |
 | 6 | Kukira Kau Rumah - Amigdala | 17 |
 | 7 | Kota - Dere | 17 |
-| 8 | Cincin - Hindia | 16 |
-| 9 | Langit Abu-Abu - Tulus | 16 |
-| 10 | Untungnya, Hidup Harus Tetap Berjalan - Bernadya | 15 |
+| 8 | Langit Abu-Abu - Tulus | 17 |
+| 9 | Asumsi - Adrian Khalif, Bernadya | 16 |
+| 10 | Cincin - Hindia | 16 |
 
 ## 📅 Daily Breakdown
 
@@ -100,6 +100,7 @@
 | Jan 3, 2026 | 22 | For Revenge (4) | Nyaman (24/7) - Dominique Adhadiaz (1) |
 | Jan 4, 2026 | 55 | Payung Teduh (4) | Surat Hati - Devano (1) |
 | Jan 5, 2026 | 61 | Nadin Amizah (8) | My Love Mine All Mine - Mitski (2) |
+| Jan 6, 2026 | 59 | Tulus (7) | Menceritakanmu - Batas Senja (2) |
 
 ---
 
