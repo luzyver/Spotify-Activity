@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,847 |
-| **Unique Tracks** | 1,201 |
-| **Unique Artists** | 573 |
-| **Period** | November 12, 2025 - January 7, 2026 |
-| **Archive Files** | 56 |
+| **Total Plays** | 3,883 |
+| **Unique Tracks** | 1,202 |
+| **Unique Artists** | 574 |
+| **Period** | November 12, 2025 - January 8, 2026 |
+| **Archive Files** | 57 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 186 |
-| 2 | Tulus | 165 |
-| 3 | Nadin Amizah | 141 |
-| 4 | Hindia | 93 |
-| 5 | Idgitaf | 88 |
+| 1 | Bernadya | 187 |
+| 2 | Tulus | 166 |
+| 3 | Nadin Amizah | 144 |
+| 4 | Hindia | 94 |
+| 5 | Idgitaf | 90 |
 | 6 | Ghea Indrawari | 81 |
 | 7 | Cigarettes After Sex | 59 |
-| 8 | Dere | 58 |
-| 9 | Sal Priadi | 56 |
+| 8 | Sal Priadi | 59 |
+| 9 | Dere | 58 |
 | 10 | Yura Yunita | 53 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -32,15 +32,15 @@
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 24 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 22 |
-| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 19 |
-| 4 | Kukira Kau Rumah - Amigdala | 18 |
-| 5 | Kota - Dere | 18 |
-| 6 | Bertaut - Nadin Amizah | 18 |
-| 7 | Monolog - Pamungkas | 18 |
-| 8 | Langit Abu-Abu - Tulus | 17 |
-| 9 | Asumsi - Adrian Khalif, Bernadya | 16 |
-| 10 | Satu Bulan - Bernadya | 16 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 23 |
+| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 20 |
+| 4 | Bertaut - Nadin Amizah | 19 |
+| 5 | Monolog - Pamungkas | 19 |
+| 6 | Kukira Kau Rumah - Amigdala | 18 |
+| 7 | Kota - Dere | 18 |
+| 8 | Sorai - Nadin Amizah | 17 |
+| 9 | everything u are - Hindia | 17 |
+| 10 | Langit Abu-Abu - Tulus | 17 |
 
 ## 📅 Daily Breakdown
 
@@ -102,6 +102,7 @@
 | Jan 5, 2026 | 61 | Nadin Amizah (8) | My Love Mine All Mine - Mitski (2) |
 | Jan 6, 2026 | 59 | Tulus (7) | Menceritakanmu - Batas Senja (2) |
 | Jan 7, 2026 | 63 | Nadin Amizah (4) | Bintang Di Surga - Noah (2) |
+| Jan 8, 2026 | 36 | Sal Priadi (3) | Lose - NIKI (3) |
 
 ---
 
