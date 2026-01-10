@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,883 |
-| **Unique Tracks** | 1,202 |
-| **Unique Artists** | 574 |
-| **Period** | November 12, 2025 - January 8, 2026 |
-| **Archive Files** | 57 |
+| **Total Plays** | 3,884 |
+| **Unique Tracks** | 1,203 |
+| **Unique Artists** | 575 |
+| **Period** | November 12, 2025 - January 9, 2026 |
+| **Archive Files** | 58 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -103,6 +103,7 @@
 | Jan 6, 2026 | 59 | Tulus (7) | Menceritakanmu - Batas Senja (2) |
 | Jan 7, 2026 | 63 | Nadin Amizah (4) | Bintang Di Surga - Noah (2) |
 | Jan 8, 2026 | 36 | Sal Priadi (3) | Lose - NIKI (3) |
+| Jan 9, 2026 | 1 | Nadhif Basalamah, Aziz Harun, Aisha Retno (1) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (1) |
 
 ---
 
