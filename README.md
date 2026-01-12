@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,884 |
-| **Unique Tracks** | 1,203 |
-| **Unique Artists** | 575 |
-| **Period** | November 12, 2025 - January 9, 2026 |
-| **Archive Files** | 58 |
+| **Total Plays** | 3,910 |
+| **Unique Tracks** | 1,222 |
+| **Unique Artists** | 581 |
+| **Period** | November 12, 2025 - January 11, 2026 |
+| **Archive Files** | 59 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 187 |
+| 1 | Bernadya | 188 |
 | 2 | Tulus | 166 |
 | 3 | Nadin Amizah | 144 |
 | 4 | Hindia | 94 |
@@ -104,6 +104,7 @@
 | Jan 7, 2026 | 63 | Nadin Amizah (4) | Bintang Di Surga - Noah (2) |
 | Jan 8, 2026 | 36 | Sal Priadi (3) | Lose - NIKI (3) |
 | Jan 9, 2026 | 1 | Nadhif Basalamah, Aziz Harun, Aisha Retno (1) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (1) |
+| Jan 11, 2026 | 26 | Sheila On 7 (5) | Ambisius - Chintya Gabriella (1) |
 
 ---
 
