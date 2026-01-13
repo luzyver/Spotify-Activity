@@ -6,23 +6,23 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,910 |
+| **Total Plays** | 3,928 |
 | **Unique Tracks** | 1,222 |
 | **Unique Artists** | 581 |
-| **Period** | November 12, 2025 - January 11, 2026 |
-| **Archive Files** | 59 |
+| **Period** | November 12, 2025 - January 12, 2026 |
+| **Archive Files** | 60 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 188 |
-| 2 | Tulus | 166 |
-| 3 | Nadin Amizah | 144 |
-| 4 | Hindia | 94 |
+| 2 | Tulus | 171 |
+| 3 | Nadin Amizah | 146 |
+| 4 | Hindia | 95 |
 | 5 | Idgitaf | 90 |
 | 6 | Ghea Indrawari | 81 |
-| 7 | Cigarettes After Sex | 59 |
+| 7 | Cigarettes After Sex | 60 |
 | 8 | Sal Priadi | 59 |
 | 9 | Dere | 58 |
 | 10 | Yura Yunita | 53 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 24 |
+| 1 | My Love Mine All Mine - Mitski | 25 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 23 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 20 |
 | 4 | Bertaut - Nadin Amizah | 19 |
 | 5 | Monolog - Pamungkas | 19 |
 | 6 | Kukira Kau Rumah - Amigdala | 18 |
 | 7 | Kota - Dere | 18 |
-| 8 | Sorai - Nadin Amizah | 17 |
-| 9 | everything u are - Hindia | 17 |
-| 10 | Langit Abu-Abu - Tulus | 17 |
+| 8 | Langit Abu-Abu - Tulus | 18 |
+| 9 | Sorai - Nadin Amizah | 17 |
+| 10 | everything u are - Hindia | 17 |
 
 ## 📅 Daily Breakdown
 
@@ -105,6 +105,7 @@
 | Jan 8, 2026 | 36 | Sal Priadi (3) | Lose - NIKI (3) |
 | Jan 9, 2026 | 1 | Nadhif Basalamah, Aziz Harun, Aisha Retno (1) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (1) |
 | Jan 11, 2026 | 26 | Sheila On 7 (5) | Ambisius - Chintya Gabriella (1) |
+| Jan 12, 2026 | 18 | Tulus (5) | Secukupnya - Hindia (1) |
 
 ---
 
