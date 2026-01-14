@@ -6,20 +6,20 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,928 |
-| **Unique Tracks** | 1,222 |
+| **Total Plays** | 3,948 |
+| **Unique Tracks** | 1,225 |
 | **Unique Artists** | 581 |
-| **Period** | November 12, 2025 - January 12, 2026 |
-| **Archive Files** | 60 |
+| **Period** | November 12, 2025 - January 13, 2026 |
+| **Archive Files** | 61 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 188 |
+| 1 | Bernadya | 189 |
 | 2 | Tulus | 171 |
-| 3 | Nadin Amizah | 146 |
-| 4 | Hindia | 95 |
+| 3 | Nadin Amizah | 147 |
+| 4 | Hindia | 100 |
 | 5 | Idgitaf | 90 |
 | 6 | Ghea Indrawari | 81 |
 | 7 | Cigarettes After Sex | 60 |
@@ -32,15 +32,15 @@
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 25 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 23 |
-| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 20 |
-| 4 | Bertaut - Nadin Amizah | 19 |
-| 5 | Monolog - Pamungkas | 19 |
-| 6 | Kukira Kau Rumah - Amigdala | 18 |
-| 7 | Kota - Dere | 18 |
-| 8 | Langit Abu-Abu - Tulus | 18 |
-| 9 | Sorai - Nadin Amizah | 17 |
-| 10 | everything u are - Hindia | 17 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 24 |
+| 3 | Bertaut - Nadin Amizah | 20 |
+| 4 | Monolog - Pamungkas | 20 |
+| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 20 |
+| 6 | everything u are - Hindia | 19 |
+| 7 | Kukira Kau Rumah - Amigdala | 18 |
+| 8 | Kota - Dere | 18 |
+| 9 | Langit Abu-Abu - Tulus | 18 |
+| 10 | bergema sampai selamanya - Nadhif Basalamah | 17 |
 
 ## 📅 Daily Breakdown
 
@@ -106,6 +106,7 @@
 | Jan 9, 2026 | 1 | Nadhif Basalamah, Aziz Harun, Aisha Retno (1) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (1) |
 | Jan 11, 2026 | 26 | Sheila On 7 (5) | Ambisius - Chintya Gabriella (1) |
 | Jan 12, 2026 | 18 | Tulus (5) | Secukupnya - Hindia (1) |
+| Jan 13, 2026 | 20 | Hindia (5) | everything u are - Hindia (2) |
 
 ---
 
