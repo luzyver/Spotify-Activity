@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 3,948 |
-| **Unique Tracks** | 1,225 |
+| **Total Plays** | 4,012 |
+| **Unique Tracks** | 1,226 |
 | **Unique Artists** | 581 |
-| **Period** | November 12, 2025 - January 13, 2026 |
-| **Archive Files** | 61 |
+| **Period** | November 12, 2025 - January 14, 2026 |
+| **Archive Files** | 62 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 189 |
-| 2 | Tulus | 171 |
-| 3 | Nadin Amizah | 147 |
-| 4 | Hindia | 100 |
-| 5 | Idgitaf | 90 |
+| 1 | Bernadya | 194 |
+| 2 | Tulus | 175 |
+| 3 | Nadin Amizah | 152 |
+| 4 | Hindia | 108 |
+| 5 | Idgitaf | 91 |
 | 6 | Ghea Indrawari | 81 |
-| 7 | Cigarettes After Sex | 60 |
-| 8 | Sal Priadi | 59 |
-| 9 | Dere | 58 |
-| 10 | Yura Yunita | 53 |
+| 7 | Sal Priadi | 63 |
+| 8 | Cigarettes After Sex | 60 |
+| 9 | Dere | 60 |
+| 10 | Pamungkas | 57 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -39,8 +39,8 @@
 | 6 | everything u are - Hindia | 19 |
 | 7 | Kukira Kau Rumah - Amigdala | 18 |
 | 8 | Kota - Dere | 18 |
-| 9 | Langit Abu-Abu - Tulus | 18 |
-| 10 | bergema sampai selamanya - Nadhif Basalamah | 17 |
+| 9 | Cincin - Hindia | 18 |
+| 10 | Langit Abu-Abu - Tulus | 18 |
 
 ## 📅 Daily Breakdown
 
@@ -107,6 +107,7 @@
 | Jan 11, 2026 | 26 | Sheila On 7 (5) | Ambisius - Chintya Gabriella (1) |
 | Jan 12, 2026 | 18 | Tulus (5) | Secukupnya - Hindia (1) |
 | Jan 13, 2026 | 20 | Hindia (5) | everything u are - Hindia (2) |
+| Jan 14, 2026 | 64 | Hindia (8) | Lara - Dialog Senja (3) |
 
 ---
 
