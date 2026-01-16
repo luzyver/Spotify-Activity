@@ -6,23 +6,23 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,012 |
+| **Total Plays** | 4,015 |
 | **Unique Tracks** | 1,226 |
 | **Unique Artists** | 581 |
-| **Period** | November 12, 2025 - January 14, 2026 |
-| **Archive Files** | 62 |
+| **Period** | November 12, 2025 - January 15, 2026 |
+| **Archive Files** | 63 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 194 |
-| 2 | Tulus | 175 |
+| 2 | Tulus | 176 |
 | 3 | Nadin Amizah | 152 |
 | 4 | Hindia | 108 |
 | 5 | Idgitaf | 91 |
 | 6 | Ghea Indrawari | 81 |
-| 7 | Sal Priadi | 63 |
+| 7 | Sal Priadi | 64 |
 | 8 | Cigarettes After Sex | 60 |
 | 9 | Dere | 60 |
 | 10 | Pamungkas | 57 |
@@ -108,6 +108,7 @@
 | Jan 12, 2026 | 18 | Tulus (5) | Secukupnya - Hindia (1) |
 | Jan 13, 2026 | 20 | Hindia (5) | everything u are - Hindia (2) |
 | Jan 14, 2026 | 64 | Hindia (8) | Lara - Dialog Senja (3) |
+| Jan 15, 2026 | 3 | Sal Priadi (1) | Besok kita pergi makan - Sal Priadi (1) |
 
 ---
 
