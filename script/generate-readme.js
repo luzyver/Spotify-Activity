@@ -71,7 +71,7 @@ const table = (headers, rows) => {
   return `${header}\n${separator}\n${body}`;
 };
 
-const readme = `# 🎵 Rezz Spotify Listening History
+const readme = `# 🎵 Listening History
 
 > Automated Spotify activity tracker with historical data archive
 
