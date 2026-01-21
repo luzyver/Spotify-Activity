@@ -1,4 +1,4 @@
-# 🎵 Rezz Spotify Listening History
+# 🎵 Listening History
 
 > Automated Spotify activity tracker with historical data archive
 
