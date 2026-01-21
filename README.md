@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,071 |
-| **Unique Tracks** | 1,228 |
-| **Unique Artists** | 582 |
-| **Period** | November 12, 2025 - January 19, 2026 |
-| **Archive Files** | 65 |
+| **Total Plays** | 4,104 |
+| **Unique Tracks** | 1,230 |
+| **Unique Artists** | 584 |
+| **Period** | November 12, 2025 - January 20, 2026 |
+| **Archive Files** | 66 |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 194 |
-| 2 | Tulus | 179 |
-| 3 | Nadin Amizah | 157 |
-| 4 | Hindia | 108 |
+| 1 | Bernadya | 195 |
+| 2 | Tulus | 185 |
+| 3 | Nadin Amizah | 160 |
+| 4 | Hindia | 110 |
 | 5 | Idgitaf | 92 |
 | 6 | Ghea Indrawari | 81 |
-| 7 | Sal Priadi | 66 |
-| 8 | Cigarettes After Sex | 64 |
+| 7 | Cigarettes After Sex | 66 |
+| 8 | Sal Priadi | 66 |
 | 9 | Dere | 62 |
-| 10 | Pamungkas | 57 |
+| 10 | Pamungkas | 58 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 26 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 24 |
-| 3 | Bertaut - Nadin Amizah | 20 |
-| 4 | Monolog - Pamungkas | 20 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
+| 3 | Bertaut - Nadin Amizah | 21 |
+| 4 | Monolog - Pamungkas | 21 |
 | 5 | Sedia Aku Sebelum Hujan - Idgitaf | 20 |
 | 6 | Kukira Kau Rumah - Amigdala | 19 |
 | 7 | Kota - Dere | 19 |
 | 8 | everything u are - Hindia | 19 |
-| 9 | Sorai - Nadin Amizah | 18 |
-| 10 | Cincin - Hindia | 18 |
+| 9 | Langit Abu-Abu - Tulus | 19 |
+| 10 | Sorai - Nadin Amizah | 18 |
 
 ## 📅 Daily Breakdown
 
@@ -111,6 +111,7 @@
 | Jan 15, 2026 | 3 | Sal Priadi (1) | Besok kita pergi makan - Sal Priadi (1) |
 | Jan 17, 2026 | 2 | Sal Priadi (2) | Besok kita pergi makan - Sal Priadi (2) |
 | Jan 19, 2026 | 54 | Nadin Amizah (5) | Sweet - Cigarettes After Sex (2) |
+| Jan 20, 2026 | 33 | Tulus (6) | Sunsetz - Cigarettes After Sex (2) |
 
 ---
 
