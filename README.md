@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,104 |
+| **Total Plays** | 4,108 |
 | **Unique Tracks** | 1,230 |
 | **Unique Artists** | 584 |
-| **Period** | November 12, 2025 - January 20, 2026 |
+| **Period** | November 12, 2025 - January 21, 2026 |
 | **Archive Files** | 66 |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,10 +19,10 @@
 | 1 | Bernadya | 195 |
 | 2 | Tulus | 185 |
 | 3 | Nadin Amizah | 160 |
-| 4 | Hindia | 110 |
+| 4 | Hindia | 111 |
 | 5 | Idgitaf | 92 |
 | 6 | Ghea Indrawari | 81 |
-| 7 | Cigarettes After Sex | 66 |
+| 7 | Cigarettes After Sex | 67 |
 | 8 | Sal Priadi | 66 |
 | 9 | Dere | 62 |
 | 10 | Pamungkas | 58 |
@@ -31,7 +31,7 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 26 |
+| 1 | My Love Mine All Mine - Mitski | 27 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
 | 3 | Bertaut - Nadin Amizah | 21 |
 | 4 | Monolog - Pamungkas | 21 |
@@ -56,7 +56,6 @@
 | Nov 19, 2025 | 66 | Bernadya (13) | Remaja - Hivi! (2) |
 | Nov 20, 2025 | 65 | Rony Parulian (3) | bergema sampai selamanya - Nadhif Basalamah (2) |
 | Nov 21, 2025 | 1 | Mitski (1) | My Love Mine All Mine - Mitski (1) |
-| Nov 22, 2025 | 0 | - | - |
 | Nov 23, 2025 | 70 | Cigarettes After Sex (6) | when the party's over - Billie Eilish (1) |
 | Nov 24, 2025 | 48 | Cigarettes After Sex (3) | Sedia Aku Sebelum Hujan - Idgitaf (2) |
 | Nov 25, 2025 | 40 | Ghea Indrawari (7) | Usai - Tiara Andini (2) |
@@ -112,6 +111,7 @@
 | Jan 17, 2026 | 2 | Sal Priadi (2) | Besok kita pergi makan - Sal Priadi (2) |
 | Jan 19, 2026 | 54 | Nadin Amizah (5) | Sweet - Cigarettes After Sex (2) |
 | Jan 20, 2026 | 33 | Tulus (6) | Sunsetz - Cigarettes After Sex (2) |
+| Jan 21, 2026 | 4 | Cigarettes After Sex (1) | K. - Cigarettes After Sex (1) |
 
 ---
 
