@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,108 |
-| **Unique Tracks** | 1,230 |
-| **Unique Artists** | 584 |
-| **Period** | November 12, 2025 - January 21, 2026 |
-| **Archive Files** | 66 |
+| **Total Plays** | 4,119 |
+| **Unique Tracks** | 1,236 |
+| **Unique Artists** | 587 |
+| **Period** | November 12, 2025 - January 22, 2026 |
+| **Archive Files** | 67 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -18,7 +18,7 @@
 |------|------|------|
 | 1 | Bernadya | 195 |
 | 2 | Tulus | 185 |
-| 3 | Nadin Amizah | 160 |
+| 3 | Nadin Amizah | 161 |
 | 4 | Hindia | 111 |
 | 5 | Idgitaf | 92 |
 | 6 | Ghea Indrawari | 81 |
@@ -112,6 +112,7 @@
 | Jan 19, 2026 | 54 | Nadin Amizah (5) | Sweet - Cigarettes After Sex (2) |
 | Jan 20, 2026 | 33 | Tulus (6) | Sunsetz - Cigarettes After Sex (2) |
 | Jan 21, 2026 | 4 | Cigarettes After Sex (1) | K. - Cigarettes After Sex (1) |
+| Jan 22, 2026 | 11 | LANY (2) | drivers license - Olivia Rodrigo (1) |
 
 ---
 
