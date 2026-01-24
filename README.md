@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,119 |
-| **Unique Tracks** | 1,236 |
-| **Unique Artists** | 587 |
-| **Period** | November 12, 2025 - January 22, 2026 |
-| **Archive Files** | 67 |
+| **Total Plays** | 4,137 |
+| **Unique Tracks** | 1,237 |
+| **Unique Artists** | 588 |
+| **Period** | November 12, 2025 - January 23, 2026 |
+| **Archive Files** | 68 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -31,7 +31,7 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 27 |
+| 1 | My Love Mine All Mine - Mitski | 28 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
 | 3 | Bertaut - Nadin Amizah | 21 |
 | 4 | Monolog - Pamungkas | 21 |
@@ -113,6 +113,7 @@
 | Jan 20, 2026 | 33 | Tulus (6) | Sunsetz - Cigarettes After Sex (2) |
 | Jan 21, 2026 | 4 | Cigarettes After Sex (1) | K. - Cigarettes After Sex (1) |
 | Jan 22, 2026 | 11 | LANY (2) | drivers license - Olivia Rodrigo (1) |
+| Jan 23, 2026 | 18 | Hindia, Rara Sekar (2) | Membasuh - Hindia, Rara Sekar (2) |
 
 ---
 
