@@ -1,5 +1,131 @@
 [
   {
+    "timestamp": 1769396184050,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "What It Is (Block Boy) (with Kodak Black)",
+    "artist": "Doechii, Kodak Black",
+    "uri": "spotify:track:1O8zCu3dLLPxkbGfIsbRgE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c8f2c1cfe0bdb686c659b641"
+  },
+  {
+    "timestamp": 1769395944063,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Snooze",
+    "artist": "SZA",
+    "uri": "spotify:track:4iZ4pt7kvcaH6Yo8UoZ4s2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bc18bdade69ec5ef0bb25b17"
+  },
+  {
+    "timestamp": 1769395764062,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "supernatural",
+    "artist": "Ariana Grande",
+    "uri": "spotify:track:142PiXzA84lmEw2RstFHFa",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738b58d20f1b77295730db15b4"
+  },
+  {
+    "timestamp": 1769395523918,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Please Please Please",
+    "artist": "Sabrina Carpenter",
+    "uri": "spotify:track:2tHwzyyOLoWSFqYNjeVMzj",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fd8d7a8d96871e791cb1f626"
+  },
+  {
+    "timestamp": 1769395313781,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Until I Found You (with Em Beihold) - Em Beihold Version",
+    "artist": "Stephen Sanchez, Em Beihold",
+    "uri": "spotify:track:18E1LAdiOj79wZqSOYMHE7",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27362ecbc14602444f8a6c3f5bf"
+  },
+  {
+    "timestamp": 1769395134201,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "UNDERSTAND",
+    "artist": "keshi",
+    "uri": "spotify:track:72sfmdpuO5r8cBDgs7MqZZ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27319aff2da63b211d75341e8eb"
+  },
+  {
+    "timestamp": 1769395075302,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "UNDERSTAND",
+    "artist": "keshi",
+    "uri": "spotify:track:72sfmdpuO5r8cBDgs7MqZZ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27319aff2da63b211d75341e8eb"
+  },
+  {
+    "timestamp": 1769394249131,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Build a Bitch",
+    "artist": "Bella Poarch",
+    "uri": "spotify:track:7BoobGhD4x5K96Me0hqC8Q",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273aeeb722667c831a4f5429ff0"
+  },
+  {
+    "timestamp": 1769394129422,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "happier",
+    "artist": "Olivia Rodrigo",
+    "uri": "spotify:track:2tGvwE8GcFKwNdAXMnlbfl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+  },
+  {
+    "timestamp": 1769393948917,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "End of Beginning",
+    "artist": "Djo",
+    "uri": "spotify:track:3qhlB30KknSejmIvZZLjOD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fddfffec51b4580acae727c1"
+  },
+  {
+    "timestamp": 1769393589185,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "drunk text",
+    "artist": "Henry Moodie",
+    "uri": "spotify:track:6EIMUjQ7Q8Zr2VtIUik4He",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273db94c82db2d786cd9e03a538"
+  },
+  {
+    "timestamp": 1769393414839,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Every Summertime",
+    "artist": "NIKI",
+    "uri": "spotify:track:68HocO7fx9z0MgDU0ZPHro",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e81fd3b9a7230db447f38182"
+  },
+  {
+    "timestamp": 1769393139264,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "That’s So True",
+    "artist": "Gracie Abrams",
+    "uri": "spotify:track:7ne4VBA60CxGM75vw0EYad",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731dac3694b3289cd903cb3acf"
+  },
+  {
+    "timestamp": 1769392959713,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tsunami",
+    "artist": "NIKI",
+    "uri": "spotify:track:7fZ9GpxwteD6R1SNL8OPZa",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273af28c3161d272af6c015131c"
+  },
+  {
     "timestamp": 1769392659126,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
