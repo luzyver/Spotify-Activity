@@ -1,5 +1,32 @@
 [
   {
+    "timestamp": 1769480534978,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "About You",
+    "artist": "The 1975",
+    "uri": "spotify:track:3hEfpBHxgieRLz4t3kLNEg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300702474f8e0e2b6155d48e3"
+  },
+  {
+    "timestamp": 1769479711022,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Daylight",
+    "artist": "Taylor Swift",
+    "uri": "spotify:track:1fzAuUVbzlhZ1lJAx9PtY6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647"
+  },
+  {
+    "timestamp": 1769479415873,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "august",
+    "artist": "Taylor Swift",
+    "uri": "spotify:track:3hUxzQpSfdDqwM3ZTFQY0K",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc"
+  },
+  {
     "timestamp": 1769479141059,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
