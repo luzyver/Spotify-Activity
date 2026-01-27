@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,137 |
-| **Unique Tracks** | 1,237 |
-| **Unique Artists** | 588 |
-| **Period** | November 12, 2025 - January 23, 2026 |
-| **Archive Files** | 68 |
+| **Total Plays** | 4,199 |
+| **Unique Tracks** | 1,240 |
+| **Unique Artists** | 589 |
+| **Period** | November 12, 2025 - January 26, 2026 |
+| **Archive Files** | 69 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -18,12 +18,12 @@
 |------|------|------|
 | 1 | Bernadya | 195 |
 | 2 | Tulus | 185 |
-| 3 | Nadin Amizah | 161 |
+| 3 | Nadin Amizah | 162 |
 | 4 | Hindia | 111 |
 | 5 | Idgitaf | 92 |
 | 6 | Ghea Indrawari | 81 |
 | 7 | Cigarettes After Sex | 67 |
-| 8 | Sal Priadi | 66 |
+| 8 | Sal Priadi | 67 |
 | 9 | Dere | 62 |
 | 10 | Pamungkas | 58 |
 
@@ -114,6 +114,7 @@
 | Jan 21, 2026 | 4 | Cigarettes After Sex (1) | K. - Cigarettes After Sex (1) |
 | Jan 22, 2026 | 11 | LANY (2) | drivers license - Olivia Rodrigo (1) |
 | Jan 23, 2026 | 18 | Hindia, Rara Sekar (2) | Membasuh - Hindia, Rara Sekar (2) |
+| Jan 26, 2026 | 62 | Taylor Swift (5) | Dandelions - Ruth B. (2) |
 
 ---
 
