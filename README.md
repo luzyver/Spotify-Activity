@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,199 |
+| **Total Plays** | 4,213 |
 | **Unique Tracks** | 1,240 |
 | **Unique Artists** | 589 |
-| **Period** | November 12, 2025 - January 26, 2026 |
-| **Archive Files** | 69 |
+| **Period** | November 12, 2025 - January 27, 2026 |
+| **Archive Files** | 70 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -115,6 +115,7 @@
 | Jan 22, 2026 | 11 | LANY (2) | drivers license - Olivia Rodrigo (1) |
 | Jan 23, 2026 | 18 | Hindia, Rara Sekar (2) | Membasuh - Hindia, Rara Sekar (2) |
 | Jan 26, 2026 | 62 | Taylor Swift (5) | Dandelions - Ruth B. (2) |
+| Jan 27, 2026 | 14 | The 1975 (5) | About You - The 1975 (5) |
 
 ---
 
