@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,215 |
-| **Unique Tracks** | 1,240 |
-| **Unique Artists** | 589 |
-| **Period** | November 12, 2025 - January 28, 2026 |
-| **Archive Files** | 71 |
+| **Total Plays** | 4,226 |
+| **Unique Tracks** | 1,248 |
+| **Unique Artists** | 590 |
+| **Period** | November 12, 2025 - January 29, 2026 |
+| **Archive Files** | 72 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -117,6 +117,7 @@
 | Jan 26, 2026 | 62 | Taylor Swift (5) | Dandelions - Ruth B. (2) |
 | Jan 27, 2026 | 14 | The 1975 (5) | About You - The 1975 (5) |
 | Jan 28, 2026 | 2 | The 1975 (2) | About You - The 1975 (2) |
+| Jan 29, 2026 | 11 | keshi (4) | Water - Tyla (1) |
 
 ---
 
