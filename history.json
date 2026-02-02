@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "timestamp": 1769997224404,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Serta Mulia",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:1CVUWAC845LKEDHH0l8XG2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b58c26bf822eda1333ed9c38"
+  },
+  {
+    "timestamp": 1769997044294,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "In My Mind",
+    "artist": "Lyn Lapid",
+    "uri": "spotify:track:2W779g2UrRZtVdf3FcEOO1",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f811a222ec1f0211a1f584e7"
+  },
+  {
+    "timestamp": 1769996894853,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Location Unknown ◐ (feat. BEKA) - Brooklyn Session",
+    "artist": "HONNE, BEKA",
+    "uri": "spotify:track:43kiDtoYD0nDJYxzQwclpT",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273387b8b58dfac97a9a10466cd"
+  },
+  {
+    "timestamp": 1769996565803,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Dunia Tipu-Tipu",
+    "artist": "Yura Yunita",
+    "uri": "spotify:track:0mMqopQJOWADJSPRMYkvTF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27368d7905b0548a6c9ba21b638"
+  },
+  {
+    "timestamp": 1769996324301,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bukti",
+    "artist": "Virgoun",
+    "uri": "spotify:track:0O2GtSCle8Eujbc1Voh2VY",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735457738f23011c294db85d54"
+  },
+  {
+    "timestamp": 1769996044218,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tidurlah",
+    "artist": "Payung Teduh",
+    "uri": "spotify:track:6c62xoPwUBZzEplRp1VgOA",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734c1079ee5e254f31bc03e6cb"
+  },
+  {
+    "timestamp": 1769995724801,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sebuah Kisah Klasik",
+    "artist": "Sheila On 7",
+    "uri": "spotify:track:4NmiNWf3mFp078EFfvvgnr",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e8d4f0596d66ccbe5241918d"
+  },
+  {
+    "timestamp": 1769995484458,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Fall in Love with You.",
+    "artist": "Montell Fish",
+    "uri": "spotify:track:4kJT7Yj6Za01KfKHjb7mZE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27338900c29071fe12d7a0a13cc"
+  },
+  {
+    "timestamp": 1769995334542,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "we'll be okay, for today",
+    "artist": "Arash Buana, Anya Taroreh",
+    "uri": "spotify:track:1QwRHgfwLz10z73omVRGwI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273687cac266673242dbb6ec682"
+  },
+  {
+    "timestamp": 1769995124530,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sampai Jadi Debu (Menampilkan Gardika Gigih)",
+    "artist": "Banda Neira",
+    "uri": "spotify:track:4B3DEANIvod8552CbwftCG",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737a173b7767ca05f9bb17464e"
+  }
+]
