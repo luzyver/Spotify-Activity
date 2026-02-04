@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,421 |
-| **Unique Tracks** | 1,301 |
+| **Total Plays** | 4,539 |
+| **Unique Tracks** | 1,302 |
 | **Unique Artists** | 635 |
-| **Period** | November 12, 2025 - February 2, 2026 |
-| **Archive Files** | 74 |
+| **Period** | November 12, 2025 - February 3, 2026 |
+| **Archive Files** | 75 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -19,27 +19,27 @@
 | 1 | Bernadya | 195 |
 | 2 | Tulus | 185 |
 | 3 | Nadin Amizah | 165 |
-| 4 | Hindia | 116 |
+| 4 | Hindia | 118 |
 | 5 | Idgitaf | 101 |
 | 6 | Ghea Indrawari | 81 |
 | 7 | Sal Priadi | 72 |
-| 8 | Cigarettes After Sex | 67 |
-| 9 | Dere | 63 |
-| 10 | Pamungkas | 61 |
+| 8 | Cigarettes After Sex | 69 |
+| 9 | Dere | 65 |
+| 10 | Pamungkas | 62 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 28 |
+| 1 | My Love Mine All Mine - Mitski | 29 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
 | 3 | Monolog - Pamungkas | 22 |
 | 4 | Sedia Aku Sebelum Hujan - Idgitaf | 22 |
-| 5 | Bertaut - Nadin Amizah | 21 |
-| 6 | Kota - Dere | 20 |
-| 7 | Cincin - Hindia | 20 |
-| 8 | everything u are - Hindia | 20 |
-| 9 | Kukira Kau Rumah - Amigdala | 19 |
+| 5 | Kota - Dere | 21 |
+| 6 | Bertaut - Nadin Amizah | 21 |
+| 7 | Kukira Kau Rumah - Amigdala | 20 |
+| 8 | Cincin - Hindia | 20 |
+| 9 | everything u are - Hindia | 20 |
 | 10 | Sorai - Nadin Amizah | 19 |
 
 ## 📅 Daily Breakdown
@@ -120,6 +120,7 @@
 | Jan 29, 2026 | 11 | keshi (4) | Water - Tyla (1) |
 | Jan 30, 2026 | 158 | Taylor Swift (7) | Ada titik-titik di ujung doa - Sal Priadi (2) |
 | Feb 2, 2026 | 37 | Idgitaf (3) | Cincin - Hindia (2) |
+| Feb 3, 2026 | 118 | Hivi! (5) | Night Changes - Sped Up - DJ GreyttBlack (2) |
 
 ---
 
