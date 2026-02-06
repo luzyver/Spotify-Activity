@@ -46,7 +46,7 @@ export async function getCommit(repo, sha, token) {
 
 export async function updateMultipleGitHubFiles(repo, files, message, token) {
 	// Get latest commit
-	const branchRes = await fetch(`${GITHUB_API}/repos/${repo}/git/refs/heads/main`, {
+	const branchRes = await fetch(`${GITHUB_API}/repos/${repo}/git/refs/heads/master`, {
 		headers: headers(token),
 	});
 
@@ -100,7 +100,7 @@ export async function updateMultipleGitHubFiles(repo, files, message, token) {
 	const commitData = await commitRes.json();
 
 	// Update ref
-	const updateRes = await fetch(`${GITHUB_API}/repos/${repo}/git/refs/heads/main`, {
+	const updateRes = await fetch(`${GITHUB_API}/repos/${repo}/git/refs/heads/master`, {
 		method: 'PATCH',
 		headers: jsonHeaders(token),
 		body: JSON.stringify({ sha: commitData.sha }),
