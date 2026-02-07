@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,634 |
+| **Total Plays** | 4,660 |
 | **Unique Tracks** | 1,321 |
 | **Unique Artists** | 638 |
-| **Period** | November 12, 2025 - February 5, 2026 |
-| **Archive Files** | 77 |
+| **Period** | November 12, 2025 - February 6, 2026 |
+| **Archive Files** | 78 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -19,13 +19,13 @@
 | 1 | Bernadya | 195 |
 | 2 | Tulus | 188 |
 | 3 | Nadin Amizah | 172 |
-| 4 | Hindia | 121 |
-| 5 | Idgitaf | 105 |
-| 6 | Ghea Indrawari | 81 |
-| 7 | Sal Priadi | 75 |
+| 4 | Hindia | 122 |
+| 5 | Idgitaf | 107 |
+| 6 | Ghea Indrawari | 82 |
+| 7 | Sal Priadi | 77 |
 | 8 | Cigarettes After Sex | 71 |
 | 9 | Dere | 67 |
-| 10 | Pamungkas | 62 |
+| 10 | Pamungkas | 65 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -33,14 +33,14 @@
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 30 |
 | 2 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
-| 3 | Bertaut - Nadin Amizah | 23 |
-| 4 | Sedia Aku Sebelum Hujan - Idgitaf | 23 |
-| 5 | Kota - Dere | 22 |
-| 6 | Monolog - Pamungkas | 22 |
+| 3 | Monolog - Pamungkas | 25 |
+| 4 | Bertaut - Nadin Amizah | 23 |
+| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 23 |
+| 6 | Kota - Dere | 22 |
 | 7 | Kukira Kau Rumah - Amigdala | 21 |
 | 8 | everything u are - Hindia | 21 |
-| 9 | Sorai - Nadin Amizah | 20 |
-| 10 | Cincin - Hindia | 20 |
+| 9 | bergema sampai selamanya - Nadhif Basalamah | 20 |
+| 10 | Sorai - Nadin Amizah | 20 |
 
 ## 📅 Daily Breakdown
 
@@ -123,6 +123,7 @@
 | Feb 3, 2026 | 118 | Hivi! (5) | Night Changes - Sped Up - DJ GreyttBlack (2) |
 | Feb 4, 2026 | 56 | JKT48 (15) | Bertaut - Nadin Amizah (2) |
 | Feb 5, 2026 | 39 | Idgitaf (4) | Lihat Kebunku (Taman Bunga) - Aku Jeje (2) |
+| Feb 6, 2026 | 26 | Pamungkas (3) | Monolog - Pamungkas (3) |
 
 ---
 
