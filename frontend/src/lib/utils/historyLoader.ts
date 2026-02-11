@@ -77,55 +77,6 @@ export async function loadAllHistory(
 }
 
 /**
- * Load initial history batch (for archive tab)
- */
-export async function loadHistoryBatch(
-  batchSize: number = 250,
-  onBatchComplete?: (items: HistoryItem[], batchIndex: number) => void
-): Promise<HistoryItem[]> {
-  if (historyCache) return historyCache;
-
-  const { data, count } = await loadHistoryFromSupabase({ limit: batchSize });
-  totalCount = count;
-
-  if (onBatchComplete) {
-    onBatchComplete(data, 0);
-  }
-
-  historyCache = data;
-  return data;
-}
-
-/**
- * Load more history (for pagination/infinite scroll)
- */
-export async function loadMoreHistory(
-  currentCount: number,
-  batchSize: number = 250
-): Promise<{ items: HistoryItem[]; hasMore: boolean }> {
-  const { data, count } = await loadHistoryFromSupabase({
-    limit: batchSize,
-    offset: currentCount
-  });
-
-  return {
-    items: data,
-    hasMore: currentCount + data.length < count
-  };
-}
-
-/**
- * Search history
- */
-export async function searchHistory(
-  query: string,
-  limit: number = 50
-): Promise<HistoryItem[]> {
-  const { data } = await loadHistoryFromSupabase({ search: query, limit });
-  return data;
-}
-
-/**
  * Get total count of history items
  */
 export function getTotalCount(): number {

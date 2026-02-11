@@ -5,7 +5,7 @@
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { API_ENDPOINTS } from '$lib/config';
   import { LayoutGrid, List, Music, Search, X, LoaderCircle, RefreshCw, House, Clock, Archive } from 'lucide-svelte';
-  import { loadHistoryBatch } from '$lib/utils/historyLoader';
+  import { loadAllHistory } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
   import { onDestroy } from 'svelte';
 
@@ -114,7 +114,7 @@
     
     isLoadingHistorical = true;
     try {
-      const archiveData = await loadHistoryBatch();
+      const archiveData = await loadAllHistory();
       const merged = [...combinedHistory, ...archiveData];
       const unique = Array.from(
         new Map(merged.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
