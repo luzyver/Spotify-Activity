@@ -93,7 +93,16 @@
         const historyData: HistoryItem[] = await historyRes.json();
         if (Array.isArray(historyData)) {
           allHistory = historyData.sort((a, b) => b.timestamp - a.timestamp);
-          
+
+          // Merge new recent items into archive if already loaded
+          if (archiveLoaded) {
+            const merged = [...combinedHistory, ...historyData];
+            const unique = Array.from(
+              new Map(merged.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
+            );
+            combinedHistory = unique.sort((a, b) => b.timestamp - a.timestamp);
+          }
+
           // Show toast if new tracks added
           const newTracks = allHistory.length - prevHistoryCount;
           if (newTracks > 0 && prevHistoryCount > 0) {
