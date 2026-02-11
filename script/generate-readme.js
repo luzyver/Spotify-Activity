@@ -1,23 +1,65 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import 'dotenv/config';
 
-const HISTORY_DIR = 'frontend/static/history';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY;
+
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  console.error('❌ Missing SUPABASE_URL or SUPABASE_ANON_KEY environment variables');
+  process.exit(1);
+}
+
+// Fetch all history from Supabase with pagination
+async function fetchAllHistory() {
+  const PAGE_SIZE = 1000;
+  let allRecords = [];
+  let offset = 0;
+  let hasMore = true;
+
+  console.log('📥 Fetching history from Supabase...');
+
+  while (hasMore) {
+    const response = await fetch(
+      `${SUPABASE_URL}/rest/v1/listening_history?select=*&order=timestamp.desc&offset=${offset}&limit=${PAGE_SIZE}`,
+      {
+        headers: {
+          'apikey': SUPABASE_ANON_KEY,
+          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    if (!data || data.length === 0) {
+      hasMore = false;
+    } else {
+      allRecords.push(...data);
+      offset += PAGE_SIZE;
+      console.log(`  ✓ Fetched ${allRecords.length} records...`);
+
+      if (data.length < PAGE_SIZE) {
+        hasMore = false;
+      }
+    }
+  }
+
+  return allRecords;
+}
 
 // Helper functions
-const readJson = (filepath) => JSON.parse(fs.readFileSync(filepath, 'utf8'));
-
-const formatDate = (dateStr, options = { year: 'numeric', month: 'long', day: 'numeric' }) =>
-  new Date(
-    parseInt(dateStr.substring(4, 8)),
-    parseInt(dateStr.substring(2, 4)) - 1,
-    parseInt(dateStr.substring(0, 2))
-  ).toLocaleDateString('en-US', { ...options, timeZone: 'Asia/Jakarta' });
-
-const sortByDate = (a, b) => {
-  const toSortable = (d) => d.substring(4, 8) + d.substring(2, 4) + d.substring(0, 2);
-  return toSortable(a.date).localeCompare(toSortable(b.date));
-};
+const formatDate = (timestamp, options = { year: 'numeric', month: 'long', day: 'numeric' }) =>
+  new Date(timestamp).toLocaleDateString('en-US', { ...options, timeZone: 'Asia/Jakarta' });
 
 const countBy = (arr, keyFn) => {
   const counts = {};
@@ -33,45 +75,60 @@ const topN = (counts, n = 10) =>
     .sort((a, b) => b[1] - a[1])
     .slice(0, n);
 
-// Load all history files
-const files = fs
-  .readdirSync(HISTORY_DIR)
-  .filter((f) => f.endsWith('.json'))
-  .map((f) => {
-    const data = readJson(path.join(HISTORY_DIR, f));
-    const date = f.replace('.json', '');
-    return { filename: f, date, count: data.length, data };
-  })
-  .sort(sortByDate);
-
-const allTracks = files.flatMap((f) => f.data);
-
-// Calculate stats
-const stats = {
-  total: allTracks.length,
-  uniqueTracks: new Set(allTracks.map((t) => t.uri)).size,
-  uniqueArtists: new Set(allTracks.map((t) => t.artist)).size,
-  files: files.length,
+const groupByDate = (records) => {
+  const grouped = {};
+  for (const record of records) {
+    const date = new Date(record.timestamp).toLocaleDateString('en-GB', { timeZone: 'Asia/Jakarta' });
+    if (!grouped[date]) grouped[date] = [];
+    grouped[date].push(record);
+  }
+  return grouped;
 };
 
-const timestamps = allTracks.map((t) => t.timestamp).sort((a, b) => a - b);
-const period =
-  timestamps.length > 0
-    ? `${formatDate(files[0].date)} - ${formatDate(files[files.length - 1].date)}`
-    : 'N/A';
+async function main() {
+  try {
+    const allTracks = await fetchAllHistory();
 
-const topArtists = topN(countBy(allTracks, (t) => t.artist));
-const topTracks = topN(countBy(allTracks, (t) => `${t.track} - ${t.artist}`));
+    if (allTracks.length === 0) {
+      console.log('⚠️ No history found in Supabase');
+      return;
+    }
 
-// Generate markdown
-const table = (headers, rows) => {
-  const header = `| ${headers.join(' | ')} |`;
-  const separator = `|${headers.map(() => '------').join('|')}|`;
-  const body = rows.map((row) => `| ${row.join(' | ')} |`).join('\n');
-  return `${header}\n${separator}\n${body}`;
-};
+    console.log(`\n📊 Processing ${allTracks.length} tracks...`);
 
-const readme = `# 🎵 Listening History
+    // Calculate stats
+    const stats = {
+      total: allTracks.length,
+      uniqueTracks: new Set(allTracks.map((t) => t.uri)).size,
+      uniqueArtists: new Set(allTracks.map((t) => t.artist)).size,
+    };
+
+    const timestamps = allTracks.map((t) => t.timestamp).sort((a, b) => a - b);
+    const period =
+      timestamps.length > 0
+        ? `${formatDate(timestamps[0])} - ${formatDate(timestamps[timestamps.length - 1])}`
+        : 'N/A';
+
+    const topArtists = topN(countBy(allTracks, (t) => t.artist));
+    const topTracks = topN(countBy(allTracks, (t) => `${t.track} - ${t.artist}`));
+
+    // Group by date for daily breakdown (all days, oldest first)
+    const dailyData = groupByDate(allTracks);
+    const sortedDates = Object.keys(dailyData).sort((a, b) => {
+      const [dayA, monthA, yearA] = a.split('/').map(Number);
+      const [dayB, monthB, yearB] = b.split('/').map(Number);
+      return new Date(yearA, monthA - 1, dayA) - new Date(yearB, monthB - 1, dayB);
+    });
+
+    // Generate markdown
+    const table = (headers, rows) => {
+      const header = `| ${headers.join(' | ')} |`;
+      const separator = `|${headers.map(() => '------').join('|')}|`;
+      const body = rows.map((row) => `| ${row.join(' | ')} |`).join('\n');
+      return `${header}\n${separator}\n${body}`;
+    };
+
+    const readme = `# 🎵 Listening History
 
 > Automated Spotify activity tracker with historical data archive
 
@@ -84,7 +141,7 @@ ${table(
     ['**Unique Tracks**', stats.uniqueTracks.toLocaleString()],
     ['**Unique Artists**', stats.uniqueArtists.toLocaleString()],
     ['**Period**', period],
-    ['**Archive Files**', stats.files.toString()],
+    ['**Storage**', 'Supabase'],
   ]
 )}
 
@@ -106,17 +163,18 @@ ${table(
 
 ${table(
   ['Date', 'Plays', 'Top Artist', 'Top Track'],
-  files.map((file) => {
-    const artistCounts = countBy(file.data, (t) => t.artist);
-    const trackCounts = countBy(file.data, (t) => `${t.track} - ${t.artist}`);
+  sortedDates.map((date) => {
+    const tracks = dailyData[date];
+    const artistCounts = countBy(tracks, (t) => t.artist);
+    const trackCounts = countBy(tracks, (t) => `${t.track} - ${t.artist}`);
     const [topArtist] = topN(artistCounts, 1)[0] || ['-', 0];
     const [topTrack] = topN(trackCounts, 1)[0] || ['-', 0];
     const artistText = topArtist !== '-' ? `${topArtist} (${artistCounts[topArtist]})` : '-';
     const trackText = topTrack !== '-' ? `${topTrack} (${trackCounts[topTrack]})` : '-';
 
     return [
-      formatDate(file.date, { year: 'numeric', month: 'short', day: 'numeric' }),
-      file.count.toString(),
+      date,
+      tracks.length.toString(),
       artistText,
       trackText,
     ];
@@ -131,8 +189,17 @@ For setup guide, API docs, and project structure, see **[DOCS.md](./DOCS.md)**
 
 ---
 
-*Stats above are automatically generated from listening history data*
+*Stats above are automatically generated from Supabase listening history data*
 `;
 
-fs.writeFileSync('README.md', readme);
-console.log(`✓ README generated: ${stats.files} files, ${stats.total.toLocaleString()} tracks`);
+    const readmePath = path.join(__dirname, '..', 'README.md');
+    fs.writeFileSync(readmePath, readme);
+    console.log(`\n✅ README generated: ${stats.total.toLocaleString()} tracks from Supabase`);
+
+  } catch (error) {
+    console.error('❌ Error:', error.message);
+    process.exit(1);
+  }
+}
+
+main();
