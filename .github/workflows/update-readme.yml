@@ -3,32 +3,34 @@ name: Update README
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
+    - cron: '0 0 * * *'
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           sparse-checkout: |
-            frontend/static/history
-            script/generate-readme.js
+            script
             README.md
           sparse-checkout-cone-mode: false
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      
+
       - name: Generate README and commit
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: |
-          # Generate README
+          # Generate README (fetches from Supabase)
           node script/generate-readme.js
-          
+
           # Check for changes
           if git diff --quiet README.md; then
             echo "ℹ️ No changes to README"
@@ -36,18 +38,21 @@ jobs:
             echo "**Status:** No changes" >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
-          
+
+          # Get track count from Supabase
+          TRACKS_COUNT=$(curl -s "${SUPABASE_URL}/rest/v1/listening_history?select=count" \
+            -H "apikey: ${SUPABASE_ANON_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
+            -H "Prefer: count=exact" \
+            -I | grep -i content-range | sed 's/.*\///' | tr -d '\r')
+
           # Commit and push
-          FILES_COUNT=$(ls -1 frontend/static/history/*.json 2>/dev/null | wc -l)
-          TRACKS_COUNT=$(node -e "const fs=require('fs');const d='frontend/static/history';console.log(fs.readdirSync(d).filter(f=>f.endsWith('.json')).reduce((s,f)=>s+JSON.parse(fs.readFileSync(d+'/'+f)).length,0))")
-          
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
-          git commit -m "📝 Update README ($FILES_COUNT files, $TRACKS_COUNT tracks) [skip ci]"
+          git commit -m "📝 Update README ($TRACKS_COUNT tracks) [skip ci]"
           git push
-          
+
           echo "### 📝 README Update" >> $GITHUB_STEP_SUMMARY
           echo "**Status:** ✅ Updated" >> $GITHUB_STEP_SUMMARY
-          echo "**Files:** $FILES_COUNT" >> $GITHUB_STEP_SUMMARY
           echo "**Total Tracks:** $TRACKS_COUNT" >> $GITHUB_STEP_SUMMARY
