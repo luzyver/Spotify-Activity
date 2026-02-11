@@ -6,11 +6,11 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,705 |
+| **Total Plays** | 4,706 |
 | **Unique Tracks** | 1,322 |
 | **Unique Artists** | 638 |
-| **Period** | November 12, 2025 - February 9, 2026 |
-| **Archive Files** | 79 |
+| **Period** | November 12, 2025 - February 10, 2026 |
+| **Archive Files** | 80 |
 
 ## 🎤 Top 10 Artists (All Time)
 
@@ -22,7 +22,7 @@
 | 4 | Hindia | 124 |
 | 5 | Idgitaf | 108 |
 | 6 | Ghea Indrawari | 82 |
-| 7 | Sal Priadi | 78 |
+| 7 | Sal Priadi | 79 |
 | 8 | Cigarettes After Sex | 71 |
 | 9 | Dere | 67 |
 | 10 | Pamungkas | 66 |
@@ -125,6 +125,7 @@
 | Feb 5, 2026 | 39 | Idgitaf (4) | Lihat Kebunku (Taman Bunga) - Aku Jeje (2) |
 | Feb 6, 2026 | 26 | Pamungkas (3) | Monolog - Pamungkas (3) |
 | Feb 9, 2026 | 45 | Amigdala (3) | Kukira Kau Rumah - Amigdala (3) |
+| Feb 10, 2026 | 1 | Sal Priadi (1) | Gala bunga matahari - Sal Priadi (1) |
 
 ---
 
