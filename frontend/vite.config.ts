@@ -1,15 +1,15 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [sveltekit()],
+  plugins: [tailwindcss(), sveltekit()],
   optimizeDeps: {
     include: ['lucide-svelte', 'clsx', 'tailwind-merge'],
     exclude: ['@sveltejs/kit']
   },
   build: {
-    target: 'esnext',
-    minify: 'esbuild'
+    target: 'esnext'
   },
   server: {
     proxy: {

@@ -8,10 +8,14 @@
     "dev": "wrangler dev",
     "tail": "wrangler tail"
   },
-  "keywords": ["cloudflare", "worker", "spotify"],
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "spotify"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "wrangler": "^3.0.0"
+    "wrangler": "^4.64.0"
   }
 }
