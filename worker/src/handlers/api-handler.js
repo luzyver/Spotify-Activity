@@ -1,5 +1,6 @@
 import * as github from '../services/github.js';
 import * as spotify from '../services/spotify.js';
+import * as supabase from '../services/supabase.js';
 import * as processor from '../utils/data-processor.js';
 
 const NO_CACHE_HEADERS = {
@@ -93,5 +94,30 @@ export async function handleHistoryAPI(env, corsHeaders) {
 		return jsonResponse(result, 200, corsHeaders);
 	} catch (error) {
 		return jsonResponse({ error: error.message }, 500, corsHeaders);
+	}
+}
+
+export async function handleHistoryArchiveAPI(env, corsHeaders, url) {
+	try {
+		const limit = parseInt(url.searchParams.get('limit')) || 1000;
+		const offset = parseInt(url.searchParams.get('offset')) || 0;
+		const search = url.searchParams.get('search') || undefined;
+
+		const { data, count } = await supabase.fetchHistory(env.SUPABASE_ANON_KEY, { limit, offset, search });
+
+		// Transform from Supabase column format to frontend HistoryItem format
+		const items = data.map(record => ({
+			timestamp: record.timestamp,
+			user: record.user_name,
+			userId: record.user_id,
+			track: record.track,
+			artist: record.artist,
+			uri: record.uri,
+			imageUrl: record.image_url
+		}));
+
+		return jsonResponse({ data: items, count }, 200, corsHeaders);
+	} catch (error) {
+		return jsonResponse({ data: [], count: 0, error: error.message }, 500, corsHeaders);
 	}
 }

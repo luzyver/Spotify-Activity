@@ -1,5 +1,5 @@
 import { handleScheduled } from './handlers/sync-handler.js';
-import { handleLiveAPI, handleHistoryAPI } from './handlers/api-handler.js';
+import { handleLiveAPI, handleHistoryAPI, handleHistoryArchiveAPI } from './handlers/api-handler.js';
 import { handleClearHistory } from './handlers/clear-handler.js';
 
 const ALLOWED_ORIGINS = ['https://spotify.luzyver.dev'];
@@ -52,6 +52,9 @@ export default {
 
 				case '/api/history':
 					return handleHistoryAPI(env, cors);
+
+				case '/api/history/archive':
+					return handleHistoryArchiveAPI(env, cors, new URL(request.url));
 			}
 		}
 

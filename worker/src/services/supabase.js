@@ -48,6 +48,46 @@ export async function insertHistory(records, anonKey) {
 }
 
 /**
+ * Fetch history records from Supabase with pagination and search
+ * @param {string} anonKey - Supabase anon key
+ * @param {{ limit?: number, offset?: number, search?: string }} options
+ * @returns {Promise<{ data: Array, count: number }>}
+ */
+export async function fetchHistory(anonKey, { limit = 1000, offset = 0, search } = {}) {
+  try {
+    let url = `${SUPABASE_URL}/rest/v1/listening_history?select=*&order=timestamp.desc&limit=${limit}&offset=${offset}`;
+
+    if (search) {
+      const s = encodeURIComponent(`%${search}%`);
+      url += `&or=(track.ilike.${s},artist.ilike.${s},user_name.ilike.${s})`;
+    }
+
+    const response = await fetch(url, {
+      headers: {
+        'apikey': anonKey,
+        'Authorization': `Bearer ${anonKey}`,
+        'Prefer': 'count=exact'
+      }
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error('Supabase fetch error:', error);
+      return { data: [], count: 0 };
+    }
+
+    const data = await response.json();
+    const countHeader = response.headers.get('content-range');
+    const count = countHeader ? parseInt(countHeader.split('/')[1], 10) || 0 : data.length;
+
+    return { data, count };
+  } catch (error) {
+    console.error('Supabase fetch failed:', error);
+    return { data: [], count: 0 };
+  }
+}
+
+/**
  * Get history count from Supabase
  * @param {string} anonKey - Supabase anon key
  * @returns {Promise<number>}

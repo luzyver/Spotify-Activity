@@ -114,7 +114,7 @@
     
     isLoadingHistorical = true;
     try {
-      const archiveData = await loadHistoryBatch(5);
+      const archiveData = await loadHistoryBatch();
       const merged = [...combinedHistory, ...archiveData];
       const unique = Array.from(
         new Map(merged.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
