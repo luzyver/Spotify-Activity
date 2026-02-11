@@ -1,43 +1,41 @@
 import type { HistoryItem } from '$lib/types';
-import { supabase, toHistoryItem, type HistoryRecord } from '$lib/supabase';
+import { API_ENDPOINTS } from '$lib/config';
 
 // Cache for loaded history
 let historyCache: HistoryItem[] | null = null;
 let totalCount: number = 0;
 
 /**
- * Load history from Supabase with pagination
+ * Load history from worker API with pagination
  */
 export async function loadHistoryFromSupabase(options: {
   limit?: number;
   offset?: number;
   search?: string;
 } = {}): Promise<{ data: HistoryItem[]; count: number }> {
-  const { limit = 50, offset = 0, search } = options;
+  const { limit = 1000, offset = 0, search } = options;
 
-  let query = supabase
-    .from('listening_history')
-    .select('*', { count: 'exact' })
-    .order('timestamp', { ascending: false })
-    .range(offset, offset + limit - 1);
+  const params = new URLSearchParams();
+  params.set('limit', String(limit));
+  params.set('offset', String(offset));
+  if (search) params.set('search', search);
 
-  if (search) {
-    query = query.or(`track.ilike.%${search}%,artist.ilike.%${search}%,user_name.ilike.%${search}%`);
-  }
-
-  const { data, error, count } = await query;
-
-  if (error) {
-    console.error('Error fetching history from Supabase:', error);
+  try {
+    const res = await fetch(`${API_ENDPOINTS.HISTORY_ARCHIVE}?${params}`, { cache: 'no-store' });
+    if (!res.ok) {
+      console.error('Error fetching history archive:', res.status);
+      return { data: [], count: 0 };
+    }
+    const json = await res.json();
+    return { data: json.data ?? [], count: json.count ?? 0 };
+  } catch (error) {
+    console.error('Error fetching history archive:', error);
     return { data: [], count: 0 };
   }
-
-  const items = (data || []).map((record: HistoryRecord) => toHistoryItem(record));
-  return { data: items, count: count || 0 };
 }
 
 /**
- * Load all history from Supabase (with caching)
+ * Load all history (with caching)
  */
 export async function loadAllHistory(
   onProgress?: (loaded: number, total: number) => void
@@ -49,30 +47,22 @@ export async function loadAllHistory(
   let offset = 0;
   let hasMore = true;
 
-  // Get total count first
-  const { count } = await supabase
-    .from('listening_history')
-    .select('*', { count: 'exact', head: true });
+  // Get first batch to know total count
+  const first = await loadHistoryFromSupabase({ limit: PAGE_SIZE, offset: 0 });
+  totalCount = first.count;
+  allItems = first.data;
+  offset = PAGE_SIZE;
+  onProgress?.(allItems.length, totalCount);
 
-  totalCount = count || 0;
+  if (first.data.length < PAGE_SIZE) hasMore = false;
 
   while (hasMore) {
-    const { data, error } = await supabase
-      .from('listening_history')
-      .select('*')
-      .order('timestamp', { ascending: false })
-      .range(offset, offset + PAGE_SIZE - 1);
-
-    if (error) {
-      console.error('Error loading history:', error);
-      break;
-    }
+    const { data } = await loadHistoryFromSupabase({ limit: PAGE_SIZE, offset });
 
     if (!data || data.length === 0) {
       hasMore = false;
     } else {
-      const items = data.map((record: HistoryRecord) => toHistoryItem(record));
-      allItems.push(...items);
+      allItems.push(...data);
       offset += PAGE_SIZE;
       onProgress?.(allItems.length, totalCount);
 
@@ -87,15 +77,15 @@ export async function loadAllHistory(
 }
 
 /**
- * Load history in batches (for infinite scroll)
+ * Load initial history batch (for archive tab)
  */
 export async function loadHistoryBatch(
-  batchSize: number = 50,
+  batchSize: number = 250,
   onBatchComplete?: (items: HistoryItem[], batchIndex: number) => void
 ): Promise<HistoryItem[]> {
   if (historyCache) return historyCache;
 
-  const { data, count } = await loadHistoryFromSupabase({ limit: batchSize * 5 });
+  const { data, count } = await loadHistoryFromSupabase({ limit: batchSize });
   totalCount = count;
 
   if (onBatchComplete) {
@@ -111,7 +101,7 @@ export async function loadHistoryBatch(
  */
 export async function loadMoreHistory(
   currentCount: number,
-  batchSize: number = 50
+  batchSize: number = 250
 ): Promise<{ items: HistoryItem[]; hasMore: boolean }> {
   const { data, count } = await loadHistoryFromSupabase({
     limit: batchSize,
@@ -180,17 +170,4 @@ export function getDateRange(history: HistoryItem[]): { start: Date; end: Date }
 export function clearHistoryCache(): void {
   historyCache = null;
   totalCount = 0;
-}
-
-// Legacy exports for backward compatibility
-export function getAvailableHistoryFiles(): string[] {
-  return []; // No longer using files
-}
-
-export function parseFilenameDate(filename: string): Date | null {
-  return null; // No longer using files
-}
-
-export function getHistoryDateRange(): { start: Date; end: Date } | null {
-  return null; // Use getDateRange with history items instead
 }

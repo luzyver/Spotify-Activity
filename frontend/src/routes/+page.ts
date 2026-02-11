@@ -1,14 +1,15 @@
 import type { PageLoad } from './$types';
-import { API_ENDPOINTS } from '$lib/config';
+import { WORKER_URL } from '$lib/config';
 import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
 
 export const ssr = true;
 
 export const load: PageLoad = async ({ fetch }) => {
   try {
+    // Always use absolute worker URL — SSR runs server-side where Vite proxy doesn't exist
     const [liveRes, historyRes] = await Promise.all([
-      fetch(API_ENDPOINTS.LIVE, { cache: 'no-store' }),
-      fetch(API_ENDPOINTS.HISTORY, { cache: 'no-store' }),
+      fetch(`${WORKER_URL}/api/live`, { cache: 'no-store' }),
+      fetch(`${WORKER_URL}/api/history`, { cache: 'no-store' }),
     ]);
 
     let liveData: unknown = {};
