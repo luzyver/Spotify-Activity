@@ -1,4 +1,5 @@
 import * as github from '../services/github.js';
+import * as supabase from '../services/supabase.js';
 
 const getGMT7Date = (offset = 0) => {
 	const now = new Date();
@@ -13,7 +14,7 @@ export async function handleClearHistory(env) {
 	console.log('🗑️ Starting history clear...');
 
 	try {
-		const { GITHUB_TOKEN, GITHUB_REPO } = env;
+		const { GITHUB_TOKEN, GITHUB_REPO, SUPABASE_ANON_KEY } = env;
 		if (!GITHUB_TOKEN || !GITHUB_REPO) throw new Error('Missing GitHub credentials');
 
 		const { content: currentHistory = [] } = await github.getGitHubFile(GITHUB_REPO, 'history.json', GITHUB_TOKEN);
@@ -22,7 +23,6 @@ export async function handleClearHistory(env) {
 
 		// Use yesterday's date for archive (clearing yesterday's history)
 		const dateTag = getGMT7Date(-1);
-		const archivePath = `frontend/static/history/${dateTag}.json`;
 
 		// Use last track timestamp to prevent gaps
 		const safeClearTimestamp = itemsCount > 0
@@ -31,14 +31,25 @@ export async function handleClearHistory(env) {
 
 		console.log(`🔒 Clear timestamp: ${new Date(safeClearTimestamp).toISOString()}`);
 
+		// Archive to Supabase if we have items and Supabase key
+		let supabaseResult = { success: false, inserted: 0 };
+		if (itemsCount > 0 && SUPABASE_ANON_KEY) {
+			console.log(`📤 Archiving ${itemsCount} items to Supabase...`);
+			supabaseResult = await supabase.insertHistory(currentHistory, SUPABASE_ANON_KEY);
+
+			if (supabaseResult.success) {
+				console.log(`✅ Supabase: Inserted ${supabaseResult.inserted} records`);
+			} else {
+				console.error(`❌ Supabase insert failed: ${supabaseResult.error}`);
+				// Continue anyway - we'll still clear history
+			}
+		}
+
+		// Update GitHub: clear history.json and update last-clear.json
 		const filesToUpdate = [
 			{ path: 'history.json', content: [] },
 			{ path: 'last-clear.json', content: { lastClearTimestamp: safeClearTimestamp } },
 		];
-
-		if (itemsCount > 0) {
-			filesToUpdate.push({ path: archivePath, content: currentHistory });
-		}
 
 		await github.updateMultipleGitHubFiles(
 			GITHUB_REPO,
@@ -47,15 +58,15 @@ export async function handleClearHistory(env) {
 			GITHUB_TOKEN
 		);
 
-		console.log(`✅ Cleared ${itemsCount} items, archived to ${archivePath}`);
+		console.log(`✅ Cleared ${itemsCount} items`);
 
 		return new Response(
 			JSON.stringify({
 				success: true,
 				itemsRemoved: itemsCount,
 				dateTag,
-				archivePath,
 				timestamp: safeClearTimestamp,
+				supabase: supabaseResult,
 			}),
 			{ status: 200, headers: { 'Content-Type': 'application/json' } }
 		);
