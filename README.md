@@ -6,40 +6,40 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,706 |
-| **Unique Tracks** | 1,322 |
-| **Unique Artists** | 638 |
-| **Period** | November 12, 2025 - February 10, 2026 |
+| **Total Plays** | 4,779 |
+| **Unique Tracks** | 1,326 |
+| **Unique Artists** | 640 |
+| **Period** | November 12, 2025 - February 11, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 196 |
-| 2 | Tulus | 189 |
-| 3 | Nadin Amizah | 173 |
-| 4 | Hindia | 124 |
-| 5 | Idgitaf | 108 |
-| 6 | Ghea Indrawari | 82 |
-| 7 | Sal Priadi | 79 |
+| 1 | Bernadya | 197 |
+| 2 | Tulus | 194 |
+| 3 | Nadin Amizah | 177 |
+| 4 | Hindia | 129 |
+| 5 | Idgitaf | 110 |
+| 6 | Ghea Indrawari | 84 |
+| 7 | Sal Priadi | 82 |
 | 8 | Cigarettes After Sex | 71 |
-| 9 | Dere | 67 |
-| 10 | Pamungkas | 66 |
+| 9 | Dere | 69 |
+| 10 | Pamungkas | 68 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 30 |
-| 2 | Monolog - Pamungkas | 25 |
-| 3 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
-| 4 | Sedia Aku Sebelum Hujan - Idgitaf | 24 |
-| 5 | Kukira Kau Rumah - Amigdala | 24 |
-| 6 | Bertaut - Nadin Amizah | 23 |
-| 7 | Kota - Dere | 22 |
-| 8 | everything u are - Hindia | 21 |
-| 9 | bergema sampai selamanya - Nadhif Basalamah | 20 |
+| 2 | Monolog - Pamungkas | 26 |
+| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 25 |
+| 4 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
+| 5 | Kota - Dere | 24 |
+| 6 | Bertaut - Nadin Amizah | 24 |
+| 7 | Kukira Kau Rumah - Amigdala | 24 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 21 |
+| 9 | everything u are - Hindia | 21 |
 | 10 | Langit Abu-Abu - Tulus | 20 |
 
 ## 📅 Daily Breakdown
@@ -126,6 +126,7 @@
 | 06/02/2026 | 26 | Pamungkas (3) | Monolog - Pamungkas (3) |
 | 09/02/2026 | 45 | Amigdala (3) | Kukira Kau Rumah - Amigdala (3) |
 | 10/02/2026 | 1 | Sal Priadi (1) | Gala bunga matahari - Sal Priadi (1) |
+| 11/02/2026 | 73 | Tulus (5) | Favorite Girl - Justin Bieber (2) |
 
 ---
 
