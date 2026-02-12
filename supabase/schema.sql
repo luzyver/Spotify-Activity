@@ -1,7 +1,3 @@
--- Supabase Schema for Spotify Listening History
--- Run this in Supabase SQL Editor: https://aoomudynybikamxpcpoa.supabase.co
-
--- Table: listening_history
 CREATE TABLE IF NOT EXISTS listening_history (
   id BIGSERIAL PRIMARY KEY,
   timestamp BIGINT NOT NULL,
@@ -13,41 +9,34 @@ CREATE TABLE IF NOT EXISTS listening_history (
   image_url TEXT,
   created_at TIMESTAMPTZ DEFAULT NOW(),
 
-  -- Prevent duplicates
   UNIQUE(user_id, uri, timestamp)
 );
 
--- Indexes for fast queries
 CREATE INDEX IF NOT EXISTS idx_history_timestamp ON listening_history(timestamp DESC);
 CREATE INDEX IF NOT EXISTS idx_history_user ON listening_history(user_id);
 CREATE INDEX IF NOT EXISTS idx_history_artist ON listening_history(artist);
 CREATE INDEX IF NOT EXISTS idx_history_track ON listening_history(track);
 
--- Enable Row Level Security (RLS)
 ALTER TABLE listening_history ENABLE ROW LEVEL SECURITY;
 
--- Policy: Allow public read access
 CREATE POLICY "Allow public read access"
   ON listening_history
   FOR SELECT
   TO anon
   USING (true);
 
--- Policy: Allow insert from service role (worker)
 CREATE POLICY "Allow service role insert"
   ON listening_history
   FOR INSERT
   TO service_role
   WITH CHECK (true);
 
--- Policy: Allow anon insert (for migration script)
 CREATE POLICY "Allow anon insert"
   ON listening_history
   FOR INSERT
   TO anon
   WITH CHECK (true);
 
--- Function: Get listening stats
 CREATE OR REPLACE FUNCTION get_listening_stats()
 RETURNS JSON AS $$
   SELECT json_build_object(
@@ -60,7 +49,6 @@ RETURNS JSON AS $$
   FROM listening_history;
 $$ LANGUAGE sql;
 
--- Function: Get top artists
 CREATE OR REPLACE FUNCTION get_top_artists(limit_count INT DEFAULT 10)
 RETURNS TABLE(artist TEXT, play_count BIGINT) AS $$
   SELECT artist, COUNT(*) as play_count
@@ -70,7 +58,6 @@ RETURNS TABLE(artist TEXT, play_count BIGINT) AS $$
   LIMIT limit_count;
 $$ LANGUAGE sql;
 
--- Function: Get top tracks
 CREATE OR REPLACE FUNCTION get_top_tracks(limit_count INT DEFAULT 10)
 RETURNS TABLE(track TEXT, artist TEXT, play_count BIGINT) AS $$
   SELECT track, artist, COUNT(*) as play_count
