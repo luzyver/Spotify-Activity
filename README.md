@@ -6,23 +6,23 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,779 |
+| **Total Plays** | 4,799 |
 | **Unique Tracks** | 1,326 |
 | **Unique Artists** | 640 |
-| **Period** | November 12, 2025 - February 11, 2026 |
+| **Period** | November 12, 2025 - February 12, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 197 |
-| 2 | Tulus | 194 |
-| 3 | Nadin Amizah | 177 |
-| 4 | Hindia | 129 |
-| 5 | Idgitaf | 110 |
+| 1 | Bernadya | 198 |
+| 2 | Tulus | 195 |
+| 3 | Nadin Amizah | 180 |
+| 4 | Hindia | 130 |
+| 5 | Idgitaf | 111 |
 | 6 | Ghea Indrawari | 84 |
-| 7 | Sal Priadi | 82 |
+| 7 | Sal Priadi | 83 |
 | 8 | Cigarettes After Sex | 71 |
 | 9 | Dere | 69 |
 | 10 | Pamungkas | 68 |
@@ -32,15 +32,15 @@
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 30 |
-| 2 | Monolog - Pamungkas | 26 |
-| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 25 |
-| 4 | Kata Mereka Ini Berlebihan - Bernadya | 25 |
+| 2 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
+| 3 | Monolog - Pamungkas | 26 |
+| 4 | Sedia Aku Sebelum Hujan - Idgitaf | 25 |
 | 5 | Kota - Dere | 24 |
 | 6 | Bertaut - Nadin Amizah | 24 |
 | 7 | Kukira Kau Rumah - Amigdala | 24 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 21 |
-| 9 | everything u are - Hindia | 21 |
-| 10 | Langit Abu-Abu - Tulus | 20 |
+| 8 | Sorai - Nadin Amizah | 21 |
+| 9 | bergema sampai selamanya - Nadhif Basalamah | 21 |
+| 10 | everything u are - Hindia | 21 |
 
 ## 📅 Daily Breakdown
 
@@ -127,6 +127,7 @@
 | 09/02/2026 | 45 | Amigdala (3) | Kukira Kau Rumah - Amigdala (3) |
 | 10/02/2026 | 1 | Sal Priadi (1) | Gala bunga matahari - Sal Priadi (1) |
 | 11/02/2026 | 73 | Tulus (5) | Favorite Girl - Justin Bieber (2) |
+| 12/02/2026 | 20 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (2) |
 
 ---
 
