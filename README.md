@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,799 |
-| **Unique Tracks** | 1,326 |
-| **Unique Artists** | 640 |
-| **Period** | November 12, 2025 - February 12, 2026 |
+| **Total Plays** | 4,880 |
+| **Unique Tracks** | 1,334 |
+| **Unique Artists** | 642 |
+| **Period** | November 12, 2025 - February 13, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 198 |
-| 2 | Tulus | 195 |
-| 3 | Nadin Amizah | 180 |
+| 1 | Bernadya | 205 |
+| 2 | Tulus | 199 |
+| 3 | Nadin Amizah | 187 |
 | 4 | Hindia | 130 |
-| 5 | Idgitaf | 111 |
-| 6 | Ghea Indrawari | 84 |
-| 7 | Sal Priadi | 83 |
-| 8 | Cigarettes After Sex | 71 |
-| 9 | Dere | 69 |
+| 5 | Idgitaf | 114 |
+| 6 | Sal Priadi | 85 |
+| 7 | Ghea Indrawari | 84 |
+| 8 | Dere | 73 |
+| 9 | Cigarettes After Sex | 71 |
 | 10 | Pamungkas | 68 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -32,15 +32,15 @@
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 30 |
-| 2 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
-| 3 | Monolog - Pamungkas | 26 |
-| 4 | Sedia Aku Sebelum Hujan - Idgitaf | 25 |
-| 5 | Kota - Dere | 24 |
-| 6 | Bertaut - Nadin Amizah | 24 |
+| 2 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
+| 3 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
+| 4 | Monolog - Pamungkas | 26 |
+| 5 | Bertaut - Nadin Amizah | 25 |
+| 6 | Kota - Dere | 25 |
 | 7 | Kukira Kau Rumah - Amigdala | 24 |
-| 8 | Sorai - Nadin Amizah | 21 |
-| 9 | bergema sampai selamanya - Nadhif Basalamah | 21 |
-| 10 | everything u are - Hindia | 21 |
+| 8 | Sorai - Nadin Amizah | 22 |
+| 9 | Langit Abu-Abu - Tulus | 21 |
+| 10 | bergema sampai selamanya - Nadhif Basalamah | 21 |
 
 ## 📅 Daily Breakdown
 
@@ -128,6 +128,7 @@
 | 10/02/2026 | 1 | Sal Priadi (1) | Gala bunga matahari - Sal Priadi (1) |
 | 11/02/2026 | 73 | Tulus (5) | Favorite Girl - Justin Bieber (2) |
 | 12/02/2026 | 20 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (2) |
+| 13/02/2026 | 81 | Nadin Amizah (7) | Akhir Tak Bahagia - Misellia (2) |
 
 ---
 
