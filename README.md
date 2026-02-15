@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,880 |
-| **Unique Tracks** | 1,334 |
-| **Unique Artists** | 642 |
-| **Period** | November 12, 2025 - February 13, 2026 |
+| **Total Plays** | 4,904 |
+| **Unique Tracks** | 1,341 |
+| **Unique Artists** | 643 |
+| **Period** | November 12, 2025 - February 14, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,24 +17,24 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 205 |
-| 2 | Tulus | 199 |
-| 3 | Nadin Amizah | 187 |
-| 4 | Hindia | 130 |
-| 5 | Idgitaf | 114 |
+| 2 | Tulus | 200 |
+| 3 | Nadin Amizah | 188 |
+| 4 | Hindia | 131 |
+| 5 | Idgitaf | 116 |
 | 6 | Sal Priadi | 85 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Dere | 73 |
 | 9 | Cigarettes After Sex | 71 |
-| 10 | Pamungkas | 68 |
+| 10 | Pamungkas | 69 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 30 |
-| 2 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
-| 3 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
-| 4 | Monolog - Pamungkas | 26 |
+| 2 | Monolog - Pamungkas | 27 |
+| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
+| 4 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
 | 5 | Bertaut - Nadin Amizah | 25 |
 | 6 | Kota - Dere | 25 |
 | 7 | Kukira Kau Rumah - Amigdala | 24 |
@@ -129,6 +129,7 @@
 | 11/02/2026 | 73 | Tulus (5) | Favorite Girl - Justin Bieber (2) |
 | 12/02/2026 | 20 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (2) |
 | 13/02/2026 | 81 | Nadin Amizah (7) | Akhir Tak Bahagia - Misellia (2) |
+| 14/02/2026 | 24 | Feby Putri (3) | Semua Aku Dirayakan - Nadin Amizah (1) |
 
 ---
 
