@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,904 |
+| **Total Plays** | 4,906 |
 | **Unique Tracks** | 1,341 |
 | **Unique Artists** | 643 |
-| **Period** | November 12, 2025 - February 14, 2026 |
+| **Period** | November 12, 2025 - February 15, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -21,7 +21,7 @@
 | 3 | Nadin Amizah | 188 |
 | 4 | Hindia | 131 |
 | 5 | Idgitaf | 116 |
-| 6 | Sal Priadi | 85 |
+| 6 | Sal Priadi | 87 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Dere | 73 |
 | 9 | Cigarettes After Sex | 71 |
@@ -130,6 +130,7 @@
 | 12/02/2026 | 20 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (2) |
 | 13/02/2026 | 81 | Nadin Amizah (7) | Akhir Tak Bahagia - Misellia (2) |
 | 14/02/2026 | 24 | Feby Putri (3) | Semua Aku Dirayakan - Nadin Amizah (1) |
+| 15/02/2026 | 2 | Sal Priadi (2) | Mencintaimu - Sal Priadi (2) |
 
 ---
 
