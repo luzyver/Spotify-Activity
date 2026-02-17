@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,906 |
+| **Total Plays** | 4,929 |
 | **Unique Tracks** | 1,341 |
 | **Unique Artists** | 643 |
-| **Period** | November 12, 2025 - February 15, 2026 |
+| **Period** | November 12, 2025 - February 16, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -23,15 +23,15 @@
 | 5 | Idgitaf | 116 |
 | 6 | Sal Priadi | 87 |
 | 7 | Ghea Indrawari | 84 |
-| 8 | Dere | 73 |
-| 9 | Cigarettes After Sex | 71 |
+| 8 | Cigarettes After Sex | 74 |
+| 9 | Dere | 73 |
 | 10 | Pamungkas | 69 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 30 |
+| 1 | My Love Mine All Mine - Mitski | 31 |
 | 2 | Monolog - Pamungkas | 27 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
 | 4 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
@@ -131,6 +131,7 @@
 | 13/02/2026 | 81 | Nadin Amizah (7) | Akhir Tak Bahagia - Misellia (2) |
 | 14/02/2026 | 24 | Feby Putri (3) | Semua Aku Dirayakan - Nadin Amizah (1) |
 | 15/02/2026 | 2 | Sal Priadi (2) | Mencintaimu - Sal Priadi (2) |
+| 16/02/2026 | 23 | Patrick Watson (3) | Je te laisserai des mots - Patrick Watson (1) |
 
 ---
 
