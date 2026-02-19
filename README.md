@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,929 |
-| **Unique Tracks** | 1,341 |
-| **Unique Artists** | 643 |
-| **Period** | November 12, 2025 - February 16, 2026 |
+| **Total Plays** | 4,973 |
+| **Unique Tracks** | 1,359 |
+| **Unique Artists** | 657 |
+| **Period** | November 12, 2025 - February 18, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 205 |
-| 2 | Tulus | 200 |
+| 1 | Bernadya | 207 |
+| 2 | Tulus | 201 |
 | 3 | Nadin Amizah | 188 |
-| 4 | Hindia | 131 |
+| 4 | Hindia | 133 |
 | 5 | Idgitaf | 116 |
-| 6 | Sal Priadi | 87 |
+| 6 | Sal Priadi | 89 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Cigarettes After Sex | 74 |
 | 9 | Dere | 73 |
@@ -132,6 +132,7 @@
 | 14/02/2026 | 24 | Feby Putri (3) | Semua Aku Dirayakan - Nadin Amizah (1) |
 | 15/02/2026 | 2 | Sal Priadi (2) | Mencintaimu - Sal Priadi (2) |
 | 16/02/2026 | 23 | Patrick Watson (3) | Je te laisserai des mots - Patrick Watson (1) |
+| 18/02/2026 | 44 | Nadhif Basalamah, Aziz Harun, Aisha Retno (3) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (3) |
 
 ---
 
