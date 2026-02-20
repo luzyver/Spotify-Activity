@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,973 |
-| **Unique Tracks** | 1,359 |
-| **Unique Artists** | 657 |
-| **Period** | November 12, 2025 - February 18, 2026 |
+| **Total Plays** | 4,997 |
+| **Unique Tracks** | 1,372 |
+| **Unique Artists** | 666 |
+| **Period** | November 12, 2025 - February 19, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -23,7 +23,7 @@
 | 5 | Idgitaf | 116 |
 | 6 | Sal Priadi | 89 |
 | 7 | Ghea Indrawari | 84 |
-| 8 | Cigarettes After Sex | 74 |
+| 8 | Cigarettes After Sex | 76 |
 | 9 | Dere | 73 |
 | 10 | Pamungkas | 69 |
 
@@ -133,6 +133,7 @@
 | 15/02/2026 | 2 | Sal Priadi (2) | Mencintaimu - Sal Priadi (2) |
 | 16/02/2026 | 23 | Patrick Watson (3) | Je te laisserai des mots - Patrick Watson (1) |
 | 18/02/2026 | 44 | Nadhif Basalamah, Aziz Harun, Aisha Retno (3) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (3) |
+| 19/02/2026 | 24 | Cigarettes After Sex (2) | Hujan Di Balik Jendela - Senandung (1) |
 
 ---
 
