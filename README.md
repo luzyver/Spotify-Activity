@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 4,997 |
-| **Unique Tracks** | 1,372 |
+| **Total Plays** | 5,082 |
+| **Unique Tracks** | 1,373 |
 | **Unique Artists** | 666 |
-| **Period** | November 12, 2025 - February 19, 2026 |
+| **Period** | November 12, 2025 - February 21, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 207 |
-| 2 | Tulus | 201 |
+| 1 | Bernadya | 209 |
+| 2 | Tulus | 203 |
 | 3 | Nadin Amizah | 188 |
-| 4 | Hindia | 133 |
-| 5 | Idgitaf | 116 |
-| 6 | Sal Priadi | 89 |
+| 4 | Hindia | 134 |
+| 5 | Idgitaf | 117 |
+| 6 | Sal Priadi | 91 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Cigarettes After Sex | 76 |
 | 9 | Dere | 73 |
-| 10 | Pamungkas | 69 |
+| 10 | Pamungkas | 71 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 31 |
-| 2 | Monolog - Pamungkas | 27 |
+| 2 | Monolog - Pamungkas | 28 |
 | 3 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
 | 4 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
 | 5 | Bertaut - Nadin Amizah | 25 |
 | 6 | Kota - Dere | 25 |
 | 7 | Kukira Kau Rumah - Amigdala | 24 |
-| 8 | Sorai - Nadin Amizah | 22 |
-| 9 | Langit Abu-Abu - Tulus | 21 |
-| 10 | bergema sampai selamanya - Nadhif Basalamah | 21 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 22 |
+| 9 | Sorai - Nadin Amizah | 22 |
+| 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 21 |
 
 ## 📅 Daily Breakdown
 
@@ -134,6 +134,7 @@
 | 16/02/2026 | 23 | Patrick Watson (3) | Je te laisserai des mots - Patrick Watson (1) |
 | 18/02/2026 | 44 | Nadhif Basalamah, Aziz Harun, Aisha Retno (3) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (3) |
 | 19/02/2026 | 24 | Cigarettes After Sex (2) | Hujan Di Balik Jendela - Senandung (1) |
+| 21/02/2026 | 85 | James Arthur (3) | Car's Outside - Sped Up Version - James Arthur (2) |
 
 ---
 
