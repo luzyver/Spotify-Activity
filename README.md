@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,082 |
-| **Unique Tracks** | 1,373 |
-| **Unique Artists** | 666 |
-| **Period** | November 12, 2025 - February 21, 2026 |
+| **Total Plays** | 5,100 |
+| **Unique Tracks** | 1,382 |
+| **Unique Artists** | 672 |
+| **Period** | November 12, 2025 - February 24, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -135,6 +135,7 @@
 | 18/02/2026 | 44 | Nadhif Basalamah, Aziz Harun, Aisha Retno (3) | kota ini tak sama tanpamu (with Aziz Harun & Aisha Retno) - Nadhif Basalamah, Aziz Harun, Aisha Retno (3) |
 | 19/02/2026 | 24 | Cigarettes After Sex (2) | Hujan Di Balik Jendela - Senandung (1) |
 | 21/02/2026 | 85 | James Arthur (3) | Car's Outside - Sped Up Version - James Arthur (2) |
+| 24/02/2026 | 18 | Jeff Bernat (2) | Wish You Well - Jeff Bernat (1) |
 
 ---
 
