@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,100 |
+| **Total Plays** | 5,119 |
 | **Unique Tracks** | 1,382 |
 | **Unique Artists** | 672 |
-| **Period** | November 12, 2025 - February 24, 2026 |
+| **Period** | November 12, 2025 - February 25, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,14 +17,14 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 209 |
-| 2 | Tulus | 203 |
-| 3 | Nadin Amizah | 188 |
+| 2 | Tulus | 204 |
+| 3 | Nadin Amizah | 192 |
 | 4 | Hindia | 134 |
 | 5 | Idgitaf | 117 |
 | 6 | Sal Priadi | 91 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Cigarettes After Sex | 76 |
-| 9 | Dere | 73 |
+| 9 | Dere | 75 |
 | 10 | Pamungkas | 71 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -33,13 +33,13 @@
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 31 |
 | 2 | Monolog - Pamungkas | 28 |
-| 3 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
-| 4 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
-| 5 | Bertaut - Nadin Amizah | 25 |
-| 6 | Kota - Dere | 25 |
-| 7 | Kukira Kau Rumah - Amigdala | 24 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 22 |
-| 9 | Sorai - Nadin Amizah | 22 |
+| 3 | Bertaut - Nadin Amizah | 26 |
+| 4 | Kota - Dere | 26 |
+| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
+| 6 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
+| 7 | Kukira Kau Rumah - Amigdala | 25 |
+| 8 | Sorai - Nadin Amizah | 23 |
+| 9 | bergema sampai selamanya - Nadhif Basalamah | 22 |
 | 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 21 |
 
 ## 📅 Daily Breakdown
@@ -136,6 +136,7 @@
 | 19/02/2026 | 24 | Cigarettes After Sex (2) | Hujan Di Balik Jendela - Senandung (1) |
 | 21/02/2026 | 85 | James Arthur (3) | Car's Outside - Sped Up Version - James Arthur (2) |
 | 24/02/2026 | 18 | Jeff Bernat (2) | Wish You Well - Jeff Bernat (1) |
+| 25/02/2026 | 19 | Nadin Amizah (4) | Runtuh - Feby Putri, Fiersa Besari (1) |
 
 ---
 
