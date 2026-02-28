@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,134 |
+| **Total Plays** | 5,174 |
 | **Unique Tracks** | 1,382 |
 | **Unique Artists** | 672 |
-| **Period** | November 12, 2025 - February 26, 2026 |
+| **Period** | November 12, 2025 - February 27, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,11 +17,11 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 209 |
-| 2 | Tulus | 205 |
-| 3 | Nadin Amizah | 195 |
+| 2 | Tulus | 206 |
+| 3 | Nadin Amizah | 198 |
 | 4 | Hindia | 134 |
 | 5 | Idgitaf | 117 |
-| 6 | Sal Priadi | 91 |
+| 6 | Sal Priadi | 92 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Dere | 77 |
 | 9 | Cigarettes After Sex | 76 |
@@ -33,12 +33,12 @@
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 31 |
 | 2 | Monolog - Pamungkas | 28 |
-| 3 | Kota - Dere | 27 |
-| 4 | Kukira Kau Rumah - Amigdala | 26 |
-| 5 | Bertaut - Nadin Amizah | 26 |
+| 3 | Bertaut - Nadin Amizah | 27 |
+| 4 | Kukira Kau Rumah - Amigdala | 27 |
+| 5 | Kota - Dere | 27 |
 | 6 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
 | 7 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
-| 8 | Sorai - Nadin Amizah | 24 |
+| 8 | Sorai - Nadin Amizah | 25 |
 | 9 | bergema sampai selamanya - Nadhif Basalamah | 22 |
 | 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 21 |
 
@@ -138,6 +138,7 @@
 | 24/02/2026 | 18 | Jeff Bernat (2) | Wish You Well - Jeff Bernat (1) |
 | 25/02/2026 | 19 | Nadin Amizah (4) | Runtuh - Feby Putri, Fiersa Besari (1) |
 | 26/02/2026 | 15 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (1) |
+| 27/02/2026 | 40 | Nadin Amizah (3) | Scott Street - Phoebe Bridgers (1) |
 
 ---
 
