@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,174 |
-| **Unique Tracks** | 1,382 |
+| **Total Plays** | 5,203 |
+| **Unique Tracks** | 1,383 |
 | **Unique Artists** | 672 |
-| **Period** | November 12, 2025 - February 27, 2026 |
+| **Period** | November 12, 2025 - February 28, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,13 +19,13 @@
 | 1 | Bernadya | 209 |
 | 2 | Tulus | 206 |
 | 3 | Nadin Amizah | 198 |
-| 4 | Hindia | 134 |
+| 4 | Hindia | 135 |
 | 5 | Idgitaf | 117 |
 | 6 | Sal Priadi | 92 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Dere | 77 |
 | 9 | Cigarettes After Sex | 76 |
-| 10 | Pamungkas | 71 |
+| 10 | Yura Yunita | 71 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -139,6 +139,7 @@
 | 25/02/2026 | 19 | Nadin Amizah (4) | Runtuh - Feby Putri, Fiersa Besari (1) |
 | 26/02/2026 | 15 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (1) |
 | 27/02/2026 | 40 | Nadin Amizah (3) | Scott Street - Phoebe Bridgers (1) |
+| 28/02/2026 | 29 | Yura Yunita (5) | Andai Saja - Yura Yunita (1) |
 
 ---
 
