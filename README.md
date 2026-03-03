@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,203 |
+| **Total Plays** | 5,271 |
 | **Unique Tracks** | 1,383 |
 | **Unique Artists** | 672 |
-| **Period** | November 12, 2025 - February 28, 2026 |
+| **Period** | November 12, 2025 - March 2, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 209 |
-| 2 | Tulus | 206 |
-| 3 | Nadin Amizah | 198 |
-| 4 | Hindia | 135 |
-| 5 | Idgitaf | 117 |
-| 6 | Sal Priadi | 92 |
+| 1 | Bernadya | 213 |
+| 2 | Tulus | 209 |
+| 3 | Nadin Amizah | 204 |
+| 4 | Hindia | 137 |
+| 5 | Idgitaf | 120 |
+| 6 | Sal Priadi | 97 |
 | 7 | Ghea Indrawari | 84 |
 | 8 | Dere | 77 |
 | 9 | Cigarettes After Sex | 76 |
-| 10 | Yura Yunita | 71 |
+| 10 | Pamungkas | 73 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | My Love Mine All Mine - Mitski | 31 |
-| 2 | Monolog - Pamungkas | 28 |
-| 3 | Bertaut - Nadin Amizah | 27 |
-| 4 | Kukira Kau Rumah - Amigdala | 27 |
-| 5 | Kota - Dere | 27 |
-| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
-| 7 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
-| 8 | Sorai - Nadin Amizah | 25 |
-| 9 | bergema sampai selamanya - Nadhif Basalamah | 22 |
-| 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 21 |
+| 2 | Bertaut - Nadin Amizah | 28 |
+| 3 | Monolog - Pamungkas | 28 |
+| 4 | Sorai - Nadin Amizah | 27 |
+| 5 | Kukira Kau Rumah - Amigdala | 27 |
+| 6 | Kota - Dere | 27 |
+| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 26 |
+| 8 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
+| 9 | bergema sampai selamanya - Nadhif Basalamah | 25 |
+| 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 23 |
 
 ## 📅 Daily Breakdown
 
@@ -140,6 +140,7 @@
 | 26/02/2026 | 15 | Nadin Amizah (3) | Sempurna - Andra & The Backbone (1) |
 | 27/02/2026 | 40 | Nadin Amizah (3) | Scott Street - Phoebe Bridgers (1) |
 | 28/02/2026 | 29 | Yura Yunita (5) | Andai Saja - Yura Yunita (1) |
+| 02/03/2026 | 68 | Nadin Amizah (6) | Mangu - Fourtwnty, Charita Utami (3) |
 
 ---
 
