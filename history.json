@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "timestamp": 1772675571319,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mighty Love",
+    "artist": "Zeke And The Popo",
+    "uri": "spotify:track:4JvSk0QTgPWrZLki45fraa",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732adffb1a9e5af3a1e823ef5f"
+  },
+  {
+    "timestamp": 1772675361363,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kau",
+    "artist": "Bilal Indrajaya, Maudy Ayunda",
+    "uri": "spotify:track:0jFovC9t5QSMURqjV5sDHk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27399548af0a8c7f8d96f850c70"
+  },
+  {
+    "timestamp": 1772675189669,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teach Me How To Love",
+    "artist": "Galdive",
+    "uri": "spotify:track:0Yr6PSjentjJNekjbA4FlX",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e54fbbbcd832186628d9d89b"
+  },
+  {
+    "timestamp": 1772674971210,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Waking Up Together With You",
+    "artist": "Ardhito Pramono",
+    "uri": "spotify:track:6WsG550j67Aj29z0iel7lo",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273faf1ccba47de7ff955f54a44"
+  },
+  {
+    "timestamp": 1772674791242,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "semua lagu cinta terdengar sama",
+    "artist": "Hindia",
+    "uri": "spotify:track:63VnhcHMnTPCcd24oVajL6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27305898628baab6ef07a0a4d03"
+  },
+  {
+    "timestamp": 1772674551166,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Semua lagu cinta",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:4s8W4gutSQnFIDNThqUPSI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2"
+  },
+  {
+    "timestamp": 1772674388389,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Untuk Perempuan Yang Sedang Di Pelukan",
+    "artist": "Payung Teduh",
+    "uri": "spotify:track:0urpBLpcm6DOGzs86rcKd8",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738ee03809d40edb632fadd3c0"
+  },
+  {
+    "timestamp": 1772673981320,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sampai Jadi Debu (Menampilkan Gardika Gigih)",
+    "artist": "Banda Neira",
+    "uri": "spotify:track:4B3DEANIvod8552CbwftCG",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737a173b7767ca05f9bb17464e"
+  }
+]
