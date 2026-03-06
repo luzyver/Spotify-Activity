@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,322 |
-| **Unique Tracks** | 1,384 |
-| **Unique Artists** | 672 |
-| **Period** | November 12, 2025 - March 4, 2026 |
+| **Total Plays** | 5,374 |
+| **Unique Tracks** | 1,393 |
+| **Unique Artists** | 678 |
+| **Period** | November 12, 2025 - March 5, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 214 |
-| 2 | Tulus | 211 |
-| 3 | Nadin Amizah | 209 |
-| 4 | Hindia | 138 |
+| 1 | Tulus | 215 |
+| 2 | Nadin Amizah | 215 |
+| 3 | Bernadya | 214 |
+| 4 | Hindia | 139 |
 | 5 | Idgitaf | 123 |
-| 6 | Sal Priadi | 99 |
-| 7 | Ghea Indrawari | 84 |
-| 8 | Dere | 82 |
-| 9 | Pamungkas | 77 |
-| 10 | Cigarettes After Sex | 76 |
+| 6 | Sal Priadi | 101 |
+| 7 | Dere | 85 |
+| 8 | Ghea Indrawari | 84 |
+| 9 | Pamungkas | 78 |
+| 10 | Yura Yunita | 76 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | My Love Mine All Mine - Mitski | 31 |
-| 2 | Monolog - Pamungkas | 30 |
-| 3 | Kota - Dere | 29 |
-| 4 | Bertaut - Nadin Amizah | 29 |
-| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 28 |
-| 6 | Sorai - Nadin Amizah | 28 |
-| 7 | Kukira Kau Rumah - Amigdala | 28 |
+| 1 | Monolog - Pamungkas | 31 |
+| 2 | Kota - Dere | 31 |
+| 3 | My Love Mine All Mine - Mitski | 31 |
+| 4 | Bertaut - Nadin Amizah | 30 |
+| 5 | Sorai - Nadin Amizah | 29 |
+| 6 | Kukira Kau Rumah - Amigdala | 29 |
+| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 28 |
 | 8 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
 | 9 | bergema sampai selamanya - Nadhif Basalamah | 25 |
-| 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 23 |
+| 10 | Langit Abu-Abu - Tulus | 23 |
 
 ## 📅 Daily Breakdown
 
@@ -143,6 +143,7 @@
 | 02/03/2026 | 68 | Nadin Amizah (6) | Mangu - Fourtwnty, Charita Utami (3) |
 | 03/03/2026 | 16 | Nadin Amizah (3) | Kusut - Fourtwnty (1) |
 | 04/03/2026 | 35 | Pamungkas (4) | Monolog - Pamungkas (2) |
+| 05/03/2026 | 52 | Nadin Amizah (6) | Kota - Dere (2) |
 
 ---
 
