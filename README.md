@@ -6,25 +6,25 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,374 |
+| **Total Plays** | 5,384 |
 | **Unique Tracks** | 1,393 |
 | **Unique Artists** | 678 |
-| **Period** | November 12, 2025 - March 5, 2026 |
+| **Period** | November 12, 2025 - March 6, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Tulus | 215 |
-| 2 | Nadin Amizah | 215 |
-| 3 | Bernadya | 214 |
-| 4 | Hindia | 139 |
+| 1 | Nadin Amizah | 216 |
+| 2 | Bernadya | 215 |
+| 3 | Tulus | 215 |
+| 4 | Hindia | 140 |
 | 5 | Idgitaf | 123 |
 | 6 | Sal Priadi | 101 |
 | 7 | Dere | 85 |
 | 8 | Ghea Indrawari | 84 |
-| 9 | Pamungkas | 78 |
+| 9 | Pamungkas | 79 |
 | 10 | Yura Yunita | 76 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -144,6 +144,7 @@
 | 03/03/2026 | 16 | Nadin Amizah (3) | Kusut - Fourtwnty (1) |
 | 04/03/2026 | 35 | Pamungkas (4) | Monolog - Pamungkas (2) |
 | 05/03/2026 | 52 | Nadin Amizah (6) | Kota - Dere (2) |
+| 06/03/2026 | 10 | Hivi! (1) | Remaja - Hivi! (1) |
 
 ---
 
