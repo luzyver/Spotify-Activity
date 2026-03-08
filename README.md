@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,384 |
+| **Total Plays** | 5,422 |
 | **Unique Tracks** | 1,393 |
 | **Unique Artists** | 678 |
-| **Period** | November 12, 2025 - March 6, 2026 |
+| **Period** | November 12, 2025 - March 7, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 216 |
-| 2 | Bernadya | 215 |
-| 3 | Tulus | 215 |
-| 4 | Hindia | 140 |
-| 5 | Idgitaf | 123 |
-| 6 | Sal Priadi | 101 |
-| 7 | Dere | 85 |
+| 1 | Nadin Amizah | 221 |
+| 2 | Tulus | 217 |
+| 3 | Bernadya | 215 |
+| 4 | Hindia | 141 |
+| 5 | Idgitaf | 124 |
+| 6 | Sal Priadi | 102 |
+| 7 | Dere | 87 |
 | 8 | Ghea Indrawari | 84 |
 | 9 | Pamungkas | 79 |
-| 10 | Yura Yunita | 76 |
+| 10 | Yura Yunita | 78 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Monolog - Pamungkas | 31 |
-| 2 | Kota - Dere | 31 |
-| 3 | My Love Mine All Mine - Mitski | 31 |
-| 4 | Bertaut - Nadin Amizah | 30 |
-| 5 | Sorai - Nadin Amizah | 29 |
-| 6 | Kukira Kau Rumah - Amigdala | 29 |
+| 1 | Kota - Dere | 32 |
+| 2 | Bertaut - Nadin Amizah | 31 |
+| 3 | Monolog - Pamungkas | 31 |
+| 4 | My Love Mine All Mine - Mitski | 31 |
+| 5 | Sorai - Nadin Amizah | 30 |
+| 6 | Kukira Kau Rumah - Amigdala | 30 |
 | 7 | Sedia Aku Sebelum Hujan - Idgitaf | 28 |
 | 8 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
 | 9 | bergema sampai selamanya - Nadhif Basalamah | 25 |
-| 10 | Langit Abu-Abu - Tulus | 23 |
+| 10 | Monokrom - Tulus | 23 |
 
 ## 📅 Daily Breakdown
 
@@ -145,6 +145,7 @@
 | 04/03/2026 | 35 | Pamungkas (4) | Monolog - Pamungkas (2) |
 | 05/03/2026 | 52 | Nadin Amizah (6) | Kota - Dere (2) |
 | 06/03/2026 | 10 | Hivi! (1) | Remaja - Hivi! (1) |
+| 07/03/2026 | 38 | Nadin Amizah (5) | Runtuh - Feby Putri, Fiersa Besari (2) |
 
 ---
 
