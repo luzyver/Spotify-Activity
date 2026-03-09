@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,422 |
+| **Total Plays** | 5,428 |
 | **Unique Tracks** | 1,393 |
 | **Unique Artists** | 678 |
-| **Period** | November 12, 2025 - March 7, 2026 |
+| **Period** | November 12, 2025 - March 8, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,21 +17,21 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Nadin Amizah | 221 |
-| 2 | Tulus | 217 |
+| 2 | Tulus | 219 |
 | 3 | Bernadya | 215 |
 | 4 | Hindia | 141 |
 | 5 | Idgitaf | 124 |
 | 6 | Sal Priadi | 102 |
-| 7 | Dere | 87 |
+| 7 | Dere | 88 |
 | 8 | Ghea Indrawari | 84 |
-| 9 | Pamungkas | 79 |
-| 10 | Yura Yunita | 78 |
+| 9 | Yura Yunita | 79 |
+| 10 | Pamungkas | 79 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Kota - Dere | 32 |
+| 1 | Kota - Dere | 33 |
 | 2 | Bertaut - Nadin Amizah | 31 |
 | 3 | Monolog - Pamungkas | 31 |
 | 4 | My Love Mine All Mine - Mitski | 31 |
@@ -39,8 +39,8 @@
 | 6 | Kukira Kau Rumah - Amigdala | 30 |
 | 7 | Sedia Aku Sebelum Hujan - Idgitaf | 28 |
 | 8 | Kata Mereka Ini Berlebihan - Bernadya | 26 |
-| 9 | bergema sampai selamanya - Nadhif Basalamah | 25 |
-| 10 | Monokrom - Tulus | 23 |
+| 9 | Langit Abu-Abu - Tulus | 25 |
+| 10 | bergema sampai selamanya - Nadhif Basalamah | 25 |
 
 ## 📅 Daily Breakdown
 
@@ -146,6 +146,7 @@
 | 05/03/2026 | 52 | Nadin Amizah (6) | Kota - Dere (2) |
 | 06/03/2026 | 10 | Hivi! (1) | Remaja - Hivi! (1) |
 | 07/03/2026 | 38 | Nadin Amizah (5) | Runtuh - Feby Putri, Fiersa Besari (2) |
+| 08/03/2026 | 6 | Tulus (2) | Langit Abu-Abu - Tulus (2) |
 
 ---
 
