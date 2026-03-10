@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "timestamp": 1773104354798,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "blue",
+    "artist": "yung kai",
+    "uri": "spotify:track:3be9ACTxtcL6Zm4vJRUiPG",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273373c63a4666fb7193febc167"
+  },
+  {
+    "timestamp": 1773104115333,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Seandainya",
+    "artist": "Vierra",
+    "uri": "spotify:track:5NmjnghJGJRFg34KGGx8O0",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bdc17798be456d9e4ad28dc0"
+  }
+]
