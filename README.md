@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,567 |
+| **Total Plays** | 5,599 |
 | **Unique Tracks** | 1,393 |
 | **Unique Artists** | 678 |
-| **Period** | November 12, 2025 - March 10, 2026 |
+| **Period** | November 12, 2025 - March 11, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 234 |
-| 2 | Nadin Amizah | 225 |
-| 3 | Tulus | 221 |
+| 1 | Bernadya | 235 |
+| 2 | Nadin Amizah | 228 |
+| 3 | Tulus | 222 |
 | 4 | Hindia | 147 |
-| 5 | Idgitaf | 124 |
-| 6 | Sal Priadi | 107 |
-| 7 | Dere | 89 |
+| 5 | Idgitaf | 127 |
+| 6 | Sal Priadi | 110 |
+| 7 | Dere | 91 |
 | 8 | Ghea Indrawari | 84 |
-| 9 | Pamungkas | 81 |
-| 10 | Yura Yunita | 80 |
+| 9 | Yura Yunita | 81 |
+| 10 | Pamungkas | 81 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -36,8 +36,8 @@
 | 3 | My Love Mine All Mine - Mitski | 33 |
 | 4 | Kukira Kau Rumah - Amigdala | 31 |
 | 5 | Bertaut - Nadin Amizah | 31 |
-| 6 | Sorai - Nadin Amizah | 30 |
-| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 28 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 30 |
+| 7 | Sorai - Nadin Amizah | 30 |
 | 8 | Kata Mereka Ini Berlebihan - Bernadya | 27 |
 | 9 | Monokrom - Tulus | 25 |
 | 10 | Reckless - Madison Beer | 25 |
@@ -149,6 +149,7 @@
 | 08/03/2026 | 6 | Tulus (2) | Langit Abu-Abu - Tulus (2) |
 | 09/03/2026 | 76 | Bernadya (16) | Apa Mungkin - Bernadya (3) |
 | 10/03/2026 | 63 | Nadin Amizah (4) | Apa Mungkin - Bernadya (3) |
+| 11/03/2026 | 32 | Sal Priadi (3) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
 
 ---
 
