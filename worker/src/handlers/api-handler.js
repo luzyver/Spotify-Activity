@@ -15,6 +15,16 @@ const jsonResponse = (data, status = 200, headers = {}) =>
 		headers: { 'Content-Type': 'application/json', ...NO_CACHE_HEADERS, ...headers },
 	});
 
+const HISTORY_ARCHIVE_DEFAULT_LIMIT = 250;
+const HISTORY_ARCHIVE_MAX_LIMIT = 1000;
+const HISTORY_ARCHIVE_MAX_OFFSET = 10000;
+
+const parseBoundedInt = (value, fallback, min, max) => {
+	const parsed = Number.parseInt(value, 10);
+	if (Number.isNaN(parsed)) return fallback;
+	return Math.min(Math.max(parsed, min), max);
+};
+
 async function fetchUserLiveData(userId, tokenData, clientId, clientSecret) {
 	try {
 		const accessToken = await spotify.refreshAccessToken(tokenData.refreshToken, clientId, clientSecret);
@@ -99,8 +109,13 @@ export async function handleHistoryAPI(env, corsHeaders) {
 
 export async function handleHistoryArchiveAPI(env, corsHeaders, url) {
 	try {
-		const limit = parseInt(url.searchParams.get('limit')) || 1000;
-		const offset = parseInt(url.searchParams.get('offset')) || 0;
+		const limit = parseBoundedInt(
+			url.searchParams.get('limit'),
+			HISTORY_ARCHIVE_DEFAULT_LIMIT,
+			1,
+			HISTORY_ARCHIVE_MAX_LIMIT
+		);
+		const offset = parseBoundedInt(url.searchParams.get('offset'), 0, 0, HISTORY_ARCHIVE_MAX_OFFSET);
 		const search = url.searchParams.get('search') || undefined;
 
 		const { data, count } = await supabase.fetchHistory(env.SUPABASE_ANON_KEY, { limit, offset, search });
