@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,599 |
-| **Unique Tracks** | 1,393 |
-| **Unique Artists** | 678 |
-| **Period** | November 12, 2025 - March 11, 2026 |
+| **Total Plays** | 5,655 |
+| **Unique Tracks** | 1,398 |
+| **Unique Artists** | 681 |
+| **Period** | November 12, 2025 - March 12, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 235 |
-| 2 | Nadin Amizah | 228 |
-| 3 | Tulus | 222 |
-| 4 | Hindia | 147 |
-| 5 | Idgitaf | 127 |
-| 6 | Sal Priadi | 110 |
+| 1 | Bernadya | 236 |
+| 2 | Nadin Amizah | 230 |
+| 3 | Tulus | 225 |
+| 4 | Hindia | 148 |
+| 5 | Idgitaf | 128 |
+| 6 | Sal Priadi | 111 |
 | 7 | Dere | 91 |
-| 8 | Ghea Indrawari | 84 |
-| 9 | Yura Yunita | 81 |
-| 10 | Pamungkas | 81 |
+| 8 | Ghea Indrawari | 87 |
+| 9 | Pamungkas | 83 |
+| 10 | Yura Yunita | 81 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -38,9 +38,9 @@
 | 5 | Bertaut - Nadin Amizah | 31 |
 | 6 | Sedia Aku Sebelum Hujan - Idgitaf | 30 |
 | 7 | Sorai - Nadin Amizah | 30 |
-| 8 | Kata Mereka Ini Berlebihan - Bernadya | 27 |
-| 9 | Monokrom - Tulus | 25 |
-| 10 | Reckless - Madison Beer | 25 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 28 |
+| 9 | Kata Mereka Ini Berlebihan - Bernadya | 27 |
+| 10 | Runtuh - Feby Putri, Fiersa Besari | 25 |
 
 ## 📅 Daily Breakdown
 
@@ -150,6 +150,7 @@
 | 09/03/2026 | 76 | Bernadya (16) | Apa Mungkin - Bernadya (3) |
 | 10/03/2026 | 63 | Nadin Amizah (4) | Apa Mungkin - Bernadya (3) |
 | 11/03/2026 | 32 | Sal Priadi (3) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
+| 12/03/2026 | 56 | Nadhif Basalamah (4) | bergema sampai selamanya - Nadhif Basalamah (3) |
 
 ---
 
