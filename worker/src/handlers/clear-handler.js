@@ -14,7 +14,7 @@ export async function handleClearHistory(env) {
 	console.log('🗑️ Starting history clear...');
 
 	try {
-		const { GITHUB_TOKEN, GITHUB_REPO, SUPABASE_ANON_KEY } = env;
+		const { GITHUB_TOKEN, GITHUB_REPO, SUPABASE_SERVICE_ROLE_KEY } = env;
 		if (!GITHUB_TOKEN || !GITHUB_REPO) throw new Error('Missing GitHub credentials');
 
 		const { content: currentHistory = [] } = await github.getGitHubFile(GITHUB_REPO, 'history.json', GITHUB_TOKEN);
@@ -31,11 +31,11 @@ export async function handleClearHistory(env) {
 
 		console.log(`🔒 Clear timestamp: ${new Date(safeClearTimestamp).toISOString()}`);
 
-		// Archive to Supabase if we have items and Supabase key
+		// Archive to Supabase if we have items and service role key
 		let supabaseResult = { success: false, inserted: 0 };
-		if (itemsCount > 0 && SUPABASE_ANON_KEY) {
+		if (itemsCount > 0 && SUPABASE_SERVICE_ROLE_KEY) {
 			console.log(`📤 Archiving ${itemsCount} items to Supabase...`);
-			supabaseResult = await supabase.insertHistory(currentHistory, SUPABASE_ANON_KEY);
+			supabaseResult = await supabase.insertHistory(currentHistory, SUPABASE_SERVICE_ROLE_KEY);
 
 			if (supabaseResult.success) {
 				console.log(`✅ Supabase: Inserted ${supabaseResult.inserted} records`);

@@ -31,12 +31,6 @@ CREATE POLICY "Allow service role insert"
   TO service_role
   WITH CHECK (true);
 
-CREATE POLICY "Allow anon insert"
-  ON listening_history
-  FOR INSERT
-  TO anon
-  WITH CHECK (true);
-
 CREATE OR REPLACE FUNCTION get_listening_stats()
 RETURNS JSON AS $$
   SELECT json_build_object(
