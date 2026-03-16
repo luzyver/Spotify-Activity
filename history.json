@@ -1,5 +1,122 @@
 [
   {
+    "timestamp": 1773654758347,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bukan Cinta Biasa",
+    "artist": "Afgan",
+    "uri": "spotify:track:7pnySx65jx0qm8ZmV6R56m",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273daa3a5d2478cc796925f7c90"
+  },
+  {
+    "timestamp": 1773654506684,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Interaksi",
+    "artist": "Tulus",
+    "uri": "spotify:track:32Pdf9eyXDEMoClEJW6yYP",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d34a0632f6861e8875d6899b"
+  },
+  {
+    "timestamp": 1773654335617,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Akad",
+    "artist": "Payung Teduh",
+    "uri": "spotify:track:3AAAGS7iM1ekDywqdYMJG2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27353037b98177c143a06466ec5"
+  },
+  {
+    "timestamp": 1773654076667,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kebutuhan Hati",
+    "artist": "Kaleb J",
+    "uri": "spotify:track:5IpsVW4bsFjOTX1I96KiIJ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a283d3ac66cf68f434ffcaa7"
+  },
+  {
+    "timestamp": 1773653795843,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Melawan Restu",
+    "artist": "Mahalini",
+    "uri": "spotify:track:6H7lvP0NgAF39Rn3qve4Og",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542"
+  },
+  {
+    "timestamp": 1773653575149,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mengenangmu",
+    "artist": "Kerispatih",
+    "uri": "spotify:track:6l9L0ssWzD5XI1aJgVFpaS",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734986516d6ce56f0d19cdc41d"
+  },
+  {
+    "timestamp": 1773653299107,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tanpa Pesan Terakhir",
+    "artist": "Seventeen",
+    "uri": "spotify:track:4v9JJX3ZzuFFOKrMOYHTVZ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27380fc9f89ca88ed1b77eb12b7"
+  },
+  {
+    "timestamp": 1773653007269,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bunga Tidur",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:61MvPue2ZjJ09jPshAFSyt",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394847679fe7b10e27d9803f5"
+  },
+  {
+    "timestamp": 1773652774952,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Berdua Saja",
+    "artist": "Payung Teduh",
+    "uri": "spotify:track:7tZ69fC235bauF9Dyxk8Ps",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738ee03809d40edb632fadd3c0"
+  },
+  {
+    "timestamp": 1773652506163,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Di Ambang Karam",
+    "artist": "Amigdala",
+    "uri": "spotify:track:1D8kctV7MtI4rWZhbYeaF9",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394c0587a1bc7172d1a61cef6"
+  },
+  {
+    "timestamp": 1773652231678,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sisa Rasa",
+    "artist": "Mahalini",
+    "uri": "spotify:track:0R6KCq5TLJB3gi2ragMrXZ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542"
+  },
+  {
+    "timestamp": 1773651974882,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bawalah Cintaku",
+    "artist": "Afgan",
+    "uri": "spotify:track:3xpMytpniCnjXCgy7TcFDw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273daa3a5d2478cc796925f7c90"
+  },
+  {
+    "timestamp": 1773651741084,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jakarta Hari Ini",
+    "artist": "For Revenge, Stereo Wall",
+    "uri": "spotify:track:6AyBbSvcR2ZwTeR30I4jb9",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731e2bf47fcf24c1b5fdfd0d69"
+  },
+  {
     "timestamp": 1773651519480,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
