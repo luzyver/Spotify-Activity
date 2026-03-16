@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,688 |
+| **Total Plays** | 5,704 |
 | **Unique Tracks** | 1,398 |
 | **Unique Artists** | 681 |
-| **Period** | November 12, 2025 - March 14, 2026 |
+| **Period** | November 12, 2025 - March 15, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,15 +17,15 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 236 |
-| 2 | Nadin Amizah | 234 |
-| 3 | Tulus | 228 |
+| 2 | Nadin Amizah | 235 |
+| 3 | Tulus | 229 |
 | 4 | Hindia | 148 |
-| 5 | Idgitaf | 128 |
-| 6 | Sal Priadi | 111 |
+| 5 | Idgitaf | 129 |
+| 6 | Sal Priadi | 112 |
 | 7 | Dere | 93 |
-| 8 | Ghea Indrawari | 87 |
+| 8 | Ghea Indrawari | 90 |
 | 9 | Pamungkas | 84 |
-| 10 | Yura Yunita | 82 |
+| 10 | Yura Yunita | 83 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -152,6 +152,7 @@
 | 11/03/2026 | 32 | Sal Priadi (3) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
 | 12/03/2026 | 56 | Nadhif Basalamah (4) | bergema sampai selamanya - Nadhif Basalamah (3) |
 | 14/03/2026 | 33 | Nadin Amizah (4) | Interaksi - Tulus (1) |
+| 15/03/2026 | 16 | Ghea Indrawari (3) | Melawan Restu - Mahalini (1) |
 
 ---
 
