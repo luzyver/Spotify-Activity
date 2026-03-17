@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,704 |
-| **Unique Tracks** | 1,398 |
-| **Unique Artists** | 681 |
-| **Period** | November 12, 2025 - March 15, 2026 |
+| **Total Plays** | 5,822 |
+| **Unique Tracks** | 1,420 |
+| **Unique Artists** | 684 |
+| **Period** | November 12, 2025 - March 16, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 236 |
-| 2 | Nadin Amizah | 235 |
-| 3 | Tulus | 229 |
-| 4 | Hindia | 148 |
-| 5 | Idgitaf | 129 |
-| 6 | Sal Priadi | 112 |
-| 7 | Dere | 93 |
-| 8 | Ghea Indrawari | 90 |
-| 9 | Pamungkas | 84 |
-| 10 | Yura Yunita | 83 |
+| 1 | Nadin Amizah | 246 |
+| 2 | Tulus | 237 |
+| 3 | Bernadya | 236 |
+| 4 | Hindia | 154 |
+| 5 | Idgitaf | 133 |
+| 6 | Sal Priadi | 121 |
+| 7 | Ghea Indrawari | 93 |
+| 8 | Dere | 93 |
+| 9 | Pamungkas | 91 |
+| 10 | Yura Yunita | 84 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Kota - Dere | 35 |
-| 2 | Monolog - Pamungkas | 34 |
-| 3 | My Love Mine All Mine - Mitski | 33 |
-| 4 | Bertaut - Nadin Amizah | 32 |
+| 1 | Monolog - Pamungkas | 35 |
+| 2 | Kota - Dere | 35 |
+| 3 | Bertaut - Nadin Amizah | 33 |
+| 4 | My Love Mine All Mine - Mitski | 33 |
 | 5 | Kukira Kau Rumah - Amigdala | 32 |
-| 6 | Sorai - Nadin Amizah | 31 |
-| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 30 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 28 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 31 |
+| 7 | Sorai - Nadin Amizah | 31 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 29 |
 | 9 | Kata Mereka Ini Berlebihan - Bernadya | 27 |
-| 10 | Langit Abu-Abu - Tulus | 26 |
+| 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 26 |
 
 ## 📅 Daily Breakdown
 
@@ -153,6 +153,7 @@
 | 12/03/2026 | 56 | Nadhif Basalamah (4) | bergema sampai selamanya - Nadhif Basalamah (3) |
 | 14/03/2026 | 33 | Nadin Amizah (4) | Interaksi - Tulus (1) |
 | 15/03/2026 | 16 | Ghea Indrawari (3) | Melawan Restu - Mahalini (1) |
+| 16/03/2026 | 118 | Nadin Amizah (11) | Kau Rumahku - raissa anggiani (2) |
 
 ---
 
