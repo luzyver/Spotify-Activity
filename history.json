@@ -1,5 +1,131 @@
 [
   {
+    "timestamp": 1774040271049,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bertaut",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:630DpnzdfjdVqv2yLfPbAX",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb"
+  },
+  {
+    "timestamp": 1774039941118,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kembali Pulang",
+    "artist": "Suara Kayu, Feby Putri",
+    "uri": "spotify:track:6xeqCawPZngDVqw2W2aGaR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730fa7d0f0589cf5cf7c9300fd"
+  },
+  {
+    "timestamp": 1774039731219,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Angin Pujaan Hujan",
+    "artist": "Payung Teduh",
+    "uri": "spotify:track:43LZAANFvlIKMgcU4QiYBx",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738ee03809d40edb632fadd3c0"
+  },
+  {
+    "timestamp": 1774039521039,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sayap Pelindungmu",
+    "artist": "TheOvertunes",
+    "uri": "spotify:track:3LhUsgwtftfxHIPgViaYxB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ad2d81b674462d99915c66a8"
+  },
+  {
+    "timestamp": 1774039311013,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "keepyousafe",
+    "artist": "Yahya",
+    "uri": "spotify:track:3Sbova9DAY3pc9GTAACT4b",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737f24eada733027ed06787199"
+  },
+  {
+    "timestamp": 1774039041349,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Dan...",
+    "artist": "Sheila On 7",
+    "uri": "spotify:track:1MdjZzEInrmDBXf8zs0nKS",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27354270208627aa8061a8abe21"
+  },
+  {
+    "timestamp": 1774038771074,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Rehat",
+    "artist": "Kunto Aji",
+    "uri": "spotify:track:7mjO4RbTZIb1SfE8G673Lm",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7d74c7fa660999ad4ff0e8d"
+  },
+  {
+    "timestamp": 1774038411298,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Pegang Tanganku",
+    "artist": "Nosstress",
+    "uri": "spotify:track:1UVbABq7dDUhMLjLyip3sZ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dd853bd930ba226b49a2bc9d"
+  },
+  {
+    "timestamp": 1774038081130,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ditto",
+    "artist": "NewJeans",
+    "uri": "spotify:track:3r8RuvgbX9s7ammBn07D3W",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273edf5b257be1d6593e81bb45f"
+  },
+  {
+    "timestamp": 1774037901422,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Untuk Apa",
+    "artist": "Maudy Ayunda",
+    "uri": "spotify:track:3Uozk5ZZ9aC3oSVmGrYFaN",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734ee6c0713af0507f42e13b02"
+  },
+  {
+    "timestamp": 1774037661265,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Dia Dia Dia",
+    "artist": "Fatin",
+    "uri": "spotify:track:7htWuazarn407jLZTQZp8P",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ad02c2509e644c414e622888"
+  },
+  {
+    "timestamp": 1774037391362,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kau Rumahku",
+    "artist": "raissa anggiani",
+    "uri": "spotify:track:7nQoDLkzCcoIpKPQt3eCdN",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332fa5c23a5c1cf200134e540"
+  },
+  {
+    "timestamp": 1774037121075,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sudah - Story of Kale - Original Motion Picture Soundtrack",
+    "artist": "Ardhito Pramono",
+    "uri": "spotify:track:5QGdWvXwXMK2Zx6eKagyue",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731694d3d44da75cea069c4b79"
+  },
+  {
+    "timestamp": 1774036911353,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Begitu Indah",
+    "artist": "Padi",
+    "uri": "spotify:track:0GI6KBji23F1191IABn0FL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273060db30acf454a0f82a72543"
+  },
+  {
     "timestamp": 1774036611033,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
