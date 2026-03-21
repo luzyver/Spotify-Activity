@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,974 |
+| **Total Plays** | 5,975 |
 | **Unique Tracks** | 1,464 |
 | **Unique Artists** | 690 |
-| **Period** | November 12, 2025 - March 19, 2026 |
+| **Period** | November 12, 2025 - March 20, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -157,6 +157,7 @@
 | 17/03/2026 | 87 | Nadin Amizah (8) | Kereta Ini Melaju Terlalu Cepat - Nadin Amizah (2) |
 | 18/03/2026 | 32 | Nadin Amizah (4) | Jadi Yang Kuinginkan - Vierra (1) |
 | 19/03/2026 | 33 | Nadin Amizah (4) | Jadi Yang Kuinginkan - Vierra (2) |
+| 20/03/2026 | 1 | Payung Teduh (1) | Untuk Perempuan Yang Sedang Di Pelukan - Payung Teduh (1) |
 
 ---
 
