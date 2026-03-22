@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 5,975 |
-| **Unique Tracks** | 1,464 |
-| **Unique Artists** | 690 |
-| **Period** | November 12, 2025 - March 20, 2026 |
+| **Total Plays** | 6,030 |
+| **Unique Tracks** | 1,472 |
+| **Unique Artists** | 695 |
+| **Period** | November 12, 2025 - March 21, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 262 |
+| 1 | Nadin Amizah | 264 |
 | 2 | Tulus | 243 |
 | 3 | Bernadya | 237 |
 | 4 | Hindia | 160 |
-| 5 | Idgitaf | 135 |
+| 5 | Idgitaf | 137 |
 | 6 | Sal Priadi | 122 |
 | 7 | Dere | 96 |
-| 8 | Ghea Indrawari | 94 |
+| 8 | Ghea Indrawari | 95 |
 | 9 | Pamungkas | 92 |
-| 10 | Yura Yunita | 87 |
+| 10 | Yura Yunita | 88 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -33,11 +33,11 @@
 |------|------|------|
 | 1 | Monolog - Pamungkas | 36 |
 | 2 | Kota - Dere | 36 |
-| 3 | My Love Mine All Mine - Mitski | 34 |
-| 4 | Bertaut - Nadin Amizah | 34 |
+| 3 | Bertaut - Nadin Amizah | 35 |
+| 4 | My Love Mine All Mine - Mitski | 34 |
 | 5 | Sorai - Nadin Amizah | 33 |
 | 6 | Kukira Kau Rumah - Amigdala | 33 |
-| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 31 |
+| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 32 |
 | 8 | bergema sampai selamanya - Nadhif Basalamah | 29 |
 | 9 | Kata Mereka Ini Berlebihan - Bernadya | 28 |
 | 10 | Berakhir di Aku - Original Soundtrack From "Home Sweet Loan" - Idgitaf | 27 |
@@ -158,6 +158,7 @@
 | 18/03/2026 | 32 | Nadin Amizah (4) | Jadi Yang Kuinginkan - Vierra (1) |
 | 19/03/2026 | 33 | Nadin Amizah (4) | Jadi Yang Kuinginkan - Vierra (2) |
 | 20/03/2026 | 1 | Payung Teduh (1) | Untuk Perempuan Yang Sedang Di Pelukan - Payung Teduh (1) |
+| 21/03/2026 | 55 | Payung Teduh (4) | Fana Merah Jambu - Fourtwnty (2) |
 
 ---
 
