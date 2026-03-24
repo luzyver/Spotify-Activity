@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,030 |
-| **Unique Tracks** | 1,472 |
+| **Total Plays** | 6,081 |
+| **Unique Tracks** | 1,474 |
 | **Unique Artists** | 695 |
-| **Period** | November 12, 2025 - March 21, 2026 |
+| **Period** | November 12, 2025 - March 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 264 |
-| 2 | Tulus | 243 |
-| 3 | Bernadya | 237 |
+| 1 | Nadin Amizah | 266 |
+| 2 | Tulus | 244 |
+| 3 | Bernadya | 239 |
 | 4 | Hindia | 160 |
 | 5 | Idgitaf | 137 |
 | 6 | Sal Priadi | 122 |
-| 7 | Dere | 96 |
-| 8 | Ghea Indrawari | 95 |
-| 9 | Pamungkas | 92 |
-| 10 | Yura Yunita | 88 |
+| 7 | Ghea Indrawari | 105 |
+| 8 | Dere | 96 |
+| 9 | Pamungkas | 93 |
+| 10 | Yura Yunita | 90 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -159,6 +159,7 @@
 | 19/03/2026 | 33 | Nadin Amizah (4) | Jadi Yang Kuinginkan - Vierra (2) |
 | 20/03/2026 | 1 | Payung Teduh (1) | Untuk Perempuan Yang Sedang Di Pelukan - Payung Teduh (1) |
 | 21/03/2026 | 55 | Payung Teduh (4) | Fana Merah Jambu - Fourtwnty (2) |
+| 23/03/2026 | 51 | Ghea Indrawari (10) | Garis Terdepan - Fiersa Besari (2) |
 
 ---
 
