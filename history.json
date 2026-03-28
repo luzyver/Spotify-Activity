@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "timestamp": 1774691945996,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Pupus",
+    "artist": "Pamungkas",
+    "uri": "spotify:track:7soe3jUC7mHUbF6v2Sf3IW",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e15ac0d90ad533c2dc21008a"
+  },
+  {
+    "timestamp": 1774691630256,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mesra-mesraannya kecil-kecilan dulu",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:1NzyVlr2fOWOfigbwDabme",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2"
+  },
+  {
+    "timestamp": 1774691419748,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bertaut",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:630DpnzdfjdVqv2yLfPbAX",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb"
+  },
+  {
+    "timestamp": 1774691103180,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "33x",
+    "artist": "Perunggu",
+    "uri": "spotify:track:2pOLzpYmuDlcbTJUXYkPSr",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273207dfc9ba16045d294e90216"
+  },
+  {
+    "timestamp": 1774690667690,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Rumah Ke Rumah",
+    "artist": "Hindia",
+    "uri": "spotify:track:2wAiFWjRupWmnDkQcu91MF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d623688488865906052ef96b"
+  },
+  {
+    "timestamp": 1774690389844,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Monolog",
+    "artist": "Pamungkas",
+    "uri": "spotify:track:1zu5ZpnrSArdoaT6Qq3yo9",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e2cf96ce4558b8f2376b79a"
+  }
+]
