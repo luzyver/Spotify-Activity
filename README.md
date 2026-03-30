@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,209 |
-| **Unique Tracks** | 1,478 |
+| **Total Plays** | 6,246 |
+| **Unique Tracks** | 1,479 |
 | **Unique Artists** | 695 |
-| **Period** | November 12, 2025 - March 28, 2026 |
+| **Period** | November 12, 2025 - March 29, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 273 |
-| 2 | Tulus | 250 |
-| 3 | Bernadya | 241 |
-| 4 | Hindia | 164 |
-| 5 | Idgitaf | 139 |
-| 6 | Sal Priadi | 127 |
+| 1 | Nadin Amizah | 275 |
+| 2 | Tulus | 254 |
+| 3 | Bernadya | 242 |
+| 4 | Hindia | 170 |
+| 5 | Idgitaf | 141 |
+| 6 | Sal Priadi | 128 |
 | 7 | Ghea Indrawari | 109 |
-| 8 | Pamungkas | 100 |
+| 8 | Pamungkas | 107 |
 | 9 | Dere | 98 |
 | 10 | Yura Yunita | 92 |
 
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Monolog - Pamungkas | 40 |
+| 1 | Monolog - Pamungkas | 41 |
 | 2 | Kota - Dere | 38 |
-| 3 | Bertaut - Nadin Amizah | 36 |
+| 3 | Bertaut - Nadin Amizah | 37 |
 | 4 | Kukira Kau Rumah - Amigdala | 35 |
-| 5 | Sorai - Nadin Amizah | 34 |
-| 6 | My Love Mine All Mine - Mitski | 34 |
-| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 33 |
-| 8 | Langit Abu-Abu - Tulus | 29 |
-| 9 | bergema sampai selamanya - Nadhif Basalamah | 29 |
-| 10 | Monokrom - Tulus | 28 |
+| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 34 |
+| 6 | Sorai - Nadin Amizah | 34 |
+| 7 | My Love Mine All Mine - Mitski | 34 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 30 |
+| 9 | Kata Mereka Ini Berlebihan - Bernadya | 29 |
+| 10 | Langit Abu-Abu - Tulus | 29 |
 
 ## 📅 Daily Breakdown
 
@@ -164,6 +164,7 @@
 | 26/03/2026 | 29 | Ghea Indrawari (3) | Monolog - Pamungkas (2) |
 | 27/03/2026 | 36 | Tulus (3) | Anti ∞ Hero - Mighfar Suganda (1) |
 | 28/03/2026 | 14 | Pamungkas (3) | Membasuh - Hindia, Rara Sekar (1) |
+| 29/03/2026 | 37 | Pamungkas (7) | Rumah Ke Rumah - Hindia (2) |
 
 ---
 
