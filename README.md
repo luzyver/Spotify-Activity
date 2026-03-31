@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,246 |
-| **Unique Tracks** | 1,479 |
+| **Total Plays** | 6,272 |
+| **Unique Tracks** | 1,480 |
 | **Unique Artists** | 695 |
-| **Period** | November 12, 2025 - March 29, 2026 |
+| **Period** | November 12, 2025 - March 30, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 275 |
+| 1 | Nadin Amizah | 276 |
 | 2 | Tulus | 254 |
-| 3 | Bernadya | 242 |
+| 3 | Bernadya | 244 |
 | 4 | Hindia | 170 |
 | 5 | Idgitaf | 141 |
-| 6 | Sal Priadi | 128 |
+| 6 | Sal Priadi | 130 |
 | 7 | Ghea Indrawari | 109 |
 | 8 | Pamungkas | 107 |
 | 9 | Dere | 98 |
@@ -38,8 +38,8 @@
 | 5 | Sedia Aku Sebelum Hujan - Idgitaf | 34 |
 | 6 | Sorai - Nadin Amizah | 34 |
 | 7 | My Love Mine All Mine - Mitski | 34 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 30 |
-| 9 | Kata Mereka Ini Berlebihan - Bernadya | 29 |
+| 8 | Kata Mereka Ini Berlebihan - Bernadya | 31 |
+| 9 | bergema sampai selamanya - Nadhif Basalamah | 30 |
 | 10 | Langit Abu-Abu - Tulus | 29 |
 
 ## 📅 Daily Breakdown
@@ -165,6 +165,7 @@
 | 27/03/2026 | 36 | Tulus (3) | Anti ∞ Hero - Mighfar Suganda (1) |
 | 28/03/2026 | 14 | Pamungkas (3) | Membasuh - Hindia, Rara Sekar (1) |
 | 29/03/2026 | 37 | Pamungkas (7) | Rumah Ke Rumah - Hindia (2) |
+| 30/03/2026 | 26 | .Feast (3) | Tuhan Sebut Sia-Sia - Amigdala (2) |
 
 ---
 
