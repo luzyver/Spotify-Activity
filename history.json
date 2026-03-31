@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "timestamp": 1774983560007,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Camped",
+    "artist": "RINI",
+    "uri": "spotify:track:2HMMxCBemHQY4Qktdtcpwj",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27379a9311efbde05c261c09c96"
+  },
+  {
+    "timestamp": 1774983319071,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Asmalibrasi",
+    "artist": "Soegi Bornean",
+    "uri": "spotify:track:3TFdXrYIubXABQh0CxIiSs",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27359605b76ee27d2c5ffac5d26"
+  },
+  {
+    "timestamp": 1774983079122,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "I Been (feat. Crush)",
+    "artist": "Berhana, Crush",
+    "uri": "spotify:track:3S4ZLFwdhdwsTjwqsxoQtc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738f6780aa315fd27fa16dfce6"
+  },
+  {
+    "timestamp": 1774982899160,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "keepyousafe",
+    "artist": "Yahya",
+    "uri": "spotify:track:3Sbova9DAY3pc9GTAACT4b",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737f24eada733027ed06787199"
+  },
+  {
+    "timestamp": 1774982629334,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "camellia",
+    "artist": "slchld",
+    "uri": "spotify:track:7kpe2K0hdSssLj4G4YjxdU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273600ee242281deea5db49ee0e"
+  },
+  {
+    "timestamp": 1774982480438,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "In Your Eyes",
+    "artist": "Biagi",
+    "uri": "spotify:track:3IKyxZ2zPYebVTKvgMJNt3",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fd7f27bd5df767ace441ef9a"
+  },
+  {
+    "timestamp": 1774982269996,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lucky",
+    "artist": "Chelsea Cutler, Alexander 23",
+    "uri": "spotify:track:0AnZrWo2TuUX5BnFjsoy3N",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273553de6179fd1ba659a9fbbb7"
+  },
+  {
+    "timestamp": 1774982119029,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "seperti takdir kita yang tulis",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:0ladq2Y2KLksoxqWUzpB1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff4b142b1070c6113d35941f"
+  },
+  {
+    "timestamp": 1774981848967,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Heather",
+    "artist": "Conan Gray",
+    "uri": "spotify:track:4xqrdfXkTW4T0RauPLv3WA",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27388e3cda6d29b2552d4d6bc43"
+  },
+  {
+    "timestamp": 1774981668950,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Cruel",
+    "artist": "Jeff Bernat",
+    "uri": "spotify:track:0Dw7uVJBAKCm6dfCoabJV9",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349bfa64a9446e5af24df08f7"
+  },
+  {
+    "timestamp": 1774981428887,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Malibu Nights",
+    "artist": "LANY",
+    "uri": "spotify:track:0Eqg0CQ7bK3RQIMPw1A7pl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c4dae9528b2a8408f463eb17"
+  },
+  {
+    "timestamp": 1774981129263,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tampar",
+    "artist": "Juicy Luicy",
+    "uri": "spotify:track:1csKczcJqOSdK8JriLMpDW",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fadca79809c06f6afe7de0d9"
+  }
+]
