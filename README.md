@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,272 |
-| **Unique Tracks** | 1,480 |
+| **Total Plays** | 6,374 |
+| **Unique Tracks** | 1,482 |
 | **Unique Artists** | 695 |
-| **Period** | November 12, 2025 - March 30, 2026 |
+| **Period** | November 12, 2025 - March 31, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 276 |
-| 2 | Tulus | 254 |
-| 3 | Bernadya | 244 |
-| 4 | Hindia | 170 |
+| 1 | Nadin Amizah | 286 |
+| 2 | Tulus | 263 |
+| 3 | Bernadya | 247 |
+| 4 | Hindia | 177 |
 | 5 | Idgitaf | 141 |
-| 6 | Sal Priadi | 130 |
-| 7 | Ghea Indrawari | 109 |
-| 8 | Pamungkas | 107 |
-| 9 | Dere | 98 |
-| 10 | Yura Yunita | 92 |
+| 6 | Sal Priadi | 133 |
+| 7 | Pamungkas | 115 |
+| 8 | Ghea Indrawari | 109 |
+| 9 | Dere | 100 |
+| 10 | Yura Yunita | 93 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Monolog - Pamungkas | 41 |
-| 2 | Kota - Dere | 38 |
-| 3 | Bertaut - Nadin Amizah | 37 |
-| 4 | Kukira Kau Rumah - Amigdala | 35 |
-| 5 | Sedia Aku Sebelum Hujan - Idgitaf | 34 |
-| 6 | Sorai - Nadin Amizah | 34 |
-| 7 | My Love Mine All Mine - Mitski | 34 |
-| 8 | Kata Mereka Ini Berlebihan - Bernadya | 31 |
-| 9 | bergema sampai selamanya - Nadhif Basalamah | 30 |
-| 10 | Langit Abu-Abu - Tulus | 29 |
+| 1 | Monolog - Pamungkas | 44 |
+| 2 | Kota - Dere | 39 |
+| 3 | Bertaut - Nadin Amizah | 38 |
+| 4 | Sorai - Nadin Amizah | 36 |
+| 5 | Kukira Kau Rumah - Amigdala | 36 |
+| 6 | My Love Mine All Mine - Mitski | 35 |
+| 7 | Sedia Aku Sebelum Hujan - Idgitaf | 34 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 31 |
+| 9 | Kata Mereka Ini Berlebihan - Bernadya | 31 |
+| 10 | Langit Abu-Abu - Tulus | 30 |
 
 ## 📅 Daily Breakdown
 
@@ -166,6 +166,7 @@
 | 28/03/2026 | 14 | Pamungkas (3) | Membasuh - Hindia, Rara Sekar (1) |
 | 29/03/2026 | 37 | Pamungkas (7) | Rumah Ke Rumah - Hindia (2) |
 | 30/03/2026 | 26 | .Feast (3) | Tuhan Sebut Sia-Sia - Amigdala (2) |
+| 31/03/2026 | 102 | Nadin Amizah (10) | Monolog - Pamungkas (3) |
 
 ---
 
