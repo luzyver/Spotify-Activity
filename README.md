@@ -6,32 +6,32 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,489 |
-| **Unique Tracks** | 1,494 |
+| **Total Plays** | 6,546 |
+| **Unique Tracks** | 1,498 |
 | **Unique Artists** | 702 |
-| **Period** | November 12, 2025 - April 1, 2026 |
+| **Period** | November 12, 2025 - April 4, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 295 |
-| 2 | Tulus | 265 |
-| 3 | Bernadya | 252 |
-| 4 | Hindia | 179 |
+| 1 | Nadin Amizah | 302 |
+| 2 | Tulus | 268 |
+| 3 | Bernadya | 253 |
+| 4 | Hindia | 182 |
 | 5 | Idgitaf | 144 |
-| 6 | Sal Priadi | 133 |
-| 7 | Pamungkas | 116 |
+| 6 | Sal Priadi | 137 |
+| 7 | Pamungkas | 121 |
 | 8 | Ghea Indrawari | 111 |
-| 9 | Dere | 105 |
+| 9 | Dere | 106 |
 | 10 | Yura Yunita | 96 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Monolog - Pamungkas | 44 |
+| 1 | Monolog - Pamungkas | 46 |
 | 2 | Kota - Dere | 40 |
 | 3 | Bertaut - Nadin Amizah | 39 |
 | 4 | Sorai - Nadin Amizah | 37 |
@@ -168,6 +168,7 @@
 | 30/03/2026 | 26 | .Feast (3) | Tuhan Sebut Sia-Sia - Amigdala (2) |
 | 31/03/2026 | 102 | Nadin Amizah (10) | Monolog - Pamungkas (3) |
 | 01/04/2026 | 115 | Nadin Amizah (9) | Itu Aku - raissa anggiani (2) |
+| 04/04/2026 | 57 | Nadin Amizah (7) | Taruh - Nadin Amizah (3) |
 
 ---
 
