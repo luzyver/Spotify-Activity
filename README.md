@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,546 |
+| **Total Plays** | 6,548 |
 | **Unique Tracks** | 1,498 |
 | **Unique Artists** | 702 |
-| **Period** | November 12, 2025 - April 4, 2026 |
+| **Period** | November 12, 2025 - April 5, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -169,6 +169,7 @@
 | 31/03/2026 | 102 | Nadin Amizah (10) | Monolog - Pamungkas (3) |
 | 01/04/2026 | 115 | Nadin Amizah (9) | Itu Aku - raissa anggiani (2) |
 | 04/04/2026 | 57 | Nadin Amizah (7) | Taruh - Nadin Amizah (3) |
+| 05/04/2026 | 2 | Adhitia Sofyan (2) | Sesuatu Di Jogja - Adhitia Sofyan (2) |
 
 ---
 
