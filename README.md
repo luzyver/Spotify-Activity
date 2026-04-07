@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,548 |
-| **Unique Tracks** | 1,498 |
+| **Total Plays** | 6,621 |
+| **Unique Tracks** | 1,499 |
 | **Unique Artists** | 702 |
-| **Period** | November 12, 2025 - April 5, 2026 |
+| **Period** | November 12, 2025 - April 6, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 302 |
-| 2 | Tulus | 268 |
-| 3 | Bernadya | 253 |
-| 4 | Hindia | 182 |
+| 1 | Nadin Amizah | 307 |
+| 2 | Tulus | 276 |
+| 3 | Bernadya | 254 |
+| 4 | Hindia | 187 |
 | 5 | Idgitaf | 144 |
-| 6 | Sal Priadi | 137 |
-| 7 | Pamungkas | 121 |
-| 8 | Ghea Indrawari | 111 |
-| 9 | Dere | 106 |
-| 10 | Yura Yunita | 96 |
+| 6 | Sal Priadi | 141 |
+| 7 | Pamungkas | 125 |
+| 8 | Ghea Indrawari | 112 |
+| 9 | Dere | 108 |
+| 10 | Yura Yunita | 97 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Monolog - Pamungkas | 46 |
-| 2 | Kota - Dere | 40 |
-| 3 | Bertaut - Nadin Amizah | 39 |
-| 4 | Sorai - Nadin Amizah | 37 |
-| 5 | Kukira Kau Rumah - Amigdala | 36 |
+| 1 | Monolog - Pamungkas | 48 |
+| 2 | Kota - Dere | 41 |
+| 3 | Bertaut - Nadin Amizah | 40 |
+| 4 | Sorai - Nadin Amizah | 38 |
+| 5 | Kukira Kau Rumah - Amigdala | 37 |
 | 6 | Sedia Aku Sebelum Hujan - Idgitaf | 35 |
 | 7 | My Love Mine All Mine - Mitski | 35 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 31 |
-| 9 | Kata Mereka Ini Berlebihan - Bernadya | 31 |
-| 10 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 30 |
+| 8 | Langit Abu-Abu - Tulus | 31 |
+| 9 | bergema sampai selamanya - Nadhif Basalamah | 31 |
+| 10 | Kata Mereka Ini Berlebihan - Bernadya | 31 |
 
 ## 📅 Daily Breakdown
 
@@ -170,6 +170,7 @@
 | 01/04/2026 | 115 | Nadin Amizah (9) | Itu Aku - raissa anggiani (2) |
 | 04/04/2026 | 57 | Nadin Amizah (7) | Taruh - Nadin Amizah (3) |
 | 05/04/2026 | 2 | Adhitia Sofyan (2) | Sesuatu Di Jogja - Adhitia Sofyan (2) |
+| 06/04/2026 | 73 | Tulus (8) | Mati-Matian - Mahalini (2) |
 
 ---
 
