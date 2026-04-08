@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,621 |
+| **Total Plays** | 6,649 |
 | **Unique Tracks** | 1,499 |
 | **Unique Artists** | 702 |
-| **Period** | November 12, 2025 - April 6, 2026 |
+| **Period** | November 12, 2025 - April 7, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 307 |
+| 1 | Nadin Amizah | 309 |
 | 2 | Tulus | 276 |
-| 3 | Bernadya | 254 |
-| 4 | Hindia | 187 |
+| 3 | Bernadya | 255 |
+| 4 | Hindia | 188 |
 | 5 | Idgitaf | 144 |
-| 6 | Sal Priadi | 141 |
-| 7 | Pamungkas | 125 |
-| 8 | Ghea Indrawari | 112 |
+| 6 | Sal Priadi | 142 |
+| 7 | Pamungkas | 127 |
+| 8 | Ghea Indrawari | 113 |
 | 9 | Dere | 108 |
 | 10 | Yura Yunita | 97 |
 
@@ -171,6 +171,7 @@
 | 04/04/2026 | 57 | Nadin Amizah (7) | Taruh - Nadin Amizah (3) |
 | 05/04/2026 | 2 | Adhitia Sofyan (2) | Sesuatu Di Jogja - Adhitia Sofyan (2) |
 | 06/04/2026 | 73 | Tulus (8) | Mati-Matian - Mahalini (2) |
+| 07/04/2026 | 28 | NIKI (3) | Take A Chance With Me - NIKI (2) |
 
 ---
 
