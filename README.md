@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,676 |
-| **Unique Tracks** | 1,500 |
+| **Total Plays** | 6,737 |
+| **Unique Tracks** | 1,501 |
 | **Unique Artists** | 703 |
-| **Period** | November 12, 2025 - April 8, 2026 |
+| **Period** | November 12, 2025 - April 10, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 310 |
-| 2 | Tulus | 276 |
-| 3 | Bernadya | 259 |
-| 4 | Hindia | 189 |
-| 5 | Idgitaf | 146 |
-| 6 | Sal Priadi | 142 |
-| 7 | Pamungkas | 129 |
-| 8 | Ghea Indrawari | 117 |
-| 9 | Dere | 108 |
-| 10 | Yura Yunita | 97 |
+| 1 | Nadin Amizah | 313 |
+| 2 | Tulus | 278 |
+| 3 | Bernadya | 260 |
+| 4 | Hindia | 191 |
+| 5 | Idgitaf | 147 |
+| 6 | Sal Priadi | 144 |
+| 7 | Pamungkas | 130 |
+| 8 | Ghea Indrawari | 120 |
+| 9 | Dere | 109 |
+| 10 | Yura Yunita | 101 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | Monolog - Pamungkas | 49 |
-| 2 | Kota - Dere | 41 |
+| 2 | Kota - Dere | 42 |
 | 3 | Bertaut - Nadin Amizah | 40 |
-| 4 | Sorai - Nadin Amizah | 38 |
-| 5 | Kukira Kau Rumah - Amigdala | 37 |
-| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 35 |
+| 4 | Sorai - Nadin Amizah | 39 |
+| 5 | Kukira Kau Rumah - Amigdala | 38 |
+| 6 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 7 | My Love Mine All Mine - Mitski | 35 |
-| 8 | Kata Mereka Ini Berlebihan - Bernadya | 32 |
-| 9 | Langit Abu-Abu - Tulus | 31 |
-| 10 | bergema sampai selamanya - Nadhif Basalamah | 31 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 32 |
+| 9 | Kata Mereka Ini Berlebihan - Bernadya | 32 |
+| 10 | Runtuh - Feby Putri, Fiersa Besari | 31 |
 
 ## 📅 Daily Breakdown
 
@@ -173,6 +173,7 @@
 | 06/04/2026 | 73 | Tulus (8) | Mati-Matian - Mahalini (2) |
 | 07/04/2026 | 28 | NIKI (3) | Take A Chance With Me - NIKI (2) |
 | 08/04/2026 | 27 | Ghea Indrawari (4) | Kisah Tanpa Dirimu - Anggis Devaki (2) |
+| 10/04/2026 | 61 | Yura Yunita (4) | Bisa Tanpamu - Andmesh (2) |
 
 ---
 
