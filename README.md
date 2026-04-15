@@ -6,23 +6,23 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,816 |
-| **Unique Tracks** | 1,502 |
-| **Unique Artists** | 703 |
-| **Period** | November 12, 2025 - April 13, 2026 |
+| **Total Plays** | 6,881 |
+| **Unique Tracks** | 1,511 |
+| **Unique Artists** | 708 |
+| **Period** | November 12, 2025 - April 14, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 320 |
-| 2 | Tulus | 286 |
-| 3 | Bernadya | 261 |
-| 4 | Hindia | 194 |
+| 1 | Nadin Amizah | 323 |
+| 2 | Tulus | 289 |
+| 3 | Bernadya | 265 |
+| 4 | Hindia | 197 |
 | 5 | Idgitaf | 147 |
-| 6 | Sal Priadi | 144 |
-| 7 | Pamungkas | 131 |
+| 6 | Sal Priadi | 146 |
+| 7 | Pamungkas | 133 |
 | 8 | Ghea Indrawari | 124 |
 | 9 | Dere | 113 |
 | 10 | Yura Yunita | 103 |
@@ -38,9 +38,9 @@
 | 5 | Kukira Kau Rumah - Amigdala | 39 |
 | 6 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 7 | My Love Mine All Mine - Mitski | 35 |
-| 8 | everything u are - Hindia | 32 |
-| 9 | Langit Abu-Abu - Tulus | 32 |
-| 10 | Runtuh - Feby Putri, Fiersa Besari | 32 |
+| 8 | bergema sampai selamanya - Nadhif Basalamah | 33 |
+| 9 | Runtuh - Feby Putri, Fiersa Besari | 33 |
+| 10 | everything u are - Hindia | 33 |
 
 ## 📅 Daily Breakdown
 
@@ -175,6 +175,7 @@
 | 08/04/2026 | 27 | Ghea Indrawari (4) | Kisah Tanpa Dirimu - Anggis Devaki (2) |
 | 10/04/2026 | 61 | Yura Yunita (4) | Bisa Tanpamu - Andmesh (2) |
 | 13/04/2026 | 79 | Tulus (8) | Di Ambang Karam - Amigdala (2) |
+| 14/04/2026 | 65 | Bernadya (4) | Asumsi - Adrian Khalif, Bernadya (2) |
 
 ---
 
