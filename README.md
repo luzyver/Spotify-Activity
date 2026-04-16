@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 6,881 |
+| **Total Plays** | 6,980 |
 | **Unique Tracks** | 1,511 |
 | **Unique Artists** | 708 |
-| **Period** | November 12, 2025 - April 14, 2026 |
+| **Period** | November 12, 2025 - April 15, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 323 |
-| 2 | Tulus | 289 |
+| 1 | Nadin Amizah | 328 |
+| 2 | Tulus | 292 |
 | 3 | Bernadya | 265 |
-| 4 | Hindia | 197 |
-| 5 | Idgitaf | 147 |
-| 6 | Sal Priadi | 146 |
+| 4 | Hindia | 198 |
+| 5 | Sal Priadi | 148 |
+| 6 | Idgitaf | 147 |
 | 7 | Pamungkas | 133 |
 | 8 | Ghea Indrawari | 124 |
 | 9 | Dere | 113 |
-| 10 | Yura Yunita | 103 |
+| 10 | Yura Yunita | 109 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | Monolog - Pamungkas | 50 |
-| 2 | Kota - Dere | 43 |
-| 3 | Bertaut - Nadin Amizah | 41 |
-| 4 | Sorai - Nadin Amizah | 40 |
-| 5 | Kukira Kau Rumah - Amigdala | 39 |
+| 2 | Bertaut - Nadin Amizah | 44 |
+| 3 | Kota - Dere | 43 |
+| 4 | Kukira Kau Rumah - Amigdala | 42 |
+| 5 | Sorai - Nadin Amizah | 41 |
 | 6 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
-| 7 | My Love Mine All Mine - Mitski | 35 |
-| 8 | bergema sampai selamanya - Nadhif Basalamah | 33 |
-| 9 | Runtuh - Feby Putri, Fiersa Besari | 33 |
-| 10 | everything u are - Hindia | 33 |
+| 7 | Monokrom - Tulus | 35 |
+| 8 | My Love Mine All Mine - Mitski | 35 |
+| 9 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 34 |
+| 10 | bergema sampai selamanya - Nadhif Basalamah | 33 |
 
 ## 📅 Daily Breakdown
 
@@ -176,6 +176,7 @@
 | 10/04/2026 | 61 | Yura Yunita (4) | Bisa Tanpamu - Andmesh (2) |
 | 13/04/2026 | 79 | Tulus (8) | Di Ambang Karam - Amigdala (2) |
 | 14/04/2026 | 65 | Bernadya (4) | Asumsi - Adrian Khalif, Bernadya (2) |
+| 15/04/2026 | 99 | Yura Yunita (6) | Sudah - Story of Kale - Original Motion Picture Soundtrack - Ardhito Pramono (4) |
 
 ---
 
