@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "timestamp": 1776707957268,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Setengah Mati - From \"Bila Esok Ibu Tiada\"",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7tCxRQhDcXehM90nj4Nsit",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daefd2a8d2c9c32cd4f38af"
+  },
+  {
+    "timestamp": 1776707717132,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Apa Mungkin",
+    "artist": "Bernadya",
+    "uri": "spotify:track:5KYUrBgdbIcqwaGSIgfXPl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738869d13091935994879f2a47"
+  },
+  {
+    "timestamp": 1776707477232,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mencintaimu",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:26aNjbOgTVrFZEx7was69A",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273489cd3228dbaa5552e5ed8c9"
+  },
+  {
+    "timestamp": 1776707207575,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bahagia Lagi",
+    "artist": "Piche Kota",
+    "uri": "spotify:track:5tZaKZPJtiHh6teQfVEHB5",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735bd00b369e89c5cbc74d827b"
+  },
+  {
+    "timestamp": 1776706967365,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "kota ini tak sama tanpamu",
+    "artist": "Nadhif Basalamah",
+    "uri": "spotify:track:13CwOTXUgBugeBByE9oIWb",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f3e3f888fbfcc916ecce50a9"
+  },
+  {
+    "timestamp": 1776706714159,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "1000X",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:6xrP29JvvYP5ftteZ7nubf",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730b50d063bf83920634efef6d"
+  },
+  {
+    "timestamp": 1776706600767,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Hingga Tua Bersama",
+    "artist": "Rizky Febian",
+    "uri": "spotify:track:5b0NpyYAwW2dUGL08ir7Bg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f509f90237f643397e920dc3"
+  }
+]
