@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,085 |
-| **Unique Tracks** | 1,511 |
-| **Unique Artists** | 708 |
-| **Period** | November 12, 2025 - April 20, 2026 |
+| **Total Plays** | 7,128 |
+| **Unique Tracks** | 1,514 |
+| **Unique Artists** | 709 |
+| **Period** | November 12, 2025 - April 21, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 336 |
-| 2 | Tulus | 296 |
-| 3 | Bernadya | 265 |
+| 1 | Nadin Amizah | 339 |
+| 2 | Tulus | 297 |
+| 3 | Bernadya | 268 |
 | 4 | Hindia | 199 |
-| 5 | Sal Priadi | 150 |
+| 5 | Sal Priadi | 154 |
 | 6 | Idgitaf | 147 |
 | 7 | Pamungkas | 133 |
-| 8 | Ghea Indrawari | 124 |
+| 8 | Ghea Indrawari | 132 |
 | 9 | Dere | 113 |
 | 10 | Yura Yunita | 109 |
 
@@ -40,7 +40,7 @@
 | 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 38 |
 | 8 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 9 | My Love Mine All Mine - Mitski | 35 |
-| 10 | bergema sampai selamanya - Nadhif Basalamah | 33 |
+| 10 | Kata Mereka Ini Berlebihan - Bernadya | 33 |
 
 ## 📅 Daily Breakdown
 
@@ -180,6 +180,7 @@
 | 16/04/2026 | 29 | JVKE (3) | golden hour - JVKE (3) |
 | 17/04/2026 | 15 | Nadin Amizah (3) | Try Again - JAEHYUN, d.ear (2) |
 | 20/04/2026 | 61 | Nadin Amizah (3) | Pelangi - Hivi! (2) |
+| 21/04/2026 | 43 | Ghea Indrawari (8) | Aminlah Bersamaku - Rizky Febian (1) |
 
 ---
 
