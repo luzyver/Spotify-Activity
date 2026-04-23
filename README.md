@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,128 |
-| **Unique Tracks** | 1,514 |
-| **Unique Artists** | 709 |
-| **Period** | November 12, 2025 - April 21, 2026 |
+| **Total Plays** | 7,220 |
+| **Unique Tracks** | 1,518 |
+| **Unique Artists** | 710 |
+| **Period** | November 12, 2025 - April 22, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 339 |
-| 2 | Tulus | 297 |
-| 3 | Bernadya | 268 |
-| 4 | Hindia | 199 |
-| 5 | Sal Priadi | 154 |
-| 6 | Idgitaf | 147 |
-| 7 | Pamungkas | 133 |
-| 8 | Ghea Indrawari | 132 |
+| 1 | Nadin Amizah | 343 |
+| 2 | Tulus | 301 |
+| 3 | Bernadya | 269 |
+| 4 | Hindia | 200 |
+| 5 | Sal Priadi | 156 |
+| 6 | Idgitaf | 150 |
+| 7 | Ghea Indrawari | 134 |
+| 8 | Pamungkas | 133 |
 | 9 | Dere | 113 |
-| 10 | Yura Yunita | 109 |
+| 10 | Yura Yunita | 110 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Monolog - Pamungkas | 50 |
-| 2 | Bertaut - Nadin Amizah | 48 |
-| 3 | Kukira Kau Rumah - Amigdala | 46 |
-| 4 | Sorai - Nadin Amizah | 43 |
+| 1 | Bertaut - Nadin Amizah | 50 |
+| 2 | Monolog - Pamungkas | 50 |
+| 3 | Kukira Kau Rumah - Amigdala | 48 |
+| 4 | Sorai - Nadin Amizah | 44 |
 | 5 | Kota - Dere | 43 |
-| 6 | Monokrom - Tulus | 39 |
-| 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 38 |
+| 6 | Monokrom - Tulus | 41 |
+| 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 40 |
 | 8 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 9 | My Love Mine All Mine - Mitski | 35 |
-| 10 | Kata Mereka Ini Berlebihan - Bernadya | 33 |
+| 10 | Akhir Tak Bahagia - Misellia | 33 |
 
 ## 📅 Daily Breakdown
 
@@ -181,6 +181,7 @@
 | 17/04/2026 | 15 | Nadin Amizah (3) | Try Again - JAEHYUN, d.ear (2) |
 | 20/04/2026 | 61 | Nadin Amizah (3) | Pelangi - Hivi! (2) |
 | 21/04/2026 | 43 | Ghea Indrawari (8) | Aminlah Bersamaku - Rizky Febian (1) |
+| 22/04/2026 | 92 | Tulus (4) | TV - Billie Eilish (3) |
 
 ---
 
