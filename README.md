@@ -6,23 +6,23 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,220 |
-| **Unique Tracks** | 1,518 |
-| **Unique Artists** | 710 |
-| **Period** | November 12, 2025 - April 22, 2026 |
+| **Total Plays** | 7,261 |
+| **Unique Tracks** | 1,524 |
+| **Unique Artists** | 714 |
+| **Period** | November 12, 2025 - April 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 343 |
-| 2 | Tulus | 301 |
+| 1 | Nadin Amizah | 345 |
+| 2 | Tulus | 302 |
 | 3 | Bernadya | 269 |
 | 4 | Hindia | 200 |
-| 5 | Sal Priadi | 156 |
+| 5 | Sal Priadi | 157 |
 | 6 | Idgitaf | 150 |
-| 7 | Ghea Indrawari | 134 |
+| 7 | Ghea Indrawari | 136 |
 | 8 | Pamungkas | 133 |
 | 9 | Dere | 113 |
 | 10 | Yura Yunita | 110 |
@@ -31,13 +31,13 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 50 |
+| 1 | Bertaut - Nadin Amizah | 51 |
 | 2 | Monolog - Pamungkas | 50 |
-| 3 | Kukira Kau Rumah - Amigdala | 48 |
-| 4 | Sorai - Nadin Amizah | 44 |
+| 3 | Kukira Kau Rumah - Amigdala | 49 |
+| 4 | Sorai - Nadin Amizah | 45 |
 | 5 | Kota - Dere | 43 |
-| 6 | Monokrom - Tulus | 41 |
-| 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 40 |
+| 6 | Monokrom - Tulus | 42 |
+| 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 41 |
 | 8 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 9 | My Love Mine All Mine - Mitski | 35 |
 | 10 | Akhir Tak Bahagia - Misellia | 33 |
@@ -182,6 +182,7 @@
 | 20/04/2026 | 61 | Nadin Amizah (3) | Pelangi - Hivi! (2) |
 | 21/04/2026 | 43 | Ghea Indrawari (8) | Aminlah Bersamaku - Rizky Febian (1) |
 | 22/04/2026 | 92 | Tulus (4) | TV - Billie Eilish (3) |
+| 23/04/2026 | 41 | Nadin Amizah (2) | Kasih Tak Sampai - Padi (2) |
 
 ---
 
