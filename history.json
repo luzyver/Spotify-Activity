@@ -1,5 +1,158 @@
 [
   {
+    "timestamp": 1777161230377,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kesan Pertama",
+    "artist": "Ardhito Pramono, Gusti Irwan Wibowo",
+    "uri": "spotify:track:04FSxluwU3oh2X6sypL99w",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736513b2f0848011b7ff9864cd"
+  },
+  {
+    "timestamp": 1777160993975,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ternyata Hanya Kamu",
+    "artist": "Brisia Jodie, Stevan Pasaribu",
+    "uri": "spotify:track:1Cm9rVxlCWgGqB3Y3kmJCh",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cacd5c7b69ee03e44663d75a"
+  },
+  {
+    "timestamp": 1777160702994,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Langit Favorit",
+    "artist": "Luthfi Aulia",
+    "uri": "spotify:track:6zbEZreD4YF3WlltVnfwt2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273919e07f69f3d62d2c52abb97"
+  },
+  {
+    "timestamp": 1777160210359,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jatuh Cinta - Keluarga Cemara 2 Original Soundtrack",
+    "artist": "Marion Jola, Teza Sumendra",
+    "uri": "spotify:track:1bqkmiujAzPU2YOvCB3Mxj",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27336d5b87d7b73d701ede24a31"
+  },
+  {
+    "timestamp": 1777160000515,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Munafik",
+    "artist": "Ziva Magnolya",
+    "uri": "spotify:track:1DcGPtpIZAsVJy7JAftKoT",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27370d9c1e403774dd0120fe730"
+  },
+  {
+    "timestamp": 1777159430266,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Cinta Terakhirku",
+    "artist": "Arsy Widianto, Syifa Hadju",
+    "uri": "spotify:track:5bLIFHq7N4yqz8LX3wwD4E",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27384e3ae9f04f3e41302abb841"
+  },
+  {
+    "timestamp": 1777159160425,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sungguh Aku Mencintaimu",
+    "artist": "Ricky Rantung",
+    "uri": "spotify:track:1U6T7lDlFtdvixIKwPiMwB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d5ce544fc1d8f451fc85fca3"
+  },
+  {
+    "timestamp": 1777158530270,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Orang Yang Sama",
+    "artist": "Virgoun",
+    "uri": "spotify:track:4ncQCcC0fSHyLI3K1pG11e",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b21e307c4f2211d7ed87358"
+  },
+  {
+    "timestamp": 1777158260263,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Go Go",
+    "artist": "BTS",
+    "uri": "spotify:track:5vOT8VO87TAnUjh0oADwb1",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27340f078d0a28bffb93e2e2c11"
+  },
+  {
+    "timestamp": 1777157570609,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kamu Anggap Apa",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:4Gk0Kc4ICyOcELIqBxFCwg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bdf2cded1618f5ce57823a95"
+  },
+  {
+    "timestamp": 1777157361211,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Rumah Singgah",
+    "artist": "Fabio Asher",
+    "uri": "spotify:track:0f0GcqppZTmAYaAZA7GkhQ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732d4fff2187c0b53432e0f82e"
+  },
+  {
+    "timestamp": 1777156702163,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sirna",
+    "artist": "KELJO",
+    "uri": "spotify:track:5RswrRwuEZWyWGNevwnPed",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27381ebda363694c208c1c7b6d8"
+  },
+  {
+    "timestamp": 1777156460582,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Aku Masih Memikirkanmu",
+    "artist": "Kezia",
+    "uri": "spotify:track:7MhUUMKFd4h3ErqWQQW0Nt",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d40efa53074e19b201b18507"
+  },
+  {
+    "timestamp": 1777155830659,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Asmalibrasi",
+    "artist": "Soegi Bornean",
+    "uri": "spotify:track:3TFdXrYIubXABQh0CxIiSs",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27359605b76ee27d2c5ffac5d26"
+  },
+  {
+    "timestamp": 1777155560204,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Full Senyum Sayang",
+    "artist": "Evan Loss",
+    "uri": "spotify:track:0m5MgLoB30LRePlPjLc2ox",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273737dce6e4543cffca2480b1f"
+  },
+  {
+    "timestamp": 1777154810574,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jangan Katakan Cinta",
+    "artist": "KELJO",
+    "uri": "spotify:track:6z3eDCcmSFGbvLppTUSDaG",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27373657562f7f0fdf6bae42148"
+  },
+  {
+    "timestamp": 1777154600480,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Cinta Butuh Waktu",
+    "artist": "Vierratale",
+    "uri": "spotify:track:4FOEXhal0ZqUcXdKo0WmfB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dff87e95570ff3de1ff71698"
+  },
+  {
     "timestamp": 1777081885855,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
