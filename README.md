@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,335 |
-| **Unique Tracks** | 1,539 |
-| **Unique Artists** | 725 |
-| **Period** | November 12, 2025 - April 26, 2026 |
+| **Total Plays** | 7,365 |
+| **Unique Tracks** | 1,548 |
+| **Unique Artists** | 728 |
+| **Period** | November 12, 2025 - April 27, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 349 |
+| 1 | Nadin Amizah | 352 |
 | 2 | Tulus | 304 |
-| 3 | Bernadya | 269 |
-| 4 | Hindia | 200 |
-| 5 | Sal Priadi | 159 |
+| 3 | Bernadya | 273 |
+| 4 | Hindia | 201 |
+| 5 | Sal Priadi | 163 |
 | 6 | Idgitaf | 150 |
 | 7 | Ghea Indrawari | 137 |
-| 8 | Pamungkas | 133 |
+| 8 | Pamungkas | 134 |
 | 9 | Dere | 113 |
 | 10 | Yura Yunita | 110 |
 
@@ -31,8 +31,8 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 54 |
-| 2 | Kukira Kau Rumah - Amigdala | 52 |
+| 1 | Bertaut - Nadin Amizah | 55 |
+| 2 | Kukira Kau Rumah - Amigdala | 53 |
 | 3 | Monolog - Pamungkas | 50 |
 | 4 | Sorai - Nadin Amizah | 45 |
 | 5 | Monokrom - Tulus | 44 |
@@ -40,7 +40,7 @@
 | 7 | Kota - Dere | 43 |
 | 8 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 9 | My Love Mine All Mine - Mitski | 35 |
-| 10 | Akhir Tak Bahagia - Misellia | 33 |
+| 10 | bergema sampai selamanya - Nadhif Basalamah | 34 |
 
 ## 📅 Daily Breakdown
 
@@ -186,6 +186,7 @@
 | 24/04/2026 | 39 | Nadin Amizah (3) | Kasih Tak Sampai - Padi (2) |
 | 25/04/2026 | 18 | Danar (1) | Sebatas Formalitas - Danar (1) |
 | 26/04/2026 | 17 | KELJO (2) | Kesan Pertama - Ardhito Pramono, Gusti Irwan Wibowo (1) |
+| 27/04/2026 | 30 | Bernadya (4) | Gala bunga matahari - Sal Priadi (2) |
 
 ---
 
