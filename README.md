@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,365 |
-| **Unique Tracks** | 1,548 |
-| **Unique Artists** | 728 |
-| **Period** | November 12, 2025 - April 27, 2026 |
+| **Total Plays** | 7,415 |
+| **Unique Tracks** | 1,552 |
+| **Unique Artists** | 730 |
+| **Period** | November 12, 2025 - April 28, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 352 |
-| 2 | Tulus | 304 |
-| 3 | Bernadya | 273 |
-| 4 | Hindia | 201 |
-| 5 | Sal Priadi | 163 |
+| 1 | Nadin Amizah | 357 |
+| 2 | Tulus | 305 |
+| 3 | Bernadya | 275 |
+| 4 | Hindia | 202 |
+| 5 | Sal Priadi | 164 |
 | 6 | Idgitaf | 150 |
 | 7 | Ghea Indrawari | 137 |
-| 8 | Pamungkas | 134 |
-| 9 | Dere | 113 |
+| 8 | Pamungkas | 135 |
+| 9 | Dere | 116 |
 | 10 | Yura Yunita | 110 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 55 |
-| 2 | Kukira Kau Rumah - Amigdala | 53 |
-| 3 | Monolog - Pamungkas | 50 |
-| 4 | Sorai - Nadin Amizah | 45 |
-| 5 | Monokrom - Tulus | 44 |
-| 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 44 |
-| 7 | Kota - Dere | 43 |
+| 1 | Bertaut - Nadin Amizah | 56 |
+| 2 | Kukira Kau Rumah - Amigdala | 54 |
+| 3 | Monolog - Pamungkas | 51 |
+| 4 | Sorai - Nadin Amizah | 46 |
+| 5 | Monokrom - Tulus | 45 |
+| 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 45 |
+| 7 | Kota - Dere | 44 |
 | 8 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 | 9 | My Love Mine All Mine - Mitski | 35 |
-| 10 | bergema sampai selamanya - Nadhif Basalamah | 34 |
+| 10 | Kata Mereka Ini Berlebihan - Bernadya | 34 |
 
 ## 📅 Daily Breakdown
 
@@ -187,6 +187,7 @@
 | 25/04/2026 | 18 | Danar (1) | Sebatas Formalitas - Danar (1) |
 | 26/04/2026 | 17 | KELJO (2) | Kesan Pertama - Ardhito Pramono, Gusti Irwan Wibowo (1) |
 | 27/04/2026 | 30 | Bernadya (4) | Gala bunga matahari - Sal Priadi (2) |
+| 28/04/2026 | 50 | Nadin Amizah (5) | Berisik - Dere (1) |
 
 ---
 
