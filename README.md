@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,415 |
-| **Unique Tracks** | 1,552 |
-| **Unique Artists** | 730 |
-| **Period** | November 12, 2025 - April 28, 2026 |
+| **Total Plays** | 7,478 |
+| **Unique Tracks** | 1,563 |
+| **Unique Artists** | 737 |
+| **Period** | November 12, 2025 - April 29, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -20,9 +20,9 @@
 | 2 | Tulus | 305 |
 | 3 | Bernadya | 275 |
 | 4 | Hindia | 202 |
-| 5 | Sal Priadi | 164 |
-| 6 | Idgitaf | 150 |
-| 7 | Ghea Indrawari | 137 |
+| 5 | Ghea Indrawari | 187 |
+| 6 | Sal Priadi | 164 |
+| 7 | Idgitaf | 150 |
 | 8 | Pamungkas | 135 |
 | 9 | Dere | 116 |
 | 10 | Yura Yunita | 110 |
@@ -188,6 +188,7 @@
 | 26/04/2026 | 17 | KELJO (2) | Kesan Pertama - Ardhito Pramono, Gusti Irwan Wibowo (1) |
 | 27/04/2026 | 30 | Bernadya (4) | Gala bunga matahari - Sal Priadi (2) |
 | 28/04/2026 | 50 | Nadin Amizah (5) | Berisik - Dere (1) |
+| 29/04/2026 | 63 | Ghea Indrawari (50) | 1000X - Ghea Indrawari (6) |
 
 ---
 
