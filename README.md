@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,564 |
+| **Total Plays** | 7,651 |
 | **Unique Tracks** | 1,567 |
 | **Unique Artists** | 738 |
-| **Period** | November 12, 2025 - May 1, 2026 |
+| **Period** | November 12, 2025 - May 2, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 358 |
-| 2 | Tulus | 306 |
+| 1 | Nadin Amizah | 365 |
+| 2 | Tulus | 307 |
 | 3 | Bernadya | 275 |
 | 4 | Ghea Indrawari | 235 |
-| 5 | Hindia | 202 |
-| 6 | Sal Priadi | 165 |
+| 5 | Hindia | 203 |
+| 6 | Sal Priadi | 166 |
 | 7 | Idgitaf | 150 |
 | 8 | Pamungkas | 135 |
-| 9 | Dere | 116 |
-| 10 | Yura Yunita | 110 |
+| 9 | Yura Yunita | 116 |
+| 10 | Dere | 116 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 57 |
-| 2 | Kukira Kau Rumah - Amigdala | 55 |
+| 1 | Bertaut - Nadin Amizah | 58 |
+| 2 | Kukira Kau Rumah - Amigdala | 56 |
 | 3 | Monolog - Pamungkas | 51 |
-| 4 | Monokrom - Tulus | 46 |
-| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 46 |
-| 6 | Sorai - Nadin Amizah | 46 |
+| 4 | Sorai - Nadin Amizah | 47 |
+| 5 | Monokrom - Tulus | 47 |
+| 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 47 |
 | 7 | Kota - Dere | 44 |
 | 8 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
-| 9 | My Love Mine All Mine - Mitski | 35 |
-| 10 | Kata Mereka Ini Berlebihan - Bernadya | 34 |
+| 9 | Akhir Tak Bahagia - Misellia | 35 |
+| 10 | My Love Mine All Mine - Mitski | 35 |
 
 ## 📅 Daily Breakdown
 
@@ -191,6 +191,7 @@
 | 29/04/2026 | 63 | Ghea Indrawari (50) | 1000X - Ghea Indrawari (6) |
 | 30/04/2026 | 61 | Ghea Indrawari (48) | Rasa Cinta Ini - Ghea Indrawari (4) |
 | 01/05/2026 | 25 | Mark Natama (2) | Bertahan Terluka - Fabio Asher (1) |
+| 02/05/2026 | 87 | Nadin Amizah (7) | STAY - BLACKPINK (1) |
 
 ---
 
