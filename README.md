@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,707 |
+| **Total Plays** | 7,751 |
 | **Unique Tracks** | 1,567 |
 | **Unique Artists** | 738 |
-| **Period** | November 12, 2025 - May 3, 2026 |
+| **Period** | November 12, 2025 - May 4, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 369 |
-| 2 | Tulus | 308 |
+| 1 | Nadin Amizah | 370 |
+| 2 | Tulus | 309 |
 | 3 | Bernadya | 275 |
-| 4 | Ghea Indrawari | 235 |
-| 5 | Hindia | 204 |
-| 6 | Sal Priadi | 167 |
+| 4 | Ghea Indrawari | 254 |
+| 5 | Hindia | 205 |
+| 6 | Sal Priadi | 168 |
 | 7 | Idgitaf | 150 |
 | 8 | Pamungkas | 135 |
 | 9 | Yura Yunita | 116 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 59 |
-| 2 | Kukira Kau Rumah - Amigdala | 57 |
+| 1 | Bertaut - Nadin Amizah | 60 |
+| 2 | Kukira Kau Rumah - Amigdala | 58 |
 | 3 | Monolog - Pamungkas | 51 |
-| 4 | Sorai - Nadin Amizah | 48 |
-| 5 | Monokrom - Tulus | 48 |
-| 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 48 |
+| 4 | Monokrom - Tulus | 49 |
+| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 49 |
+| 6 | Sorai - Nadin Amizah | 48 |
 | 7 | Kota - Dere | 44 |
-| 8 | Akhir Tak Bahagia - Misellia | 36 |
-| 9 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
-| 10 | Kembali Pulang - Suara Kayu, Feby Putri | 35 |
+| 8 | Mesra-mesraannya kecil-kecilan dulu - Sal Priadi | 36 |
+| 9 | Akhir Tak Bahagia - Misellia | 36 |
+| 10 | Sedia Aku Sebelum Hujan - Idgitaf | 36 |
 
 ## 📅 Daily Breakdown
 
@@ -193,6 +193,7 @@
 | 01/05/2026 | 25 | Mark Natama (2) | Bertahan Terluka - Fabio Asher (1) |
 | 02/05/2026 | 87 | Nadin Amizah (7) | STAY - BLACKPINK (1) |
 | 03/05/2026 | 56 | Nadin Amizah (4) | Secukupnya - Hindia (1) |
+| 04/05/2026 | 44 | Ghea Indrawari (19) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
 
 ---
 
