@@ -6,20 +6,20 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,879 |
+| **Total Plays** | 7,909 |
 | **Unique Tracks** | 1,572 |
 | **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 6, 2026 |
+| **Period** | November 12, 2025 - May 7, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 374 |
+| 1 | Nadin Amizah | 375 |
 | 2 | Bernadya | 316 |
-| 3 | Tulus | 314 |
-| 4 | Ghea Indrawari | 267 |
+| 3 | Tulus | 315 |
+| 4 | Ghea Indrawari | 269 |
 | 5 | Hindia | 206 |
 | 6 | Sal Priadi | 170 |
 | 7 | Idgitaf | 151 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 61 |
-| 2 | Kukira Kau Rumah - Amigdala | 60 |
+| 1 | Bertaut - Nadin Amizah | 62 |
+| 2 | Kukira Kau Rumah - Amigdala | 61 |
 | 3 | Monolog - Pamungkas | 52 |
-| 4 | Monokrom - Tulus | 50 |
-| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 50 |
+| 4 | Monokrom - Tulus | 51 |
+| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 51 |
 | 6 | Sorai - Nadin Amizah | 48 |
 | 7 | Kota - Dere | 44 |
 | 8 | Kata Mereka Ini Berlebihan - Bernadya | 38 |
-| 9 | Sedia Aku Sebelum Hujan - Idgitaf | 37 |
-| 10 | Selamat (Selamat Tinggal) - Virgoun, Audy | 36 |
+| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 37 |
+| 10 | Sedia Aku Sebelum Hujan - Idgitaf | 37 |
 
 ## 📅 Daily Breakdown
 
@@ -196,6 +196,7 @@
 | 04/05/2026 | 44 | Ghea Indrawari (19) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
 | 05/05/2026 | 89 | Bernadya (32) | Satu Bulan - Bernadya (4) |
 | 06/05/2026 | 39 | Ghea Indrawari (11) | Terima Kasih Sudah Bertahan - Ghea Indrawari (3) |
+| 07/05/2026 | 30 | Ziva Magnolya (2) | Kamu Anggap Apa - Ghea Indrawari (2) |
 
 ---
 
