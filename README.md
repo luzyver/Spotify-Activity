@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,924 |
+| **Total Plays** | 7,925 |
 | **Unique Tracks** | 1,572 |
 | **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 8, 2026 |
+| **Period** | November 12, 2025 - May 10, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -198,6 +198,7 @@
 | 06/05/2026 | 39 | Ghea Indrawari (11) | Terima Kasih Sudah Bertahan - Ghea Indrawari (3) |
 | 07/05/2026 | 30 | Ziva Magnolya (2) | Kamu Anggap Apa - Ghea Indrawari (2) |
 | 08/05/2026 | 15 | Adhitia Sofyan (1) | Sesuatu Di Jogja - Adhitia Sofyan (1) |
+| 10/05/2026 | 1 | Halstage (1) | terima kasih - Halstage (1) |
 
 ---
 
