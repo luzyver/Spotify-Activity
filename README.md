@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 7,925 |
+| **Total Plays** | 7,970 |
 | **Unique Tracks** | 1,572 |
 | **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 10, 2026 |
+| **Period** | November 12, 2025 - May 11, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 376 |
-| 2 | Tulus | 316 |
-| 3 | Bernadya | 316 |
+| 1 | Nadin Amizah | 377 |
+| 2 | Bernadya | 337 |
+| 3 | Tulus | 317 |
 | 4 | Ghea Indrawari | 270 |
 | 5 | Hindia | 206 |
-| 6 | Sal Priadi | 170 |
+| 6 | Sal Priadi | 171 |
 | 7 | Idgitaf | 151 |
 | 8 | Pamungkas | 136 |
 | 9 | Dere | 117 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 63 |
-| 2 | Kukira Kau Rumah - Amigdala | 62 |
-| 3 | Monokrom - Tulus | 52 |
-| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 52 |
+| 1 | Bertaut - Nadin Amizah | 64 |
+| 2 | Kukira Kau Rumah - Amigdala | 63 |
+| 3 | Monokrom - Tulus | 53 |
+| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 53 |
 | 5 | Monolog - Pamungkas | 52 |
 | 6 | Sorai - Nadin Amizah | 48 |
 | 7 | Kota - Dere | 44 |
-| 8 | Selamat (Selamat Tinggal) - Virgoun, Audy | 38 |
-| 9 | Kata Mereka Ini Berlebihan - Bernadya | 38 |
-| 10 | Sedia Aku Sebelum Hujan - Idgitaf | 37 |
+| 8 | Kata Mereka Ini Berlebihan - Bernadya | 40 |
+| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 39 |
+| 10 | Mesra-mesraannya kecil-kecilan dulu - Sal Priadi | 37 |
 
 ## 📅 Daily Breakdown
 
@@ -199,6 +199,7 @@
 | 07/05/2026 | 30 | Ziva Magnolya (2) | Kamu Anggap Apa - Ghea Indrawari (2) |
 | 08/05/2026 | 15 | Adhitia Sofyan (1) | Sesuatu Di Jogja - Adhitia Sofyan (1) |
 | 10/05/2026 | 1 | Halstage (1) | terima kasih - Halstage (1) |
+| 11/05/2026 | 45 | Bernadya (21) | Terlintas - Bernadya (3) |
 
 ---
 
