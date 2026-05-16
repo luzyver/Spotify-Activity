@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,027 |
+| **Total Plays** | 8,029 |
 | **Unique Tracks** | 1,573 |
 | **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 14, 2026 |
+| **Period** | November 12, 2025 - May 15, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -203,6 +203,7 @@
 | 12/05/2026 | 9 | Bernadya (7) | Terlintas - Bernadya (1) |
 | 13/05/2026 | 34 | Hivi! (3) | Pelangi - Hivi! (3) |
 | 14/05/2026 | 14 | Rizky Febian (3) | Peneman Malam Sepi - OKAAY (1) |
+| 15/05/2026 | 2 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
 
 ---
 
