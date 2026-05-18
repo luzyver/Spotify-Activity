@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,030 |
+| **Total Plays** | 8,031 |
 | **Unique Tracks** | 1,573 |
 | **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 16, 2026 |
+| **Period** | November 12, 2025 - May 17, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -205,6 +205,7 @@
 | 14/05/2026 | 14 | Rizky Febian (3) | Peneman Malam Sepi - OKAAY (1) |
 | 15/05/2026 | 2 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
 | 16/05/2026 | 1 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
+| 17/05/2026 | 1 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
 
 ---
 
