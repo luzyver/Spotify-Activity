@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,031 |
+| **Total Plays** | 8,063 |
 | **Unique Tracks** | 1,573 |
 | **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 17, 2026 |
+| **Period** | November 12, 2025 - May 18, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 379 |
+| 1 | Nadin Amizah | 380 |
 | 2 | Bernadya | 345 |
-| 3 | Tulus | 318 |
-| 4 | Ghea Indrawari | 270 |
+| 3 | Tulus | 319 |
+| 4 | Ghea Indrawari | 286 |
 | 5 | Hindia | 206 |
 | 6 | Sal Priadi | 172 |
 | 7 | Idgitaf | 151 |
 | 8 | Pamungkas | 136 |
-| 9 | Dere | 117 |
-| 10 | Yura Yunita | 117 |
+| 9 | Dere | 118 |
+| 10 | Yura Yunita | 118 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 66 |
-| 2 | Kukira Kau Rumah - Amigdala | 65 |
-| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 55 |
-| 4 | Monokrom - Tulus | 54 |
+| 1 | Bertaut - Nadin Amizah | 67 |
+| 2 | Kukira Kau Rumah - Amigdala | 67 |
+| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 56 |
+| 4 | Monokrom - Tulus | 55 |
 | 5 | Monolog - Pamungkas | 52 |
 | 6 | Sorai - Nadin Amizah | 48 |
-| 7 | Kota - Dere | 44 |
+| 7 | Kota - Dere | 45 |
 | 8 | Selamat (Selamat Tinggal) - Virgoun, Audy | 40 |
 | 9 | Kata Mereka Ini Berlebihan - Bernadya | 40 |
-| 10 | Mesra-mesraannya kecil-kecilan dulu - Sal Priadi | 38 |
+| 10 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 39 |
 
 ## 📅 Daily Breakdown
 
@@ -206,6 +206,7 @@
 | 15/05/2026 | 2 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
 | 16/05/2026 | 1 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
 | 17/05/2026 | 1 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
+| 18/05/2026 | 32 | Ghea Indrawari (16) | Kukira Kau Rumah - Amigdala (2) |
 
 ---
 
