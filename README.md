@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,085 |
-| **Unique Tracks** | 1,573 |
-| **Unique Artists** | 740 |
-| **Period** | November 12, 2025 - May 19, 2026 |
+| **Total Plays** | 8,115 |
+| **Unique Tracks** | 1,574 |
+| **Unique Artists** | 741 |
+| **Period** | November 12, 2025 - May 20, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Nadin Amizah | 382 |
-| 2 | Bernadya | 345 |
+| 2 | Bernadya | 363 |
 | 3 | Tulus | 320 |
 | 4 | Ghea Indrawari | 286 |
 | 5 | Hindia | 206 |
@@ -38,9 +38,9 @@
 | 5 | Monolog - Pamungkas | 52 |
 | 6 | Sorai - Nadin Amizah | 48 |
 | 7 | Kota - Dere | 45 |
-| 8 | Selamat (Selamat Tinggal) - Virgoun, Audy | 41 |
-| 9 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 40 |
-| 10 | Kata Mereka Ini Berlebihan - Bernadya | 40 |
+| 8 | Kata Mereka Ini Berlebihan - Bernadya | 42 |
+| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 41 |
+| 10 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 40 |
 
 ## 📅 Daily Breakdown
 
@@ -208,6 +208,7 @@
 | 17/05/2026 | 1 | Titi Kamal (1) | Rindu Semalam - Titi Kamal (1) |
 | 18/05/2026 | 32 | Ghea Indrawari (16) | Kukira Kau Rumah - Amigdala (2) |
 | 19/05/2026 | 22 | The Black Skirts (3) | EVERYTHING - The Black Skirts (3) |
+| 20/05/2026 | 30 | Bernadya (18) | Untungnya, Hidup Harus Tetap Berjalan - Bernadya (2) |
 
 ---
 
