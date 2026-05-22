@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "timestamp": 1779469627807,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "happier",
+    "artist": "Olivia Rodrigo",
+    "uri": "spotify:track:2tGvwE8GcFKwNdAXMnlbfl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+  },
+  {
+    "timestamp": 1779469477894,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "About You",
+    "artist": "The 1975",
+    "uri": "spotify:track:3hEfpBHxgieRLz4t3kLNEg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300702474f8e0e2b6155d48e3"
+  }
+]
