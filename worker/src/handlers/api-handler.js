@@ -60,25 +60,9 @@ export async function handleLiveAPI(env, corsHeaders) {
 	}
 }
 
-async function fetchUserHistory(userId, tokenData, clientId, clientSecret, history, lastClearTimestamp) {
-	try {
-		const accessToken = await spotify.refreshAccessToken(tokenData.refreshToken, clientId, clientSecret);
-		const [userProfile, recentTracks] = await Promise.all([
-			spotify.getUserProfile(accessToken),
-			spotify.getRecentlyPlayed(accessToken, lastClearTimestamp),
-		]);
-
-		if (!userProfile) return;
-		processor.processRecentTracks(recentTracks, userProfile, history, lastClearTimestamp);
-	} catch (error) {
-		console.error(`History error for ${userId}:`, error.message);
-	}
-}
-
 export async function handleHistoryAPI(env, corsHeaders) {
 	try {
-		const tokens = JSON.parse(env.SPOTIFY_REFRESH_TOKENS);
-		const { SPOTIFY_CLIENT_ID: clientId, SPOTIFY_CLIENT_SECRET: clientSecret, GITHUB_REPO, GITHUB_TOKEN } = env;
+		const { GITHUB_REPO, GITHUB_TOKEN } = env;
 
 		// Fetch GitHub data in parallel
 		const [historyResult, clearResult] = await Promise.all([
@@ -92,13 +76,6 @@ export async function handleHistoryAPI(env, corsHeaders) {
 		if (lastClearTimestamp > 0) {
 			history = history.filter(entry => entry.timestamp > lastClearTimestamp);
 		}
-
-		// Fetch all users in parallel
-		await Promise.all(
-			Object.entries(tokens).map(([userId, tokenData]) =>
-				fetchUserHistory(userId, tokenData, clientId, clientSecret, history, lastClearTimestamp)
-			)
-		);
 
 		const result = processor.sortHistory(processor.removeDuplicates(history));
 		return jsonResponse(result, 200, corsHeaders);

@@ -5,7 +5,7 @@
   import type { NowPlayingBuddy, HistoryItem } from '$lib/types';
   import { API_ENDPOINTS } from '$lib/config';
   import { LayoutGrid, List, Music, Search, X, LoaderCircle, RefreshCw, House, Clock, Archive } from 'lucide-svelte';
-  import { loadAllHistory } from '$lib/utils/historyLoader';
+  import { loadHistoryFromSupabase } from '$lib/utils/historyLoader';
   import { fade, fly } from 'svelte/transition';
   import { onDestroy } from 'svelte';
 
@@ -13,18 +13,18 @@
 
   // Constants
   const ITEMS_PER_LOAD = 50;
+  const ARCHIVE_PAGE_SIZE = 50;
   const REFRESH_INTERVAL = 30000;
 
   // Core state - use $derived for initial data, $state for mutable
   let nowPlaying = $state<NowPlayingBuddy[]>([]);
   let allHistory = $state<HistoryItem[]>([]);
-  let combinedHistory = $state<HistoryItem[]>([]);
+  let archiveHistory = $state<HistoryItem[]>([]);
 
   // Sync from props on data change
   $effect(() => {
     if (data?.nowPlaying) nowPlaying = data.nowPlaying;
     if (data?.history) allHistory = data.history;
-    if (data?.allHistory) combinedHistory = data.allHistory;
   });
   
   // UI state
@@ -40,6 +40,10 @@
   
   // Pagination
   let displayedCount = $state(ITEMS_PER_LOAD);
+  let archiveTotal = $state(0);
+  let archiveOffset = $state(0);
+  let archiveRequestId = 0;
+  let archiveSearchTimeout: ReturnType<typeof setTimeout> | null = null;
   let scrollSentinel = $state<HTMLDivElement | null>(null);
   
   // Intervals
@@ -95,12 +99,12 @@
           allHistory = historyData.sort((a, b) => b.timestamp - a.timestamp);
 
           // Merge new recent items into archive if already loaded
-          if (archiveLoaded) {
-            const merged = [...combinedHistory, ...historyData];
+          if (archiveLoaded && !searchQuery.trim()) {
+            const merged = [...historyData, ...archiveHistory];
             const unique = Array.from(
               new Map(merged.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
             );
-            combinedHistory = unique.sort((a, b) => b.timestamp - a.timestamp);
+            archiveHistory = unique.sort((a, b) => b.timestamp - a.timestamp);
           }
 
           // Show toast if new tracks added
@@ -118,27 +122,54 @@
   }
 
   // Load archive history
-  async function loadArchiveHistory() {
-    if (archiveLoaded || isLoadingHistorical) return;
-    
-    isLoadingHistorical = true;
+  async function loadArchiveHistory(reset = false) {
+    if (!reset && (isLoadingHistorical || isLoadingMore)) return;
+    if (!reset && archiveLoaded && archiveHistory.length >= archiveTotal) return;
+
+    const offset = reset ? 0 : archiveOffset;
+    const query = searchQuery.trim() || undefined;
+    const requestId = ++archiveRequestId;
+
+    if (reset) {
+      isLoadingHistorical = true;
+    } else {
+      isLoadingMore = true;
+    }
+
     try {
-      const archiveData = await loadAllHistory();
-      const merged = [...combinedHistory, ...archiveData];
+      const { data, count } = await loadHistoryFromSupabase({
+        limit: ARCHIVE_PAGE_SIZE,
+        offset,
+        search: query,
+      });
+
+      if (requestId !== archiveRequestId) return;
+
+      const merged = reset ? data : [...archiveHistory, ...data];
       const unique = Array.from(
         new Map(merged.map(item => [`${item.userId}|${item.uri}|${item.timestamp}`, item])).values()
       );
-      combinedHistory = unique.sort((a, b) => b.timestamp - a.timestamp);
+      archiveHistory = unique.sort((a, b) => b.timestamp - a.timestamp);
+      archiveTotal = count;
+      archiveOffset = offset + data.length;
       archiveLoaded = true;
     } catch (e) {
       console.error('Failed to load archive:', e);
     } finally {
-      isLoadingHistorical = false;
+      if (requestId === archiveRequestId) {
+        isLoadingHistorical = false;
+        isLoadingMore = false;
+      }
     }
   }
 
   function loadMore() {
     if (isLoadingMore) return;
+    if (activeTab === 'history') {
+      loadArchiveHistory(false);
+      return;
+    }
+
     isLoadingMore = true;
     requestAnimationFrame(() => {
       displayedCount += ITEMS_PER_LOAD;
@@ -159,12 +190,17 @@
 
   // Derived data
   let currentItems = $derived.by(() => {
-    const source = activeTab === 'history' ? combinedHistory : allHistory;
+    if (activeTab === 'history') return archiveHistory;
+    const source = allHistory;
     return filterItems(source, searchQuery);
   });
 
-  let displayedItems = $derived(currentItems.slice(0, displayedCount));
-  let hasMore = $derived(displayedCount < currentItems.length);
+  let displayedItems = $derived(
+    activeTab === 'history' ? currentItems : currentItems.slice(0, displayedCount)
+  );
+  let hasMore = $derived(
+    activeTab === 'history' ? archiveHistory.length < archiveTotal : displayedCount < currentItems.length
+  );
 
   // Meta tags
   let pageTitle = $derived(
@@ -190,15 +226,29 @@
   });
 
   $effect(() => {
-    if (activeTab === 'history' && !archiveLoaded) {
-      loadArchiveHistory();
+    // Reset on tab/search change
+    activeTab; searchQuery;
+    if (activeTab !== 'history') {
+      displayedCount = ITEMS_PER_LOAD;
     }
   });
 
   $effect(() => {
-    // Reset on tab/search change
-    activeTab; searchQuery;
-    displayedCount = ITEMS_PER_LOAD;
+    if (activeTab !== 'history') return;
+    searchQuery;
+
+    if (archiveSearchTimeout) clearTimeout(archiveSearchTimeout);
+    archiveSearchTimeout = setTimeout(() => {
+      archiveLoaded = false;
+      archiveHistory = [];
+      archiveTotal = 0;
+      archiveOffset = 0;
+      loadArchiveHistory(true);
+    }, 300);
+
+    return () => {
+      if (archiveSearchTimeout) clearTimeout(archiveSearchTimeout);
+    };
   });
 
   $effect(() => {
@@ -214,6 +264,7 @@
   onDestroy(() => {
     if (refreshInterval) clearInterval(refreshInterval);
     if (toastTimeout) clearTimeout(toastTimeout);
+    if (archiveSearchTimeout) clearTimeout(archiveSearchTimeout);
   });
 
   const TABS = [
@@ -257,7 +308,7 @@
 
       <!-- Desktop Tabs -->
       <nav class="hidden gap-1 rounded-full bg-white/5 p-1 sm:flex">
-        {#each TABS as tab}
+        {#each TABS as tab (tab.id)}
           <button
             onclick={() => (activeTab = tab.id)}
             class="relative rounded-full px-4 py-1.5 text-sm font-medium transition-all {activeTab === tab.id ? 'text-black' : 'text-gray-400 hover:text-white'}"
@@ -313,7 +364,7 @@
             </div>
           {:else}
             <div class="grid gap-6 lg:grid-cols-2">
-              {#each nowPlaying as buddy, index}
+              {#each nowPlaying as buddy, index (`${buddy.user.uri}:${buddy.track.uri}`)}
                 <NowPlayingCard {buddy} {index} />
               {/each}
             </div>
@@ -334,7 +385,7 @@
 
           {#if allHistory.length > 0}
             <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
-              {#each allHistory.slice(0, 10) as item, index}
+              {#each allHistory.slice(0, 10) as item, index (`${item.userId}:${item.uri}:${item.timestamp}`)}
                 <HistoryCard {item} {index} currentPage={1} itemsPerPage={10} {viewMode} />
               {/each}
             </div>
@@ -358,18 +409,20 @@
                 </button>
               {/if}
             </div>
-            <div class="text-sm text-gray-400 text-right">{currentItems.length} {searchQuery ? 'results' : 'tracks'}</div>
+            <div class="text-sm text-gray-400 text-right">
+              {activeTab === 'history' ? archiveTotal : currentItems.length} {searchQuery ? 'results' : 'tracks'}
+            </div>
           </div>
         </div>
 
-        {#if isLoadingHistorical && combinedHistory.length === 0}
+        {#if isLoadingHistorical && archiveHistory.length === 0}
           <div class="flex flex-col items-center justify-center py-20 space-y-4">
             <div class="h-10 w-10 animate-spin rounded-full border-4 border-[#1db954] border-t-transparent"></div>
             <p class="text-gray-400">Loading full history...</p>
           </div>
         {:else if displayedItems.length > 0}
           <div class="grid gap-4 {viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5' : 'grid-cols-1'}">
-            {#each displayedItems as item, index}
+            {#each displayedItems as item, index (`${item.userId}:${item.uri}:${item.timestamp}`)}
               <HistoryCard {item} {index} currentPage={1} itemsPerPage={displayedItems.length} {viewMode} />
             {/each}
           </div>
@@ -397,7 +450,7 @@
   <!-- Mobile Nav -->
   <nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-black/95 backdrop-blur-xl sm:hidden pb-safe">
     <div class="flex items-center justify-around px-2 py-2">
-      {#each TABS as tab}
+      {#each TABS as tab (tab.id)}
         <button onclick={() => (activeTab = tab.id)} class="flex flex-col items-center gap-1 rounded-xl px-6 py-2 transition-colors {activeTab === tab.id ? 'text-[#1db954]' : 'text-gray-500'}">
           <tab.icon class="h-5 w-5" />
           {#if activeTab === tab.id}

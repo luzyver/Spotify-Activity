@@ -23,17 +23,16 @@ export const load: PageLoad = async ({ fetch }) => {
       historyData = Array.isArray(json) ? (json as HistoryItem[]) : [];
     }
 
+    const sortedHistory = historyData.sort((a, b) => b.timestamp - a.timestamp);
+
     return {
       nowPlaying: (liveData as { friends?: NowPlayingBuddy[] })?.friends ?? [],
-      history: historyData.sort((a, b) => b.timestamp - a.timestamp),
-      // Use history data for both - archive will be loaded lazily later
-      allHistory: historyData.sort((a, b) => b.timestamp - a.timestamp),
+      history: sortedHistory,
     };
   } catch {
     return {
       nowPlaying: [],
       history: [],
-      allHistory: [],
     };
   }
 };

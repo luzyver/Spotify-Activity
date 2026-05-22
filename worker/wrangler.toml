@@ -19,6 +19,8 @@ crons = ["1 17 * * *", "0 * * * *"]
 # SPOTIFY_REFRESH_TOKENS - set via: wrangler secret put SPOTIFY_REFRESH_TOKENS
 # GITHUB_TOKEN - set via: wrangler secret put GITHUB_TOKEN
 # GITHUB_REPO - set via: wrangler secret put GITHUB_REPO (format: username/repo)
+# SUPABASE_ANON_KEY - set via: wrangler secret put SUPABASE_ANON_KEY
+# SUPABASE_SERVICE_ROLE_KEY - set via: wrangler secret put SUPABASE_SERVICE_ROLE_KEY
 
 [[routes]]
 pattern = "worker-spotify.luzyver.dev"

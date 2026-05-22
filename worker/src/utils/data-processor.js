@@ -13,6 +13,9 @@ export function cleanHistory(history) {
 
 export function processRecentTracks(recentTracks, userProfile, history, lastClearTimestamp = 0) {
 	let addedCount = 0;
+	const seen = new Set(
+		history.map((entry) => `${entry.userId}|${entry.uri}|${Math.floor(entry.timestamp / 1000)}`)
+	);
 
 	for (const item of recentTracks) {
 		const timestamp = new Date(item.played_at).getTime();
@@ -20,15 +23,9 @@ export function processRecentTracks(recentTracks, userProfile, history, lastClea
 		// Skip tracks before clear timestamp
 		if (lastClearTimestamp > 0 && timestamp <= lastClearTimestamp) continue;
 
-		// Check for duplicates
-		const exists = history.some(
-			(h) =>
-				h.userId === userProfile.uri &&
-				h.uri === item.track.uri &&
-				Math.abs(h.timestamp - timestamp) < 1000
-		);
+		const key = `${userProfile.uri}|${item.track.uri}|${Math.floor(timestamp / 1000)}`;
 
-		if (!exists) {
+		if (!seen.has(key)) {
 			history.push({
 				timestamp,
 				user: userProfile.name,
@@ -38,6 +35,7 @@ export function processRecentTracks(recentTracks, userProfile, history, lastClea
 				uri: item.track.uri,
 				imageUrl: item.track.album.images?.[0]?.url || null,
 			});
+			seen.add(key);
 			addedCount++;
 		}
 	}

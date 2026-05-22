@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
 CREATE TABLE IF NOT EXISTS listening_history (
   id BIGSERIAL PRIMARY KEY,
   timestamp BIGINT NOT NULL,
@@ -16,6 +18,9 @@ CREATE INDEX IF NOT EXISTS idx_history_timestamp ON listening_history(timestamp 
 CREATE INDEX IF NOT EXISTS idx_history_user ON listening_history(user_id);
 CREATE INDEX IF NOT EXISTS idx_history_artist ON listening_history(artist);
 CREATE INDEX IF NOT EXISTS idx_history_track ON listening_history(track);
+CREATE INDEX IF NOT EXISTS idx_history_artist_trgm ON listening_history USING GIN (artist gin_trgm_ops);
+CREATE INDEX IF NOT EXISTS idx_history_track_trgm ON listening_history USING GIN (track gin_trgm_ops);
+CREATE INDEX IF NOT EXISTS idx_history_user_name_trgm ON listening_history USING GIN (user_name gin_trgm_ops);
 
 ALTER TABLE listening_history ENABLE ROW LEVEL SECURITY;
 
@@ -29,12 +34,6 @@ CREATE POLICY "Allow service role insert"
   ON listening_history
   FOR INSERT
   TO service_role
-  WITH CHECK (true);
-
-CREATE POLICY "Allow anon insert"
-  ON listening_history
-  FOR INSERT
-  TO anon
   WITH CHECK (true);
 
 CREATE OR REPLACE FUNCTION get_listening_stats()

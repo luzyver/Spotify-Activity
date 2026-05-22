@@ -3,10 +3,10 @@ const SUPABASE_URL = 'https://aoomudynybikamxpcpoa.supabase.co';
 /**
  * Insert history records to Supabase
  * @param {Array} records - History records to insert
- * @param {string} anonKey - Supabase anon key
+ * @param {string} serviceRoleKey - Supabase service role key
  * @returns {Promise<{success: boolean, inserted: number, error?: string}>}
  */
-export async function insertHistory(records, anonKey) {
+export async function insertHistory(records, serviceRoleKey) {
   if (!records || records.length === 0) {
     return { success: true, inserted: 0 };
   }
@@ -26,8 +26,8 @@ export async function insertHistory(records, anonKey) {
     const response = await fetch(`${SUPABASE_URL}/rest/v1/listening_history`, {
       method: 'POST',
       headers: {
-        'apikey': anonKey,
-        'Authorization': `Bearer ${anonKey}`,
+        'apikey': serviceRoleKey,
+        'Authorization': `Bearer ${serviceRoleKey}`,
         'Content-Type': 'application/json',
         'Prefer': 'resolution=ignore-duplicates'
       },
