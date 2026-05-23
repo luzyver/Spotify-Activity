@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,135 |
+| **Total Plays** | 8,179 |
 | **Unique Tracks** | 1,574 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - May 21, 2026 |
+| **Period** | November 12, 2025 - May 22, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 383 |
+| 1 | Nadin Amizah | 386 |
 | 2 | Bernadya | 364 |
-| 3 | Tulus | 322 |
+| 3 | Tulus | 323 |
 | 4 | Ghea Indrawari | 286 |
 | 5 | Hindia | 206 |
-| 6 | Sal Priadi | 173 |
+| 6 | Sal Priadi | 174 |
 | 7 | Idgitaf | 151 |
 | 8 | Pamungkas | 136 |
 | 9 | Dere | 118 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 70 |
-| 2 | Kukira Kau Rumah - Amigdala | 68 |
-| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 59 |
-| 4 | Monokrom - Tulus | 57 |
+| 1 | Bertaut - Nadin Amizah | 71 |
+| 2 | Kukira Kau Rumah - Amigdala | 69 |
+| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 60 |
+| 4 | Monokrom - Tulus | 58 |
 | 5 | Monolog - Pamungkas | 52 |
-| 6 | Sorai - Nadin Amizah | 48 |
+| 6 | Sorai - Nadin Amizah | 49 |
 | 7 | Kota - Dere | 45 |
-| 8 | Selamat (Selamat Tinggal) - Virgoun, Audy | 42 |
-| 9 | Kata Mereka Ini Berlebihan - Bernadya | 42 |
-| 10 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 41 |
+| 8 | Selamat (Selamat Tinggal) - Virgoun, Audy | 43 |
+| 9 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 42 |
+| 10 | Kata Mereka Ini Berlebihan - Bernadya | 42 |
 
 ## 📅 Daily Breakdown
 
@@ -210,6 +210,7 @@
 | 19/05/2026 | 22 | The Black Skirts (3) | EVERYTHING - The Black Skirts (3) |
 | 20/05/2026 | 30 | Bernadya (18) | Untungnya, Hidup Harus Tetap Berjalan - Bernadya (2) |
 | 21/05/2026 | 20 | Tulus (2) | Sungguh Aku Mencintaimu - Ricky Rantung (1) |
+| 22/05/2026 | 44 | Nadin Amizah (3) | Heather - Conan Gray (2) |
 
 ---
 
