@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,179 |
+| **Total Plays** | 8,182 |
 | **Unique Tracks** | 1,574 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - May 22, 2026 |
+| **Period** | November 12, 2025 - May 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -211,6 +211,7 @@
 | 20/05/2026 | 30 | Bernadya (18) | Untungnya, Hidup Harus Tetap Berjalan - Bernadya (2) |
 | 21/05/2026 | 20 | Tulus (2) | Sungguh Aku Mencintaimu - Ricky Rantung (1) |
 | 22/05/2026 | 44 | Nadin Amizah (3) | Heather - Conan Gray (2) |
+| 23/05/2026 | 3 | Laufey, Philharmonia Orchestra (1) | Let You Break My Heart Again - Laufey, Philharmonia Orchestra (1) |
 
 ---
 
