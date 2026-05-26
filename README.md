@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,218 |
-| **Unique Tracks** | 1,574 |
+| **Total Plays** | 8,260 |
+| **Unique Tracks** | 1,577 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - May 24, 2026 |
+| **Period** | November 12, 2025 - May 25, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,13 +19,13 @@
 | 1 | Nadin Amizah | 389 |
 | 2 | Bernadya | 364 |
 | 3 | Tulus | 324 |
-| 4 | Ghea Indrawari | 286 |
+| 4 | Ghea Indrawari | 288 |
 | 5 | Hindia | 206 |
 | 6 | Sal Priadi | 175 |
 | 7 | Idgitaf | 151 |
 | 8 | Pamungkas | 136 |
-| 9 | Dere | 118 |
-| 10 | Yura Yunita | 118 |
+| 9 | Yura Yunita | 120 |
+| 10 | Dere | 118 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -213,6 +213,7 @@
 | 22/05/2026 | 44 | Nadin Amizah (3) | Heather - Conan Gray (2) |
 | 23/05/2026 | 3 | Laufey, Philharmonia Orchestra (1) | Let You Break My Heart Again - Laufey, Philharmonia Orchestra (1) |
 | 24/05/2026 | 36 | Nadin Amizah (3) | Membasuh - Hindia, Rara Sekar (2) |
+| 25/05/2026 | 42 | Rizky Febian (5) | Lama Di Rindu - Mario G klau (2) |
 
 ---
 
