@@ -6,18 +6,18 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,260 |
+| **Total Plays** | 8,322 |
 | **Unique Tracks** | 1,577 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - May 25, 2026 |
+| **Period** | November 12, 2025 - May 26, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Nadin Amizah | 389 |
-| 2 | Bernadya | 364 |
+| 1 | Bernadya | 411 |
+| 2 | Nadin Amizah | 389 |
 | 3 | Tulus | 324 |
 | 4 | Ghea Indrawari | 288 |
 | 5 | Hindia | 206 |
@@ -37,10 +37,10 @@
 | 4 | Monokrom - Tulus | 59 |
 | 5 | Monolog - Pamungkas | 52 |
 | 6 | Sorai - Nadin Amizah | 50 |
-| 7 | Kota - Dere | 45 |
-| 8 | Selamat (Selamat Tinggal) - Virgoun, Audy | 44 |
-| 9 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 43 |
-| 10 | Kau Rumahku - raissa anggiani | 42 |
+| 7 | Kata Mereka Ini Berlebihan - Bernadya | 45 |
+| 8 | Kota - Dere | 45 |
+| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 44 |
+| 10 | Satu Bulan - Bernadya | 43 |
 
 ## 📅 Daily Breakdown
 
@@ -213,7 +213,8 @@
 | 22/05/2026 | 44 | Nadin Amizah (3) | Heather - Conan Gray (2) |
 | 23/05/2026 | 3 | Laufey, Philharmonia Orchestra (1) | Let You Break My Heart Again - Laufey, Philharmonia Orchestra (1) |
 | 24/05/2026 | 36 | Nadin Amizah (3) | Membasuh - Hindia, Rara Sekar (2) |
-| 25/05/2026 | 42 | Rizky Febian (5) | Lama Di Rindu - Mario G klau (2) |
+| 25/05/2026 | 43 | Rizky Febian (5) | Lama Di Rindu - Mario G klau (2) |
+| 26/05/2026 | 61 | Bernadya (47) | Sinyal-Sinyal - Bernadya (7) |
 
 ---
 
