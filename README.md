@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,322 |
+| **Total Plays** | 8,352 |
 | **Unique Tracks** | 1,577 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - May 26, 2026 |
+| **Period** | November 12, 2025 - May 27, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 411 |
+| 1 | Bernadya | 439 |
 | 2 | Nadin Amizah | 389 |
 | 3 | Tulus | 324 |
 | 4 | Ghea Indrawari | 288 |
@@ -37,10 +37,10 @@
 | 4 | Monokrom - Tulus | 59 |
 | 5 | Monolog - Pamungkas | 52 |
 | 6 | Sorai - Nadin Amizah | 50 |
-| 7 | Kata Mereka Ini Berlebihan - Bernadya | 45 |
-| 8 | Kota - Dere | 45 |
-| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 44 |
-| 10 | Satu Bulan - Bernadya | 43 |
+| 7 | Kata Mereka Ini Berlebihan - Bernadya | 47 |
+| 8 | Satu Bulan - Bernadya | 46 |
+| 9 | Kota - Dere | 45 |
+| 10 | Selamat (Selamat Tinggal) - Virgoun, Audy | 44 |
 
 ## 📅 Daily Breakdown
 
@@ -215,6 +215,7 @@
 | 24/05/2026 | 36 | Nadin Amizah (3) | Membasuh - Hindia, Rara Sekar (2) |
 | 25/05/2026 | 43 | Rizky Febian (5) | Lama Di Rindu - Mario G klau (2) |
 | 26/05/2026 | 61 | Bernadya (47) | Sinyal-Sinyal - Bernadya (7) |
+| 27/05/2026 | 30 | Bernadya (28) | Ambang Pintu - Bernadya (3) |
 
 ---
 
