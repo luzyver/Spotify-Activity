@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,352 |
+| **Total Plays** | 8,355 |
 | **Unique Tracks** | 1,577 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - May 27, 2026 |
+| **Period** | November 12, 2025 - May 28, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,7 +19,7 @@
 | 1 | Bernadya | 439 |
 | 2 | Nadin Amizah | 389 |
 | 3 | Tulus | 324 |
-| 4 | Ghea Indrawari | 288 |
+| 4 | Ghea Indrawari | 289 |
 | 5 | Hindia | 206 |
 | 6 | Sal Priadi | 175 |
 | 7 | Idgitaf | 151 |
@@ -215,7 +215,8 @@
 | 24/05/2026 | 36 | Nadin Amizah (3) | Membasuh - Hindia, Rara Sekar (2) |
 | 25/05/2026 | 43 | Rizky Febian (5) | Lama Di Rindu - Mario G klau (2) |
 | 26/05/2026 | 61 | Bernadya (47) | Sinyal-Sinyal - Bernadya (7) |
-| 27/05/2026 | 30 | Bernadya (28) | Ambang Pintu - Bernadya (3) |
+| 27/05/2026 | 31 | Bernadya (28) | Ambang Pintu - Bernadya (3) |
+| 28/05/2026 | 2 | KELJO (1) | Sirna - KELJO (1) |
 
 ---
 
