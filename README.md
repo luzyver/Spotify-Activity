@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,426 |
+| **Total Plays** | 8,448 |
 | **Unique Tracks** | 1,577 |
 | **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - June 2, 2026 |
+| **Period** | November 12, 2025 - June 3, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 450 |
-| 2 | Nadin Amizah | 394 |
-| 3 | Tulus | 327 |
+| 1 | Bernadya | 455 |
+| 2 | Nadin Amizah | 395 |
+| 3 | Tulus | 328 |
 | 4 | Ghea Indrawari | 290 |
 | 5 | Hindia | 206 |
-| 6 | Sal Priadi | 176 |
+| 6 | Sal Priadi | 177 |
 | 7 | Idgitaf | 151 |
 | 8 | Pamungkas | 136 |
-| 9 | Yura Yunita | 121 |
+| 9 | Yura Yunita | 122 |
 | 10 | Dere | 120 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 74 |
-| 2 | Kukira Kau Rumah - Amigdala | 72 |
-| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 62 |
-| 4 | Monokrom - Tulus | 61 |
+| 1 | Bertaut - Nadin Amizah | 75 |
+| 2 | Kukira Kau Rumah - Amigdala | 73 |
+| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 63 |
+| 4 | Monokrom - Tulus | 62 |
 | 5 | Monolog - Pamungkas | 52 |
 | 6 | Sorai - Nadin Amizah | 51 |
-| 7 | Satu Bulan - Bernadya | 47 |
-| 8 | Kata Mereka Ini Berlebihan - Bernadya | 47 |
-| 9 | Kota - Dere | 46 |
-| 10 | Selamat (Selamat Tinggal) - Virgoun, Audy | 45 |
+| 7 | Kata Mereka Ini Berlebihan - Bernadya | 48 |
+| 8 | Satu Bulan - Bernadya | 48 |
+| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 46 |
+| 10 | Kota - Dere | 46 |
 
 ## 📅 Daily Breakdown
 
@@ -219,6 +219,7 @@
 | 28/05/2026 | 2 | KELJO (1) | Sirna - KELJO (1) |
 | 29/05/2026 | 28 | Rossa (2) | Terlalu Berharap - Rossa (1) |
 | 02/06/2026 | 43 | Bernadya (11) | Rabun Jauh - Bernadya (2) |
+| 03/06/2026 | 22 | Bernadya (5) | Asumsi - Adrian Khalif, Bernadya (2) |
 
 ---
 
