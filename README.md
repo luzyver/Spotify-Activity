@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,448 |
-| **Unique Tracks** | 1,577 |
-| **Unique Artists** | 741 |
-| **Period** | November 12, 2025 - June 3, 2026 |
+| **Total Plays** | 8,481 |
+| **Unique Tracks** | 1,592 |
+| **Unique Artists** | 745 |
+| **Period** | November 12, 2025 - June 4, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 455 |
+| 1 | Bernadya | 456 |
 | 2 | Nadin Amizah | 395 |
 | 3 | Tulus | 328 |
 | 4 | Ghea Indrawari | 290 |
@@ -219,7 +219,8 @@
 | 28/05/2026 | 2 | KELJO (1) | Sirna - KELJO (1) |
 | 29/05/2026 | 28 | Rossa (2) | Terlalu Berharap - Rossa (1) |
 | 02/06/2026 | 43 | Bernadya (11) | Rabun Jauh - Bernadya (2) |
-| 03/06/2026 | 22 | Bernadya (5) | Asumsi - Adrian Khalif, Bernadya (2) |
+| 03/06/2026 | 23 | Bernadya (6) | Asumsi - Adrian Khalif, Bernadya (2) |
+| 04/06/2026 | 32 | eńau (21) | Sesi Potret - eńau, Ari Lesmana (6) |
 
 ---
 
