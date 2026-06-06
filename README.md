@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,481 |
+| **Total Plays** | 8,488 |
 | **Unique Tracks** | 1,592 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 4, 2026 |
+| **Period** | November 12, 2025 - June 5, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -220,7 +220,8 @@
 | 29/05/2026 | 28 | Rossa (2) | Terlalu Berharap - Rossa (1) |
 | 02/06/2026 | 43 | Bernadya (11) | Rabun Jauh - Bernadya (2) |
 | 03/06/2026 | 23 | Bernadya (6) | Asumsi - Adrian Khalif, Bernadya (2) |
-| 04/06/2026 | 32 | eńau (21) | Sesi Potret - eńau, Ari Lesmana (6) |
+| 04/06/2026 | 33 | eńau (22) | Sesi Potret - eńau, Ari Lesmana (6) |
+| 05/06/2026 | 6 | eńau (3) | Bersamaku Akan Sedikit Susah - eńau (3) |
 
 ---
 
