@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,488 |
+| **Total Plays** | 8,489 |
 | **Unique Tracks** | 1,592 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 5, 2026 |
+| **Period** | November 12, 2025 - June 7, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -222,6 +222,7 @@
 | 03/06/2026 | 23 | Bernadya (6) | Asumsi - Adrian Khalif, Bernadya (2) |
 | 04/06/2026 | 33 | eńau (22) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 05/06/2026 | 6 | eńau (3) | Bersamaku Akan Sedikit Susah - eńau (3) |
+| 07/06/2026 | 1 | eńau, Ari Lesmana (1) | Sesi Potret - eńau, Ari Lesmana (1) |
 
 ---
 
