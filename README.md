@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,534 |
-| **Unique Tracks** | 1,595 |
+| **Total Plays** | 8,626 |
+| **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 8, 2026 |
+| **Period** | November 12, 2025 - June 9, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -25,7 +25,7 @@
 | 7 | Idgitaf | 151 |
 | 8 | Pamungkas | 136 |
 | 9 | Yura Yunita | 122 |
-| 10 | Dere | 120 |
+| 10 | eńau | 121 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -223,7 +223,8 @@
 | 04/06/2026 | 33 | eńau (22) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 05/06/2026 | 6 | eńau (3) | Bersamaku Akan Sedikit Susah - eńau (3) |
 | 07/06/2026 | 2 | eńau, Ari Lesmana (2) | Sesi Potret - eńau, Ari Lesmana (2) |
-| 08/06/2026 | 44 | eńau (31) | Sesi Potret - eńau, Ari Lesmana (7) |
+| 08/06/2026 | 45 | eńau (32) | Sesi Potret - eńau, Ari Lesmana (7) |
+| 09/06/2026 | 91 | eńau (64) | Sesi Potret - eńau, Ari Lesmana (7) |
 
 ---
 
