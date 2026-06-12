@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,736 |
+| **Total Plays** | 8,814 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 10, 2026 |
+| **Period** | November 12, 2025 - June 11, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -20,8 +20,8 @@
 | 2 | Nadin Amizah | 395 |
 | 3 | Tulus | 328 |
 | 4 | Ghea Indrawari | 290 |
-| 5 | Hindia | 206 |
-| 6 | eńau | 200 |
+| 5 | eńau | 255 |
+| 6 | Hindia | 206 |
 | 7 | Sal Priadi | 177 |
 | 8 | Idgitaf | 151 |
 | 9 | Pamungkas | 136 |
@@ -225,7 +225,8 @@
 | 07/06/2026 | 2 | eńau, Ari Lesmana (2) | Sesi Potret - eńau, Ari Lesmana (2) |
 | 08/06/2026 | 45 | eńau (32) | Sesi Potret - eńau, Ari Lesmana (7) |
 | 09/06/2026 | 91 | eńau (64) | Sesi Potret - eńau, Ari Lesmana (7) |
-| 10/06/2026 | 110 | eńau (79) | Sesi Potret - eńau, Ari Lesmana (9) |
+| 10/06/2026 | 111 | eńau (79) | Sesi Potret - eńau, Ari Lesmana (9) |
+| 11/06/2026 | 77 | eńau (55) | Sesi Potret - eńau, Ari Lesmana (8) |
 
 ---
 
