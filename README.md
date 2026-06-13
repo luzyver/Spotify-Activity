@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,814 |
+| **Total Plays** | 8,825 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 11, 2026 |
+| **Period** | November 12, 2025 - June 12, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -20,7 +20,7 @@
 | 2 | Nadin Amizah | 395 |
 | 3 | Tulus | 328 |
 | 4 | Ghea Indrawari | 290 |
-| 5 | eńau | 255 |
+| 5 | eńau | 260 |
 | 6 | Hindia | 206 |
 | 7 | Sal Priadi | 177 |
 | 8 | Idgitaf | 151 |
@@ -36,11 +36,11 @@
 | 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 63 |
 | 4 | Monokrom - Tulus | 62 |
 | 5 | Monolog - Pamungkas | 52 |
-| 6 | Sorai - Nadin Amizah | 51 |
-| 7 | Kata Mereka Ini Berlebihan - Bernadya | 48 |
-| 8 | Satu Bulan - Bernadya | 48 |
-| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 46 |
-| 10 | Kota - Dere | 46 |
+| 6 | Sesi Potret - eńau, Ari Lesmana | 51 |
+| 7 | Sorai - Nadin Amizah | 51 |
+| 8 | Kata Mereka Ini Berlebihan - Bernadya | 48 |
+| 9 | Satu Bulan - Bernadya | 48 |
+| 10 | Selamat (Selamat Tinggal) - Virgoun, Audy | 46 |
 
 ## 📅 Daily Breakdown
 
@@ -226,7 +226,8 @@
 | 08/06/2026 | 45 | eńau (32) | Sesi Potret - eńau, Ari Lesmana (7) |
 | 09/06/2026 | 91 | eńau (64) | Sesi Potret - eńau, Ari Lesmana (7) |
 | 10/06/2026 | 111 | eńau (79) | Sesi Potret - eńau, Ari Lesmana (9) |
-| 11/06/2026 | 77 | eńau (55) | Sesi Potret - eńau, Ari Lesmana (8) |
+| 11/06/2026 | 78 | eńau (56) | Sesi Potret - eńau, Ari Lesmana (8) |
+| 12/06/2026 | 10 | eńau, Ari Lesmana (6) | Sesi Potret - eńau, Ari Lesmana (6) |
 
 ---
 
