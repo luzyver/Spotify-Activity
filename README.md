@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 8,951 |
+| **Total Plays** | 9,047 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 15, 2026 |
+| **Period** | November 12, 2025 - June 16, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,8 +18,8 @@
 |------|------|------|
 | 1 | Bernadya | 456 |
 | 2 | Nadin Amizah | 398 |
-| 3 | Tulus | 329 |
-| 4 | eńau | 302 |
+| 3 | eńau | 370 |
+| 4 | Tulus | 329 |
 | 5 | Ghea Indrawari | 290 |
 | 6 | Hindia | 207 |
 | 7 | Sal Priadi | 178 |
@@ -33,14 +33,14 @@
 |------|------|------|
 | 1 | Bertaut - Nadin Amizah | 76 |
 | 2 | Kukira Kau Rumah - Amigdala | 74 |
-| 3 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 64 |
-| 4 | Monokrom - Tulus | 63 |
-| 5 | Sesi Potret - eńau, Ari Lesmana | 59 |
+| 3 | Sesi Potret - eńau, Ari Lesmana | 65 |
+| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 64 |
+| 5 | Monokrom - Tulus | 63 |
 | 6 | Sorai - Nadin Amizah | 52 |
 | 7 | Monolog - Pamungkas | 52 |
-| 8 | Kata Mereka Ini Berlebihan - Bernadya | 48 |
-| 9 | Satu Bulan - Bernadya | 48 |
-| 10 | Selamat (Selamat Tinggal) - Virgoun, Audy | 47 |
+| 8 | Bersamaku Akan Sedikit Susah - eńau | 50 |
+| 9 | Kata Mereka Ini Berlebihan - Bernadya | 48 |
+| 10 | Satu Bulan - Bernadya | 48 |
 
 ## 📅 Daily Breakdown
 
@@ -229,7 +229,8 @@
 | 11/06/2026 | 78 | eńau (56) | Sesi Potret - eńau, Ari Lesmana (8) |
 | 12/06/2026 | 11 | eńau, Ari Lesmana (6) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 13/06/2026 | 64 | Yura Yunita (6) | Sudut Memori - Yura Yunita (1) |
-| 15/06/2026 | 61 | eńau (41) | Bersamaku Akan Sedikit Susah - eńau (8) |
+| 15/06/2026 | 62 | eńau (42) | Bersamaku Akan Sedikit Susah - eńau (8) |
+| 16/06/2026 | 95 | eńau (67) | Sesi Potret - eńau, Ari Lesmana (6) |
 
 ---
 
