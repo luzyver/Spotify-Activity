@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,081 |
+| **Total Plays** | 9,082 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 17, 2026 |
+| **Period** | November 12, 2025 - June 18, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -232,6 +232,7 @@
 | 15/06/2026 | 62 | eńau (42) | Bersamaku Akan Sedikit Susah - eńau (8) |
 | 16/06/2026 | 95 | eńau (67) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 17/06/2026 | 34 | eńau (25) | Krisis Solusi - eńau (4) |
+| 18/06/2026 | 1 | eńau, Aci Resti (1) | Putih Abu - Abu - eńau, Aci Resti (1) |
 
 ---
 
