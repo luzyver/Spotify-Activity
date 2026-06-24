@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,115 |
+| **Total Plays** | 9,168 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 19, 2026 |
+| **Period** | November 12, 2025 - June 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,9 +17,9 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | Bernadya | 456 |
-| 2 | eńau | 419 |
-| 3 | Nadin Amizah | 398 |
-| 4 | Tulus | 329 |
+| 2 | eńau | 443 |
+| 3 | Nadin Amizah | 400 |
+| 4 | Tulus | 330 |
 | 5 | Ghea Indrawari | 290 |
 | 6 | Hindia | 207 |
 | 7 | Sal Priadi | 178 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Bertaut - Nadin Amizah | 76 |
-| 2 | Kukira Kau Rumah - Amigdala | 74 |
-| 3 | Sesi Potret - eńau, Ari Lesmana | 73 |
-| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 64 |
-| 5 | Monokrom - Tulus | 63 |
-| 6 | Bersamaku Akan Sedikit Susah - eńau | 54 |
+| 1 | Bertaut - Nadin Amizah | 78 |
+| 2 | Sesi Potret - eńau, Ari Lesmana | 77 |
+| 3 | Kukira Kau Rumah - Amigdala | 76 |
+| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 67 |
+| 5 | Monokrom - Tulus | 64 |
+| 6 | Bersamaku Akan Sedikit Susah - eńau | 57 |
 | 7 | Sorai - Nadin Amizah | 52 |
 | 8 | Monolog - Pamungkas | 52 |
-| 9 | Kata Mereka Ini Berlebihan - Bernadya | 48 |
-| 10 | Satu Bulan - Bernadya | 48 |
+| 9 | Selamat (Selamat Tinggal) - Virgoun, Audy | 48 |
+| 10 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 48 |
 
 ## 📅 Daily Breakdown
 
@@ -234,6 +234,8 @@
 | 17/06/2026 | 34 | eńau (25) | Krisis Solusi - eńau (4) |
 | 18/06/2026 | 2 | eńau, Ari Lesmana (1) | Sesi Potret - eńau, Ari Lesmana (1) |
 | 19/06/2026 | 32 | eńau (24) | Jeda - eńau (3) |
+| 22/06/2026 | 31 | eńau (8) | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira (3) |
+| 23/06/2026 | 22 | eńau (16) | Keranjang - eńau (2) |
 
 ---
 
