@@ -6,18 +6,18 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,184 |
+| **Total Plays** | 9,207 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 24, 2026 |
+| **Period** | November 12, 2025 - June 25, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | Bernadya | 456 |
-| 2 | eńau | 451 |
+| 1 | eńau | 465 |
+| 2 | Bernadya | 456 |
 | 3 | Nadin Amizah | 401 |
 | 4 | Tulus | 330 |
 | 5 | Ghea Indrawari | 290 |
@@ -31,12 +31,12 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 80 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 87 |
 | 2 | Bertaut - Nadin Amizah | 79 |
 | 3 | Kukira Kau Rumah - Amigdala | 77 |
-| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 67 |
-| 5 | Monokrom - Tulus | 64 |
-| 6 | Bersamaku Akan Sedikit Susah - eńau | 59 |
+| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
+| 5 | Bersamaku Akan Sedikit Susah - eńau | 66 |
+| 6 | Monokrom - Tulus | 64 |
 | 7 | Sorai - Nadin Amizah | 52 |
 | 8 | Monolog - Pamungkas | 52 |
 | 9 | if u could see me cryin' in my room - Arash Buana, raissa anggiani | 49 |
@@ -236,7 +236,8 @@
 | 19/06/2026 | 32 | eńau (24) | Jeda - eńau (3) |
 | 22/06/2026 | 31 | eńau (8) | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira (3) |
 | 23/06/2026 | 23 | eńau (17) | Kamu Dan Aku, Lelah. - eńau (2) |
-| 24/06/2026 | 15 | eńau (7) | Sesi Potret - eńau, Ari Lesmana (3) |
+| 24/06/2026 | 16 | eńau (7) | Sesi Potret - eńau, Ari Lesmana (3) |
+| 25/06/2026 | 22 | eńau (14) | Bersamaku Akan Sedikit Susah - eńau (7) |
 
 ---
 
