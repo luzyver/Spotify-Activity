@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,207 |
+| **Total Plays** | 9,227 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 25, 2026 |
+| **Period** | November 12, 2025 - June 26, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 465 |
+| 1 | eńau | 479 |
 | 2 | Bernadya | 456 |
 | 3 | Nadin Amizah | 401 |
 | 4 | Tulus | 330 |
@@ -31,11 +31,11 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 87 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 91 |
 | 2 | Bertaut - Nadin Amizah | 79 |
 | 3 | Kukira Kau Rumah - Amigdala | 77 |
-| 4 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
-| 5 | Bersamaku Akan Sedikit Susah - eńau | 66 |
+| 4 | Bersamaku Akan Sedikit Susah - eńau | 68 |
+| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
 | 6 | Monokrom - Tulus | 64 |
 | 7 | Sorai - Nadin Amizah | 52 |
 | 8 | Monolog - Pamungkas | 52 |
@@ -238,6 +238,7 @@
 | 23/06/2026 | 23 | eńau (17) | Kamu Dan Aku, Lelah. - eńau (2) |
 | 24/06/2026 | 16 | eńau (7) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 25/06/2026 | 22 | eńau (14) | Bersamaku Akan Sedikit Susah - eńau (7) |
+| 26/06/2026 | 20 | eńau (14) | Sesi Potret - eńau, Ari Lesmana (4) |
 
 ---
 
