@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,227 |
+| **Total Plays** | 9,229 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 26, 2026 |
+| **Period** | November 12, 2025 - June 27, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 479 |
+| 1 | eńau | 481 |
 | 2 | Bernadya | 456 |
 | 3 | Nadin Amizah | 401 |
 | 4 | Tulus | 330 |
@@ -238,7 +238,8 @@
 | 23/06/2026 | 23 | eńau (17) | Kamu Dan Aku, Lelah. - eńau (2) |
 | 24/06/2026 | 16 | eńau (7) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 25/06/2026 | 22 | eńau (14) | Bersamaku Akan Sedikit Susah - eńau (7) |
-| 26/06/2026 | 20 | eńau (14) | Sesi Potret - eńau, Ari Lesmana (4) |
+| 26/06/2026 | 21 | eńau (15) | Sesi Potret - eńau, Ari Lesmana (4) |
+| 27/06/2026 | 1 | eńau (1) | Biang Masalah - eńau (1) |
 
 ---
 
