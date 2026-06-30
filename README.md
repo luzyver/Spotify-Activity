@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,229 |
+| **Total Plays** | 9,250 |
 | **Unique Tracks** | 1,605 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - June 27, 2026 |
+| **Period** | November 12, 2025 - June 29, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 481 |
+| 1 | eńau | 495 |
 | 2 | Bernadya | 456 |
 | 3 | Nadin Amizah | 401 |
 | 4 | Tulus | 330 |
@@ -31,10 +31,10 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 91 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 97 |
 | 2 | Bertaut - Nadin Amizah | 79 |
 | 3 | Kukira Kau Rumah - Amigdala | 77 |
-| 4 | Bersamaku Akan Sedikit Susah - eńau | 68 |
+| 4 | Bersamaku Akan Sedikit Susah - eńau | 72 |
 | 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
 | 6 | Monokrom - Tulus | 64 |
 | 7 | Sorai - Nadin Amizah | 52 |
@@ -240,6 +240,7 @@
 | 25/06/2026 | 22 | eńau (14) | Bersamaku Akan Sedikit Susah - eńau (7) |
 | 26/06/2026 | 21 | eńau (15) | Sesi Potret - eńau, Ari Lesmana (4) |
 | 27/06/2026 | 1 | eńau (1) | Biang Masalah - eńau (1) |
+| 29/06/2026 | 21 | eńau (14) | Sesi Potret - eńau, Ari Lesmana (6) |
 
 ---
 
