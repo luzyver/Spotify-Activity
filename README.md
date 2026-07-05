@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,445 |
+| **Total Plays** | 9,446 |
 | **Unique Tracks** | 1,606 |
 | **Unique Artists** | 745 |
 | **Period** | November 12, 2025 - July 3, 2026 |
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 573 |
-| 2 | Bernadya | 532 |
+| 2 | Bernadya | 533 |
 | 3 | Nadin Amizah | 401 |
 | 4 | Tulus | 330 |
 | 5 | Ghea Indrawari | 290 |
@@ -244,7 +244,7 @@
 | 30/06/2026 | 35 | Bernadya (27) | Satu Bulan - Bernadya (3) |
 | 01/07/2026 | 86 | eńau (38) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 02/07/2026 | 62 | eńau (37) | Horizontal - eńau (3) |
-| 03/07/2026 | 11 | Bernadya (8) | Sesi Potret - eńau, Ari Lesmana (2) |
+| 03/07/2026 | 12 | Bernadya (9) | Sesi Potret - eńau, Ari Lesmana (2) |
 
 ---
 
