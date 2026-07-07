@@ -1,5 +1,14 @@
 [
   {
+    "timestamp": 1783421405561,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jeda",
+    "artist": "eńau",
+    "uri": "spotify:track:6rl7dPhHuMrLNhWJPNHk7c",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733ffad4d97a9854ef7064d10c"
+  },
+  {
     "timestamp": 1783411013021,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
@@ -241,6 +250,15 @@
     "artist": "Bernadya",
     "uri": "spotify:track:3JzBPPeU2XU2egjae5Rqv9",
     "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327693aaf059002bba3a7655a"
+  },
+  {
+    "timestamp": 1783388307171,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jeda",
+    "artist": "eńau",
+    "uri": "spotify:track:6rl7dPhHuMrLNhWJPNHk7c",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733ffad4d97a9854ef7064d10c"
   },
   {
     "timestamp": 1783387324517,
