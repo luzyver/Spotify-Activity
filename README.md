@@ -6,17 +6,17 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,514 |
-| **Unique Tracks** | 1,614 |
+| **Total Plays** | 9,542 |
+| **Unique Tracks** | 1,616 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - July 7, 2026 |
+| **Period** | November 12, 2025 - July 8, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 590 |
+| 1 | eńau | 597 |
 | 2 | Bernadya | 566 |
 | 3 | Nadin Amizah | 401 |
 | 4 | Tulus | 331 |
@@ -31,8 +31,8 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 113 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 82 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 118 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 87 |
 | 3 | Bertaut - Nadin Amizah | 79 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
 | 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
@@ -246,7 +246,8 @@
 | 02/07/2026 | 62 | eńau (37) | Horizontal - eńau (3) |
 | 03/07/2026 | 12 | Bernadya (9) | Sesi Potret - eńau, Ari Lesmana (2) |
 | 06/07/2026 | 18 | Bernadya (15) | Sinyal-Sinyal - Bernadya (2) |
-| 07/07/2026 | 50 | Bernadya (18) | Sesi Potret - eńau, Ari Lesmana (4) |
+| 07/07/2026 | 51 | Bernadya (18) | Sesi Potret - eńau, Ari Lesmana (4) |
+| 08/07/2026 | 27 | eńau (7) | Bersamaku Akan Sedikit Susah - eńau (5) |
 
 ---
 
