@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,562 |
+| **Total Plays** | 9,578 |
 | **Unique Tracks** | 1,616 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - July 9, 2026 |
+| **Period** | November 12, 2025 - July 10, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,11 +18,11 @@
 |------|------|------|
 | 1 | eńau | 598 |
 | 2 | Bernadya | 567 |
-| 3 | Nadin Amizah | 402 |
-| 4 | Tulus | 332 |
-| 5 | Ghea Indrawari | 300 |
+| 3 | Nadin Amizah | 403 |
+| 4 | Tulus | 333 |
+| 5 | Ghea Indrawari | 308 |
 | 6 | Hindia | 209 |
-| 7 | Sal Priadi | 180 |
+| 7 | Sal Priadi | 181 |
 | 8 | Idgitaf | 151 |
 | 9 | Pamungkas | 136 |
 | 10 | Yura Yunita | 128 |
@@ -31,9 +31,9 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 121 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 123 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 87 |
-| 3 | Bertaut - Nadin Amizah | 80 |
+| 3 | Bertaut - Nadin Amizah | 81 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
 | 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
 | 6 | Monokrom - Tulus | 64 |
@@ -248,7 +248,8 @@
 | 06/07/2026 | 18 | Bernadya (15) | Sinyal-Sinyal - Bernadya (2) |
 | 07/07/2026 | 51 | Bernadya (18) | Sesi Potret - eńau, Ari Lesmana (4) |
 | 08/07/2026 | 28 | eńau (8) | Bersamaku Akan Sedikit Susah - eńau (5) |
-| 09/07/2026 | 19 | Ghea Indrawari (8) | Sesi Potret - eńau, Ari Lesmana (3) |
+| 09/07/2026 | 20 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (3) |
+| 10/07/2026 | 15 | Ghea Indrawari (7) | Runtuh - Feby Putri, Fiersa Besari (2) |
 
 ---
 
