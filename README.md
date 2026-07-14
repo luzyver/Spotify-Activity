@@ -6,34 +6,34 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,578 |
-| **Unique Tracks** | 1,616 |
+| **Total Plays** | 9,607 |
+| **Unique Tracks** | 1,617 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - July 10, 2026 |
+| **Period** | November 12, 2025 - July 14, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 598 |
+| 1 | eńau | 602 |
 | 2 | Bernadya | 567 |
-| 3 | Nadin Amizah | 403 |
-| 4 | Tulus | 333 |
-| 5 | Ghea Indrawari | 308 |
-| 6 | Hindia | 209 |
-| 7 | Sal Priadi | 181 |
+| 3 | Nadin Amizah | 404 |
+| 4 | Tulus | 335 |
+| 5 | Ghea Indrawari | 320 |
+| 6 | Hindia | 210 |
+| 7 | Sal Priadi | 182 |
 | 8 | Idgitaf | 151 |
 | 9 | Pamungkas | 136 |
-| 10 | Yura Yunita | 128 |
+| 10 | eńau, Ari Lesmana | 128 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 123 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 87 |
-| 3 | Bertaut - Nadin Amizah | 81 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 128 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
+| 3 | Bertaut - Nadin Amizah | 82 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
 | 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
 | 6 | Monokrom - Tulus | 64 |
@@ -250,6 +250,8 @@
 | 08/07/2026 | 28 | eńau (8) | Bersamaku Akan Sedikit Susah - eńau (5) |
 | 09/07/2026 | 20 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 10/07/2026 | 15 | Ghea Indrawari (7) | Runtuh - Feby Putri, Fiersa Besari (2) |
+| 13/07/2026 | 28 | Ghea Indrawari (11) | Sesi Potret - eńau, Ari Lesmana (5) |
+| 14/07/2026 | 1 | Ghea Indrawari (1) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (1) |
 
 ---
 
