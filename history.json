@@ -1,5 +1,419 @@
 [
   {
+    "timestamp": 1784080684496,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bahagia Lagi",
+    "artist": "Piche Kota",
+    "uri": "spotify:track:5tZaKZPJtiHh6teQfVEHB5",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735bd00b369e89c5cbc74d827b"
+  },
+  {
+    "timestamp": 1784079999440,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terima Kasih Sudah Bertahan",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:6A1VXwBrL7hpGXScZkGo8D",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1784079743452,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kembali Pulang",
+    "artist": "Suara Kayu, Feby Putri",
+    "uri": "spotify:track:6xeqCawPZngDVqw2W2aGaR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730fa7d0f0589cf5cf7c9300fd"
+  },
+  {
+    "timestamp": 1784079535267,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Melangitkanmu",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7s8c4Ap7Gdzdvb3gGuVGhy",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27336b6a823583611445c30bca1"
+  },
+  {
+    "timestamp": 1784079260907,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jangan Paksa Rindu - Beda",
+    "artist": "Ifan Seventeen",
+    "uri": "spotify:track:79tbBuciPV221EozY3RKQv",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b1f0e17d6a48da664cbdcbe5"
+  },
+  {
+    "timestamp": 1784079015301,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teramini",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:238QZNu3LMzPj2PUoE8AIk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1784078794961,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1784078551536,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Setengah Mati - From \"Bila Esok Ibu Tiada\"",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7tCxRQhDcXehM90nj4Nsit",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daefd2a8d2c9c32cd4f38af"
+  },
+  {
+    "timestamp": 1784078311206,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teh Hijau",
+    "artist": "Tulus",
+    "uri": "spotify:track:4R9G7azXaZe93KTX65P9fU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4086e5f9d79cf18ed601015"
+  },
+  {
+    "timestamp": 1784078098025,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1784072958935,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1784056283884,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1784055132491,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terima Kasih Sudah Bertahan",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:6A1VXwBrL7hpGXScZkGo8D",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1783993270946,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Runtuh",
+    "artist": "Feby Putri, Fiersa Besari",
+    "uri": "spotify:track:6Hii26x3qDErVitnGW8QtO",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734788f7886c01b9b2ee95cbdd"
+  },
+  {
+    "timestamp": 1783993046600,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Melangitkanmu",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7s8c4Ap7Gdzdvb3gGuVGhy",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27336b6a823583611445c30bca1"
+  },
+  {
+    "timestamp": 1783992772175,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bersenja Gurau",
+    "artist": "Raim Laode",
+    "uri": "spotify:track:4DrJqdZgPBHoMNVG5iOLlG",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da95a38ba4a13aea22b5b0d5"
+  },
+  {
+    "timestamp": 1783992577540,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teramini",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:238QZNu3LMzPj2PUoE8AIk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1783992357226,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bahagia Lagi",
+    "artist": "Piche Kota",
+    "uri": "spotify:track:5tZaKZPJtiHh6teQfVEHB5",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735bd00b369e89c5cbc74d827b"
+  },
+  {
+    "timestamp": 1783992129472,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Setengah Mati - From \"Bila Esok Ibu Tiada\"",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7tCxRQhDcXehM90nj4Nsit",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daefd2a8d2c9c32cd4f38af"
+  },
+  {
+    "timestamp": 1783991889188,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1783991645800,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teh Hijau",
+    "artist": "Tulus",
+    "uri": "spotify:track:4R9G7azXaZe93KTX65P9fU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4086e5f9d79cf18ed601015"
+  },
+  {
+    "timestamp": 1783991432487,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1783985490840,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1783980251926,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1783979703128,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Halu",
+    "artist": "Feby Putri",
+    "uri": "spotify:track:2dTIJVE0stqTvrhbpf7fFw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b43accd449468d819918efea"
+  },
+  {
+    "timestamp": 1783970336158,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sorai",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:3ymuBMTviroWLuf1jMsMVf",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737d6b0a5ae92793f5d21be67a"
+  },
+  {
+    "timestamp": 1783970057484,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Apa Itu Konsep Bahagia?",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:2lJW88pg9jJSCjlhC7DCF7",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273497c82ad851968cbbcbfa769"
+  },
+  {
+    "timestamp": 1783969840719,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ruang Baru",
+    "artist": "Barsena Bestandhi",
+    "uri": "spotify:track:1hY73ezlX6Lv9egJv2vaTn",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27387e11cab97509d88bd265fae"
+  },
+  {
+    "timestamp": 1783969601899,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Nanti Kita Seperti Ini",
+    "artist": "Batas Senja",
+    "uri": "spotify:track:3y8RcMPYG22fRnrOi4oFJ1",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c6092bd9b2579479e5fa9891"
+  },
+  {
+    "timestamp": 1783969391944,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kita usahakan rumah itu",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:5Egm9N7FnzsThl1CFXB2mm",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2"
+  },
+  {
+    "timestamp": 1783969180381,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tak Ingin Usai",
+    "artist": "Keisya Levronka",
+    "uri": "spotify:track:0OHr74BS1CEwyZsyY9kml2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d640e180e7cb9909fc3d4092"
+  },
+  {
+    "timestamp": 1783968901532,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tampar",
+    "artist": "Juicy Luicy",
+    "uri": "spotify:track:1csKczcJqOSdK8JriLMpDW",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fadca79809c06f6afe7de0d9"
+  },
+  {
+    "timestamp": 1783968698329,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sedia Aku Sebelum Hujan",
+    "artist": "Idgitaf",
+    "uri": "spotify:track:64bauCjHAIiDNkcHiOJW1r",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ac44521bc2da938d92b422f9"
+  },
+  {
+    "timestamp": 1783968467804,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lesung Pipi",
+    "artist": "Raim Laode",
+    "uri": "spotify:track:4GSwtvjwdbUmb4blyUyCnD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da95a38ba4a13aea22b5b0d5"
+  },
+  {
+    "timestamp": 1783968242336,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bawa Dia Kembali",
+    "artist": "Mahalini",
+    "uri": "spotify:track:25M9piWxSsq0xLcjQW5yz6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542"
+  },
+  {
+    "timestamp": 1783968015233,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Hati-Hati di Jalan",
+    "artist": "Tulus",
+    "uri": "spotify:track:2hHeGD57S0BcopfVcmehdl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d34a0632f6861e8875d6899b"
+  },
+  {
+    "timestamp": 1783967772812,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kau Rumahku",
+    "artist": "raissa anggiani",
+    "uri": "spotify:track:7nQoDLkzCcoIpKPQt3eCdN",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332fa5c23a5c1cf200134e540"
+  },
+  {
+    "timestamp": 1783967497168,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lihat Kebunku (Taman Bunga)",
+    "artist": "Aku Jeje",
+    "uri": "spotify:track:5dvIK269hL3eZXQMG4Vc2C",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27323a15d3a2c0fc3d9bb6c5911"
+  },
+  {
+    "timestamp": 1783967306896,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kamu Anggap Apa",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:4Gk0Kc4ICyOcELIqBxFCwg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bdf2cded1618f5ce57823a95"
+  },
+  {
+    "timestamp": 1783967091244,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Dirimu Yang Dulu",
+    "artist": "Anggis Devaki",
+    "uri": "spotify:track:3GIiXoibZNOxoB4QJ0b8UR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d7105ffabf2ff9ddd265eab1"
+  },
+  {
+    "timestamp": 1783966850113,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jangan Paksa Rindu - Beda",
+    "artist": "Ifan Seventeen",
+    "uri": "spotify:track:79tbBuciPV221EozY3RKQv",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b1f0e17d6a48da664cbdcbe5"
+  },
+  {
+    "timestamp": 1783966604480,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Monolog",
+    "artist": "Pamungkas",
+    "uri": "spotify:track:1zu5ZpnrSArdoaT6Qq3yo9",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e2cf96ce4558b8f2376b79a"
+  },
+  {
+    "timestamp": 1783966396865,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Satu Bulan",
+    "artist": "Bernadya",
+    "uri": "spotify:track:7zOVh5fGpEwSbZd0g9z80B",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb1e5f7d0942bf9196c1e711"
+  },
+  {
+    "timestamp": 1783966196075,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bahagia Lagi",
+    "artist": "Piche Kota",
+    "uri": "spotify:track:5tZaKZPJtiHh6teQfVEHB5",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735bd00b369e89c5cbc74d827b"
+  },
+  {
+    "timestamp": 1783965968282,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "kota ini tak sama tanpamu",
+    "artist": "Nadhif Basalamah",
+    "uri": "spotify:track:13CwOTXUgBugeBByE9oIWb",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f3e3f888fbfcc916ecce50a9"
+  },
+  {
+    "timestamp": 1783965688228,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tak Segampang Itu",
+    "artist": "Anggi Marito",
+    "uri": "spotify:track:0Y0xIGcTjb5EFHHYrJIGIk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a1d74b65a15714b66bcc6cb5"
+  },
+  {
     "timestamp": 1783965456740,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
