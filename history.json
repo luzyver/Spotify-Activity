@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "timestamp": 1784138444147,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Terima Kasih Sudah Bertahan",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:6A1VXwBrL7hpGXScZkGo8D",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1784138188141,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kembali Pulang",
+    "artist": "Suara Kayu, Feby Putri",
+    "uri": "spotify:track:6xeqCawPZngDVqw2W2aGaR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730fa7d0f0589cf5cf7c9300fd"
+  },
+  {
+    "timestamp": 1784137979765,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Melangitkanmu",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7s8c4Ap7Gdzdvb3gGuVGhy",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27336b6a823583611445c30bca1"
+  },
+  {
+    "timestamp": 1784137705414,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jangan Paksa Rindu - Beda",
+    "artist": "Ifan Seventeen",
+    "uri": "spotify:track:79tbBuciPV221EozY3RKQv",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b1f0e17d6a48da664cbdcbe5"
+  },
+  {
+    "timestamp": 1784137459834,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teramini",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:238QZNu3LMzPj2PUoE8AIk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1784137239409,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1784136996034,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Setengah Mati - From \"Bila Esok Ibu Tiada\"",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7tCxRQhDcXehM90nj4Nsit",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daefd2a8d2c9c32cd4f38af"
+  },
+  {
+    "timestamp": 1784136755573,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teh Hijau",
+    "artist": "Tulus",
+    "uri": "spotify:track:4R9G7azXaZe93KTX65P9fU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4086e5f9d79cf18ed601015"
+  },
+  {
+    "timestamp": 1784136542302,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  }
+]
