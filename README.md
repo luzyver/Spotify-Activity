@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,607 |
-| **Unique Tracks** | 1,617 |
+| **Total Plays** | 9,667 |
+| **Unique Tracks** | 1,621 |
 | **Unique Artists** | 745 |
-| **Period** | November 12, 2025 - July 14, 2026 |
+| **Period** | November 12, 2025 - July 15, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,30 +17,30 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 602 |
-| 2 | Bernadya | 567 |
-| 3 | Nadin Amizah | 404 |
-| 4 | Tulus | 335 |
-| 5 | Ghea Indrawari | 320 |
-| 6 | Hindia | 210 |
-| 7 | Sal Priadi | 182 |
-| 8 | Idgitaf | 151 |
-| 9 | Pamungkas | 136 |
-| 10 | eńau, Ari Lesmana | 128 |
+| 2 | Bernadya | 568 |
+| 3 | Nadin Amizah | 406 |
+| 4 | Ghea Indrawari | 339 |
+| 5 | Tulus | 338 |
+| 6 | Hindia | 211 |
+| 7 | Sal Priadi | 184 |
+| 8 | Idgitaf | 152 |
+| 9 | Pamungkas | 137 |
+| 10 | eńau, Ari Lesmana | 134 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 128 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 134 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
-| 3 | Bertaut - Nadin Amizah | 82 |
+| 3 | Bertaut - Nadin Amizah | 83 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
 | 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
 | 6 | Monokrom - Tulus | 64 |
-| 7 | Satu Bulan - Bernadya | 58 |
+| 7 | Satu Bulan - Bernadya | 59 |
 | 8 | Kata Mereka Ini Berlebihan - Bernadya | 56 |
-| 9 | Sorai - Nadin Amizah | 52 |
-| 10 | Monolog - Pamungkas | 52 |
+| 9 | Sorai - Nadin Amizah | 53 |
+| 10 | Monolog - Pamungkas | 53 |
 
 ## 📅 Daily Breakdown
 
@@ -251,7 +251,8 @@
 | 09/07/2026 | 20 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 10/07/2026 | 15 | Ghea Indrawari (7) | Runtuh - Feby Putri, Fiersa Besari (2) |
 | 13/07/2026 | 28 | Ghea Indrawari (11) | Sesi Potret - eńau, Ari Lesmana (5) |
-| 14/07/2026 | 1 | Ghea Indrawari (1) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (1) |
+| 14/07/2026 | 48 | Ghea Indrawari (14) | Sesi Potret - eńau, Ari Lesmana (3) |
+| 15/07/2026 | 13 | Ghea Indrawari (6) | Sesi Potret - eńau, Ari Lesmana (3) |
 
 ---
 
