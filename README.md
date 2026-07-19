@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,729 |
+| **Total Plays** | 9,741 |
 | **Unique Tracks** | 1,627 |
 | **Unique Artists** | 751 |
-| **Period** | November 12, 2025 - July 17, 2026 |
+| **Period** | November 12, 2025 - July 18, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,19 +19,19 @@
 | 1 | eńau | 603 |
 | 2 | Bernadya | 568 |
 | 3 | Nadin Amizah | 407 |
-| 4 | Ghea Indrawari | 362 |
-| 5 | Tulus | 343 |
+| 4 | Ghea Indrawari | 368 |
+| 5 | Tulus | 345 |
 | 6 | Hindia | 212 |
 | 7 | Sal Priadi | 185 |
 | 8 | Idgitaf | 152 |
-| 9 | eńau, Ari Lesmana | 142 |
+| 9 | eńau, Ari Lesmana | 143 |
 | 10 | Pamungkas | 138 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 142 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 143 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
 | 3 | Bertaut - Nadin Amizah | 84 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
@@ -254,7 +254,8 @@
 | 14/07/2026 | 48 | Ghea Indrawari (14) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 15/07/2026 | 13 | Ghea Indrawari (6) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 16/07/2026 | 46 | Ghea Indrawari (19) | Sesi Potret - eńau, Ari Lesmana (6) |
-| 17/07/2026 | 16 | Ghea Indrawari (4) | Sesi Potret - eńau, Ari Lesmana (2) |
+| 17/07/2026 | 17 | Ghea Indrawari (4) | Sesi Potret - eńau, Ari Lesmana (2) |
+| 18/07/2026 | 11 | Ghea Indrawari (6) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (2) |
 
 ---
 
