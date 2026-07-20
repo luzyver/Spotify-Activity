@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,741 |
+| **Total Plays** | 9,744 |
 | **Unique Tracks** | 1,627 |
 | **Unique Artists** | 751 |
-| **Period** | November 12, 2025 - July 18, 2026 |
+| **Period** | November 12, 2025 - July 19, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,7 +19,7 @@
 | 1 | eńau | 603 |
 | 2 | Bernadya | 568 |
 | 3 | Nadin Amizah | 407 |
-| 4 | Ghea Indrawari | 368 |
+| 4 | Ghea Indrawari | 370 |
 | 5 | Tulus | 345 |
 | 6 | Hindia | 212 |
 | 7 | Sal Priadi | 185 |
@@ -256,6 +256,7 @@
 | 16/07/2026 | 46 | Ghea Indrawari (19) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 17/07/2026 | 17 | Ghea Indrawari (4) | Sesi Potret - eńau, Ari Lesmana (2) |
 | 18/07/2026 | 11 | Ghea Indrawari (6) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (2) |
+| 19/07/2026 | 3 | Ghea Indrawari (2) | Teramini - Ghea Indrawari (2) |
 
 ---
 
