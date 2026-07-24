@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,860 |
-| **Unique Tracks** | 1,655 |
-| **Unique Artists** | 766 |
-| **Period** | November 12, 2025 - July 22, 2026 |
+| **Total Plays** | 9,913 |
+| **Unique Tracks** | 1,663 |
+| **Unique Artists** | 767 |
+| **Period** | November 12, 2025 - July 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 609 |
-| 2 | Bernadya | 571 |
-| 3 | Nadin Amizah | 409 |
-| 4 | Ghea Indrawari | 388 |
-| 5 | Tulus | 349 |
-| 6 | Hindia | 214 |
-| 7 | Sal Priadi | 186 |
-| 8 | Idgitaf | 153 |
-| 9 | eńau, Ari Lesmana | 151 |
-| 10 | Pamungkas | 142 |
+| 1 | eńau | 613 |
+| 2 | Bernadya | 573 |
+| 3 | Nadin Amizah | 410 |
+| 4 | Ghea Indrawari | 391 |
+| 5 | Tulus | 351 |
+| 6 | Hindia | 216 |
+| 7 | Sal Priadi | 189 |
+| 8 | eńau, Ari Lesmana | 157 |
+| 9 | Idgitaf | 153 |
+| 10 | Pamungkas | 143 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 151 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 157 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
 | 3 | Bertaut - Nadin Amizah | 85 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
 | 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 68 |
 | 6 | Monokrom - Tulus | 64 |
-| 7 | Satu Bulan - Bernadya | 59 |
-| 8 | Monolog - Pamungkas | 56 |
-| 9 | Kata Mereka Ini Berlebihan - Bernadya | 56 |
-| 10 | Negara Lucu - eńau | 55 |
+| 7 | Negara Lucu - eńau | 59 |
+| 8 | Satu Bulan - Bernadya | 59 |
+| 9 | Monolog - Pamungkas | 57 |
+| 10 | Kata Mereka Ini Berlebihan - Bernadya | 56 |
 
 ## 📅 Daily Breakdown
 
@@ -258,7 +258,8 @@
 | 18/07/2026 | 11 | Ghea Indrawari (6) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (2) |
 | 19/07/2026 | 3 | Ghea Indrawari (2) | Teramini - Ghea Indrawari (2) |
 | 20/07/2026 | 34 | Ghea Indrawari (11) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
-| 22/07/2026 | 82 | Olivia Rodrigo (8) | Sesi Potret - eńau, Ari Lesmana (7) |
+| 22/07/2026 | 83 | Olivia Rodrigo (8) | Sesi Potret - eńau, Ari Lesmana (7) |
+| 23/07/2026 | 52 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (6) |
 
 ---
 
