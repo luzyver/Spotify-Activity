@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,913 |
-| **Unique Tracks** | 1,663 |
-| **Unique Artists** | 767 |
-| **Period** | November 12, 2025 - July 23, 2026 |
+| **Total Plays** | 9,934 |
+| **Unique Tracks** | 1,669 |
+| **Unique Artists** | 771 |
+| **Period** | November 12, 2025 - July 24, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -20,18 +20,18 @@
 | 2 | Bernadya | 573 |
 | 3 | Nadin Amizah | 410 |
 | 4 | Ghea Indrawari | 391 |
-| 5 | Tulus | 351 |
-| 6 | Hindia | 216 |
+| 5 | Tulus | 352 |
+| 6 | Hindia | 217 |
 | 7 | Sal Priadi | 189 |
-| 8 | eńau, Ari Lesmana | 157 |
+| 8 | eńau, Ari Lesmana | 158 |
 | 9 | Idgitaf | 153 |
-| 10 | Pamungkas | 143 |
+| 10 | Pamungkas | 144 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 157 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 158 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
 | 3 | Bertaut - Nadin Amizah | 85 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
@@ -260,6 +260,7 @@
 | 20/07/2026 | 34 | Ghea Indrawari (11) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
 | 22/07/2026 | 83 | Olivia Rodrigo (8) | Sesi Potret - eńau, Ari Lesmana (7) |
 | 23/07/2026 | 52 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (6) |
+| 24/07/2026 | 21 | Olivia Rodrigo (4) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (3) |
 
 ---
 
