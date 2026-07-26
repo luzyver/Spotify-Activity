@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,934 |
+| **Total Plays** | 9,945 |
 | **Unique Tracks** | 1,669 |
 | **Unique Artists** | 771 |
-| **Period** | November 12, 2025 - July 24, 2026 |
+| **Period** | November 12, 2025 - July 25, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,13 +19,13 @@
 | 1 | eńau | 613 |
 | 2 | Bernadya | 573 |
 | 3 | Nadin Amizah | 410 |
-| 4 | Ghea Indrawari | 391 |
-| 5 | Tulus | 352 |
-| 6 | Hindia | 217 |
-| 7 | Sal Priadi | 189 |
+| 4 | Ghea Indrawari | 392 |
+| 5 | Tulus | 353 |
+| 6 | Hindia | 218 |
+| 7 | Sal Priadi | 190 |
 | 8 | eńau, Ari Lesmana | 158 |
 | 9 | Idgitaf | 153 |
-| 10 | Pamungkas | 144 |
+| 10 | Pamungkas | 145 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -39,7 +39,7 @@
 | 6 | Monokrom - Tulus | 64 |
 | 7 | Negara Lucu - eńau | 59 |
 | 8 | Satu Bulan - Bernadya | 59 |
-| 9 | Monolog - Pamungkas | 57 |
+| 9 | Monolog - Pamungkas | 58 |
 | 10 | Kata Mereka Ini Berlebihan - Bernadya | 56 |
 
 ## 📅 Daily Breakdown
@@ -261,6 +261,7 @@
 | 22/07/2026 | 83 | Olivia Rodrigo (8) | Sesi Potret - eńau, Ari Lesmana (7) |
 | 23/07/2026 | 52 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 24/07/2026 | 21 | Olivia Rodrigo (4) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (3) |
+| 25/07/2026 | 11 | Raim Laode (2) | Ada titik-titik di ujung doa - Sal Priadi (1) |
 
 ---
 
