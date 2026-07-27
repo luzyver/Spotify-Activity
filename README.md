@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,945 |
+| **Total Plays** | 9,946 |
 | **Unique Tracks** | 1,669 |
 | **Unique Artists** | 771 |
-| **Period** | November 12, 2025 - July 25, 2026 |
+| **Period** | November 12, 2025 - July 26, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 613 |
-| 2 | Bernadya | 573 |
+| 2 | Bernadya | 574 |
 | 3 | Nadin Amizah | 410 |
 | 4 | Ghea Indrawari | 392 |
 | 5 | Tulus | 353 |
@@ -262,6 +262,7 @@
 | 23/07/2026 | 52 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (6) |
 | 24/07/2026 | 21 | Olivia Rodrigo (4) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (3) |
 | 25/07/2026 | 11 | Raim Laode (2) | Ada titik-titik di ujung doa - Sal Priadi (1) |
+| 26/07/2026 | 1 | Bernadya (1) | Masa Sepi - Bernadya (1) |
 
 ---
 
