@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 9,998 |
+| **Total Plays** | 10,056 |
 | **Unique Tracks** | 1,670 |
 | **Unique Artists** | 771 |
-| **Period** | November 12, 2025 - July 27, 2026 |
+| **Period** | November 12, 2025 - July 28, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 618 |
-| 2 | Bernadya | 575 |
-| 3 | Nadin Amizah | 411 |
-| 4 | Ghea Indrawari | 396 |
-| 5 | Tulus | 354 |
-| 6 | Hindia | 220 |
-| 7 | Sal Priadi | 191 |
-| 8 | eńau, Ari Lesmana | 166 |
+| 1 | eńau | 622 |
+| 2 | Bernadya | 576 |
+| 3 | Nadin Amizah | 412 |
+| 4 | Ghea Indrawari | 399 |
+| 5 | Tulus | 355 |
+| 6 | Hindia | 221 |
+| 7 | Sal Priadi | 192 |
+| 8 | eńau, Ari Lesmana | 173 |
 | 9 | Idgitaf | 153 |
 | 10 | Pamungkas | 145 |
 
@@ -31,12 +31,12 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 166 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 173 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
 | 3 | Bertaut - Nadin Amizah | 85 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
-| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 69 |
-| 6 | Negara Lucu - eńau | 64 |
+| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 70 |
+| 6 | Negara Lucu - eńau | 68 |
 | 7 | Monokrom - Tulus | 64 |
 | 8 | Satu Bulan - Bernadya | 59 |
 | 9 | Monolog - Pamungkas | 58 |
@@ -264,6 +264,7 @@
 | 25/07/2026 | 11 | Raim Laode (2) | Ada titik-titik di ujung doa - Sal Priadi (1) |
 | 26/07/2026 | 1 | Bernadya (1) | Masa Sepi - Bernadya (1) |
 | 27/07/2026 | 52 | Raim Laode (9) | Sesi Potret - eńau, Ari Lesmana (8) |
+| 28/07/2026 | 58 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (7) |
 
 ---
 
