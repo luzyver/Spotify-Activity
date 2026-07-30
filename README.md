@@ -6,40 +6,40 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,056 |
-| **Unique Tracks** | 1,670 |
-| **Unique Artists** | 771 |
-| **Period** | November 12, 2025 - July 28, 2026 |
+| **Total Plays** | 10,079 |
+| **Unique Tracks** | 1,674 |
+| **Unique Artists** | 775 |
+| **Period** | November 12, 2025 - July 29, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 622 |
+| 1 | eńau | 625 |
 | 2 | Bernadya | 576 |
 | 3 | Nadin Amizah | 412 |
 | 4 | Ghea Indrawari | 399 |
 | 5 | Tulus | 355 |
 | 6 | Hindia | 221 |
-| 7 | Sal Priadi | 192 |
-| 8 | eńau, Ari Lesmana | 173 |
+| 7 | Sal Priadi | 193 |
+| 8 | eńau, Ari Lesmana | 176 |
 | 9 | Idgitaf | 153 |
-| 10 | Pamungkas | 145 |
+| 10 | Pamungkas | 146 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 173 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 89 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 176 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 90 |
 | 3 | Bertaut - Nadin Amizah | 85 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
-| 5 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 70 |
-| 6 | Negara Lucu - eńau | 68 |
+| 5 | Negara Lucu - eńau | 70 |
+| 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 70 |
 | 7 | Monokrom - Tulus | 64 |
-| 8 | Satu Bulan - Bernadya | 59 |
-| 9 | Monolog - Pamungkas | 58 |
+| 8 | Monolog - Pamungkas | 59 |
+| 9 | Satu Bulan - Bernadya | 59 |
 | 10 | Kata Mereka Ini Berlebihan - Bernadya | 56 |
 
 ## 📅 Daily Breakdown
@@ -264,7 +264,8 @@
 | 25/07/2026 | 11 | Raim Laode (2) | Ada titik-titik di ujung doa - Sal Priadi (1) |
 | 26/07/2026 | 1 | Bernadya (1) | Masa Sepi - Bernadya (1) |
 | 27/07/2026 | 52 | Raim Laode (9) | Sesi Potret - eńau, Ari Lesmana (8) |
-| 28/07/2026 | 58 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (7) |
+| 28/07/2026 | 59 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (7) |
+| 29/07/2026 | 22 | OMI, felix jaehn (3) | Cheerleader (Felix Jaehn Remix) - Radio Edit - OMI, felix jaehn (3) |
 
 ---
 
