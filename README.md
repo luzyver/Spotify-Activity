@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,099 |
-| **Unique Tracks** | 1,676 |
-| **Unique Artists** | 776 |
-| **Period** | November 12, 2025 - July 30, 2026 |
+| **Total Plays** | 10,181 |
+| **Unique Tracks** | 1,690 |
+| **Unique Artists** | 781 |
+| **Period** | November 12, 2025 - July 31, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 625 |
+| 1 | eńau | 647 |
 | 2 | Bernadya | 576 |
 | 3 | Nadin Amizah | 412 |
 | 4 | Ghea Indrawari | 400 |
 | 5 | Tulus | 356 |
 | 6 | Hindia | 222 |
 | 7 | Sal Priadi | 193 |
-| 8 | eńau, Ari Lesmana | 179 |
+| 8 | eńau, Ari Lesmana | 182 |
 | 9 | Idgitaf | 153 |
 | 10 | Pamungkas | 147 |
 
@@ -31,11 +31,11 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 179 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 90 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 182 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 91 |
 | 3 | Bertaut - Nadin Amizah | 85 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
-| 5 | Negara Lucu - eńau | 70 |
+| 5 | Negara Lucu - eńau | 72 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 70 |
 | 7 | Monokrom - Tulus | 64 |
 | 8 | Monolog - Pamungkas | 59 |
@@ -267,6 +267,7 @@
 | 28/07/2026 | 59 | Raim Laode (11) | Sesi Potret - eńau, Ari Lesmana (7) |
 | 29/07/2026 | 23 | OMI, felix jaehn (3) | Cheerleader (Felix Jaehn Remix) - Radio Edit - OMI, felix jaehn (3) |
 | 30/07/2026 | 19 | eńau, Ari Lesmana (3) | Sesi Potret - eńau, Ari Lesmana (3) |
+| 31/07/2026 | 82 | eńau (22) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (4) |
 
 ---
 
