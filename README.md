@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,270 |
+| **Total Plays** | 10,271 |
 | **Unique Tracks** | 1,697 |
 | **Unique Artists** | 783 |
-| **Period** | November 12, 2025 - August 1, 2026 |
+| **Period** | November 12, 2025 - August 2, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -269,6 +269,7 @@
 | 30/07/2026 | 19 | eńau, Ari Lesmana (3) | Sesi Potret - eńau, Ari Lesmana (3) |
 | 31/07/2026 | 83 | eńau (22) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (4) |
 | 01/08/2026 | 88 | eńau (51) | Keranjang - eńau (3) |
+| 02/08/2026 | 1 | Maroon 5, Wiz Khalifa (1) | Payphone - Maroon 5, Wiz Khalifa (1) |
 
 ---
 
