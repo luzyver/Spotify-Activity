@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,271 |
+| **Total Plays** | 10,311 |
 | **Unique Tracks** | 1,697 |
 | **Unique Artists** | 783 |
-| **Period** | November 12, 2025 - August 2, 2026 |
+| **Period** | November 12, 2025 - August 3, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 698 |
-| 2 | Bernadya | 576 |
-| 3 | Nadin Amizah | 412 |
+| 1 | eńau | 699 |
+| 2 | Bernadya | 577 |
+| 3 | Nadin Amizah | 413 |
 | 4 | Ghea Indrawari | 400 |
 | 5 | Tulus | 356 |
 | 6 | Hindia | 222 |
-| 7 | Sal Priadi | 193 |
-| 8 | eńau, Ari Lesmana | 185 |
+| 7 | Sal Priadi | 194 |
+| 8 | eńau, Ari Lesmana | 189 |
 | 9 | Idgitaf | 153 |
 | 10 | Pamungkas | 147 |
 
@@ -31,11 +31,11 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 185 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 189 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 94 |
 | 3 | Bertaut - Nadin Amizah | 85 |
 | 4 | Kukira Kau Rumah - Amigdala | 77 |
-| 5 | Negara Lucu - eńau | 75 |
+| 5 | Negara Lucu - eńau | 76 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 70 |
 | 7 | Monokrom - Tulus | 64 |
 | 8 | Monolog - Pamungkas | 59 |
@@ -270,6 +270,7 @@
 | 31/07/2026 | 83 | eńau (22) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (4) |
 | 01/08/2026 | 88 | eńau (51) | Keranjang - eńau (3) |
 | 02/08/2026 | 1 | Maroon 5, Wiz Khalifa (1) | Payphone - Maroon 5, Wiz Khalifa (1) |
+| 03/08/2026 | 40 | Raim Laode (6) | Sesi Potret - eńau, Ari Lesmana (4) |
 
 ---
 
