@@ -6,23 +6,23 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,387 |
+| **Total Plays** | 10,438 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 4, 2026 |
+| **Period** | November 12, 2025 - August 5, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 707 |
+| 1 | eńau | 733 |
 | 2 | Bernadya | 577 |
 | 3 | Nadin Amizah | 414 |
 | 4 | Ghea Indrawari | 400 |
 | 5 | Tulus | 356 |
 | 6 | Hindia | 222 |
-| 7 | eńau, Ari Lesmana | 197 |
+| 7 | eńau, Ari Lesmana | 206 |
 | 8 | Sal Priadi | 194 |
 | 9 | Idgitaf | 153 |
 | 10 | Pamungkas | 149 |
@@ -31,10 +31,10 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 197 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 96 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 206 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 98 |
 | 3 | Bertaut - Nadin Amizah | 85 |
-| 4 | Negara Lucu - eńau | 79 |
+| 4 | Negara Lucu - eńau | 82 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
 | 7 | Monokrom - Tulus | 64 |
@@ -272,6 +272,7 @@
 | 02/08/2026 | 1 | Maroon 5, Wiz Khalifa (1) | Payphone - Maroon 5, Wiz Khalifa (1) |
 | 03/08/2026 | 40 | Raim Laode (6) | Sesi Potret - eńau, Ari Lesmana (4) |
 | 04/08/2026 | 76 | eńau (8) | Sesi Potret - eńau, Ari Lesmana (8) |
+| 05/08/2026 | 51 | eńau (26) | Sesi Potret - eńau, Ari Lesmana (9) |
 
 ---
 
