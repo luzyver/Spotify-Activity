@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,613 |
+| **Total Plays** | 10,670 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 10, 2026 |
+| **Period** | November 12, 2025 - August 11, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 790 |
+| 1 | eńau | 795 |
 | 2 | Bernadya | 577 |
-| 3 | Nadin Amizah | 415 |
-| 4 | Ghea Indrawari | 406 |
-| 5 | Tulus | 357 |
-| 6 | eńau, Ari Lesmana | 229 |
-| 7 | Hindia | 224 |
-| 8 | Sal Priadi | 195 |
-| 9 | Idgitaf | 153 |
+| 3 | Nadin Amizah | 416 |
+| 4 | Ghea Indrawari | 415 |
+| 5 | Tulus | 359 |
+| 6 | eńau, Ari Lesmana | 238 |
+| 7 | Hindia | 227 |
+| 8 | Sal Priadi | 196 |
+| 9 | Idgitaf | 154 |
 | 10 | Pamungkas | 151 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 229 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 102 |
-| 3 | Negara Lucu - eńau | 88 |
-| 4 | Bertaut - Nadin Amizah | 85 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 238 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 103 |
+| 3 | Negara Lucu - eńau | 89 |
+| 4 | Bertaut - Nadin Amizah | 86 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
 | 7 | Monokrom - Tulus | 64 |
-| 8 | Monolog - Pamungkas | 60 |
-| 9 | Satu Bulan - Bernadya | 59 |
-| 10 | Kata Mereka Ini Berlebihan - Bernadya | 56 |
+| 8 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 62 |
+| 9 | Monolog - Pamungkas | 60 |
+| 10 | Satu Bulan - Bernadya | 59 |
 
 ## 📅 Daily Breakdown
 
@@ -276,7 +276,8 @@
 | 06/08/2026 | 46 | eńau, Momo (9) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (9) |
 | 07/08/2026 | 24 | eńau (9) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (8) |
 | 08/08/2026 | 79 | eńau (47) | Tak Apa Bila Tak Happy - eńau (3) |
-| 10/08/2026 | 26 | eńau, Ari Lesmana (6) | Sesi Potret - eńau, Ari Lesmana (6) |
+| 10/08/2026 | 27 | eńau, Momo (7) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (7) |
+| 11/08/2026 | 56 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (9) |
 
 ---
 
