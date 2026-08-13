@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,670 |
+| **Total Plays** | 10,684 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 11, 2026 |
+| **Period** | November 12, 2025 - August 12, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -25,7 +25,7 @@
 | 7 | Hindia | 227 |
 | 8 | Sal Priadi | 196 |
 | 9 | Idgitaf | 154 |
-| 10 | Pamungkas | 151 |
+| 10 | Pamungkas | 152 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -37,8 +37,8 @@
 | 4 | Bertaut - Nadin Amizah | 86 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 7 | Monokrom - Tulus | 64 |
-| 8 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 62 |
+| 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 64 |
+| 8 | Monokrom - Tulus | 64 |
 | 9 | Monolog - Pamungkas | 60 |
 | 10 | Satu Bulan - Bernadya | 59 |
 
@@ -277,7 +277,8 @@
 | 07/08/2026 | 24 | eńau (9) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (8) |
 | 08/08/2026 | 79 | eńau (47) | Tak Apa Bila Tak Happy - eńau (3) |
 | 10/08/2026 | 27 | eńau, Momo (7) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (7) |
-| 11/08/2026 | 56 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (9) |
+| 11/08/2026 | 57 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (9) |
+| 12/08/2026 | 13 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
 
 ---
 
