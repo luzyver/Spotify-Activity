@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,719 |
+| **Total Plays** | 10,745 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 13, 2026 |
+| **Period** | November 12, 2025 - August 14, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 805 |
+| 1 | eńau | 806 |
 | 2 | Bernadya | 577 |
-| 3 | Nadin Amizah | 417 |
+| 3 | Nadin Amizah | 418 |
 | 4 | Ghea Indrawari | 415 |
 | 5 | Tulus | 359 |
 | 6 | eńau, Ari Lesmana | 239 |
 | 7 | Hindia | 227 |
 | 8 | Sal Priadi | 196 |
-| 9 | Idgitaf | 154 |
-| 10 | Pamungkas | 153 |
+| 9 | Pamungkas | 155 |
+| 10 | Idgitaf | 154 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -279,7 +279,8 @@
 | 10/08/2026 | 27 | eńau, Momo (7) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (7) |
 | 11/08/2026 | 57 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (9) |
 | 12/08/2026 | 14 | Music Travel Love, Francis Greg (2) | It Will Rain - Music Travel Love, Francis Greg (2) |
-| 13/08/2026 | 34 | eńau (10) | Keranjang - eńau (2) |
+| 13/08/2026 | 35 | eńau (11) | Keranjang - eńau (2) |
+| 14/08/2026 | 25 | Music Travel Love, Francis Greg (2) | It Will Rain - Music Travel Love, Francis Greg (2) |
 
 ---
 
