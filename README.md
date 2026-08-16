@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,745 |
+| **Total Plays** | 10,746 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
 | **Period** | November 12, 2025 - August 14, 2026 |
@@ -280,7 +280,7 @@
 | 11/08/2026 | 57 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (9) |
 | 12/08/2026 | 14 | Music Travel Love, Francis Greg (2) | It Will Rain - Music Travel Love, Francis Greg (2) |
 | 13/08/2026 | 35 | eńau (11) | Keranjang - eńau (2) |
-| 14/08/2026 | 25 | Music Travel Love, Francis Greg (2) | It Will Rain - Music Travel Love, Francis Greg (2) |
+| 14/08/2026 | 26 | Music Travel Love, Francis Greg (3) | It Will Rain - Music Travel Love, Francis Greg (3) |
 
 ---
 
