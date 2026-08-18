@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,746 |
+| **Total Plays** | 10,748 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 14, 2026 |
+| **Period** | November 12, 2025 - August 17, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -37,7 +37,7 @@
 | 4 | Bertaut - Nadin Amizah | 86 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 65 |
+| 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 67 |
 | 8 | Monokrom - Tulus | 64 |
 | 9 | Monolog - Pamungkas | 60 |
 | 10 | Satu Bulan - Bernadya | 59 |
@@ -281,6 +281,7 @@
 | 12/08/2026 | 14 | Music Travel Love, Francis Greg (2) | It Will Rain - Music Travel Love, Francis Greg (2) |
 | 13/08/2026 | 35 | eńau (11) | Keranjang - eńau (2) |
 | 14/08/2026 | 26 | Music Travel Love, Francis Greg (3) | It Will Rain - Music Travel Love, Francis Greg (3) |
+| 17/08/2026 | 2 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
 
 ---
 
