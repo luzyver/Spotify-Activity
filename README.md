@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,748 |
+| **Total Plays** | 10,754 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 17, 2026 |
+| **Period** | November 12, 2025 - August 18, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -282,6 +282,7 @@
 | 13/08/2026 | 35 | eńau (11) | Keranjang - eńau (2) |
 | 14/08/2026 | 26 | Music Travel Love, Francis Greg (3) | It Will Rain - Music Travel Love, Francis Greg (3) |
 | 17/08/2026 | 2 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
+| 18/08/2026 | 6 | Joseph Vincent (1) | At My Worst - Joseph Vincent (1) |
 
 ---
 
