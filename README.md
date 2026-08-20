@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,754 |
+| **Total Plays** | 10,780 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 18, 2026 |
+| **Period** | November 12, 2025 - August 19, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,13 +18,13 @@
 |------|------|------|
 | 1 | eńau | 806 |
 | 2 | Bernadya | 577 |
-| 3 | Nadin Amizah | 418 |
-| 4 | Ghea Indrawari | 415 |
-| 5 | Tulus | 359 |
+| 3 | Nadin Amizah | 420 |
+| 4 | Ghea Indrawari | 419 |
+| 5 | Tulus | 361 |
 | 6 | eńau, Ari Lesmana | 239 |
-| 7 | Hindia | 227 |
-| 8 | Sal Priadi | 196 |
-| 9 | Pamungkas | 155 |
+| 7 | Hindia | 228 |
+| 8 | Sal Priadi | 197 |
+| 9 | Pamungkas | 156 |
 | 10 | Idgitaf | 154 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -34,12 +34,12 @@
 | 1 | Sesi Potret - eńau, Ari Lesmana | 239 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 104 |
 | 3 | Negara Lucu - eńau | 90 |
-| 4 | Bertaut - Nadin Amizah | 86 |
+| 4 | Bertaut - Nadin Amizah | 87 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
 | 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 67 |
 | 8 | Monokrom - Tulus | 64 |
-| 9 | Monolog - Pamungkas | 60 |
+| 9 | Monolog - Pamungkas | 61 |
 | 10 | Satu Bulan - Bernadya | 59 |
 
 ## 📅 Daily Breakdown
@@ -283,6 +283,7 @@
 | 14/08/2026 | 26 | Music Travel Love, Francis Greg (3) | It Will Rain - Music Travel Love, Francis Greg (3) |
 | 17/08/2026 | 2 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
 | 18/08/2026 | 6 | Joseph Vincent (1) | At My Worst - Joseph Vincent (1) |
+| 19/08/2026 | 26 | Ghea Indrawari (4) | bergema sampai selamanya - Nadhif Basalamah (2) |
 
 ---
 
