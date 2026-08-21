@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,780 |
+| **Total Plays** | 10,785 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 19, 2026 |
+| **Period** | November 12, 2025 - August 20, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,8 +18,8 @@
 |------|------|------|
 | 1 | eńau | 806 |
 | 2 | Bernadya | 577 |
-| 3 | Nadin Amizah | 420 |
-| 4 | Ghea Indrawari | 419 |
+| 3 | Ghea Indrawari | 422 |
+| 4 | Nadin Amizah | 420 |
 | 5 | Tulus | 361 |
 | 6 | eńau, Ari Lesmana | 239 |
 | 7 | Hindia | 228 |
@@ -284,6 +284,7 @@
 | 17/08/2026 | 2 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
 | 18/08/2026 | 6 | Joseph Vincent (1) | At My Worst - Joseph Vincent (1) |
 | 19/08/2026 | 26 | Ghea Indrawari (4) | bergema sampai selamanya - Nadhif Basalamah (2) |
+| 20/08/2026 | 5 | Ghea Indrawari (3) | Masa Mudaku Habis - Ghea Indrawari (2) |
 
 ---
 
