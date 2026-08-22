@@ -6,40 +6,40 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,785 |
+| **Total Plays** | 10,810 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 20, 2026 |
+| **Period** | November 12, 2025 - August 21, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 806 |
+| 1 | eńau | 811 |
 | 2 | Bernadya | 577 |
-| 3 | Ghea Indrawari | 422 |
-| 4 | Nadin Amizah | 420 |
+| 3 | Ghea Indrawari | 428 |
+| 4 | Nadin Amizah | 421 |
 | 5 | Tulus | 361 |
-| 6 | eńau, Ari Lesmana | 239 |
-| 7 | Hindia | 228 |
+| 6 | eńau, Ari Lesmana | 240 |
+| 7 | Hindia | 230 |
 | 8 | Sal Priadi | 197 |
-| 9 | Pamungkas | 156 |
+| 9 | Pamungkas | 157 |
 | 10 | Idgitaf | 154 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 239 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 104 |
-| 3 | Negara Lucu - eńau | 90 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 240 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 105 |
+| 3 | Negara Lucu - eńau | 91 |
 | 4 | Bertaut - Nadin Amizah | 87 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 67 |
+| 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 68 |
 | 8 | Monokrom - Tulus | 64 |
-| 9 | Monolog - Pamungkas | 61 |
+| 9 | Monolog - Pamungkas | 62 |
 | 10 | Satu Bulan - Bernadya | 59 |
 
 ## 📅 Daily Breakdown
@@ -284,7 +284,8 @@
 | 17/08/2026 | 2 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
 | 18/08/2026 | 6 | Joseph Vincent (1) | At My Worst - Joseph Vincent (1) |
 | 19/08/2026 | 26 | Ghea Indrawari (4) | bergema sampai selamanya - Nadhif Basalamah (2) |
-| 20/08/2026 | 5 | Ghea Indrawari (3) | Masa Mudaku Habis - Ghea Indrawari (2) |
+| 20/08/2026 | 6 | Ghea Indrawari (3) | Masa Mudaku Habis - Ghea Indrawari (2) |
+| 21/08/2026 | 24 | Ghea Indrawari (6) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
 
 ---
 
