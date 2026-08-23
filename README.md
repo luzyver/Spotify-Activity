@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,810 |
+| **Total Plays** | 10,811 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
 | **Period** | November 12, 2025 - August 21, 2026 |
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 811 |
-| 2 | Bernadya | 577 |
+| 2 | Bernadya | 578 |
 | 3 | Ghea Indrawari | 428 |
 | 4 | Nadin Amizah | 421 |
 | 5 | Tulus | 361 |
@@ -40,7 +40,7 @@
 | 7 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 68 |
 | 8 | Monokrom - Tulus | 64 |
 | 9 | Monolog - Pamungkas | 62 |
-| 10 | Satu Bulan - Bernadya | 59 |
+| 10 | Satu Bulan - Bernadya | 60 |
 
 ## 📅 Daily Breakdown
 
@@ -285,7 +285,7 @@
 | 18/08/2026 | 6 | Joseph Vincent (1) | At My Worst - Joseph Vincent (1) |
 | 19/08/2026 | 26 | Ghea Indrawari (4) | bergema sampai selamanya - Nadhif Basalamah (2) |
 | 20/08/2026 | 6 | Ghea Indrawari (3) | Masa Mudaku Habis - Ghea Indrawari (2) |
-| 21/08/2026 | 24 | Ghea Indrawari (6) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
+| 21/08/2026 | 25 | Ghea Indrawari (6) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
 
 ---
 
