@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,833 |
+| **Total Plays** | 10,843 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 23, 2026 |
+| **Period** | November 12, 2025 - August 24, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,12 +18,12 @@
 |------|------|------|
 | 1 | eńau | 811 |
 | 2 | Bernadya | 578 |
-| 3 | Ghea Indrawari | 434 |
+| 3 | Ghea Indrawari | 437 |
 | 4 | Nadin Amizah | 421 |
 | 5 | Tulus | 362 |
 | 6 | eńau, Ari Lesmana | 240 |
-| 7 | Hindia | 231 |
-| 8 | Sal Priadi | 197 |
+| 7 | Hindia | 232 |
+| 8 | Sal Priadi | 198 |
 | 9 | Pamungkas | 158 |
 | 10 | Idgitaf | 154 |
 
@@ -287,6 +287,7 @@
 | 20/08/2026 | 6 | Ghea Indrawari (3) | Masa Mudaku Habis - Ghea Indrawari (2) |
 | 21/08/2026 | 25 | Ghea Indrawari (6) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
 | 23/08/2026 | 22 | Ghea Indrawari (6) | Berapa Kali Kita Akan Saling Memaafkan - Pamungkas (1) |
+| 24/08/2026 | 10 | Ghea Indrawari (3) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (2) |
 
 ---
 
