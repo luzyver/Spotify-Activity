@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,843 |
+| **Total Plays** | 10,868 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 24, 2026 |
+| **Period** | November 12, 2025 - August 25, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -19,13 +19,13 @@
 | 1 | eńau | 811 |
 | 2 | Bernadya | 578 |
 | 3 | Ghea Indrawari | 437 |
-| 4 | Nadin Amizah | 421 |
+| 4 | Nadin Amizah | 422 |
 | 5 | Tulus | 362 |
 | 6 | eńau, Ari Lesmana | 240 |
 | 7 | Hindia | 232 |
 | 8 | Sal Priadi | 198 |
-| 9 | Pamungkas | 158 |
-| 10 | Idgitaf | 154 |
+| 9 | Pamungkas | 159 |
+| 10 | Idgitaf | 155 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -287,7 +287,8 @@
 | 20/08/2026 | 6 | Ghea Indrawari (3) | Masa Mudaku Habis - Ghea Indrawari (2) |
 | 21/08/2026 | 25 | Ghea Indrawari (6) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
 | 23/08/2026 | 22 | Ghea Indrawari (6) | Berapa Kali Kita Akan Saling Memaafkan - Pamungkas (1) |
-| 24/08/2026 | 10 | Ghea Indrawari (3) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (2) |
+| 24/08/2026 | 11 | Ghea Indrawari (3) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (2) |
+| 25/08/2026 | 24 | Yiruma (1) | Kiss The Rain - Yiruma (1) |
 
 ---
 
