@@ -1,5 +1,50 @@
 [
   {
+    "timestamp": 1787920833895,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "kota ini tak sama tanpamu",
+    "artist": "Nadhif Basalamah",
+    "uri": "spotify:track:13CwOTXUgBugeBByE9oIWb",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f3e3f888fbfcc916ecce50a9"
+  },
+  {
+    "timestamp": 1787920348607,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Serana",
+    "artist": "For Revenge",
+    "uri": "spotify:track:0PtJbtW50jcvvswNPn3QGd",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273322ce4ba8eb959ebee609fd8"
+  },
+  {
+    "timestamp": 1787920098222,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bersenja Gurau",
+    "artist": "Raim Laode",
+    "uri": "spotify:track:4DrJqdZgPBHoMNVG5iOLlG",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a9d1f9b5d3275b0625e13e79"
+  },
+  {
+    "timestamp": 1787919903518,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kembali Pulang",
+    "artist": "Suara Kayu, Feby Putri",
+    "uri": "spotify:track:6xeqCawPZngDVqw2W2aGaR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730fa7d0f0589cf5cf7c9300fd"
+  },
+  {
+    "timestamp": 1787919695202,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
     "timestamp": 1787890325966,
     "user": "Rezz",
     "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
@@ -178,6 +223,15 @@
     "artist": "Bernadya",
     "uri": "spotify:track:5KYUrBgdbIcqwaGSIgfXPl",
     "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738869d13091935994879f2a47"
+  },
+  {
+    "timestamp": 1787874590383,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Lepas (Demo Version)",
+    "artist": "Aldy Amis, eńau",
+    "uri": "spotify:track:54y6XqQJP1MBStpZ5VPJWH",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff364dc135e2bc6c6e32eb80"
   },
   {
     "timestamp": 1787873950163,
