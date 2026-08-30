@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 10,979 |
+| **Total Plays** | 11,033 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 28, 2026 |
+| **Period** | November 12, 2025 - August 29, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,30 +17,30 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 850 |
-| 2 | Bernadya | 580 |
-| 3 | Ghea Indrawari | 453 |
-| 4 | Nadin Amizah | 424 |
-| 5 | Tulus | 364 |
-| 6 | eńau, Ari Lesmana | 244 |
-| 7 | Hindia | 233 |
-| 8 | Sal Priadi | 200 |
-| 9 | Pamungkas | 162 |
-| 10 | Idgitaf | 155 |
+| 2 | Bernadya | 581 |
+| 3 | Ghea Indrawari | 466 |
+| 4 | Nadin Amizah | 426 |
+| 5 | Tulus | 366 |
+| 6 | eńau, Ari Lesmana | 245 |
+| 7 | Hindia | 235 |
+| 8 | Sal Priadi | 202 |
+| 9 | Pamungkas | 164 |
+| 10 | Idgitaf | 156 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 244 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 245 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 108 |
 | 3 | Negara Lucu - eńau | 94 |
-| 4 | Bertaut - Nadin Amizah | 88 |
+| 4 | Bertaut - Nadin Amizah | 89 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
-| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 71 |
+| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 72 |
 | 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 8 | Monolog - Pamungkas | 64 |
+| 8 | Monolog - Pamungkas | 65 |
 | 9 | Monokrom - Tulus | 64 |
-| 10 | 87 - eńau | 61 |
+| 10 | Satu Bulan - Bernadya | 62 |
 
 ## 📅 Daily Breakdown
 
@@ -292,6 +292,7 @@
 | 26/08/2026 | 38 | Ghea Indrawari (12) | Jiwa Yang Bersedih - Ghea Indrawari (3) |
 | 27/08/2026 | 21 | eńau (6) | Pesan Terakhir - Lyodra (1) |
 | 28/08/2026 | 52 | eńau (33) | Rindu Yang Sehat - Sehat - eńau (2) |
+| 29/08/2026 | 54 | Ghea Indrawari (13) | kota ini tak sama tanpamu - Nadhif Basalamah (3) |
 
 ---
 
