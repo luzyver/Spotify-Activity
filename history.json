@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "timestamp": 1788140297301,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bahagia Lagi",
+    "artist": "Piche Kota",
+    "uri": "spotify:track:5tZaKZPJtiHh6teQfVEHB5",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735bd00b369e89c5cbc74d827b"
+  },
+  {
+    "timestamp": 1788140069436,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mangu",
+    "artist": "Fourtwnty, Charita Utami",
+    "uri": "spotify:track:4e6TmHCC4PRUj75knNplNP",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332ab17f5515e51490841f648"
+  },
+  {
+    "timestamp": 1788139807988,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Berapa Kali Kita Akan Saling Memaafkan",
+    "artist": "Pamungkas",
+    "uri": "spotify:track:7c03QS94XIfcetKSNDhUdd",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737fd11848d664ff0e9a3694b2"
+  },
+  {
+    "timestamp": 1788139527521,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Runtuh",
+    "artist": "Feby Putri, Fiersa Besari",
+    "uri": "spotify:track:6Hii26x3qDErVitnGW8QtO",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734788f7886c01b9b2ee95cbdd"
+  },
+  {
+    "timestamp": 1788139303114,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kamu Anggap Apa",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:4Gk0Kc4ICyOcELIqBxFCwg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bdf2cded1618f5ce57823a95"
+  },
+  {
+    "timestamp": 1788139087395,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bawa Dia Kembali",
+    "artist": "Mahalini",
+    "uri": "spotify:track:25M9piWxSsq0xLcjQW5yz6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542"
+  },
+  {
+    "timestamp": 1788138860147,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Usik",
+    "artist": "Feby Putri",
+    "uri": "spotify:track:5GgRntbjr23OK9MMST02di",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b43accd449468d819918efea"
+  },
+  {
+    "timestamp": 1788138548313,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1788054276624,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  }
+]
