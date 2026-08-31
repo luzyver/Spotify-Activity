@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,033 |
+| **Total Plays** | 11,034 |
 | **Unique Tracks** | 1,709 |
 | **Unique Artists** | 794 |
 | **Period** | November 12, 2025 - August 29, 2026 |
@@ -18,7 +18,7 @@
 |------|------|------|
 | 1 | eńau | 850 |
 | 2 | Bernadya | 581 |
-| 3 | Ghea Indrawari | 466 |
+| 3 | Ghea Indrawari | 467 |
 | 4 | Nadin Amizah | 426 |
 | 5 | Tulus | 366 |
 | 6 | eńau, Ari Lesmana | 245 |
@@ -292,7 +292,7 @@
 | 26/08/2026 | 38 | Ghea Indrawari (12) | Jiwa Yang Bersedih - Ghea Indrawari (3) |
 | 27/08/2026 | 21 | eńau (6) | Pesan Terakhir - Lyodra (1) |
 | 28/08/2026 | 52 | eńau (33) | Rindu Yang Sehat - Sehat - eńau (2) |
-| 29/08/2026 | 54 | Ghea Indrawari (13) | kota ini tak sama tanpamu - Nadhif Basalamah (3) |
+| 29/08/2026 | 55 | Ghea Indrawari (14) | Jiwa Yang Bersedih - Ghea Indrawari (3) |
 
 ---
 
