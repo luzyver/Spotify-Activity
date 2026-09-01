@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,034 |
-| **Unique Tracks** | 1,709 |
-| **Unique Artists** | 794 |
-| **Period** | November 12, 2025 - August 29, 2026 |
+| **Total Plays** | 11,086 |
+| **Unique Tracks** | 1,713 |
+| **Unique Artists** | 797 |
+| **Period** | November 12, 2025 - August 31, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 850 |
-| 2 | Bernadya | 581 |
-| 3 | Ghea Indrawari | 467 |
+| 1 | eńau | 871 |
+| 2 | Bernadya | 582 |
+| 3 | Ghea Indrawari | 474 |
 | 4 | Nadin Amizah | 426 |
 | 5 | Tulus | 366 |
-| 6 | eńau, Ari Lesmana | 245 |
+| 6 | eńau, Ari Lesmana | 246 |
 | 7 | Hindia | 235 |
-| 8 | Sal Priadi | 202 |
-| 9 | Pamungkas | 164 |
+| 8 | Sal Priadi | 203 |
+| 9 | Pamungkas | 166 |
 | 10 | Idgitaf | 156 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 245 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 108 |
-| 3 | Negara Lucu - eńau | 94 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 246 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 109 |
+| 3 | Negara Lucu - eńau | 95 |
 | 4 | Bertaut - Nadin Amizah | 89 |
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
-| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 72 |
+| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 73 |
 | 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 8 | Monolog - Pamungkas | 65 |
-| 9 | Monokrom - Tulus | 64 |
-| 10 | Satu Bulan - Bernadya | 62 |
+| 8 | Jiwa Yang Bersedih - Ghea Indrawari | 65 |
+| 9 | Monolog - Pamungkas | 65 |
+| 10 | Monokrom - Tulus | 64 |
 
 ## 📅 Daily Breakdown
 
@@ -293,6 +293,8 @@
 | 27/08/2026 | 21 | eńau (6) | Pesan Terakhir - Lyodra (1) |
 | 28/08/2026 | 52 | eńau (33) | Rindu Yang Sehat - Sehat - eńau (2) |
 | 29/08/2026 | 55 | Ghea Indrawari (14) | Jiwa Yang Bersedih - Ghea Indrawari (3) |
+| 30/08/2026 | 1 | Ghea Indrawari (1) | Jiwa Yang Bersedih - Ghea Indrawari (1) |
+| 31/08/2026 | 51 | eńau (21) | Jiwa Yang Bersedih - Ghea Indrawari (3) |
 
 ---
 
