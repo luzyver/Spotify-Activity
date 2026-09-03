@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,106 |
-| **Unique Tracks** | 1,713 |
+| **Total Plays** | 11,114 |
+| **Unique Tracks** | 1,714 |
 | **Unique Artists** | 797 |
-| **Period** | November 12, 2025 - September 1, 2026 |
+| **Period** | November 12, 2025 - September 2, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,12 +17,12 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 871 |
-| 2 | Bernadya | 583 |
-| 3 | Ghea Indrawari | 481 |
+| 2 | Bernadya | 586 |
+| 3 | Ghea Indrawari | 483 |
 | 4 | Nadin Amizah | 427 |
 | 5 | Tulus | 367 |
 | 6 | eńau, Ari Lesmana | 247 |
-| 7 | Hindia | 236 |
+| 7 | Hindia | 237 |
 | 8 | Sal Priadi | 204 |
 | 9 | Pamungkas | 166 |
 | 10 | Idgitaf | 156 |
@@ -38,9 +38,9 @@
 | 5 | Kukira Kau Rumah - Amigdala | 77 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 75 |
 | 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 8 | Jiwa Yang Bersedih - Ghea Indrawari | 67 |
-| 9 | Monolog - Pamungkas | 65 |
-| 10 | Monokrom - Tulus | 64 |
+| 8 | Jiwa Yang Bersedih - Ghea Indrawari | 68 |
+| 9 | Satu Bulan - Bernadya | 66 |
+| 10 | Monolog - Pamungkas | 65 |
 
 ## 📅 Daily Breakdown
 
@@ -296,6 +296,7 @@
 | 30/08/2026 | 1 | Ghea Indrawari (1) | Jiwa Yang Bersedih - Ghea Indrawari (1) |
 | 31/08/2026 | 52 | eńau (21) | Jiwa Yang Bersedih - Ghea Indrawari (3) |
 | 01/09/2026 | 19 | Ghea Indrawari (6) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
+| 02/09/2026 | 8 | Bernadya (3) | Satu Bulan - Bernadya (3) |
 
 ---
 
