@@ -1,1 +1,119 @@
-[]
+[
+  {
+    "timestamp": 1788569818385,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Apa Itu Konsep Bahagia?",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:2lJW88pg9jJSCjlhC7DCF7",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273497c82ad851968cbbcbfa769"
+  },
+  {
+    "timestamp": 1788569579297,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ruang Baru",
+    "artist": "Barsena Bestandhi",
+    "uri": "spotify:track:1hY73ezlX6Lv9egJv2vaTn",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731492171cba5bd7087eb9fa94"
+  },
+  {
+    "timestamp": 1788569340483,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Malam Tak Berjudul",
+    "artist": "Monica Christiana",
+    "uri": "spotify:track:2y1d2E9sUDXS7JrS0rwSkr",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a53bb8ba088d0a9ebe76c2a9"
+  },
+  {
+    "timestamp": 1788569150660,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Titik Nadir (feat. Monita Tahalea)",
+    "artist": "Kahitna, Monita Tahalea",
+    "uri": "spotify:track:52m690jqpxP1tHHkRNdl5p",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735cfcb24701901b0e53ce4fae"
+  },
+  {
+    "timestamp": 1788568904660,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bertaut",
+    "artist": "Nadin Amizah",
+    "uri": "spotify:track:630DpnzdfjdVqv2yLfPbAX",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736d57a5c60decaa8fb39d5afb"
+  },
+  {
+    "timestamp": 1788568588325,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Melangitkanmu",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7s8c4Ap7Gdzdvb3gGuVGhy",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27336b6a823583611445c30bca1"
+  },
+  {
+    "timestamp": 1788568313811,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Kau Rumahku",
+    "artist": "raissa anggiani",
+    "uri": "spotify:track:7nQoDLkzCcoIpKPQt3eCdN",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332fa5c23a5c1cf200134e540"
+  },
+  {
+    "timestamp": 1788568037959,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teramini",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:238QZNu3LMzPj2PUoE8AIk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1788567817622,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ada titik-titik di ujung doa",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:1E7zLPDdqo0OvzVmGj5aoV",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2"
+  },
+  {
+    "timestamp": 1788567511868,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Rumah Ke Rumah",
+    "artist": "Hindia",
+    "uri": "spotify:track:2wAiFWjRupWmnDkQcu91MF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d623688488865906052ef96b"
+  },
+  {
+    "timestamp": 1788567234079,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Teh Hijau",
+    "artist": "Tulus",
+    "uri": "spotify:track:4R9G7azXaZe93KTX65P9fU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4086e5f9d79cf18ed601015"
+  },
+  {
+    "timestamp": 1788567020784,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  },
+  {
+    "timestamp": 1788524383782,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Rumah Terakhir",
+    "artist": "Aldy Amis, eńau",
+    "uri": "spotify:track:2E3DB8AlZEZz7i1WOmKFve",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27331d83de71cbed65522239be8"
+  }
+]
