@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,193 |
+| **Total Plays** | 11,204 |
 | **Unique Tracks** | 1,714 |
 | **Unique Artists** | 797 |
-| **Period** | November 12, 2025 - September 5, 2026 |
+| **Period** | November 12, 2025 - September 6, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 902 |
+| 1 | eńau | 910 |
 | 2 | Bernadya | 587 |
 | 3 | Ghea Indrawari | 491 |
 | 4 | Nadin Amizah | 429 |
 | 5 | Tulus | 369 |
-| 6 | eńau, Ari Lesmana | 251 |
+| 6 | eńau, Ari Lesmana | 252 |
 | 7 | Hindia | 238 |
 | 8 | Sal Priadi | 205 |
 | 9 | Pamungkas | 167 |
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 251 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 112 |
-| 3 | Negara Lucu - eńau | 99 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 252 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 113 |
+| 3 | Negara Lucu - eńau | 100 |
 | 4 | Bertaut - Nadin Amizah | 91 |
-| 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 81 |
+| 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 82 |
 | 6 | Kukira Kau Rumah - Amigdala | 77 |
 | 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
 | 8 | Jiwa Yang Bersedih - Ghea Indrawari | 70 |
-| 9 | Monolog - Pamungkas | 66 |
-| 10 | Satu Bulan - Bernadya | 66 |
+| 9 | 87 - eńau | 66 |
+| 10 | Monolog - Pamungkas | 66 |
 
 ## 📅 Daily Breakdown
 
@@ -300,6 +300,7 @@
 | 03/09/2026 | 26 | eńau (12) | Biang Masalah - eńau (2) |
 | 04/09/2026 | 31 | eńau (19) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (4) |
 | 05/09/2026 | 21 | Ghea Indrawari (6) | Lihat Kebunku (Taman Bunga) - Aku Jeje (1) |
+| 06/09/2026 | 11 | eńau (8) | Biang Masalah - eńau (1) |
 
 ---
 
