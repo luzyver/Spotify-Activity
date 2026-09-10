@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,213 |
+| **Total Plays** | 11,284 |
 | **Unique Tracks** | 1,714 |
 | **Unique Artists** | 797 |
-| **Period** | November 12, 2025 - September 7, 2026 |
+| **Period** | November 12, 2025 - September 9, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 916 |
-| 2 | Bernadya | 587 |
-| 3 | Ghea Indrawari | 491 |
-| 4 | Nadin Amizah | 429 |
-| 5 | Tulus | 369 |
-| 6 | eńau, Ari Lesmana | 253 |
-| 7 | Hindia | 238 |
-| 8 | Sal Priadi | 205 |
-| 9 | Pamungkas | 167 |
+| 1 | eńau | 935 |
+| 2 | Bernadya | 588 |
+| 3 | Ghea Indrawari | 502 |
+| 4 | Nadin Amizah | 431 |
+| 5 | Tulus | 370 |
+| 6 | eńau, Ari Lesmana | 258 |
+| 7 | Hindia | 239 |
+| 8 | Sal Priadi | 207 |
+| 9 | Pamungkas | 169 |
 | 10 | Idgitaf | 157 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 253 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 114 |
-| 3 | Negara Lucu - eńau | 101 |
-| 4 | Bertaut - Nadin Amizah | 91 |
-| 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 83 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 258 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 116 |
+| 3 | Negara Lucu - eńau | 103 |
+| 4 | Bertaut - Nadin Amizah | 92 |
+| 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 85 |
 | 6 | Kukira Kau Rumah - Amigdala | 77 |
-| 7 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
-| 8 | Jiwa Yang Bersedih - Ghea Indrawari | 70 |
-| 9 | 87 - eńau | 67 |
-| 10 | Monolog - Pamungkas | 66 |
+| 7 | Jiwa Yang Bersedih - Ghea Indrawari | 72 |
+| 8 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
+| 9 | 87 - eńau | 69 |
+| 10 | Monolog - Pamungkas | 67 |
 
 ## 📅 Daily Breakdown
 
@@ -302,6 +302,8 @@
 | 05/09/2026 | 21 | Ghea Indrawari (6) | Lihat Kebunku (Taman Bunga) - Aku Jeje (1) |
 | 06/09/2026 | 11 | eńau (8) | Biang Masalah - eńau (1) |
 | 07/09/2026 | 9 | eńau (6) | Jeda - eńau (1) |
+| 08/09/2026 | 20 | eńau (14) | Kamu Dan Aku, Lelah. - eńau (2) |
+| 09/09/2026 | 51 | Ghea Indrawari (11) | Sesi Potret - eńau, Ari Lesmana (4) |
 
 ---
 
