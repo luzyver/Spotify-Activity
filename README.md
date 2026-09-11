@@ -6,24 +6,24 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,284 |
+| **Total Plays** | 11,309 |
 | **Unique Tracks** | 1,714 |
 | **Unique Artists** | 797 |
-| **Period** | November 12, 2025 - September 9, 2026 |
+| **Period** | November 12, 2025 - September 10, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 935 |
+| 1 | eńau | 944 |
 | 2 | Bernadya | 588 |
-| 3 | Ghea Indrawari | 502 |
-| 4 | Nadin Amizah | 431 |
+| 3 | Ghea Indrawari | 509 |
+| 4 | Nadin Amizah | 432 |
 | 5 | Tulus | 370 |
 | 6 | eńau, Ari Lesmana | 258 |
 | 7 | Hindia | 239 |
-| 8 | Sal Priadi | 207 |
+| 8 | Sal Priadi | 208 |
 | 9 | Pamungkas | 169 |
 | 10 | Idgitaf | 157 |
 
@@ -37,7 +37,7 @@
 | 4 | Bertaut - Nadin Amizah | 92 |
 | 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 85 |
 | 6 | Kukira Kau Rumah - Amigdala | 77 |
-| 7 | Jiwa Yang Bersedih - Ghea Indrawari | 72 |
+| 7 | Jiwa Yang Bersedih - Ghea Indrawari | 74 |
 | 8 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
 | 9 | 87 - eńau | 69 |
 | 10 | Monolog - Pamungkas | 67 |
@@ -304,6 +304,7 @@
 | 07/09/2026 | 9 | eńau (6) | Jeda - eńau (1) |
 | 08/09/2026 | 20 | eńau (14) | Kamu Dan Aku, Lelah. - eńau (2) |
 | 09/09/2026 | 51 | Ghea Indrawari (11) | Sesi Potret - eńau, Ari Lesmana (4) |
+| 10/09/2026 | 25 | eńau (9) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (2) |
 
 ---
 
