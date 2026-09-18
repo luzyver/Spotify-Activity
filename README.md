@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,410 |
+| **Total Plays** | 11,414 |
 | **Unique Tracks** | 1,714 |
 | **Unique Artists** | 797 |
-| **Period** | November 12, 2025 - September 16, 2026 |
+| **Period** | November 12, 2025 - September 17, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -310,6 +310,7 @@
 | 14/09/2026 | 15 | eńau (11) | Bersamaku Akan Sedikit Susah - eńau (3) |
 | 15/09/2026 | 38 | eńau (25) | 87 - eńau (2) |
 | 16/09/2026 | 16 | Ghea Indrawari (4) | Pesan Terakhir - Lyodra (2) |
+| 17/09/2026 | 4 | Kahitna, Monita Tahalea (1) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (1) |
 
 ---
 
