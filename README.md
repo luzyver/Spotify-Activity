@@ -6,22 +6,22 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,414 |
+| **Total Plays** | 11,435 |
 | **Unique Tracks** | 1,714 |
 | **Unique Artists** | 797 |
-| **Period** | November 12, 2025 - September 17, 2026 |
+| **Period** | November 12, 2025 - September 18, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 994 |
+| 1 | eńau | 996 |
 | 2 | Bernadya | 589 |
-| 3 | Ghea Indrawari | 516 |
-| 4 | Nadin Amizah | 432 |
-| 5 | Tulus | 371 |
-| 6 | eńau, Ari Lesmana | 264 |
+| 3 | Ghea Indrawari | 522 |
+| 4 | Nadin Amizah | 433 |
+| 5 | Tulus | 372 |
+| 6 | eńau, Ari Lesmana | 265 |
 | 7 | Hindia | 240 |
 | 8 | Sal Priadi | 209 |
 | 9 | Pamungkas | 171 |
@@ -31,13 +31,13 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 264 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 124 |
-| 3 | Negara Lucu - eńau | 111 |
-| 4 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 92 |
-| 5 | Bertaut - Nadin Amizah | 92 |
-| 6 | 87 - eńau | 78 |
-| 7 | Jiwa Yang Bersedih - Ghea Indrawari | 77 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 265 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 125 |
+| 3 | Negara Lucu - eńau | 112 |
+| 4 | Bertaut - Nadin Amizah | 93 |
+| 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 93 |
+| 6 | Jiwa Yang Bersedih - Ghea Indrawari | 78 |
+| 7 | 87 - eńau | 78 |
 | 8 | Kukira Kau Rumah - Amigdala | 77 |
 | 9 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
 | 10 | Rumah Terakhir - Aldy Amis, eńau | 69 |
@@ -310,7 +310,8 @@
 | 14/09/2026 | 15 | eńau (11) | Bersamaku Akan Sedikit Susah - eńau (3) |
 | 15/09/2026 | 38 | eńau (25) | 87 - eńau (2) |
 | 16/09/2026 | 16 | Ghea Indrawari (4) | Pesan Terakhir - Lyodra (2) |
-| 17/09/2026 | 4 | Kahitna, Monita Tahalea (1) | Titik Nadir (feat. Monita Tahalea) - Kahitna, Monita Tahalea (1) |
+| 17/09/2026 | 5 | Ghea Indrawari (1) | Terima Kasih Sudah Bertahan - Ghea Indrawari (1) |
+| 18/09/2026 | 20 | Ghea Indrawari (5) | 1000X - Ghea Indrawari (3) |
 
 ---
 
