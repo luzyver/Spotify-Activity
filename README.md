@@ -6,26 +6,26 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,468 |
-| **Unique Tracks** | 1,715 |
-| **Unique Artists** | 798 |
-| **Period** | November 12, 2025 - September 21, 2026 |
+| **Total Plays** | 11,499 |
+| **Unique Tracks** | 1,719 |
+| **Unique Artists** | 800 |
+| **Period** | November 12, 2025 - September 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 996 |
+| 1 | eńau | 999 |
 | 2 | Bernadya | 590 |
-| 3 | Ghea Indrawari | 531 |
-| 4 | Nadin Amizah | 433 |
-| 5 | Tulus | 373 |
+| 3 | Ghea Indrawari | 533 |
+| 4 | Nadin Amizah | 434 |
+| 5 | Tulus | 375 |
 | 6 | eńau, Ari Lesmana | 267 |
-| 7 | Hindia | 241 |
+| 7 | Hindia | 242 |
 | 8 | Sal Priadi | 210 |
 | 9 | Pamungkas | 173 |
-| 10 | Idgitaf | 158 |
+| 10 | Raim Laode | 158 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -34,9 +34,9 @@
 | 1 | Sesi Potret - eńau, Ari Lesmana | 267 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 125 |
 | 3 | Negara Lucu - eńau | 112 |
-| 4 | Bertaut - Nadin Amizah | 93 |
+| 4 | Bertaut - Nadin Amizah | 94 |
 | 5 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 93 |
-| 6 | Jiwa Yang Bersedih - Ghea Indrawari | 80 |
+| 6 | Jiwa Yang Bersedih - Ghea Indrawari | 81 |
 | 7 | 87 - eńau | 78 |
 | 8 | Kukira Kau Rumah - Amigdala | 77 |
 | 9 | Sampai Jadi Debu (Menampilkan Gardika Gigih) - Banda Neira | 71 |
@@ -313,6 +313,7 @@
 | 17/09/2026 | 5 | Ghea Indrawari (1) | Terima Kasih Sudah Bertahan - Ghea Indrawari (1) |
 | 18/09/2026 | 20 | Ghea Indrawari (5) | 1000X - Ghea Indrawari (3) |
 | 21/09/2026 | 33 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (2) |
+| 23/09/2026 | 31 | eńau (3) | Jangan Paksa Rindu - Ifan Seventeen (2) |
 
 ---
 
