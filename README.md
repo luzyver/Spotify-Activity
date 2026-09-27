@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,545 |
+| **Total Plays** | 11,546 |
 | **Unique Tracks** | 1,735 |
 | **Unique Artists** | 810 |
 | **Period** | November 12, 2025 - September 25, 2026 |
@@ -315,7 +315,7 @@
 | 21/09/2026 | 33 | Ghea Indrawari (9) | Sesi Potret - eńau, Ari Lesmana (2) |
 | 23/09/2026 | 31 | eńau (3) | Jangan Paksa Rindu - Ifan Seventeen (2) |
 | 24/09/2026 | 32 | Ghea Indrawari (8) | Kenangan Terindah - SAMSONS (2) |
-| 25/09/2026 | 14 | Ghea Indrawari (3) | Ada titik-titik di ujung doa - Sal Priadi (2) |
+| 25/09/2026 | 15 | Ghea Indrawari (3) | Ada titik-titik di ujung doa - Sal Priadi (2) |
 
 ---
 
