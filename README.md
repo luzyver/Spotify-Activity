@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,546 |
-| **Unique Tracks** | 1,735 |
-| **Unique Artists** | 810 |
-| **Period** | November 12, 2025 - September 25, 2026 |
+| **Total Plays** | 11,564 |
+| **Unique Tracks** | 1,749 |
+| **Unique Artists** | 820 |
+| **Period** | November 12, 2025 - September 28, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,14 +18,14 @@
 |------|------|------|
 | 1 | eńau | 1,004 |
 | 2 | Bernadya | 590 |
-| 3 | Ghea Indrawari | 544 |
+| 3 | Ghea Indrawari | 548 |
 | 4 | Nadin Amizah | 434 |
 | 5 | Tulus | 376 |
 | 6 | eńau, Ari Lesmana | 268 |
 | 7 | Hindia | 243 |
 | 8 | Sal Priadi | 212 |
 | 9 | Pamungkas | 174 |
-| 10 | Raim Laode | 159 |
+| 10 | Raim Laode | 160 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -316,6 +316,7 @@
 | 23/09/2026 | 31 | eńau (3) | Jangan Paksa Rindu - Ifan Seventeen (2) |
 | 24/09/2026 | 32 | Ghea Indrawari (8) | Kenangan Terindah - SAMSONS (2) |
 | 25/09/2026 | 15 | Ghea Indrawari (3) | Ada titik-titik di ujung doa - Sal Priadi (2) |
+| 28/09/2026 | 18 | Ghea Indrawari (4) | Sabda Alam - Once Mekel (2) |
 
 ---
 
