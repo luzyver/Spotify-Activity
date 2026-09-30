@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,564 |
+| **Total Plays** | 11,565 |
 | **Unique Tracks** | 1,749 |
 | **Unique Artists** | 820 |
 | **Period** | November 12, 2025 - September 28, 2026 |
@@ -316,7 +316,7 @@
 | 23/09/2026 | 31 | eńau (3) | Jangan Paksa Rindu - Ifan Seventeen (2) |
 | 24/09/2026 | 32 | Ghea Indrawari (8) | Kenangan Terindah - SAMSONS (2) |
 | 25/09/2026 | 15 | Ghea Indrawari (3) | Ada titik-titik di ujung doa - Sal Priadi (2) |
-| 28/09/2026 | 18 | Ghea Indrawari (4) | Sabda Alam - Once Mekel (2) |
+| 28/09/2026 | 19 | Ghea Indrawari (4) | Sabda Alam - Once Mekel (2) |
 
 ---
 
