@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,579 |
+| **Total Plays** | 11,601 |
 | **Unique Tracks** | 1,749 |
 | **Unique Artists** | 820 |
-| **Period** | November 12, 2025 - September 30, 2026 |
+| **Period** | November 12, 2025 - October 1, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,13 +17,13 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,007 |
-| 2 | Bernadya | 590 |
-| 3 | Ghea Indrawari | 549 |
+| 2 | Bernadya | 591 |
+| 3 | Ghea Indrawari | 557 |
 | 4 | Nadin Amizah | 435 |
-| 5 | Tulus | 376 |
+| 5 | Tulus | 378 |
 | 6 | eńau, Ari Lesmana | 269 |
-| 7 | Hindia | 243 |
-| 8 | Sal Priadi | 212 |
+| 7 | Hindia | 244 |
+| 8 | Sal Priadi | 213 |
 | 9 | Pamungkas | 174 |
 | 10 | Raim Laode | 160 |
 
@@ -36,7 +36,7 @@
 | 3 | Negara Lucu - eńau | 114 |
 | 4 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 95 |
 | 5 | Bertaut - Nadin Amizah | 94 |
-| 6 | Jiwa Yang Bersedih - Ghea Indrawari | 83 |
+| 6 | Jiwa Yang Bersedih - Ghea Indrawari | 85 |
 | 7 | 87 - eńau | 80 |
 | 8 | Kukira Kau Rumah - Amigdala | 77 |
 | 9 | Rumah Terakhir - Aldy Amis, eńau | 71 |
@@ -318,6 +318,7 @@
 | 25/09/2026 | 15 | Ghea Indrawari (3) | Ada titik-titik di ujung doa - Sal Priadi (2) |
 | 28/09/2026 | 19 | Ghea Indrawari (4) | Sabda Alam - Once Mekel (2) |
 | 30/09/2026 | 14 | eńau (3) | Rumah Terakhir - Aldy Amis, eńau (1) |
+| 01/10/2026 | 22 | Ghea Indrawari (8) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
 
 ---
 
