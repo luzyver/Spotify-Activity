@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,821 |
+| **Total Plays** | 11,838 |
 | **Unique Tracks** | 1,750 |
 | **Unique Artists** | 821 |
-| **Period** | November 12, 2025 - October 7, 2026 |
+| **Period** | November 12, 2025 - October 12, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,25 +17,25 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,007 |
-| 2 | Ghea Indrawari | 638 |
+| 2 | Ghea Indrawari | 646 |
 | 3 | Bernadya | 593 |
 | 4 | Nadin Amizah | 442 |
-| 5 | Tulus | 389 |
-| 6 | eńau, Ari Lesmana | 281 |
+| 5 | Tulus | 390 |
+| 6 | eńau, Ari Lesmana | 282 |
 | 7 | Hindia | 249 |
 | 8 | Sal Priadi | 217 |
 | 9 | Pamungkas | 180 |
-| 10 | Raim Laode | 173 |
+| 10 | Raim Laode | 174 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 281 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 282 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 127 |
 | 3 | Negara Lucu - eńau | 114 |
 | 4 | Bertaut - Nadin Amizah | 99 |
-| 5 | Jiwa Yang Bersedih - Ghea Indrawari | 96 |
+| 5 | Jiwa Yang Bersedih - Ghea Indrawari | 97 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 95 |
 | 7 | 87 - eńau | 80 |
 | 8 | Kukira Kau Rumah - Amigdala | 77 |
@@ -325,6 +325,7 @@
 | 05/10/2026 | 16 | Ghea Indrawari (8) | Kembali Pulang - Suara Kayu, Feby Putri (2) |
 | 06/10/2026 | 23 | Ghea Indrawari (11) | Kita Lewati Berdua - Overnight (2) |
 | 07/10/2026 | 33 | Ghea Indrawari (17) | Rasa Cinta Ini - Ghea Indrawari (2) |
+| 12/10/2026 | 17 | Ghea Indrawari (8) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
 
 ---
 
