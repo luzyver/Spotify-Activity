@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,921 |
+| **Total Plays** | 11,928 |
 | **Unique Tracks** | 1,751 |
 | **Unique Artists** | 821 |
-| **Period** | November 12, 2025 - October 16, 2026 |
+| **Period** | November 12, 2025 - October 17, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -18,11 +18,11 @@
 |------|------|------|
 | 1 | eńau | 1,007 |
 | 2 | Ghea Indrawari | 676 |
-| 3 | Bernadya | 594 |
+| 3 | Bernadya | 595 |
 | 4 | Nadin Amizah | 444 |
-| 5 | Tulus | 396 |
+| 5 | Tulus | 397 |
 | 6 | eńau, Ari Lesmana | 287 |
-| 7 | Hindia | 251 |
+| 7 | Hindia | 252 |
 | 8 | Sal Priadi | 217 |
 | 9 | Raim Laode | 180 |
 | 10 | Pamungkas | 180 |
@@ -330,6 +330,7 @@
 | 14/10/2026 | 16 | Ghea Indrawari (7) | Dirimu Yang Dulu - Anggis Devaki (1) |
 | 15/10/2026 | 19 | Ghea Indrawari (8) | Manusia Paling Bahagia - Ghea Indrawari (2) |
 | 16/10/2026 | 9 | Ghea Indrawari (3) | Tak Ingin Usai - Keisya Levronka (1) |
+| 17/10/2026 | 7 | Hindia (1) | Rumah Ke Rumah - Hindia (1) |
 
 ---
 
