@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 11,965 |
-| **Unique Tracks** | 1,751 |
-| **Unique Artists** | 821 |
-| **Period** | November 12, 2025 - October 19, 2026 |
+| **Total Plays** | 12,001 |
+| **Unique Tracks** | 1,760 |
+| **Unique Artists** | 829 |
+| **Period** | November 12, 2025 - October 20, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,007 |
-| 2 | Ghea Indrawari | 689 |
+| 2 | Ghea Indrawari | 690 |
 | 3 | Bernadya | 595 |
 | 4 | Nadin Amizah | 446 |
 | 5 | Tulus | 399 |
@@ -332,7 +332,8 @@
 | 16/10/2026 | 9 | Ghea Indrawari (3) | Tak Ingin Usai - Keisya Levronka (1) |
 | 17/10/2026 | 7 | Hindia (1) | Rumah Ke Rumah - Hindia (1) |
 | 18/10/2026 | 11 | Ghea Indrawari (4) | Gala bunga matahari - Sal Priadi (2) |
-| 19/10/2026 | 26 | Ghea Indrawari (9) | Kita Lewati Berdua - Overnight (3) |
+| 19/10/2026 | 27 | Ghea Indrawari (10) | Kita Lewati Berdua - Overnight (3) |
+| 20/10/2026 | 35 | Ravyn Lenae (20) | Love Me Not - Ravyn Lenae (20) |
 
 ---
 
