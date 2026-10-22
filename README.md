@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,001 |
+| **Total Plays** | 12,003 |
 | **Unique Tracks** | 1,760 |
 | **Unique Artists** | 829 |
-| **Period** | November 12, 2025 - October 20, 2026 |
+| **Period** | November 12, 2025 - October 21, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -333,7 +333,8 @@
 | 17/10/2026 | 7 | Hindia (1) | Rumah Ke Rumah - Hindia (1) |
 | 18/10/2026 | 11 | Ghea Indrawari (4) | Gala bunga matahari - Sal Priadi (2) |
 | 19/10/2026 | 27 | Ghea Indrawari (10) | Kita Lewati Berdua - Overnight (3) |
-| 20/10/2026 | 35 | Ravyn Lenae (20) | Love Me Not - Ravyn Lenae (20) |
+| 20/10/2026 | 36 | Ravyn Lenae (21) | Love Me Not - Ravyn Lenae (21) |
+| 21/10/2026 | 1 | Ravyn Lenae (1) | Love Me Not - Ravyn Lenae (1) |
 
 ---
 
