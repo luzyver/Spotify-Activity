@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,030 |
+| **Total Plays** | 12,031 |
 | **Unique Tracks** | 1,760 |
 | **Unique Artists** | 829 |
-| **Period** | November 12, 2025 - October 24, 2026 |
+| **Period** | November 12, 2025 - October 25, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -337,6 +337,7 @@
 | 21/10/2026 | 2 | Ravyn Lenae (2) | Love Me Not - Ravyn Lenae (2) |
 | 23/10/2026 | 12 | Ghea Indrawari (6) | Melangitkanmu - Ghea Indrawari (3) |
 | 24/10/2026 | 14 | Ghea Indrawari (7) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
+| 25/10/2026 | 1 | Feby Putri, Fiersa Besari (1) | Runtuh - Feby Putri, Fiersa Besari (1) |
 
 ---
 
