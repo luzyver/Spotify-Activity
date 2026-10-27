@@ -21,8 +21,8 @@
       <div class="grid grid-cols-24 gap-[2px] sm:gap-[3px]">
         {#each row as count, h}
           <div
-            class="aspect-square rounded-[2px] sm:rounded-[3px]"
-            style="background-color: {count === 0
+            class="pop-in aspect-square rounded-[2px] sm:rounded-[3px]"
+            style="animation-delay: {300 + (h + d) * 18}ms; background-color: {count === 0
               ? 'rgb(255 255 255 / 0.04)'
               : `rgb(var(--accent) / ${0.18 + 0.82 * (count / Math.max(max, 1))})`};"
             title="{DAYS[d]} {pad(h)}.00 · {count} lagu"

@@ -10,6 +10,24 @@
   --color-spotify-dark: #1aa34a;
 }
 
+/* Accent channels registered as numbers so the browser can interpolate them:
+   the album color fades instead of jumping when the track changes */
+@property --accent-r {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 29;
+}
+@property --accent-g {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 185;
+}
+@property --accent-b {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 84;
+}
+
 @layer base {
   :root {
     /* Accent "r g b" — replaced at runtime by the color of the current album art */
@@ -106,9 +124,95 @@
   animation: eq 1s ease-in-out infinite;
 }
 
+/* Root that owns the accent: set --accent-r/g/b inline, --accent follows them */
+.accent-root {
+  --accent: var(--accent-r) var(--accent-g) var(--accent-b);
+  transition:
+    --accent-r 1.2s ease,
+    --accent-g 1.2s ease,
+    --accent-b 1.2s ease;
+}
+
+/* Bento entrance: tiles rise in one after another */
+@keyframes tile-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+.bento > * {
+  animation: tile-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.bento > :nth-child(2) { animation-delay: 60ms; }
+.bento > :nth-child(3) { animation-delay: 120ms; }
+.bento > :nth-child(4) { animation-delay: 180ms; }
+.bento > :nth-child(5) { animation-delay: 240ms; }
+.bento > :nth-child(6) { animation-delay: 300ms; }
+.bento > :nth-child(7) { animation-delay: 360ms; }
+.bento > :nth-child(8) { animation-delay: 420ms; }
+.bento > :nth-child(9) { animation-delay: 480ms; }
+
+/* Bars and heatmap cells grow from zero on first paint (delay set inline) */
+@keyframes grow-x {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes grow-y {
+  from {
+    transform: scaleY(0);
+  }
+}
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+.grow-x {
+  transform-origin: left;
+  animation: grow-x 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.grow-y {
+  transform-origin: bottom;
+  animation: grow-y 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.pop-in {
+  animation: pop-in 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Tab switch (View Transitions API): the screen crossfades, the active pill glides.
+   Only the viewport-sized root is animated: naming the tall <main> made it slide in from the
+   old scroll offset and paint over the sticky header / bottom nav on mobile. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+  animation-timing-function: ease-out;
+}
+::view-transition-group(tab-pill) {
+  animation-duration: 350ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .eq-bar {
+  .eq-bar,
+  .bento > *,
+  .grow-x,
+  .grow-y,
+  .pop-in {
     animation: none;
+  }
+
+  .accent-root {
+    transition: none;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }
 

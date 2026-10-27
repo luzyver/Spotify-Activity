@@ -12,8 +12,11 @@
   import { extractAccent, DEFAULT_ACCENT, type RGB } from '$lib/utils/color';
   import { Music, Search, X, LoaderCircle, RefreshCw, House, Clock, Archive, Flame, ArrowRight } from 'lucide-svelte';
   import { loadAllHistory } from '$lib/utils/historyLoader';
-  import { fade, fly } from 'svelte/transition';
-  import { onMount, onDestroy, untrack } from 'svelte';
+  import NumberFlow from '@number-flow/svelte';
+  import { fly } from 'svelte/transition';
+  import { Tween, prefersReducedMotion } from 'svelte/motion';
+  import { cubicOut } from 'svelte/easing';
+  import { onMount, onDestroy, untrack, tick } from 'svelte';
 
   let { data } = $props();
 
@@ -173,6 +176,13 @@
   );
   let todayDelta = $derived(stats.today - stats.yesterday);
 
+  // Archive download progress, eased so the bar glides between batches
+  const archiveBar = new Tween(0, { duration: 500, easing: cubicOut });
+  $effect(() => {
+    const target = archiveLoaded ? 1 : archiveProgress ? archiveProgress.loaded / Math.max(archiveProgress.total, 1) : 0;
+    archiveBar.set(target, prefersReducedMotion.current ? { duration: 0 } : undefined);
+  });
+
   let buddy = $derived(nowPlaying[0] ?? null);
   let lastPlayed = $derived(allHistory[0] ?? combinedHistory[0] ?? null);
   let multiUser = $derived(new Set(allHistory.map((i) => i.userId)).size > 1);
@@ -253,8 +263,20 @@
   });
 
   function selectTab(id: typeof activeTab) {
-    activeTab = id;
-    window.scrollTo({ top: 0 });
+    if (id === activeTab) return;
+    const apply = () => {
+      activeTab = id;
+      window.scrollTo({ top: 0 });
+    };
+    // View Transitions API: the browser morphs old → new tab; plain swap where unsupported
+    if (!document.startViewTransition || prefersReducedMotion.current) {
+      apply();
+      return;
+    }
+    document.startViewTransition(async () => {
+      apply();
+      await tick();
+    });
   }
 
   const TABS = [
@@ -271,9 +293,11 @@
   <meta property="og:image" content={pageImage} />
 </svelte:head>
 
-<div class="relative min-h-screen pb-[calc(6rem+env(safe-area-inset-bottom))] sm:pb-12" style="--accent: {accent.join(' ')}">
-  <!-- Ambient glow tinted by the current album art -->
-  <div class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[70vh] transition-[background] duration-1000"
+<div class="accent-root relative min-h-screen pb-[calc(6rem+env(safe-area-inset-bottom))] sm:pb-12"
+  style="--accent-r: {accent[0]}; --accent-g: {accent[1]}; --accent-b: {accent[2]}"
+>
+  <!-- Ambient glow tinted by the current album art (fades with the accent via @property) -->
+  <div class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[70vh]"
     style="background: radial-gradient(60% 60% at 30% 0%, rgb(var(--accent) / 0.16), transparent 70%);"
   ></div>
 
@@ -297,7 +321,7 @@
             class="relative rounded-full px-4 py-1.5 text-sm font-medium transition-colors {activeTab === tab.id ? 'text-black' : 'text-zinc-400 hover:text-white'}"
           >
             {#if activeTab === tab.id}
-              <div class="absolute inset-0 rounded-full bg-white" transition:fade={{ duration: 200 }}></div>
+              <div class="absolute inset-0 rounded-full bg-white [view-transition-name:tab-pill]"></div>
             {/if}
             <span class="relative z-10">{tab.label}</span>
           </button>
@@ -324,18 +348,18 @@
 
   <main class="mx-auto max-w-6xl px-4 py-6 sm:px-6">
     {#if activeTab === 'home'}
-      <div in:fade={{ duration: 250 }} class="space-y-10">
-        <!-- Bento grid -->
-        <div class="grid auto-rows-[minmax(9rem,auto)] grid-cols-2 gap-3 sm:auto-rows-[minmax(10.5rem,auto)] md:grid-cols-4 md:gap-4">
+      <div class="space-y-10">
+        <!-- Bento grid (tiles rise in one by one, see .bento in app.css) -->
+        <div class="bento grid auto-rows-[minmax(9rem,auto)] grid-cols-2 gap-3 sm:auto-rows-[minmax(10.5rem,auto)] md:grid-cols-4 md:gap-4">
           <NowPlayingTile {buddy} last={lastPlayed} />
 
-          <StatTile label="Hari ini" value={formatNumber(stats.today)}
+          <StatTile label="Hari ini" value={stats.today}
             hint={stats.yesterday || stats.today
               ? `${todayDelta >= 0 ? '+' : ''}${todayDelta} dari kemarin`
               : 'lagu diputar'}
           />
 
-          <StatTile label="Streak" value={String(stats.streak)} hint={stats.streak === 1 ? 'hari' : 'hari berturut-turut'}>
+          <StatTile label="Streak" value={stats.streak} hint={stats.streak === 1 ? 'hari' : 'hari berturut-turut'}>
             <Flame class="text-accent absolute right-5 top-5 h-5 w-5" />
           </StatTile>
 
@@ -350,13 +374,13 @@
               {/if}
             </div>
             <div class="mt-auto flex items-end justify-between gap-4 pt-4">
-              <span class="stat-number text-5xl sm:text-6xl">{formatNumber(stats.week)}</span>
+              <span class="stat-number text-5xl sm:text-6xl"><NumberFlow value={stats.week} locales="id-ID" /></span>
               <div class="flex h-16 flex-1 items-end justify-end gap-1 sm:max-w-[60%]">
                 {#each stats.daily as day, i (day.time)}
                   <div class="flex flex-1 flex-col items-center gap-1" title="{new Date(day.time).toLocaleDateString('id-ID')} · {day.count} lagu">
                     <div
-                      class="w-full rounded-sm transition-[height] duration-700"
-                      style="height: {Math.max(2, (day.count / weekMax) * 52)}px; background-color: rgb(var(--accent) / {i >= 7 ? 0.9 : 0.25});"
+                      class="grow-y w-full rounded-sm transition-[height] duration-700"
+                      style="animation-delay: {300 + i * 40}ms; height: {Math.max(2, (day.count / weekMax) * 52)}px; background-color: rgb(var(--accent) / {i >= 7 ? 0.9 : 0.25});"
                     ></div>
                     <span class="text-[9px] leading-none text-zinc-600">{dayInitial.format(day.time)}</span>
                   </div>
@@ -384,7 +408,7 @@
                   <p class="truncate text-sm text-zinc-400">{stats.topTrack.artist}</p>
                 </div>
                 <div class="shrink-0 text-right">
-                  <span class="stat-number text-accent text-3xl sm:text-4xl">{stats.topTrack.count}×</span>
+                  <span class="stat-number text-accent text-3xl sm:text-4xl"><NumberFlow value={stats.topTrack.count} suffix="×" /></span>
                   <p class="text-xs text-zinc-500">diputar</p>
                 </div>
               </a>
@@ -397,17 +421,23 @@
 
           <StatTile
             label="Total lagu"
-            value={archiveLoaded ? formatNumber(stats.total) : '…'}
+            value={archiveLoaded ? stats.total : null}
             hint={archiveLoaded
               ? 'sepanjang waktu'
               : archiveProgress
                 ? `memuat ${formatNumber(archiveProgress.loaded)} / ${formatNumber(archiveProgress.total)}`
                 : 'memuat arsip…'}
-          />
+          >
+            {#if !archiveLoaded || archiveBar.current < 1}
+              <div class="absolute inset-x-0 bottom-0 h-0.5 bg-white/5" out:fly={{ y: 4, duration: prefersReducedMotion.current ? 0 : 400 }}>
+                <div class="bg-accent h-full" style="width: {archiveBar.current * 100}%"></div>
+              </div>
+            {/if}
+          </StatTile>
 
           <StatTile
             label="Artis berbeda"
-            value={archiveLoaded ? formatNumber(stats.uniqueArtists) : '…'}
+            value={archiveLoaded ? stats.uniqueArtists : null}
             hint="sudah didengar"
           />
         </div>
@@ -429,7 +459,7 @@
       </div>
     {:else}
       <!-- Today / History tab -->
-      <div in:fade={{ duration: 250 }} class="space-y-4">
+      <div class="space-y-4">
         <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 class="text-3xl font-extrabold tracking-tight">{activeTab === 'history' ? 'Riwayat lengkap' : 'Hari ini'}</h2>

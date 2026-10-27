@@ -29,8 +29,8 @@
             </div>
             <div class="mt-1.5 h-1.5 overflow-hidden rounded-full bg-white/5">
               <div
-                class="h-full rounded-full transition-[width] duration-700"
-                style="width: {(artist.count / max) * 100}%; background-color: rgb(var(--accent) / {i === 0 ? 1 : 0.55});"
+                class="grow-x h-full rounded-full transition-[width] duration-700"
+                style="animation-delay: {250 + i * 90}ms; width: {(artist.count / max) * 100}%; background-color: rgb(var(--accent) / {i === 0 ? 1 : 0.55});"
               ></div>
             </div>
           </div>
