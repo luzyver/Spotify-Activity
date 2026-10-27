@@ -54,7 +54,7 @@ export async function handleClearHistory(env) {
 		await github.updateMultipleGitHubFiles(
 			GITHUB_REPO,
 			filesToUpdate,
-			`🗑️ [${dateTag}] Clear history (daily reset)`,
+			`🗑️ [${dateTag}] Clear history (daily reset) [skip ci]`,
 			GITHUB_TOKEN
 		);
 

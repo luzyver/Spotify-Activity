@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Circular+Std:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 @import "tailwindcss";
 
 @theme {
+  --font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
   /* Spotify Colors */
   --color-spotify-green: #1db954;
   --color-spotify-light: #1ed760;
@@ -11,177 +12,104 @@
 
 @layer base {
   :root {
-    /* Spacing Scale */
-    --space-xs: 0.5rem; /* 8px */
-    --space-sm: 0.75rem; /* 12px */
-    --space-md: 1rem; /* 16px */
-    --space-lg: 1.5rem; /* 24px */
-    --space-xl: 2rem; /* 32px */
-    --space-2xl: 3rem; /* 48px */
+    /* Accent "r g b" — replaced at runtime by the color of the current album art */
+    --accent: 29 185 84;
+    --bg-primary: #09090b;
+  }
 
-    /* Border Radius */
-    --radius-sm: 0.5rem; /* 8px */
-    --radius-md: 0.75rem; /* 12px */
-    --radius-lg: 1rem; /* 16px */
-    --radius-xl: 1.5rem; /* 24px */
-    --radius-2xl: 2rem; /* 32px */
+  body {
+    overflow-x: hidden;
+    background: var(--bg-primary);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    /* viewport-fit=cover: keep content clear of the notch in landscape */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
 
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.2);
-    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-    --shadow-glow: 0 0 20px rgb(29 185 84 / 0.15);
-    --shadow-glow-lg: 0 0 40px rgb(29 185 84 / 0.2);
-
-    /* Colors */
-    --spotify-green: #1db954;
-    --spotify-green-light: #1ed760;
-    --spotify-green-dark: #1aa34a;
-
-    --bg-primary: #050505;
-    --bg-secondary: #121212;
-    --bg-tertiary: #181818;
-    --bg-elevated: #282828;
-    --bg-glass: rgba(18, 18, 18, 0.7);
-
-    --border-subtle: rgba(255, 255, 255, 0.03);
-    --border-default: rgba(255, 255, 255, 0.08);
-    --border-strong: rgba(255, 255, 255, 0.15);
+  a,
+  button {
+    touch-action: manipulation;
   }
 }
 
 @layer components {
-  /* Glass Effect */
+  /* Bento tile */
+  .tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: 1px solid rgb(255 255 255 / 0.06);
+    background-color: rgb(24 24 27 / 0.72);
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+    transition:
+      border-color 300ms,
+      background-color 300ms,
+      transform 300ms;
+  }
+
+  @media (hover: hover) {
+    .tile:hover {
+      border-color: rgb(255 255 255 / 0.1);
+    }
+  }
+
+  .tile-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgb(161 161 170);
+  }
+
+  /* Big, bold stat numbers */
+  .stat-number {
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 0.9;
+    font-variant-numeric: tabular-nums;
+  }
+
   .glass {
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    background-color: rgb(0 0 0 / 0.4);
-    border: 1px solid rgb(255 255 255 / 0.05);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    background-color: rgb(9 9 11 / 0.65);
   }
 
-  .glass-panel {
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    background-color: rgb(0 0 0 / 0.4);
-    border: 1px solid rgb(255 255 255 / 0.05);
-    border-radius: 1rem;
+  .text-accent {
+    color: rgb(var(--accent));
   }
 
-  /* Card Base */
-  .card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.75rem;
-    border: 1px solid rgb(255 255 255 / 0.05);
-    background-color: #121212;
-    transition: all 300ms;
-  }
-
-  .card-hover:hover {
-    background-color: #1a1a1a;
-    border-color: rgb(255 255 255 / 0.1);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
-    transform: translateY(-0.25rem);
-  }
-
-  .card-interactive {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.75rem;
-    border: 1px solid rgb(255 255 255 / 0.05);
-    background-color: #121212;
-    transition: all 300ms;
-    cursor: pointer;
-  }
-
-  .card-interactive:hover {
-    background-color: #1a1a1a;
-    border-color: rgb(255 255 255 / 0.1);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
-    transform: translateY(-0.25rem);
-  }
-
-  /* Button Base */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9999px;
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-    transition: all 200ms;
-  }
-
-  .btn:active {
-    transform: scale(0.95);
-  }
-
-  .btn:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
-  .btn-primary {
-    background-color: #1db954;
-    color: black;
-    box-shadow: 0 10px 15px -3px rgb(29 185 84 / 0.2);
-  }
-
-  .btn-primary:hover {
-    background-color: #1ed760;
-    transform: scale(1.05);
-  }
-
-  .btn-secondary {
-    border: 1px solid rgb(255 255 255 / 0.1);
-    background-color: rgb(255 255 255 / 0.05);
-    color: white;
-  }
-
-  .btn-secondary:hover {
-    background-color: rgb(255 255 255 / 0.1);
-    border-color: rgb(255 255 255 / 0.2);
-  }
-
-  .btn-ghost {
-    background-color: transparent;
-    color: #9ca3af;
-  }
-
-  .btn-ghost:hover {
-    color: white;
-    background-color: rgb(255 255 255 / 0.05);
-  }
-
-  .btn-icon {
-    padding: 0.5rem;
-    border-radius: 9999px;
-    transition: background-color 150ms;
-  }
-
-  .btn-icon:hover {
-    background-color: rgb(255 255 255 / 0.1);
+  .bg-accent {
+    background-color: rgb(var(--accent));
   }
 }
 
-* {
-  font-family:
-    'Inter',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    sans-serif;
+/* Equalizer bars for the live tile */
+@keyframes eq {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
 }
 
-body {
-  overflow-x: hidden;
-  background: var(--bg-primary);
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.eq-bar {
+  transform-origin: bottom;
+  animation: eq 1s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eq-bar {
+    animation: none;
+  }
 }
 
 /* Custom Scrollbar */
@@ -203,28 +131,11 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Utilities */
-.text-balance {
-  text-wrap: balance;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-.text-shadow {
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-/* Mobile optimizations */
-@media (max-width: 640px) {
-  .container-padding {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  /* Hide scrollbar but allow scrolling for horizontal lists */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

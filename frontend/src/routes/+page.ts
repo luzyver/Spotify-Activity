@@ -26,14 +26,11 @@ export const load: PageLoad = async ({ fetch }) => {
     return {
       nowPlaying: (liveData as { friends?: NowPlayingBuddy[] })?.friends ?? [],
       history: historyData.sort((a, b) => b.timestamp - a.timestamp),
-      // Use history data for both - archive will be loaded lazily later
-      allHistory: historyData.sort((a, b) => b.timestamp - a.timestamp),
     };
   } catch {
     return {
       nowPlaying: [],
       history: [],
-      allHistory: [],
     };
   }
 };
