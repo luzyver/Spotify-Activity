@@ -1,9 +1,15 @@
 import { API_ENDPOINTS } from '$lib/config';
 import { json } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 
-export const GET = async () => {
+export const GET: RequestHandler = async ({ request }) => {
+  // Worker requires "Authorization: Bearer <TRIGGER_SECRET>"; pass the caller's header through
+  const authorization = request.headers.get('Authorization');
+
   try {
-    const response = await fetch(API_ENDPOINTS.TRIGGER);
+    const response = await fetch(API_ENDPOINTS.TRIGGER, {
+      headers: authorization ? { Authorization: authorization } : {},
+    });
     const text = await response.text();
 
     if (response.ok) {

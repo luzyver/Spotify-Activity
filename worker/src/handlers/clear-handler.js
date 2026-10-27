@@ -14,8 +14,9 @@ export async function handleClearHistory(env) {
 	console.log('🗑️ Starting history clear...');
 
 	try {
-		const { GITHUB_TOKEN, GITHUB_REPO, SUPABASE_ANON_KEY } = env;
+		const { GITHUB_TOKEN, GITHUB_REPO, SUPABASE_SERVICE_ROLE_KEY } = env;
 		if (!GITHUB_TOKEN || !GITHUB_REPO) throw new Error('Missing GitHub credentials');
+		if (!SUPABASE_SERVICE_ROLE_KEY) throw new Error('Missing SUPABASE_SERVICE_ROLE_KEY');
 
 		const { content: currentHistory = [] } = await github.getGitHubFile(GITHUB_REPO, 'history.json', GITHUB_TOKEN);
 		const itemsCount = currentHistory.length;
@@ -31,18 +32,17 @@ export async function handleClearHistory(env) {
 
 		console.log(`🔒 Clear timestamp: ${new Date(safeClearTimestamp).toISOString()}`);
 
-		// Archive to Supabase if we have items and Supabase key
-		let supabaseResult = { success: false, inserted: 0 };
-		if (itemsCount > 0 && SUPABASE_ANON_KEY) {
+		// Archive to Supabase first; never clear history.json unless the archive succeeded
+		let supabaseResult = { success: true, inserted: 0 };
+		if (itemsCount > 0) {
 			console.log(`📤 Archiving ${itemsCount} items to Supabase...`);
-			supabaseResult = await supabase.insertHistory(currentHistory, SUPABASE_ANON_KEY);
+			supabaseResult = await supabase.insertHistory(currentHistory, SUPABASE_SERVICE_ROLE_KEY);
 
-			if (supabaseResult.success) {
-				console.log(`✅ Supabase: Inserted ${supabaseResult.inserted} records`);
-			} else {
-				console.error(`❌ Supabase insert failed: ${supabaseResult.error}`);
-				// Continue anyway - we'll still clear history
+			if (!supabaseResult.success) {
+				// Abort: history.json stays intact and will be archived on the next clear
+				throw new Error(`Supabase archive failed, history not cleared: ${supabaseResult.error}`);
 			}
+			console.log(`✅ Supabase: Inserted ${supabaseResult.inserted} records`);
 		}
 
 		// Update GitHub: clear history.json and update last-clear.json

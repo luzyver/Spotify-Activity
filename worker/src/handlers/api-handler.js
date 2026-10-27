@@ -17,7 +17,7 @@ const jsonResponse = (data, status = 200, headers = {}) =>
 
 const HISTORY_ARCHIVE_DEFAULT_LIMIT = 250;
 const HISTORY_ARCHIVE_MAX_LIMIT = 1000;
-const HISTORY_ARCHIVE_MAX_OFFSET = 10000;
+const HISTORY_ARCHIVE_MAX_OFFSET = 1000000;
 
 const parseBoundedInt = (value, fallback, min, max) => {
 	const parsed = Number.parseInt(value, 10);
@@ -115,7 +115,11 @@ export async function handleHistoryArchiveAPI(env, corsHeaders, url) {
 			1,
 			HISTORY_ARCHIVE_MAX_LIMIT
 		);
-		const offset = parseBoundedInt(url.searchParams.get('offset'), 0, 0, HISTORY_ARCHIVE_MAX_OFFSET);
+		// Reject out-of-range offsets instead of clamping: a clamped offset returns the same page again
+		const offset = Number.parseInt(url.searchParams.get('offset') ?? '0', 10);
+		if (Number.isNaN(offset) || offset < 0 || offset > HISTORY_ARCHIVE_MAX_OFFSET) {
+			return jsonResponse({ data: [], count: 0, error: 'Invalid offset' }, 400, corsHeaders);
+		}
 		const search = url.searchParams.get('search') || undefined;
 
 		const { data, count } = await supabase.fetchHistory(env.SUPABASE_ANON_KEY, { limit, offset, search });

@@ -14,12 +14,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://worker-spotify.luzyver.dev',
+        target: 'https://worker-spotify.luzyver.id',
         changeOrigin: true,
         secure: true,
       },
       '/trigger': {
-        target: 'https://worker-spotify.luzyver.dev',
+        target: 'https://worker-spotify.luzyver.id',
         changeOrigin: true,
         secure: true,
       }

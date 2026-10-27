@@ -54,7 +54,8 @@ export async function loadAllHistory(
   offset = PAGE_SIZE;
   onProgress?.(allItems.length, totalCount);
 
-  if (first.data.length < PAGE_SIZE) hasMore = false;
+  // Stop on a short page or once we have everything the server reported
+  if (first.data.length < PAGE_SIZE || allItems.length >= totalCount) hasMore = false;
 
   while (hasMore) {
     const { data } = await loadHistoryFromSupabase({ limit: PAGE_SIZE, offset });
@@ -66,7 +67,7 @@ export async function loadAllHistory(
       offset += PAGE_SIZE;
       onProgress?.(allItems.length, totalCount);
 
-      if (data.length < PAGE_SIZE) {
+      if (data.length < PAGE_SIZE || allItems.length >= totalCount) {
         hasMore = false;
       }
     }

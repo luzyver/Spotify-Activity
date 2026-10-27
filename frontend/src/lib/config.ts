@@ -6,7 +6,7 @@ export const TRACKED_USERS: Record<string, { name: string }> = {
 
 export const ITEMS_PER_PAGE = 12;
 
-export const WORKER_URL = 'https://worker-spotify.luzyver.dev';
+export const WORKER_URL = 'https://worker-spotify.luzyver.id';
 
 // Use relative path in dev (Vite proxy) for client-side code, full URL in prod
 export const WORKER_BASE = import.meta.env.DEV ? '' : WORKER_URL;

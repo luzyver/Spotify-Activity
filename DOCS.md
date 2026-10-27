@@ -76,6 +76,9 @@ npx wrangler secret put SPOTIFY_CLIENT_SECRET
 npx wrangler secret put SPOTIFY_REFRESH_TOKENS
 npx wrangler secret put GITHUB_TOKEN
 npx wrangler secret put GITHUB_REPO
+npx wrangler secret put SUPABASE_ANON_KEY
+npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
+npx wrangler secret put TRIGGER_SECRET
 
 # Deploy
 npm run deploy
@@ -95,7 +98,8 @@ npm run build
 |----------|--------|-------------|
 | `/api/live` | GET | Currently playing tracks |
 | `/api/history` | GET | Today's listening history |
-| `/trigger` | GET | Manually trigger sync |
+| `/api/history/archive` | GET | Archived history from Supabase (`limit`, `offset`, `search`) |
+| `/trigger` | GET | Manually trigger sync (requires `Authorization: Bearer <TRIGGER_SECRET>`) |
 | `/` | GET | Health check |
 
 ## ⏰ Cron Jobs
@@ -138,6 +142,9 @@ npm run deploy   # Deploy to Cloudflare
 | `SPOTIFY_REFRESH_TOKENS` | JSON object with user tokens |
 | `GITHUB_TOKEN` | GitHub PAT with repo access |
 | `GITHUB_REPO` | Repository (owner/repo) |
+| `SUPABASE_ANON_KEY` | Supabase anon key (read-only access to the archive) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service_role key (used by the daily clear to archive history) |
+| `TRIGGER_SECRET` | Random secret required to call `/trigger` |
 
 ### Token Format
 ```json

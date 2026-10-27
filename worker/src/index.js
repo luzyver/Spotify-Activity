@@ -2,7 +2,7 @@ import { handleScheduled } from './handlers/sync-handler.js';
 import { handleLiveAPI, handleHistoryAPI, handleHistoryArchiveAPI } from './handlers/api-handler.js';
 import { handleClearHistory } from './handlers/clear-handler.js';
 
-const ALLOWED_ORIGINS = ['https://spotify.luzyver.dev'];
+const ALLOWED_ORIGINS = ['https://spotify.luzyver.id'];
 
 const getCorsHeaders = (origin) => ({
 	'Access-Control-Allow-Origin': ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0],
@@ -15,6 +15,16 @@ const jsonResponse = (data, status = 200, headers = {}) =>
 		status,
 		headers: { 'Content-Type': 'application/json', ...headers },
 	});
+
+const encoder = new TextEncoder();
+
+// Constant-time check of "Authorization: Bearer <TRIGGER_SECRET>"
+const isAuthorized = (request, secret) => {
+	if (!secret) return false;
+	const given = encoder.encode(request.headers.get('Authorization') || '');
+	const expected = encoder.encode(`Bearer ${secret}`);
+	return given.byteLength === expected.byteLength && crypto.subtle.timingSafeEqual(given, expected);
+};
 
 export default {
 	async scheduled(event, env, ctx) {
@@ -40,6 +50,12 @@ export default {
 					return jsonResponse({ status: 'ok', service: 'Rezz Spotify Worker' });
 
 				case '/trigger': {
+					if (!isAuthorized(request, env.TRIGGER_SECRET)) {
+						return new Response('Unauthorized', {
+							status: 401,
+							headers: { 'Content-Type': 'text/plain', ...cors },
+						});
+					}
 					const res = await handleScheduled(env);
 					return new Response(await res.text(), {
 						status: res.status,
