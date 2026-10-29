@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,060 |
-| **Unique Tracks** | 1,762 |
-| **Unique Artists** | 830 |
-| **Period** | November 12, 2025 - October 27, 2026 |
+| **Total Plays** | 12,135 |
+| **Unique Tracks** | 1,779 |
+| **Unique Artists** | 835 |
+| **Period** | November 12, 2025 - October 28, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 1,007 |
+| 1 | eńau | 1,015 |
 | 2 | Ghea Indrawari | 711 |
 | 3 | Bernadya | 595 |
-| 4 | Nadin Amizah | 451 |
-| 5 | Tulus | 400 |
-| 6 | eńau, Ari Lesmana | 294 |
-| 7 | Hindia | 252 |
-| 8 | Sal Priadi | 222 |
-| 9 | Raim Laode | 187 |
-| 10 | Pamungkas | 180 |
+| 4 | Nadin Amizah | 454 |
+| 5 | Tulus | 401 |
+| 6 | eńau, Ari Lesmana | 295 |
+| 7 | Hindia | 259 |
+| 8 | Sal Priadi | 225 |
+| 9 | Raim Laode | 192 |
+| 10 | Pamungkas | 181 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 294 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 127 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 295 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 128 |
 | 3 | Negara Lucu - eńau | 114 |
 | 4 | Jiwa Yang Bersedih - Ghea Indrawari | 110 |
 | 5 | Bertaut - Nadin Amizah | 102 |
-| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 95 |
-| 7 | 87 - eńau | 80 |
+| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 96 |
+| 7 | 87 - eńau | 81 |
 | 8 | Kukira Kau Rumah - Amigdala | 77 |
 | 9 | Teramini - Ghea Indrawari | 73 |
-| 10 | Rumah Terakhir - Aldy Amis, eńau | 71 |
+| 10 | Monolog - Pamungkas | 71 |
 
 ## 📅 Daily Breakdown
 
@@ -339,7 +339,8 @@
 | 24/10/2026 | 14 | Ghea Indrawari (7) | Jiwa Yang Bersedih - Ghea Indrawari (2) |
 | 25/10/2026 | 1 | Feby Putri, Fiersa Besari (1) | Runtuh - Feby Putri, Fiersa Besari (1) |
 | 26/10/2026 | 14 | Ghea Indrawari (6) | Teramini - Ghea Indrawari (2) |
-| 27/10/2026 | 15 | Piche Kota (4) | Bahagia Lagi - Piche Kota (3) |
+| 27/10/2026 | 16 | Piche Kota (4) | Bahagia Lagi - Piche Kota (3) |
+| 28/10/2026 | 74 | eńau (8) | Sekuat Hatimu - Last Child (2) |
 
 ---
 
