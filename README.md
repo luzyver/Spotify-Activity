@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,162 |
+| **Total Plays** | 12,245 |
 | **Unique Tracks** | 1,779 |
 | **Unique Artists** | 835 |
-| **Period** | November 12, 2025 - October 30, 2026 |
+| **Period** | November 12, 2025 - October 31, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 1,015 |
-| 2 | Ghea Indrawari | 717 |
-| 3 | Bernadya | 595 |
-| 4 | Nadin Amizah | 456 |
-| 5 | Tulus | 401 |
-| 6 | eńau, Ari Lesmana | 297 |
-| 7 | Hindia | 259 |
-| 8 | Sal Priadi | 227 |
-| 9 | Raim Laode | 194 |
-| 10 | Pamungkas | 182 |
+| 1 | eńau | 1,016 |
+| 2 | Ghea Indrawari | 730 |
+| 3 | Bernadya | 598 |
+| 4 | Nadin Amizah | 460 |
+| 5 | Tulus | 404 |
+| 6 | eńau, Ari Lesmana | 298 |
+| 7 | Hindia | 260 |
+| 8 | Sal Priadi | 231 |
+| 9 | Raim Laode | 198 |
+| 10 | Pamungkas | 184 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 297 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 128 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 298 |
+| 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
 | 3 | Negara Lucu - eńau | 114 |
-| 4 | Jiwa Yang Bersedih - Ghea Indrawari | 112 |
-| 5 | Bertaut - Nadin Amizah | 103 |
-| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 97 |
+| 4 | Jiwa Yang Bersedih - Ghea Indrawari | 113 |
+| 5 | Bertaut - Nadin Amizah | 104 |
+| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 98 |
 | 7 | 87 - eńau | 81 |
 | 8 | Kukira Kau Rumah - Amigdala | 77 |
-| 9 | Teramini - Ghea Indrawari | 73 |
-| 10 | Rumah Terakhir - Aldy Amis, eńau | 72 |
+| 9 | Teramini - Ghea Indrawari | 74 |
+| 10 | Monolog - Pamungkas | 72 |
 
 ## 📅 Daily Breakdown
 
@@ -343,6 +343,7 @@
 | 28/10/2026 | 74 | eńau (8) | Sekuat Hatimu - Last Child (2) |
 | 29/10/2026 | 14 | Ghea Indrawari (2) | iqro' - Raim Laode (1) |
 | 30/10/2026 | 13 | Ghea Indrawari (4) | bergema sampai selamanya - Nadhif Basalamah (2) |
+| 31/10/2026 | 83 | Ghea Indrawari (13) | Mangu - Fourtwnty, Charita Utami (2) |
 
 ---
 
