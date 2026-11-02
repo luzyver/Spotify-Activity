@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "timestamp": 1793584580375,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Setengah Mati - From \"Bila Esok Ibu Tiada\"",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:7tCxRQhDcXehM90nj4Nsit",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daefd2a8d2c9c32cd4f38af"
+  },
+  {
+    "timestamp": 1793584339873,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "uri": "spotify:track:4xoY4lZNoTjEuHsSmhgF1G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273172768978c7f929803ad7e8b"
+  },
+  {
+    "timestamp": 1793584096385,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Tak Segampang Itu",
+    "artist": "Anggi Marito",
+    "uri": "spotify:track:0Y0xIGcTjb5EFHHYrJIGIk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a1d74b65a15714b66bcc6cb5"
+  },
+  {
+    "timestamp": 1793583864775,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Jiwa Yang Bersedih",
+    "artist": "Ghea Indrawari",
+    "uri": "spotify:track:0sV01d2keik5bwCuW9EQpk",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739798fbe1bd1cdf2915bd0394"
+  }
+]
