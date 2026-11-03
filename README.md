@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,274 |
+| **Total Plays** | 12,282 |
 | **Unique Tracks** | 1,780 |
 | **Unique Artists** | 835 |
-| **Period** | November 12, 2025 - November 1, 2026 |
+| **Period** | November 12, 2025 - November 2, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,23 +17,23 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,016 |
-| 2 | Ghea Indrawari | 741 |
+| 2 | Ghea Indrawari | 745 |
 | 3 | Bernadya | 599 |
 | 4 | Nadin Amizah | 461 |
 | 5 | Tulus | 405 |
-| 6 | eńau, Ari Lesmana | 300 |
+| 6 | eńau, Ari Lesmana | 301 |
 | 7 | Hindia | 260 |
 | 8 | Sal Priadi | 231 |
-| 9 | Raim Laode | 200 |
+| 9 | Raim Laode | 201 |
 | 10 | Pamungkas | 184 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 300 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 301 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 115 |
+| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 116 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 104 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 98 |
@@ -345,6 +345,7 @@
 | 30/10/2026 | 13 | Ghea Indrawari (4) | bergema sampai selamanya - Nadhif Basalamah (2) |
 | 31/10/2026 | 83 | Ghea Indrawari (13) | Mangu - Fourtwnty, Charita Utami (2) |
 | 01/11/2026 | 29 | Ghea Indrawari (11) | Dunia Yang Nanti - Raim Laode (2) |
+| 02/11/2026 | 8 | Ghea Indrawari (4) | Melangitkanmu - Ghea Indrawari (1) |
 
 ---
 
