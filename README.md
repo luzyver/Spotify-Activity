@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,300 |
+| **Total Plays** | 12,309 |
 | **Unique Tracks** | 1,780 |
 | **Unique Artists** | 835 |
-| **Period** | November 12, 2025 - November 3, 2026 |
+| **Period** | November 12, 2025 - November 5, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,016 |
-| 2 | Ghea Indrawari | 752 |
+| 2 | Ghea Indrawari | 757 |
 | 3 | Bernadya | 599 |
 | 4 | Nadin Amizah | 462 |
 | 5 | Tulus | 406 |
@@ -33,13 +33,13 @@
 |------|------|------|
 | 1 | Sesi Potret - eńau, Ari Lesmana | 302 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 117 |
+| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 118 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 105 |
-| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 98 |
+| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 99 |
 | 7 | 87 - eńau | 81 |
-| 8 | Kukira Kau Rumah - Amigdala | 77 |
-| 9 | Teramini - Ghea Indrawari | 76 |
+| 8 | Teramini - Ghea Indrawari | 77 |
+| 9 | Kukira Kau Rumah - Amigdala | 77 |
 | 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 74 |
 
 ## 📅 Daily Breakdown
@@ -347,6 +347,7 @@
 | 01/11/2026 | 29 | Ghea Indrawari (11) | Dunia Yang Nanti - Raim Laode (2) |
 | 02/11/2026 | 8 | Ghea Indrawari (4) | Melangitkanmu - Ghea Indrawari (1) |
 | 03/11/2026 | 18 | Ghea Indrawari (7) | Sisa Rasa - Mahalini (2) |
+| 05/11/2026 | 9 | Ghea Indrawari (5) | Rasa Cinta Ini - Ghea Indrawari (1) |
 
 ---
 
