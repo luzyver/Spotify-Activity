@@ -24,31 +24,34 @@
 <div class="space-y-6">
   {#each groups as group (group.key)}
     <section in:fly={{ y: -12, duration: 350 * motion }}>
-      <h3 class="glass sticky top-[57px] z-10 -mx-2 mb-1 flex items-baseline gap-2 rounded-xl px-2 py-2 text-sm font-semibold">
-        {group.label}
-        <span class="font-normal text-zinc-500">· {group.items.length} lagu</span>
+      <!-- Day header: a HUD readout pinned under the visor -->
+      <h3 class="glass sticky top-[var(--sticky-top,var(--header-h))] z-10 -mx-2 mb-1 flex items-center gap-3 px-2 py-2">
+        <span class="hud-text text-sm text-fg">{group.label}</span>
+        <span class="font-mono text-[11px] text-hud-text">{group.items.length} lagu</span>
+        <span class="h-px flex-1 bg-gradient-to-r from-hud/40 to-transparent" aria-hidden="true"></span>
       </h3>
-      <ul>
+      <!-- Wide screens read the log in columns, left to right then down -->
+      <ul class="grid gap-x-4 lg:grid-cols-2 2xl:grid-cols-3">
         {#each group.items as item (keyOf(item))}
           <li animate:flip={{ duration: 400 * motion }} in:fly={{ y: -16, duration: 400 * motion }}>
             <a
               href={spotifyUrl(item.uri)}
               target="_blank"
               rel="noopener noreferrer"
-              class="group flex items-center gap-3 rounded-xl px-2 py-2 transition-colors hover:bg-white/[0.04] active:bg-white/[0.06]"
+              class="plate group flex items-center gap-3 border border-transparent px-2 py-2 [--edge:transparent] transition-colors hover:border-hud/30 hover:bg-hud/[0.06] hover:[--edge:var(--color-hud)] active:bg-hud/10"
             >
-              <span class="w-10 shrink-0 font-mono text-[11px] sm:w-11 sm:text-xs tabular-nums text-zinc-500">{formatTime(item.timestamp)}</span>
+              <span class="w-10 shrink-0 font-mono text-[11px] tabular-nums text-dim group-hover:text-hud-text sm:w-11 sm:text-xs">{formatTime(item.timestamp)}</span>
               {#if item.imageUrl}
-                <img src={item.imageUrl} alt="" loading="lazy" class="h-12 w-12 shrink-0 rounded-lg object-cover ring-1 ring-white/5" />
+                <img src={item.imageUrl} alt="" loading="lazy" class="h-12 w-12 shrink-0 object-cover ring-1 ring-line-strong" />
               {:else}
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-zinc-800">
-                  <Music class="h-4 w-4 text-zinc-500" />
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center bg-surface-2 ring-1 ring-line-strong">
+                  <Music class="h-4 w-4 text-dim" />
                 </div>
               {/if}
               <div class="min-w-0 flex-1">
-                <p class="truncate font-medium group-hover:underline">{item.track}</p>
-                <p class="truncate text-sm text-zinc-400">
-                  {item.artist}{#if showUser}<span class="text-zinc-600"> · {item.user}</span>{/if}
+                <p class="truncate font-medium text-fg">{item.track}</p>
+                <p class="truncate text-sm text-muted">
+                  {item.artist}{#if showUser}<span class="text-dim"> · {item.user}</span>{/if}
                 </p>
               </div>
             </a>

@@ -19,28 +19,29 @@
 </script>
 
 <div class="flex min-h-screen items-center justify-center px-4 py-16">
-  <div class="w-full max-w-sm text-center">
-    <h1 class="mb-2 text-2xl font-bold sm:text-3xl">{title}</h1>
+  <div class="tile w-full max-w-md p-6 text-center sm:p-8">
+    <p class="hud-text mb-3 text-xs text-hot-text">{is404 ? 'Target not found' : 'System fault'} // {status ?? 'ERR'}</p>
+    <h1 class="mb-3 font-display text-xl font-bold uppercase tracking-wide sm:text-2xl">{title}</h1>
 
-    <p class="mb-3 text-sm text-gray-400">{description}</p>
+    <p class="mb-3 text-sm text-muted">{description}</p>
 
-    <p class="mb-4 text-xs text-gray-500">
+    <p class="mb-4 text-xs text-dim">
       Kamu bisa kembali ke halaman utama atau mencoba memuat ulang halaman ini.
     </p>
 
     {#if status !== 404 && error?.message}
-      <div class="mt-2 rounded-md bg-black/40 px-3 py-2 text-left text-[11px] text-gray-400">
-        <p class="mb-1 text-xs font-semibold">Detail teknis (untuk debugging):</p>
-        <pre class="whitespace-pre-wrap break-all text-[11px]">{error.message}</pre>
+      <div class="plate mt-2 border border-line bg-bg/60 px-3 py-2 text-left">
+        <p class="hud-text mb-1 text-[11px] text-muted">Detail teknis (untuk debugging)</p>
+        <pre class="whitespace-pre-wrap break-all font-mono text-[11px] text-muted">{error.message}</pre>
       </div>
     {/if}
 
-    <div class="mt-4 flex items-center justify-center gap-3 text-sm">
+    <div class="mt-6 flex items-center justify-center gap-4 text-sm">
       <Button onclick={() => goto('/')}>Ke halaman utama</Button>
 
       <button
         type="button"
-        class="text-xs text-gray-400 underline-offset-4 transition-colors hover:text-white hover:underline"
+        class="hud-text text-xs text-muted transition-colors hover:text-hud-text"
         onclick={() => location.reload()}
       >
         Coba lagi

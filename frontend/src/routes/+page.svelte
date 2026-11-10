@@ -9,11 +9,12 @@
   import { API_ENDPOINTS } from '$lib/config';
   import { spotifyUrl } from '$lib/utils';
   import { computeStats, formatNumber } from '$lib/utils/stats';
-  import { extractAccent, DEFAULT_ACCENT, type RGB } from '$lib/utils/color';
+  import BrandMark from '$lib/components/BrandMark.svelte';
+  import { decode } from '$lib/actions/decode';
   import { Music, Search, X, LoaderCircle, RefreshCw, House, Clock, Archive, Flame, ArrowRight } from 'lucide-svelte';
   import { loadAllHistory } from '$lib/utils/historyLoader';
   import NumberFlow from '@number-flow/svelte';
-  import { fly } from 'svelte/transition';
+  import { fly, slide } from 'svelte/transition';
   import { Tween, prefersReducedMotion } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
   import { onMount, onDestroy, untrack, tick } from 'svelte';
@@ -61,13 +62,19 @@
   let now = $state(Date.now());
 
   // Toast state
-  let toast = $state<{ message: string; type: 'info' | 'success'; visible: boolean }>({ message: '', type: 'info', visible: false });
+  let toast = $state<{ id: number; message: string; type: 'info' | 'success'; visible: boolean }>({ id: 0, message: '', type: 'info', visible: false });
+  const TOAST_DURATION = 4000;
+  // The visor grows while a transmission is open; sticky day headers follow its real height
+  let headerHeight = $state(0);
   let toastTimeout: ReturnType<typeof setTimeout> | null = null;
 
   function showToast(message: string, type: 'info' | 'success' = 'info') {
     if (toastTimeout) clearTimeout(toastTimeout);
-    toast = { message, type, visible: true };
-    toastTimeout = setTimeout(() => { toast.visible = false; }, 4000);
+    // Without this, scroll anchoring holds a scrolled page still while the sticky visor grows, so the strip
+    // would cover the row under it. With anchoring off the page moves down with the visor instead.
+    document.documentElement.style.overflowAnchor = 'none';
+    toast = { id: toast.id + 1, message, type, visible: true };
+    toastTimeout = setTimeout(() => { toast.visible = false; }, TOAST_DURATION);
   }
 
   function mergeHistory(base: HistoryItem[], extra: HistoryItem[]): HistoryItem[] {
@@ -187,23 +194,6 @@
   let lastPlayed = $derived(allHistory[0] ?? combinedHistory[0] ?? null);
   let multiUser = $derived(new Set(allHistory.map((i) => i.userId)).size > 1);
 
-  // Accent color follows the album art currently on screen
-  let accentSource = $derived(buddy?.track.imageUrl ?? lastPlayed?.imageUrl ?? null);
-  let accent = $state<RGB>(DEFAULT_ACCENT);
-
-  $effect(() => {
-    const src = accentSource;
-    if (!src) {
-      accent = DEFAULT_ACCENT;
-      return;
-    }
-    let cancelled = false;
-    extractAccent(src).then((rgb) => {
-      if (!cancelled) accent = rgb;
-    });
-    return () => { cancelled = true; };
-  });
-
   // Meta tags
   let pageTitle = $derived(
     buddy ? `Listening to ${buddy.track.name} • ${buddy.track.artist?.name || 'Unknown'}` : "Rezz's Activity"
@@ -260,6 +250,9 @@
   onDestroy(() => {
     stopRefresh();
     if (toastTimeout) clearTimeout(toastTimeout);
+    // An open transmission never plays its outro when the page is torn down, so give anchoring back here
+    // (onDestroy also runs during SSR, where there is no document)
+    if (typeof document !== 'undefined') document.documentElement.style.overflowAnchor = '';
   });
 
   function selectTab(id: typeof activeTab) {
@@ -279,6 +272,8 @@
     });
   }
 
+  let tabTitle = $derived(activeTab === 'history' ? 'Riwayat lengkap' : 'Hari ini');
+
   const TABS = [
     { id: 'home', label: 'Beranda', icon: House },
     { id: 'recent', label: 'Hari ini', icon: Clock },
@@ -293,82 +288,105 @@
   <meta property="og:image" content={pageImage} />
 </svelte:head>
 
-<div class="accent-root relative min-h-screen pb-[calc(6rem+env(safe-area-inset-bottom))] sm:pb-12"
-  style="--accent-r: {accent[0]}; --accent-g: {accent[1]}; --accent-b: {accent[2]}"
->
-  <!-- Ambient glow tinted by the current album art (fades with the accent via @property) -->
-  <div class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[70vh]"
-    style="background: radial-gradient(60% 60% at 30% 0%, rgb(var(--accent) / 0.16), transparent 70%);"
-  ></div>
-
-  <!-- Header -->
-  <header class="glass sticky top-0 z-40 border-b border-white/5">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+<div class="relative min-h-screen pb-[calc(6rem+env(safe-area-inset-bottom))] sm:pb-12" style:--sticky-top={headerHeight ? `${headerHeight}px` : null}>
+  <!-- Header as a helmet visor: red-and-gold paint line on top, cyan HUD line below -->
+  <header class="visor glass" bind:clientHeight={headerHeight}>
+    <div class="flex h-[var(--header-h)] items-center justify-between px-4 sm:px-6 lg:px-10">
       <div class="flex items-center gap-3">
-        <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[#1db954] text-black">
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-          </svg>
+        <BrandMark class="h-8 w-8 shrink-0" />
+        <div class="leading-none">
+          <span class="block font-display text-sm font-bold uppercase tracking-[0.12em]" aria-label="Spotify" use:decode={'Spotify'}>Spotify</span>
+          <span class="mt-1 block font-mono text-[10px] text-hud-text">// activity log</span>
         </div>
-        <span class="font-semibold tracking-tight">Spotify Activity</span>
       </div>
 
       <!-- Desktop Tabs -->
-      <nav class="hidden gap-1 rounded-full bg-white/5 p-1 sm:flex">
+      <nav class="hidden gap-1 sm:flex">
         {#each TABS as tab}
           <button
             onclick={() => selectTab(tab.id)}
-            class="relative rounded-full px-4 py-1.5 text-sm font-medium transition-colors {activeTab === tab.id ? 'text-black' : 'text-zinc-400 hover:text-white'}"
+            aria-current={activeTab === tab.id ? 'page' : undefined}
+            class="hud-text relative px-4 py-1.5 text-sm transition-colors {activeTab === tab.id ? 'text-hud-text' : 'text-muted hover:text-fg'}"
           >
             {#if activeTab === tab.id}
-              <div class="absolute inset-0 rounded-full bg-white [view-transition-name:tab-pill]"></div>
+              <div class="nav-pill plate absolute inset-0 [--cut:5px] [--edge:var(--color-hud)] [view-transition-name:tab-pill]"></div>
             {/if}
             <span class="relative z-10">{tab.label}</span>
           </button>
         {/each}
       </nav>
 
-      <div class="flex items-center gap-1">
+      <div class="flex items-center gap-2">
         <button
           onclick={refreshData}
           disabled={isRefreshing}
-          class="rounded-lg p-2.5 text-zinc-500 transition-colors sm:p-2 hover:bg-white/10 hover:text-white disabled:opacity-50"
+          class="plate icon-btn p-2.5 disabled:opacity-50 sm:p-2"
           title="Muat ulang"
         >
           <RefreshCw class="h-4 w-4 {isRefreshing ? 'animate-spin' : ''}" />
         </button>
-        <a href="https://github.com/luzyver/Rezz-Spotify" target="_blank" rel="noopener noreferrer" class="rounded-lg p-2.5 text-zinc-500 hover:bg-white/10 sm:p-2 hover:text-white" title="GitHub">
+        <a href="https://github.com/luzyver/Rezz-Spotify" target="_blank" rel="noopener noreferrer" class="plate icon-btn p-2.5 sm:p-2" title="GitHub">
           <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
           </svg>
         </a>
       </div>
     </div>
+    <!-- Transmission: notifications open as a strip under the visor. It is part of the header's flow,
+         so it pushes the page down instead of covering the tabs or any content. -->
+    {#if toast.visible}
+      <div
+        class="transmission"
+        role="status"
+        transition:slide={{ duration: prefersReducedMotion.current ? 0 : 320 }}
+        onoutroend={() => (document.documentElement.style.overflowAnchor = '')}
+      >
+        {#key toast.id}
+          <div class="relative flex items-center gap-3 px-4 py-2 sm:px-6 lg:px-10">
+            <span class="led {toast.type === 'success' ? 'led-live' : ''}" aria-hidden="true"></span>
+            <span class="hud-text shrink-0 text-[11px] text-hud-text" aria-hidden="true">Incoming <span class="text-dim">//</span></span>
+            <!-- Screen readers get the plain text; the visible copy decodes out of glyphs -->
+            <span class="sr-only">{toast.message}</span>
+            <span class="line-clamp-2 min-w-0 flex-1 font-mono text-xs text-fg" aria-hidden="true" use:decode={toast.message}>{toast.message}</span>
+            <button onclick={() => (toast.visible = false)} class="shrink-0 p-1 text-dim hover:text-hud-text" title="Tutup">
+              <X class="h-4 w-4" />
+            </button>
+            <span class="transmission-sweep" aria-hidden="true"></span>
+            <span class="transmission-timer" style="animation-duration: {TOAST_DURATION}ms" aria-hidden="true"></span>
+          </div>
+        {/key}
+      </div>
+    {/if}
+    <!-- Uplink: charges along the visor until the next sync, restarts after every refresh -->
+    {#key now}
+      <span class="uplink" style="animation-duration: {REFRESH_INTERVAL}ms" aria-hidden="true"></span>
+    {/key}
   </header>
 
-  <main class="mx-auto max-w-6xl px-4 py-6 sm:px-6">
+  <main class="px-4 py-6 sm:px-6 lg:px-10">
     {#if activeTab === 'home'}
       <div class="space-y-10">
-        <!-- Bento grid (tiles rise in one by one, see .bento in app.css) -->
-        <div class="bento grid auto-rows-[minmax(9rem,auto)] grid-cols-2 gap-3 sm:auto-rows-[minmax(10.5rem,auto)] md:grid-cols-4 md:gap-4">
+        <!-- Bento grid (tiles rise in one by one, see .bento in app.css).
+             Spans add up to whole rows at 2, 4 and 6 columns; dense flow packs them without holes. -->
+        <div class="bento grid auto-rows-[minmax(9rem,auto)] grid-flow-dense grid-cols-2 gap-3 sm:auto-rows-[minmax(10.5rem,auto)] md:grid-cols-4 md:gap-4 xl:grid-cols-6">
           <NowPlayingTile {buddy} last={lastPlayed} />
 
-          <StatTile label="Hari ini" value={stats.today}
+          <StatTile index="02" label="Hari ini" value={stats.today}
             hint={stats.yesterday || stats.today
               ? `${todayDelta >= 0 ? '+' : ''}${todayDelta} dari kemarin`
               : 'lagu diputar'}
           />
 
-          <StatTile label="Streak" value={stats.streak} hint={stats.streak === 1 ? 'hari' : 'hari berturut-turut'}>
-            <Flame class="text-accent absolute right-5 top-5 h-5 w-5" />
+          <StatTile index="03" label="Streak" value={stats.streak} hint={stats.streak === 1 ? 'hari' : 'hari berturut-turut'}>
+            {#snippet icon()}<Flame class="flame h-6 w-6 text-gold sm:h-7 sm:w-7" />{/snippet}
           </StatTile>
 
           <!-- Last 14 days, current week highlighted -->
           <div class="tile col-span-2 flex flex-col p-4 sm:p-5">
-            <div class="flex items-baseline justify-between gap-2">
-              <span class="tile-label">7 hari terakhir</span>
+            <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1.5">
+              <span class="tile-label whitespace-nowrap"><span class="tag-index">04 //</span>7 hari terakhir</span>
               {#if weekDelta !== null}
-                <span class="text-xs font-medium {weekDelta >= 0 ? 'text-accent' : 'text-zinc-400'}">
+                <span class="whitespace-nowrap font-mono text-[11px] {weekDelta >= 0 ? 'text-accent' : 'text-hot-text'}">
                   {weekDelta >= 0 ? '▲' : '▼'} {Math.abs(weekDelta)}% vs minggu lalu
                 </span>
               {/if}
@@ -379,10 +397,10 @@
                 {#each stats.daily as day, i (day.time)}
                   <div class="flex flex-1 flex-col items-center gap-1" title="{new Date(day.time).toLocaleDateString('id-ID')} · {day.count} lagu">
                     <div
-                      class="grow-y w-full rounded-sm transition-[height] duration-700"
-                      style="animation-delay: {300 + i * 40}ms; height: {Math.max(2, (day.count / weekMax) * 52)}px; background-color: rgb(var(--accent) / {i >= 7 ? 0.9 : 0.25});"
+                      class="grow-y segmented-y w-full transition-[height] duration-700"
+                      style="animation-delay: {300 + i * 40}ms; height: {Math.max(2, (day.count / weekMax) * 52)}px; background-color: rgb(var(--accent) / {i >= 7 ? 0.9 : 0.28});"
                     ></div>
-                    <span class="text-[9px] leading-none text-zinc-600">{dayInitial.format(day.time)}</span>
+                    <span class="font-mono text-[9px] leading-none text-dim">{dayInitial.format(day.time)}</span>
                   </div>
                 {/each}
               </div>
@@ -393,33 +411,34 @@
 
           <!-- Top track of the week -->
           <div class="tile col-span-2 flex flex-col p-4 sm:p-5">
-            <span class="tile-label">Lagu terfavorit · 7 hari</span>
+            <span class="tile-label"><span class="tag-index">06 //</span>Lagu terfavorit · 7 hari</span>
             {#if stats.topTrack}
               <a href={spotifyUrl(stats.topTrack.uri)} target="_blank" rel="noopener noreferrer" class="group mt-auto flex items-center gap-3 pt-4 sm:gap-4">
                 {#if stats.topTrack.imageUrl}
-                  <img src={stats.topTrack.imageUrl} alt="" class="h-16 w-16 shrink-0 rounded-xl object-cover ring-1 ring-white/10 sm:h-20 sm:w-20" />
+                  <img src={stats.topTrack.imageUrl} alt="" class="h-16 w-16 shrink-0 object-cover ring-1 ring-line-strong sm:h-20 sm:w-20" />
                 {:else}
-                  <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-zinc-800 sm:h-20 sm:w-20">
-                    <Music class="h-6 w-6 text-zinc-500" />
+                  <div class="flex h-16 w-16 shrink-0 items-center justify-center bg-surface-2 sm:h-20 sm:w-20">
+                    <Music class="h-6 w-6 text-dim" />
                   </div>
                 {/if}
                 <div class="min-w-0 flex-1">
-                  <p class="truncate text-lg font-bold tracking-tight group-hover:underline sm:text-xl">{stats.topTrack.track}</p>
-                  <p class="truncate text-sm text-zinc-400">{stats.topTrack.artist}</p>
+                  <p class="truncate text-lg font-semibold text-fg group-hover:text-hud-text sm:text-xl">{stats.topTrack.track}</p>
+                  <p class="truncate text-sm text-muted">{stats.topTrack.artist}</p>
                 </div>
                 <div class="shrink-0 text-right">
-                  <span class="stat-number text-accent text-3xl sm:text-4xl"><NumberFlow value={stats.topTrack.count} suffix="×" /></span>
-                  <p class="text-xs text-zinc-500">diputar</p>
+                  <span class="stat-number text-4xl text-hud-text sm:text-5xl"><NumberFlow value={stats.topTrack.count} suffix="×" /></span>
+                  <p class="hud-text text-[10px] text-dim">diputar</p>
                 </div>
               </a>
             {:else}
-              <p class="m-auto text-sm text-zinc-500">Belum ada data minggu ini.</p>
+              <p class="m-auto text-sm text-muted">Belum ada data minggu ini.</p>
             {/if}
           </div>
 
           <ListeningClock heatmap={stats.heatmap} max={stats.heatmapMax} peakHour={stats.peakHour} />
 
           <StatTile
+            index="08"
             label="Total lagu"
             value={archiveLoaded ? stats.total : null}
             hint={archiveLoaded
@@ -429,13 +448,14 @@
                 : 'memuat arsip…'}
           >
             {#if !archiveLoaded || archiveBar.current < 1}
-              <div class="absolute inset-x-0 bottom-0 h-0.5 bg-white/5" out:fly={{ y: 4, duration: prefersReducedMotion.current ? 0 : 400 }}>
+              <div class="absolute inset-x-0 bottom-0 z-[3] h-0.5 bg-hud/10" out:fly={{ y: 4, duration: prefersReducedMotion.current ? 0 : 400 }}>
                 <div class="bg-accent h-full" style="width: {archiveBar.current * 100}%"></div>
               </div>
             {/if}
           </StatTile>
 
           <StatTile
+            index="09"
             label="Artis berbeda"
             value={archiveLoaded ? stats.uniqueArtists : null}
             hint="sudah didengar"
@@ -444,9 +464,9 @@
 
         <!-- Recent preview -->
         <section>
-          <div class="mb-3 flex items-center justify-between">
-            <h2 class="text-xl font-bold tracking-tight">Baru saja diputar</h2>
-            <button onclick={() => selectTab('recent')} class="text-accent flex items-center gap-1 text-sm font-medium hover:underline">
+          <div class="mb-4 flex items-center justify-between">
+            <h2 class="section-title min-w-0 flex-1 whitespace-nowrap text-[13px] min-[380px]:text-base sm:text-lg" aria-label="Baru saja diputar" use:decode={'Baru saja diputar'}>Baru saja diputar</h2>
+            <button onclick={() => selectTab('recent')} class="hud-text text-accent ml-3 flex shrink-0 items-center gap-1 text-xs hover:text-fg min-[380px]:text-sm sm:ml-4">
               Lihat semua <ArrowRight class="h-4 w-4" />
             </button>
           </div>
@@ -462,24 +482,25 @@
       <div class="space-y-4">
         <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h2 class="text-3xl font-extrabold tracking-tight">{activeTab === 'history' ? 'Riwayat lengkap' : 'Hari ini'}</h2>
-            <p class="mt-1 text-sm text-zinc-400">
+            <p class="hud-text mb-2 text-xs text-hud-text">{activeTab === 'history' ? 'Archive // all time' : 'Log // today'}</p>
+            <h2 class="font-display text-2xl font-bold uppercase tracking-wide sm:text-3xl" aria-label={tabTitle} use:decode={tabTitle}>{tabTitle}</h2>
+            <p class="mt-2 font-mono text-xs text-muted">
               {formatNumber(currentItems.length)} {searchQuery ? 'hasil' : 'lagu'}
               {#if activeTab === 'history' && isLoadingHistorical && archiveProgress}
                 · memuat arsip {formatNumber(archiveProgress.loaded)} / {formatNumber(archiveProgress.total)}
               {/if}
             </p>
           </div>
-          <div class="relative w-full sm:w-72">
-            <Search class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-500" />
+          <div class="field-wrap relative w-full sm:w-72">
+            <Search class="pointer-events-none absolute left-3 top-1/2 z-10 h-4 w-4 -translate-y-1/2 text-dim" />
             <input
               type="text"
               placeholder="Cari lagu atau artis…"
               bind:value={searchQuery}
-              class="w-full rounded-xl border border-white/10 bg-white/5 py-2.5 pl-10 pr-10 text-base text-white placeholder-zinc-500 sm:text-sm focus:border-[rgb(var(--accent))] focus:outline-none focus:ring-1 focus:ring-[rgb(var(--accent))]"
+              class="plate field w-full py-2.5 pl-10 pr-10 text-base text-fg placeholder-dim sm:text-sm"
             />
             {#if searchQuery}
-              <button onclick={() => (searchQuery = '')} class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white" title="Hapus pencarian">
+              <button onclick={() => (searchQuery = '')} class="absolute right-3 top-1/2 z-10 -translate-y-1/2 text-dim hover:text-hud-text" title="Hapus pencarian">
                 <X class="h-4 w-4" />
               </button>
             {/if}
@@ -489,7 +510,7 @@
         {#if activeTab === 'history' && isLoadingHistorical && combinedHistory.length === 0}
           <div class="flex flex-col items-center justify-center space-y-4 py-20">
             <LoaderCircle class="text-accent h-8 w-8 animate-spin" />
-            <p class="text-zinc-400">Memuat riwayat…</p>
+            <p class="hud-text text-sm text-muted">Memuat riwayat…</p>
           </div>
         {:else if displayedItems.length > 0}
           <Timeline items={displayedItems} showUser={multiUser} />
@@ -499,7 +520,7 @@
               {#if isLoadingMore}
                 <LoaderCircle class="text-accent h-6 w-6 animate-spin" />
               {:else}
-                <button onclick={loadMore} class="text-sm text-zinc-500 hover:text-white">
+                <button onclick={loadMore} class="hud-text text-sm text-muted hover:text-hud-text">
                   Muat lagi ({formatNumber(currentItems.length - displayedCount)} tersisa)
                 </button>
               {/if}
@@ -507,44 +528,33 @@
           {/if}
         {:else}
           <div class="py-20 text-center">
-            <p class="text-zinc-400">{searchQuery ? 'Lagu tidak ditemukan.' : 'Belum ada riwayat.'}</p>
+            <p class="hud-text text-xs text-hud-text">{searchQuery ? 'No match' : 'No signal'}</p>
+            <p class="mt-2 text-muted">{searchQuery ? 'Lagu tidak ditemukan.' : 'Belum ada riwayat.'}</p>
           </div>
         {/if}
       </div>
     {/if}
   </main>
 
-  <!-- Mobile Nav -->
-  <nav class="glass bg-[#09090b]/90 pb-safe fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 sm:hidden">
+  <!-- Mobile Nav: cyan HUD line on top, the current tab lit with a bar -->
+  <nav class="glass pb-safe fixed bottom-0 left-0 right-0 z-50 border-t border-hud/30 sm:hidden">
     <div class="flex items-stretch px-2 pt-1.5">
       {#each TABS as tab}
         <button
           onclick={() => selectTab(tab.id)}
           aria-current={activeTab === tab.id ? 'page' : undefined}
-          class="flex flex-1 flex-col items-center gap-1 rounded-xl py-1.5 transition-colors {activeTab === tab.id ? 'text-accent' : 'text-zinc-500'}"
+          class="relative flex flex-1 flex-col items-center gap-1 py-1.5 transition-colors {activeTab === tab.id ? 'text-hud-text' : 'text-dim'}"
         >
+          {#if activeTab === tab.id}
+            <span class="absolute -top-1.5 h-0.5 w-8 bg-hud shadow-[0_0_8px_var(--color-hud)]" aria-hidden="true"></span>
+          {/if}
           <tab.icon class="h-5 w-5" />
-          <span class="text-[10px] font-medium">{tab.label}</span>
+          <span class="hud-text text-[10px]">{tab.label}</span>
         </button>
       {/each}
     </div>
   </nav>
 </div>
-
-<!-- Toast -->
-{#if toast.visible}
-  <div class="fixed left-4 right-4 top-[calc(1rem+env(safe-area-inset-top))] z-50 sm:left-1/2 sm:right-auto sm:-translate-x-1/2" transition:fly={{ y: -20, duration: 300 }}>
-    <div class="flex max-w-full items-center gap-3 rounded-2xl border border-white/10 bg-zinc-900/95 px-4 py-3 shadow-xl backdrop-blur sm:max-w-md">
-      <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full {toast.type === 'success' ? 'bg-[#1db954]/20' : 'bg-white/10'}">
-        <Music class="h-4 w-4 {toast.type === 'success' ? 'text-[#1db954]' : 'text-zinc-400'}" />
-      </div>
-      <span class="line-clamp-2 flex-1 text-sm text-white">{toast.message}</span>
-      <button onclick={() => (toast.visible = false)} class="ml-2 shrink-0 text-zinc-500 hover:text-white" title="Tutup">
-        <X class="h-4 w-4" />
-      </button>
-    </div>
-  </div>
-{/if}
 
 <style>
   .pb-safe { padding-bottom: max(env(safe-area-inset-bottom), 0.5rem); }

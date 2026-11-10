@@ -1,46 +1,47 @@
 @import "tailwindcss";
 
+/* HUD theme, matched to luzyver.dev (www/DESIGN.md): a blue-black ground lit by one cyan instrument light.
+   Red and gold are the armor's colours and stay rare (paint line, section bars, primary action).
+   Green is reserved for genuinely live signals (the track playing right now). */
 @theme {
   --font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-display: 'Orbitron', 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --font-hud: 'Rajdhani', 'Geist', ui-sans-serif, system-ui, sans-serif;
 
-  /* Spotify Colors */
-  --color-spotify-green: #1db954;
-  --color-spotify-light: #1ed760;
-  --color-spotify-dark: #1aa34a;
-}
-
-/* Accent channels registered as numbers so the browser can interpolate them:
-   the album color fades instead of jumping when the track changes */
-@property --accent-r {
-  syntax: '<number>';
-  inherits: true;
-  initial-value: 29;
-}
-@property --accent-g {
-  syntax: '<number>';
-  inherits: true;
-  initial-value: 185;
-}
-@property --accent-b {
-  syntax: '<number>';
-  inherits: true;
-  initial-value: 84;
+  --color-bg: #060a11;
+  --color-surface: #0a111b;
+  --color-surface-2: #0f1825;
+  --color-line: #172435;
+  --color-line-strong: #24374d;
+  --color-fg: #e2ecf6;
+  --color-muted: #8397ad;
+  --color-dim: #56687d;
+  --color-hud: #38ccf5;
+  --color-hud-text: #5ad6fa;
+  --color-on-hud: #04121c;
+  --color-hot: #d7263d;
+  --color-hot-text: #ff5c6c;
+  --color-gold: #f2b33d;
+  --color-ok: #3dd68c;
 }
 
 @layer base {
   :root {
-    /* Accent "r g b" — replaced at runtime by the color of the current album art */
-    --accent: 29 185 84;
-    --bg-primary: #09090b;
+    color-scheme: dark;
+    /* Accent "r g b", used as rgb(var(--accent) / alpha) for meters, heatmap and bars */
+    --accent: 56 204 245;
+    --frame: rgb(56 204 245 / 0.55);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-scan: cubic-bezier(0.45, 0.05, 0.25, 1);
+    --header-h: 58px;
   }
 
   body {
     overflow-x: hidden;
-    background: var(--bg-primary);
-    color: #ffffff;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
     font-family: var(--font-sans);
-    font-feature-settings: 'ss01', 'cv11';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
@@ -50,61 +51,416 @@
     padding-right: env(safe-area-inset-right);
   }
 
+  ::selection {
+    background: var(--color-hud);
+    color: var(--color-on-hud);
+  }
+
   a,
   button {
     touch-action: manipulation;
   }
+
+  :focus-visible {
+    outline: 2px solid var(--color-hud);
+    outline-offset: 2px;
+  }
 }
 
 @layer components {
-  /* Bento tile */
+  /* ---------- backdrop ---------- */
+  /* Honeycomb plating, strongest at the top of the screen, under a soft projector glow. */
+  .hud-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    overflow: hidden;
+    pointer-events: none;
+    background:
+      radial-gradient(70% 55% at 50% -10%, rgb(56 204 245 / 0.13), transparent 70%),
+      radial-gradient(40% 40% at 100% 0%, rgb(215 38 61 / 0.06), transparent 70%);
+  }
+  .hud-backdrop::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%2338ccf5' fill-opacity='0.07' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/svg%3E");
+    mask-image: linear-gradient(to bottom, #000, transparent 65%);
+  }
+  /* Instrument rings turning slowly off the top-right corner */
+  .visor-rings {
+    position: absolute;
+    top: -22vmin;
+    right: -22vmin;
+    width: 78vmin;
+    max-width: 46rem;
+    opacity: 0.16;
+  }
+
+  /* Boot: one scan line sweeps the whole screen when the page loads */
+  .boot-scan {
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 70;
+    height: 2px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgb(90 214 250 / 0.95) 20%, #fff 50%, rgb(90 214 250 / 0.95) 80%, transparent);
+    box-shadow:
+      0 0 18px 3px rgb(56 204 245 / 0.55),
+      0 -40px 60px 10px rgb(56 204 245 / 0.08);
+    opacity: 0;
+    animation: boot-scan 1.3s var(--ease-scan) 150ms both;
+  }
+
+  /* ---------- armor plating ---------- */
+  /* Top-left and bottom-right corners are cut like suit plates; a diagonal stroke redraws the border across each cut.
+     The other two corners carry 2px HUD brackets. Both are drawn on ::after so inner layers never cover them. */
+  .plate {
+    --cut: 7px;
+    --edge: var(--color-line-strong);
+    border-radius: 0;
+    clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+    background-image:
+      linear-gradient(to bottom right, transparent calc(50% - 1px), var(--edge) 0 calc(50% + 1px), transparent 0),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), var(--edge) 0 calc(50% + 1px), transparent 0);
+    background-size: var(--cut) var(--cut);
+    background-position: 0 0, 100% 100%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+  /* clip-path hides anything outside the box, so the focus ring sits inside the plate */
+  .plate:focus-visible {
+    outline-offset: -4px;
+  }
+
   .tile {
+    --cut: 16px;
+    --edge: var(--color-line-strong);
+    --bracket: 14px;
     position: relative;
     overflow: hidden;
-    border-radius: 1.5rem;
-    border: 1px solid rgb(255 255 255 / 0.06);
-    background-color: rgb(24 24 27 / 0.72);
-    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+    border: 1px solid var(--color-line);
+    background-color: rgb(10 17 27 / 0.82);
+    clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
     transition:
       border-color 300ms,
-      background-color 300ms,
-      transform 300ms;
+      box-shadow 300ms;
+  }
+  .tile::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: 2;
+    pointer-events: none;
+    background:
+      linear-gradient(to bottom right, transparent calc(50% - 1px), var(--edge) 0 calc(50% + 1px), transparent 0) 0 0 / var(--cut) var(--cut),
+      linear-gradient(to bottom right, transparent calc(50% - 1px), var(--edge) 0 calc(50% + 1px), transparent 0) 100% 100% / var(--cut) var(--cut),
+      linear-gradient(var(--frame), var(--frame)) 100% 0 / var(--bracket) 2px,
+      linear-gradient(var(--frame), var(--frame)) 100% 0 / 2px var(--bracket),
+      linear-gradient(var(--frame), var(--frame)) 0 100% / var(--bracket) 2px,
+      linear-gradient(var(--frame), var(--frame)) 0 100% / 2px var(--bracket);
+    background-repeat: no-repeat;
+    transition: background-size 400ms var(--ease-out);
   }
 
   @media (hover: hover) {
     .tile:hover {
-      border-color: rgb(255 255 255 / 0.1);
+      --edge: var(--color-hud);
+      --bracket: 22px;
+      border-color: color-mix(in oklab, var(--color-hud) 40%, var(--color-line));
+      box-shadow: inset 0 -2px 0 var(--color-hud);
     }
   }
 
+  /* Readout tag over each tile: red-and-gold bar, an index from the bento order, then the label */
+  /* Block, so a long label wraps as text on narrow tiles; the bar sits on the first line */
   .tile-label {
-    font-size: 0.75rem;
+    display: block;
+    padding-left: 22px;
+    line-height: 1.35;
+    background: linear-gradient(90deg, var(--color-hot), var(--color-gold)) 0 0.6em / 14px 2px no-repeat;
+    font-family: var(--font-hud);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .tag-index {
+    margin-right: 0.5rem;
+    white-space: nowrap;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     font-weight: 500;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: rgb(161 161 170);
+    color: var(--color-hud-text);
   }
 
-  /* Big, bold stat numbers */
+  /* Big stat numbers: tall HUD face (Orbitron's slashed zero reads as an icon at this size) */
   .stat-number {
-    font-weight: 800;
-    letter-spacing: -0.045em;
-    line-height: 0.9;
+    font-family: var(--font-hud);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 0.85;
     font-variant-numeric: tabular-nums;
+    color: var(--color-fg);
+  }
+
+  .hud-text {
+    font-family: var(--font-hud);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 
   .glass {
-    backdrop-filter: blur(24px) saturate(160%);
-    -webkit-backdrop-filter: blur(24px) saturate(160%);
-    background-color: rgb(9 9 11 / 0.65);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    background-color: rgb(6 10 17 / 0.78);
   }
 
   .text-accent {
-    color: rgb(var(--accent));
+    color: var(--color-hud-text);
   }
 
   .bg-accent {
     background-color: rgb(var(--accent));
+  }
+
+  /* ---------- header visor ---------- */
+  /* A red-and-gold paint line along the top, a cyan HUD line fading toward the sides along the bottom. */
+  .visor {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+  .visor::before,
+  .visor::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    pointer-events: none;
+  }
+  .visor::before {
+    top: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-hot) 0 60%, var(--color-gold) 60% 100%);
+  }
+  .visor::after {
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgb(56 204 245 / 0.7) 30%, rgb(56 204 245 / 0.7) 70%, transparent);
+  }
+  /* Transmission strip under the visor: a light sweeps across as it opens, a gold line drains until it closes */
+  .transmission {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgb(56 204 245 / 0.25);
+    background:
+      repeating-linear-gradient(0deg, rgb(56 204 245 / 0.05) 0 1px, transparent 1px 3px),
+      linear-gradient(90deg, rgb(56 204 245 / 0.14), transparent 60%);
+  }
+  .transmission-sweep {
+    position: absolute;
+    inset-block: 0;
+    left: 0;
+    width: 30%;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgb(90 214 250 / 0.35), transparent);
+    animation: transmission-sweep 900ms var(--ease-scan) both;
+  }
+  .transmission-timer {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 1px;
+    pointer-events: none;
+    transform-origin: left;
+    background: var(--color-gold);
+    box-shadow: 0 0 8px rgb(242 179 61 / 0.7);
+    animation: transmission-timer 4s linear both;
+  }
+
+  /* Uplink: a bright charge runs along the visor line until the next sync (duration set inline) */
+  .uplink {
+    position: absolute;
+    inset-inline: 0;
+    bottom: -1px;
+    z-index: 1;
+    height: 2px;
+    pointer-events: none;
+    transform-origin: left;
+    background: linear-gradient(90deg, transparent, var(--color-hud) 85%, #fff);
+    box-shadow: 0 0 10px rgb(56 204 245 / 0.7);
+    animation: uplink 30s linear both;
+  }
+
+  /* Nav plates: the current tab is a lit plate with a charge line along the bottom */
+  .nav-plate {
+    --cut: 5px;
+    --edge: transparent;
+  }
+  .nav-plate[aria-current='page'] {
+    --edge: var(--color-hud);
+  }
+  .nav-pill {
+    background-color: rgb(56 204 245 / 0.12);
+    border: 1px solid rgb(56 204 245 / 0.55);
+    box-shadow: inset 0 -2px 0 var(--color-hud);
+  }
+
+  .icon-btn {
+    --cut: 6px;
+    --edge: var(--color-line);
+    border: 1px solid var(--color-line);
+    background-color: var(--color-surface);
+    color: var(--color-muted);
+    transition:
+      border-color 300ms,
+      color 300ms,
+      box-shadow 300ms;
+  }
+  .icon-btn:hover {
+    --edge: var(--color-hud);
+    border-color: color-mix(in oklab, var(--color-hud) 55%, var(--color-line));
+    color: var(--color-hud-text);
+    box-shadow: inset 0 -2px 0 var(--color-hud);
+  }
+
+  /* Field: a plate with a gold tick in the top-right corner, lit cyan on focus */
+  .field {
+    --cut: 8px;
+    --edge: var(--color-line-strong);
+    border: 1px solid var(--color-line-strong);
+    background-color: var(--color-surface);
+    transition:
+      border-color 300ms,
+      box-shadow 300ms;
+  }
+  .field-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid var(--color-gold);
+    border-right: 2px solid var(--color-gold);
+    pointer-events: none;
+  }
+  .field:focus {
+    --edge: var(--color-hud);
+    outline: none;
+    border-color: var(--color-hud);
+    box-shadow: inset 0 -2px 0 var(--color-hud);
+  }
+
+  /* Section heading: cyan bar, display face */
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(56 204 245 / 0.5), transparent);
+  }
+
+  /* Album art in a scanner frame: cyan brackets and one slow scan line */
+  .scanner {
+    position: relative;
+    padding: 6px;
+    background:
+      linear-gradient(var(--color-hud), var(--color-hud)) 0 0 / 16px 2px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 0 0 / 2px 16px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 100% 0 / 16px 2px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 100% 0 / 2px 16px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 0 100% / 16px 2px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 0 100% / 2px 16px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 100% 100% / 16px 2px,
+      linear-gradient(var(--color-hud), var(--color-hud)) 100% 100% / 2px 16px;
+    background-repeat: no-repeat;
+  }
+  .scanner-line {
+    position: absolute;
+    inset-inline: 6px;
+    top: 6px;
+    height: 2px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgb(90 214 250 / 0.9), transparent);
+    box-shadow: 0 0 12px 2px rgb(56 204 245 / 0.45);
+    animation: scan 5s var(--ease-scan) infinite;
+  }
+  /* Target lock: a wide bracket frame closes in on the cover and flashes once */
+  .lock-on {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    border: 1px solid var(--color-hud);
+    box-shadow:
+      0 0 16px rgb(56 204 245 / 0.6),
+      inset 0 0 16px rgb(56 204 245 / 0.35);
+    opacity: 0;
+    animation: lock-on 900ms var(--ease-out) 200ms both;
+  }
+
+  /* Streak flame flickers like a thruster */
+  .flame {
+    transform-origin: 50% 100%;
+    filter: drop-shadow(0 0 6px rgb(242 179 61 / 0.6));
+    animation: thruster 1.8s ease-in-out infinite;
+  }
+
+  /* Status LED, green only for live */
+  .led {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--color-dim);
+  }
+  .led-live {
+    background: var(--color-ok);
+    box-shadow: 0 0 8px var(--color-ok);
+    animation: breathe 2s ease-in-out infinite;
+  }
+
+  /* Segmented meter: cuts a solid bar into cells */
+  .segmented {
+    mask-image: repeating-linear-gradient(90deg, #000 0 6px, transparent 6px 8px);
+  }
+  .segmented-y {
+    mask-image: repeating-linear-gradient(0deg, #000 0 4px, transparent 4px 6px);
+  }
+}
+
+/* ---------- motion ---------- */
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(var(--scan-distance, 10rem));
+    opacity: 0;
+  }
+}
+
+@keyframes breathe {
+  50% {
+    opacity: 0.45;
   }
 }
 
@@ -124,25 +480,40 @@
   animation: eq 1s ease-in-out infinite;
 }
 
-/* Root that owns the accent: set --accent-r/g/b inline, --accent follows them */
-.accent-root {
-  --accent: var(--accent-r) var(--accent-g) var(--accent-b);
-  transition:
-    --accent-r 1.2s ease,
-    --accent-g 1.2s ease,
-    --accent-b 1.2s ease;
-}
-
-/* Bento entrance: tiles rise in one after another */
+/* Boot: tiles power up one after another, each swept once by a scan line */
 @keyframes tile-in {
   from {
     opacity: 0;
-    transform: translateY(16px) scale(0.98);
+    transform: translateY(12px);
+  }
+}
+@keyframes tile-scan {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
   }
 }
 
 .bento > * {
-  animation: tile-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: tile-in 600ms var(--ease-out) both;
+}
+.bento > .tile::before {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  z-index: 3;
+  height: 2px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgb(90 214 250 / 0.9), transparent);
+  box-shadow: 0 0 14px 2px rgb(56 204 245 / 0.4);
+  opacity: 0;
+  animation: tile-scan 900ms var(--ease-scan) both;
+  animation-delay: inherit;
 }
 .bento > :nth-child(2) { animation-delay: 60ms; }
 .bento > :nth-child(3) { animation-delay: 120ms; }
@@ -173,40 +544,128 @@
 
 .grow-x {
   transform-origin: left;
-  animation: grow-x 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: grow-x 900ms var(--ease-out) both;
 }
 .grow-y {
   transform-origin: bottom;
-  animation: grow-y 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: grow-y 700ms var(--ease-out) both;
 }
 .pop-in {
-  animation: pop-in 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: pop-in 500ms var(--ease-out) both;
 }
 
-/* Tab switch (View Transitions API): the screen crossfades, the active pill glides.
+@keyframes boot-scan {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@keyframes transmission-sweep {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(340%);
+  }
+}
+@keyframes transmission-timer {
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes uplink {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes lock-on {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  55% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes thruster {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: scale(1.08, 1.16);
+    opacity: 0.85;
+  }
+  60% {
+    transform: scale(0.96, 1.04);
+    opacity: 1;
+  }
+}
+@keyframes visor-open {
+  from {
+    clip-path: inset(50% 0 50% 0);
+    filter: brightness(1.8);
+  }
+  to {
+    clip-path: inset(0);
+    filter: none;
+  }
+}
+
+/* Tab switch (View Transitions API): the new screen opens from a slit like a visor, the active plate glides.
    Only the viewport-sized root is animated: naming the tall <main> made it slide in from the
    old scroll offset and paint over the sticky header / bottom nav on mobile. */
-::view-transition-old(root),
+::view-transition-old(root) {
+  animation: none;
+}
 ::view-transition-new(root) {
-  animation-duration: 220ms;
-  animation-timing-function: ease-out;
+  mix-blend-mode: normal;
+  animation: visor-open 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 ::view-transition-group(tab-pill) {
   animation-duration: 350ms;
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-timing-function: var(--ease-out);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .eq-bar,
   .bento > *,
+  .bento > .tile::before,
   .grow-x,
   .grow-y,
-  .pop-in {
+  .pop-in,
+  .scanner-line,
+  .led-live,
+  .flame {
     animation: none;
   }
 
-  .accent-root {
-    transition: none;
+  .scanner-line,
+  .boot-scan,
+  .transmission-sweep,
+  .transmission-timer,
+  .uplink,
+  .lock-on {
+    display: none;
   }
 
   ::view-transition-group(*),
@@ -216,7 +675,12 @@
   }
 }
 
-/* Custom Scrollbar */
+/* Thin cyan scrollbar */
+html {
+  scrollbar-color: #24374d transparent;
+  scrollbar-width: thin;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -227,12 +691,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  background-color: #24374d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(56 204 245 / 0.6);
 }
 
 .no-scrollbar::-webkit-scrollbar {
