@@ -31,7 +31,8 @@
         <span class="h-px flex-1 bg-gradient-to-r from-hud/40 to-transparent" aria-hidden="true"></span>
       </h3>
       <!-- Wide screens read the log in columns, left to right then down -->
-      <ul class="grid gap-x-4 lg:grid-cols-2 2xl:grid-cols-3">
+      <!-- grid-cols-1 (minmax(0,1fr)): an implicit auto column grows to the longest title and defeats truncate -->
+      <ul class="grid grid-cols-1 gap-x-4 lg:grid-cols-2 2xl:grid-cols-3">
         {#each group.items as item (keyOf(item))}
           <li animate:flip={{ duration: 400 * motion }} in:fly={{ y: -16, duration: 400 * motion }}>
             <a
