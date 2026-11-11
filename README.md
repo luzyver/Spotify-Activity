@@ -6,41 +6,41 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,341 |
-| **Unique Tracks** | 1,780 |
-| **Unique Artists** | 835 |
-| **Period** | November 12, 2025 - November 9, 2026 |
+| **Total Plays** | 12,385 |
+| **Unique Tracks** | 1,781 |
+| **Unique Artists** | 836 |
+| **Period** | November 12, 2025 - November 10, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
 
 | Rank | Artist | Plays |
 |------|------|------|
-| 1 | eńau | 1,016 |
-| 2 | Ghea Indrawari | 772 |
+| 1 | eńau | 1,017 |
+| 2 | Ghea Indrawari | 783 |
 | 3 | Bernadya | 599 |
-| 4 | Nadin Amizah | 463 |
-| 5 | Tulus | 406 |
-| 6 | eńau, Ari Lesmana | 304 |
+| 4 | Nadin Amizah | 464 |
+| 5 | Tulus | 407 |
+| 6 | eńau, Ari Lesmana | 305 |
 | 7 | Hindia | 261 |
-| 8 | Sal Priadi | 233 |
-| 9 | Raim Laode | 203 |
-| 10 | Pamungkas | 184 |
+| 8 | Sal Priadi | 234 |
+| 9 | Raim Laode | 205 |
+| 10 | Pamungkas | 186 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 304 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 305 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 120 |
+| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 121 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 106 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 99 |
-| 7 | 87 - eńau | 81 |
-| 8 | Teramini - Ghea Indrawari | 79 |
-| 9 | Kukira Kau Rumah - Amigdala | 77 |
-| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 76 |
+| 7 | 87 - eńau | 82 |
+| 8 | Teramini - Ghea Indrawari | 80 |
+| 9 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 77 |
+| 10 | Kukira Kau Rumah - Amigdala | 77 |
 
 ## 📅 Daily Breakdown
 
@@ -349,7 +349,8 @@
 | 03/11/2026 | 18 | Ghea Indrawari (7) | Sisa Rasa - Mahalini (2) |
 | 05/11/2026 | 9 | Ghea Indrawari (5) | Rasa Cinta Ini - Ghea Indrawari (1) |
 | 06/11/2026 | 12 | Ghea Indrawari (5) | Ada titik-titik di ujung doa - Sal Priadi (1) |
-| 09/11/2026 | 20 | Ghea Indrawari (10) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
+| 09/11/2026 | 21 | Ghea Indrawari (10) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
+| 10/11/2026 | 43 | Ghea Indrawari (11) | Ruang Baru - Barsena Bestandhi (2) |
 
 ---
 
