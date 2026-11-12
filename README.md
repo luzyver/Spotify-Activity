@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,385 |
+| **Total Plays** | 12,406 |
 | **Unique Tracks** | 1,781 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 10, 2026 |
+| **Period** | November 12, 2025 - November 11, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,29 +17,29 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 783 |
+| 2 | Ghea Indrawari | 792 |
 | 3 | Bernadya | 599 |
-| 4 | Nadin Amizah | 464 |
-| 5 | Tulus | 407 |
-| 6 | eńau, Ari Lesmana | 305 |
+| 4 | Nadin Amizah | 465 |
+| 5 | Tulus | 408 |
+| 6 | eńau, Ari Lesmana | 307 |
 | 7 | Hindia | 261 |
 | 8 | Sal Priadi | 234 |
-| 9 | Raim Laode | 205 |
+| 9 | Raim Laode | 207 |
 | 10 | Pamungkas | 186 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 305 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 307 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 121 |
+| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 122 |
 | 4 | Negara Lucu - eńau | 114 |
-| 5 | Bertaut - Nadin Amizah | 106 |
+| 5 | Bertaut - Nadin Amizah | 107 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 99 |
 | 7 | 87 - eńau | 82 |
-| 8 | Teramini - Ghea Indrawari | 80 |
-| 9 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 77 |
+| 8 | Teramini - Ghea Indrawari | 81 |
+| 9 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 78 |
 | 10 | Kukira Kau Rumah - Amigdala | 77 |
 
 ## 📅 Daily Breakdown
@@ -350,7 +350,8 @@
 | 05/11/2026 | 9 | Ghea Indrawari (5) | Rasa Cinta Ini - Ghea Indrawari (1) |
 | 06/11/2026 | 12 | Ghea Indrawari (5) | Ada titik-titik di ujung doa - Sal Priadi (1) |
 | 09/11/2026 | 21 | Ghea Indrawari (10) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
-| 10/11/2026 | 43 | Ghea Indrawari (11) | Ruang Baru - Barsena Bestandhi (2) |
+| 10/11/2026 | 44 | Ghea Indrawari (11) | Sesi Potret - eńau, Ari Lesmana (2) |
+| 11/11/2026 | 20 | Ghea Indrawari (9) | Bersenja Gurau - Raim Laode (2) |
 
 ---
 
