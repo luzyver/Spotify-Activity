@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,427 |
-| **Unique Tracks** | 1,781 |
+| **Total Plays** | 12,439 |
+| **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 12, 2026 |
+| **Period** | November 12, 2025 - November 13, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,13 +17,13 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 801 |
+| 2 | Ghea Indrawari | 805 |
 | 3 | Bernadya | 599 |
-| 4 | Nadin Amizah | 466 |
+| 4 | Nadin Amizah | 467 |
 | 5 | Tulus | 408 |
-| 6 | eńau, Ari Lesmana | 308 |
+| 6 | eńau, Ari Lesmana | 310 |
 | 7 | Hindia | 261 |
-| 8 | Sal Priadi | 234 |
+| 8 | Sal Priadi | 235 |
 | 9 | Raim Laode | 208 |
 | 10 | Pamungkas | 186 |
 
@@ -31,16 +31,16 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 308 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 310 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 123 |
+| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 124 |
 | 4 | Negara Lucu - eńau | 114 |
-| 5 | Bertaut - Nadin Amizah | 108 |
+| 5 | Bertaut - Nadin Amizah | 109 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 99 |
-| 7 | Teramini - Ghea Indrawari | 82 |
+| 7 | Teramini - Ghea Indrawari | 83 |
 | 8 | 87 - eńau | 82 |
 | 9 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 79 |
-| 10 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 77 |
+| 10 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 78 |
 
 ## 📅 Daily Breakdown
 
@@ -352,7 +352,8 @@
 | 09/11/2026 | 21 | Ghea Indrawari (10) | Terima Kasih Sudah Bertahan - Ghea Indrawari (2) |
 | 10/11/2026 | 44 | Ghea Indrawari (11) | Sesi Potret - eńau, Ari Lesmana (2) |
 | 11/11/2026 | 21 | Ghea Indrawari (9) | Bersenja Gurau - Raim Laode (2) |
-| 12/11/2026 | 20 | Ghea Indrawari (9) | Dirimu Yang Dulu - Anggis Devaki (2) |
+| 12/11/2026 | 21 | Ghea Indrawari (9) | Dirimu Yang Dulu - Anggis Devaki (2) |
+| 13/11/2026 | 11 | Ghea Indrawari (4) | Sesi Potret - eńau, Ari Lesmana (2) |
 
 ---
 
