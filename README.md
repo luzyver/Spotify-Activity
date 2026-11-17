@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,442 |
+| **Total Plays** | 12,463 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 15, 2026 |
+| **Period** | November 12, 2025 - November 16, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,30 +17,30 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 805 |
+| 2 | Ghea Indrawari | 814 |
 | 3 | Bernadya | 599 |
-| 4 | Nadin Amizah | 467 |
+| 4 | Nadin Amizah | 468 |
 | 5 | Tulus | 408 |
-| 6 | eńau, Ari Lesmana | 312 |
+| 6 | eńau, Ari Lesmana | 314 |
 | 7 | Hindia | 261 |
 | 8 | Sal Priadi | 235 |
-| 9 | Raim Laode | 208 |
+| 9 | Raim Laode | 209 |
 | 10 | Pamungkas | 186 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 312 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 314 |
 | 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 124 |
+| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 126 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 109 |
-| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 100 |
-| 7 | Teramini - Ghea Indrawari | 83 |
+| 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 101 |
+| 7 | Teramini - Ghea Indrawari | 84 |
 | 8 | 87 - eńau | 82 |
-| 9 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 79 |
-| 10 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 78 |
+| 9 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 80 |
+| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 79 |
 
 ## 📅 Daily Breakdown
 
@@ -354,7 +354,8 @@
 | 11/11/2026 | 21 | Ghea Indrawari (9) | Bersenja Gurau - Raim Laode (2) |
 | 12/11/2026 | 21 | Ghea Indrawari (9) | Dirimu Yang Dulu - Anggis Devaki (2) |
 | 13/11/2026 | 11 | Ghea Indrawari (4) | Sesi Potret - eńau, Ari Lesmana (2) |
-| 15/11/2026 | 3 | eńau, Ari Lesmana (2) | Sesi Potret - eńau, Ari Lesmana (2) |
+| 15/11/2026 | 4 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
+| 16/11/2026 | 20 | Ghea Indrawari (9) | Tak Ingin Usai - Keisya Levronka (3) |
 
 ---
 
