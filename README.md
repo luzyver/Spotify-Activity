@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,474 |
+| **Total Plays** | 12,504 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 18, 2026 |
+| **Period** | November 12, 2025 - November 19, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,30 +17,30 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 819 |
+| 2 | Ghea Indrawari | 832 |
 | 3 | Bernadya | 599 |
 | 4 | Nadin Amizah | 470 |
-| 5 | Tulus | 409 |
-| 6 | eńau, Ari Lesmana | 315 |
+| 5 | Tulus | 410 |
+| 6 | eńau, Ari Lesmana | 317 |
 | 7 | Hindia | 261 |
 | 8 | Sal Priadi | 235 |
-| 9 | Raim Laode | 209 |
+| 9 | Raim Laode | 211 |
 | 10 | Pamungkas | 186 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 315 |
-| 2 | Bersamaku Akan Sedikit Susah - eńau | 129 |
-| 3 | Jiwa Yang Bersedih - Ghea Indrawari | 127 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 317 |
+| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 129 |
+| 3 | Bersamaku Akan Sedikit Susah - eńau | 129 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 111 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 101 |
-| 7 | Teramini - Ghea Indrawari | 85 |
-| 8 | 87 - eńau | 82 |
-| 9 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 81 |
-| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 79 |
+| 7 | Teramini - Ghea Indrawari | 86 |
+| 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 83 |
+| 9 | 87 - eńau | 82 |
+| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 80 |
 
 ## 📅 Daily Breakdown
 
@@ -357,7 +357,8 @@
 | 15/11/2026 | 4 | eńau, Momo (2) | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo (2) |
 | 16/11/2026 | 20 | Ghea Indrawari (9) | Tak Ingin Usai - Keisya Levronka (3) |
 | 17/11/2026 | 7 | Ghea Indrawari (3) | Bertaut - Nadin Amizah (1) |
-| 18/11/2026 | 4 | Ghea Indrawari (2) | Rasa Cinta Ini - Ghea Indrawari (1) |
+| 18/11/2026 | 5 | Ghea Indrawari (2) | Tak Segampang Itu - Anggi Marito (1) |
+| 19/11/2026 | 29 | Ghea Indrawari (13) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (2) |
 
 ---
 
