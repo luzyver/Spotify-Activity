@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,504 |
+| **Total Plays** | 12,522 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 19, 2026 |
+| **Period** | November 12, 2025 - November 20, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,30 +17,30 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 832 |
+| 2 | Ghea Indrawari | 839 |
 | 3 | Bernadya | 599 |
 | 4 | Nadin Amizah | 470 |
-| 5 | Tulus | 410 |
-| 6 | eńau, Ari Lesmana | 317 |
+| 5 | Tulus | 412 |
+| 6 | eńau, Ari Lesmana | 318 |
 | 7 | Hindia | 261 |
 | 8 | Sal Priadi | 235 |
-| 9 | Raim Laode | 211 |
+| 9 | Raim Laode | 212 |
 | 10 | Pamungkas | 186 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 317 |
-| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 129 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 318 |
+| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 130 |
 | 3 | Bersamaku Akan Sedikit Susah - eńau | 129 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 111 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 101 |
-| 7 | Teramini - Ghea Indrawari | 86 |
-| 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 83 |
+| 7 | Teramini - Ghea Indrawari | 87 |
+| 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 84 |
 | 9 | 87 - eńau | 82 |
-| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 80 |
+| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 81 |
 
 ## 📅 Daily Breakdown
 
@@ -358,7 +358,8 @@
 | 16/11/2026 | 20 | Ghea Indrawari (9) | Tak Ingin Usai - Keisya Levronka (3) |
 | 17/11/2026 | 7 | Ghea Indrawari (3) | Bertaut - Nadin Amizah (1) |
 | 18/11/2026 | 5 | Ghea Indrawari (2) | Tak Segampang Itu - Anggi Marito (1) |
-| 19/11/2026 | 29 | Ghea Indrawari (13) | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari (2) |
+| 19/11/2026 | 30 | Ghea Indrawari (13) | Jatuh Suka - Tulus (2) |
+| 20/11/2026 | 17 | Ghea Indrawari (7) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
 
 ---
 
