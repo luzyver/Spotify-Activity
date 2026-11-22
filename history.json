@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "timestamp": 1795362917694,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Bawa Dia Kembali",
+    "artist": "Mahalini",
+    "uri": "spotify:track:25M9piWxSsq0xLcjQW5yz6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f713eb92ebf7ca05a562542"
+  },
+  {
+    "timestamp": 1795362137060,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Mangu",
+    "artist": "Fourtwnty, Charita Utami",
+    "uri": "spotify:track:4e6TmHCC4PRUj75knNplNP",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332ab17f5515e51490841f648"
+  },
+  {
+    "timestamp": 1795361858403,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Serana",
+    "artist": "For Revenge",
+    "uri": "spotify:track:0PtJbtW50jcvvswNPn3QGd",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273322ce4ba8eb959ebee609fd8"
+  },
+  {
+    "timestamp": 1795361607917,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ini Abadi",
+    "artist": "Perunggu",
+    "uri": "spotify:track:6v5RJuJ9yhvaXkMXMeMZBw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732f6309d853e9a87b7ccb08a1"
+  },
+  {
+    "timestamp": 1795361375418,
+    "user": "Rezz",
+    "userId": "spotify:user:31ilktz5fqv575vybtkzthcniyqu",
+    "track": "Ada titik-titik di ujung doa",
+    "artist": "Sal Priadi",
+    "uri": "spotify:track:1E7zLPDdqo0OvzVmGj5aoV",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686acaaa87bfc6ebb42b3bd2"
+  }
+]
