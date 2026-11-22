@@ -6,7 +6,7 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,522 |
+| **Total Plays** | 12,523 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
 | **Period** | November 12, 2025 - November 20, 2026 |
@@ -23,7 +23,7 @@
 | 5 | Tulus | 412 |
 | 6 | eńau, Ari Lesmana | 318 |
 | 7 | Hindia | 261 |
-| 8 | Sal Priadi | 235 |
+| 8 | Sal Priadi | 236 |
 | 9 | Raim Laode | 212 |
 | 10 | Pamungkas | 186 |
 
@@ -359,7 +359,7 @@
 | 17/11/2026 | 7 | Ghea Indrawari (3) | Bertaut - Nadin Amizah (1) |
 | 18/11/2026 | 5 | Ghea Indrawari (2) | Tak Segampang Itu - Anggi Marito (1) |
 | 19/11/2026 | 30 | Ghea Indrawari (13) | Jatuh Suka - Tulus (2) |
-| 20/11/2026 | 17 | Ghea Indrawari (7) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
+| 20/11/2026 | 18 | Ghea Indrawari (7) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
 
 ---
 
