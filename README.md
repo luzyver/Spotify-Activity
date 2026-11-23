@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,523 |
+| **Total Plays** | 12,541 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 20, 2026 |
+| **Period** | November 12, 2025 - November 22, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,15 +17,15 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 839 |
+| 2 | Ghea Indrawari | 840 |
 | 3 | Bernadya | 599 |
-| 4 | Nadin Amizah | 470 |
-| 5 | Tulus | 412 |
+| 4 | Nadin Amizah | 472 |
+| 5 | Tulus | 413 |
 | 6 | eńau, Ari Lesmana | 318 |
 | 7 | Hindia | 261 |
-| 8 | Sal Priadi | 236 |
-| 9 | Raim Laode | 212 |
-| 10 | Pamungkas | 186 |
+| 8 | Sal Priadi | 237 |
+| 9 | Raim Laode | 213 |
+| 10 | Pamungkas | 187 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -38,7 +38,7 @@
 | 5 | Bertaut - Nadin Amizah | 111 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 101 |
 | 7 | Teramini - Ghea Indrawari | 87 |
-| 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 84 |
+| 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 85 |
 | 9 | 87 - eńau | 82 |
 | 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 81 |
 
@@ -360,6 +360,7 @@
 | 18/11/2026 | 5 | Ghea Indrawari (2) | Tak Segampang Itu - Anggi Marito (1) |
 | 19/11/2026 | 30 | Ghea Indrawari (13) | Jatuh Suka - Tulus (2) |
 | 20/11/2026 | 18 | Ghea Indrawari (7) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
+| 22/11/2026 | 18 | Nadin Amizah (2) | Bawa Dia Kembali - Mahalini (2) |
 
 ---
 
