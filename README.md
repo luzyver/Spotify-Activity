@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,541 |
+| **Total Plays** | 12,552 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 22, 2026 |
+| **Period** | November 12, 2025 - November 23, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,13 +17,13 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 840 |
+| 2 | Ghea Indrawari | 844 |
 | 3 | Bernadya | 599 |
 | 4 | Nadin Amizah | 472 |
-| 5 | Tulus | 413 |
-| 6 | eńau, Ari Lesmana | 318 |
+| 5 | Tulus | 415 |
+| 6 | eńau, Ari Lesmana | 319 |
 | 7 | Hindia | 261 |
-| 8 | Sal Priadi | 237 |
+| 8 | Sal Priadi | 238 |
 | 9 | Raim Laode | 213 |
 | 10 | Pamungkas | 187 |
 
@@ -31,13 +31,13 @@
 
 | Rank | Track | Plays |
 |------|------|------|
-| 1 | Sesi Potret - eńau, Ari Lesmana | 318 |
+| 1 | Sesi Potret - eńau, Ari Lesmana | 319 |
 | 2 | Jiwa Yang Bersedih - Ghea Indrawari | 130 |
 | 3 | Bersamaku Akan Sedikit Susah - eńau | 129 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 111 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 101 |
-| 7 | Teramini - Ghea Indrawari | 87 |
+| 7 | Teramini - Ghea Indrawari | 88 |
 | 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 85 |
 | 9 | 87 - eńau | 82 |
 | 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 81 |
@@ -361,6 +361,7 @@
 | 19/11/2026 | 30 | Ghea Indrawari (13) | Jatuh Suka - Tulus (2) |
 | 20/11/2026 | 18 | Ghea Indrawari (7) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
 | 22/11/2026 | 18 | Nadin Amizah (2) | Bawa Dia Kembali - Mahalini (2) |
+| 23/11/2026 | 11 | Ghea Indrawari (4) | Teh Hijau - Tulus (2) |
 
 ---
 
