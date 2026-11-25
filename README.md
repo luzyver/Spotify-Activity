@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,552 |
+| **Total Plays** | 12,557 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 23, 2026 |
+| **Period** | November 12, 2025 - November 24, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,14 +17,14 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 844 |
+| 2 | Ghea Indrawari | 846 |
 | 3 | Bernadya | 599 |
 | 4 | Nadin Amizah | 472 |
 | 5 | Tulus | 415 |
 | 6 | eńau, Ari Lesmana | 319 |
-| 7 | Hindia | 261 |
+| 7 | Hindia | 262 |
 | 8 | Sal Priadi | 238 |
-| 9 | Raim Laode | 213 |
+| 9 | Raim Laode | 214 |
 | 10 | Pamungkas | 187 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
@@ -32,7 +32,7 @@
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | Sesi Potret - eńau, Ari Lesmana | 319 |
-| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 130 |
+| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 131 |
 | 3 | Bersamaku Akan Sedikit Susah - eńau | 129 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 111 |
@@ -362,6 +362,7 @@
 | 20/11/2026 | 18 | Ghea Indrawari (7) | Selamat (Selamat Tinggal) - Virgoun, Audy (2) |
 | 22/11/2026 | 18 | Nadin Amizah (2) | Bawa Dia Kembali - Mahalini (2) |
 | 23/11/2026 | 11 | Ghea Indrawari (4) | Teh Hijau - Tulus (2) |
+| 24/11/2026 | 5 | Ghea Indrawari (2) | everything u are - Hindia (1) |
 
 ---
 
