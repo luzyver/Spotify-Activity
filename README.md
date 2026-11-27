@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,584 |
+| **Total Plays** | 12,590 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 25, 2026 |
+| **Period** | November 12, 2025 - November 26, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 848 |
+| 2 | Ghea Indrawari | 849 |
 | 3 | Bernadya | 600 |
 | 4 | Nadin Amizah | 475 |
 | 5 | Tulus | 416 |
@@ -25,7 +25,7 @@
 | 7 | Hindia | 263 |
 | 8 | Sal Priadi | 240 |
 | 9 | Raim Laode | 216 |
-| 10 | Pamungkas | 188 |
+| 10 | Pamungkas | 191 |
 
 ## 🎧 Top 10 Most Played Tracks (All Time)
 
@@ -363,7 +363,8 @@
 | 22/11/2026 | 18 | Nadin Amizah (2) | Bawa Dia Kembali - Mahalini (2) |
 | 23/11/2026 | 11 | Ghea Indrawari (4) | Teh Hijau - Tulus (2) |
 | 24/11/2026 | 5 | Ghea Indrawari (2) | everything u are - Hindia (1) |
-| 25/11/2026 | 27 | Nadin Amizah (3) | Beranjak Dewasa - Nadin Amizah (3) |
+| 25/11/2026 | 28 | Nadin Amizah (3) | Beranjak Dewasa - Nadin Amizah (3) |
+| 26/11/2026 | 5 | Pamungkas (2) | Berapa Kali Kita Akan Saling Memaafkan - Pamungkas (2) |
 
 ---
 
