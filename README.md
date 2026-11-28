@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |------|------|
-| **Total Plays** | 12,590 |
+| **Total Plays** | 12,595 |
 | **Unique Tracks** | 1,782 |
 | **Unique Artists** | 836 |
-| **Period** | November 12, 2025 - November 26, 2026 |
+| **Period** | November 12, 2025 - November 27, 2026 |
 | **Storage** | Supabase |
 
 ## 🎤 Top 10 Artists (All Time)
@@ -17,7 +17,7 @@
 | Rank | Artist | Plays |
 |------|------|------|
 | 1 | eńau | 1,017 |
-| 2 | Ghea Indrawari | 849 |
+| 2 | Ghea Indrawari | 851 |
 | 3 | Bernadya | 600 |
 | 4 | Nadin Amizah | 475 |
 | 5 | Tulus | 416 |
@@ -32,15 +32,15 @@
 | Rank | Track | Plays |
 |------|------|------|
 | 1 | Sesi Potret - eńau, Ari Lesmana | 320 |
-| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 132 |
+| 2 | Jiwa Yang Bersedih - Ghea Indrawari | 133 |
 | 3 | Bersamaku Akan Sedikit Susah - eńau | 129 |
 | 4 | Negara Lucu - eńau | 114 |
 | 5 | Bertaut - Nadin Amizah | 111 |
 | 6 | Sudah Tahu Tuhan Kita Berbeda - eńau, Momo | 101 |
 | 7 | Teramini - Ghea Indrawari | 88 |
 | 8 | Setengah Mati - From "Bila Esok Ibu Tiada" - Ghea Indrawari | 85 |
-| 9 | 87 - eńau | 82 |
-| 10 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 81 |
+| 9 | Terima Kasih Sudah Bertahan - Ghea Indrawari | 82 |
+| 10 | 87 - eńau | 82 |
 
 ## 📅 Daily Breakdown
 
@@ -364,7 +364,8 @@
 | 23/11/2026 | 11 | Ghea Indrawari (4) | Teh Hijau - Tulus (2) |
 | 24/11/2026 | 5 | Ghea Indrawari (2) | everything u are - Hindia (1) |
 | 25/11/2026 | 28 | Nadin Amizah (3) | Beranjak Dewasa - Nadin Amizah (3) |
-| 26/11/2026 | 5 | Pamungkas (2) | Berapa Kali Kita Akan Saling Memaafkan - Pamungkas (2) |
+| 26/11/2026 | 6 | Pamungkas (2) | Berapa Kali Kita Akan Saling Memaafkan - Pamungkas (2) |
+| 27/11/2026 | 4 | Ghea Indrawari (2) | Terima Kasih Sudah Bertahan - Ghea Indrawari (1) |
 
 ---
 
